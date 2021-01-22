@@ -1,0 +1,8 @@
+*.o
+BUILD/*
+MOC/*
+Makefile
+*.stash
+ARS-Testing
+ARS-Testing.pro.user
+
