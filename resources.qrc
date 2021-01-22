@@ -1,0 +1,48 @@
+<RCC>
+    <qresource prefix="/Test">
+        <file>images/electric_cable_test.png</file>
+        <file>images/mechanical_test.png</file>
+        <file>images/rf_cable_test.png</file>
+        <file>images/module_test.png</file>
+        <file>images/logo.png</file>
+        <file>images/box/box_blank.png</file>
+        <file>images/box/box_error.png</file>
+        <file>images/box/box_success.png</file>
+        <file>images/led/black_led.png</file>
+        <file>images/led/green_led.png</file>
+        <file>images/led/red_led.png</file>
+        <file>images/indicator/indicatorFail.png</file>
+        <file>images/indicator/indicatorOk.png</file>
+        <file>images/box/box_blank_small.png</file>
+        <file>images/box/box_success_small.png</file>
+        <file>images/logo_small.png</file>
+        <file>images/button/import_icon.png</file>
+        <file>images/button/start_icon_3.png</file>
+        <file>images/button/Stop_icon.png</file>
+        <file>images/button/export_icon2.png</file>
+        <file>images/button/guidle_icon.png</file>
+        <file>images/button/log_icon.png</file>
+        <file>images/button/print-icon.png</file>
+        <file>images/button/save_icon.png</file>
+        <file>images/button/run_icon.png</file>
+        <file>images/icon-detail.png</file>
+        <file>images/result_icon.png</file>
+        <file>images/icon-detail_2.png</file>
+        <file>images/result_icon_2.png</file>
+        <file>images/background/background_1.png</file>
+        <file>images/background/background_2.png</file>
+        <file>images/button/back_icon 2.png</file>
+        <file>images/background/background_3.png</file>
+        <file>images/background/background_4.jpg</file>
+        <file>images/background/background_5.jpg</file>
+        <file>images/background/background_6.jpg</file>
+        <file>images/background/background_7.png</file>
+        <file>images/button/exit_icon.png</file>
+        <file>images/background/background_8.png</file>
+        <file>images/background/background_9.png</file>
+        <file>images/button/connect_icon.png</file>
+        <file>images/button/connect_icon2.png</file>
+        <file>images/icons/folder.png</file>
+        <file>images/icons/pdf.png</file>
+    </qresource>
+</RCC>

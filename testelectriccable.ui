@@ -1,0 +1,4711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TestElectricCable</class>
+ <widget class="QWidget" name="TestElectricCable">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1071</width>
+    <height>759</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(252,252,252);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_5">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="horizontalSpacing">
+    <number>1</number>
+   </property>
+   <property name="verticalSpacing">
+    <number>2</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3" rowstretch="1,4,3" columnstretch="9,10">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item row="1" column="0" rowspan="2">
+       <widget class="QFrame" name="frame_7">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(220,225,226);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_12">
+         <property name="leftMargin">
+          <number>2</number>
+         </property>
+         <property name="topMargin">
+          <number>2</number>
+         </property>
+         <property name="rightMargin">
+          <number>2</number>
+         </property>
+         <property name="bottomMargin">
+          <number>2</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QWidget" name="pdfShow" native="true">
+           <widget class="QLabel" name="label_115">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>40</y>
+              <width>409</width>
+              <height>606</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="2">
+       <widget class="QFrame" name="frame_6">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(220,225,226);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>0</number>
+         </property>
+         <item row="1" column="0">
+          <widget class="QTabWidget" name="tabWidget">
+           <property name="styleSheet">
+            <string notr="true">QTabBar::tab:selected
+{
+background-color:rgb(77,117,112);
+color: rgb(189,251,247);
+font: 10pt &quot;Sans&quot;;
+}
+QTabBar::tab
+{
+background-color: rgb(160,160,160);
+color: rgb(46,46,46);
+font: 10pt &quot;Sans&quot;;
+}; 
+font:bold;
+QTabWidget 
+{
+	background-color:none;
+}
+</string>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="tab_7">
+            <property name="styleSheet">
+             <string notr="true">QWidget {
+	background-color: transparent;
+}</string>
+            </property>
+            <attribute name="title">
+             <string>CABLE</string>
+            </attribute>
+            <layout class="QGridLayout" name="gridLayout_7">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>2</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QScrollArea" name="scrollArea">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(250, 250, 250); </string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>-27</y>
+                  <width>540</width>
+                  <height>432</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">#scrollAreaWidgetContents {
+	background-color: transparent;
+}
+QScrollArea {
+	background-color: transparent;
+}</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_2">
+                 <item row="0" column="1" colspan="2">
+                  <widget class="QLabel" name="label_2">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(49,67,100);
+font: 87 14pt &quot;Myriad Pro&quot;; font:bold;</string>
+                   </property>
+                   <property name="text">
+                    <string>DETAIL</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="3">
+                  <widget class="QLabel" name="label_5">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QCheckBox" name="checkBox_2">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(49,67,100);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Cable1 - KDCS</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="QPushButton" name="detail_cable2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail_2.png</normaloff>:/Test/images/icon-detail_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="1">
+                  <widget class="QPushButton" name="detail_cable9">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail_2.png</normaloff>:/Test/images/icon-detail_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QPushButton" name="detail_cable1">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail_2.png</normaloff>:/Test/images/icon-detail_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="4">
+                  <widget class="QPushButton" name="pushButton_17">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="0">
+                  <widget class="QCheckBox" name="checkBox_7">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(49,67,100);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Cable6 - GYRROS</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="1">
+                  <widget class="QPushButton" name="detail_cable6">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail_2.png</normaloff>:/Test/images/icon-detail_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="13" column="2">
+                  <widget class="QLabel" name="label_15">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="13" column="3">
+                  <widget class="QLabel" name="label_26">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="13" column="4">
+                  <widget class="QPushButton" name="pushButton_23">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="2">
+                  <widget class="QLabel" name="label_6">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorFail.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="12" column="2">
+                  <widget class="QLabel" name="label_14">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="12" column="3">
+                  <widget class="QLabel" name="label_25">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(49,67,100);
+font: 87 14pt &quot;Myriad Pro&quot;; font:bold;</string>
+                   </property>
+                   <property name="text">
+                    <string>SELECT CABLE</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="12" column="4">
+                  <widget class="QPushButton" name="pushButton_22">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="13" column="0">
+                  <widget class="QCheckBox" name="checkBox_13">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(49,67,100);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Cable 13 - ATT_DIVIDER_TX</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="13" column="1">
+                  <widget class="QPushButton" name="detail_cable13">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail_2.png</normaloff>:/Test/images/icon-detail_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="4">
+                  <widget class="QPushButton" name="pushButton_14">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="4">
+                  <widget class="QPushButton" name="pushButton_2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="1">
+                  <widget class="QPushButton" name="detail_cable4">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail_2.png</normaloff>:/Test/images/icon-detail_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="4">
+                  <widget class="QPushButton" name="pushButton_15">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="3">
+                  <widget class="QLabel" name="label_17">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/red_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="2">
+                  <widget class="QLabel" name="label_10">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="2">
+                  <widget class="QLabel" name="label_7">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="11" column="4">
+                  <widget class="QPushButton" name="pushButton_21">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="12" column="0">
+                  <widget class="QCheckBox" name="checkBox_11">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(49,67,100);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Cable12 - CONN_POWER</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="12" column="1">
+                  <widget class="QPushButton" name="detail_cable12">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail_2.png</normaloff>:/Test/images/icon-detail_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="11" column="0">
+                  <widget class="QCheckBox" name="checkBox_10">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(49,67,100);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Cable11 - GND</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="11" column="1">
+                  <widget class="QPushButton" name="detail_cable11">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail_2.png</normaloff>:/Test/images/icon-detail_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="3">
+                  <widget class="QLabel" name="label_19">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/red_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="2">
+                  <widget class="QLabel" name="label_9">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="3">
+                  <widget class="QLabel" name="label_20">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="3">
+                  <widget class="QLabel" name="label_16">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(49,67,100);
+font: 87 14pt &quot;Myriad Pro&quot;; font:bold;</string>
+                   </property>
+                   <property name="text">
+                    <string>RESULT</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QCheckBox" name="checkBox">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(49,67,100);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>All</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="3">
+                  <widget class="QLabel" name="label_18">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="2">
+                  <widget class="QLabel" name="label_11">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorFail.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="3">
+                  <widget class="QLabel" name="label_22">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/red_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="0">
+                  <widget class="QCheckBox" name="checkBox_5">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(49,67,100);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Cable4 - GPIO0A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="4">
+                  <widget class="QPushButton" name="pushButton_16">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="QLabel" name="label_4">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="2">
+                  <widget class="QLabel" name="label_8">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorFail.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="4">
+                  <widget class="QPushButton" name="pushButton_19">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="0">
+                  <widget class="QCheckBox" name="checkBox_9">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(49,67,100);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Cable10 - XLTH_POWER</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="0">
+                  <widget class="QCheckBox" name="checkBox_8">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(49,67,100);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Cable9 - ATT</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="3">
+                  <widget class="QLabel" name="label_21">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="4">
+                  <widget class="QPushButton" name="pushButton_18">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="1">
+                  <widget class="QPushButton" name="detail_cable10">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail_2.png</normaloff>:/Test/images/icon-detail_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="2">
+                  <widget class="QLabel" name="label_12">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="1">
+                  <widget class="QPushButton" name="detail_cable3">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail_2.png</normaloff>:/Test/images/icon-detail_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="11" column="2">
+                  <widget class="QLabel" name="label_13">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="11" column="3">
+                  <widget class="QLabel" name="label_24">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="1">
+                  <widget class="QPushButton" name="detail_cable5">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail_2.png</normaloff>:/Test/images/icon-detail_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="3">
+                  <widget class="QLabel" name="label_23">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="4">
+                  <widget class="QPushButton" name="pushButton_20">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QCheckBox" name="checkBox_3">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(49,67,100);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Cable2 - GPIO1A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QCheckBox" name="checkBox_4">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(49,67,100);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Cable3 - GPIO0B</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="0">
+                  <widget class="QCheckBox" name="checkBox_6">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(49,67,100);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Cable5 - LNA_ATT_SWITCH</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="Line" name="line">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(215, 223, 227);</string>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="Line" name="line_4">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(215, 223, 227);</string>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2" colspan="3">
+                  <widget class="Line" name="line_6">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(215, 223, 227);</string>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tab_8">
+            <property name="styleSheet">
+             <string notr="true">QWidget {
+	background-color: transparent;
+}</string>
+            </property>
+            <attribute name="title">
+             <string>REARPANEL</string>
+            </attribute>
+            <layout class="QGridLayout" name="gridLayout_4">
+             <item row="0" column="0">
+              <widget class="QScrollArea" name="scrollArea_2">
+               <property name="styleSheet">
+                <string notr="true">#scrollAreaWidgetContents {
+	background-color: transparent;
+	border:none;
+}
+QScrollArea {
+	background-color: none;
+	border:none;
+}</string>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>596</width>
+                  <height>1061</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">#scrollAreaWidgetContents {
+	background-color: transparent;
+}
+QScrollArea {
+	background-color: transparent;
+}</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout" columnstretch="3,2,1,1,1,1">
+                 <property name="leftMargin">
+                  <number>2</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>2</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>5</number>
+                 </property>
+                 <item row="0" column="0" colspan="2">
+                  <widget class="QLabel" name="label_27">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(49, 62, 70);
+font: 87 14pt &quot;Myriad Pro&quot;; font:bold;</string>
+                   </property>
+                   <property name="text">
+                    <string>SELECT CONNECTOR</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QLabel" name="label_28">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(49, 62, 70);
+font: 87 14pt &quot;Myriad Pro&quot;; font:bold;</string>
+                   </property>
+                   <property name="text">
+                    <string>DETAIL</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="4">
+                  <widget class="QLabel" name="label_29">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(49, 62, 70);
+font: 87 14pt &quot;Myriad Pro&quot;; font:bold;</string>
+                   </property>
+                   <property name="text">
+                    <string>RESULT</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0" colspan="2">
+                  <widget class="Line" name="line_2">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(215, 223, 227);</string>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="Line" name="line_3">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(215, 223, 227);</string>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="3" colspan="3">
+                  <widget class="Line" name="line_5">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(215, 223, 227);</string>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QCheckBox" name="checkBox_25">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(234,216,189);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>All</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0" colspan="2">
+                  <widget class="QCheckBox" name="checkBox_24">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(234,216,189);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>CONTROL_R - ALL</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="QPushButton" name="pushButton_13">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="3">
+                  <widget class="QLabel" name="label_31">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="4">
+                  <widget class="QLabel" name="label_62">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="5">
+                  <widget class="QPushButton" name="pushButton_54">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLabel" name="label_93">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="QCheckBox" name="checkBox_23">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none;color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>CONTROL_R - ENCODER</string>
+                   </property>
+                   <property name="checked">
+                    <bool>false</bool>
+                   </property>
+                   <property name="tristate">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="2">
+                  <widget class="QPushButton" name="pushButton_24">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="3">
+                  <widget class="QLabel" name="label_32">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="4">
+                  <widget class="QLabel" name="label_63">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="5">
+                  <widget class="QPushButton" name="pushButton_55">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QLabel" name="label_94">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="1">
+                  <widget class="QCheckBox" name="checkBox_22">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none;color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>CONTROL_R - MOTOR</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="2">
+                  <widget class="QPushButton" name="pushButton_25">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="3">
+                  <widget class="QLabel" name="label_33">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="4">
+                  <widget class="QLabel" name="label_64">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="5">
+                  <widget class="QPushButton" name="pushButton_56">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="0">
+                  <widget class="QLabel" name="label_95">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="1">
+                  <widget class="QCheckBox" name="checkBox_21">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none;color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>CONTROL _R - GYROS</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="2">
+                  <widget class="QPushButton" name="pushButton_26">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="3">
+                  <widget class="QLabel" name="label_34">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="4">
+                  <widget class="QLabel" name="label_65">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="5">
+                  <widget class="QPushButton" name="pushButton_57">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="0">
+                  <widget class="QLabel" name="label_96">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="1">
+                  <widget class="QCheckBox" name="checkBox_20">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none;color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>CONTROL_R - GPIO1A_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="2">
+                  <widget class="QPushButton" name="pushButton_27">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="3">
+                  <widget class="QLabel" name="label_35">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="4">
+                  <widget class="QLabel" name="label_66">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="5">
+                  <widget class="QPushButton" name="pushButton_58">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="0">
+                  <widget class="QLabel" name="label_102">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="1">
+                  <widget class="QCheckBox" name="checkBox_19">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none;color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>CONTROL_R - POWER01_A_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="2">
+                  <widget class="QPushButton" name="pushButton_28">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="3">
+                  <widget class="QLabel" name="label_36">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="4">
+                  <widget class="QLabel" name="label_67">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="5">
+                  <widget class="QPushButton" name="pushButton_59">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="0">
+                  <widget class="QLabel" name="label_101">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="1">
+                  <widget class="QCheckBox" name="checkBox_18">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none;color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>CONTROL_R -  POWER01_B_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="2">
+                  <widget class="QPushButton" name="pushButton_29">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="3">
+                  <widget class="QLabel" name="label_37">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="4">
+                  <widget class="QLabel" name="label_68">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="5">
+                  <widget class="QPushButton" name="pushButton_60">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="0">
+                  <widget class="QLabel" name="label_100">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="1">
+                  <widget class="QCheckBox" name="checkBox_17">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none;color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>CONTROL_R - POWER02_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="2">
+                  <widget class="QPushButton" name="pushButton_30">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="3">
+                  <widget class="QLabel" name="label_38">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="4">
+                  <widget class="QLabel" name="label_69">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="5">
+                  <widget class="QPushButton" name="pushButton_61">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="11" column="0" colspan="2">
+                  <widget class="QCheckBox" name="checkBox_16">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(234,216,189);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>RX_DIFF_R - ALL</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="11" column="2">
+                  <widget class="QPushButton" name="pushButton_31">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="11" column="3">
+                  <widget class="QLabel" name="label_39">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="11" column="4">
+                  <widget class="QLabel" name="label_70">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="11" column="5">
+                  <widget class="QPushButton" name="pushButton_62">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="12" column="0">
+                  <widget class="QLabel" name="label_99">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="12" column="1">
+                  <widget class="QCheckBox" name="checkBox_15">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none;color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>RX_DIFF_R - GPIO0A_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="12" column="2">
+                  <widget class="QPushButton" name="pushButton_32">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="12" column="3">
+                  <widget class="QLabel" name="label_40">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="12" column="4">
+                  <widget class="QLabel" name="label_71">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="12" column="5">
+                  <widget class="QPushButton" name="pushButton_63">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="13" column="0">
+                  <widget class="QLabel" name="label_98">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="13" column="1">
+                  <widget class="QCheckBox" name="checkBox_12">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>RX_DIFF_R - POWER01_A_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="13" column="2">
+                  <widget class="QPushButton" name="pushButton_33">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="13" column="3">
+                  <widget class="QLabel" name="label_41">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="13" column="4">
+                  <widget class="QLabel" name="label_72">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="13" column="5">
+                  <widget class="QPushButton" name="pushButton_64">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="14" column="0" colspan="2">
+                  <widget class="QCheckBox" name="checkBox_14">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(234,216,189);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>RX_SUM_R - ALL</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="14" column="2">
+                  <widget class="QPushButton" name="pushButton_34">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="14" column="3">
+                  <widget class="QLabel" name="label_42">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="14" column="4">
+                  <widget class="QLabel" name="label_73">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="14" column="5">
+                  <widget class="QPushButton" name="pushButton_65">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="15" column="0">
+                  <widget class="QLabel" name="label_97">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="15" column="1">
+                  <widget class="QCheckBox" name="checkBox_27">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>10</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="baseSize">
+                    <size>
+                     <width>10</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>RX_SUM_R - GPIO0A_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="15" column="2">
+                  <widget class="QPushButton" name="pushButton_35">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="15" column="3">
+                  <widget class="QLabel" name="label_43">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="15" column="4">
+                  <widget class="QLabel" name="label_74">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="15" column="5">
+                  <widget class="QPushButton" name="pushButton_66">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="16" column="0">
+                  <widget class="QLabel" name="label_103">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="16" column="1">
+                  <widget class="QCheckBox" name="checkBox_26">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>RX_SUM_R - POWER01_A_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="16" column="2">
+                  <widget class="QPushButton" name="pushButton_36">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="16" column="3">
+                  <widget class="QLabel" name="label_44">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorFail.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="16" column="4">
+                  <widget class="QLabel" name="label_75">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/red_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="16" column="5">
+                  <widget class="QPushButton" name="pushButton_67">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="17" column="0" colspan="2">
+                  <widget class="QCheckBox" name="checkBox_28">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(234,216,189);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>LO_IF_R - ALL</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="17" column="2">
+                  <widget class="QPushButton" name="pushButton_37">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="17" column="3">
+                  <widget class="QLabel" name="label_45">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorFail.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="17" column="4">
+                  <widget class="QLabel" name="label_76">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/red_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="17" column="5">
+                  <widget class="QPushButton" name="pushButton_68">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="18" column="0">
+                  <widget class="QLabel" name="label_104">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="18" column="1">
+                  <widget class="QCheckBox" name="checkBox_29">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>LO_IF_R - GPIO0A_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="18" column="2">
+                  <widget class="QPushButton" name="pushButton_38">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="18" column="3">
+                  <widget class="QLabel" name="label_46">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorFail.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="18" column="4">
+                  <widget class="QLabel" name="label_77">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/red_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="18" column="5">
+                  <widget class="QPushButton" name="pushButton_69">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="19" column="0">
+                  <widget class="QLabel" name="label_105">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="19" column="1">
+                  <widget class="QCheckBox" name="checkBox_30">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>LO_IF_R - GPIO1A_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="19" column="2">
+                  <widget class="QPushButton" name="pushButton_39">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="19" column="3">
+                  <widget class="QLabel" name="label_47">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorFail.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="19" column="4">
+                  <widget class="QLabel" name="label_78">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/red_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="19" column="5">
+                  <widget class="QPushButton" name="pushButton_70">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="20" column="0">
+                  <widget class="QLabel" name="label_106">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="20" column="1">
+                  <widget class="QCheckBox" name="checkBox_31">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>LO_IF_R - GPIO0B_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="20" column="2">
+                  <widget class="QPushButton" name="pushButton_40">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="20" column="3">
+                  <widget class="QLabel" name="label_48">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="20" column="4">
+                  <widget class="QLabel" name="label_79">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="20" column="5">
+                  <widget class="QPushButton" name="pushButton_71">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="21" column="0" colspan="2">
+                  <widget class="QCheckBox" name="checkBox_32">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(234,216,189);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>LO_RF_R - ALL</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="21" column="2">
+                  <widget class="QPushButton" name="pushButton_41">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="21" column="3">
+                  <widget class="QLabel" name="label_49">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="21" column="4">
+                  <widget class="QLabel" name="label_80">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="21" column="5">
+                  <widget class="QPushButton" name="pushButton_72">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon_2.png</normaloff>:/Test/images/result_icon_2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="22" column="0">
+                  <widget class="QLabel" name="label_107">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="22" column="1">
+                  <widget class="QCheckBox" name="checkBox_35">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>LO_RF_R - GPIO0A_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="22" column="2">
+                  <widget class="QPushButton" name="pushButton_42">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="22" column="3">
+                  <widget class="QLabel" name="label_50">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="22" column="4">
+                  <widget class="QLabel" name="label_81">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="22" column="5">
+                  <widget class="QPushButton" name="pushButton_73">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon.png</normaloff>:/Test/images/result_icon.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="23" column="0">
+                  <widget class="QLabel" name="label_108">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="23" column="1">
+                  <widget class="QCheckBox" name="checkBox_38">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>LO_RF_R - GPIO1A_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="23" column="2">
+                  <widget class="QPushButton" name="pushButton_43">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="23" column="3">
+                  <widget class="QLabel" name="label_51">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="23" column="4">
+                  <widget class="QLabel" name="label_82">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="23" column="5">
+                  <widget class="QPushButton" name="pushButton_74">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon.png</normaloff>:/Test/images/result_icon.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="24" column="0">
+                  <widget class="QLabel" name="label_109">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="24" column="1">
+                  <widget class="QCheckBox" name="checkBox_33">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>LO_RF_R - GPIO0B_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="24" column="2">
+                  <widget class="QPushButton" name="pushButton_44">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="24" column="3">
+                  <widget class="QLabel" name="label_52">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="24" column="4">
+                  <widget class="QLabel" name="label_83">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="24" column="5">
+                  <widget class="QPushButton" name="pushButton_75">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon.png</normaloff>:/Test/images/result_icon.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="25" column="0" colspan="2">
+                  <widget class="QCheckBox" name="checkBox_37">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(234,216,189);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>ATT_DIVIDER_TX_R - ALL</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="25" column="2">
+                  <widget class="QPushButton" name="pushButton_45">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="25" column="3">
+                  <widget class="QLabel" name="label_53">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="25" column="4">
+                  <widget class="QLabel" name="label_84">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="25" column="5">
+                  <widget class="QPushButton" name="pushButton_76">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon.png</normaloff>:/Test/images/result_icon.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="26" column="0">
+                  <widget class="QLabel" name="label_110">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="26" column="1">
+                  <widget class="QCheckBox" name="checkBox_36">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none;color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>ATT_DIVIDER_TX_R - GPIO0A_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="26" column="2">
+                  <widget class="QPushButton" name="pushButton_46">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="26" column="3">
+                  <widget class="QLabel" name="label_54">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="26" column="4">
+                  <widget class="QLabel" name="label_85">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="26" column="5">
+                  <widget class="QPushButton" name="pushButton_77">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon.png</normaloff>:/Test/images/result_icon.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="27" column="0">
+                  <widget class="QLabel" name="label_111">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="27" column="1">
+                  <widget class="QCheckBox" name="checkBox_34">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none;color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>ATT_DIVIDER_TX_R - POWER01_A_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="27" column="2">
+                  <widget class="QPushButton" name="pushButton_47">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="27" column="3">
+                  <widget class="QLabel" name="label_55">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="27" column="4">
+                  <widget class="QLabel" name="label_86">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="27" column="5">
+                  <widget class="QPushButton" name="pushButton_78">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon.png</normaloff>:/Test/images/result_icon.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="28" column="0" colspan="2">
+                  <widget class="QCheckBox" name="checkBox_41">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(234,216,189);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>TX_R - POWER01_A_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="28" column="2">
+                  <widget class="QPushButton" name="pushButton_48">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="28" column="3">
+                  <widget class="QLabel" name="label_56">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="28" column="4">
+                  <widget class="QLabel" name="label_87">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="28" column="5">
+                  <widget class="QPushButton" name="pushButton_79">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon.png</normaloff>:/Test/images/result_icon.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="29" column="0" colspan="2">
+                  <widget class="QCheckBox" name="checkBox_39">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(234,216,189);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>XLTH_POWER - POWER01_B_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="29" column="2">
+                  <widget class="QPushButton" name="pushButton_49">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="29" column="3">
+                  <widget class="QLabel" name="label_57">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="29" column="4">
+                  <widget class="QLabel" name="label_88">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="29" column="5">
+                  <widget class="QPushButton" name="pushButton_80">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon.png</normaloff>:/Test/images/result_icon.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="30" column="0" colspan="2">
+                  <widget class="QCheckBox" name="checkBox_40">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(234,216,189);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>ALL - POWER00_B_R </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="30" column="2">
+                  <widget class="QPushButton" name="pushButton_50">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="30" column="3">
+                  <widget class="QLabel" name="label_58">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="30" column="4">
+                  <widget class="QLabel" name="label_89">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="30" column="5">
+                  <widget class="QPushButton" name="pushButton_82">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon.png</normaloff>:/Test/images/result_icon.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="31" column="0">
+                  <widget class="QLabel" name="label_112">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="31" column="1">
+                  <widget class="QCheckBox" name="checkBox_42">
+                   <property name="baseSize">
+                    <size>
+                     <width>2</width>
+                     <height>3</height>
+                    </size>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LeftToRight</enum>
+                   </property>
+                   <property name="autoFillBackground">
+                    <bool>false</bool>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none;color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>27V - POWER00_B_R </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="31" column="2">
+                  <widget class="QPushButton" name="pushButton_51">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="31" column="3">
+                  <widget class="QLabel" name="label_59">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="31" column="4">
+                  <widget class="QLabel" name="label_90">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="31" column="5">
+                  <widget class="QPushButton" name="pushButton_83">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon.png</normaloff>:/Test/images/result_icon.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="32" column="0">
+                  <widget class="QLabel" name="label_113">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string>     .</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="32" column="1">
+                  <widget class="QCheckBox" name="checkBox_43">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 9.5pt &quot;Sans&quot;; font:bold; background-color: none;color: rgb(215, 223, 227);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>GND - POWER00_B_R </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="32" column="2">
+                  <widget class="QPushButton" name="pushButton_52">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="32" column="3">
+                  <widget class="QLabel" name="label_60">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="32" column="4">
+                  <widget class="QLabel" name="label_91">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="32" column="5">
+                  <widget class="QPushButton" name="pushButton_81">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon.png</normaloff>:/Test/images/result_icon.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="33" column="0" colspan="2">
+                  <widget class="QCheckBox" name="checkBox_44">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox{font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(234,216,189);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success.png&quot;);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>KDCS - POWER02_R</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="33" column="2">
+                  <widget class="QPushButton" name="pushButton_53">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/icon-detail.png</normaloff>:/Test/images/icon-detail.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="33" column="3">
+                  <widget class="QLabel" name="label_61">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/indicator/indicatorOk.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="33" column="4">
+                  <widget class="QLabel" name="label_92">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/Test/images/led/green_led.png</pixmap>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="33" column="5">
+                  <widget class="QPushButton" name="pushButton_84">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/Test/images/result_icon.png</normaloff>:/Test/images/result_icon.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item row="0" column="0" alignment="Qt::AlignRight">
+          <widget class="QPushButton" name="btn_exit">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/Test/images/button/exit_icon.png</normaloff>:/Test/images/button/exit_icon.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QFrame" name="frame_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Sans</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame
+{
+font: 87 10pt &quot;Sans&quot;; 
+font:bold;
+ background-color: rgb(235, 235, 235); 
+color: rgb(49, 67, 100);
+}</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhNone</set>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_8" rowstretch="2,8,1">
+         <property name="leftMargin">
+          <number>5</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <property name="horizontalSpacing">
+          <number>2</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>1</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_114">
+           <property name="text">
+            <string>Test Sequence/ Output Terminal</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QFrame" name="frame_4">
+           <property name="styleSheet">
+            <string notr="true">QFrame
+{
+font: 87 10pt &quot;Sans&quot;; 
+font:bold;
+ background-color: rgb(250, 250, 250); 
+color: rgb(49, 67, 100);
+border:none;
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QProgressBar" name="progressBar">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:rgba(97, 137, 147, 55);
+font: 8pt &quot;Waree&quot;;
+color: rgb(13, 52, 62);
+border: none;
+outline: none;
+</string>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="textVisible">
+            <bool>true</bool>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="invertedAppearance">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1" rowspan="3">
+          <widget class="QFrame" name="frame_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame
+{
+font: 87 10pt &quot;Sans&quot;; 
+font:bold;
+ background-color: rgb(250, 250, 250); 
+color: rgb(49, 67, 100);
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_11">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <property name="horizontalSpacing">
+             <number>0</number>
+            </property>
+            <property name="verticalSpacing">
+             <number>1</number>
+            </property>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="pushButton_92">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>30</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton
+{
+border-color: rgb(49, 67, 100);
+color: rgb(49,67,100);
+background-color: rgb(200, 200, 200); 
+font: 87 10pt &quot;Myriad Pro&quot;;
+font:bold;
+outline:none;
+border:none;
+}
+QPushButton::hover
+{
+   background-color:rgba(146,165,201);
+  	border:none;
+  	outline:none;
+}</string>
+              </property>
+              <property name="text">
+               <string>Import</string>
+              </property>
+              <property name="icon">
+               <iconset resource="resources.qrc">
+                <normaloff>:/Test/images/button/import_icon.png</normaloff>:/Test/images/button/import_icon.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QPushButton" name="pushButton_85">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>30</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton
+{
+border-color: rgb(49, 67, 100);
+color: rgb(49,67,100);
+background-color: rgb(200, 200, 200); 
+font: 87 10pt &quot;Myriad Pro&quot;;
+font:bold;
+outline:none;
+border:none;
+}
+QPushButton::hover
+{
+   background-color:rgba(146,165,201);
+  	border:none;
+  	outline:none;
+}</string>
+              </property>
+              <property name="text">
+               <string>Run</string>
+              </property>
+              <property name="icon">
+               <iconset resource="resources.qrc">
+                <normaloff>:/Test/images/button/start_icon_3.png</normaloff>:/Test/images/button/start_icon_3.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="pushButton_91">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>30</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton
+{
+border-color: rgb(49, 67, 100);
+color: rgb(49,67,100);
+background-color: rgb(200, 200, 200); 
+font: 87 10pt &quot;Myriad Pro&quot;;
+font:bold;
+outline:none;
+border:none;
+}
+QPushButton::hover
+{
+   background-color:rgba(146,165,201);
+  	border:none;
+  	outline:none;
+}</string>
+              </property>
+              <property name="text">
+               <string>Guidle</string>
+              </property>
+              <property name="icon">
+               <iconset resource="resources.qrc">
+                <normaloff>:/Test/images/button/guidle_icon.png</normaloff>:/Test/images/button/guidle_icon.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QPushButton" name="pushButton_89">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>30</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton
+{
+border-color: rgb(49, 67, 100);
+color: rgb(49,67,100);
+background-color: rgb(200, 200, 200); 
+font: 87 10pt &quot;Myriad Pro&quot;;
+font:bold;
+outline:none;
+border:none;
+}
+QPushButton::hover
+{
+   background-color:rgba(146,165,201);
+  	border:none;
+  	outline:none;
+}</string>
+              </property>
+              <property name="text">
+               <string>Print</string>
+              </property>
+              <property name="icon">
+               <iconset resource="resources.qrc">
+                <normaloff>:/Test/images/button/print-icon.png</normaloff>:/Test/images/button/print-icon.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_90">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>30</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton
+{
+border-color: rgb(49, 67, 100);
+color: rgb(49,67,100);
+background-color: rgb(200, 200, 200); 
+font: 87 10pt &quot;Myriad Pro&quot;;
+font:bold;
+outline:none;
+border:none;
+}
+QPushButton::hover
+{
+   background-color:rgba(146,165,201);
+  	border:none;
+  	outline:none;
+}</string>
+              </property>
+              <property name="text">
+               <string>Export</string>
+              </property>
+              <property name="icon">
+               <iconset resource="resources.qrc">
+                <normaloff>:/Test/images/button/export_icon2.png</normaloff>:/Test/images/button/export_icon2.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_88">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>30</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton
+{
+border-color: rgb(49, 67, 100);
+color: rgb(49,67,100);
+background-color: rgb(200, 200, 200); 
+font: 87 10pt &quot;Myriad Pro&quot;;
+font:bold;
+outline:none;
+border:none;
+}
+QPushButton::hover
+{
+   background-color:rgba(146,165,201);
+  	border:none;
+  	outline:none;
+}</string>
+              </property>
+              <property name="text">
+               <string>Log</string>
+              </property>
+              <property name="icon">
+               <iconset resource="resources.qrc">
+                <normaloff>:/Test/images/button/log_icon.png</normaloff>:/Test/images/button/log_icon.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QFrame" name="frame_2">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_9" columnstretch="0,0">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_30">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(220,225,226);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/Test/images/logo_small.png</pixmap>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_3">
+           <property name="font">
+            <font>
+             <family>Myriad Pro</family>
+             <pointsize>18</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(49, 62, 70);
+font: 87 18pt &quot;Myriad Pro&quot;; font:bold;background-color: rgb(220,225,226);</string>
+           </property>
+           <property name="text">
+            <string>TEST ELECTRICAL CABLE   </string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
