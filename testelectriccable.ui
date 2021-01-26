@@ -192,7 +192,7 @@ QTabWidget
                 <property name="geometry">
                  <rect>
                   <x>0</x>
-                  <y>-27</y>
+                  <y>0</y>
                   <width>540</width>
                   <height>432</height>
                  </rect>
@@ -1259,7 +1259,7 @@ QScrollArea {
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>596</width>
+                  <width>591</width>
                   <height>1061</height>
                  </rect>
                 </property>
@@ -4283,6 +4283,19 @@ border:none;
            <property name="frameShadow">
             <enum>QFrame::Raised</enum>
            </property>
+           <widget class="QLabel" name="label_116">
+            <property name="geometry">
+             <rect>
+              <x>230</x>
+              <y>70</y>
+              <width>67</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
           </widget>
          </item>
          <item row="2" column="0">
@@ -4405,7 +4418,7 @@ QPushButton::hover
              </widget>
             </item>
             <item row="5" column="0">
-             <widget class="QPushButton" name="pushButton_85">
+             <widget class="QPushButton" name="btnRunCte">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
                 <horstretch>0</horstretch>
@@ -4537,7 +4550,7 @@ QPushButton::hover
              </widget>
             </item>
             <item row="3" column="0">
-             <widget class="QPushButton" name="pushButton_90">
+             <widget class="QPushButton" name="btnExportCte">
               <property name="enabled">
                <bool>true</bool>
               </property>

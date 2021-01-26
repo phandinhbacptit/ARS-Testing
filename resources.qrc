@@ -44,5 +44,6 @@
         <file>images/button/connect_icon2.png</file>
         <file>images/icons/folder.png</file>
         <file>images/icons/pdf.png</file>
+        <file>images/logo_vtx.png</file>
     </qresource>
 </RCC>

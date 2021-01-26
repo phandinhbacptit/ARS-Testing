@@ -11,6 +11,7 @@
 #include <QTextStream>
 #include <QMessageBox>
 #include "userconfig.h"
+#include "KDReports/KDReports.h"
 
 class QAction;
 class QPdfWidget;
@@ -27,9 +28,13 @@ public:
     explicit TestElectricCable(QWidget *parent = 0);
     ~TestElectricCable();
     int x, y;
+    Ui::TestElectricCable *getUi() const;
+    void setUi(Ui::TestElectricCable *value);
 
 public slots:
     void loadFile(const QString &path);
+
+
 
 private slots:
     void on_btn_exit_clicked();
@@ -57,6 +62,8 @@ private slots:
 
     void on_detail_cable13_clicked();
 
+//    void on_btnExportCte_clicked();
+
 private:
     Ui::TestElectricCable *ui;
 
@@ -66,6 +73,10 @@ private:
     void createToolBar();
     QAction *m_pOpenFileAction;
     QPdfWidget *m_pPdfWidget;
+
+    KDReports::Report reportElectrical;
+
+
 };
 
 #endif // TESTELECTRICCABLE_H

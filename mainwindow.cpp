@@ -1,12 +1,13 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QDesktopWidget>
+#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow)
+    mUi(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+    mUi->setupUi(this);
 
     QRect tScreenGeometry = QApplication::desktop()->screenGeometry();
     int x = (tScreenGeometry.width() - this->width()) / 2;
@@ -23,16 +24,35 @@ MainWindow::MainWindow(QWidget *parent) :
 
 MainWindow::~MainWindow()
 {
-    delete ui;
+    delete mUi;
 
     if (mTestElectricCable != NULL) {
         delete mTestElectricCable;
         mTestElectricCable = NULL;
     }
+    if (mTestModule != NULL) {
+        delete mTestModule;
+        mTestModule = NULL;
+    }
+    if (mTestRfCable != NULL) {
+        delete mTestRfCable;
+        mTestRfCable = NULL;
+    }
 }
 
+Ui::MainWindow *MainWindow::ui() const
+{
+    return mUi;
+}
+
+void MainWindow::setUi(Ui::MainWindow *ui)
+{
+   mUi = ui;
+}
 void MainWindow::on_mBtCableTest_clicked()
 {
+    qDebug("Jump to test electric cable");
+
     QRect tScreenGeometry = QApplication::desktop()->screenGeometry();
     int x = (tScreenGeometry.width() - mTestElectricCable->width()) / 2;
     int y = (tScreenGeometry.height() - mTestElectricCable->height()) / 2;
@@ -40,6 +60,7 @@ void MainWindow::on_mBtCableTest_clicked()
     mTestElectricCable->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     mTestElectricCable->move(x, y);
     mTestElectricCable->show();
+
 }
 
 void MainWindow::on_btnMainExit_clicked()

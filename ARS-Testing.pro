@@ -7,7 +7,6 @@
 CONFIG  +=  thread
 INCLUDEPATH += kmGraph
 
-
 INCLUDEPATH += /usr/include/libxml2
 INCLUDEPATH += /usr/include/freetype2
 INCLUDEPATH += /usr/include/qwt
@@ -35,6 +34,7 @@ QMAKE_CXX = g++
 #QT += uitools
 QT       += core gui
 QT       += opengl core	gui network sql
+QT       += printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -62,14 +62,16 @@ SOURCES += \
     testelectriccable.cpp \
     testrfcable.cpp \
     testmodule.cpp \
-    testmechanical.cpp
+    testmechanical.cpp \
+    bussiness/bussinessmanager.cpp
 HEADERS += \
         mainwindow.h \
     testelectriccable.h \
     testrfcable.h \
     testmodule.h \
     testmechanical.h \
-    userconfig.h
+    userconfig.h \
+    bussiness/bussinessmanager.h
 FORMS += \
         mainwindow.ui \
     testelectriccable.ui \
@@ -120,3 +122,8 @@ MOC_DIR = MOC
 
 
 DISTFILES +=
+
+unix:!macx: LIBS += -L$$PWD/libKdReport/lib/ -lkdreports
+
+INCLUDEPATH += $$PWD/libKdReport/include
+DEPENDPATH += $$PWD/libKdReport/include

@@ -190,7 +190,7 @@ public:
      * getMapData
     */
     std::map<int,kmChartLine* >& getLineMap() { return m_pChartHandler->m_chartData.m_mapChart;}
-    kmChartData& getChartData(kmChartData& chartData) { return m_pChartHandler->m_chartData;}
+//    kmChartData& getChartData(kmChartData& chartData) { return m_pChartHandler->m_chartData;}
     kmLineType getChartType() { return m_pChartHandler->m_eChartType; }
     void setChartType(kmLineType type) { m_pChartHandler->m_eChartType = type; }
 

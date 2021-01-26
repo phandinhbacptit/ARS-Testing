@@ -15,7 +15,8 @@ class TestRfCable : public QWidget
 public:
     explicit TestRfCable(QWidget *parent = 0);
     ~TestRfCable();
-
+    Ui::TestRfCable *getUi() const;
+    void setUi(Ui::TestRfCable *value);
 private slots:
     void on_pushButton_63_clicked();
 

@@ -17,6 +17,8 @@ protected:
 public:
     explicit testModule(QWidget *parent = 0);
     ~testModule();
+    Ui::testModule *getUi() const;
+    void setUi(Ui::testModule *value);
 
 private:
     Ui::testModule *ui;

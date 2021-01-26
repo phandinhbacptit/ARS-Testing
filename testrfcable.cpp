@@ -19,7 +19,6 @@ TestRfCable::TestRfCable(QWidget *parent) :
     mTimeLineRf->setUpdateDataFromChart(true);
 
 
-
     int a = 20;
     mTimeLineRf->addTimeLine(&a, "Timline1");
     mTimeLineRf->addTimeLine(&a, "Timline2");
@@ -27,11 +26,16 @@ TestRfCable::TestRfCable(QWidget *parent) :
     mTimeLineRf->addTimeLine(&a, "Timline4");
     mTimeLineRf->addTimeLine(&a, "Timline5");
     mTimeLineRf->addTimeLine(&a, "Timline6");
-
-
-
 }
 
+Ui::TestRfCable *TestRfCable::getUi() const
+{
+    return ui;
+}
+void TestRfCable::setUi(Ui::TestRfCable *value)
+{
+    ui = value;
+}
 TestRfCable::~TestRfCable()
 {
     delete ui;

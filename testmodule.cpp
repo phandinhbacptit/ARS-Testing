@@ -18,8 +18,6 @@ testModule::testModule(QWidget *parent) :
     mTimeLine->limitChartLenght(5000);
     mTimeLine->setUpdateDataFromChart(true);
 
-
-
     int a = 20;
     mTimeLine->addTimeLine(&a, "Timline1");
     mTimeLine->addTimeLine(&a, "Timline2");
@@ -27,7 +25,16 @@ testModule::testModule(QWidget *parent) :
     mTimeLine->addTimeLine(&a, "Timline4");
     mTimeLine->addTimeLine(&a, "Timline5");
     mTimeLine->addTimeLine(&a, "Timline6");
+}
 
+Ui::testModule *testModule::getUi() const
+{
+    return ui;
+}
+
+void testModule::setUi(Ui::testModule *value)
+{
+    ui = value;
 }
 
 testModule::~testModule()

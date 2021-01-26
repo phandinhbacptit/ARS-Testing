@@ -12,3 +12,13 @@ TestMechanical::~TestMechanical()
 {
     delete ui;
 }
+
+Ui::TestMechanical *TestMechanical::getUi() const
+{
+    return ui;
+}
+
+void TestMechanical::setUi(Ui::TestMechanical *value)
+{
+    ui = value;
+}

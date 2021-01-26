@@ -17,6 +17,9 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+    Ui::MainWindow *ui() const;
+    void setUi(Ui::MainWindow *ui);
+
 private slots:
     void on_mBtCableTest_clicked();
 
@@ -27,7 +30,7 @@ private slots:
     void on_mBtRfTest_clicked();
 
 private:
-    Ui::MainWindow *ui;
+    Ui::MainWindow *mUi;
     TestElectricCable *mTestElectricCable;
     testModule *mTestModule;
     TestRfCable *mTestRfCable;

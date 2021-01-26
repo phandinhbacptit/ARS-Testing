@@ -14,6 +14,8 @@ class TestMechanical : public QWidget
 public:
     explicit TestMechanical(QWidget *parent = 0);
     ~TestMechanical();
+    Ui::TestMechanical *getUi() const;
+    void setUi(Ui::TestMechanical *value);
 
 private:
     Ui::TestMechanical *ui;

@@ -32,11 +32,24 @@ TestElectricCable::TestElectricCable(QWidget *parent) :
     ui->pdfShow->setLayout(layoutPdfCableTest);
     ui->pdfShow->show();
 
+    reportElectrical.setDocumentName("Electrical Report");
+
 }
 TestElectricCable::~TestElectricCable()
 {
     delete ui;
 }
+
+Ui::TestElectricCable *TestElectricCable::getUi() const
+{
+    return ui;
+}
+
+void TestElectricCable::setUi(Ui::TestElectricCable *value)
+{
+    ui = value;
+}
+
 void TestElectricCable::on_btn_exit_clicked()
 {
     this->close();
@@ -131,3 +144,23 @@ void TestElectricCable::on_detail_cable13_clicked()
 {
     onOpenFile(cable13);
 }
+
+//void TestElectricCable::on_btnExportCte_clicked()
+//{
+//    KDReports::Header& header = reportElectrical.header(KDReports::FirstPage);
+//    QPixmap kdab(":Test/images/logo_vtx.png");
+//    QPainter painter(&kdab);
+//    //painter.drawRect( 0, 0, kdab.width() - 1, kdab.height() - 1 );
+//    KDReports::ImageElement imageElement(kdab);
+//    imageElement.setWidth(30); // mm
+//    header.addElement(imageElement);
+//    header.addElement(KDReports::TextElement("This header should be on the first page."
+//                                               " The kdab logo should be 50mm wide and 24mm high." ));
+
+////    header.addElement(KDReports::TextElement"Reporter: ");
+////    header.addVariable
+
+//    KDReports::PreviewDialog preview(&reportElectrical);
+//    preview.setDefaultSaveDirectory(QDir::homePath());
+//    preview.exec();
+//}

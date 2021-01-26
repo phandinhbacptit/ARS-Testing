@@ -22,7 +22,7 @@ public:
     void resetTimer();
     double getNowTime_InSecond();
     float getRealCurrentStep(){ return m_fRealCurrenttep; }
-    double getTimeNowInSecond();
+	double getTimeNowInSecond();
 private:
 #ifndef _WINDOWS
     rtime::TimeStamp m_tBegin;
