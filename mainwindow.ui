@@ -263,38 +263,6 @@ background-color: none;</string>
         </property>
        </widget>
       </item>
-      <item row="4" column="2">
-       <widget class="QPushButton" name="btn_test">
-        <property name="styleSheet">
-         <string notr="true">QPushButton
-{
-border-color: rgb(49, 67, 100);
-color: rgb(49,67,100);
-background-color: rgb(200, 200, 200); 
-font: 87 10pt &quot;Myriad Pro&quot;;
-font:bold;
-outline:none;
-border:none;
-}
-QPushButton::hover
-{
-   background-color:rgba(146,165,201);
-  	border:none;
-  	outline:none;
-}</string>
-        </property>
-        <property name="text">
-         <string>PushButton</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="2">
-       <widget class="QLabel" name="label_15">
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
      </layout>
     </widget>
    </widget>

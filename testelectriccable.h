@@ -11,7 +11,6 @@
 #include <QTextStream>
 #include <QMessageBox>
 #include "userconfig.h"
-#include "KDReports/KDReports.h"
 
 class QAction;
 class QPdfWidget;
@@ -73,9 +72,6 @@ private:
     void createToolBar();
     QAction *m_pOpenFileAction;
     QPdfWidget *m_pPdfWidget;
-
-    KDReports::Report reportElectrical;
-
 
 };
 

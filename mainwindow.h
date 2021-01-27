@@ -5,6 +5,7 @@
 #include "testelectriccable.h"
 #include "testmodule.h"
 #include "testrfcable.h"
+
 namespace Ui {
 class MainWindow;
 }
@@ -21,7 +22,7 @@ public:
     void setUi(Ui::MainWindow *ui);
 
 private slots:
-    void on_mBtCableTest_clicked();
+//    void on_mBtCableTest_clicked();
 
     void on_btnMainExit_clicked();
 
@@ -34,6 +35,8 @@ private:
     TestElectricCable *mTestElectricCable;
     testModule *mTestModule;
     TestRfCable *mTestRfCable;
+
+
 };
 
 #endif // MAINWINDOW_H

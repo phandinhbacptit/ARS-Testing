@@ -32,9 +32,10 @@ QMAKE_CC = gcc
 QMAKE_CXX = g++
 
 #QT += uitools
-QT       += core gui
-QT       += opengl core	gui network sql
-QT       += printsupport
+QT  += core gui
+QT  += opengl core gui network sql
+QT  += printsupport
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 

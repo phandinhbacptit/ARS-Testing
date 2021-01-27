@@ -17,27 +17,27 @@ MainWindow::MainWindow(QWidget *parent) :
     this->move(x, y);
 
 
-    mTestElectricCable = new TestElectricCable();
-    mTestModule = new testModule();
-    mTestRfCable = new TestRfCable();
+//    mTestElectricCable = new TestElectricCable();
+//    mTestModule = new testModule();
+//    mTestRfCable = new TestRfCable();
 }
 
 MainWindow::~MainWindow()
 {
     delete mUi;
 
-    if (mTestElectricCable != NULL) {
-        delete mTestElectricCable;
-        mTestElectricCable = NULL;
-    }
-    if (mTestModule != NULL) {
-        delete mTestModule;
-        mTestModule = NULL;
-    }
-    if (mTestRfCable != NULL) {
-        delete mTestRfCable;
-        mTestRfCable = NULL;
-    }
+//    if (mTestElectricCable != NULL) {
+//        delete mTestElectricCable;
+//        mTestElectricCable = NULL;
+//    }
+//    if (mTestModule != NULL) {
+//        delete mTestModule;
+//        mTestModule = NULL;
+//    }
+//    if (mTestRfCable != NULL) {
+//        delete mTestRfCable;
+//        mTestRfCable = NULL;
+//    }
 }
 
 Ui::MainWindow *MainWindow::ui() const
@@ -49,19 +49,18 @@ void MainWindow::setUi(Ui::MainWindow *ui)
 {
    mUi = ui;
 }
-void MainWindow::on_mBtCableTest_clicked()
-{
-    qDebug("Jump to test electric cable");
+//void MainWindow::on_mBtCableTest_clicked()
+//{
+//    qDebug("Jump to test electric cable");
+//    QRect tScreenGeometry = QApplication::desktop()->screenGeometry();
+//    int x = (tScreenGeometry.width() - mTestElectricCable->width()) / 2;
+//    int y = (tScreenGeometry.height() - mTestElectricCable->height()) / 2;
 
-    QRect tScreenGeometry = QApplication::desktop()->screenGeometry();
-    int x = (tScreenGeometry.width() - mTestElectricCable->width()) / 2;
-    int y = (tScreenGeometry.height() - mTestElectricCable->height()) / 2;
+//    mTestElectricCable->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
+//    mTestElectricCable->move(x, y);
+//    mTestElectricCable->show();
 
-    mTestElectricCable->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
-    mTestElectricCable->move(x, y);
-    mTestElectricCable->show();
-
-}
+//}
 
 void MainWindow::on_btnMainExit_clicked()
 {

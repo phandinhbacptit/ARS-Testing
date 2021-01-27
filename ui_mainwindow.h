@@ -50,8 +50,6 @@ public:
     QLabel *label_5;
     QLineEdit *mLeTimeTest;
     QLabel *label_9;
-    QPushButton *btn_test;
-    QLabel *label_15;
     QLabel *label_14;
     QPushButton *btnMainExit;
     QWidget *layoutWidget1;
@@ -231,32 +229,6 @@ public:
 
         gridLayout->addWidget(label_9, 0, 0, 1, 1);
 
-        btn_test = new QPushButton(layoutWidget);
-        btn_test->setObjectName(QStringLiteral("btn_test"));
-        btn_test->setStyleSheet(QLatin1String("QPushButton\n"
-"{\n"
-"border-color: rgb(49, 67, 100);\n"
-"color: rgb(49,67,100);\n"
-"background-color: rgb(200, 200, 200); \n"
-"font: 87 10pt \"Myriad Pro\";\n"
-"font:bold;\n"
-"outline:none;\n"
-"border:none;\n"
-"}\n"
-"QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(146,165,201);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout->addWidget(btn_test, 4, 2, 1, 1);
-
-        label_15 = new QLabel(layoutWidget);
-        label_15->setObjectName(QStringLiteral("label_15"));
-
-        gridLayout->addWidget(label_15, 3, 2, 1, 1);
-
         label_14 = new QLabel(centralWidget);
         label_14->setObjectName(QStringLiteral("label_14"));
         label_14->setGeometry(QRect(60, 120, 171, 91));
@@ -425,8 +397,6 @@ public:
         label_4->setText(QApplication::translate("MainWindow", "Location Test", Q_NULLPTR));
         label_5->setText(QApplication::translate("MainWindow", "Time Test", Q_NULLPTR));
         label_9->setText(QString());
-        btn_test->setText(QApplication::translate("MainWindow", "PushButton", Q_NULLPTR));
-        label_15->setText(QApplication::translate("MainWindow", "TextLabel", Q_NULLPTR));
         label_14->setText(QString());
         btnMainExit->setText(QString());
         mBtCableTest->setText(QString());

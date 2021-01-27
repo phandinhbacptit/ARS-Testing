@@ -32,8 +32,6 @@ TestElectricCable::TestElectricCable(QWidget *parent) :
     ui->pdfShow->setLayout(layoutPdfCableTest);
     ui->pdfShow->show();
 
-    reportElectrical.setDocumentName("Electrical Report");
-
 }
 TestElectricCable::~TestElectricCable()
 {
