@@ -67,24 +67,24 @@ void MainWindow::on_btnMainExit_clicked()
     this->close();
 }
 
-void MainWindow::on_mBtModuleTest_clicked()
-{
-    QRect tScreenGeometry = QApplication::desktop()->screenGeometry();
-    int x = (tScreenGeometry.width() - mTestModule->width()) / 2;
-    int y = (tScreenGeometry.height() - mTestModule->height()) / 2;
+//void MainWindow::on_mBtModuleTest_clicked()
+//{
+//    QRect tScreenGeometry = QApplication::desktop()->screenGeometry();
+//    int x = (tScreenGeometry.width() - mTestModule->width()) / 2;
+//    int y = (tScreenGeometry.height() - mTestModule->height()) / 2;
 
-    mTestModule->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
-    mTestModule->move(x, y);
-    mTestModule->show();
-}
+//    mTestModule->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
+//    mTestModule->move(x, y);
+//    mTestModule->show();
+//}
 
-void MainWindow::on_mBtRfTest_clicked()
-{
-    QRect tScreenGeometry = QApplication::desktop()->screenGeometry();
-    int x = (tScreenGeometry.width() - mTestRfCable->width()) / 2;
-    int y = (tScreenGeometry.height() - mTestRfCable->height()) / 2;
+//void MainWindow::on_mBtRfTest_clicked()
+//{
+//    QRect tScreenGeometry = QApplication::desktop()->screenGeometry();
+//    int x = (tScreenGeometry.width() - mTestRfCable->width()) / 2;
+//    int y = (tScreenGeometry.height() - mTestRfCable->height()) / 2;
 
-    mTestRfCable->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
-    mTestRfCable->move(x, y);
-    mTestRfCable->show();
-}
+//    mTestRfCable->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
+//    mTestRfCable->move(x, y);
+//    mTestRfCable->show();
+//}

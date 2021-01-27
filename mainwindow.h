@@ -32,11 +32,6 @@ private slots:
 
 private:
     Ui::MainWindow *mUi;
-    TestElectricCable *mTestElectricCable;
-    testModule *mTestModule;
-    TestRfCable *mTestRfCable;
-
-
 };
 
 #endif // MAINWINDOW_H
