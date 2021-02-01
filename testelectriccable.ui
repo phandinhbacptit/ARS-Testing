@@ -109,7 +109,7 @@
       <item row="0" column="1" rowspan="2">
        <widget class="QFrame" name="frame_6">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(220,225,226);</string>
+         <string notr="true">background-color: rgba(194,204,205);</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -183,7 +183,7 @@ QTabWidget
              <item row="0" column="0">
               <widget class="QScrollArea" name="scrollArea">
                <property name="styleSheet">
-                <string notr="true">background-color: rgb(250, 250, 250); </string>
+                <string notr="true">background-color: rgb(220,225,226);</string>
                </property>
                <property name="widgetResizable">
                 <bool>true</bool>
@@ -1259,7 +1259,7 @@ QScrollArea {
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>591</width>
+                  <width>596</width>
                   <height>1061</height>
                  </rect>
                 </property>
@@ -4220,7 +4220,7 @@ QCheckBox::indicator::checked
 {
 font: 87 10pt &quot;Sans&quot;; 
 font:bold;
- background-color: rgb(235, 235, 235); 
+background-color: rgba(194,204,205);
 color: rgb(49, 67, 100);
 }</string>
         </property>
@@ -4283,19 +4283,6 @@ border:none;
            <property name="frameShadow">
             <enum>QFrame::Raised</enum>
            </property>
-           <widget class="QLabel" name="label_116">
-            <property name="geometry">
-             <rect>
-              <x>230</x>
-              <y>70</y>
-              <width>67</width>
-              <height>17</height>
-             </rect>
-            </property>
-            <property name="text">
-             <string>TextLabel</string>
-            </property>
-           </widget>
           </widget>
          </item>
          <item row="2" column="0">
@@ -4374,7 +4361,7 @@ color: rgb(49, 67, 100);
              <number>1</number>
             </property>
             <item row="1" column="0">
-             <widget class="QPushButton" name="pushButton_92">
+             <widget class="QPushButton" name="btnImportCte">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
                 <horstretch>0</horstretch>
@@ -4386,7 +4373,7 @@ color: rgb(49, 67, 100);
 {
 border-color: rgb(49, 67, 100);
 color: rgb(49,67,100);
-background-color: rgb(200, 200, 200); 
+background-color: rgb(162,175,176); 
 font: 87 10pt &quot;Myriad Pro&quot;;
 font:bold;
 outline:none;
@@ -4430,7 +4417,7 @@ QPushButton::hover
 {
 border-color: rgb(49, 67, 100);
 color: rgb(49,67,100);
-background-color: rgb(200, 200, 200); 
+background-color: rgb(162,175,176); 
 font: 87 10pt &quot;Myriad Pro&quot;;
 font:bold;
 outline:none;
@@ -4462,7 +4449,7 @@ QPushButton::hover
              </widget>
             </item>
             <item row="0" column="0">
-             <widget class="QPushButton" name="pushButton_91">
+             <widget class="QPushButton" name="btnGuidleCte">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
                 <horstretch>0</horstretch>
@@ -4474,7 +4461,7 @@ QPushButton::hover
 {
 border-color: rgb(49, 67, 100);
 color: rgb(49,67,100);
-background-color: rgb(200, 200, 200); 
+background-color: rgb(162,175,176); 
 font: 87 10pt &quot;Myriad Pro&quot;;
 font:bold;
 outline:none;
@@ -4506,7 +4493,7 @@ QPushButton::hover
              </widget>
             </item>
             <item row="4" column="0">
-             <widget class="QPushButton" name="pushButton_89">
+             <widget class="QPushButton" name="btnPrintCte">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
                 <horstretch>0</horstretch>
@@ -4518,7 +4505,7 @@ QPushButton::hover
 {
 border-color: rgb(49, 67, 100);
 color: rgb(49,67,100);
-background-color: rgb(200, 200, 200); 
+background-color: rgb(162,175,176); 
 font: 87 10pt &quot;Myriad Pro&quot;;
 font:bold;
 outline:none;
@@ -4565,7 +4552,7 @@ QPushButton::hover
 {
 border-color: rgb(49, 67, 100);
 color: rgb(49,67,100);
-background-color: rgb(200, 200, 200); 
+background-color: rgb(162,175,176); 
 font: 87 10pt &quot;Myriad Pro&quot;;
 font:bold;
 outline:none;
@@ -4597,7 +4584,7 @@ QPushButton::hover
              </widget>
             </item>
             <item row="2" column="0">
-             <widget class="QPushButton" name="pushButton_88">
+             <widget class="QPushButton" name="btnLogCte">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
                 <horstretch>0</horstretch>
@@ -4609,7 +4596,7 @@ QPushButton::hover
 {
 border-color: rgb(49, 67, 100);
 color: rgb(49,67,100);
-background-color: rgb(200, 200, 200); 
+background-color: rgb(162,175,176); 
 font: 87 10pt &quot;Myriad Pro&quot;;
 font:bold;
 outline:none;
@@ -4648,6 +4635,9 @@ QPushButton::hover
       </item>
       <item row="0" column="0">
        <widget class="QFrame" name="frame_2">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(194,204,205);</string>
+        </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
         </property>

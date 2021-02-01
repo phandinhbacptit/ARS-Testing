@@ -45,5 +45,10 @@
         <file>images/icons/folder.png</file>
         <file>images/icons/pdf.png</file>
         <file>images/logo_vtx.png</file>
+        <file>images/electric_cable_test_disable.png</file>
+        <file>images/mechanical_test_disable.png</file>
+        <file>images/module_test_disable.png</file>
+        <file>images/rf_cable_test_disable.png</file>
     </qresource>
+    <qresource prefix="/"/>
 </RCC>

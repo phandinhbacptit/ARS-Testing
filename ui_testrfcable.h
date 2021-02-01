@@ -39,12 +39,12 @@ public:
     QProgressBar *progressBar;
     QFrame *frame_6;
     QGridLayout *gridLayout_5;
-    QPushButton *pushButton_64;
-    QPushButton *pushButton_65;
-    QPushButton *pushButton_66;
-    QPushButton *pushButton_67;
-    QPushButton *pushButton_68;
-    QPushButton *pushButton_69;
+    QPushButton *btnGuidleRfte;
+    QPushButton *btnImportRfte;
+    QPushButton *btnLogRfte;
+    QPushButton *btnExportRfte;
+    QPushButton *btnPrintRfte;
+    QPushButton *btnRunRfte;
     QFrame *frame_5;
     QFrame *frame;
     QGridLayout *gridLayout_7;
@@ -309,14 +309,14 @@ public:
         gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
         gridLayout_5->setVerticalSpacing(1);
         gridLayout_5->setContentsMargins(0, 1, 0, 1);
-        pushButton_64 = new QPushButton(frame_6);
-        pushButton_64->setObjectName(QStringLiteral("pushButton_64"));
+        btnGuidleRfte = new QPushButton(frame_6);
+        btnGuidleRfte->setObjectName(QStringLiteral("btnGuidleRfte"));
         QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(pushButton_64->sizePolicy().hasHeightForWidth());
-        pushButton_64->setSizePolicy(sizePolicy);
-        pushButton_64->setStyleSheet(QLatin1String("QPushButton\n"
+        sizePolicy.setHeightForWidth(btnGuidleRfte->sizePolicy().hasHeightForWidth());
+        btnGuidleRfte->setSizePolicy(sizePolicy);
+        btnGuidleRfte->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
@@ -334,16 +334,16 @@ public:
 "}"));
         QIcon icon;
         icon.addFile(QStringLiteral(":/Test/images/button/guidle_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_64->setIcon(icon);
-        pushButton_64->setIconSize(QSize(20, 20));
+        btnGuidleRfte->setIcon(icon);
+        btnGuidleRfte->setIconSize(QSize(20, 20));
 
-        gridLayout_5->addWidget(pushButton_64, 0, 0, 1, 1);
+        gridLayout_5->addWidget(btnGuidleRfte, 0, 0, 1, 1);
 
-        pushButton_65 = new QPushButton(frame_6);
-        pushButton_65->setObjectName(QStringLiteral("pushButton_65"));
-        sizePolicy.setHeightForWidth(pushButton_65->sizePolicy().hasHeightForWidth());
-        pushButton_65->setSizePolicy(sizePolicy);
-        pushButton_65->setStyleSheet(QLatin1String("QPushButton\n"
+        btnImportRfte = new QPushButton(frame_6);
+        btnImportRfte->setObjectName(QStringLiteral("btnImportRfte"));
+        sizePolicy.setHeightForWidth(btnImportRfte->sizePolicy().hasHeightForWidth());
+        btnImportRfte->setSizePolicy(sizePolicy);
+        btnImportRfte->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
@@ -361,16 +361,16 @@ public:
 "}"));
         QIcon icon1;
         icon1.addFile(QStringLiteral(":/Test/images/button/import_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_65->setIcon(icon1);
-        pushButton_65->setIconSize(QSize(20, 20));
+        btnImportRfte->setIcon(icon1);
+        btnImportRfte->setIconSize(QSize(20, 20));
 
-        gridLayout_5->addWidget(pushButton_65, 1, 0, 1, 1);
+        gridLayout_5->addWidget(btnImportRfte, 1, 0, 1, 1);
 
-        pushButton_66 = new QPushButton(frame_6);
-        pushButton_66->setObjectName(QStringLiteral("pushButton_66"));
-        sizePolicy.setHeightForWidth(pushButton_66->sizePolicy().hasHeightForWidth());
-        pushButton_66->setSizePolicy(sizePolicy);
-        pushButton_66->setStyleSheet(QLatin1String("QPushButton\n"
+        btnLogRfte = new QPushButton(frame_6);
+        btnLogRfte->setObjectName(QStringLiteral("btnLogRfte"));
+        sizePolicy.setHeightForWidth(btnLogRfte->sizePolicy().hasHeightForWidth());
+        btnLogRfte->setSizePolicy(sizePolicy);
+        btnLogRfte->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
@@ -388,16 +388,16 @@ public:
 "}"));
         QIcon icon2;
         icon2.addFile(QStringLiteral(":/Test/images/button/log_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_66->setIcon(icon2);
-        pushButton_66->setIconSize(QSize(20, 20));
+        btnLogRfte->setIcon(icon2);
+        btnLogRfte->setIconSize(QSize(20, 20));
 
-        gridLayout_5->addWidget(pushButton_66, 2, 0, 1, 1);
+        gridLayout_5->addWidget(btnLogRfte, 2, 0, 1, 1);
 
-        pushButton_67 = new QPushButton(frame_6);
-        pushButton_67->setObjectName(QStringLiteral("pushButton_67"));
-        sizePolicy.setHeightForWidth(pushButton_67->sizePolicy().hasHeightForWidth());
-        pushButton_67->setSizePolicy(sizePolicy);
-        pushButton_67->setStyleSheet(QLatin1String("QPushButton\n"
+        btnExportRfte = new QPushButton(frame_6);
+        btnExportRfte->setObjectName(QStringLiteral("btnExportRfte"));
+        sizePolicy.setHeightForWidth(btnExportRfte->sizePolicy().hasHeightForWidth());
+        btnExportRfte->setSizePolicy(sizePolicy);
+        btnExportRfte->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
@@ -415,16 +415,16 @@ public:
 "}"));
         QIcon icon3;
         icon3.addFile(QStringLiteral(":/Test/images/button/export_icon2.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_67->setIcon(icon3);
-        pushButton_67->setIconSize(QSize(20, 20));
+        btnExportRfte->setIcon(icon3);
+        btnExportRfte->setIconSize(QSize(20, 20));
 
-        gridLayout_5->addWidget(pushButton_67, 3, 0, 1, 1);
+        gridLayout_5->addWidget(btnExportRfte, 3, 0, 1, 1);
 
-        pushButton_68 = new QPushButton(frame_6);
-        pushButton_68->setObjectName(QStringLiteral("pushButton_68"));
-        sizePolicy.setHeightForWidth(pushButton_68->sizePolicy().hasHeightForWidth());
-        pushButton_68->setSizePolicy(sizePolicy);
-        pushButton_68->setStyleSheet(QLatin1String("QPushButton\n"
+        btnPrintRfte = new QPushButton(frame_6);
+        btnPrintRfte->setObjectName(QStringLiteral("btnPrintRfte"));
+        sizePolicy.setHeightForWidth(btnPrintRfte->sizePolicy().hasHeightForWidth());
+        btnPrintRfte->setSizePolicy(sizePolicy);
+        btnPrintRfte->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
@@ -442,16 +442,16 @@ public:
 "}"));
         QIcon icon4;
         icon4.addFile(QStringLiteral(":/Test/images/button/print-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_68->setIcon(icon4);
-        pushButton_68->setIconSize(QSize(20, 20));
+        btnPrintRfte->setIcon(icon4);
+        btnPrintRfte->setIconSize(QSize(20, 20));
 
-        gridLayout_5->addWidget(pushButton_68, 4, 0, 1, 1);
+        gridLayout_5->addWidget(btnPrintRfte, 4, 0, 1, 1);
 
-        pushButton_69 = new QPushButton(frame_6);
-        pushButton_69->setObjectName(QStringLiteral("pushButton_69"));
-        sizePolicy.setHeightForWidth(pushButton_69->sizePolicy().hasHeightForWidth());
-        pushButton_69->setSizePolicy(sizePolicy);
-        pushButton_69->setStyleSheet(QLatin1String("QPushButton\n"
+        btnRunRfte = new QPushButton(frame_6);
+        btnRunRfte->setObjectName(QStringLiteral("btnRunRfte"));
+        sizePolicy.setHeightForWidth(btnRunRfte->sizePolicy().hasHeightForWidth());
+        btnRunRfte->setSizePolicy(sizePolicy);
+        btnRunRfte->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
@@ -469,10 +469,10 @@ public:
 "}"));
         QIcon icon5;
         icon5.addFile(QStringLiteral(":/Test/images/button/start_icon_3.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_69->setIcon(icon5);
-        pushButton_69->setIconSize(QSize(20, 20));
+        btnRunRfte->setIcon(icon5);
+        btnRunRfte->setIconSize(QSize(20, 20));
 
-        gridLayout_5->addWidget(pushButton_69, 5, 0, 1, 1);
+        gridLayout_5->addWidget(btnRunRfte, 5, 0, 1, 1);
 
 
         gridLayout_6->addWidget(frame_6, 0, 1, 4, 1);
@@ -2244,12 +2244,12 @@ public:
         label->setText(QApplication::translate("TestRfCable", "Test RF Cable", Q_NULLPTR));
         label_69->setText(QString());
         label_2->setText(QApplication::translate("TestRfCable", "Test Sequence/Ouput Terminal", Q_NULLPTR));
-        pushButton_64->setText(QApplication::translate("TestRfCable", "Guidle", Q_NULLPTR));
-        pushButton_65->setText(QApplication::translate("TestRfCable", "Import", Q_NULLPTR));
-        pushButton_66->setText(QApplication::translate("TestRfCable", "Log", Q_NULLPTR));
-        pushButton_67->setText(QApplication::translate("TestRfCable", "Export", Q_NULLPTR));
-        pushButton_68->setText(QApplication::translate("TestRfCable", "Print", Q_NULLPTR));
-        pushButton_69->setText(QApplication::translate("TestRfCable", "Run", Q_NULLPTR));
+        btnGuidleRfte->setText(QApplication::translate("TestRfCable", "Guidle", Q_NULLPTR));
+        btnImportRfte->setText(QApplication::translate("TestRfCable", "Import", Q_NULLPTR));
+        btnLogRfte->setText(QApplication::translate("TestRfCable", "Log", Q_NULLPTR));
+        btnExportRfte->setText(QApplication::translate("TestRfCable", "Export", Q_NULLPTR));
+        btnPrintRfte->setText(QApplication::translate("TestRfCable", "Print", Q_NULLPTR));
+        btnRunRfte->setText(QApplication::translate("TestRfCable", "Run", Q_NULLPTR));
         label_70->setText(QApplication::translate("TestRfCable", "  Select RF Cable", Q_NULLPTR));
         label_3->setText(QApplication::translate("TestRfCable", "TextLabel", Q_NULLPTR));
         label_71->setText(QApplication::translate("TestRfCable", "     Detail", Q_NULLPTR));

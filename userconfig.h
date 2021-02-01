@@ -4,6 +4,9 @@
 #include <QString>
 #include"kmGraph/headers/kmWidgetChart.h"
 
+#define OK      1
+#define FAIL    0
+
 /* Electrical cable design document path*/
 
 #define cable1 "GuidleFile/electricCable/Cable1.pdf"

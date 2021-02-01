@@ -299,16 +299,15 @@ public:
     QGridLayout *gridLayout_8;
     QLabel *label_114;
     QFrame *frame_4;
-    QLabel *label_116;
     QProgressBar *progressBar;
     QFrame *frame_5;
     QGridLayout *gridLayout_11;
-    QPushButton *pushButton_92;
+    QPushButton *btnImportCte;
     QPushButton *btnRunCte;
-    QPushButton *pushButton_91;
-    QPushButton *pushButton_89;
+    QPushButton *btnGuidleCte;
+    QPushButton *btnPrintCte;
     QPushButton *btnExportCte;
-    QPushButton *pushButton_88;
+    QPushButton *btnLogCte;
     QFrame *frame_2;
     QGridLayout *gridLayout_9;
     QLabel *label_30;
@@ -355,7 +354,7 @@ public:
 
         frame_6 = new QFrame(frame);
         frame_6->setObjectName(QStringLiteral("frame_6"));
-        frame_6->setStyleSheet(QStringLiteral("background-color: rgb(220,225,226);"));
+        frame_6->setStyleSheet(QStringLiteral("background-color: rgba(194,204,205);"));
         frame_6->setFrameShape(QFrame::StyledPanel);
         frame_6->setFrameShadow(QFrame::Raised);
         gridLayout_6 = new QGridLayout(frame_6);
@@ -392,7 +391,7 @@ public:
         gridLayout_7->setContentsMargins(0, 0, 0, 2);
         scrollArea = new QScrollArea(tab_7);
         scrollArea->setObjectName(QStringLiteral("scrollArea"));
-        scrollArea->setStyleSheet(QStringLiteral("background-color: rgb(250, 250, 250); "));
+        scrollArea->setStyleSheet(QStringLiteral("background-color: rgb(220,225,226);"));
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents_2 = new QWidget();
         scrollAreaWidgetContents_2->setObjectName(QStringLiteral("scrollAreaWidgetContents_2"));
@@ -989,7 +988,7 @@ public:
         scrollArea_2->setWidgetResizable(true);
         scrollAreaWidgetContents_3 = new QWidget();
         scrollAreaWidgetContents_3->setObjectName(QStringLiteral("scrollAreaWidgetContents_3"));
-        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 591, 1061));
+        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 596, 1061));
         scrollAreaWidgetContents_3->setStyleSheet(QLatin1String("#scrollAreaWidgetContents {\n"
 "	background-color: transparent;\n"
 "}\n"
@@ -2595,7 +2594,7 @@ public:
 "{\n"
 "font: 87 10pt \"Sans\"; \n"
 "font:bold;\n"
-" background-color: rgb(235, 235, 235); \n"
+"background-color: rgba(194,204,205);\n"
 "color: rgb(49, 67, 100);\n"
 "}"));
         frame_3->setInputMethodHints(Qt::ImhNone);
@@ -2625,9 +2624,6 @@ public:
 "}"));
         frame_4->setFrameShape(QFrame::StyledPanel);
         frame_4->setFrameShadow(QFrame::Raised);
-        label_116 = new QLabel(frame_4);
-        label_116->setObjectName(QStringLiteral("label_116"));
-        label_116->setGeometry(QRect(230, 70, 67, 17));
 
         gridLayout_8->addWidget(frame_4, 1, 0, 1, 1);
 
@@ -2670,18 +2666,18 @@ public:
         gridLayout_11->setHorizontalSpacing(0);
         gridLayout_11->setVerticalSpacing(1);
         gridLayout_11->setContentsMargins(0, 0, 0, 0);
-        pushButton_92 = new QPushButton(frame_5);
-        pushButton_92->setObjectName(QStringLiteral("pushButton_92"));
+        btnImportCte = new QPushButton(frame_5);
+        btnImportCte->setObjectName(QStringLiteral("btnImportCte"));
         QSizePolicy sizePolicy4(QSizePolicy::Minimum, QSizePolicy::Preferred);
         sizePolicy4.setHorizontalStretch(0);
         sizePolicy4.setVerticalStretch(30);
-        sizePolicy4.setHeightForWidth(pushButton_92->sizePolicy().hasHeightForWidth());
-        pushButton_92->setSizePolicy(sizePolicy4);
-        pushButton_92->setStyleSheet(QLatin1String("QPushButton\n"
+        sizePolicy4.setHeightForWidth(btnImportCte->sizePolicy().hasHeightForWidth());
+        btnImportCte->setSizePolicy(sizePolicy4);
+        btnImportCte->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
-"background-color: rgb(200, 200, 200); \n"
+"background-color: rgb(162,175,176); \n"
 "font: 87 10pt \"Myriad Pro\";\n"
 "font:bold;\n"
 "outline:none;\n"
@@ -2695,11 +2691,11 @@ public:
 "}"));
         QIcon icon5;
         icon5.addFile(QStringLiteral(":/Test/images/button/import_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_92->setIcon(icon5);
-        pushButton_92->setIconSize(QSize(20, 20));
-        pushButton_92->setFlat(false);
+        btnImportCte->setIcon(icon5);
+        btnImportCte->setIconSize(QSize(20, 20));
+        btnImportCte->setFlat(false);
 
-        gridLayout_11->addWidget(pushButton_92, 1, 0, 1, 1);
+        gridLayout_11->addWidget(btnImportCte, 1, 0, 1, 1);
 
         btnRunCte = new QPushButton(frame_5);
         btnRunCte->setObjectName(QStringLiteral("btnRunCte"));
@@ -2709,7 +2705,7 @@ public:
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
-"background-color: rgb(200, 200, 200); \n"
+"background-color: rgb(162,175,176); \n"
 "font: 87 10pt \"Myriad Pro\";\n"
 "font:bold;\n"
 "outline:none;\n"
@@ -2729,15 +2725,15 @@ public:
 
         gridLayout_11->addWidget(btnRunCte, 5, 0, 1, 1);
 
-        pushButton_91 = new QPushButton(frame_5);
-        pushButton_91->setObjectName(QStringLiteral("pushButton_91"));
-        sizePolicy4.setHeightForWidth(pushButton_91->sizePolicy().hasHeightForWidth());
-        pushButton_91->setSizePolicy(sizePolicy4);
-        pushButton_91->setStyleSheet(QLatin1String("QPushButton\n"
+        btnGuidleCte = new QPushButton(frame_5);
+        btnGuidleCte->setObjectName(QStringLiteral("btnGuidleCte"));
+        sizePolicy4.setHeightForWidth(btnGuidleCte->sizePolicy().hasHeightForWidth());
+        btnGuidleCte->setSizePolicy(sizePolicy4);
+        btnGuidleCte->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
-"background-color: rgb(200, 200, 200); \n"
+"background-color: rgb(162,175,176); \n"
 "font: 87 10pt \"Myriad Pro\";\n"
 "font:bold;\n"
 "outline:none;\n"
@@ -2751,21 +2747,21 @@ public:
 "}"));
         QIcon icon7;
         icon7.addFile(QStringLiteral(":/Test/images/button/guidle_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_91->setIcon(icon7);
-        pushButton_91->setIconSize(QSize(20, 20));
-        pushButton_91->setFlat(false);
+        btnGuidleCte->setIcon(icon7);
+        btnGuidleCte->setIconSize(QSize(20, 20));
+        btnGuidleCte->setFlat(false);
 
-        gridLayout_11->addWidget(pushButton_91, 0, 0, 1, 1);
+        gridLayout_11->addWidget(btnGuidleCte, 0, 0, 1, 1);
 
-        pushButton_89 = new QPushButton(frame_5);
-        pushButton_89->setObjectName(QStringLiteral("pushButton_89"));
-        sizePolicy4.setHeightForWidth(pushButton_89->sizePolicy().hasHeightForWidth());
-        pushButton_89->setSizePolicy(sizePolicy4);
-        pushButton_89->setStyleSheet(QLatin1String("QPushButton\n"
+        btnPrintCte = new QPushButton(frame_5);
+        btnPrintCte->setObjectName(QStringLiteral("btnPrintCte"));
+        sizePolicy4.setHeightForWidth(btnPrintCte->sizePolicy().hasHeightForWidth());
+        btnPrintCte->setSizePolicy(sizePolicy4);
+        btnPrintCte->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
-"background-color: rgb(200, 200, 200); \n"
+"background-color: rgb(162,175,176); \n"
 "font: 87 10pt \"Myriad Pro\";\n"
 "font:bold;\n"
 "outline:none;\n"
@@ -2779,11 +2775,11 @@ public:
 "}"));
         QIcon icon8;
         icon8.addFile(QStringLiteral(":/Test/images/button/print-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_89->setIcon(icon8);
-        pushButton_89->setIconSize(QSize(20, 20));
-        pushButton_89->setFlat(false);
+        btnPrintCte->setIcon(icon8);
+        btnPrintCte->setIconSize(QSize(20, 20));
+        btnPrintCte->setFlat(false);
 
-        gridLayout_11->addWidget(pushButton_89, 4, 0, 1, 1);
+        gridLayout_11->addWidget(btnPrintCte, 4, 0, 1, 1);
 
         btnExportCte = new QPushButton(frame_5);
         btnExportCte->setObjectName(QStringLiteral("btnExportCte"));
@@ -2794,7 +2790,7 @@ public:
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
-"background-color: rgb(200, 200, 200); \n"
+"background-color: rgb(162,175,176); \n"
 "font: 87 10pt \"Myriad Pro\";\n"
 "font:bold;\n"
 "outline:none;\n"
@@ -2814,15 +2810,15 @@ public:
 
         gridLayout_11->addWidget(btnExportCte, 3, 0, 1, 1);
 
-        pushButton_88 = new QPushButton(frame_5);
-        pushButton_88->setObjectName(QStringLiteral("pushButton_88"));
-        sizePolicy4.setHeightForWidth(pushButton_88->sizePolicy().hasHeightForWidth());
-        pushButton_88->setSizePolicy(sizePolicy4);
-        pushButton_88->setStyleSheet(QLatin1String("QPushButton\n"
+        btnLogCte = new QPushButton(frame_5);
+        btnLogCte->setObjectName(QStringLiteral("btnLogCte"));
+        sizePolicy4.setHeightForWidth(btnLogCte->sizePolicy().hasHeightForWidth());
+        btnLogCte->setSizePolicy(sizePolicy4);
+        btnLogCte->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
-"background-color: rgb(200, 200, 200); \n"
+"background-color: rgb(162,175,176); \n"
 "font: 87 10pt \"Myriad Pro\";\n"
 "font:bold;\n"
 "outline:none;\n"
@@ -2836,11 +2832,11 @@ public:
 "}"));
         QIcon icon10;
         icon10.addFile(QStringLiteral(":/Test/images/button/log_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_88->setIcon(icon10);
-        pushButton_88->setIconSize(QSize(20, 20));
-        pushButton_88->setFlat(false);
+        btnLogCte->setIcon(icon10);
+        btnLogCte->setIconSize(QSize(20, 20));
+        btnLogCte->setFlat(false);
 
-        gridLayout_11->addWidget(pushButton_88, 2, 0, 1, 1);
+        gridLayout_11->addWidget(btnLogCte, 2, 0, 1, 1);
 
 
         gridLayout_8->addWidget(frame_5, 0, 1, 3, 1);
@@ -2853,6 +2849,7 @@ public:
 
         frame_2 = new QFrame(frame);
         frame_2->setObjectName(QStringLiteral("frame_2"));
+        frame_2->setStyleSheet(QStringLiteral("background-color: rgba(194,204,205);"));
         frame_2->setFrameShape(QFrame::StyledPanel);
         frame_2->setFrameShadow(QFrame::Raised);
         gridLayout_9 = new QGridLayout(frame_2);
@@ -3149,13 +3146,12 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_8), QApplication::translate("TestElectricCable", "REARPANEL", Q_NULLPTR));
         btn_exit->setText(QString());
         label_114->setText(QApplication::translate("TestElectricCable", "Test Sequence/ Output Terminal", Q_NULLPTR));
-        label_116->setText(QApplication::translate("TestElectricCable", "TextLabel", Q_NULLPTR));
-        pushButton_92->setText(QApplication::translate("TestElectricCable", "Import", Q_NULLPTR));
+        btnImportCte->setText(QApplication::translate("TestElectricCable", "Import", Q_NULLPTR));
         btnRunCte->setText(QApplication::translate("TestElectricCable", "Run", Q_NULLPTR));
-        pushButton_91->setText(QApplication::translate("TestElectricCable", "Guidle", Q_NULLPTR));
-        pushButton_89->setText(QApplication::translate("TestElectricCable", "Print", Q_NULLPTR));
+        btnGuidleCte->setText(QApplication::translate("TestElectricCable", "Guidle", Q_NULLPTR));
+        btnPrintCte->setText(QApplication::translate("TestElectricCable", "Print", Q_NULLPTR));
         btnExportCte->setText(QApplication::translate("TestElectricCable", "Export", Q_NULLPTR));
-        pushButton_88->setText(QApplication::translate("TestElectricCable", "Log", Q_NULLPTR));
+        btnLogCte->setText(QApplication::translate("TestElectricCable", "Log", Q_NULLPTR));
         label_30->setText(QString());
         label_3->setText(QApplication::translate("TestElectricCable", "TEST ELECTRICAL CABLE   ", Q_NULLPTR));
     } // retranslateUi

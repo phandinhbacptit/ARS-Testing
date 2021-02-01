@@ -170,7 +170,7 @@ border:none;
           <number>1</number>
          </property>
          <item row="0" column="0">
-          <widget class="QPushButton" name="pushButton_64">
+          <widget class="QPushButton" name="btnGuidleRfte">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -211,7 +211,7 @@ QPushButton::hover
           </widget>
          </item>
          <item row="1" column="0">
-          <widget class="QPushButton" name="pushButton_65">
+          <widget class="QPushButton" name="btnImportRfte">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -252,7 +252,7 @@ QPushButton::hover
           </widget>
          </item>
          <item row="2" column="0">
-          <widget class="QPushButton" name="pushButton_66">
+          <widget class="QPushButton" name="btnLogRfte">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -293,7 +293,7 @@ QPushButton::hover
           </widget>
          </item>
          <item row="3" column="0">
-          <widget class="QPushButton" name="pushButton_67">
+          <widget class="QPushButton" name="btnExportRfte">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -334,7 +334,7 @@ QPushButton::hover
           </widget>
          </item>
          <item row="4" column="0">
-          <widget class="QPushButton" name="pushButton_68">
+          <widget class="QPushButton" name="btnPrintRfte">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -375,7 +375,7 @@ QPushButton::hover
           </widget>
          </item>
          <item row="5" column="0">
-          <widget class="QPushButton" name="pushButton_69">
+          <widget class="QPushButton" name="btnRunRfte">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
              <horstretch>0</horstretch>
