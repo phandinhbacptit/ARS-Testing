@@ -5,8 +5,6 @@
 #include "ui_testrfcable.h"
 #include "ui_testmechanical.h"
 
-#include <QDesktopWidget>
-#include <QDebug>
 
 bussinessManager::bussinessManager(QObject *parent) : QObject(parent)
 {
@@ -77,6 +75,9 @@ void bussinessManager::setup(Ui::MainWindow *ui)
     connect(mUi->mBtCableTest, SIGNAL(clicked()), this, SLOT(slt_showCteInterface()));
     connect(mUi->mBtModuleTest, SIGNAL(clicked()), this, SLOT(slt_showMteInterface()));
     connect(mUi->mBtRfTest, SIGNAL(clicked()), this, SLOT(slt_showRfteInterface()));
+
+
+
     qDebug() << "[Bussiness] Setup MainWindow";
 }
 
@@ -88,6 +89,9 @@ void bussinessManager::setupELectric(Ui::TestElectricCable *ui)
     connect(mCTE->btnExportCte, SIGNAL(clicked()), this, SLOT(slt_exportCteReport()));
     connect(mCTE->btnRunCte, SIGNAL(clicked()), this, SLOT(slt_runCTE()));
     connect(mCTE->btnLogCte, SIGNAL(clicked()), this, SLOT(slt_logCTE()));
+
+    connect(mCTE->mCbCable1, SIGNAL(clicked(bool)), this, SLOT(slt_resultTest(bool)));
+    connect(mTestElectricalCable, &TestElectricCable::sign_checkAllCable, this, &bussinessManager::slt_resultTest, Qt::UniqueConnection);
     qDebug() << "[Bussiness] Setup gui CTE";
 }
 
@@ -113,18 +117,42 @@ void bussinessManager::setupRf(Ui::TestRfCable *ui)
 
 void bussinessManager::slt_exportCteReport()
 {
-    KDReports::Header& header = reportElectrical.header(KDReports::FirstPage);
-    QPixmap kdab(":Test/images/logo_vtx.png");
-    QPainter painter(&kdab);
-    //painter.drawRect( 0, 0, kdab.width() - 1, kdab.height() - 1 );
-    KDReports::ImageElement imageElement(kdab);
-    imageElement.setWidth(30); // mm
-    header.addElement(imageElement);
-    header.addElement(KDReports::TextElement("Excutor: "));
-    QString nameExcutor = mUi->mLeNameExecutor->text();
-    qDebug() << nameExcutor;
-    //    header.addElement(KDReports::TextElement"Reporter: ");
-    header.addElement(KDReports::TextElement(nameExcutor));
+    reportElectrical.associateTextValue("title_element", "TEST REPORT");
+
+    reportElectrical.associateTextValue("table1_title", "Resistance");
+    reportElectrical.associateTextValue("table2_title", "Insulation Resistance");
+    reportElectrical.associateImageValue("image_system", QPixmap(":/Test/images/logo_vtx.png"));
+
+    reportElectrical.associateTextValue("name_excutor", mUi->mLeNameExecutor->text());
+    reportElectrical.associateTextValue("id_excutor", mUi->mLeIDExecutor->text());
+    reportElectrical.associateTextValue("work_excutor", mUi->mLeWorkExecutor->text());
+
+    reportElectrical.associateTextValue("name_supervisor", mUi->mLeNameSupervisor->text());
+    reportElectrical.associateTextValue("id_supervisor", mUi->mLeIDSupervisor->text());
+    reportElectrical.associateTextValue("work_supervisor", mUi->mLeWorkSupervisor->text());
+
+    reportElectrical.associateTextValue("nameCable", QString::fromUtf8("Cable1"));
+
+
+    TableModel table1;
+    table1.setDataHasVerticalHeaders(false);
+    table1.loadFromCSV(":/File/libKdReport/xml/table1.csv");
+    reportElectrical.associateModel(QLatin1String("table1"), &table1);
+    TableModel table2;
+    table2.setDataHasVerticalHeaders(false);
+    table2.loadFromCSV(":/File/libKdReport/xml/table2.csv");
+    reportElectrical.associateModel(QLatin1String("table2"), &table2);
+
+    QFile reportFile(":/File/libKdReport/xml/PriceList.xml");
+    if (!reportFile.open(QIODevice::ReadOnly)) {
+        QMessageBox::warning(0, QObject::tr("Warning"), QObject::tr("Could not open report description file 'PriceList.xml'. Please start this program from the PriceListXML directory." ) );
+    }
+
+    KDReports::ErrorDetails details;
+    if(!reportElectrical.loadFromXML(&reportFile, &details)) {
+        QMessageBox::warning(0, QObject::tr("Warning"), QObject::tr("Could not parse report description file:\n%1" ).arg(details.message()) );
+        reportFile.close();
+    }
 
     KDReports::PreviewDialog preview(&reportElectrical);
     preview.setDefaultSaveDirectory(QDir::homePath());
@@ -321,4 +349,15 @@ void bussinessManager::slt_logRFTE()
         mRFTE->btnLogRfte->setStyleSheet(logColor);
     }
 }
+
+void bussinessManager::slt_resultTest(bool state)
+{
+    if (state == true) {
+        reportElectrical.associateTextValue("resultCable", QString::fromUtf8("PASS"));
+    }
+    else {
+        reportElectrical.associateTextValue("resultCable", QString::fromUtf8("FAIL"));
+    }
+}
+
 

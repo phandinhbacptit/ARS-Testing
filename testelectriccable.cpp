@@ -31,7 +31,6 @@ TestElectricCable::TestElectricCable(QWidget *parent) :
     layoutPdfCableTest->setContentsMargins(1,1,1,1);
     ui->pdfShow->setLayout(layoutPdfCableTest);
     ui->pdfShow->show();
-
 }
 TestElectricCable::~TestElectricCable()
 {
@@ -162,3 +161,228 @@ void TestElectricCable::on_detail_cable13_clicked()
 //    preview.setDefaultSaveDirectory(QDir::homePath());
 //    preview.exec();
 //}
+/**
+  * @brief  This function is used to check state of Checkbox ALL cable to checked/unchecked all cable
+  * @note
+  * @param  checked - true: all cable was checked
+  *                   false: all cable unchecked
+  * @retval None
+***/
+void TestElectricCable::on_mCbAllCable_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbCable1->setChecked(true);
+        ui->mCbCable2->setChecked(true);
+        ui->mCbCable3->setChecked(true);
+        ui->mCbCable4->setChecked(true);
+        ui->mCbCable5->setChecked(true);
+        ui->mCbCable6->setChecked(true);
+        ui->mCbCable9->setChecked(true);
+        ui->mCbCable10->setChecked(true);
+        ui->mCbCable11->setChecked(true);
+        ui->mCbCable12->setChecked(true);
+        ui->mCbCable13->setChecked(true);
+    }
+    else {
+
+        ui->mCbCable1->setChecked(false);
+        ui->mCbCable2->setChecked(false);
+        ui->mCbCable3->setChecked(false);
+        ui->mCbCable4->setChecked(false);
+        ui->mCbCable5->setChecked(false);
+        ui->mCbCable6->setChecked(false);
+        ui->mCbCable9->setChecked(false);
+        ui->mCbCable10->setChecked(false);
+        ui->mCbCable11->setChecked(false);
+        ui->mCbCable12->setChecked(false);
+        ui->mCbCable13->setChecked(false);
+    }
+    emit sign_checkAllCable(checked);
+}
+/**
+  * @brief  This function is used to check state of Checkbox ALL to checked/unchecked all Rearpannel router
+  * @note
+  * @param  checked - true: all rearpannel router was checked
+  *                   false: all rearpannel router unchecked
+  * @retval None
+***/
+void TestElectricCable::on_mCbAllRear_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbAll_Pwr00B->setChecked(true);
+        ui->mCbCtr_All->setChecked(true);
+        ui->mCbLoIF_all->setChecked(true);
+        ui->mCbLoRF_All->setChecked(true);
+        ui->mCbRxSum_all->setChecked(true);
+        ui->mCbRxDiff_all->setChecked(true);
+        ui->mCbAll_Pwr00B->setChecked(true);
+        ui->mCbAll_AttDivider->setChecked(true);
+        ui->mCbKdcs_Pwr02->setChecked(true);
+        ui->mCbTx_power01A->setChecked(true);
+        ui->mCbXLTHPwr_pwr01B->setChecked(true);
+    }
+    else {
+        ui->mCbAll_Pwr00B->setChecked(false);
+        ui->mCbCtr_All->setChecked(false);
+        ui->mCbLoIF_all->setChecked(false);
+        ui->mCbLoRF_All->setChecked(false);
+        ui->mCbRxSum_all->setChecked(false);
+        ui->mCbRxDiff_all->setChecked(false);
+        ui->mCbAll_Pwr00B->setChecked(false);
+        ui->mCbAll_AttDivider->setChecked(false);
+        ui->mCbKdcs_Pwr02->setChecked(false);
+        ui->mCbTx_power01A->setChecked(false);
+        ui->mCbXLTHPwr_pwr01B->setChecked(false);
+    }
+    on_mCbCtr_All_clicked(checked);
+    on_mCbRxDiff_all_clicked(checked);
+    on_mCbRxSum_all_clicked(checked);
+    on_mCbLoIF_all_clicked(checked);
+    on_mCbLoRF_All_clicked(checked);
+    on_mCbAll_AttDivider_clicked(checked);
+    on_mCbAll_Pwr00B_clicked(checked);
+    emit sign_checkAllRear(checked);
+}
+/**
+  * @brief  This function is used to check state of Checkbox "CONTROL_R - ALL" to checked/unchecked all control router
+  * @note
+  * @param  checked - true: All control router was checked
+  *                   false: All control router unchecked
+  * @retval None
+***/
+void TestElectricCable::on_mCbCtr_All_clicked(bool checked)
+{
+    qDebug() << checked;
+    if (checked == true) {
+        ui->mCbCtr_enc->setChecked(true);
+        ui->mCbCtr_gyro->setChecked(true);
+        ui->mCbCtr_motor->setChecked(true);
+        ui->mCbCtr_pwr02->setChecked(true);
+        ui->mCbCtr_gpio1A->setChecked(true);
+        ui->mCbCtr_pwr01B->setChecked(true);
+        ui->mCbCtr_pwr01A->setChecked(true);
+    }
+    else {
+        ui->mCbCtr_enc->setChecked(false);
+        ui->mCbCtr_gyro->setChecked(false);
+        ui->mCbCtr_motor->setChecked(false);
+        ui->mCbCtr_pwr02->setChecked(false);
+        ui->mCbCtr_gpio1A->setChecked(false);
+        ui->mCbCtr_pwr01B->setChecked(false);
+        ui->mCbCtr_pwr01A->setChecked(false);
+    }
+}
+
+/**
+  * @brief  This function is used to check state of Checkbox "RX_DIFF_R - ALL" to checked/unchecked all Rx diff router
+  * @note
+  * @param  checked - true: All Rx Diff router was checked
+  *                   false: All Rx Diff router unchecked
+  * @retval None
+***/
+void TestElectricCable::on_mCbRxDiff_all_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbRxDiff_gpio0A->setChecked(true);
+        ui->mCbRxDiff_pwr01A->setChecked(true);
+    }
+    else {
+        ui->mCbRxDiff_gpio0A->setChecked(false);
+        ui->mCbRxDiff_pwr01A->setChecked(false);
+    }
+}
+/**
+  * @brief  This function is used to check state of Checkbox "RX_SUM_R - ALL" to checked/unchecked all Rx_SUM_R router
+  * @note
+  * @param  checked - true: All Rx_SUM_R router was checked
+  *                   false: All Rx_SUM_R router unchecked
+  * @retval None
+***/
+void TestElectricCable::on_mCbRxSum_all_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbRxSum_gpioA->setChecked(true);
+        ui->mCbRxSum_pwr01A->setChecked(true);
+    }
+    else {
+        ui->mCbRxSum_gpioA->setChecked(false);
+        ui->mCbRxSum_pwr01A->setChecked(false);
+    }
+}
+/**
+  * @brief  This function is used to check state of Checkbox "LO_IF_R - ALL" to checked/unchecked all LO_IF_R router
+  * @note
+  * @param  checked - true: All LO_IF_R router was checked
+  *                   false: All LO_IF_R router unchecked
+  * @retval None
+***/
+void TestElectricCable::on_mCbLoIF_all_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbLoIF_gpio0A->setChecked(true);
+        ui->mCbLoIF_gpio0B->setChecked(true);
+        ui->mCbLoIF_gpio1A->setChecked(true);
+    }
+    else {
+        ui->mCbLoIF_gpio0A->setChecked(false);
+        ui->mCbLoIF_gpio0B->setChecked(false);
+        ui->mCbLoIF_gpio1A->setChecked(false);
+    }
+}
+
+/**
+  * @brief  This function is used to check state of Checkbox "LO_IF_R - ALL" to checked/unchecked all LO_RF_R router
+  * @note
+  * @param  checked - true: All LO_RF_R router was checked
+  *                   false: All LO_RF_R router unchecked
+  * @retval None
+***/
+void TestElectricCable::on_mCbLoRF_All_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbLoRF_gpio0A->setChecked(true);
+        ui->mCbLoRF_gpio0B->setChecked(true);
+        ui->mCbLoRF_gpio1A->setChecked(true);
+    }
+    else {
+        ui->mCbLoRF_gpio0A->setChecked(false);
+        ui->mCbLoRF_gpio0B->setChecked(false);
+        ui->mCbLoRF_gpio1A->setChecked(false);
+    }
+}
+/**
+  * @brief  This function is used to check state of Checkbox "ATT_DIVIDER_TX_R - ALL" to checked/unchecked all ATT_DIVIDER_TX_R router
+  * @note
+  * @param  checked - true: All ATT_DIVIDER_TX_R router was checked
+  *                   false: All ATT_DIVIDER_TX_R router unchecked
+  * @retval None
+***/
+void TestElectricCable::on_mCbAll_AttDivider_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbAttDivider_pwr0A->setChecked(true);
+        ui->mCbAttDivider_gpio0A->setChecked(true);
+    }
+    else {
+        ui->mCbAttDivider_pwr0A->setChecked(false);
+        ui->mCbAttDivider_gpio0A->setChecked(false);
+    }
+}
+/**
+  * @brief  This function is used to check state of Checkbox "ALL - POWER00_B_R " to checked/unchecked all POWER00_B_R router
+  * @note
+  * @param  checked - true: All POWER00_B_R router was checked
+  *                   false: All POWER00_B_R router unchecked
+  * @retval None
+***/
+void TestElectricCable::on_mCbAll_Pwr00B_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCb27V_Pwr00B->setChecked(true);
+        ui->mCbGND_Pwr00B->setChecked(true);
+    }
+    else {
+        ui->mCb27V_Pwr00B->setChecked(false);
+        ui->mCbGND_Pwr00B->setChecked(false);
+    }
+}

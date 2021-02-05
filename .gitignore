@@ -4,5 +4,5 @@ MOC/*
 Makefile
 *.stash
 ARS-Testing
-ARS-Testing.pro.user
+ARS-Testing.pro.*
 

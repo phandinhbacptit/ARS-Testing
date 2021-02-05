@@ -60,17 +60,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp\
         mainwindow.cpp \
+    pdftask.cpp \
     testelectriccable.cpp \
     testrfcable.cpp \
     testmodule.cpp \
     testmechanical.cpp \
-    bussiness/bussinessmanager.cpp
+    bussiness/bussinessmanager.cpp \
+    tool/TableModel.cpp
 HEADERS += \
         mainwindow.h \
+    pdftask.h \
     testelectriccable.h \
     testrfcable.h \
     testmodule.h \
     testmechanical.h \
+    tool/TableModel.h \
+    tool/tools_export.h \
     userconfig.h \
     bussiness/bussinessmanager.h
 FORMS += \
@@ -128,3 +133,11 @@ unix:!macx: LIBS += -L$$PWD/libKdReport/lib/ -lkdreports
 
 INCLUDEPATH += $$PWD/libKdReport/include
 DEPENDPATH += $$PWD/libKdReport/include
+
+unix:!macx: LIBS += -L$$PWD/qtCsv/lib/ -lqtcsv
+
+INCLUDEPATH += $$PWD/qtCsv/include
+DEPENDPATH += $$PWD/qtCsv/include
+
+INCLUDEPATH += $$PWD/tool
+DEPENDPATH += $$PWD/tool

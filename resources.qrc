@@ -50,5 +50,9 @@
         <file>images/module_test_disable.png</file>
         <file>images/rf_cable_test_disable.png</file>
     </qresource>
-    <qresource prefix="/"/>
+    <qresource prefix="/File">
+        <file>libKdReport/xml/PriceList.xml</file>
+        <file>libKdReport/xml/table1.csv</file>
+        <file>libKdReport/xml/table2.csv</file>
+    </qresource>
 </RCC>

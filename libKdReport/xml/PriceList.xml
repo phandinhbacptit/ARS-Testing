@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<report xmlns="http://www.kdab.com/kdreports" header-body-spacing="10" footer-body-spacing="10" pointsize="10">
+  <header location="odd">
+    <tabs>
+       <tab type="center" position="page"/>
+       <tab type="right" position="page"/>
+    </tabs>
+    <text bold = "true" pointsize = "25"> Test Report &#x9; &#x9; </text>
+    <image inline = "true" position="right" file=":/Test/images/logo_vtx.png" width="15%"/>
+    <text>_____________________________________________________________________________________ </text>
+    <text pointsize = "18"  bold = "true" alignment = "left" id = "resultCable" />
+    <text inline = "true" pointsize = "10" bold = "false" >&#x9; Test Date: </text>
+    <variable bold = "true" type = "textdate"/>
+    <text inline = "true" pointsize = "10" bold = "false" >&#x9; Run Number: </text>
+    <text inline = "true" pointsize = "10" bold = "true" id = "text"/>
+
+    <text pointsize = "10" bold = "false" > Name Cable: </text>
+    <text inline = "true" pointsize = "10" bold = "true" id = "nameCable"/>
+    <text inline = "true" bold = "false" >&#x9; Test Time: </text>
+    <variable bold = "true" type ="texttime"/>
+    <text inline = "true" bold = "false" >&#x9; Place: </text>
+    <variable bold = "true" type = "text"/>
+    <text>_____________________________________________________________________________________ </text>
+    <text pointsize = "10" > Excutor: </text>
+    <text pointsize = "10" inline = "true" bold = "true"  id = "name_excutor" />
+    <text pointsize = "10" inline = "true" > &#x9; ID Excutor: </text>
+    <text pointsize = "10" inline = "true" bold = "true" id = "id_excutor" />
+    <text pointsize = "10" inline = "true" > &#x9; WorkPlace: </text>
+    <text pointsize = "10" inline = "true" bold = "true" id = "work_excutor" />
+
+    <text pointsize = "10" > Supervisor: </text>
+    <text pointsize = "10" inline = "true" bold = "true" id = "name_supervisor" />
+    <text pointsize = "10" inline = "true" > &#x9; ID Supervisor: </text>
+    <text pointsize = "10" inline = "true" bold = "true" id = "id_supervisor" />
+    <text pointsize = "10" inline = "true" > &#x9; WorkPlace: </text>
+    <text pointsize = "10" inline = "true" bold = "true" id = "work_supervisor" />
+    <text>_____________________________________________________________________________________ </text>
+
+  </header>
+
+  <header location="even">
+    <tabs>
+       <tab type="center" position="page"/>
+       <tab type="right" position="page"/>
+    </tabs>
+    <image file=":/kdab_small.jpg" width="30%"/>
+
+    <text inline="true">&#x9;</text>
+    <text inline="true">Even pages header: </text>
+    <variable type="pagenumber"/>
+    <text inline="true"> / </text>
+    <variable type="pagecount"/>
+  </header>
+
+  <footer>
+    <text alignment="right" id="name_supervisor"/>
+  </footer>
+
+  <text pointsize="18" alignment="hcenter" id="title_element"/>
+  <vspace size="1"/>
+  <text bold="true" paragraph-background="#CCCCFF" id="table1_title"/>
+  <table model="table1" width="100%"/>
+  <vspace size="1"/>
+  
+  <text bold="true" paragraph-background="#CCCCFF" id="table2_title"/>
+  <table model="table2" width="100%"/>
+
+  <page-break/>
+
+  <hr/>
+
+</report>
+

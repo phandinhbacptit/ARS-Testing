@@ -26,10 +26,6 @@ private slots:
 
     void on_btnMainExit_clicked();
 
-    void on_mBtModuleTest_clicked();
-
-    void on_mBtRfTest_clicked();
-
 private:
     Ui::MainWindow *mUi;
 };
