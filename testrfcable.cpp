@@ -35,7 +35,6 @@ TestRfCable::TestRfCable(QWidget *parent) :
     mTimeLineRf->limitChartLenght(5000);
     mTimeLineRf->setUpdateDataFromChart(true);
 
-
     int a = 20;
     mTimeLineRf->addTimeLine(&a, "Timline1");
     mTimeLineRf->addTimeLine(&a, "Timline2");
@@ -140,8 +139,19 @@ void TestRfCable::on_mCbRfAll_clicked(bool checked)
     }
 }
 
-void TestRfCable::loadFile1(const QString &path)
+
+/**
+  * @brief  This function is used to Open PDF Guilde file
+  * @note
+  * @param  path - path load pdf show in display area
+  * @retval 0 - if file is empty
+  *         1 - if read file Successfull
+***/
+void TestRfCable::onOpenFile(QString path)
 {
+    if (path.isEmpty()) {
+        return;
+    }
     if (m_pPdfWidget->loadFile(path)) {
         // Update window title with the file name
         QFileInfo fi(path);
@@ -149,168 +159,161 @@ void TestRfCable::loadFile1(const QString &path)
     }
 }
 
-
-int TestRfCable::onOpenFile1(QString path)
-{
-    if (path.isEmpty()) {
-        return 0;
-    }
-
-    loadFile1(path);
-    return 1;
-}
-
 void TestRfCable::on_detailRf1_clicked()
 {
-
+    onOpenFile(cableRf1);
+    qDebug() << "Select cable1";
 }
 
 void TestRfCable::on_detailRf2_clicked()
 {
-
+    onOpenFile(cableRf2);
+    qDebug() << "Select cable2";
 }
 
 void TestRfCable::on_detailRf3_clicked()
 {
-
+    onOpenFile(cableRf3);
+    qDebug() << "Select cable3";
 }
 
 void TestRfCable::on_detailRf4_clicked()
 {
-
+    onOpenFile(cableRf4);
+    qDebug() << "Select cable4";
 }
 
 void TestRfCable::on_detailRf5_clicked()
 {
-
+    onOpenFile(cableRf5);
 }
 
 void TestRfCable::on_detailRf6_clicked()
 {
-
+    onOpenFile(cableRf6);
 }
 
 void TestRfCable::on_detailRf7_clicked()
 {
-
+    onOpenFile(cableRf7);
 }
 
 void TestRfCable::on_detailRf8_clicked()
 {
-
+    onOpenFile(cableRf8);
 }
 
 void TestRfCable::on_detailRf9_clicked()
 {
-
+    onOpenFile(cableRf9);
 }
 
 void TestRfCable::on_detailRf10_clicked()
 {
-
+    onOpenFile(cableRf10);
 }
 
 void TestRfCable::on_detailRf11_clicked()
 {
-
+    onOpenFile(cableRf11);
 }
 
 void TestRfCable::on_detailRf12_clicked()
 {
-
+    onOpenFile(cableRf12);
 }
 
 void TestRfCable::on_detailRf13_clicked()
 {
-
+    onOpenFile(cableRf13);
 }
 
 void TestRfCable::on_detailRf14_clicked()
 {
-
+    onOpenFile(cableRf14);
 }
 
 void TestRfCable::on_detailRf15_clicked()
 {
-
+    onOpenFile(cableRf15);
 }
 
 void TestRfCable::on_detailRf16_clicked()
 {
-
+    onOpenFile(cableRf16);
 }
 
 void TestRfCable::on_detailRf17_clicked()
 {
-
+    onOpenFile(cableRf17);
 }
 
 void TestRfCable::on_detailRf18_clicked()
 {
-
+    onOpenFile(cableRf18);
 }
 
 void TestRfCable::on_detailRf19_clicked()
 {
-
+    onOpenFile(cableRf19);
 }
 
 void TestRfCable::on_detailRf20_clicked()
 {
-
+    onOpenFile(cableRf20);
 }
 
 void TestRfCable::on_detailRf21_clicked()
 {
-
+    onOpenFile(cableRf21);
 }
 
 void TestRfCable::on_detailRf22_clicked()
 {
-
+    onOpenFile(cableRf22);
 }
 
 void TestRfCable::on_detailRf23_clicked()
 {
-
+    onOpenFile(cableRf23);
 }
 
 void TestRfCable::on_detailRf24_clicked()
 {
-
+    onOpenFile(cableRf24);
 }
 
 void TestRfCable::on_detailRf25_clicked()
 {
-
+    onOpenFile(cableRf25);
 }
 
 void TestRfCable::on_detailRf26_clicked()
 {
-
+    onOpenFile(cableRf26);
 }
 
 void TestRfCable::on_detailRf27_clicked()
 {
-
+    onOpenFile(cableRf27);
 }
 
 void TestRfCable::on_detailRf28_clicked()
 {
-
+    onOpenFile(cableRf28);
 }
 
 void TestRfCable::on_detailRf29_clicked()
 {
-
+    onOpenFile(cableRf29);
 }
 
 void TestRfCable::on_detailRf30_clicked()
 {
-
+    onOpenFile(cableRf30);
 }
 
 void TestRfCable::on_detailRf31_clicked()
 {
-
+    onOpenFile(cableRf31);
 }

@@ -28,7 +28,7 @@ TestElectricCable::TestElectricCable(QWidget *parent) :
     m_pPdfWidget = new QPdfWidget(ui->pdfShow);
     QHBoxLayout *layoutPdfCableTest = new QHBoxLayout;
     layoutPdfCableTest->addWidget(m_pPdfWidget);
-    layoutPdfCableTest->setContentsMargins(1,1,1,1);
+    layoutPdfCableTest->setContentsMargins(0,1,0,1);
     ui->pdfShow->setLayout(layoutPdfCableTest);
     ui->pdfShow->show();
 }
@@ -52,39 +52,16 @@ void TestElectricCable::on_btn_exit_clicked()
     this->close();
 }
 
-void TestElectricCable::loadFile(const QString &path)
+void TestElectricCable::onOpenFile(QString path)
 {
+    if (path.isEmpty()) {
+        return;
+    } 
     if (m_pPdfWidget->loadFile(path)) {
         // Update window title with the file name
         QFileInfo fi(path);
         setWindowTitle(fi.fileName());
     }
-}
-
-void TestElectricCable::createActions()
-{
-//    m_pOpenFileAction = new QAction(QIcon(":/icons/folder.png"), tr("&Open..."), this);
-//    connect(m_pOpenFileAction, &QAction::triggered, this, &TestElectricCable::onOpenFile);
-}
-void TestElectricCable::createToolBar()
-{
-//    QToolBar *pToolBar = addToolBar(tr("File"));
-//    pToolBar->setMovable(false);
-//    pToolBar->addAction(m_pOpenFileAction);
-}
-
-void TestElectricCable::onOpenFile(QString path)
-{
-//    QString fileName = QFileDialog::getOpenFileName(this, tr("Open PDF file"),
-//                                                    QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation),
-//                                                    tr("PDF file (*.pdf)"));
-
-    //QString fileName ("/GuidleFile/guideline.pdf");
-    if (path.isEmpty()) {
-        return;
-    }
-
-    loadFile(path);
 }
 
 void TestElectricCable::on_detail_cable1_clicked()

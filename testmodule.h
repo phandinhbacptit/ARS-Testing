@@ -27,6 +27,12 @@ public:
     kmWidgetChart* mTimeLine;
 
 private slots:
+
+    void on_mCbAll_clicked(bool checked);
+    void on_mCbControl_all_clicked(bool checked);
+    void on_mCbGyro_all_clicked(bool checked);
+    void on_mCbMotor_all_clicked(bool checked);
+    void on_mCbEnc_all_clicked(bool checked);
     void on_pushButton_12_clicked();
 };
 

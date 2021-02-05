@@ -31,7 +31,7 @@ public:
 private slots:
     void on_pushButton_63_clicked();
     void on_mCbRfAll_clicked(bool checked);
-    int onOpenFile1(QString path);
+    void onOpenFile(QString path);
 
     void on_detailRf1_clicked();
 
@@ -96,15 +96,12 @@ private slots:
     void on_detailRf31_clicked();
 
 public slots:
-    void loadFile1(const QString &path);
 
 private:
     Ui::TestRfCable *ui;
     QPdfWidget *m_pPdfWidget;
     QAction *m_pOpenFileAction;
 
-    void createActions();
-    void createToolBar();
 
 
 public:

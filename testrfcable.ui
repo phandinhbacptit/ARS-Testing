@@ -96,7 +96,7 @@ background-color:none;</string>
       <item row="0" column="3">
        <widget class="QLabel" name="label_4">
         <property name="text">
-         <string>  </string>
+         <string/>
         </property>
        </widget>
       </item>
@@ -115,7 +115,7 @@ background-color:none;</string>
       <item row="0" column="5">
        <widget class="QLabel" name="label_5">
         <property name="text">
-         <string>  </string>
+         <string/>
         </property>
        </widget>
       </item>
@@ -195,6 +195,14 @@ QScrollArea {
           </item>
           <item row="23" column="1">
            <widget class="QPushButton" name="detailRf21">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -237,6 +245,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -246,6 +260,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="11" column="1">
            <widget class="QPushButton" name="detailRf10">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -266,6 +288,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="19" column="4">
            <widget class="QPushButton" name="pushButton_48">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -315,6 +345,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="11" column="4">
            <widget class="QPushButton" name="pushButton_23">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -335,6 +373,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="30" column="1">
            <widget class="QPushButton" name="detailRf28">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -364,6 +410,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -373,6 +425,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="24" column="4">
            <widget class="QPushButton" name="pushButton_53">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -423,6 +483,14 @@ background-color: none;</string>
           </item>
           <item row="31" column="1">
            <widget class="QPushButton" name="detailRf29">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -443,6 +511,14 @@ background-color: none;</string>
           </item>
           <item row="33" column="1">
            <widget class="QPushButton" name="detailRf31">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -485,6 +561,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -507,6 +589,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="30" column="4">
            <widget class="QPushButton" name="pushButton_59">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -540,6 +630,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="13" column="4">
            <widget class="QPushButton" name="pushButton_21">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -560,6 +658,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="27" column="4">
            <widget class="QPushButton" name="pushButton_56">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -589,6 +695,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -623,6 +735,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -658,6 +776,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="29" column="1">
            <widget class="QPushButton" name="detailRf27">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -678,6 +804,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="21" column="1">
            <widget class="QPushButton" name="detailRf19">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -707,6 +841,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -787,6 +927,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -796,6 +942,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="27" column="1">
            <widget class="QPushButton" name="detailRf25">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -816,6 +970,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="28" column="1">
            <widget class="QPushButton" name="detailRf26">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -836,6 +998,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="15" column="1">
            <widget class="QPushButton" name="detailRf13">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -856,6 +1026,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="24" column="1">
            <widget class="QPushButton" name="detailRf22">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -885,6 +1063,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -894,6 +1078,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="4" column="4">
            <widget class="QPushButton" name="pushButton_5">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -914,6 +1106,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="12" column="1">
            <widget class="QPushButton" name="detailRf11">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -947,6 +1147,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="25" column="4">
            <widget class="QPushButton" name="pushButton_54">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -986,6 +1194,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="16" column="4">
            <widget class="QPushButton" name="pushButton_45">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1015,6 +1231,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -1049,6 +1271,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -1058,6 +1286,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="18" column="1">
            <widget class="QPushButton" name="detailRf16">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1078,6 +1314,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="8" column="4">
            <widget class="QPushButton" name="pushButton_17">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1120,6 +1364,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -1151,6 +1401,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -1186,6 +1442,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="5" column="1">
            <widget class="QPushButton" name="detailRf4">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1207,7 +1471,7 @@ QCheckBox::indicator::checked
           <item row="2" column="2">
            <widget class="QLabel" name="label_7">
             <property name="styleSheet">
-             <string notr="true">background-color: rgb(252, 233, 79);</string>
+             <string notr="true">background-color: none;</string>
             </property>
             <property name="text">
              <string/>
@@ -1222,6 +1486,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="19" column="1">
            <widget class="QPushButton" name="detailRf17">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1294,6 +1566,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="33" column="4">
            <widget class="QPushButton" name="pushButton_62">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1327,6 +1607,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="2" column="1">
            <widget class="QPushButton" name="detailRf1">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1347,6 +1635,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="7" column="1">
            <widget class="QPushButton" name="detailRf6">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1409,6 +1705,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="7" column="4">
            <widget class="QPushButton" name="pushButton_19">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1429,6 +1733,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="28" column="4">
            <widget class="QPushButton" name="pushButton_57">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1449,6 +1761,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="16" column="1">
            <widget class="QPushButton" name="detailRf14">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1469,6 +1789,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="25" column="1">
            <widget class="QPushButton" name="detailRf23">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1515,6 +1843,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="10" column="1">
            <widget class="QPushButton" name="detailRf9">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1544,6 +1880,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -1562,6 +1904,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -1571,6 +1919,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="15" column="4">
            <widget class="QPushButton" name="pushButton_44">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1600,6 +1956,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -1609,6 +1971,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="23" column="4">
            <widget class="QPushButton" name="pushButton_52">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1642,6 +2012,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="9" column="4">
            <widget class="QPushButton" name="pushButton_18">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1662,6 +2040,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="17" column="4">
            <widget class="QPushButton" name="pushButton_46">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1682,6 +2068,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="4" column="1">
            <widget class="QPushButton" name="detailRf3">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1702,6 +2096,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="17" column="1">
            <widget class="QPushButton" name="detailRf15">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1722,6 +2124,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="12" column="4">
            <widget class="QPushButton" name="pushButton_22">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1751,6 +2161,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -1793,6 +2209,14 @@ background-color: none;</string>
           </item>
           <item row="32" column="4">
            <widget class="QPushButton" name="pushButton_61">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1813,6 +2237,14 @@ background-color: none;</string>
           </item>
           <item row="22" column="1">
            <widget class="QPushButton" name="detailRf20">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1842,6 +2274,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -1860,6 +2298,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -1882,6 +2326,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="26" column="4">
            <widget class="QPushButton" name="pushButton_55">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1911,6 +2363,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -1929,6 +2387,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -1951,6 +2415,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="8" column="1">
            <widget class="QPushButton" name="detailRf7">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1980,6 +2452,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -2014,6 +2492,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -2081,6 +2565,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="13" column="1">
            <widget class="QPushButton" name="detailRf12">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2117,6 +2609,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="10" column="4">
            <widget class="QPushButton" name="pushButton_24">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2209,6 +2709,14 @@ background-color: none;</string>
           </item>
           <item row="20" column="4">
            <widget class="QPushButton" name="pushButton_49">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2242,6 +2750,14 @@ background-color: none;</string>
           </item>
           <item row="26" column="1">
            <widget class="QPushButton" name="detailRf24">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2271,6 +2787,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -2280,6 +2802,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="6" column="1">
            <widget class="QPushButton" name="detailRf5">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2300,6 +2830,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="22" column="4">
            <widget class="QPushButton" name="pushButton_51">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2320,6 +2858,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="2" column="4">
            <widget class="QPushButton" name="pushButton_8">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2349,6 +2895,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -2391,6 +2943,14 @@ background-color: none;</string>
           </item>
           <item row="21" column="4">
            <widget class="QPushButton" name="pushButton_50">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2411,6 +2971,14 @@ background-color: none;</string>
           </item>
           <item row="32" column="1">
            <widget class="QPushButton" name="detailRf30">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2453,6 +3021,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -2475,6 +3049,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="6" column="4">
            <widget class="QPushButton" name="pushButton_20">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2504,6 +3086,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -2522,6 +3110,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -2544,6 +3138,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="18" column="4">
            <widget class="QPushButton" name="pushButton_47">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2573,6 +3175,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -2591,6 +3199,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -2600,6 +3214,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="5" column="4">
            <widget class="QPushButton" name="pushButton_6">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2620,6 +3242,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="29" column="4">
            <widget class="QPushButton" name="pushButton_58">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2640,6 +3270,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="20" column="1">
            <widget class="QPushButton" name="detailRf18">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2660,6 +3298,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="31" column="4">
            <widget class="QPushButton" name="pushButton_60">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2709,6 +3355,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="3" column="1">
            <widget class="QPushButton" name="detailRf2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2767,6 +3421,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -2801,6 +3461,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">
@@ -2836,6 +3502,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="3" column="4">
            <widget class="QPushButton" name="pushButton_7">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2875,6 +3549,14 @@ QCheckBox::indicator::checked
           </item>
           <item row="9" column="1">
            <widget class="QPushButton" name="detailRf8">
+            <property name="styleSheet">
+             <string notr="true">QPushButton::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2917,6 +3599,12 @@ QCheckBox::indicator::unchecked
 QCheckBox::indicator::checked
 {
 	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
 }</string>
             </property>
             <property name="text">

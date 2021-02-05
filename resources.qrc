@@ -49,6 +49,10 @@
         <file>images/mechanical_test_disable.png</file>
         <file>images/module_test_disable.png</file>
         <file>images/rf_cable_test_disable.png</file>
+        <file>images/button/connect.png</file>
+        <file>images/button/disconnect.png</file>
+        <file>images/button/connect.svg</file>
+        <file>images/button/disconnect.svg</file>
     </qresource>
     <qresource prefix="/File">
         <file>libKdReport/xml/PriceList.xml</file>

@@ -60,7 +60,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp\
         mainwindow.cpp \
-    pdftask.cpp \
     testelectriccable.cpp \
     testrfcable.cpp \
     testmodule.cpp \
@@ -69,7 +68,6 @@ SOURCES += \
     tool/TableModel.cpp
 HEADERS += \
         mainwindow.h \
-    pdftask.h \
     testelectriccable.h \
     testrfcable.h \
     testmodule.h \

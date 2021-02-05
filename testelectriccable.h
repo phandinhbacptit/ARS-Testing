@@ -35,7 +35,6 @@ signals:
     void sign_checkAllRear(bool state);
 
 public slots:
-    void loadFile(const QString &path);
 
 
 private slots:
@@ -63,8 +62,6 @@ private slots:
     void on_detail_cable12_clicked();
 
     void on_detail_cable13_clicked();
-
-//    void on_btnExportCte_clicked();
 
     void on_mCbAllCable_clicked(bool checked);
 

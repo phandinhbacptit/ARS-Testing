@@ -319,6 +319,12 @@ public:
 
         detailRf21 = new QPushButton(scrollAreaWidgetContents);
         detailRf21->setObjectName(QStringLiteral("detailRf21"));
+        detailRf21->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         QIcon icon1;
         icon1.addFile(QStringLiteral(":/Test/images/icon-detail_2.png"), QSize(), QIcon::Normal, QIcon::Off);
         detailRf21->setIcon(icon1);
@@ -344,12 +350,24 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf3, 4, 0, 1, 1);
 
         detailRf10 = new QPushButton(scrollAreaWidgetContents);
         detailRf10->setObjectName(QStringLiteral("detailRf10"));
+        detailRf10->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf10->setIcon(icon1);
         detailRf10->setIconSize(QSize(20, 20));
         detailRf10->setFlat(true);
@@ -358,6 +376,12 @@ public:
 
         pushButton_48 = new QPushButton(scrollAreaWidgetContents);
         pushButton_48->setObjectName(QStringLiteral("pushButton_48"));
+        pushButton_48->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         QIcon icon2;
         icon2.addFile(QStringLiteral(":/Test/images/result_icon_2.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_48->setIcon(icon2);
@@ -383,6 +407,12 @@ public:
 
         pushButton_23 = new QPushButton(scrollAreaWidgetContents);
         pushButton_23->setObjectName(QStringLiteral("pushButton_23"));
+        pushButton_23->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_23->setIcon(icon2);
         pushButton_23->setIconSize(QSize(20, 20));
         pushButton_23->setFlat(true);
@@ -391,6 +421,12 @@ public:
 
         detailRf28 = new QPushButton(scrollAreaWidgetContents);
         detailRf28->setObjectName(QStringLiteral("detailRf28"));
+        detailRf28->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf28->setIcon(icon1);
         detailRf28->setIconSize(QSize(20, 20));
         detailRf28->setFlat(true);
@@ -407,12 +443,24 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf31, 33, 0, 1, 1);
 
         pushButton_53 = new QPushButton(scrollAreaWidgetContents);
         pushButton_53->setObjectName(QStringLiteral("pushButton_53"));
+        pushButton_53->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_53->setIcon(icon2);
         pushButton_53->setIconSize(QSize(20, 20));
         pushButton_53->setFlat(true);
@@ -437,6 +485,12 @@ public:
 
         detailRf29 = new QPushButton(scrollAreaWidgetContents);
         detailRf29->setObjectName(QStringLiteral("detailRf29"));
+        detailRf29->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf29->setIcon(icon1);
         detailRf29->setIconSize(QSize(20, 20));
         detailRf29->setFlat(true);
@@ -445,6 +499,12 @@ public:
 
         detailRf31 = new QPushButton(scrollAreaWidgetContents);
         detailRf31->setObjectName(QStringLiteral("detailRf31"));
+        detailRf31->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf31->setIcon(icon1);
         detailRf31->setIconSize(QSize(20, 20));
         detailRf31->setFlat(true);
@@ -468,6 +528,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf30, 32, 0, 1, 1);
@@ -481,6 +547,12 @@ public:
 
         pushButton_59 = new QPushButton(scrollAreaWidgetContents);
         pushButton_59->setObjectName(QStringLiteral("pushButton_59"));
+        pushButton_59->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_59->setIcon(icon2);
         pushButton_59->setIconSize(QSize(20, 20));
         pushButton_59->setFlat(true);
@@ -496,6 +568,12 @@ public:
 
         pushButton_21 = new QPushButton(scrollAreaWidgetContents);
         pushButton_21->setObjectName(QStringLiteral("pushButton_21"));
+        pushButton_21->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_21->setIcon(icon2);
         pushButton_21->setIconSize(QSize(20, 20));
         pushButton_21->setFlat(true);
@@ -504,6 +582,12 @@ public:
 
         pushButton_56 = new QPushButton(scrollAreaWidgetContents);
         pushButton_56->setObjectName(QStringLiteral("pushButton_56"));
+        pushButton_56->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_56->setIcon(icon2);
         pushButton_56->setIconSize(QSize(20, 20));
         pushButton_56->setFlat(true);
@@ -520,6 +604,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf18, 20, 0, 1, 1);
@@ -542,6 +632,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf24, 26, 0, 1, 1);
@@ -562,6 +658,12 @@ public:
 
         detailRf27 = new QPushButton(scrollAreaWidgetContents);
         detailRf27->setObjectName(QStringLiteral("detailRf27"));
+        detailRf27->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf27->setIcon(icon1);
         detailRf27->setIconSize(QSize(20, 20));
         detailRf27->setFlat(true);
@@ -570,6 +672,12 @@ public:
 
         detailRf19 = new QPushButton(scrollAreaWidgetContents);
         detailRf19->setObjectName(QStringLiteral("detailRf19"));
+        detailRf19->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf19->setIcon(icon1);
         detailRf19->setIconSize(QSize(20, 20));
         detailRf19->setFlat(true);
@@ -586,6 +694,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf26, 28, 0, 1, 1);
@@ -639,12 +753,24 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf6, 7, 0, 1, 1);
 
         detailRf25 = new QPushButton(scrollAreaWidgetContents);
         detailRf25->setObjectName(QStringLiteral("detailRf25"));
+        detailRf25->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf25->setIcon(icon1);
         detailRf25->setIconSize(QSize(20, 20));
         detailRf25->setFlat(true);
@@ -653,6 +779,12 @@ public:
 
         detailRf26 = new QPushButton(scrollAreaWidgetContents);
         detailRf26->setObjectName(QStringLiteral("detailRf26"));
+        detailRf26->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf26->setIcon(icon1);
         detailRf26->setIconSize(QSize(20, 20));
         detailRf26->setFlat(true);
@@ -661,6 +793,12 @@ public:
 
         detailRf13 = new QPushButton(scrollAreaWidgetContents);
         detailRf13->setObjectName(QStringLiteral("detailRf13"));
+        detailRf13->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf13->setIcon(icon1);
         detailRf13->setIconSize(QSize(20, 20));
         detailRf13->setFlat(true);
@@ -669,6 +807,12 @@ public:
 
         detailRf22 = new QPushButton(scrollAreaWidgetContents);
         detailRf22->setObjectName(QStringLiteral("detailRf22"));
+        detailRf22->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf22->setIcon(icon1);
         detailRf22->setIconSize(QSize(20, 20));
         detailRf22->setFlat(true);
@@ -685,12 +829,24 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf14, 16, 0, 1, 1);
 
         pushButton_5 = new QPushButton(scrollAreaWidgetContents);
         pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
+        pushButton_5->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_5->setIcon(icon2);
         pushButton_5->setIconSize(QSize(20, 20));
         pushButton_5->setFlat(true);
@@ -699,6 +855,12 @@ public:
 
         detailRf11 = new QPushButton(scrollAreaWidgetContents);
         detailRf11->setObjectName(QStringLiteral("detailRf11"));
+        detailRf11->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf11->setIcon(icon1);
         detailRf11->setIconSize(QSize(20, 20));
         detailRf11->setFlat(true);
@@ -714,6 +876,12 @@ public:
 
         pushButton_54 = new QPushButton(scrollAreaWidgetContents);
         pushButton_54->setObjectName(QStringLiteral("pushButton_54"));
+        pushButton_54->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_54->setIcon(icon2);
         pushButton_54->setIconSize(QSize(20, 20));
         pushButton_54->setFlat(true);
@@ -735,6 +903,12 @@ public:
 
         pushButton_45 = new QPushButton(scrollAreaWidgetContents);
         pushButton_45->setObjectName(QStringLiteral("pushButton_45"));
+        pushButton_45->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_45->setIcon(icon2);
         pushButton_45->setIconSize(QSize(20, 20));
         pushButton_45->setFlat(true);
@@ -751,6 +925,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf9, 10, 0, 1, 1);
@@ -773,12 +953,24 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf23, 25, 0, 1, 1);
 
         detailRf16 = new QPushButton(scrollAreaWidgetContents);
         detailRf16->setObjectName(QStringLiteral("detailRf16"));
+        detailRf16->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf16->setIcon(icon1);
         detailRf16->setIconSize(QSize(20, 20));
         detailRf16->setFlat(true);
@@ -787,6 +979,12 @@ public:
 
         pushButton_17 = new QPushButton(scrollAreaWidgetContents);
         pushButton_17->setObjectName(QStringLiteral("pushButton_17"));
+        pushButton_17->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_17->setIcon(icon2);
         pushButton_17->setIconSize(QSize(20, 20));
         pushButton_17->setFlat(true);
@@ -810,6 +1008,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf10, 11, 0, 1, 1);
@@ -831,6 +1035,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf11, 12, 0, 1, 1);
@@ -851,6 +1061,12 @@ public:
 
         detailRf4 = new QPushButton(scrollAreaWidgetContents);
         detailRf4->setObjectName(QStringLiteral("detailRf4"));
+        detailRf4->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf4->setIcon(icon1);
         detailRf4->setIconSize(QSize(20, 20));
         detailRf4->setFlat(true);
@@ -859,7 +1075,7 @@ public:
 
         label_7 = new QLabel(scrollAreaWidgetContents);
         label_7->setObjectName(QStringLiteral("label_7"));
-        label_7->setStyleSheet(QStringLiteral("background-color: rgb(252, 233, 79);"));
+        label_7->setStyleSheet(QStringLiteral("background-color: none;"));
         label_7->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_7->setAlignment(Qt::AlignCenter);
 
@@ -867,6 +1083,12 @@ public:
 
         detailRf17 = new QPushButton(scrollAreaWidgetContents);
         detailRf17->setObjectName(QStringLiteral("detailRf17"));
+        detailRf17->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf17->setIcon(icon1);
         detailRf17->setIconSize(QSize(20, 20));
         detailRf17->setFlat(true);
@@ -903,6 +1125,12 @@ public:
 
         pushButton_62 = new QPushButton(scrollAreaWidgetContents);
         pushButton_62->setObjectName(QStringLiteral("pushButton_62"));
+        pushButton_62->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_62->setIcon(icon2);
         pushButton_62->setIconSize(QSize(20, 20));
         pushButton_62->setFlat(true);
@@ -918,6 +1146,12 @@ public:
 
         detailRf1 = new QPushButton(scrollAreaWidgetContents);
         detailRf1->setObjectName(QStringLiteral("detailRf1"));
+        detailRf1->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf1->setIcon(icon1);
         detailRf1->setIconSize(QSize(20, 20));
         detailRf1->setFlat(true);
@@ -926,6 +1160,12 @@ public:
 
         detailRf6 = new QPushButton(scrollAreaWidgetContents);
         detailRf6->setObjectName(QStringLiteral("detailRf6"));
+        detailRf6->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf6->setIcon(icon1);
         detailRf6->setIconSize(QSize(20, 20));
         detailRf6->setFlat(true);
@@ -956,6 +1196,12 @@ public:
 
         pushButton_19 = new QPushButton(scrollAreaWidgetContents);
         pushButton_19->setObjectName(QStringLiteral("pushButton_19"));
+        pushButton_19->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_19->setIcon(icon2);
         pushButton_19->setIconSize(QSize(20, 20));
         pushButton_19->setFlat(true);
@@ -964,6 +1210,12 @@ public:
 
         pushButton_57 = new QPushButton(scrollAreaWidgetContents);
         pushButton_57->setObjectName(QStringLiteral("pushButton_57"));
+        pushButton_57->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_57->setIcon(icon2);
         pushButton_57->setIconSize(QSize(20, 20));
         pushButton_57->setFlat(true);
@@ -972,6 +1224,12 @@ public:
 
         detailRf14 = new QPushButton(scrollAreaWidgetContents);
         detailRf14->setObjectName(QStringLiteral("detailRf14"));
+        detailRf14->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf14->setIcon(icon1);
         detailRf14->setIconSize(QSize(20, 20));
         detailRf14->setFlat(true);
@@ -980,6 +1238,12 @@ public:
 
         detailRf23 = new QPushButton(scrollAreaWidgetContents);
         detailRf23->setObjectName(QStringLiteral("detailRf23"));
+        detailRf23->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf23->setIcon(icon1);
         detailRf23->setIconSize(QSize(20, 20));
         detailRf23->setFlat(true);
@@ -1002,6 +1266,12 @@ public:
 
         detailRf9 = new QPushButton(scrollAreaWidgetContents);
         detailRf9->setObjectName(QStringLiteral("detailRf9"));
+        detailRf9->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf9->setIcon(icon1);
         detailRf9->setIconSize(QSize(20, 20));
         detailRf9->setFlat(true);
@@ -1018,6 +1288,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf21, 23, 0, 1, 1);
@@ -1032,12 +1308,24 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf7, 8, 0, 1, 1);
 
         pushButton_44 = new QPushButton(scrollAreaWidgetContents);
         pushButton_44->setObjectName(QStringLiteral("pushButton_44"));
+        pushButton_44->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_44->setIcon(icon2);
         pushButton_44->setIconSize(QSize(20, 20));
         pushButton_44->setFlat(true);
@@ -1054,12 +1342,24 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf4, 5, 0, 1, 1);
 
         pushButton_52 = new QPushButton(scrollAreaWidgetContents);
         pushButton_52->setObjectName(QStringLiteral("pushButton_52"));
+        pushButton_52->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_52->setIcon(icon2);
         pushButton_52->setIconSize(QSize(20, 20));
         pushButton_52->setFlat(true);
@@ -1075,6 +1375,12 @@ public:
 
         pushButton_18 = new QPushButton(scrollAreaWidgetContents);
         pushButton_18->setObjectName(QStringLiteral("pushButton_18"));
+        pushButton_18->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_18->setIcon(icon2);
         pushButton_18->setIconSize(QSize(20, 20));
         pushButton_18->setFlat(true);
@@ -1083,6 +1389,12 @@ public:
 
         pushButton_46 = new QPushButton(scrollAreaWidgetContents);
         pushButton_46->setObjectName(QStringLiteral("pushButton_46"));
+        pushButton_46->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_46->setIcon(icon2);
         pushButton_46->setIconSize(QSize(20, 20));
         pushButton_46->setFlat(true);
@@ -1091,6 +1403,12 @@ public:
 
         detailRf3 = new QPushButton(scrollAreaWidgetContents);
         detailRf3->setObjectName(QStringLiteral("detailRf3"));
+        detailRf3->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf3->setIcon(icon1);
         detailRf3->setIconSize(QSize(20, 20));
         detailRf3->setFlat(true);
@@ -1099,6 +1417,12 @@ public:
 
         detailRf15 = new QPushButton(scrollAreaWidgetContents);
         detailRf15->setObjectName(QStringLiteral("detailRf15"));
+        detailRf15->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf15->setIcon(icon1);
         detailRf15->setIconSize(QSize(20, 20));
         detailRf15->setFlat(true);
@@ -1107,6 +1431,12 @@ public:
 
         pushButton_22 = new QPushButton(scrollAreaWidgetContents);
         pushButton_22->setObjectName(QStringLiteral("pushButton_22"));
+        pushButton_22->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_22->setIcon(icon2);
         pushButton_22->setIconSize(QSize(20, 20));
         pushButton_22->setFlat(true);
@@ -1123,6 +1453,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf19, 21, 0, 1, 1);
@@ -1146,6 +1482,12 @@ public:
 
         pushButton_61 = new QPushButton(scrollAreaWidgetContents);
         pushButton_61->setObjectName(QStringLiteral("pushButton_61"));
+        pushButton_61->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_61->setIcon(icon2);
         pushButton_61->setIconSize(QSize(20, 20));
         pushButton_61->setFlat(true);
@@ -1154,6 +1496,12 @@ public:
 
         detailRf20 = new QPushButton(scrollAreaWidgetContents);
         detailRf20->setObjectName(QStringLiteral("detailRf20"));
+        detailRf20->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf20->setIcon(icon1);
         detailRf20->setIconSize(QSize(20, 20));
         detailRf20->setFlat(true);
@@ -1170,6 +1518,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf25, 27, 0, 1, 1);
@@ -1184,6 +1538,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf27, 29, 0, 1, 1);
@@ -1197,6 +1557,12 @@ public:
 
         pushButton_55 = new QPushButton(scrollAreaWidgetContents);
         pushButton_55->setObjectName(QStringLiteral("pushButton_55"));
+        pushButton_55->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_55->setIcon(icon2);
         pushButton_55->setIconSize(QSize(20, 20));
         pushButton_55->setFlat(true);
@@ -1213,6 +1579,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf28, 30, 0, 1, 1);
@@ -1227,6 +1599,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf1, 2, 0, 1, 1);
@@ -1240,6 +1618,12 @@ public:
 
         detailRf7 = new QPushButton(scrollAreaWidgetContents);
         detailRf7->setObjectName(QStringLiteral("detailRf7"));
+        detailRf7->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf7->setIcon(icon1);
         detailRf7->setIconSize(QSize(20, 20));
         detailRf7->setFlat(true);
@@ -1256,6 +1640,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf2, 3, 0, 1, 1);
@@ -1278,6 +1668,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf16, 18, 0, 1, 1);
@@ -1314,6 +1710,12 @@ public:
 
         detailRf12 = new QPushButton(scrollAreaWidgetContents);
         detailRf12->setObjectName(QStringLiteral("detailRf12"));
+        detailRf12->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf12->setIcon(icon1);
         detailRf12->setIconSize(QSize(20, 20));
         detailRf12->setFlat(true);
@@ -1330,6 +1732,12 @@ public:
 
         pushButton_24 = new QPushButton(scrollAreaWidgetContents);
         pushButton_24->setObjectName(QStringLiteral("pushButton_24"));
+        pushButton_24->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_24->setIcon(icon2);
         pushButton_24->setIconSize(QSize(20, 20));
         pushButton_24->setFlat(true);
@@ -1376,6 +1784,12 @@ public:
 
         pushButton_49 = new QPushButton(scrollAreaWidgetContents);
         pushButton_49->setObjectName(QStringLiteral("pushButton_49"));
+        pushButton_49->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_49->setIcon(icon2);
         pushButton_49->setIconSize(QSize(20, 20));
         pushButton_49->setFlat(true);
@@ -1391,6 +1805,12 @@ public:
 
         detailRf24 = new QPushButton(scrollAreaWidgetContents);
         detailRf24->setObjectName(QStringLiteral("detailRf24"));
+        detailRf24->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf24->setIcon(icon1);
         detailRf24->setIconSize(QSize(20, 20));
         detailRf24->setFlat(true);
@@ -1407,12 +1827,24 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf8, 9, 0, 1, 1);
 
         detailRf5 = new QPushButton(scrollAreaWidgetContents);
         detailRf5->setObjectName(QStringLiteral("detailRf5"));
+        detailRf5->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf5->setIcon(icon1);
         detailRf5->setIconSize(QSize(20, 20));
         detailRf5->setFlat(true);
@@ -1421,6 +1853,12 @@ public:
 
         pushButton_51 = new QPushButton(scrollAreaWidgetContents);
         pushButton_51->setObjectName(QStringLiteral("pushButton_51"));
+        pushButton_51->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_51->setIcon(icon2);
         pushButton_51->setIconSize(QSize(20, 20));
         pushButton_51->setFlat(true);
@@ -1429,6 +1867,12 @@ public:
 
         pushButton_8 = new QPushButton(scrollAreaWidgetContents);
         pushButton_8->setObjectName(QStringLiteral("pushButton_8"));
+        pushButton_8->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_8->setIcon(icon2);
         pushButton_8->setIconSize(QSize(20, 20));
         pushButton_8->setFlat(true);
@@ -1445,6 +1889,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf5, 6, 0, 1, 1);
@@ -1468,6 +1918,12 @@ public:
 
         pushButton_50 = new QPushButton(scrollAreaWidgetContents);
         pushButton_50->setObjectName(QStringLiteral("pushButton_50"));
+        pushButton_50->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_50->setIcon(icon2);
         pushButton_50->setIconSize(QSize(20, 20));
         pushButton_50->setFlat(true);
@@ -1476,6 +1932,12 @@ public:
 
         detailRf30 = new QPushButton(scrollAreaWidgetContents);
         detailRf30->setObjectName(QStringLiteral("detailRf30"));
+        detailRf30->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf30->setIcon(icon1);
         detailRf30->setIconSize(QSize(20, 20));
         detailRf30->setFlat(true);
@@ -1499,6 +1961,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf13, 15, 0, 1, 1);
@@ -1512,6 +1980,12 @@ public:
 
         pushButton_20 = new QPushButton(scrollAreaWidgetContents);
         pushButton_20->setObjectName(QStringLiteral("pushButton_20"));
+        pushButton_20->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_20->setIcon(icon2);
         pushButton_20->setIconSize(QSize(20, 20));
         pushButton_20->setFlat(true);
@@ -1528,6 +2002,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf17, 19, 0, 1, 1);
@@ -1542,6 +2022,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf29, 31, 0, 1, 1);
@@ -1555,6 +2041,12 @@ public:
 
         pushButton_47 = new QPushButton(scrollAreaWidgetContents);
         pushButton_47->setObjectName(QStringLiteral("pushButton_47"));
+        pushButton_47->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_47->setIcon(icon2);
         pushButton_47->setIconSize(QSize(20, 20));
         pushButton_47->setFlat(true);
@@ -1571,6 +2063,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf22, 24, 0, 1, 1);
@@ -1585,12 +2083,24 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf20, 22, 0, 1, 1);
 
         pushButton_6 = new QPushButton(scrollAreaWidgetContents);
         pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
+        pushButton_6->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_6->setIcon(icon2);
         pushButton_6->setIconSize(QSize(20, 20));
         pushButton_6->setFlat(true);
@@ -1599,6 +2109,12 @@ public:
 
         pushButton_58 = new QPushButton(scrollAreaWidgetContents);
         pushButton_58->setObjectName(QStringLiteral("pushButton_58"));
+        pushButton_58->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_58->setIcon(icon2);
         pushButton_58->setIconSize(QSize(20, 20));
         pushButton_58->setFlat(true);
@@ -1607,6 +2123,12 @@ public:
 
         detailRf18 = new QPushButton(scrollAreaWidgetContents);
         detailRf18->setObjectName(QStringLiteral("detailRf18"));
+        detailRf18->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf18->setIcon(icon1);
         detailRf18->setIconSize(QSize(20, 20));
         detailRf18->setFlat(true);
@@ -1615,6 +2137,12 @@ public:
 
         pushButton_60 = new QPushButton(scrollAreaWidgetContents);
         pushButton_60->setObjectName(QStringLiteral("pushButton_60"));
+        pushButton_60->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_60->setIcon(icon2);
         pushButton_60->setIconSize(QSize(20, 20));
         pushButton_60->setFlat(true);
@@ -1638,6 +2166,12 @@ public:
 
         detailRf2 = new QPushButton(scrollAreaWidgetContents);
         detailRf2->setObjectName(QStringLiteral("detailRf2"));
+        detailRf2->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf2->setIcon(icon1);
         detailRf2->setIconSize(QSize(20, 20));
         detailRf2->setFlat(true);
@@ -1669,6 +2203,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf15, 17, 0, 1, 1);
@@ -1691,6 +2231,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbCableRf12, 13, 0, 1, 1);
@@ -1711,6 +2257,12 @@ public:
 
         pushButton_7 = new QPushButton(scrollAreaWidgetContents);
         pushButton_7->setObjectName(QStringLiteral("pushButton_7"));
+        pushButton_7->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         pushButton_7->setIcon(icon2);
         pushButton_7->setIconSize(QSize(20, 20));
         pushButton_7->setFlat(true);
@@ -1732,6 +2284,12 @@ public:
 
         detailRf8 = new QPushButton(scrollAreaWidgetContents);
         detailRf8->setObjectName(QStringLiteral("detailRf8"));
+        detailRf8->setStyleSheet(QLatin1String("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
         detailRf8->setIcon(icon1);
         detailRf8->setIconSize(QSize(20, 20));
         detailRf8->setFlat(true);
@@ -1755,6 +2313,12 @@ public:
 "QCheckBox::indicator::checked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
 
         gridLayout_3->addWidget(mCbRfAll, 1, 0, 1, 1);

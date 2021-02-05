@@ -42,6 +42,87 @@ testModule::~testModule()
     delete ui;
 }
 
+
+void testModule::on_mCbAll_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbGyro_all->setChecked(true);
+        ui->mCbEnc_all->setChecked(true);
+        ui->mCbMotor_all->setChecked(true);
+        ui->mCbControl_all->setChecked(true);
+    }
+    else {
+        ui->mCbGyro_all->setChecked(false);
+        ui->mCbEnc_all->setChecked(false);
+        ui->mCbMotor_all->setChecked(false);
+        ui->mCbControl_all->setChecked(false);
+    }
+    on_mCbControl_all_clicked(checked);
+    on_mCbGyro_all_clicked(checked);
+    on_mCbMotor_all_clicked(checked);
+    on_mCbEnc_all_clicked(checked);
+}
+
+void testModule::on_mCbControl_all_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbControl_gyro->setChecked(true);
+        ui->mCbControl_bite->setChecked(true);
+        ui->mCbControl_xlth->setChecked(true);
+        ui->mCbControl_kdcs->setChecked(true);
+        ui->mCbControl_encAzi->setChecked(true);
+        ui->mCbControl_encElv->setChecked(true);
+        ui->mCbControl_MotorElv->setChecked(true);
+        ui->mCbControl_motorAzi->setChecked(true);
+    }
+    else {
+        ui->mCbControl_gyro->setChecked(false);
+        ui->mCbControl_bite->setChecked(false);
+        ui->mCbControl_xlth->setChecked(false);
+        ui->mCbControl_kdcs->setChecked(false);
+        ui->mCbControl_encAzi->setChecked(false);
+        ui->mCbControl_encElv->setChecked(false);
+        ui->mCbControl_MotorElv->setChecked(false);
+        ui->mCbControl_motorAzi->setChecked(false);
+    }
+}
+
+void testModule::on_mCbGyro_all_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbGyro_azi->setChecked(true);
+        ui->mCbGyro_elv->setChecked(true);
+    }
+    else {
+        ui->mCbGyro_azi->setChecked(false);
+        ui->mCbGyro_elv->setChecked(false);
+    }
+}
+
+void testModule::on_mCbMotor_all_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbMotor_azi->setChecked(true);
+        ui->mCbMotor_elv->setChecked(true);
+    }
+    else {
+        ui->mCbMotor_azi->setChecked(false);
+        ui->mCbMotor_elv->setChecked(false);
+    }
+}
+
+void testModule::on_mCbEnc_all_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbEnc_azi->setChecked(true);
+        ui->mCbEnc_elv->setChecked(true);
+    }
+    else {
+        ui->mCbEnc_azi->setChecked(false);
+        ui->mCbEnc_elv->setChecked(false);
+    }
+}
+
 void testModule::on_pushButton_12_clicked()
 {
     this->close();
