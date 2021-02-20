@@ -24,13 +24,13 @@
 #include "userconfig.h"
 #include "testrfcable.h"
 
-#include "KDReports/KDReports.h"
-#include "KDReports/KDReportsReport.h"
-#include "KDReports/KDReportsTableElement.h"
-#include "KDReports/KDReportsChartElement.h"
-#include "KDReports/KDReportsTextElement.h"
-#include "KDReports/KDReportsHtmlElement.h"
-#include "KDReports/KDReportsPreviewDialog.h"
+//#include "KDReports/KDReports.h"
+//#include "KDReports/KDReportsReport.h"
+//#include "KDReports/KDReportsTableElement.h"
+//#include "KDReports/KDReportsChartElement.h"
+//#include "KDReports/KDReportsTextElement.h"
+//#include "KDReports/KDReportsHtmlElement.h"
+//#include "KDReports/KDReportsPreviewDialog.h"
 
 
 class bussinessManager : public QObject
@@ -56,14 +56,30 @@ public slots:
     void slt_exportCteReport();
 
     void slt_showCteInterface();
+    /*____Cable test equipment___*/
     void slt_runCTE();
     void slt_logCTE();
+    void slt_stopCTE();
 
+    /*____Module test equipment___*/
     void slt_runMTE();
     void slt_logMTE();
+    void slt_stopMTE();
 
+    /*____RF test equipment___*/
     void slt_runRFTE();
     void slt_logRFTE();
+    void slt_stopRFTE();
+
+    /*___Connect Equipment____*/
+    void slt_connDcPower();
+    void slt_connDcLoad();
+    void slt_connOsiloscope();
+    void slt_connNoiseSource();
+    void slt_connSpectumeAnalizer();
+    void slt_connNetworkAnalizer();
+    void slt_connWaveGeneration();
+    void slt_connSignalGeneration();
 
     void slt_showMteInterface();
     void slt_showRfteInterface();
@@ -82,7 +98,7 @@ private:
     testModule *mTestModule;
     TestRfCable *mTestRfCable;
 
-    KDReports::Report reportElectrical;
+//    KDReports::Report reportElectrical;
 
     int cntRunCte = 0;
     int cntLogCte = 0;
@@ -92,6 +108,7 @@ private:
 
     int cntRunRfte = 0;
     int cntLogRfte = 0;
+    int stateCnDCPwr = 0, stateCnDCLoad = 0, stateCnOsl = 0, stateCnNoiseSrc = 0, stateCnSpecAnalizer = 0, stateCnNetAnalizer = 0, stateCnWaveGen = 0, stateCnSignGen= 0;
 };
 
 #endif // BUSSINESSMANAGER_H

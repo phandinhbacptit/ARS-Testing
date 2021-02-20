@@ -19,6 +19,8 @@
 #include <QVBoxLayout>
 #include "pdfjsbridge.h"
 #include "qpdfwidget.h"
+#include "QUrl"
+#include "QDir"
 
 // NOTE:
 // There is this bug in Qt https://bugreports.qt.io/browse/QTBUG-46973

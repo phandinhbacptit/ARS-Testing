@@ -154,7 +154,7 @@ background-color:none;</string>
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>-607</y>
+           <y>0</y>
            <width>473</width>
            <height>1025</height>
           </rect>
@@ -3905,24 +3905,21 @@ color: rgb(49, 67, 100);
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <layout class="QGridLayout" name="gridLayout_6" rowstretch="2,8,2,0">
+     <layout class="QGridLayout" name="gridLayout_9" rowstretch="2,10,1" columnstretch="3,1">
       <property name="leftMargin">
-       <number>5</number>
+       <number>0</number>
       </property>
       <property name="topMargin">
        <number>0</number>
       </property>
       <property name="rightMargin">
-       <number>1</number>
+       <number>0</number>
       </property>
       <property name="bottomMargin">
-       <number>1</number>
-      </property>
-      <property name="horizontalSpacing">
-       <number>1</number>
-      </property>
-      <property name="verticalSpacing">
        <number>0</number>
+      </property>
+      <property name="spacing">
+       <number>1</number>
       </property>
       <item row="0" column="0">
        <widget class="QLabel" name="label_2">
@@ -3937,7 +3934,27 @@ font: bold;
         </property>
        </widget>
       </item>
-      <item row="3" column="0">
+      <item row="1" column="0">
+       <widget class="QFrame" name="frame_5">
+        <property name="styleSheet">
+         <string notr="true">QFrame
+{
+font: 87 10pt &quot;Sans&quot;; 
+font:bold;
+ background-color: rgb(250, 250, 250); 
+color: rgb(49, 67, 100);
+border:none;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
        <widget class="QProgressBar" name="progressBar">
         <property name="styleSheet">
          <string notr="true">background-color:rgba(97, 137, 147, 55);
@@ -3958,7 +3975,7 @@ outline: none;
         </property>
        </widget>
       </item>
-      <item row="0" column="1" rowspan="4">
+      <item row="0" column="1" rowspan="3">
        <widget class="QFrame" name="frame_6">
         <property name="styleSheet">
          <string notr="true">QFrame
@@ -3976,20 +3993,20 @@ border:none;
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <layout class="QGridLayout" name="gridLayout_5">
+        <layout class="QGridLayout" name="gridLayout_6">
          <property name="leftMargin">
           <number>0</number>
          </property>
          <property name="topMargin">
-          <number>1</number>
+          <number>0</number>
          </property>
          <property name="rightMargin">
           <number>0</number>
          </property>
          <property name="bottomMargin">
-          <number>1</number>
+          <number>0</number>
          </property>
-         <property name="verticalSpacing">
+         <property name="spacing">
           <number>1</number>
          </property>
          <item row="0" column="0">
@@ -4198,7 +4215,105 @@ QPushButton::hover
           </widget>
          </item>
          <item row="5" column="0">
-          <widget class="QPushButton" name="btnRunRfte">
+          <layout class="QGridLayout" name="gridLayout_5" columnstretch="1,2">
+           <property name="spacing">
+            <number>1</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="btnUndoRfte">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+border-color: rgb(49, 67, 100);
+color: rgb(49,67,100);
+background-color: rgb(162,175,176); 
+font: 87 8pt &quot;Myriad Pro&quot;;
+font:bold;
+outline:none;
+border:none;
+}
+QPushButton::hover
+{
+   background-color:rgba(146,165,201);
+  	border:none;
+  	outline:none;
+}</string>
+             </property>
+             <property name="text">
+              <string>Undo</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/Test/images/button/back_icon.png</normaloff>:/Test/images/button/back_icon.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="btnRunRfte">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+border-color: rgb(49, 67, 100);
+color: rgb(49,67,100);
+background-color: rgb(162,175,176); 
+font: 87 8pt &quot;Myriad Pro&quot;;
+font:bold;
+outline:none;
+border:none;
+}
+QPushButton::hover
+{
+   background-color:rgba(146,165,201);
+  	border:none;
+  	outline:none;
+}</string>
+             </property>
+             <property name="text">
+              <string>Run</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/Test/images/button/start_icon_3.png</normaloff>:/Test/images/button/start_icon_3.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="6" column="0">
+          <widget class="QPushButton" name="btnStopRfte">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
            <property name="sizePolicy">
             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -4211,7 +4326,7 @@ QPushButton::hover
 border-color: rgb(49, 67, 100);
 color: rgb(49,67,100);
 background-color: rgb(162,175,176); 
-font: 87 10pt &quot;Myriad Pro&quot;;
+font: 87 11pt &quot;Myriad Pro&quot;;
 font:bold;
 outline:none;
 border:none;
@@ -4224,41 +4339,21 @@ QPushButton::hover
 }</string>
            </property>
            <property name="text">
-            <string>Run</string>
+            <string>Stop</string>
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/Test/images/button/start_icon_3.png</normaloff>:/Test/images/button/start_icon_3.png</iconset>
+             <normaloff>:/Test/images/button/Stop_icon.png</normaloff>:/Test/images/button/Stop_icon.png</iconset>
            </property>
            <property name="iconSize">
             <size>
-             <width>20</width>
-             <height>20</height>
+             <width>25</width>
+             <height>25</height>
             </size>
            </property>
           </widget>
          </item>
         </layout>
-       </widget>
-      </item>
-      <item row="1" column="0" rowspan="2">
-       <widget class="QFrame" name="frame_5">
-        <property name="styleSheet">
-         <string notr="true">QFrame
-{
-font: 87 10pt &quot;Sans&quot;; 
-font:bold;
- background-color: rgb(250, 250, 250); 
-color: rgb(49, 67, 100);
-border:none;
-}</string>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
        </widget>
       </item>
      </layout>

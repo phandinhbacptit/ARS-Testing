@@ -25,7 +25,7 @@ INCLUDEPATH += kgc
 INCLUDEPATH += mavlink
 INCLUDEPATH += ais
 
-unix:LIBS =  -L/usr/local/lib -L/usr/X11/lib -lfreetype
+#unix:LIBS =  -L/usr/local/lib -L/usr/X11/lib -lfreetype
 
 QMAKE_RPATHDIR += kmGraph/libs
 QMAKE_CC = gcc
@@ -65,7 +65,8 @@ SOURCES += \
     testmodule.cpp \
     testmechanical.cpp \
     bussiness/bussinessmanager.cpp \
-    tool/TableModel.cpp
+    tool/TableModel.cpp \
+    utils/logutils.cpp
 HEADERS += \
         mainwindow.h \
     testelectriccable.h \
@@ -75,7 +76,8 @@ HEADERS += \
     tool/TableModel.h \
     tool/tools_export.h \
     userconfig.h \
-    bussiness/bussinessmanager.h
+    bussiness/bussinessmanager.h \
+    utils/logutils.h
 FORMS += \
         mainwindow.ui \
     testelectriccable.ui \
@@ -86,10 +88,6 @@ FORMS += \
 RESOURCES += \
     resources.qrc
 
-INCLUDEPATH += qpdflib
-
-unix:LIBS += -L$$OUT_PWD/qpdflib
-unix:LIBS += -lqpdf
 
 QMAKE_LFLAGS = "-Wl,-rpath '-Wl,\$\$ORIGIN'"
 QMAKE_LFLAGS += "-Wl,-rpath '-Wl,\$\$ORIGIN/guiRadar/libs'"
@@ -101,23 +99,23 @@ QMAKE_CFLAGS_RELEASE -=-O2
 QMAKE_CXXFLAGS_DEBUG -=-O2
 QMAKE_CXXFLAGS_RELEASE -=-O2
 
-LIBS    += -lstdc++ \
-                -lboost_thread \
-                -lboost_system \
-                -lboost_date_time \
-                #-lboost_program_options \
-                -lboost_filesystem \
-                #-lssh \
-                -L/usr/lib/i386-linux-gnu -lfreetype -lz \
-                #-lqwt \
-                -licuuc \
-                #-L. -lrxxlib \
-                -L/home/xlth/workspace/test/u111/kmGraph/libs -lkmGraph \
-                -lGLU -lGLEW -lglut -lGL \
-                #-lglut -lGL \
-                -lftgl \
-                -lglog \
-                #-L$$PWD/libs -ltlv \
+#LIBS    += -lstdc++ \
+#                -lboost_thread \
+#                -lboost_system \
+#                -lboost_date_time \
+#                #-lboost_program_options \
+#                -lboost_filesystem \
+#                #-lssh \
+#                -L/usr/lib/i386-linux-gnu -lfreetype -lz \
+#                #-lqwt \
+#                -licuuc \
+#                #-L. -lrxxlib \
+#                -L/home/xlth/workspace/test/u111/kmGraph/libs -lkmGraph \
+#                -lGLU -lGLEW -lglut -lGL \
+#                #-lglut -lGL \
+#                -lftgl \
+#                -lglog \
+#                #-L$$PWD/libs -ltlv \
 
 SUBDIRS += recplay Tracking cmap data_distributor
 
@@ -127,15 +125,20 @@ MOC_DIR = MOC
 
 DISTFILES +=
 
-unix:!macx: LIBS += -L$$PWD/libKdReport/lib/ -lkdreports
+INCLUDEPATH += $$PWD/tool
+DEPENDPATH += $$PWD/tool
 
-INCLUDEPATH += $$PWD/libKdReport/include
-DEPENDPATH += $$PWD/libKdReport/include
+unix:!macx: LIBS += -L$$PWD/qpdflib/ -lqpdf
+
+INCLUDEPATH += $$PWD/qpdflib
+DEPENDPATH += $$PWD/qpdflib
+
+#unix:!macx: LIBS += -L$$PWD/libKdReport/lib -lkdreports
+
+#INCLUDEPATH += $$PWD/libKdReport/include
+#DEPENDPATH += $$PWD/libKdReport/include
 
 unix:!macx: LIBS += -L$$PWD/qtCsv/lib/ -lqtcsv
 
 INCLUDEPATH += $$PWD/qtCsv/include
 DEPENDPATH += $$PWD/qtCsv/include
-
-INCLUDEPATH += $$PWD/tool
-DEPENDPATH += $$PWD/tool

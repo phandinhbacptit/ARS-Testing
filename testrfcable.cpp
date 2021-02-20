@@ -17,6 +17,8 @@
 #include "qmainwindow.h"
 #include <QThread>
 #include <QHBoxLayout>
+#include <QDebug>
+#include "utils/logutils.h"
 
 TestRfCable::TestRfCable(QWidget *parent) :
     QWidget(parent),
@@ -24,24 +26,24 @@ TestRfCable::TestRfCable(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    int charHeight = (this->height()) / 2 - 80;
-    int width = this->width() / 2;
+//    int charHeight = (this->height()) / 2 - 80;
+//    int width = this->width() / 2;
 
-    mTimeLineRf = new kmWidgetChart(ui->gRfSignal, width, charHeight);
-    mTimeLineRf->setAxisXMinMax(0.0, 100.0);
-    mTimeLineRf->setAxisYMinMax(0.0, 100.0);
-    mTimeLineRf->setWidgetName("Timeline");
-    mTimeLineRf->pauseTimeLine(false);
-    mTimeLineRf->limitChartLenght(5000);
-    mTimeLineRf->setUpdateDataFromChart(true);
+//    mTimeLineRf = new kmWidgetChart(ui->gRfSignal, width, charHeight);
+//    mTimeLineRf->setAxisXMinMax(0.0, 100.0);
+//    mTimeLineRf->setAxisYMinMax(0.0, 100.0);
+//    mTimeLineRf->setWidgetName("Timeline");
+//    mTimeLineRf->pauseTimeLine(false);
+//    mTimeLineRf->limitChartLenght(5000);
+//    mTimeLineRf->setUpdateDataFromChart(true);
 
-    int a = 20;
-    mTimeLineRf->addTimeLine(&a, "Timline1");
-    mTimeLineRf->addTimeLine(&a, "Timline2");
-    mTimeLineRf->addTimeLine(&a, "Timline3");
-    mTimeLineRf->addTimeLine(&a, "Timline4");
-    mTimeLineRf->addTimeLine(&a, "Timline5");
-    mTimeLineRf->addTimeLine(&a, "Timline6");
+//    int a = 20;
+//    mTimeLineRf->addTimeLine(&a, "Timline1");
+//    mTimeLineRf->addTimeLine(&a, "Timline2");
+//    mTimeLineRf->addTimeLine(&a, "Timline3");
+//    mTimeLineRf->addTimeLine(&a, "Timline4");
+//    mTimeLineRf->addTimeLine(&a, "Timline5");
+//    mTimeLineRf->addTimeLine(&a, "Timline6");
 
     m_pPdfWidget = new QPdfWidget(ui->pdfRfShow);
     QHBoxLayout *layoutPdfRfCableTest = new QHBoxLayout;
@@ -67,6 +69,7 @@ TestRfCable::~TestRfCable()
 void TestRfCable::on_pushButton_63_clicked()
 {
     this->close();
+    LOGUTILS::stopLogging();
 }
 
 void TestRfCable::on_mCbRfAll_clicked(bool checked)

@@ -4,7 +4,7 @@
 #include "ui_testmodule.h"
 #include "ui_testrfcable.h"
 #include "ui_testmechanical.h"
-
+#include "utils/logutils.h"
 
 bussinessManager::bussinessManager(QObject *parent) : QObject(parent)
 {
@@ -13,7 +13,7 @@ bussinessManager::bussinessManager(QObject *parent) : QObject(parent)
     //mCTE = NULL;
 
 
-    reportElectrical.setDocumentName("Electrical Report");
+//    reportElectrical.setDocumentName("Electrical Report");
 
 }
 bussinessManager::~bussinessManager()
@@ -76,8 +76,6 @@ void bussinessManager::setup(Ui::MainWindow *ui)
     connect(mUi->mBtModuleTest, SIGNAL(clicked()), this, SLOT(slt_showMteInterface()));
     connect(mUi->mBtRfTest, SIGNAL(clicked()), this, SLOT(slt_showRfteInterface()));
 
-
-
     qDebug() << "[Bussiness] Setup MainWindow";
 }
 
@@ -89,6 +87,7 @@ void bussinessManager::setupELectric(Ui::TestElectricCable *ui)
     connect(mCTE->btnExportCte, SIGNAL(clicked()), this, SLOT(slt_exportCteReport()));
     connect(mCTE->btnRunCte, SIGNAL(clicked()), this, SLOT(slt_runCTE()));
     connect(mCTE->btnLogCte, SIGNAL(clicked()), this, SLOT(slt_logCTE()));
+    connect(mCTE->btnStopCte, SIGNAL(clicked()), this, SLOT(slt_stopCTE()));
 
     connect(mCTE->mCbCable1, SIGNAL(clicked(bool)), this, SLOT(slt_resultTest(bool)));
     connect(mTestElectricalCable, &TestElectricCable::sign_checkAllCable, this, &bussinessManager::slt_resultTest, Qt::UniqueConnection);
@@ -102,6 +101,17 @@ void bussinessManager::setupModule(Ui::testModule *ui)
     }
     connect(mMTE->btnRunMte, SIGNAL(clicked()), this, SLOT(slt_runMTE()));
     connect(mMTE->btnLogMte, SIGNAL(clicked()), this, SLOT(slt_logMTE()));
+    connect(mMTE->btnStopMte, SIGNAL(clicked()), this, SLOT(slt_stopMTE()));
+
+    connect(mMTE->btnDcPwr, SIGNAL(clicked()), this, SLOT(slt_connDcPower()));
+    connect(mMTE->btnDcLoad, SIGNAL(clicked()), this, SLOT(slt_connDcLoad()));
+    connect(mMTE->btnOscil, SIGNAL(clicked()), this, SLOT(slt_connOsiloscope()));
+    connect(mMTE->btnNoiseSrc, SIGNAL(clicked()), this, SLOT(slt_connNoiseSource()));
+    connect(mMTE->btnWaveGen, SIGNAL(clicked()), this, SLOT(slt_connWaveGeneration()));
+    connect(mMTE->btnSignGen, SIGNAL(clicked()), this, SLOT(slt_connSignalGeneration()));
+    connect(mMTE->btnNetAnalizer, SIGNAL(clicked()), this, SLOT(slt_connNetworkAnalizer()));
+    connect(mMTE->btnSpecAnalizer, SIGNAL(clicked()), this, SLOT(slt_connSpectumeAnalizer()));
+
     qDebug() << "[Bussiness] Setup gui MTE";
 }
 
@@ -112,51 +122,52 @@ void bussinessManager::setupRf(Ui::TestRfCable *ui)
     }
     connect(mRFTE->btnRunRfte, SIGNAL(clicked()), this, SLOT(slt_runRFTE()));
     connect(mRFTE->btnLogRfte, SIGNAL(clicked()), this, SLOT(slt_logRFTE()));
+    connect(mRFTE->btnStopRfte, SIGNAL(clicked()), this, SLOT(slt_stopRFTE()));
     qDebug() << "[Bussiness] Setup gui RFTE";
 }
 
 void bussinessManager::slt_exportCteReport()
 {
-    reportElectrical.associateTextValue("title_element", "TEST REPORT");
+//    reportElectrical.associateTextValue("title_element", "TEST REPORT");
 
-    reportElectrical.associateTextValue("table1_title", "Resistance");
-    reportElectrical.associateTextValue("table2_title", "Insulation Resistance");
-    reportElectrical.associateImageValue("image_system", QPixmap(":/Test/images/logo_vtx.png"));
+//    reportElectrical.associateTextValue("table1_title", "Resistance");
+//    reportElectrical.associateTextValue("table2_title", "Insulation Resistance");
+//    reportElectrical.associateImageValue("image_system", QPixmap(":/Test/images/logo_vtx.png"));
 
-    reportElectrical.associateTextValue("name_excutor", mUi->mLeNameExecutor->text());
-    reportElectrical.associateTextValue("id_excutor", mUi->mLeIDExecutor->text());
-    reportElectrical.associateTextValue("work_excutor", mUi->mLeWorkExecutor->text());
+//    reportElectrical.associateTextValue("name_excutor", mUi->mLeNameExecutor->text());
+//    reportElectrical.associateTextValue("id_excutor", mUi->mLeIDExecutor->text());
+//    reportElectrical.associateTextValue("work_excutor", mUi->mLeWorkExecutor->text());
 
-    reportElectrical.associateTextValue("name_supervisor", mUi->mLeNameSupervisor->text());
-    reportElectrical.associateTextValue("id_supervisor", mUi->mLeIDSupervisor->text());
-    reportElectrical.associateTextValue("work_supervisor", mUi->mLeWorkSupervisor->text());
+//    reportElectrical.associateTextValue("name_supervisor", mUi->mLeNameSupervisor->text());
+//    reportElectrical.associateTextValue("id_supervisor", mUi->mLeIDSupervisor->text());
+//    reportElectrical.associateTextValue("work_supervisor", mUi->mLeWorkSupervisor->text());
 
-    reportElectrical.associateTextValue("nameCable", QString::fromUtf8("Cable1"));
+//    reportElectrical.associateTextValue("nameCable", QString::fromUtf8("Cable1"));
 
 
-    TableModel table1;
-    table1.setDataHasVerticalHeaders(false);
-    table1.loadFromCSV(":/File/libKdReport/xml/table1.csv");
-    reportElectrical.associateModel(QLatin1String("table1"), &table1);
-    TableModel table2;
-    table2.setDataHasVerticalHeaders(false);
-    table2.loadFromCSV(":/File/libKdReport/xml/table2.csv");
-    reportElectrical.associateModel(QLatin1String("table2"), &table2);
+//    TableModel table1;
+//    table1.setDataHasVerticalHeaders(false);
+//    table1.loadFromCSV(":/File/libKdReport/xml/table1.csv");
+//    reportElectrical.associateModel(QLatin1String("table1"), &table1);
+//    TableModel table2;
+//    table2.setDataHasVerticalHeaders(false);
+//    table2.loadFromCSV(":/File/libKdReport/xml/table2.csv");
+//    reportElectrical.associateModel(QLatin1String("table2"), &table2);
 
-    QFile reportFile(":/File/libKdReport/xml/PriceList.xml");
-    if (!reportFile.open(QIODevice::ReadOnly)) {
-        QMessageBox::warning(0, QObject::tr("Warning"), QObject::tr("Could not open report description file 'PriceList.xml'. Please start this program from the PriceListXML directory." ) );
-    }
+//    QFile reportFile(":/File/libKdReport/xml/PriceList.xml");
+//    if (!reportFile.open(QIODevice::ReadOnly)) {
+//        QMessageBox::warning(0, QObject::tr("Warning"), QObject::tr("Could not open report description file 'PriceList.xml'. Please start this program from the PriceListXML directory." ) );
+//    }
 
-    KDReports::ErrorDetails details;
-    if(!reportElectrical.loadFromXML(&reportFile, &details)) {
-        QMessageBox::warning(0, QObject::tr("Warning"), QObject::tr("Could not parse report description file:\n%1" ).arg(details.message()) );
-        reportFile.close();
-    }
+//    KDReports::ErrorDetails details;
+//    if(!reportElectrical.loadFromXML(&reportFile, &details)) {
+//        QMessageBox::warning(0, QObject::tr("Warning"), QObject::tr("Could not parse report description file:\n%1" ).arg(details.message()) );
+//        reportFile.close();
+//    }
 
-    KDReports::PreviewDialog preview(&reportElectrical);
-    preview.setDefaultSaveDirectory(QDir::homePath());
-    preview.exec();
+//    KDReports::PreviewDialog preview(&reportElectrical);
+//    preview.setDefaultSaveDirectory(QDir::homePath());
+//    preview.exec();
 }
 
 void bussinessManager::slt_showCteInterface()
@@ -260,44 +271,65 @@ void bussinessManager::slt_enableTestProcess()
 /*____________Slot CTE________________________________________________________ */
 void bussinessManager::slt_runCTE(){
     cntRunCte++;
-    if ((cntRunCte % 2) != 0) {
+    mCTE->btnStopCte->setEnabled(true);
+    if (cntRunCte == 1) {
         qDebug() << "[Bussiness] Run process test electrical cable";
-        mCTE->btnRunCte->setText("Stop");
-        mCTE->btnRunCte->setIcon(QIcon(":/Test/images/button/Stop_icon.png"));
+        mCTE->btnRunCte->setText(" Pause");
+        mCTE->btnRunCte->setIcon(QIcon(":/Test/images/button/pause_icon.png"));
+
+    }
+    else if (cntRunCte == 2) {
+        qDebug() << "[Bussiness] Pause process test electrical cable";
+        mCTE->btnRunCte->setText("Resume");
+        mCTE->btnRunCte->setIcon(QIcon(":/Test/images/button/resum_icon.png"));
     }
     else {
-        qDebug() << "[Bussiness] Stop test electrical cable";
-        mCTE->btnRunCte->setText("Run");
+        cntRunCte = 0;
+        qDebug() << "[Bussiness] Resume process test electrical cable";
+        mCTE->btnRunCte->setText("   Run");
         mCTE->btnRunCte->setIcon(QIcon(":/Test/images/button/start_icon_3.png"));
     }
+    mCTE->btnRunCte->setIconSize(QSize(20, 20));
 }
 void bussinessManager::slt_logCTE()
 {
     QString logColor;
-
     cntLogCte++;
     if ((cntLogCte % 2) != 0) {
         qDebug() << "[Bussiness] Start log test electrical cable";
         logColor = QString ("background-color: rgb(146, 165, 201); outline: none; border: none; ");
         mCTE->btnLogCte->setStyleSheet(logColor);
+        LOGUTILS::initLogging(logFolderElectricalCable);
     }
     else {
         qDebug() << "[Bussiness] Stop log test electrical cable";
         logColor = QString ("background-color: rgb(200, 200, 200);  outline: none; border: none;");
         mCTE->btnLogCte->setStyleSheet(logColor);
+        LOGUTILS::stopLogging();
     }
+}
+void bussinessManager::slt_stopCTE()
+{
+    mCTE->btnStopCte->setEnabled(false);
 }
 /*____________Slot MTE________________________________________________________ */
 void bussinessManager::slt_runMTE()
 {
+    mMTE->btnStopMte->setEnabled(true);
     cntRunMte++;
-    if ((cntRunMte % 2) != 0) {
+    if (cntRunMte == 1) {
         qDebug() << "[Bussiness] Run process test module";
-        mMTE->btnRunMte->setText("Stop");
-        mMTE->btnRunMte->setIcon(QIcon(":/Test/images/button/Stop_icon.png"));
+        mMTE->btnRunMte->setText(" Pause");
+        mMTE->btnRunMte->setIcon(QIcon(":/Test/images/button/pause_icon.png"));
+    }
+    else if (cntRunMte == 2) {
+        qDebug() << "[Bussiness] Pause process test module";
+        mMTE->btnRunMte->setText("Resume");
+        mMTE->btnRunMte->setIcon(QIcon(":/Test/images/button/resum_icon.png"));
     }
     else {
-        qDebug() << "[Bussiness] Stop test module";
+        cntRunMte = 0;
+        qDebug() << "[Bussiness] Resume process test module";
         mMTE->btnRunMte->setText("Run");
         mMTE->btnRunMte->setIcon(QIcon(":/Test/images/button/start_icon_3.png"));
     }
@@ -311,24 +343,38 @@ void bussinessManager::slt_logMTE()
         qDebug() << "[Bussiness] Start log test module";
         logColor = QString ("background-color: rgb(146, 165, 201); outline: none; border: none; ");
         mMTE->btnLogMte->setStyleSheet(logColor);
+        LOGUTILS::initLogging(logFolderModule);
     }
     else {
         qDebug() << "[Bussiness] Stop log test module";
         logColor = QString ("background-color: rgb(200, 200, 200);  outline: none; border: none;");
         mMTE->btnLogMte->setStyleSheet(logColor);
+        LOGUTILS::stopLogging();
     }
+}
+
+void bussinessManager::slt_stopMTE()
+{
+    mMTE->btnStopMte->setEnabled(false);
 }
 /*____________Slot RFTE________________________________________________________ */
 void bussinessManager::slt_runRFTE()
 {
     cntRunRfte++;
-    if ((cntRunRfte % 2) != 0) {
+    mRFTE->btnStopRfte->setEnabled(true);
+    if (cntRunRfte == 1) {
         qDebug() << "[Bussiness] Run process test RF cable";
         mRFTE->btnRunRfte->setText("Stop");
-        mRFTE->btnRunRfte->setIcon(QIcon(":/Test/images/button/Stop_icon.png"));
+        mRFTE->btnRunRfte->setIcon(QIcon(":/Test/images/button/pause_icon.png"));
+    }
+    else if (cntRunRfte == 2) {
+        qDebug() << "[Bussiness] Pause process  test RF cable";
+        mRFTE->btnRunRfte->setText("Stop");
+        mRFTE->btnRunRfte->setIcon(QIcon(":/Test/images/button/resum_icon.png"));
     }
     else {
-        qDebug() << "[Bussiness] Stop test RF cable";
+        cntRunRfte = 0;
+        qDebug() << "[Bussiness] Resume process test RF cable";
         mRFTE->btnRunRfte->setText("Run");
         mRFTE->btnRunRfte->setIcon(QIcon(":/Test/images/button/start_icon_3.png"));
     }
@@ -342,22 +388,197 @@ void bussinessManager::slt_logRFTE()
         qDebug() << "[Bussiness] Start log test RF cable";
         logColor = QString ("background-color: rgb(146, 165, 201); outline: none; border: none; ");
         mRFTE->btnLogRfte->setStyleSheet(logColor);
+        LOGUTILS::initLogging(logFolderRfCable);
     }
     else {
         qDebug() << "[Bussiness] Stop log test RF cable";
         logColor = QString ("background-color: rgb(200, 200, 200);  outline: none; border: none;");
         mRFTE->btnLogRfte->setStyleSheet(logColor);
+        LOGUTILS::stopLogging();
     }
 }
+
+void bussinessManager::slt_stopRFTE()
+{
+    mRFTE->btnStopRfte->setEnabled(false);
+}
+/*________________________________________________________________________________________*/
 
 void bussinessManager::slt_resultTest(bool state)
 {
-    if (state == true) {
-        reportElectrical.associateTextValue("resultCable", QString::fromUtf8("PASS"));
-    }
-    else {
-        reportElectrical.associateTextValue("resultCable", QString::fromUtf8("FAIL"));
-    }
+//    if (state == true) {
+//        reportElectrical.associateTextValue("resultCable", QString::fromUtf8("PASS"));
+//    }
+//    else {
+//        reportElectrical.associateTextValue("resultCable", QString::fromUtf8("FAIL"));
+//    }
 }
 
 
+/*_____________Connect Equipment_________________________________________________________*/
+void bussinessManager::slt_connDcPower()
+{
+    QString connectColor;
+    /*
+    Write code connect here, return stateconnect to stateCnDcPwr
+    */
+    stateCnDCPwr++;
+   if (stateCnDCPwr == CONNECTED) {
+        qDebug() << "[Bussiness] Connected to DC power";
+        mMTE->btnDcPwr->setIcon(QIcon(":/Test/images/button/connect.png"));
+        connectColor = QString ("background-color: rgba(146,165,201); outline: none; border: none; color: rgb(49,67,100);font-family:Myriad Pro; font-size: 8pt; font:bold;");
+    }
+    else if (stateCnDCPwr ==  DISCONNECTED) {
+        stateCnDCPwr = 0;
+        qDebug() << "[Bussiness] Disconnected to DC power";
+        mMTE->btnDcPwr->setIcon(QIcon(":/Test/images/button/disconnected.svg"));  
+        connectColor = QString ("background-color: rgb(177,188,190); outline: none; border: none; color: rgb(49,67,100);font-family:Myriad Pro; font-size: 8pt; font:bold;");
+    }
+    mMTE->btnDcPwr->setStyleSheet(connectColor);
+}
+
+void bussinessManager::slt_connDcLoad()
+{
+    QString connectColor;
+    /*
+    Write code connect here, return stateconnect to stateCnDCLoad
+    */
+    stateCnDCLoad++;
+   if (stateCnDCLoad == CONNECTED) {
+        qDebug() << "[Bussiness] Connected to DC Loader";
+        mMTE->btnDcLoad->setIcon(QIcon(":/Test/images/button/connect.png"));
+        connectColor = QString ("background-color: rgba(146,165,201); outline: none; border: none;color: rgb(49,67,100);font-family:Myriad Pro; font-size: 8pt; font:bold; ");
+    }
+    else if (stateCnDCLoad ==  DISCONNECTED) {
+        stateCnDCLoad = 0;
+        qDebug() << "[Bussiness] Disconnected to DC Loader";
+        mMTE->btnDcLoad->setIcon(QIcon(":/Test/images/button/disconnected.svg"));
+        connectColor = QString ("background-color: rgb(177,188,190); outline: none; border: none;color: rgb(49,67,100);font-family:Myriad Pro; font-size: 8pt; font:bold; ");
+    }
+    mMTE->btnDcLoad->setStyleSheet(connectColor);
+}
+
+void bussinessManager::slt_connOsiloscope()
+{
+    QString connectColor;
+    /*
+    Write code connect here, return stateconnect to stateCnOsl
+    */
+    stateCnOsl++;
+   if (stateCnOsl == CONNECTED) {
+        qDebug() << "[Bussiness] Connected to Osciloscope";
+        mMTE->btnOscil->setIcon(QIcon(":/Test/images/button/connect.png"));
+        connectColor = QString ("background-color: rgba(146,165,201); outline: none; border: none;color: rgb(49,67,100);font-family:Myriad Pro; font-size: 8pt; font:bold; ");
+    }
+    else if (stateCnOsl ==  DISCONNECTED) {
+        stateCnOsl = 0;
+        qDebug() << "[Bussiness] Disconnected to Osciloscope";
+        mMTE->btnOscil->setIcon(QIcon(":/Test/images/button/disconnected.svg"));
+        connectColor = QString ("background-color: rgb(177,188,190); outline: none; border: none;color: rgb(49,67,100);font-family:Myriad Pro; font-size: 8pt; font:bold; ");
+    }
+    mMTE->btnOscil->setStyleSheet(connectColor);
+}
+
+void bussinessManager::slt_connNoiseSource()
+{
+    QString connectColor;
+    /*
+    Write code connect here, return stateconnect to stateCnNoiseSrc
+    */
+    stateCnNoiseSrc++;
+   if (stateCnNoiseSrc == CONNECTED) {
+        qDebug() << "[Bussiness] Connected to Noise Source";
+        mMTE->btnNoiseSrc->setIcon(QIcon(":/Test/images/button/connect.png"));
+        connectColor = QString ("background-color: rgba(146,165,201); outline: none; border: none;color: rgb(49,67,100);font-family:Myriad Pro; font-size: 8pt; font:bold; ");
+    }
+    else if (stateCnNoiseSrc ==  DISCONNECTED) {
+        stateCnNoiseSrc = 0;
+        qDebug() << "[Bussiness] Disconnected to Noise Source";
+        mMTE->btnNoiseSrc->setIcon(QIcon(":/Test/images/button/disconnected.svg"));
+        connectColor = QString ("background-color: rgb(177,188,190); outline: none; border: none;color: rgb(49,67,100);font-family:Myriad Pro; font-size: 8pt; font:bold; ");
+    }
+    mMTE->btnNoiseSrc->setStyleSheet(connectColor);
+}
+
+void bussinessManager::slt_connWaveGeneration()
+{
+    QString connectColor;
+    /*
+    Write code connect here, return stateconnect to stateCnWaveGen
+    */
+    stateCnWaveGen++;
+   if (stateCnWaveGen == CONNECTED) {
+        qDebug() << "[Bussiness] Connected to Wave generator";
+        mMTE->btnWaveGen->setIcon(QIcon(":/Test/images/button/connect.png"));
+        connectColor = QString ("background-color: rgba(146,165,201); outline: none; border: none;color: rgb(49,67,100);font-family:Myriad Pro; font-size: 8pt; font:bold; ");
+    }
+    else if (stateCnWaveGen ==  DISCONNECTED) {
+        stateCnWaveGen = 0;
+        qDebug() << "[Bussiness] Disconnected to Wave generator ";
+        mMTE->btnWaveGen->setIcon(QIcon(":/Test/images/button/disconnected.svg"));
+        connectColor = QString ("background-color: rgb(177,188,190); outline: none; border: none;color: rgb(49,67,100);font-family:Myriad Pro; font-size: 8pt; font:bold; ");
+    }
+    mMTE->btnWaveGen->setStyleSheet(connectColor);
+}
+
+void bussinessManager::slt_connSignalGeneration()
+{
+    QString connectColor;
+    /*
+    Write code connect here, return stateconnect to stateCnSignGen
+    */
+    stateCnSignGen++;
+   if (stateCnSignGen == CONNECTED) {
+        qDebug() << "[Bussiness] Connected to Signal Generation";
+        mMTE->btnSignGen->setIcon(QIcon(":/Test/images/button/connect.png"));
+        connectColor = QString ("background-color: rgba(146,165,201); outline: none; border: none;color: rgb(49,67,100);font-family:Myriad Pro; font-size: 8pt; font:bold; ");
+    }
+    else if (stateCnSignGen ==  DISCONNECTED) {
+        stateCnSignGen = 0;
+        qDebug() << "[Bussiness] Disconnected to Signal Generation";
+        mMTE->btnSignGen->setIcon(QIcon(":/Test/images/button/disconnected.svg"));
+        connectColor = QString ("background-color: rgb(177,188,190); outline: none; border: none;color: rgb(49,67,100);font-family:Myriad Pro; font-size: 8pt; font:bold; ");
+    }
+    mMTE->btnSignGen->setStyleSheet(connectColor);
+}
+void bussinessManager::slt_connNetworkAnalizer()
+{
+    QString connectColor;
+    /*
+    Write code connect here, return stateconnect to stateCnNetAnalizer
+    */
+    stateCnNetAnalizer++;
+   if (stateCnNetAnalizer == CONNECTED) {
+        qDebug() << "[Bussiness] Connected to Network Analizer";
+        mMTE->btnNetAnalizer->setIcon(QIcon(":/Test/images/button/connect.png"));
+        connectColor = QString ("background-color: rgba(146,165,201); outline: none; border: none;color: rgb(49,67,100);font-family:Myriad Pro; font-size: 8pt; font:bold; ");
+    }
+    else if (stateCnNetAnalizer ==  DISCONNECTED) {
+        stateCnNetAnalizer = 0;
+        qDebug() << "[Bussiness] Disconnected to Network Analizer";
+        mMTE->btnNetAnalizer->setIcon(QIcon(":/Test/images/button/disconnected.svg"));
+        connectColor = QString ("background-color: rgb(177,188,190); outline: none; border: none;color: rgb(49,67,100);font-family:Myriad Pro; font-size: 8pt; font:bold; ");
+    }
+    mMTE->btnNetAnalizer->setStyleSheet(connectColor);
+}
+
+void bussinessManager::slt_connSpectumeAnalizer()
+{
+    QString connectColor;
+    /*
+    Write code connect here, return stateconnect to stateCnSpecAnalizer
+    */
+    stateCnSpecAnalizer++;
+   if (stateCnSpecAnalizer == CONNECTED) {
+        qDebug() << "[Bussiness] Connected to Spectum Analizer";
+        mMTE->btnSpecAnalizer->setIcon(QIcon(":/Test/images/button/connect.png"));
+        connectColor = QString ("background-color: rgba(146,165,201); outline: none; border: none;color: rgb(49,67,100);font-family:Myriad Pro; font-size: 8pt; font:bold; ");
+    }
+    else if (stateCnSpecAnalizer ==  DISCONNECTED) {
+        stateCnSpecAnalizer = 0;
+        qDebug() << "[Bussiness] Disconnected to Spectum ANalizer";
+        mMTE->btnSpecAnalizer->setIcon(QIcon(":/Test/images/button/disconnected.svg"));
+        connectColor = QString ("background-color: rgb(177,188,190); outline: none; border: none;color: rgb(49,67,100);font-family:Myriad Pro; font-size: 8pt; font:bold; ");
+    }
+    mMTE->btnSpecAnalizer->setStyleSheet(connectColor);
+}

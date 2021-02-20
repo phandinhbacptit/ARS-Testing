@@ -1,0 +1,9 @@
+Select cable2
+Select cable2
+Select cable2
+Select cable3
+Unable to initialize viewer Error: Transport destroyed
+Unable to initialize thumbnail viewer Error: Transport destroyed
+Uncaught (in promise) Error: Transport destroyed
+Uncaught (in promise) Error: Transport destroyed
+[Bussiness] Stop log test RF cable

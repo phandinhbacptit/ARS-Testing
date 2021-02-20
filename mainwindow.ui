@@ -396,22 +396,6 @@ border: 10px;</string>
             <property name="bottomMargin">
              <number>2</number>
             </property>
-            <item row="0" column="0">
-             <widget class="QLabel" name="mlElectricCable">
-              <property name="styleSheet">
-               <string notr="true">color: rgb(170, 186, 198);
-font: 14pt &quot;Sans&quot;;
-font:bold;
-background-color: none;</string>
-              </property>
-              <property name="text">
-               <string>Test Electrical Cable </string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
             <item row="1" column="0">
              <widget class="QPushButton" name="mBtCableTest">
               <property name="enabled">
@@ -440,6 +424,22 @@ QPushButton::hover
               </property>
               <property name="text">
                <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="mlElectricCable">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(170, 186, 198);
+font: 14pt &quot;Sans&quot;;
+font:bold;
+background-color: none;</string>
+              </property>
+              <property name="text">
+               <string>Test Electrical Cable </string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
               </property>
              </widget>
             </item>

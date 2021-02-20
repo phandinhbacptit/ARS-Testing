@@ -1,0 +1,6 @@
+[TestModule] Selected detail Control and KDCS
+[TestModule] Selected detail Control and KDCS
+[TestModule] Selected detail Control and KDCS
+[TestModule] Selected detail Control and KDCS
+[Bussiness] Stop log test module
+Stop logging

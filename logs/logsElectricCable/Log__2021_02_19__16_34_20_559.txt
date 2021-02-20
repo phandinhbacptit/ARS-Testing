@@ -1,0 +1,9 @@
+"GuidleFile/electricCable/Cable10.pdf"
+[TestElectricCable] Show detail Cable10
+"GuidleFile/electricCable/Cable10.pdf"
+[TestElectricCable] Show detail Cable10
+"GuidleFile/electricCable/Cable10.pdf"
+[TestElectricCable] Show detail Cable10
+"GuidleFile/electricCable/Cable10.pdf"
+[TestElectricCable] Show detail Cable10
+[Bussiness] Stop log test electrical cable

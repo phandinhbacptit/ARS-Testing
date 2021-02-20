@@ -2,14 +2,17 @@
 #define USERCONFIG_H
 
 #include <QString>
-#include"kmGraph/headers/kmWidgetChart.h"
+//#include"kmGraph/headers/kmWidgetChart.h"
+
+/*_____________Define enable/disable debug______*/
+
 
 #define OK      1
 #define FAIL    0
 
 /* Electrical cable design document path*/
 
-#define cable1 "GuidleFile/electricCable/Cable1.pdf"
+#define cable1 "GuidleFile/electricCable/Getting started.pdf"
 #define cable2 "GuidleFile/electricCable/Cable2.pdf"
 #define cable3 "GuidleFile/electricCable/Cable3.pdf"
 #define cable4 "GuidleFile/electricCable/Cable4.pdf"
@@ -54,5 +57,16 @@
 #define cableRf29 "GuidleFile/RfCable/CableRF29.pdf"
 #define cableRf30 "GuidleFile/RfCable/CableRF30.pdf"
 #define cableRf31 "GuidleFile/RfCable/CableRF31.pdf"
+
+/*______________Define name folder logfile__________*/
+const QString logFolderElectricalCable = "logs/logsElectricCable";
+const QString logFolderRfCable = "logs/logsRfCable";
+const QString logFolderModule = "logs/logsModule";
+const QString logFolderMechanical = "logs/logsMechanical";
+
+/* Define State connect equipment */
+#define IDEAL           0
+#define CONNECTED       1
+#define DISCONNECTED    2
 
 #endif // USERCONFIG_H

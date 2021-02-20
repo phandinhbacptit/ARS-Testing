@@ -105,7 +105,7 @@ private:
 
 
 public:
-    kmWidgetChart* mTimeLineRf;
+//    kmWidgetChart* mTimeLineRf;
 };
 
 #endif // TESTRFCABLE_H

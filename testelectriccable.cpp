@@ -16,14 +16,14 @@
 #include "qmainwindow.h"
 #include <QThread>
 #include <QHBoxLayout>
-
+#include <QDebug>
+#include <utils/logutils.h>
 
 TestElectricCable::TestElectricCable(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::TestElectricCable)
 {
     ui->setupUi(this);
-    //setWindowIcon(QIcon(":/Test/icons/pdf.png"));
 
     m_pPdfWidget = new QPdfWidget(ui->pdfShow);
     QHBoxLayout *layoutPdfCableTest = new QHBoxLayout;
@@ -50,11 +50,13 @@ void TestElectricCable::setUi(Ui::TestElectricCable *value)
 void TestElectricCable::on_btn_exit_clicked()
 {
     this->close();
+    LOGUTILS::stopLogging();
 }
 
 void TestElectricCable::onOpenFile(QString path)
 {
     if (path.isEmpty()) {
+        qDebug() << "Empty path";
         return;
     } 
     if (m_pPdfWidget->loadFile(path)) {
@@ -67,56 +69,69 @@ void TestElectricCable::onOpenFile(QString path)
 void TestElectricCable::on_detail_cable1_clicked()
 {
     onOpenFile(cable1);
+    qDebug() << "[TestElectricCable] Show detail Cable1";
 }
 
 void TestElectricCable::on_detail_cable2_clicked()
 {
-    onOpenFile(cable2);
+//    onOpenFile(cable2);
+//    qDebug() << "[TestElectricCable] Show detail Cable2";
+    m_pPdfWidget->findText("3.1.1");
 }
 
 void TestElectricCable::on_detail_cable3_clicked()
 {
-    onOpenFile(cable3);
+//    onOpenFile(cable3);
+//    qDebug() << "[TestElectricCable] Show detail Cable3";
+    m_pPdfWidget->setPage(10);
 }
 
 void TestElectricCable::on_detail_cable4_clicked()
 {
     onOpenFile(cable4);
+    qDebug() << "[TestElectricCable] Show detail Cable4";
 }
 
 void TestElectricCable::on_detail_cable5_clicked()
 {
     onOpenFile(cable5);
+    qDebug() << "[TestElectricCable] Show detail Cable5";
 }
 
 void TestElectricCable::on_detail_cable6_clicked()
 {
     onOpenFile(cable6);
+    qDebug() << "[TestElectricCable] Show detail Cable6";
 }
 
 void TestElectricCable::on_detail_cable9_clicked()
 {
     onOpenFile(cable9);
+    qDebug() << "[TestElectricCable] Show detail Cable9";
 }
 
 void TestElectricCable::on_detail_cable10_clicked()
 {
     onOpenFile(cable10);
+    qDebug() << "[TestElectricCable] Show detail Cable10";
 }
 
 void TestElectricCable::on_detail_cable11_clicked()
 {
     onOpenFile(cable11);
+    qDebug() << "[TestElectricCable] Show detail Cable11";
 }
 
 void TestElectricCable::on_detail_cable12_clicked()
 {
     onOpenFile(cable12);
+    qDebug() << "[TestElectricCable] Show detail Cable12";
 }
 
 void TestElectricCable::on_detail_cable13_clicked()
 {
     onOpenFile(cable13);
+    qDebug() << "[TestElectricCable] Show detail Cable13";
 }
 
 //void TestElectricCable::on_btnExportCte_clicked()

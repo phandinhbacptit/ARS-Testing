@@ -211,18 +211,21 @@ public:
     QWidget *pdfRfShow;
     QWidget *gRfSignal;
     QFrame *frame_3;
-    QGridLayout *gridLayout_6;
+    QGridLayout *gridLayout_9;
     QLabel *label_2;
+    QFrame *frame_5;
     QProgressBar *progressBar;
     QFrame *frame_6;
-    QGridLayout *gridLayout_5;
+    QGridLayout *gridLayout_6;
     QPushButton *btnGuidleRfte;
     QPushButton *btnImportRfte;
     QPushButton *btnLogRfte;
     QPushButton *btnExportRfte;
     QPushButton *btnPrintRfte;
+    QGridLayout *gridLayout_5;
+    QPushButton *btnUndoRfte;
     QPushButton *btnRunRfte;
-    QFrame *frame_5;
+    QPushButton *btnStopRfte;
 
     void setupUi(QWidget *TestRfCable)
     {
@@ -300,7 +303,7 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, -607, 473, 1025));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 473, 1025));
         scrollAreaWidgetContents->setStyleSheet(QLatin1String("#scrollAreaWidgetContents {\n"
 "	background-color: transparent;\n"
 "}\n"
@@ -2581,11 +2584,10 @@ public:
 "}"));
         frame_3->setFrameShape(QFrame::StyledPanel);
         frame_3->setFrameShadow(QFrame::Raised);
-        gridLayout_6 = new QGridLayout(frame_3);
-        gridLayout_6->setObjectName(QStringLiteral("gridLayout_6"));
-        gridLayout_6->setHorizontalSpacing(1);
-        gridLayout_6->setVerticalSpacing(0);
-        gridLayout_6->setContentsMargins(5, 0, 1, 1);
+        gridLayout_9 = new QGridLayout(frame_3);
+        gridLayout_9->setSpacing(1);
+        gridLayout_9->setObjectName(QStringLiteral("gridLayout_9"));
+        gridLayout_9->setContentsMargins(0, 0, 0, 0);
         label_2 = new QLabel(frame_3);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setStyleSheet(QLatin1String("color: rgb(49, 62, 70);\n"
@@ -2593,7 +2595,22 @@ public:
 "font: bold;\n"
 ""));
 
-        gridLayout_6->addWidget(label_2, 0, 0, 1, 1);
+        gridLayout_9->addWidget(label_2, 0, 0, 1, 1);
+
+        frame_5 = new QFrame(frame_3);
+        frame_5->setObjectName(QStringLiteral("frame_5"));
+        frame_5->setStyleSheet(QLatin1String("QFrame\n"
+"{\n"
+"font: 87 10pt \"Sans\"; \n"
+"font:bold;\n"
+" background-color: rgb(250, 250, 250); \n"
+"color: rgb(49, 67, 100);\n"
+"border:none;\n"
+"}"));
+        frame_5->setFrameShape(QFrame::StyledPanel);
+        frame_5->setFrameShadow(QFrame::Raised);
+
+        gridLayout_9->addWidget(frame_5, 1, 0, 1, 1);
 
         progressBar = new QProgressBar(frame_3);
         progressBar->setObjectName(QStringLiteral("progressBar"));
@@ -2607,7 +2624,7 @@ public:
         progressBar->setAlignment(Qt::AlignCenter);
         progressBar->setInvertedAppearance(true);
 
-        gridLayout_6->addWidget(progressBar, 3, 0, 1, 1);
+        gridLayout_9->addWidget(progressBar, 2, 0, 1, 1);
 
         frame_6 = new QFrame(frame_3);
         frame_6->setObjectName(QStringLiteral("frame_6"));
@@ -2621,10 +2638,10 @@ public:
 "}"));
         frame_6->setFrameShape(QFrame::StyledPanel);
         frame_6->setFrameShadow(QFrame::Raised);
-        gridLayout_5 = new QGridLayout(frame_6);
-        gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
-        gridLayout_5->setVerticalSpacing(1);
-        gridLayout_5->setContentsMargins(0, 1, 0, 1);
+        gridLayout_6 = new QGridLayout(frame_6);
+        gridLayout_6->setSpacing(1);
+        gridLayout_6->setObjectName(QStringLiteral("gridLayout_6"));
+        gridLayout_6->setContentsMargins(0, 0, 0, 0);
         btnGuidleRfte = new QPushButton(frame_6);
         btnGuidleRfte->setObjectName(QStringLiteral("btnGuidleRfte"));
         QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Preferred);
@@ -2653,7 +2670,7 @@ public:
         btnGuidleRfte->setIcon(icon3);
         btnGuidleRfte->setIconSize(QSize(20, 20));
 
-        gridLayout_5->addWidget(btnGuidleRfte, 0, 0, 1, 1);
+        gridLayout_6->addWidget(btnGuidleRfte, 0, 0, 1, 1);
 
         btnImportRfte = new QPushButton(frame_6);
         btnImportRfte->setObjectName(QStringLiteral("btnImportRfte"));
@@ -2680,7 +2697,7 @@ public:
         btnImportRfte->setIcon(icon4);
         btnImportRfte->setIconSize(QSize(20, 20));
 
-        gridLayout_5->addWidget(btnImportRfte, 1, 0, 1, 1);
+        gridLayout_6->addWidget(btnImportRfte, 1, 0, 1, 1);
 
         btnLogRfte = new QPushButton(frame_6);
         btnLogRfte->setObjectName(QStringLiteral("btnLogRfte"));
@@ -2707,7 +2724,7 @@ public:
         btnLogRfte->setIcon(icon5);
         btnLogRfte->setIconSize(QSize(20, 20));
 
-        gridLayout_5->addWidget(btnLogRfte, 2, 0, 1, 1);
+        gridLayout_6->addWidget(btnLogRfte, 2, 0, 1, 1);
 
         btnExportRfte = new QPushButton(frame_6);
         btnExportRfte->setObjectName(QStringLiteral("btnExportRfte"));
@@ -2734,7 +2751,7 @@ public:
         btnExportRfte->setIcon(icon6);
         btnExportRfte->setIconSize(QSize(20, 20));
 
-        gridLayout_5->addWidget(btnExportRfte, 3, 0, 1, 1);
+        gridLayout_6->addWidget(btnExportRfte, 3, 0, 1, 1);
 
         btnPrintRfte = new QPushButton(frame_6);
         btnPrintRfte->setObjectName(QStringLiteral("btnPrintRfte"));
@@ -2761,18 +2778,20 @@ public:
         btnPrintRfte->setIcon(icon7);
         btnPrintRfte->setIconSize(QSize(20, 20));
 
-        gridLayout_5->addWidget(btnPrintRfte, 4, 0, 1, 1);
+        gridLayout_6->addWidget(btnPrintRfte, 4, 0, 1, 1);
 
-        btnRunRfte = new QPushButton(frame_6);
-        btnRunRfte->setObjectName(QStringLiteral("btnRunRfte"));
-        sizePolicy1.setHeightForWidth(btnRunRfte->sizePolicy().hasHeightForWidth());
-        btnRunRfte->setSizePolicy(sizePolicy1);
-        btnRunRfte->setStyleSheet(QLatin1String("QPushButton\n"
+        gridLayout_5 = new QGridLayout();
+        gridLayout_5->setSpacing(1);
+        gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
+        btnUndoRfte = new QPushButton(frame_6);
+        btnUndoRfte->setObjectName(QStringLiteral("btnUndoRfte"));
+        btnUndoRfte->setMinimumSize(QSize(0, 35));
+        btnUndoRfte->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
 "background-color: rgb(162,175,176); \n"
-"font: 87 10pt \"Myriad Pro\";\n"
+"font: 87 8pt \"Myriad Pro\";\n"
 "font:bold;\n"
 "outline:none;\n"
 "border:none;\n"
@@ -2784,33 +2803,81 @@ public:
 "  	outline:none;\n"
 "}"));
         QIcon icon8;
-        icon8.addFile(QStringLiteral(":/Test/images/button/start_icon_3.png"), QSize(), QIcon::Normal, QIcon::Off);
-        btnRunRfte->setIcon(icon8);
+        icon8.addFile(QStringLiteral(":/Test/images/button/back_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        btnUndoRfte->setIcon(icon8);
+        btnUndoRfte->setIconSize(QSize(20, 20));
+
+        gridLayout_5->addWidget(btnUndoRfte, 0, 0, 1, 1);
+
+        btnRunRfte = new QPushButton(frame_6);
+        btnRunRfte->setObjectName(QStringLiteral("btnRunRfte"));
+        sizePolicy1.setHeightForWidth(btnRunRfte->sizePolicy().hasHeightForWidth());
+        btnRunRfte->setSizePolicy(sizePolicy1);
+        btnRunRfte->setMinimumSize(QSize(0, 35));
+        btnRunRfte->setStyleSheet(QLatin1String("QPushButton\n"
+"{\n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(162,175,176); \n"
+"font: 87 8pt \"Myriad Pro\";\n"
+"font:bold;\n"
+"outline:none;\n"
+"border:none;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        QIcon icon9;
+        icon9.addFile(QStringLiteral(":/Test/images/button/start_icon_3.png"), QSize(), QIcon::Normal, QIcon::Off);
+        btnRunRfte->setIcon(icon9);
         btnRunRfte->setIconSize(QSize(20, 20));
 
-        gridLayout_5->addWidget(btnRunRfte, 5, 0, 1, 1);
+        gridLayout_5->addWidget(btnRunRfte, 0, 1, 1, 1);
 
+        gridLayout_5->setColumnStretch(0, 1);
+        gridLayout_5->setColumnStretch(1, 2);
 
-        gridLayout_6->addWidget(frame_6, 0, 1, 4, 1);
+        gridLayout_6->addLayout(gridLayout_5, 5, 0, 1, 1);
 
-        frame_5 = new QFrame(frame_3);
-        frame_5->setObjectName(QStringLiteral("frame_5"));
-        frame_5->setStyleSheet(QLatin1String("QFrame\n"
+        btnStopRfte = new QPushButton(frame_6);
+        btnStopRfte->setObjectName(QStringLiteral("btnStopRfte"));
+        btnStopRfte->setEnabled(false);
+        sizePolicy1.setHeightForWidth(btnStopRfte->sizePolicy().hasHeightForWidth());
+        btnStopRfte->setSizePolicy(sizePolicy1);
+        btnStopRfte->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"font: 87 10pt \"Sans\"; \n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(162,175,176); \n"
+"font: 87 11pt \"Myriad Pro\";\n"
 "font:bold;\n"
-" background-color: rgb(250, 250, 250); \n"
-"color: rgb(49, 67, 100);\n"
+"outline:none;\n"
 "border:none;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
 "}"));
-        frame_5->setFrameShape(QFrame::StyledPanel);
-        frame_5->setFrameShadow(QFrame::Raised);
+        QIcon icon10;
+        icon10.addFile(QStringLiteral(":/Test/images/button/Stop_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        btnStopRfte->setIcon(icon10);
+        btnStopRfte->setIconSize(QSize(25, 25));
 
-        gridLayout_6->addWidget(frame_5, 1, 0, 2, 1);
+        gridLayout_6->addWidget(btnStopRfte, 6, 0, 1, 1);
 
-        gridLayout_6->setRowStretch(0, 2);
-        gridLayout_6->setRowStretch(1, 8);
-        gridLayout_6->setRowStretch(2, 2);
+
+        gridLayout_9->addWidget(frame_6, 0, 1, 3, 1);
+
+        gridLayout_9->setRowStretch(0, 2);
+        gridLayout_9->setRowStretch(1, 10);
+        gridLayout_9->setRowStretch(2, 1);
+        gridLayout_9->setColumnStretch(0, 3);
+        gridLayout_9->setColumnStretch(1, 1);
 
         gridLayout->addWidget(frame_3, 2, 1, 1, 1);
 
@@ -2998,7 +3065,9 @@ public:
         btnLogRfte->setText(QApplication::translate("TestRfCable", "Log", Q_NULLPTR));
         btnExportRfte->setText(QApplication::translate("TestRfCable", "Export", Q_NULLPTR));
         btnPrintRfte->setText(QApplication::translate("TestRfCable", "Print", Q_NULLPTR));
+        btnUndoRfte->setText(QApplication::translate("TestRfCable", "Undo", Q_NULLPTR));
         btnRunRfte->setText(QApplication::translate("TestRfCable", "Run", Q_NULLPTR));
+        btnStopRfte->setText(QApplication::translate("TestRfCable", "Stop", Q_NULLPTR));
     } // retranslateUi
 
 };

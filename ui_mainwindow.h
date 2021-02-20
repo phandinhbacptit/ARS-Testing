@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.9.0
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,12 +10,10 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
@@ -57,8 +55,8 @@ public:
     QGridLayout *gridLayout_7;
     QFrame *frame_2;
     QGridLayout *gridLayout_6;
-    QLabel *mlElectricCable;
     QPushButton *mBtCableTest;
+    QLabel *mlElectricCable;
     QFrame *frame_3;
     QGridLayout *gridLayout_8;
     QLabel *mlRfCable;
@@ -76,38 +74,38 @@ public:
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
-            MainWindow->setObjectName(QStringLiteral("MainWindow"));
+            MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->resize(1143, 638);
         MainWindow->setMaximumSize(QSize(21696, 13560));
         MainWindow->setBaseSize(QSize(-7655, 0));
-        MainWindow->setStyleSheet(QStringLiteral("background-color: rgb(242,242,242);"));
+        MainWindow->setStyleSheet(QString::fromUtf8("background-color: rgb(242,242,242);"));
         centralWidget = new QWidget(MainWindow);
-        centralWidget->setObjectName(QStringLiteral("centralWidget"));
+        centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         gridLayout_3 = new QGridLayout(centralWidget);
         gridLayout_3->setSpacing(20);
         gridLayout_3->setContentsMargins(11, 11, 11, 11);
-        gridLayout_3->setObjectName(QStringLiteral("gridLayout_3"));
+        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         gridLayout_3->setContentsMargins(2, 5, 10, 0);
         frame_7 = new QFrame(centralWidget);
-        frame_7->setObjectName(QStringLiteral("frame_7"));
-        frame_7->setStyleSheet(QLatin1String("outline:none;\n"
+        frame_7->setObjectName(QString::fromUtf8("frame_7"));
+        frame_7->setStyleSheet(QString::fromUtf8("outline:none;\n"
 "border:none;"));
         frame_7->setFrameShape(QFrame::StyledPanel);
         frame_7->setFrameShadow(QFrame::Raised);
         gridLayout_2 = new QGridLayout(frame_7);
         gridLayout_2->setSpacing(6);
         gridLayout_2->setContentsMargins(11, 11, 11, 11);
-        gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         label = new QLabel(frame_7);
-        label->setObjectName(QStringLiteral("label"));
+        label->setObjectName(QString::fromUtf8("label"));
         QFont font;
-        font.setFamily(QStringLiteral("Sans"));
+        font.setFamily(QString::fromUtf8("Sans"));
         font.setPointSize(28);
         font.setBold(true);
         font.setItalic(false);
         font.setWeight(75);
         label->setFont(font);
-        label->setStyleSheet(QLatin1String("color: rgb(49,67,100);\n"
+        label->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
 "font:28pt \"Sans\";\n"
 "font:bold;\n"
 "background-color: none;"));
@@ -115,8 +113,8 @@ public:
         gridLayout_2->addWidget(label, 0, 0, 1, 1);
 
         label_14 = new QLabel(frame_7);
-        label_14->setObjectName(QStringLiteral("label_14"));
-        label_14->setStyleSheet(QStringLiteral("border-image: url(\":/Test/images/logo.png\");"));
+        label_14->setObjectName(QString::fromUtf8("label_14"));
+        label_14->setStyleSheet(QString::fromUtf8("border-image: url(\":/Test/images/logo.png\");"));
 
         gridLayout_2->addWidget(label_14, 1, 0, 1, 1);
 
@@ -126,9 +124,9 @@ public:
         gridLayout_3->addWidget(frame_7, 0, 0, 2, 1);
 
         btnMainExit = new QPushButton(centralWidget);
-        btnMainExit->setObjectName(QStringLiteral("btnMainExit"));
+        btnMainExit->setObjectName(QString::fromUtf8("btnMainExit"));
         QIcon icon;
-        icon.addFile(QStringLiteral(":/Test/images/button/exit_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/Test/images/button/exit_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
         btnMainExit->setIcon(icon);
         btnMainExit->setIconSize(QSize(25, 25));
         btnMainExit->setFlat(true);
@@ -136,30 +134,30 @@ public:
         gridLayout_3->addWidget(btnMainExit, 0, 1, 1, 1, Qt::AlignRight);
 
         frame = new QFrame(centralWidget);
-        frame->setObjectName(QStringLiteral("frame"));
-        frame->setStyleSheet(QStringLiteral("background-color: none;"));
+        frame->setObjectName(QString::fromUtf8("frame"));
+        frame->setStyleSheet(QString::fromUtf8("background-color: none;"));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
         gridLayout_4 = new QGridLayout(frame);
         gridLayout_4->setSpacing(6);
         gridLayout_4->setContentsMargins(11, 11, 11, 11);
-        gridLayout_4->setObjectName(QStringLiteral("gridLayout_4"));
+        gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
         gridLayout_4->setContentsMargins(0, 0, 0, 0);
         gridLayout = new QGridLayout();
         gridLayout->setSpacing(6);
-        gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setHorizontalSpacing(10);
         gridLayout->setVerticalSpacing(15);
         gridLayout->setContentsMargins(10, 10, 10, 10);
         mLeNameExecutor = new QLineEdit(frame);
-        mLeNameExecutor->setObjectName(QStringLiteral("mLeNameExecutor"));
-        mLeNameExecutor->setStyleSheet(QStringLiteral("background-color: rgb(220,225,226);"));
+        mLeNameExecutor->setObjectName(QString::fromUtf8("mLeNameExecutor"));
+        mLeNameExecutor->setStyleSheet(QString::fromUtf8("background-color: rgb(220,225,226);"));
 
         gridLayout->addWidget(mLeNameExecutor, 1, 1, 1, 1);
 
         label_3 = new QLabel(frame);
-        label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setStyleSheet(QLatin1String("color: rgb(49,67,100);\n"
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
 "font: 11pt \"Sans\";\n"
 "font:bold;\n"
 "background-color: none;"));
@@ -168,8 +166,8 @@ public:
         gridLayout->addWidget(label_3, 2, 0, 1, 1);
 
         label_2 = new QLabel(frame);
-        label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setStyleSheet(QLatin1String("color: rgb(49,67,100);\n"
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
 "font: 11pt \"Sans\";\n"
 "font:bold;\n"
 "background-color: none;"));
@@ -178,8 +176,8 @@ public:
         gridLayout->addWidget(label_2, 1, 0, 1, 1);
 
         label_8 = new QLabel(frame);
-        label_8->setObjectName(QStringLiteral("label_8"));
-        label_8->setStyleSheet(QLatin1String("color: rgb(49,67,100);\n"
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
 "font: 11pt \"Sans\";\n"
 "font:bold;\n"
 "background-color: none;"));
@@ -188,8 +186,8 @@ public:
         gridLayout->addWidget(label_8, 0, 3, 1, 1);
 
         label_7 = new QLabel(frame);
-        label_7->setObjectName(QStringLiteral("label_7"));
-        label_7->setStyleSheet(QLatin1String("color: rgb(49,67,100);\n"
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
 "font: 11pt \"Sans\";\n"
 "font:bold;\n"
 "background-color: none;"));
@@ -198,20 +196,20 @@ public:
         gridLayout->addWidget(label_7, 0, 2, 1, 1);
 
         mLeLocalTest = new QLineEdit(frame);
-        mLeLocalTest->setObjectName(QStringLiteral("mLeLocalTest"));
-        mLeLocalTest->setStyleSheet(QStringLiteral("background-color: rgb(220,225,226);"));
+        mLeLocalTest->setObjectName(QString::fromUtf8("mLeLocalTest"));
+        mLeLocalTest->setStyleSheet(QString::fromUtf8("background-color: rgb(220,225,226);"));
 
         gridLayout->addWidget(mLeLocalTest, 3, 1, 1, 1);
 
         mLeIDExecutor = new QLineEdit(frame);
-        mLeIDExecutor->setObjectName(QStringLiteral("mLeIDExecutor"));
-        mLeIDExecutor->setStyleSheet(QStringLiteral("background-color: rgb(220,225,226);"));
+        mLeIDExecutor->setObjectName(QString::fromUtf8("mLeIDExecutor"));
+        mLeIDExecutor->setStyleSheet(QString::fromUtf8("background-color: rgb(220,225,226);"));
 
         gridLayout->addWidget(mLeIDExecutor, 1, 2, 1, 1);
 
         label_4 = new QLabel(frame);
-        label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setStyleSheet(QLatin1String("color: rgb(49,67,100);\n"
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
 "font: 11pt \"Sans\";\n"
 "font:bold;\n"
 "background-color: none;"));
@@ -220,37 +218,37 @@ public:
         gridLayout->addWidget(label_4, 3, 0, 1, 1);
 
         mLeWorkSupervisor = new QLineEdit(frame);
-        mLeWorkSupervisor->setObjectName(QStringLiteral("mLeWorkSupervisor"));
-        mLeWorkSupervisor->setStyleSheet(QStringLiteral("background-color: rgb(220,225,226);"));
+        mLeWorkSupervisor->setObjectName(QString::fromUtf8("mLeWorkSupervisor"));
+        mLeWorkSupervisor->setStyleSheet(QString::fromUtf8("background-color: rgb(220,225,226);"));
 
         gridLayout->addWidget(mLeWorkSupervisor, 2, 3, 1, 1);
 
         mLeIDSupervisor = new QLineEdit(frame);
-        mLeIDSupervisor->setObjectName(QStringLiteral("mLeIDSupervisor"));
-        mLeIDSupervisor->setStyleSheet(QStringLiteral("background-color: rgb(220,225,226);"));
+        mLeIDSupervisor->setObjectName(QString::fromUtf8("mLeIDSupervisor"));
+        mLeIDSupervisor->setStyleSheet(QString::fromUtf8("background-color: rgb(220,225,226);"));
 
         gridLayout->addWidget(mLeIDSupervisor, 2, 2, 1, 1);
 
         mLeNameSupervisor = new QLineEdit(frame);
-        mLeNameSupervisor->setObjectName(QStringLiteral("mLeNameSupervisor"));
-        mLeNameSupervisor->setStyleSheet(QStringLiteral("background-color: rgb(220,225,226);"));
+        mLeNameSupervisor->setObjectName(QString::fromUtf8("mLeNameSupervisor"));
+        mLeNameSupervisor->setStyleSheet(QString::fromUtf8("background-color: rgb(220,225,226);"));
 
         gridLayout->addWidget(mLeNameSupervisor, 2, 1, 1, 1);
 
         label_9 = new QLabel(frame);
-        label_9->setObjectName(QStringLiteral("label_9"));
+        label_9->setObjectName(QString::fromUtf8("label_9"));
 
         gridLayout->addWidget(label_9, 0, 0, 1, 1);
 
         mLeWorkExecutor = new QLineEdit(frame);
-        mLeWorkExecutor->setObjectName(QStringLiteral("mLeWorkExecutor"));
-        mLeWorkExecutor->setStyleSheet(QStringLiteral("background-color: rgb(220,225,226);"));
+        mLeWorkExecutor->setObjectName(QString::fromUtf8("mLeWorkExecutor"));
+        mLeWorkExecutor->setStyleSheet(QString::fromUtf8("background-color: rgb(220,225,226);"));
 
         gridLayout->addWidget(mLeWorkExecutor, 1, 3, 1, 1);
 
         label_6 = new QLabel(frame);
-        label_6->setObjectName(QStringLiteral("label_6"));
-        label_6->setStyleSheet(QLatin1String("color: rgb(49,67,100);\n"
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
 "font: 11pt \"Sans\";\n"
 "font:bold;\n"
 "background-color: none;"));
@@ -270,53 +268,43 @@ public:
         gridLayout_3->addWidget(frame, 1, 1, 1, 1);
 
         frame_6 = new QFrame(centralWidget);
-        frame_6->setObjectName(QStringLiteral("frame_6"));
-        frame_6->setStyleSheet(QLatin1String("outline: none;\n"
+        frame_6->setObjectName(QString::fromUtf8("frame_6"));
+        frame_6->setStyleSheet(QString::fromUtf8("outline: none;\n"
 "border:none;"));
         frame_6->setFrameShape(QFrame::StyledPanel);
         frame_6->setFrameShadow(QFrame::Raised);
         gridLayout_5 = new QGridLayout(frame_6);
         gridLayout_5->setSpacing(6);
         gridLayout_5->setContentsMargins(11, 11, 11, 11);
-        gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
+        gridLayout_5->setObjectName(QString::fromUtf8("gridLayout_5"));
         gridLayout_5->setHorizontalSpacing(50);
         gridLayout_5->setVerticalSpacing(10);
         gridLayout_5->setContentsMargins(-1, 0, 0, -1);
         gridLayout_7 = new QGridLayout();
         gridLayout_7->setSpacing(6);
-        gridLayout_7->setObjectName(QStringLiteral("gridLayout_7"));
+        gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
         gridLayout_7->setHorizontalSpacing(15);
         gridLayout_7->setContentsMargins(0, -1, -1, -1);
         frame_2 = new QFrame(frame_6);
-        frame_2->setObjectName(QStringLiteral("frame_2"));
-        frame_2->setStyleSheet(QLatin1String("background-color: rgba(194,204,205);\n"
+        frame_2->setObjectName(QString::fromUtf8("frame_2"));
+        frame_2->setStyleSheet(QString::fromUtf8("background-color: rgba(194,204,205);\n"
 "border: 10px;"));
         frame_2->setFrameShape(QFrame::StyledPanel);
         frame_2->setFrameShadow(QFrame::Raised);
         gridLayout_6 = new QGridLayout(frame_2);
         gridLayout_6->setSpacing(6);
         gridLayout_6->setContentsMargins(11, 11, 11, 11);
-        gridLayout_6->setObjectName(QStringLiteral("gridLayout_6"));
+        gridLayout_6->setObjectName(QString::fromUtf8("gridLayout_6"));
         gridLayout_6->setContentsMargins(2, 2, 2, 2);
-        mlElectricCable = new QLabel(frame_2);
-        mlElectricCable->setObjectName(QStringLiteral("mlElectricCable"));
-        mlElectricCable->setStyleSheet(QLatin1String("color: rgb(170, 186, 198);\n"
-"font: 14pt \"Sans\";\n"
-"font:bold;\n"
-"background-color: none;"));
-        mlElectricCable->setAlignment(Qt::AlignCenter);
-
-        gridLayout_6->addWidget(mlElectricCable, 0, 0, 1, 1);
-
         mBtCableTest = new QPushButton(frame_2);
-        mBtCableTest->setObjectName(QStringLiteral("mBtCableTest"));
+        mBtCableTest->setObjectName(QString::fromUtf8("mBtCableTest"));
         mBtCableTest->setEnabled(true);
         QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(mBtCableTest->sizePolicy().hasHeightForWidth());
         mBtCableTest->setSizePolicy(sizePolicy);
-        mBtCableTest->setStyleSheet(QLatin1String("QPushButton\n"
+        mBtCableTest->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "background-color: rgba(207,215,216, 255);\n"
 "outline: none;\n"
@@ -332,25 +320,35 @@ public:
 
         gridLayout_6->addWidget(mBtCableTest, 1, 0, 1, 1);
 
+        mlElectricCable = new QLabel(frame_2);
+        mlElectricCable->setObjectName(QString::fromUtf8("mlElectricCable"));
+        mlElectricCable->setStyleSheet(QString::fromUtf8("color: rgb(170, 186, 198);\n"
+"font: 14pt \"Sans\";\n"
+"font:bold;\n"
+"background-color: none;"));
+        mlElectricCable->setAlignment(Qt::AlignCenter);
+
+        gridLayout_6->addWidget(mlElectricCable, 0, 0, 1, 1);
+
         gridLayout_6->setRowStretch(0, 2);
         gridLayout_6->setRowStretch(1, 12);
 
         gridLayout_7->addWidget(frame_2, 0, 0, 1, 1);
 
         frame_3 = new QFrame(frame_6);
-        frame_3->setObjectName(QStringLiteral("frame_3"));
-        frame_3->setStyleSheet(QLatin1String("background-color: rgba(194,204,205);\n"
+        frame_3->setObjectName(QString::fromUtf8("frame_3"));
+        frame_3->setStyleSheet(QString::fromUtf8("background-color: rgba(194,204,205);\n"
 ""));
         frame_3->setFrameShape(QFrame::StyledPanel);
         frame_3->setFrameShadow(QFrame::Raised);
         gridLayout_8 = new QGridLayout(frame_3);
         gridLayout_8->setSpacing(6);
         gridLayout_8->setContentsMargins(11, 11, 11, 11);
-        gridLayout_8->setObjectName(QStringLiteral("gridLayout_8"));
+        gridLayout_8->setObjectName(QString::fromUtf8("gridLayout_8"));
         gridLayout_8->setContentsMargins(2, 2, 2, 2);
         mlRfCable = new QLabel(frame_3);
-        mlRfCable->setObjectName(QStringLiteral("mlRfCable"));
-        mlRfCable->setStyleSheet(QLatin1String("color: rgb(170, 186, 198);\n"
+        mlRfCable->setObjectName(QString::fromUtf8("mlRfCable"));
+        mlRfCable->setStyleSheet(QString::fromUtf8("color: rgb(170, 186, 198);\n"
 "font: 14pt \"Sans\";\n"
 "font:bold;\n"
 "background-color: none;"));
@@ -359,11 +357,11 @@ public:
         gridLayout_8->addWidget(mlRfCable, 0, 0, 1, 1);
 
         mBtRfTest = new QPushButton(frame_3);
-        mBtRfTest->setObjectName(QStringLiteral("mBtRfTest"));
+        mBtRfTest->setObjectName(QString::fromUtf8("mBtRfTest"));
         mBtRfTest->setEnabled(true);
         sizePolicy.setHeightForWidth(mBtRfTest->sizePolicy().hasHeightForWidth());
         mBtRfTest->setSizePolicy(sizePolicy);
-        mBtRfTest->setStyleSheet(QLatin1String("QPushButton\n"
+        mBtRfTest->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "background-color: rgb(220,225,226);\n"
 "outline: none;\n"
@@ -385,19 +383,19 @@ public:
         gridLayout_7->addWidget(frame_3, 0, 1, 1, 1);
 
         frame_4 = new QFrame(frame_6);
-        frame_4->setObjectName(QStringLiteral("frame_4"));
-        frame_4->setStyleSheet(QLatin1String("background-color: rgba(194,204,205);\n"
+        frame_4->setObjectName(QString::fromUtf8("frame_4"));
+        frame_4->setStyleSheet(QString::fromUtf8("background-color: rgba(194,204,205);\n"
 ""));
         frame_4->setFrameShape(QFrame::StyledPanel);
         frame_4->setFrameShadow(QFrame::Raised);
         gridLayout_9 = new QGridLayout(frame_4);
         gridLayout_9->setSpacing(6);
         gridLayout_9->setContentsMargins(11, 11, 11, 11);
-        gridLayout_9->setObjectName(QStringLiteral("gridLayout_9"));
+        gridLayout_9->setObjectName(QString::fromUtf8("gridLayout_9"));
         gridLayout_9->setContentsMargins(2, 2, 2, 2);
         mlModule = new QLabel(frame_4);
-        mlModule->setObjectName(QStringLiteral("mlModule"));
-        mlModule->setStyleSheet(QLatin1String("color: rgb(170, 186, 198);\n"
+        mlModule->setObjectName(QString::fromUtf8("mlModule"));
+        mlModule->setStyleSheet(QString::fromUtf8("color: rgb(170, 186, 198);\n"
 "font: 14pt \"Sans\";\n"
 "font:bold;\n"
 "background-color: none;"));
@@ -406,11 +404,11 @@ public:
         gridLayout_9->addWidget(mlModule, 0, 0, 1, 1);
 
         mBtModuleTest = new QPushButton(frame_4);
-        mBtModuleTest->setObjectName(QStringLiteral("mBtModuleTest"));
+        mBtModuleTest->setObjectName(QString::fromUtf8("mBtModuleTest"));
         mBtModuleTest->setEnabled(true);
         sizePolicy.setHeightForWidth(mBtModuleTest->sizePolicy().hasHeightForWidth());
         mBtModuleTest->setSizePolicy(sizePolicy);
-        mBtModuleTest->setStyleSheet(QLatin1String("QPushButton\n"
+        mBtModuleTest->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "background-color: rgb(220,225,226);\n"
 "outline: none;\n"
@@ -433,19 +431,19 @@ public:
         gridLayout_7->addWidget(frame_4, 0, 2, 1, 1);
 
         frame_5 = new QFrame(frame_6);
-        frame_5->setObjectName(QStringLiteral("frame_5"));
-        frame_5->setStyleSheet(QLatin1String("background-color: rgba(194,204,205);\n"
+        frame_5->setObjectName(QString::fromUtf8("frame_5"));
+        frame_5->setStyleSheet(QString::fromUtf8("background-color: rgba(194,204,205);\n"
 ""));
         frame_5->setFrameShape(QFrame::StyledPanel);
         frame_5->setFrameShadow(QFrame::Raised);
         gridLayout_10 = new QGridLayout(frame_5);
         gridLayout_10->setSpacing(6);
         gridLayout_10->setContentsMargins(11, 11, 11, 11);
-        gridLayout_10->setObjectName(QStringLiteral("gridLayout_10"));
+        gridLayout_10->setObjectName(QString::fromUtf8("gridLayout_10"));
         gridLayout_10->setContentsMargins(2, 2, 2, 2);
         mlMechanical = new QLabel(frame_5);
-        mlMechanical->setObjectName(QStringLiteral("mlMechanical"));
-        mlMechanical->setStyleSheet(QLatin1String("color: rgb(170, 186, 198);\n"
+        mlMechanical->setObjectName(QString::fromUtf8("mlMechanical"));
+        mlMechanical->setStyleSheet(QString::fromUtf8("color: rgb(170, 186, 198);\n"
 "font: 14pt \"Sans\";\n"
 "font:bold;\n"
 "background-color: none;"));
@@ -454,11 +452,11 @@ public:
         gridLayout_10->addWidget(mlMechanical, 0, 0, 1, 1);
 
         mBtMechanicalTest = new QPushButton(frame_5);
-        mBtMechanicalTest->setObjectName(QStringLiteral("mBtMechanicalTest"));
+        mBtMechanicalTest->setObjectName(QString::fromUtf8("mBtMechanicalTest"));
         mBtMechanicalTest->setEnabled(true);
         sizePolicy.setHeightForWidth(mBtMechanicalTest->sizePolicy().hasHeightForWidth());
         mBtMechanicalTest->setSizePolicy(sizePolicy);
-        mBtMechanicalTest->setStyleSheet(QLatin1String("QPushButton\n"
+        mBtMechanicalTest->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "background-color: rgb(220,225,226);\n"
 "outline: none;\n"
@@ -494,7 +492,7 @@ public:
         frame->raise();
         btnMainExit->raise();
         statusBar = new QStatusBar(MainWindow);
-        statusBar->setObjectName(QStringLiteral("statusBar"));
+        statusBar->setObjectName(QString::fromUtf8("statusBar"));
         MainWindow->setStatusBar(statusBar);
 
         retranslateUi(MainWindow);
@@ -505,31 +503,31 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QString());
-        label->setText(QApplication::translate("MainWindow", "ARS-Testing", Q_NULLPTR));
+        label->setText(QCoreApplication::translate("MainWindow", "ARS-Testing", nullptr));
         label_14->setText(QString());
         btnMainExit->setText(QString());
         mLeNameExecutor->setText(QString());
-        mLeNameExecutor->setPlaceholderText(QApplication::translate("MainWindow", "Name", Q_NULLPTR));
-        label_3->setText(QApplication::translate("MainWindow", "Supervisor", Q_NULLPTR));
-        label_2->setText(QApplication::translate("MainWindow", "Executor", Q_NULLPTR));
-        label_8->setText(QApplication::translate("MainWindow", "Workplace", Q_NULLPTR));
-        label_7->setText(QApplication::translate("MainWindow", "ID staff", Q_NULLPTR));
-        mLeLocalTest->setPlaceholderText(QApplication::translate("MainWindow", "Location", Q_NULLPTR));
-        mLeIDExecutor->setPlaceholderText(QApplication::translate("MainWindow", "ID Number", Q_NULLPTR));
-        label_4->setText(QApplication::translate("MainWindow", "Location Test", Q_NULLPTR));
-        mLeWorkSupervisor->setPlaceholderText(QApplication::translate("MainWindow", "Workplace ", Q_NULLPTR));
-        mLeIDSupervisor->setPlaceholderText(QApplication::translate("MainWindow", "ID Number", Q_NULLPTR));
-        mLeNameSupervisor->setPlaceholderText(QApplication::translate("MainWindow", "Name", Q_NULLPTR));
+        mLeNameExecutor->setPlaceholderText(QCoreApplication::translate("MainWindow", "Name", nullptr));
+        label_3->setText(QCoreApplication::translate("MainWindow", "Supervisor", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "Executor", nullptr));
+        label_8->setText(QCoreApplication::translate("MainWindow", "Workplace", nullptr));
+        label_7->setText(QCoreApplication::translate("MainWindow", "ID staff", nullptr));
+        mLeLocalTest->setPlaceholderText(QCoreApplication::translate("MainWindow", "Location", nullptr));
+        mLeIDExecutor->setPlaceholderText(QCoreApplication::translate("MainWindow", "ID Number", nullptr));
+        label_4->setText(QCoreApplication::translate("MainWindow", "Location Test", nullptr));
+        mLeWorkSupervisor->setPlaceholderText(QCoreApplication::translate("MainWindow", "Workplace ", nullptr));
+        mLeIDSupervisor->setPlaceholderText(QCoreApplication::translate("MainWindow", "ID Number", nullptr));
+        mLeNameSupervisor->setPlaceholderText(QCoreApplication::translate("MainWindow", "Name", nullptr));
         label_9->setText(QString());
-        mLeWorkExecutor->setPlaceholderText(QApplication::translate("MainWindow", "Workplace", Q_NULLPTR));
-        label_6->setText(QApplication::translate("MainWindow", "Name", Q_NULLPTR));
-        mlElectricCable->setText(QApplication::translate("MainWindow", "Test Electrical Cable ", Q_NULLPTR));
+        mLeWorkExecutor->setPlaceholderText(QCoreApplication::translate("MainWindow", "Workplace", nullptr));
+        label_6->setText(QCoreApplication::translate("MainWindow", "Name", nullptr));
         mBtCableTest->setText(QString());
-        mlRfCable->setText(QApplication::translate("MainWindow", "Test RF Cable", Q_NULLPTR));
+        mlElectricCable->setText(QCoreApplication::translate("MainWindow", "Test Electrical Cable ", nullptr));
+        mlRfCable->setText(QCoreApplication::translate("MainWindow", "Test RF Cable", nullptr));
         mBtRfTest->setText(QString());
-        mlModule->setText(QApplication::translate("MainWindow", "Test Module", Q_NULLPTR));
+        mlModule->setText(QCoreApplication::translate("MainWindow", "Test Module", nullptr));
         mBtModuleTest->setText(QString());
-        mlMechanical->setText(QApplication::translate("MainWindow", "Test Mechanical", Q_NULLPTR));
+        mlMechanical->setText(QCoreApplication::translate("MainWindow", "Test Mechanical", nullptr));
         mBtMechanicalTest->setText(QString());
     } // retranslateUi
 

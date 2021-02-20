@@ -31,7 +31,6 @@
         <file>images/result_icon_2.png</file>
         <file>images/background/background_1.png</file>
         <file>images/background/background_2.png</file>
-        <file>images/button/back_icon 2.png</file>
         <file>images/background/background_3.png</file>
         <file>images/background/background_4.jpg</file>
         <file>images/background/background_5.jpg</file>
@@ -53,6 +52,10 @@
         <file>images/button/disconnect.png</file>
         <file>images/button/connect.svg</file>
         <file>images/button/disconnect.svg</file>
+        <file>images/button/back_icon.png</file>
+        <file>images/button/pause_icon.png</file>
+        <file>images/button/resum_icon.png</file>
+        <file>images/button/disconnected.svg</file>
     </qresource>
     <qresource prefix="/File">
         <file>libKdReport/xml/PriceList.xml</file>
