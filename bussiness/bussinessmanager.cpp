@@ -10,11 +10,10 @@ bussinessManager::bussinessManager(QObject *parent) : QObject(parent)
 {
     qDebug() << "[Bussiness] Constructor";
     mUi = NULL;
+//    reportElectrical = NULL;
     //mCTE = NULL;
 
-
 //    reportElectrical.setDocumentName("Electrical Report");
-
 }
 bussinessManager::~bussinessManager()
 {
@@ -34,6 +33,11 @@ bussinessManager::~bussinessManager()
        delete mTestRfCable;
        mTestRfCable = NULL;
     }
+
+//    if (reportElectrical != NULL) {
+//        delete reportElectrical;
+//        reportElectrical = NULL;
+//    }
 
 }
 
@@ -125,49 +129,172 @@ void bussinessManager::setupRf(Ui::TestRfCable *ui)
     connect(mRFTE->btnStopRfte, SIGNAL(clicked()), this, SLOT(slt_stopRFTE()));
     qDebug() << "[Bussiness] Setup gui RFTE";
 }
-
-void bussinessManager::slt_exportCteReport()
+void bussinessManager::createCableReport(KDReports::Report *report, QString nameCable)
 {
-//    reportElectrical.associateTextValue("title_element", "TEST REPORT");
+    report->setHeaderBodySpacing( 10 ); // mm
+    report->setFooterBodySpacing( 10 ); // mm
 
-//    reportElectrical.associateTextValue("table1_title", "Resistance");
-//    reportElectrical.associateTextValue("table2_title", "Insulation Resistance");
-//    reportElectrical.associateImageValue("image_system", QPixmap(":/Test/images/logo_vtx.png"));
+    KDReports::Header& header = report->header( KDReports::OddPages );
 
-//    reportElectrical.associateTextValue("name_excutor", mUi->mLeNameExecutor->text());
-//    reportElectrical.associateTextValue("id_excutor", mUi->mLeIDExecutor->text());
-//    reportElectrical.associateTextValue("work_excutor", mUi->mLeWorkExecutor->text());
+    KDReports::TextElement mainTitle("Test Report \t \t \t \t");
+    mainTitle.setBold(true);
+    mainTitle.setPointSize(30);
 
-//    reportElectrical.associateTextValue("name_supervisor", mUi->mLeNameSupervisor->text());
-//    reportElectrical.associateTextValue("id_supervisor", mUi->mLeIDSupervisor->text());
-//    reportElectrical.associateTextValue("work_supervisor", mUi->mLeWorkSupervisor->text());
+    QPixmap kdab( ":/Test/images/logo_vtx.png" );
+    KDReports::ImageElement imageElement( kdab );
+    imageElement.setWidth( 20, KDReports::Percent );
 
-//    reportElectrical.associateTextValue("nameCable", QString::fromUtf8("Cable1"));
+    header.addElement(mainTitle);
+    header.addInlineElement(imageElement );
+    header.addElement(KDReports::HLineElement());
+
+    header.addElement(KDReports::TextElement(" \t \t"));
+    header.addInlineElement(KDReports::TextElement("Test Date: "));
+    header.addVariable( KDReports::TextDate);
+    header.addInlineElement(KDReports::TextElement("\t \t"));
+    header.addInlineElement(KDReports::TextElement("RunNumber: "));
+    header.addElement(KDReports::TextElement("Name Cable: "));
+    header.addInlineElement(KDReports::TextElement(nameCable));
+    header.addInlineElement(KDReports::TextElement("\t"));
+    header.addInlineElement(KDReports::TextElement("Test Time: "));
+    header.addVariable( KDReports::TextTime);
+    header.addInlineElement(KDReports::TextElement("\t \t \t"));
+    header.addInlineElement(KDReports::TextElement("Place: "));
+    header.addInlineElement(KDReports::TextElement(mUi->mLeLocalTest->text()));
+    header.addElement(KDReports::HLineElement());
+
+    header.addElement(KDReports::TextElement("Excutor: "));
+    header.addInlineElement(KDReports::TextElement(mUi->mLeNameExecutor->text()));
+    header.addInlineElement(KDReports::TextElement("\t"));
+    header.addInlineElement(KDReports::TextElement("ID Excutor: "));
+    header.addInlineElement(KDReports::TextElement(mUi->mLeIDExecutor->text()));
+    header.addInlineElement(KDReports::TextElement("\t \t"));
+    header.addInlineElement(KDReports::TextElement("WorkdPlace: "));
+    header.addInlineElement(KDReports::TextElement(mUi->mLeWorkExecutor->text()));
+
+    header.addElement(KDReports::TextElement("Supervisor: "));
+    header.addInlineElement(KDReports::TextElement(mUi->mLeNameSupervisor->text()));
+    header.addInlineElement(KDReports::TextElement("\t"));
+    header.addInlineElement(KDReports::TextElement("ID Supervisor: "));
+    header.addInlineElement(KDReports::TextElement(mUi->mLeIDSupervisor->text()));
+    header.addInlineElement(KDReports::TextElement("\t \t"));
+    header.addInlineElement(KDReports::TextElement("WorkdPlace: "));
+    header.addInlineElement(KDReports::TextElement(mUi->mLeWorkSupervisor->text()));
+    header.addElement(KDReports::HLineElement());
+
+    const QColor titleElementColor( 204, 204, 255 );
+    KDReports::TextElement tableTitleElement( "Resistance" );
+    tableTitleElement.setBold( true );
+    report->addElement( tableTitleElement, Qt::AlignLeft, titleElementColor );
+    TableModel R_Cable;
+    R_Cable.setDataHasVerticalHeaders(false);
+    R_Cable.loadFromCSV(":/libKdReport/xml/ElectricCable/R_" + nameCable + ".csv");
+    KDReports::AutoTableElement autoTableElement1( &R_Cable );
+    autoTableElement1.setWidth( 100, KDReports::Percent );
+    report->addElement( autoTableElement1 );
+    report->addVerticalSpacing( 5 );
+
+    KDReports::TextElement tableTitleElement2( "Insulation Resistance" );
+    tableTitleElement2.setBold( true );
+    report->addElement( tableTitleElement2, Qt::AlignLeft, titleElementColor );
+    TableModel IR_Cable;
+    IR_Cable.setDataHasVerticalHeaders(false);
+    IR_Cable.loadFromCSV(":/libKdReport/xml/ElectricCable/IR_" + nameCable + ".csv");
+    KDReports::AutoTableElement autoTableElement2( &IR_Cable );
+    autoTableElement1.setWidth( 100, KDReports::Percent );
+    report->addElement(autoTableElement2 );
+
+    report->exportToFile("report" + nameCable, NULL);
+    qDebug() << "Export report";
+    report->destroyed(nullptr);
 
 
-//    TableModel table1;
-//    table1.setDataHasVerticalHeaders(false);
-//    table1.loadFromCSV(":/File/libKdReport/xml/table1.csv");
-//    reportElectrical.associateModel(QLatin1String("table1"), &table1);
-//    TableModel table2;
-//    table2.setDataHasVerticalHeaders(false);
-//    table2.loadFromCSV(":/File/libKdReport/xml/table2.csv");
-//    reportElectrical.associateModel(QLatin1String("table2"), &table2);
+//    report->associateTextValue("title_element", "TEST REPORT");
 
-//    QFile reportFile(":/File/libKdReport/xml/PriceList.xml");
+//    report->associateTextValue("table1_title", "Resistance");
+//    report->associateTextValue("table2_title", "Insulation Resistance");
+////    report->associateTextValue("R_" + nameCable + "_title", "Resistance");
+
+////    report->associateTextValue("IR_" + nameCable + "_title", "Insulation Resistance");
+//    report->associateImageValue("image_system", QPixmap(":/Test/images/logo_vtx.png"));
+
+//    report->associateTextValue("name_excutor", mUi->mLeNameExecutor->text());
+//    report->associateTextValue("id_excutor", mUi->mLeIDExecutor->text());
+//    report->associateTextValue("work_excutor", mUi->mLeWorkExecutor->text());
+
+//    report->associateTextValue("name_supervisor", mUi->mLeNameSupervisor->text());
+//    report->associateTextValue("id_supervisor", mUi->mLeIDSupervisor->text());
+//    report->associateTextValue("work_supervisor", mUi->mLeWorkSupervisor->text());
+//    report->associateTextValue("nameCable", nameCable);
+//    report->associateTextValue("R_model", "R_" + nameCable);
+
+
+//    TableModel R_Cable;
+//    R_Cable.setDataHasVerticalHeaders(false);
+//    R_Cable.loadFromCSV(":/File/libKdReport/xml/R_" + nameCable + ".csv");
+////    report->associateModel("R_" + nameCable, &R_Cable);
+//    KDReports::AutoTableElement autoTableElement1( &R_Cable );
+//    autoTableElement1.setWidth( 100, KDReports::Percent );
+//    report->addElement( autoTableElement1 );
+
+//    report->addVerticalSpacing( 5 );
+//    TableModel IR_Cable;
+//    IR_Cable.setDataHasVerticalHeaders(false);
+//    IR_Cable.loadFromCSV(":/File/libKdReport/xml/IR_" + nameCable + ".csv");
+//    report->associateModel("IR_" + nameCable, &IR_Cable);
+
+//    QFile reportFile(":/File/libKdReport/xml/FormReport.xml");
 //    if (!reportFile.open(QIODevice::ReadOnly)) {
-//        QMessageBox::warning(0, QObject::tr("Warning"), QObject::tr("Could not open report description file 'PriceList.xml'. Please start this program from the PriceListXML directory." ) );
+//        QMessageBox::warning(0, QObject::tr("Warning"), QObject::tr("Could not open report description file 'FormReport.xml'. Please start this program from the PriceListXML directory." ) );
 //    }
 
 //    KDReports::ErrorDetails details;
-//    if(!reportElectrical.loadFromXML(&reportFile, &details)) {
+//    if(!report->loadFromXML(&reportFile, &details)) {
 //        QMessageBox::warning(0, QObject::tr("Warning"), QObject::tr("Could not parse report description file:\n%1" ).arg(details.message()) );
 //        reportFile.close();
 //    }
 
-//    KDReports::PreviewDialog preview(&reportElectrical);
+//    report->exportToFile("report" + nameCable, NULL);
+
+//    KDReports::PreviewDialog preview(report);
 //    preview.setDefaultSaveDirectory(QDir::homePath());
 //    preview.exec();
+}
+void bussinessManager::slt_exportCteReport()
+{
+    reportCTE = new KDReports::Report();
+    createCableReport(reportCTE, "Cable1");
+
+    reportCTE = new KDReports::Report();
+    createCableReport(reportCTE, "Cable2");
+
+    reportCTE = new KDReports::Report();
+    createCableReport(reportCTE, "Cable3");
+
+    reportCTE = new KDReports::Report();
+    createCableReport(reportCTE, "Cable4");
+
+    reportCTE = new KDReports::Report();
+    createCableReport(reportCTE, "Cable5");
+
+    reportCTE = new KDReports::Report();
+    createCableReport(reportCTE, "Cable6");
+
+    reportCTE = new KDReports::Report();
+    createCableReport(reportCTE, "Cable9");
+
+    reportCTE = new KDReports::Report();
+    createCableReport(reportCTE, "Cable10");
+
+    reportCTE = new KDReports::Report();
+    createCableReport(reportCTE, "Cable11");
+
+    reportCTE = new KDReports::Report();
+    createCableReport(reportCTE, "Cable12");
+
+    reportCTE = new KDReports::Report();
+    createCableReport(reportCTE, "Cable13");
+
 }
 
 void bussinessManager::slt_showCteInterface()

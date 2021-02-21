@@ -133,12 +133,12 @@ unix:!macx: LIBS += -L$$PWD/qpdflib/ -lqpdf
 INCLUDEPATH += $$PWD/qpdflib
 DEPENDPATH += $$PWD/qpdflib
 
-#unix:!macx: LIBS += -L$$PWD/libKdReport/lib -lkdreports
-
-#INCLUDEPATH += $$PWD/libKdReport/include
-#DEPENDPATH += $$PWD/libKdReport/include
-
 unix:!macx: LIBS += -L$$PWD/qtCsv/lib/ -lqtcsv
 
 INCLUDEPATH += $$PWD/qtCsv/include
 DEPENDPATH += $$PWD/qtCsv/include
+
+unix:!macx: LIBS += -L$$PWD/libKdReport/lib/ -lkdreports
+
+INCLUDEPATH += $$PWD/libKdReport/include
+DEPENDPATH += $$PWD/libKdReport/include

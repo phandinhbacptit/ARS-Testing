@@ -57,9 +57,29 @@
         <file>images/button/resum_icon.png</file>
         <file>images/button/disconnected.svg</file>
     </qresource>
-    <qresource prefix="/File">
-        <file>libKdReport/xml/PriceList.xml</file>
-        <file>libKdReport/xml/table1.csv</file>
-        <file>libKdReport/xml/table2.csv</file>
+    <qresource prefix="/File"/>
+    <qresource prefix="/">
+        <file>libKdReport/xml/ElectricCable/IR_Cable1.csv</file>
+        <file>libKdReport/xml/ElectricCable/IR_Cable2.csv</file>
+        <file>libKdReport/xml/ElectricCable/R_Cable1.csv</file>
+        <file>libKdReport/xml/ElectricCable/R_Cable2.csv</file>
+        <file>libKdReport/xml/ElectricCable/IR_Cable3.csv</file>
+        <file>libKdReport/xml/ElectricCable/IR_Cable4.csv</file>
+        <file>libKdReport/xml/ElectricCable/IR_Cable5.csv</file>
+        <file>libKdReport/xml/ElectricCable/IR_Cable6.csv</file>
+        <file>libKdReport/xml/ElectricCable/IR_Cable9.csv</file>
+        <file>libKdReport/xml/ElectricCable/IR_Cable10.csv</file>
+        <file>libKdReport/xml/ElectricCable/IR_Cable11.csv</file>
+        <file>libKdReport/xml/ElectricCable/IR_Cable12.csv</file>
+        <file>libKdReport/xml/ElectricCable/IR_Cable13.csv</file>
+        <file>libKdReport/xml/ElectricCable/R_Cable3.csv</file>
+        <file>libKdReport/xml/ElectricCable/R_Cable4.csv</file>
+        <file>libKdReport/xml/ElectricCable/R_Cable5.csv</file>
+        <file>libKdReport/xml/ElectricCable/R_Cable6.csv</file>
+        <file>libKdReport/xml/ElectricCable/R_Cable9.csv</file>
+        <file>libKdReport/xml/ElectricCable/R_Cable10.csv</file>
+        <file>libKdReport/xml/ElectricCable/R_Cable11.csv</file>
+        <file>libKdReport/xml/ElectricCable/R_Cable12.csv</file>
+        <file>libKdReport/xml/ElectricCable/R_Cable13.csv</file>
     </qresource>
 </RCC>

@@ -17,6 +17,7 @@
 #include <QPrintDialog>
 #include <QMessageBox>
 #include <QFile>
+#include <QDir>
 
 #include "mainwindow.h"
 #include "testelectriccable.h"
@@ -24,13 +25,13 @@
 #include "userconfig.h"
 #include "testrfcable.h"
 
-//#include "KDReports/KDReports.h"
-//#include "KDReports/KDReportsReport.h"
-//#include "KDReports/KDReportsTableElement.h"
-//#include "KDReports/KDReportsChartElement.h"
-//#include "KDReports/KDReportsTextElement.h"
-//#include "KDReports/KDReportsHtmlElement.h"
-//#include "KDReports/KDReportsPreviewDialog.h"
+#include "KDReports/KDReports.h"
+#include "KDReports/KDReportsReport.h"
+#include "KDReports/KDReportsTableElement.h"
+#include "KDReports/KDReportsChartElement.h"
+#include "KDReports/KDReportsTextElement.h"
+#include "KDReports/KDReportsHtmlElement.h"
+#include "KDReports/KDReportsPreviewDialog.h"
 
 
 class bussinessManager : public QObject
@@ -98,7 +99,9 @@ private:
     testModule *mTestModule;
     TestRfCable *mTestRfCable;
 
-//    KDReports::Report reportElectrical;
+    KDReports::Report *reportCTE;
+
+    void createCableReport(KDReports::Report *report, QString nameCable);
 
     int cntRunCte = 0;
     int cntLogCte = 0;
