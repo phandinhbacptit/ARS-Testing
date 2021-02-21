@@ -207,58 +207,6 @@ void bussinessManager::createCableReport(KDReports::Report *report, QString name
     report->exportToFile("report" + nameCable, NULL);
     qDebug() << "Export report";
     report->destroyed(nullptr);
-
-
-//    report->associateTextValue("title_element", "TEST REPORT");
-
-//    report->associateTextValue("table1_title", "Resistance");
-//    report->associateTextValue("table2_title", "Insulation Resistance");
-////    report->associateTextValue("R_" + nameCable + "_title", "Resistance");
-
-////    report->associateTextValue("IR_" + nameCable + "_title", "Insulation Resistance");
-//    report->associateImageValue("image_system", QPixmap(":/Test/images/logo_vtx.png"));
-
-//    report->associateTextValue("name_excutor", mUi->mLeNameExecutor->text());
-//    report->associateTextValue("id_excutor", mUi->mLeIDExecutor->text());
-//    report->associateTextValue("work_excutor", mUi->mLeWorkExecutor->text());
-
-//    report->associateTextValue("name_supervisor", mUi->mLeNameSupervisor->text());
-//    report->associateTextValue("id_supervisor", mUi->mLeIDSupervisor->text());
-//    report->associateTextValue("work_supervisor", mUi->mLeWorkSupervisor->text());
-//    report->associateTextValue("nameCable", nameCable);
-//    report->associateTextValue("R_model", "R_" + nameCable);
-
-
-//    TableModel R_Cable;
-//    R_Cable.setDataHasVerticalHeaders(false);
-//    R_Cable.loadFromCSV(":/File/libKdReport/xml/R_" + nameCable + ".csv");
-////    report->associateModel("R_" + nameCable, &R_Cable);
-//    KDReports::AutoTableElement autoTableElement1( &R_Cable );
-//    autoTableElement1.setWidth( 100, KDReports::Percent );
-//    report->addElement( autoTableElement1 );
-
-//    report->addVerticalSpacing( 5 );
-//    TableModel IR_Cable;
-//    IR_Cable.setDataHasVerticalHeaders(false);
-//    IR_Cable.loadFromCSV(":/File/libKdReport/xml/IR_" + nameCable + ".csv");
-//    report->associateModel("IR_" + nameCable, &IR_Cable);
-
-//    QFile reportFile(":/File/libKdReport/xml/FormReport.xml");
-//    if (!reportFile.open(QIODevice::ReadOnly)) {
-//        QMessageBox::warning(0, QObject::tr("Warning"), QObject::tr("Could not open report description file 'FormReport.xml'. Please start this program from the PriceListXML directory." ) );
-//    }
-
-//    KDReports::ErrorDetails details;
-//    if(!report->loadFromXML(&reportFile, &details)) {
-//        QMessageBox::warning(0, QObject::tr("Warning"), QObject::tr("Could not parse report description file:\n%1" ).arg(details.message()) );
-//        reportFile.close();
-//    }
-
-//    report->exportToFile("report" + nameCable, NULL);
-
-//    KDReports::PreviewDialog preview(report);
-//    preview.setDefaultSaveDirectory(QDir::homePath());
-//    preview.exec();
 }
 void bussinessManager::slt_exportCteReport()
 {

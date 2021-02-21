@@ -173,8 +173,8 @@ public:
     QPushButton *pushButton_64;
     QFrame *line;
     QFrame *line_2;
-    QWidget *Gyro;
     QWidget *tab_2;
+    QWidget *Gyro;
     QWidget *tab;
     QFrame *frame_2;
     QGridLayout *gridLayout_11;
@@ -1866,12 +1866,12 @@ public:
         gridLayout_7->addWidget(scrollArea, 0, 0, 1, 1);
 
         tabWidget->addTab(Encoder, QString());
-        Gyro = new QWidget();
-        Gyro->setObjectName(QString::fromUtf8("Gyro"));
-        tabWidget->addTab(Gyro, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
         tabWidget->addTab(tab_2, QString());
+        Gyro = new QWidget();
+        Gyro->setObjectName(QString::fromUtf8("Gyro"));
+        tabWidget->addTab(Gyro, QString());
         tab = new QWidget();
         tab->setObjectName(QString::fromUtf8("tab"));
         tabWidget->addTab(tab, QString());
@@ -2794,8 +2794,8 @@ public:
         label_53->setText(QString());
         pushButton_64->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(Encoder), QCoreApplication::translate("testModule", " Digital Module ", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(Gyro), QCoreApplication::translate("testModule", " Microwave Module ", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("testModule", " All System ", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(Gyro), QCoreApplication::translate("testModule", " Microwave Module ", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("testModule", " Power Module ", nullptr));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_3), QCoreApplication::translate("testModule", "Tab 1", nullptr));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_4), QCoreApplication::translate("testModule", "Tab 2", nullptr));

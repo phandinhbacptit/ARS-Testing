@@ -2856,14 +2856,14 @@ QCheckBox::hover
           </item>
          </layout>
         </widget>
-        <widget class="QWidget" name="Gyro">
-         <attribute name="title">
-          <string> Microwave Module </string>
-         </attribute>
-        </widget>
         <widget class="QWidget" name="tab_2">
          <attribute name="title">
           <string> All System </string>
+         </attribute>
+        </widget>
+        <widget class="QWidget" name="Gyro">
+         <attribute name="title">
+          <string> Microwave Module </string>
          </attribute>
         </widget>
         <widget class="QWidget" name="tab">
