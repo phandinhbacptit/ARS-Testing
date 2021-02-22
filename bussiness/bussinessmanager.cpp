@@ -156,10 +156,10 @@ void bussinessManager::createReport(KDReports::Report *report, QString typeTest,
     header.addVariable( KDReports::TextDate);
     header.addInlineElement(KDReports::TextElement("\t \t"));
     header.addInlineElement(KDReports::TextElement("RunNumber: "));
-    if (typeTest == "Electrical Cable") {
+    if (typeTest == "CTE") {
         header.addElement(KDReports::TextElement("Name Cable: "));
     }
-    else if (typeTest == "Module Test") {
+    else if (typeTest == "MTE") {
         header.addElement(KDReports::TextElement("Name Module: "));
     }
     header.addInlineElement(KDReports::TextElement(part.namePart));
@@ -339,7 +339,9 @@ void bussinessManager::slt_exportMteReport()
 {
     reportCTE = new KDReports::Report();
     //createReport(reportCTE, "Module Test", Cable2);
-    createReport(reportCTE, "Module Test", Circulator);
+    //createReport(reportCTE, "MTE", Circulator);
+    //createReport(reportCTE, "MTE", Adapter_SMA);
+    createReport(reportCTE, "MTE", AttXband);
 }
 
 void bussinessManager::slt_showCteInterface()

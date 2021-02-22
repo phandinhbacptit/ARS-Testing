@@ -60,7 +60,15 @@
 
 /*________________Define path report file_________*/
 
-#define circulator_part1 ":/libKdReport/xml/ElectricCable/R_Cable1.csv"
+#define path_Circulator_part1 "libKdReport/xml/Module/Circulator/Circulator_part1.csv"
+#define path_Circulator_part2 "libKdReport/xml/Module/Circulator/Circulator_part2.csv"
+#define path_Circulator_part3 "libKdReport/xml/Module/Circulator/Circulator_part3.csv"
+
+#define path_SMA_part1 "libKdReport/xml/Module/Adapter_SMA/SMA_part1.csv"
+#define path_SMA_part2 "libKdReport/xml/Module/Adapter_SMA/SMA_part2.csv"
+
+#define path_att_xband_part1 "libKdReport/xml/Module/Att_Xband/attXband_part1.csv"
+#define path_att_xband_part2 "libKdReport/xml/Module/Att_Xband/attXband_part2.csv"
 
 /*______________Define name folder logfile__________*/
 const QString logFolderElectricalCable = "logs/logsElectricCable";
@@ -110,6 +118,30 @@ static table Circulator {
 
     .title3 = "1.3. Hệ số cách ly",
     .pathPart3 = "libKdReport/xml/Module/Circulator/Circulator_part3.csv",
+};
+
+static table Adapter_SMA {
+    .namePart = "Adapter SMA Module",
+    .title1 = "1.1. Hệ số sóng đứng",
+    .pathPart1 = path_SMA_part1,
+
+    .title2 = "1.2. Hệ số suy hao",
+    .pathPart2 = path_SMA_part2,
+
+    .title3 = nullptr,
+    .pathPart3 = nullptr,
+};
+
+static table AttXband {
+    .namePart = "Adapter SMA Module",
+    .title1 = "1.1. Suy hao chưa điều khiển",
+    .pathPart1 = path_att_xband_part1,
+
+    .title2 = "1.2. Suy hao với mức điện áp điều khiển tần số 9.4Ghz",
+    .pathPart2 = path_att_xband_part2,
+
+    .title3 = nullptr,
+    .pathPart3 = nullptr,
 };
 
 #endif // USERCONFIG_H
