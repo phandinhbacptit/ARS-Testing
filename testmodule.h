@@ -78,6 +78,7 @@ private slots:
     void on_mCbRx_clicked(bool checked);
     void on_mCbTx_clicked(bool checked);
     void on_All_clicked(bool checked);
+    void on_btnExportMte_clicked();
 };
 
 #endif // TESTMODULE_H

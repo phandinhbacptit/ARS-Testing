@@ -58,6 +58,10 @@
 #define cableRf30 "GuidleFile/RfCable/CableRF30.pdf"
 #define cableRf31 "GuidleFile/RfCable/CableRF31.pdf"
 
+/*________________Define path report file_________*/
+
+#define circulator_part1 ":/libKdReport/xml/ElectricCable/R_Cable1.csv"
+
 /*______________Define name folder logfile__________*/
 const QString logFolderElectricalCable = "logs/logsElectricCable";
 const QString logFolderRfCable = "logs/logsRfCable";
@@ -68,5 +72,44 @@ const QString logFolderMechanical = "logs/logsMechanical";
 #define IDEAL           0
 #define CONNECTED       1
 #define DISCONNECTED    2
+
+struct table
+{
+    QString  namePart;
+
+    QString  title1;
+    QString  pathPart1;
+
+    QString  title2;
+    QString  pathPart2;
+
+    QString  title3;
+    QString  pathPart3;
+};
+
+static table Cable2 {
+    .namePart = "Cable2",
+    .title1 = "Resistance",
+    .pathPart1 =  ":/libKdReport/xml/ElectricCable/R_Cable2.csv",
+
+    .title2 = "Insulation Resistance",
+    .pathPart2 =  ":/libKdReport/xml/ElectricCable/IR_Cable2.csv",
+
+    .title3 = nullptr,
+    .pathPart3 = nullptr,
+};
+
+/*____________________Define module property___________________*/
+static table Circulator {
+    .namePart = "Circulator Module",
+    .title1 = "1.1. Hệ số sóng đứng",
+    .pathPart1 = "libKdReport/xml/Module/Circulator/Circulator_part1.csv",
+
+    .title2 = "1.2. Hệ số suy hao",
+    .pathPart2 = "libKdReport/xml/Module/Circulator/Circulator_part2.csv",
+
+    .title3 = "1.3. Hệ số cách ly",
+    .pathPart3 = "libKdReport/xml/Module/Circulator/Circulator_part3.csv",
+};
 
 #endif // USERCONFIG_H

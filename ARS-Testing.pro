@@ -66,7 +66,8 @@ SOURCES += \
     testmechanical.cpp \
     bussiness/bussinessmanager.cpp \
     tool/TableModel.cpp \
-    utils/logutils.cpp
+    utils/logutils.cpp \
+    utils/srcReport.cpp
 HEADERS += \
         mainwindow.h \
     testelectriccable.h \
@@ -77,7 +78,8 @@ HEADERS += \
     tool/tools_export.h \
     userconfig.h \
     bussiness/bussinessmanager.h \
-    utils/logutils.h
+    utils/logutils.h \
+    utils/srcReport.h
 FORMS += \
         mainwindow.ui \
     testelectriccable.ui \

@@ -106,6 +106,7 @@ void bussinessManager::setupModule(Ui::testModule *ui)
     connect(mMTE->btnRunMte, SIGNAL(clicked()), this, SLOT(slt_runMTE()));
     connect(mMTE->btnLogMte, SIGNAL(clicked()), this, SLOT(slt_logMTE()));
     connect(mMTE->btnStopMte, SIGNAL(clicked()), this, SLOT(slt_stopMTE()));
+    connect(mMTE->btnExportMte, SIGNAL(clicked()), this, SLOT(slt_exportMteReport()));
 
     connect(mMTE->btnDcPwr, SIGNAL(clicked()), this, SLOT(slt_connDcPower()));
     connect(mMTE->btnDcLoad, SIGNAL(clicked()), this, SLOT(slt_connDcLoad()));
@@ -128,6 +129,93 @@ void bussinessManager::setupRf(Ui::TestRfCable *ui)
     connect(mRFTE->btnLogRfte, SIGNAL(clicked()), this, SLOT(slt_logRFTE()));
     connect(mRFTE->btnStopRfte, SIGNAL(clicked()), this, SLOT(slt_stopRFTE()));
     qDebug() << "[Bussiness] Setup gui RFTE";
+}
+void bussinessManager::createReport(KDReports::Report *report, QString typeTest, table part)
+{
+    report->setHeaderBodySpacing(10); // mm
+    report->setFooterBodySpacing(10); // mm
+
+    KDReports::Header& header = report->header( KDReports::OddPages );
+
+    KDReports::TextElement mainTitle("Test Report \t \t \t \t");
+    mainTitle.setBold(true);
+    mainTitle.setPointSize(30);
+
+    QPixmap kdab( ":/Test/images/logo_vtx.png" );
+    KDReports::ImageElement imageElement( kdab );
+    imageElement.setWidth( 20, KDReports::Percent );
+
+    header.addElement(mainTitle);
+    header.addInlineElement(imageElement );
+    header.addElement(KDReports::HLineElement());
+
+    header.addElement(KDReports::TextElement("Type:"));
+    header.addInlineElement(KDReports::TextElement(typeTest));
+    header.addInlineElement(KDReports::TextElement("\t"));
+    header.addInlineElement(KDReports::TextElement("Test Date: "));
+    header.addVariable( KDReports::TextDate);
+    header.addInlineElement(KDReports::TextElement("\t \t"));
+    header.addInlineElement(KDReports::TextElement("RunNumber: "));
+    if (typeTest == "Electrical Cable") {
+        header.addElement(KDReports::TextElement("Name Cable: "));
+    }
+    else if (typeTest == "Module Test") {
+        header.addElement(KDReports::TextElement("Name Module: "));
+    }
+    header.addInlineElement(KDReports::TextElement(part.namePart));
+    header.addInlineElement(KDReports::TextElement("\t"));
+    header.addInlineElement(KDReports::TextElement("Test Time: "));
+    header.addVariable( KDReports::TextTime);
+    header.addInlineElement(KDReports::TextElement("\t \t \t"));
+    header.addInlineElement(KDReports::TextElement("Place: "));
+    header.addInlineElement(KDReports::TextElement(mUi->mLeLocalTest->text()));
+    header.addElement(KDReports::HLineElement());
+
+    header.addElement(KDReports::TextElement("Excutor: "));
+    header.addInlineElement(KDReports::TextElement(mUi->mLeNameExecutor->text()));
+    header.addInlineElement(KDReports::TextElement("\t"));
+    header.addInlineElement(KDReports::TextElement("ID Excutor: "));
+    header.addInlineElement(KDReports::TextElement(mUi->mLeIDExecutor->text()));
+    header.addInlineElement(KDReports::TextElement("\t \t"));
+    header.addInlineElement(KDReports::TextElement("WorkdPlace: "));
+    header.addInlineElement(KDReports::TextElement(mUi->mLeWorkExecutor->text()));
+
+    header.addElement(KDReports::TextElement("Supervisor: "));
+    header.addInlineElement(KDReports::TextElement(mUi->mLeNameSupervisor->text()));
+    header.addInlineElement(KDReports::TextElement("\t"));
+    header.addInlineElement(KDReports::TextElement("ID Supervisor: "));
+    header.addInlineElement(KDReports::TextElement(mUi->mLeIDSupervisor->text()));
+    header.addInlineElement(KDReports::TextElement("\t \t"));
+    header.addInlineElement(KDReports::TextElement("WorkdPlace: "));
+    header.addInlineElement(KDReports::TextElement(mUi->mLeWorkSupervisor->text()));
+    header.addElement(KDReports::HLineElement());
+
+    if (part.title1 != NULL) {
+        createTable(report, part.title1, part.pathPart1);
+    }
+    if (part.title2 != NULL) {
+        createTable(report, part.title2, part.pathPart2);
+    }
+    if (part.title3 != NULL) {
+        createTable(report, part.title3, part.pathPart3);
+    }
+    KDReports::PreviewDialog preview(reportCTE);
+    preview.exec();
+
+}
+void bussinessManager::createTable(KDReports::Report *report, QString Title, QString pathCsv)
+{
+    const QColor titleElementColor( 204, 204, 255 );
+    KDReports::TextElement tableTitleElement(Title);
+    tableTitleElement.setBold( true );
+    report->addElement( tableTitleElement, Qt::AlignLeft, titleElementColor );
+    TableModel R_Cable;
+    R_Cable.setDataHasVerticalHeaders(false);
+    R_Cable.loadFromCSV(pathCsv);
+    KDReports::AutoTableElement autoTableElement1( &R_Cable );
+    autoTableElement1.setWidth( 100, KDReports::Percent );
+    report->addElement( autoTableElement1 );
+    report->addVerticalSpacing(5);
 }
 void bussinessManager::createCableReport(KDReports::Report *report, QString nameCable)
 {
@@ -204,45 +292,54 @@ void bussinessManager::createCableReport(KDReports::Report *report, QString name
     autoTableElement1.setWidth( 100, KDReports::Percent );
     report->addElement(autoTableElement2 );
 
-    report->exportToFile("report" + nameCable, NULL);
-    qDebug() << "Export report";
-    report->destroyed(nullptr);
+//    report->exportToFile("report" + nameCable, NULL);
+    qDebug() << "Export CTE report";
+
+    KDReports::PreviewDialog preview(report );
+    preview.exec();
+
 }
 void bussinessManager::slt_exportCteReport()
 {
     reportCTE = new KDReports::Report();
     createCableReport(reportCTE, "Cable1");
 
-    reportCTE = new KDReports::Report();
-    createCableReport(reportCTE, "Cable2");
+//    reportCTE = new KDReports::Report();
+//    createCableReport(reportCTE, "Cable2");
 
-    reportCTE = new KDReports::Report();
-    createCableReport(reportCTE, "Cable3");
+//    reportCTE = new KDReports::Report();
+//    createCableReport(reportCTE, "Cable3");
 
-    reportCTE = new KDReports::Report();
-    createCableReport(reportCTE, "Cable4");
+//    reportCTE = new KDReports::Report();
+//    createCableReport(reportCTE, "Cable4");
 
-    reportCTE = new KDReports::Report();
-    createCableReport(reportCTE, "Cable5");
+//    reportCTE = new KDReports::Report();
+//    createCableReport(reportCTE, "Cable5");
 
-    reportCTE = new KDReports::Report();
-    createCableReport(reportCTE, "Cable6");
+//    reportCTE = new KDReports::Report();
+//    createCableReport(reportCTE, "Cable6");
 
-    reportCTE = new KDReports::Report();
-    createCableReport(reportCTE, "Cable9");
+//    reportCTE = new KDReports::Report();
+//    createCableReport(reportCTE, "Cable9");
 
-    reportCTE = new KDReports::Report();
-    createCableReport(reportCTE, "Cable10");
+//    reportCTE = new KDReports::Report();
+//    createCableReport(reportCTE, "Cable10");
 
-    reportCTE = new KDReports::Report();
-    createCableReport(reportCTE, "Cable11");
+//    reportCTE = new KDReports::Report();
+//    createCableReport(reportCTE, "Cable11");
 
-    reportCTE = new KDReports::Report();
-    createCableReport(reportCTE, "Cable12");
+//    reportCTE = new KDReports::Report();
+//    createCableReport(reportCTE, "Cable12");
 
-    reportCTE = new KDReports::Report();
-    createCableReport(reportCTE, "Cable13");
+//    reportCTE = new KDReports::Report();
+//    createCableReport(reportCTE, "Cable13");
 
+}
+void bussinessManager::slt_exportMteReport()
+{
+    reportCTE = new KDReports::Report();
+    //createReport(reportCTE, "Module Test", Cable2);
+    createReport(reportCTE, "Module Test", Circulator);
 }
 
 void bussinessManager::slt_showCteInterface()

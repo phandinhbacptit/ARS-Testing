@@ -42,6 +42,8 @@ public:
     ~bussinessManager();
     void setup(Ui::MainWindow *ui);
     void setupELectric(Ui::TestElectricCable *ui);
+    void createReport(KDReports::Report *report, QString typeTest, table part);
+    void createTable(KDReports::Report *report, QString Title, QString pathCsv);
 
     Ui::MainWindow  *ui() const;
     Ui::TestElectricCable *getGui() const;
@@ -55,6 +57,7 @@ public slots:
     void slt_enableTestProcess();
 
     void slt_exportCteReport();
+    void slt_exportMteReport();
 
     void slt_showCteInterface();
     /*____Cable test equipment___*/
@@ -90,10 +93,11 @@ public slots:
 signals:
 
 private:
-    Ui::MainWindow *mUi;
+//    Ui::MainWindow *mUi;
     Ui::TestElectricCable *mCTE;
     Ui::testModule *mMTE;
     Ui::TestRfCable *mRFTE;
+    Ui::MainWindow *mUi;
 
     TestElectricCable *mTestElectricalCable;
     testModule *mTestModule;
