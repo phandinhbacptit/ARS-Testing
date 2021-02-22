@@ -250,3 +250,197 @@ void testModule::on_detailMotorElv_clicked()
 
     qDebug() << "[TestModule] Selected detail module motorElv";
 }
+
+void testModule::on_mCbControl_all_clicked()
+{
+
+}
+
+void testModule::on_mCbAapderCirculator_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbCirculator_part1->setChecked(true);
+        ui->mCbCirculator_part2->setChecked(true);
+    }
+    else {
+        ui->mCbCirculator_part1->setChecked(false);
+        ui->mCbCirculator_part2->setChecked(false);
+    }
+}
+
+void testModule::on_mCbAdapterComparator_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbComparator_part1->setChecked(true);
+        ui->mCbComparator_part2->setChecked(true);
+    }
+    else {
+        ui->mCbComparator_part1->setChecked(false);
+        ui->mCbComparator_part2->setChecked(false);
+    }
+
+}
+
+void testModule::on_mCbAdapterSMA_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbSMA_part1->setChecked(true);
+        ui->mCbSMA_part2->setChecked(true);
+    }
+    else {
+        ui->mCbSMA_part1->setChecked(false);
+        ui->mCbSMA_part2->setChecked(false);
+    }
+}
+
+void testModule::on_mCbAttXband_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbXband_part1->setChecked(true);
+        ui->mCbXband_part2->setChecked(true);
+    }
+    else {
+        ui->mCbXband_part1->setChecked(false);
+        ui->mCbXband_part2->setChecked(false);
+    }
+}
+
+void testModule::on_mCbHpa_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbHpa_part1->setChecked(true);
+        ui->mCbHpa_part2->setChecked(true);
+        ui->mCbHpa_part3->setChecked(true);
+        ui->mCbHpa_part4->setChecked(true);
+        ui->mCbHpa_part5->setChecked(true);
+        ui->mCbHpa_part6->setChecked(true);
+        ui->mCbHpa_part7->setChecked(true);
+    }
+    else {
+        ui->mCbHpa_part1->setChecked(false);
+        ui->mCbHpa_part2->setChecked(false);
+        ui->mCbHpa_part3->setChecked(false);
+        ui->mCbHpa_part4->setChecked(false);
+        ui->mCbHpa_part5->setChecked(false);
+        ui->mCbHpa_part6->setChecked(false);
+        ui->mCbHpa_part7->setChecked(false);
+    }
+}
+
+void testModule::on_mCbLimiter_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbLimiter_part1->setChecked(true);
+        ui->mCbLimiter_part2->setChecked(true);
+        ui->mCbLimiter_part3->setChecked(true);
+    }
+    else {
+        ui->mCbLimiter_part1->setChecked(false);
+        ui->mCbLimiter_part2->setChecked(false);
+        ui->mCbLimiter_part3->setChecked(false);
+    }
+}
+
+void testModule::on_mCbLna_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbLna_part1->setChecked(true);
+        ui->mCbLna_part2->setChecked(true);
+        ui->mCbLna_part3->setChecked(true);
+    }
+    else {
+        ui->mCbLna_part1->setChecked(false);
+        ui->mCbLna_part2->setChecked(false);
+        ui->mCbLna_part3->setChecked(false);
+    }
+}
+
+void testModule::on_mCbLo_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbLo_part1->setChecked(true);
+        ui->mCbLo_part2->setChecked(true);
+        ui->mCbLo_part3->setChecked(true);
+    }
+    else {
+        ui->mCbLo_part1->setChecked(false);
+        ui->mCbLo_part2->setChecked(false);
+        ui->mCbLo_part3->setChecked(false);
+    }
+}
+
+void testModule::on_mCbRx_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbRx_part1->setChecked(true);
+        ui->mCbRx_part2->setChecked(true);
+        ui->mCbRx_part3->setChecked(true);
+    }
+    else {
+        ui->mCbRx_part1->setChecked(false);
+        ui->mCbRx_part2->setChecked(false);
+        ui->mCbRx_part3->setChecked(false);
+    }
+}
+
+void testModule::on_mCbTx_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbTx_part1->setChecked(true);
+        ui->mCbTx_part2->setChecked(true);
+        ui->mCbTx_part3->setChecked(true);
+    }
+    else {
+        ui->mCbTx_part1->setChecked(false);
+        ui->mCbTx_part2->setChecked(false);
+        ui->mCbTx_part3->setChecked(false);
+    }
+}
+
+void testModule::on_All_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbAntena->setChecked(true);
+        ui->mCbFilterIf->setChecked(true);
+        ui->mCbFilterLOIF->setChecked(true);
+        ui->mCbFilterLORF->setChecked(true);
+        ui->mCbFilterXband->setChecked(true);
+        ui->mCbTx->setChecked(true);
+        ui->mCbRx->setChecked(true);
+        ui->mCbLo->setChecked(true);
+        ui->mCbLna->setChecked(true);
+        ui->mCbLimiter->setChecked(true);
+        ui->mCbHpa->setChecked(true);
+        ui->mCbAapderCirculator->setChecked(true);
+        ui->mCbAdapterComparator->setChecked(true);
+        ui->mCbAdapterSMA->setChecked(true);
+        ui->mCbAttXband->setChecked(true);
+    }
+    else {
+        ui->mCbAntena->setChecked(false);
+        ui->mCbFilterIf->setChecked(false);
+        ui->mCbFilterLOIF->setChecked(false);
+        ui->mCbFilterLORF->setChecked(false);
+        ui->mCbFilterXband->setChecked(false);
+        ui->mCbTx->setChecked(false);
+        ui->mCbRx->setChecked(false);
+        ui->mCbLo->setChecked(false);
+        ui->mCbLna->setChecked(false);
+        ui->mCbLimiter->setChecked(false);
+        ui->mCbHpa->setChecked(false);
+        ui->mCbAapderCirculator->setChecked(false);
+        ui->mCbAdapterComparator->setChecked(false);
+        ui->mCbAdapterSMA->setChecked(false);
+        ui->mCbAttXband->setChecked(false);
+    }
+    on_mCbAapderCirculator_clicked(checked);
+    on_mCbAdapterComparator_clicked(checked);
+    on_mCbAdapterSMA_clicked(checked);
+    on_mCbAttXband_clicked(checked);
+    on_mCbHpa_clicked(checked);
+    on_mCbLimiter_clicked(checked);
+    on_mCbLna_clicked(checked);
+    on_mCbLo_clicked(checked);
+    on_mCbRx_clicked(checked);
+    on_mCbTx_clicked(checked);
+}

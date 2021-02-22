@@ -66,6 +66,18 @@ private slots:
     void on_detailMotorElv_clicked();
 
     void slt_setpage(int numPage);
+    void on_mCbControl_all_clicked();
+    void on_mCbAapderCirculator_clicked(bool checked);
+    void on_mCbAdapterComparator_clicked(bool checked);
+    void on_mCbAdapterSMA_clicked(bool checked);
+    void on_mCbAttXband_clicked(bool checked);
+    void on_mCbHpa_clicked(bool checked);
+    void on_mCbLimiter_clicked(bool checked);
+    void on_mCbLna_clicked(bool checked);
+    void on_mCbLo_clicked(bool checked);
+    void on_mCbRx_clicked(bool checked);
+    void on_mCbTx_clicked(bool checked);
+    void on_All_clicked(bool checked);
 };
 
 #endif // TESTMODULE_H
