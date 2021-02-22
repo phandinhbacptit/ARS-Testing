@@ -149,12 +149,17 @@ void bussinessManager::createReport(KDReports::Report *report, QString typeTest,
     header.addInlineElement(imageElement );
     header.addElement(KDReports::HLineElement());
 
-    header.addElement(KDReports::TextElement("Type:"));
-    header.addInlineElement(KDReports::TextElement(typeTest));
-    header.addInlineElement(KDReports::TextElement("\t"));
+    header.addElement(KDReports::TextElement("Type: "));
+    if (typeTest == "CTE") {
+        header.addInlineElement(KDReports::TextElement("Kiểm tra cáp điện"));
+    }
+    else if (typeTest == "MTE") {
+        header.addInlineElement(KDReports::TextElement("Kiểm tra module"));
+    }
+    header.addInlineElement(KDReports::TextElement("\t \t"));
     header.addInlineElement(KDReports::TextElement("Test Date: "));
     header.addVariable( KDReports::TextDate);
-    header.addInlineElement(KDReports::TextElement("\t \t"));
+    header.addInlineElement(KDReports::TextElement("\t"));
     header.addInlineElement(KDReports::TextElement("RunNumber: "));
     if (typeTest == "CTE") {
         header.addElement(KDReports::TextElement("Name Cable: "));
@@ -341,7 +346,10 @@ void bussinessManager::slt_exportMteReport()
     //createReport(reportCTE, "Module Test", Cable2);
     //createReport(reportCTE, "MTE", Circulator);
     //createReport(reportCTE, "MTE", Adapter_SMA);
-    createReport(reportCTE, "MTE", AttXband);
+    //createReport(reportCTE, "MTE", AttXband);
+//    createReport(reportCTE, "MTE", Antena);
+//    createReport(reportCTE, "MTE", FilterIF);
+     createReport(reportCTE, "MTE", FilterXband);
 }
 
 void bussinessManager::slt_showCteInterface()

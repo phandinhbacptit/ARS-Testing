@@ -70,6 +70,10 @@
 #define path_att_xband_part1 "libKdReport/xml/Module/Att_Xband/attXband_part1.csv"
 #define path_att_xband_part2 "libKdReport/xml/Module/Att_Xband/attXband_part2.csv"
 
+#define path_antena "libKdReport/xml/Module/Antena/Antena.csv"
+#define path_filterIF "libKdReport/xml/Module/FilterIF/FilterIF.csv"
+#define path_filterXband "libKdReport/xml/Module/Filter_XBAND/filterXband.csv"
+
 /*______________Define name folder logfile__________*/
 const QString logFolderElectricalCable = "logs/logsElectricCable";
 const QString logFolderRfCable = "logs/logsRfCable";
@@ -111,13 +115,13 @@ static table Cable2 {
 static table Circulator {
     .namePart = "Circulator Module",
     .title1 = "1.1. Hệ số sóng đứng",
-    .pathPart1 = "libKdReport/xml/Module/Circulator/Circulator_part1.csv",
+    .pathPart1 = path_Circulator_part1,
 
     .title2 = "1.2. Hệ số suy hao",
-    .pathPart2 = "libKdReport/xml/Module/Circulator/Circulator_part2.csv",
+    .pathPart2 = path_Circulator_part2,
 
     .title3 = "1.3. Hệ số cách ly",
-    .pathPart3 = "libKdReport/xml/Module/Circulator/Circulator_part3.csv",
+    .pathPart3 = path_Circulator_part3,
 };
 
 static table Adapter_SMA {
@@ -133,7 +137,7 @@ static table Adapter_SMA {
 };
 
 static table AttXband {
-    .namePart = "Adapter SMA Module",
+    .namePart = "Adapter ATT Xband Module",
     .title1 = "1.1. Suy hao chưa điều khiển",
     .pathPart1 = path_att_xband_part1,
 
@@ -144,4 +148,39 @@ static table AttXband {
     .pathPart3 = nullptr,
 };
 
+static table Antena {
+    .namePart = "Antena Module",
+    .title1 = "Kết quả đo VSWR",
+    .pathPart1 = path_antena,
+
+    .title2 = nullptr,
+    .pathPart2 = nullptr,
+
+    .title3 = nullptr,
+    .pathPart3 = nullptr,
+};
+
+static table FilterIF {
+    .namePart = "FilterIF Module",
+    .title1 = "Kết quả đo kiểm",
+    .pathPart1 = path_filterIF,
+
+    .title2 = nullptr,
+    .pathPart2 = nullptr,
+
+    .title3 = nullptr,
+    .pathPart3 = nullptr,
+};
+
+static table FilterXband {
+    .namePart = "FilterXband Module",
+    .title1 = "Kết quả đo kiểm",
+    .pathPart1 = path_filterXband,
+
+    .title2 = nullptr,
+    .pathPart2 = nullptr,
+
+    .title3 = nullptr,
+    .pathPart3 = nullptr,
+};
 #endif // USERCONFIG_H
