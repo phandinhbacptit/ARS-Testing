@@ -106,6 +106,7 @@ void bussinessManager::setupModule(Ui::testModule *ui)
     connect(mMTE->btnRunMte, SIGNAL(clicked()), this, SLOT(slt_runMTE()));
     connect(mMTE->btnLogMte, SIGNAL(clicked()), this, SLOT(slt_logMTE()));
     connect(mMTE->btnStopMte, SIGNAL(clicked()), this, SLOT(slt_stopMTE()));
+    connect(mMTE->btnPreviewMte, SIGNAL(clicked()), this, SLOT(slt_previewMteReport()));
     connect(mMTE->btnExportMte, SIGNAL(clicked()), this, SLOT(slt_exportMteReport()));
 
     connect(mMTE->btnDcPwr, SIGNAL(clicked()), this, SLOT(slt_connDcPower()));
@@ -130,7 +131,21 @@ void bussinessManager::setupRf(Ui::TestRfCable *ui)
     connect(mRFTE->btnStopRfte, SIGNAL(clicked()), this, SLOT(slt_stopRFTE()));
     qDebug() << "[Bussiness] Setup gui RFTE";
 }
-void bussinessManager::createReport(KDReports::Report *report, QString typeTest, table part)
+void bussinessManager::createTable(KDReports::Report *report, QString Title, QString pathCsv)
+{
+    const QColor titleElementColor( 204, 204, 255 );
+    KDReports::TextElement tableTitleElement(Title);
+    tableTitleElement.setBold( true );
+    report->addElement( tableTitleElement, Qt::AlignLeft, titleElementColor );
+    TableModel R_Cable;
+    R_Cable.setDataHasVerticalHeaders(false);
+    R_Cable.loadFromCSV(pathCsv);
+    KDReports::AutoTableElement autoTableElement1( &R_Cable );
+    autoTableElement1.setWidth( 100, KDReports::Percent );
+    report->addElement( autoTableElement1 );
+    report->addVerticalSpacing(5);
+}
+void bussinessManager::createReport(KDReports::Report *report, QString typeTest, table part, QString mode)
 {
     report->setHeaderBodySpacing(10); // mm
     report->setFooterBodySpacing(10); // mm
@@ -204,24 +219,24 @@ void bussinessManager::createReport(KDReports::Report *report, QString typeTest,
     if (part.title3 != NULL) {
         createTable(report, part.title3, part.pathPart3);
     }
-    KDReports::PreviewDialog preview(reportCTE);
-    preview.exec();
+    qDebug() << "Export " + part.namePart + " report";
 
+    if (mode == "AutoSave") {
+        if (!QDir("report/module").exists()) {
+          QDir().mkdir("report/module");
+        }
+
+        report->exportToFile("Report_" + part.namePart +
+                             QTime::currentTime().toString("_hh.mm.ss") +
+                             QDate::currentDate().toString("_dd.MM.yyyy"), NULL);
+    }
+
+    else if (mode == "Preview") {
+        KDReports::PreviewDialog preview(reportCTE);
+        preview.exec();
+    }
 }
-void bussinessManager::createTable(KDReports::Report *report, QString Title, QString pathCsv)
-{
-    const QColor titleElementColor( 204, 204, 255 );
-    KDReports::TextElement tableTitleElement(Title);
-    tableTitleElement.setBold( true );
-    report->addElement( tableTitleElement, Qt::AlignLeft, titleElementColor );
-    TableModel R_Cable;
-    R_Cable.setDataHasVerticalHeaders(false);
-    R_Cable.loadFromCSV(pathCsv);
-    KDReports::AutoTableElement autoTableElement1( &R_Cable );
-    autoTableElement1.setWidth( 100, KDReports::Percent );
-    report->addElement( autoTableElement1 );
-    report->addVerticalSpacing(5);
-}
+
 void bussinessManager::createCableReport(KDReports::Report *report, QString nameCable)
 {
     report->setHeaderBodySpacing( 10 ); // mm
@@ -297,11 +312,12 @@ void bussinessManager::createCableReport(KDReports::Report *report, QString name
     autoTableElement1.setWidth( 100, KDReports::Percent );
     report->addElement(autoTableElement2 );
 
+//    qDebug() << "Export"  "report";
 //    report->exportToFile("report" + nameCable, NULL);
-    qDebug() << "Export CTE report";
 
-    KDReports::PreviewDialog preview(report );
-    preview.exec();
+
+//    KDReports::PreviewDialog preview(report );
+//    preview.exec();
 
 }
 void bussinessManager::slt_exportCteReport()
@@ -340,16 +356,154 @@ void bussinessManager::slt_exportCteReport()
 //    createCableReport(reportCTE, "Cable13");
 
 }
+
+void bussinessManager::slt_previewMteReport()
+{
+    if (mMTE->mCbAapderCirculator->checkState() != 0) {
+        qDebug() << "Export circulator report";
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", Circulator, "Preview");
+    }
+    if (mMTE->mCbAdapterComparator->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", Comparator, "Preview" );
+    }
+    if (mMTE->mCbAdapterSMA->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", Adapter_SMA, "Preview");
+    }
+    if (mMTE->mCbAttXband->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", AttXband, "Preview");
+    }
+    if (mMTE->mCbAntena->checkState() != 0) {
+        qDebug() << "Export Antena report";
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", Antena, "Preview");
+    }
+    if (mMTE->mCbFilterIf->checkState() != 0) {
+        qDebug() << "Export FIlter if report";
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", FilterIF, "Preview");
+    }
+    if (mMTE->mCbFilterLOIF->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", Filter_LOIF, "Preview");
+    }
+    if (mMTE->mCbFilterLORF->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", Filter_LORF, "Preview");
+    }
+    if (mMTE->mCbFilterXband->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", FilterXband, "Preview");
+    }
+    if (mMTE->mCbHpa->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", Hpa, "Preview");
+    }
+    if (mMTE->mCbSwAntena->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", SwAntena, "Preview");
+    }
+    if (mMTE->mCbLimiterSum->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", LimiterSum, "Preview");
+    }
+    if (mMTE->mCbLimiterDiff->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", LimiterDiff, "Preview");
+    }
+    if (mMTE->mCbLna->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", LNA, "Preview");
+    }
+    if (mMTE->mCbLo->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", LO, "Preview");
+    }
+    if (mMTE->mCbTx->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", TX, "Preview");
+    }
+    if (mMTE->mCbRx->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", RX, "Preview");
+    }
+}
 void bussinessManager::slt_exportMteReport()
 {
-    reportCTE = new KDReports::Report();
-    //createReport(reportCTE, "Module Test", Cable2);
-    //createReport(reportCTE, "MTE", Circulator);
-    //createReport(reportCTE, "MTE", Adapter_SMA);
-    //createReport(reportCTE, "MTE", AttXband);
-//    createReport(reportCTE, "MTE", Antena);
-//    createReport(reportCTE, "MTE", FilterIF);
-     createReport(reportCTE, "MTE", FilterXband);
+    if (mMTE->mCbAapderCirculator->checkState() != 0) {
+        qDebug() << "Export circulator report";
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", Circulator, "AutoSave");
+    }
+    if (mMTE->mCbAdapterComparator->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", Comparator, "AutoSave" );
+    }
+    if (mMTE->mCbAdapterSMA->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", Adapter_SMA, "AutoSave");
+    }
+    if (mMTE->mCbAttXband->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", AttXband, "AutoSave");
+    }
+    if (mMTE->mCbAntena->checkState() != 0) {
+        qDebug() << "Export Antena report";
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", Antena, "AutoSave");
+    }
+    if (mMTE->mCbFilterIf->checkState() != 0) {
+        qDebug() << "Export FIlter if report";
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", FilterIF, "AutoSave");
+    }
+    if (mMTE->mCbFilterLOIF->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", Filter_LOIF, "AutoSave");
+    }
+    if (mMTE->mCbFilterLORF->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", Filter_LORF, "AutoSave");
+    }
+    if (mMTE->mCbFilterXband->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", FilterXband, "AutoSave");
+    }
+    if (mMTE->mCbHpa->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", Hpa, "AutoSave");
+    }
+    if (mMTE->mCbSwAntena->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", SwAntena, "AutoSave");
+    }
+    if (mMTE->mCbLimiterSum->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", LimiterSum, "AutoSave");
+    }
+    if (mMTE->mCbLimiterDiff->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", LimiterDiff, "AutoSave");
+    }
+    if (mMTE->mCbLna->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", LNA, "AutoSave");
+    }
+    if (mMTE->mCbLo->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", LO, "AutoSave");
+    }
+    if (mMTE->mCbTx->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", TX, "AutoSave");
+    }
+    if (mMTE->mCbRx->checkState() != 0) {
+        reportCTE = new KDReports::Report();
+        createReport(reportCTE, "MTE", RX, "AutoSave");
+    }
 }
 
 void bussinessManager::slt_showCteInterface()

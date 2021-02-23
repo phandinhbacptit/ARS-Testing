@@ -327,20 +327,6 @@ void testModule::on_mCbHpa_clicked(bool checked)
     }
 }
 
-void testModule::on_mCbLimiter_clicked(bool checked)
-{
-    if (checked == true) {
-        ui->mCbLimiter_part1->setChecked(true);
-        ui->mCbLimiter_part2->setChecked(true);
-        ui->mCbLimiter_part3->setChecked(true);
-    }
-    else {
-        ui->mCbLimiter_part1->setChecked(false);
-        ui->mCbLimiter_part2->setChecked(false);
-        ui->mCbLimiter_part3->setChecked(false);
-    }
-}
-
 void testModule::on_mCbLna_clicked(bool checked)
 {
     if (checked == true) {
@@ -409,12 +395,14 @@ void testModule::on_All_clicked(bool checked)
         ui->mCbRx->setChecked(true);
         ui->mCbLo->setChecked(true);
         ui->mCbLna->setChecked(true);
-        ui->mCbLimiter->setChecked(true);
+        ui->mCbLimiterSum->setChecked(true);
+        ui->mCbLimiterDiff->setChecked(true);
         ui->mCbHpa->setChecked(true);
         ui->mCbAapderCirculator->setChecked(true);
         ui->mCbAdapterComparator->setChecked(true);
         ui->mCbAdapterSMA->setChecked(true);
         ui->mCbAttXband->setChecked(true);
+        ui->mCbSwAntena->setChecked(true);
     }
     else {
         ui->mCbAntena->setChecked(false);
@@ -426,26 +414,75 @@ void testModule::on_All_clicked(bool checked)
         ui->mCbRx->setChecked(false);
         ui->mCbLo->setChecked(false);
         ui->mCbLna->setChecked(false);
-        ui->mCbLimiter->setChecked(false);
+        ui->mCbLimiterSum->setChecked(false);
+        ui->mCbLimiterDiff->setChecked(false);
         ui->mCbHpa->setChecked(false);
         ui->mCbAapderCirculator->setChecked(false);
         ui->mCbAdapterComparator->setChecked(false);
         ui->mCbAdapterSMA->setChecked(false);
         ui->mCbAttXband->setChecked(false);
+        ui->mCbSwAntena->setChecked(true);
     }
     on_mCbAapderCirculator_clicked(checked);
     on_mCbAdapterComparator_clicked(checked);
     on_mCbAdapterSMA_clicked(checked);
     on_mCbAttXband_clicked(checked);
     on_mCbHpa_clicked(checked);
-    on_mCbLimiter_clicked(checked);
     on_mCbLna_clicked(checked);
     on_mCbLo_clicked(checked);
     on_mCbRx_clicked(checked);
     on_mCbTx_clicked(checked);
+    on_mCbLimiterSum_clicked(checked);
+    on_mCbLimiterDiff_clicked(checked);
+    on_mCbSwAntena_clicked(checked);
 }
 
 void testModule::on_btnExportMte_clicked()
 {
+
+}
+
+void testModule::on_mCbLimiterSum_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbLimiterSum_part1->setChecked(true);
+        ui->mCbLimiterSum_part2->setChecked(true);
+        ui->mCbLimiterSum_part3->setChecked(true);
+    }
+    else {
+
+        ui->mCbLimiterSum_part1->setChecked(false);
+        ui->mCbLimiterSum_part2->setChecked(false);
+        ui->mCbLimiterSum_part3->setChecked(false);
+    }
+}
+
+void testModule::on_mCbLimiterDiff_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbLimiterDiff_part1->setChecked(true);
+        ui->mCbLimiterDiff_part2->setChecked(true);
+        ui->mCbLimiterDiff_part3->setChecked(true);
+    }
+    else {
+
+        ui->mCbLimiterDiff_part1->setChecked(false);
+        ui->mCbLimiterDiff_part2->setChecked(false);
+        ui->mCbLimiterDiff_part3->setChecked(false);
+    }
+}
+
+void testModule::on_mCbSwAntena_clicked(bool checked)
+{
+    if (checked == true) {
+        ui->mCbSwAntena_part1->setChecked(true);
+        ui->mCbSwAntena_part2->setChecked(true);
+        ui->mCbSwAntena_part3->setChecked(true);
+    }
+    else {
+        ui->mCbSwAntena_part1->setChecked(false);
+        ui->mCbSwAntena_part2->setChecked(false);
+        ui->mCbSwAntena_part3->setChecked(false);
+    }
 
 }

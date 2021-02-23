@@ -4036,7 +4036,7 @@ QPushButton::hover
 }</string>
            </property>
            <property name="text">
-            <string>Guidle</string>
+            <string>Guidle         </string>
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
@@ -4077,7 +4077,7 @@ QPushButton::hover
 }</string>
            </property>
            <property name="text">
-            <string>Import</string>
+            <string>Import         </string>
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
@@ -4118,7 +4118,7 @@ QPushButton::hover
 }</string>
            </property>
            <property name="text">
-            <string>Log</string>
+            <string>Log               </string>
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
@@ -4159,11 +4159,11 @@ QPushButton::hover
 }</string>
            </property>
            <property name="text">
-            <string>Export</string>
+            <string>Preview       </string>
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/Test/images/button/export_icon2.png</normaloff>:/Test/images/button/export_icon2.png</iconset>
+             <normaloff>:/Test/images/button/preview.png</normaloff>:/Test/images/button/preview.png</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -4200,11 +4200,11 @@ QPushButton::hover
 }</string>
            </property>
            <property name="text">
-            <string>Print</string>
+            <string>Export report</string>
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/Test/images/button/print-icon.png</normaloff>:/Test/images/button/print-icon.png</iconset>
+             <normaloff>:/Test/images/button/export_icon2.png</normaloff>:/Test/images/button/export_icon2.png</iconset>
            </property>
            <property name="iconSize">
             <size>

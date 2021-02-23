@@ -179,257 +179,301 @@ public:
     QScrollArea *scrollArea_2;
     QWidget *scrollAreaWidgetContents_3;
     QGridLayout *gridLayout_17;
-    QPushButton *detailHpa_part5;
-    QPushButton *importLo_part3;
-    QCheckBox *mCbXband_part1;
-    QLabel *indicatorFilterLORF;
-    QCheckBox *mCbCirculator_part2;
-    QPushButton *rltHpa_part7;
+    QCheckBox *All;
     QCheckBox *mCbAapderCirculator;
-    QLabel *indicatorFilterIF;
-    QCheckBox *mCbHpa;
-    QLabel *label_129;
-    QCheckBox *mCbSMA_part2;
-    QPushButton *rltLimiter_part3;
-    QPushButton *importTx_part2;
-    QCheckBox *mCbRx_part1;
-    QLabel *ledAttXband_part1;
-    QLabel *label_98;
-    QPushButton *rltLna_part1;
-    QLabel *label_124;
-    QCheckBox *mCbHpa_part3;
-    QLabel *ledSMA_part2;
-    QPushButton *rltFilterIF;
-    QLabel *indicatorSma_part2;
-    QPushButton *detailRx_part2;
-    QPushButton *importLimiter_part1;
-    QLabel *label_123;
-    QPushButton *importRx_part3;
-    QLabel *indicatorXband_part1;
-    QLabel *label_99;
-    QCheckBox *mCbLo_part2;
-    QCheckBox *mCbHpa_part5;
-    QPushButton *importTx_part1;
-    QLabel *indicatorHpa_part6;
-    QCheckBox *mCbAdapterSMA;
-    QLabel *indicatorLimiter_part2;
-    QLabel *indicatorCirculator_part2;
-    QLabel *indicatorComparator_part2;
-    QLabel *ledHpa_part7;
-    QPushButton *detailLo_part3;
-    QPushButton *importCirculator_part2;
+    QLabel *label_85;
+    QCheckBox *mCbCirculator_part1;
+    QPushButton *detailCirculator_part1;
+    QPushButton *importCirculator_part1;
+    QLabel *indicatorCirculator_part1;
+    QLabel *ledCirculator_part1;
+    QPushButton *rltCirculator_part1;
+    QLabel *label_86;
+    QCheckBox *mCbCirculator_part2;
     QPushButton *detailCirculator_part2;
-    QPushButton *rltFilterXband;
-    QPushButton *rltTx_part2;
-    QLabel *ledLimiter_part3;
-    QPushButton *rltHpa_part1;
-    QLabel *ledLna_part1;
+    QPushButton *importCirculator_part2;
+    QLabel *indicatorCirculator_part2;
+    QLabel *ledCirculator_part2;
+    QPushButton *rltCirculator_part2;
+    QCheckBox *mCbAdapterComparator;
     QLabel *label_87;
-    QLabel *label_132;
-    QPushButton *importSMA_part2;
     QCheckBox *mCbComparator_part1;
-    QCheckBox *mCbRx_part2;
-    QPushButton *rltLna_part2;
-    QLabel *label_103;
-    QPushButton *rltFilterLOIF;
-    QPushButton *detailRx_part3;
-    QPushButton *importFilterLORF;
-    QCheckBox *mCbLo;
-    QPushButton *detailLimiter_part1;
-    QLabel *label_121;
-    QLabel *label_102;
-    QLabel *indicatorFilterLOIF;
-    QPushButton *importLimiter_part2;
-    QLabel *indicatorHpa_part7;
-    QPushButton *detailTx_part1;
-    QLabel *ledFilterXband;
-    QLabel *indicatorLimiter_part3;
-    QCheckBox *mCbLo_part3;
+    QPushButton *detailComparator_part1;
+    QPushButton *importComparator_part1;
+    QLabel *indicatorComparator_part1;
+    QLabel *ledComparator_part1;
+    QPushButton *rltComparator_part1;
+    QLabel *label_88;
+    QCheckBox *mCbComparator_part2;
+    QLabel *indicatorComparator_part2;
+    QLabel *ledComparator_part2;
+    QCheckBox *mCbAdapterSMA;
+    QLabel *label_89;
+    QCheckBox *mCbSMA_part1;
+    QPushButton *detailSMA_part1;
+    QPushButton *importSMA_part1;
+    QLabel *indicatorSma_part1;
+    QLabel *ledSMA_part1;
+    QPushButton *rltSMA_part1;
+    QLabel *label_90;
+    QCheckBox *mCbSMA_part2;
+    QPushButton *detailSMA_part2;
+    QPushButton *importSMA_part2;
+    QLabel *indicatorSma_part2;
+    QLabel *ledSMA_part2;
+    QPushButton *rltSMA_part2;
+    QCheckBox *mCbAttXband;
+    QLabel *label_91;
+    QCheckBox *mCbXband_part1;
+    QPushButton *detailAttXband_part1;
+    QPushButton *importAttXband_part1;
+    QLabel *indicatorXband_part1;
+    QLabel *ledAttXband_part1;
+    QPushButton *rltAttXband_part1;
     QLabel *label_92;
     QCheckBox *mCbXband_part2;
-    QPushButton *rltComparator_part1;
-    QCheckBox *mCbRx;
-    QLabel *ledHpa_part1;
-    QLabel *indicatorLna_part1;
-    QLabel *ledTx_part2;
-    QLabel *label_88;
-    QLabel *label_130;
-    QPushButton *rltCirculator_part2;
-    QLabel *ledLna_part2;
-    QLabel *indicatorXband_part2;
-    QPushButton *rltTx_part3;
-    QPushButton *rltLna_part3;
-    QLabel *ledCirculator_part1;
-    QPushButton *rltHpa_part2;
-    QCheckBox *mCbLna_part2;
-    QLabel *ledFilterLOIF;
-    QLabel *ledAntena;
-    QCheckBox *mCbRx_part3;
-    QPushButton *rltLo_part1;
-    QCheckBox *mCbFilterLOIF;
-    QLabel *label_89;
-    QCheckBox *mCbAntena;
-    QPushButton *rltHpa_part4;
-    QPushButton *detailLimiter_part2;
-    QCheckBox *mCbTx_part1;
-    QLabel *indicatorFilterXband;
-    QPushButton *importHpa_part7;
-    QPushButton *importLimiter_part3;
-    QPushButton *detailTx_part2;
-    QLabel *label_122;
-    QPushButton *rltLo_part3;
-    QCheckBox *mCbFilterXband;
     QPushButton *detailAttXband_part2;
-    QPushButton *importLna_part1;
-    QPushButton *importComparator_part1;
-    QLabel *indicatorHpa_part1;
-    QLabel *ledTx_part3;
-    QPushButton *rltRx_part1;
-    QLabel *ledLna_part3;
-    QLabel *ledHpa_part2;
-    QLabel *indicatorLna_part2;
-    QLabel *ledCirculator_part2;
-    QPushButton *rltHpa_part3;
-    QLabel *label_131;
-    QCheckBox *mCbCirculator_part1;
-    QCheckBox *mCbLimiter_part2;
-    QLabel *label_127;
-    QPushButton *importHpa_part6;
-    QLabel *ledLo_part1;
-    QPushButton *rltSMA_part1;
-    QLabel *ledHpa_part4;
-    QPushButton *rltHpa_part5;
-    QLabel *indicatorCirculator_part1;
-    QPushButton *detailFilterLOIF;
-    QCheckBox *mCbTx_part2;
-    QPushButton *detailFilterIF;
-    QPushButton *detailHpa_part7;
-    QPushButton *detailLimiter_part3;
-    QCheckBox *mCbAdapterComparator;
-    QPushButton *rltLo_part2;
-    QPushButton *importFilterXband;
-    QPushButton *importAntena;
-    QPushButton *importSMA_part1;
-    QLabel *ledLo_part3;
-    QPushButton *detailAttXband_part1;
-    QPushButton *rltFilterLORF;
-    QPushButton *importHpa_part1;
-    QLabel *indicatorTx_part3;
-    QPushButton *detailLna_part1;
-    QLabel *indicatorHpa_part2;
-    QPushButton *detailCirculator_part1;
-    QLabel *ledRx_part1;
-    QPushButton *importLna_part2;
-    QPushButton *detailFilterLORF;
-    QPushButton *rltRx_part2;
-    QLabel *ledFilterIF;
-    QLabel *ledHpa_part3;
-    QLabel *indicatorLna_part3;
-    QPushButton *importFilterLOIF;
-    QPushButton *detailHpa_part6;
-    QLabel *label_118;
-    QCheckBox *mCbTx;
     QPushButton *importAttXband_part2;
-    QLabel *indicatorLo_part1;
-    QPushButton *importAttXband_part1;
-    QCheckBox *mCbHpa_part7;
-    QLabel *indicatorHpa_part4;
-    QLabel *ledLo_part2;
-    QLabel *ledHpa_part5;
-    QPushButton *detailFilterXband;
-    QLabel *label_86;
-    QCheckBox *mCbLimiter_part1;
-    QCheckBox *mCbLimiter_part3;
-    QLabel *label_128;
-    QPushButton *detailHpa_part1;
-    QLabel *indicatorLo_part3;
-    QLabel *ledFilterLORF;
-    QCheckBox *mCbAttXband;
-    QPushButton *importFilterIF;
-    QLabel *indicatorRx_part1;
-    QCheckBox *mCbLna_part1;
-    QPushButton *importTx_part3;
-    QPushButton *importHpa_part2;
-    QPushButton *detailLna_part2;
-    QLabel *ledRx_part2;
-    QCheckBox *mCbComparator_part2;
-    QPushButton *importLna_part3;
-    QCheckBox *mCbHpa_part6;
-    QPushButton *rltAntena;
-    QLabel *indicatorComparator_part1;
-    QPushButton *rltComparator_part2;
-    QPushButton *importLo_part1;
-    QPushButton *rltAttXband_part1;
-    QLabel *indicatorHpa_part3;
-    QPushButton *importHpa_part4;
-    QPushButton *rltLimiter_part1;
-    QPushButton *rltRx_part3;
-    QLabel *label_101;
-    QLabel *indicatorLo_part2;
-    QLabel *indicatorHpa_part5;
-    QPushButton *detailSMA_part1;
-    QPushButton *rltCirculator_part1;
-    QLabel *label_119;
-    QPushButton *rltTx_part1;
-    QLabel *label_120;
-    QCheckBox *mCbHpa_part1;
-    QLabel *label_126;
-    QLabel *ledSMA_part1;
-    QCheckBox *mCbFilterIf;
-    QPushButton *rltSMA_part2;
-    QPushButton *detailSMA_part2;
-    QPushButton *importRx_part1;
-    QLabel *label_85;
-    QPushButton *detailHpa_part2;
-    QPushButton *detailLna_part3;
-    QPushButton *detailTx_part3;
-    QLabel *indicatorSma_part1;
-    QCheckBox *All;
-    QLabel *indicatorAntena;
-    QLabel *indicatorRx_part2;
-    QPushButton *detailLo_part1;
-    QPushButton *importHpa_part3;
-    QLabel *label_100;
-    QPushButton *detailAntena;
-    QPushButton *detailHpa_part4;
+    QLabel *indicatorXband_part2;
     QLabel *ledAttXband_part2;
     QPushButton *rltAttXband_part2;
-    QLabel *ledLimiter_part1;
-    QLabel *ledRx_part3;
-    QPushButton *rltHpa_part6;
+    QCheckBox *mCbAntena;
+    QPushButton *detailAntena;
+    QPushButton *importAntena;
+    QLabel *indicatorAntena;
+    QLabel *ledAntena;
+    QPushButton *rltAntena;
+    QCheckBox *mCbFilterIf;
+    QPushButton *detailFilterIF;
+    QPushButton *importFilterIF;
+    QLabel *indicatorFilterIF;
+    QLabel *ledFilterIF;
+    QPushButton *rltFilterIF;
+    QCheckBox *mCbFilterLOIF;
+    QPushButton *detailFilterLOIF;
+    QPushButton *importFilterLOIF;
+    QLabel *indicatorFilterLOIF;
+    QLabel *ledFilterLOIF;
+    QPushButton *rltFilterLOIF;
     QCheckBox *mCbFilterLORF;
-    QPushButton *rltLimiter_part2;
-    QLabel *ledTx_part1;
-    QLabel *label_90;
-    QPushButton *importLo_part2;
-    QPushButton *detailComparator_part2;
-    QPushButton *importHpa_part5;
-    QPushButton *detailComparator_part1;
-    QLabel *ledComparator_part2;
+    QPushButton *detailFilterLORF;
+    QPushButton *importFilterLORF;
+    QLabel *indicatorFilterLORF;
+    QLabel *ledFilterLORF;
+    QPushButton *rltFilterLORF;
+    QCheckBox *mCbFilterXband;
+    QPushButton *detailFilterXband;
+    QPushButton *importFilterXband;
+    QLabel *indicatorFilterXband;
+    QLabel *ledFilterXband;
+    QPushButton *rltFilterXband;
+    QCheckBox *mCbHpa;
     QLabel *label_97;
-    QCheckBox *mCbLna;
-    QPushButton *importCirculator_part1;
-    QCheckBox *mCbLimiter;
-    QCheckBox *mCbSMA_part1;
-    QLabel *indicatorTx_part2;
-    QPushButton *detailRx_part1;
-    QCheckBox *mCbLna_part3;
-    QCheckBox *mCbTx_part3;
-    QLabel *ledComparator_part1;
+    QCheckBox *mCbHpa_part1;
+    QPushButton *detailHpa_part1;
+    QPushButton *importHpa_part1;
+    QLabel *indicatorHpa_part1;
+    QLabel *ledHpa_part1;
+    QPushButton *rltHpa_part1;
+    QLabel *label_98;
     QCheckBox *mCbHpa_part2;
-    QLabel *label_125;
-    QLabel *label_91;
-    QPushButton *importRx_part2;
-    QPushButton *importComparator_part2;
-    QLabel *indicatorLimiter_part1;
-    QLabel *indicatorRx_part3;
+    QPushButton *detailHpa_part2;
+    QPushButton *importHpa_part2;
+    QLabel *indicatorHpa_part2;
+    QLabel *ledHpa_part2;
+    QPushButton *rltHpa_part2;
+    QLabel *label_103;
+    QCheckBox *mCbHpa_part3;
     QPushButton *detailHpa_part3;
-    QCheckBox *mCbLo_part1;
+    QPushButton *importHpa_part3;
+    QLabel *indicatorHpa_part3;
+    QLabel *ledHpa_part3;
+    QPushButton *rltHpa_part3;
+    QLabel *label_99;
     QCheckBox *mCbHpa_part4;
-    QLabel *ledLimiter_part2;
-    QLabel *indicatorTx_part1;
+    QPushButton *detailHpa_part4;
+    QPushButton *importHpa_part4;
+    QLabel *indicatorHpa_part4;
+    QLabel *ledHpa_part4;
+    QPushButton *rltHpa_part4;
+    QLabel *label_102;
+    QCheckBox *mCbHpa_part5;
+    QPushButton *detailHpa_part5;
+    QPushButton *importHpa_part5;
+    QLabel *indicatorHpa_part5;
+    QLabel *ledHpa_part5;
+    QPushButton *rltHpa_part5;
+    QLabel *label_100;
+    QCheckBox *mCbHpa_part6;
+    QPushButton *detailHpa_part6;
+    QPushButton *importHpa_part6;
+    QLabel *indicatorHpa_part6;
     QLabel *ledHpa_part6;
+    QPushButton *rltHpa_part6;
+    QLabel *label_101;
+    QCheckBox *mCbHpa_part7;
+    QPushButton *detailHpa_part7;
+    QPushButton *importHpa_part7;
+    QLabel *indicatorHpa_part7;
+    QLabel *ledHpa_part7;
+    QPushButton *rltHpa_part7;
+    QCheckBox *mCbSwAntena;
+    QLabel *label_136;
+    QCheckBox *mCbSwAntena_part1;
+    QPushButton *detailSwAntena_part1;
+    QPushButton *importSwAntena_part1;
+    QLabel *indicatorSwAntena_part1;
+    QLabel *ledSwAntena_part1;
+    QPushButton *rltSwAntena_part1;
+    QLabel *label_137;
+    QCheckBox *mCbSwAntena_part2;
+    QPushButton *detailSwAntena_part2;
+    QPushButton *importSwAntena_part2;
+    QLabel *indicatorSwAntena_part2;
+    QLabel *ledSwAntena_part2;
+    QPushButton *rltSwAntena_part2;
+    QLabel *label_138;
+    QCheckBox *mCbSwAntena_part3;
+    QPushButton *detailSwAntena_part3;
+    QPushButton *importSwAntena_part3;
+    QLabel *indicatorSwAntena_part3;
+    QLabel *ledSwAntena_part3;
+    QPushButton *rltSwAntena_part3;
+    QCheckBox *mCbLimiterSum;
+    QLabel *label_120;
+    QCheckBox *mCbLimiterSum_part1;
+    QPushButton *detailLimiterSum_part1;
+    QPushButton *importLimiterSum_part1;
+    QLabel *indicatorLimiterSum_part1;
+    QLabel *ledLimiterSum_part1;
+    QPushButton *rltLimiterSum_part1;
+    QLabel *label_118;
+    QCheckBox *mCbLimiterSum_part2;
+    QPushButton *detailLimiterSum_part2;
+    QPushButton *importLimiterSum_part2;
+    QLabel *indicatorLimiterSum_part2;
+    QLabel *ledLimiterSum_part2;
+    QPushButton *rltLimiterSum_part2;
+    QLabel *label_119;
+    QCheckBox *mCbLimiterSum_part3;
+    QPushButton *detailLimiterSum_part3;
+    QPushButton *importLimiterSum_part3;
+    QLabel *indicatorLimiterSum_part3;
+    QLabel *ledLimiterSum_part3;
+    QPushButton *rltLimiterSum_part3;
+    QCheckBox *mCbLimiterDiff;
+    QLabel *label_135;
+    QCheckBox *mCbLimiterDiff_part1;
+    QPushButton *detailLimiterDiff_part1;
+    QPushButton *importLimiterDiff_part1;
+    QLabel *indicatorLimiterDiff_part1;
+    QLabel *ledLimiterDiff_part1;
+    QPushButton *rltLimiterDiff_part1;
+    QLabel *label_134;
+    QCheckBox *mCbLimiterDiff_part2;
+    QPushButton *detailLimiterDiff_part2;
+    QPushButton *importLimiterDiff_part2;
+    QLabel *indicatorLimiterDiff_part2;
+    QLabel *ledLimiterDiff_part2;
+    QPushButton *rltLimiterDiff_part2;
+    QLabel *label_133;
+    QCheckBox *mCbLimiterDiff_part3;
+    QPushButton *detailLimiterDiff_part3;
+    QPushButton *importLimiterDiff_part3;
+    QLabel *indicatorLimiterDiff_part3;
+    QLabel *ledLimiterDiff_part3;
+    QPushButton *rltLimiterDiff_part3;
+    QCheckBox *mCbLna;
+    QLabel *label_126;
+    QCheckBox *mCbLna_part1;
+    QPushButton *detailLna_part1;
+    QPushButton *importLna_part1;
+    QLabel *indicatorLna_part1;
+    QLabel *ledLna_part1;
+    QPushButton *rltLna_part1;
+    QLabel *label_125;
+    QCheckBox *mCbLna_part2;
+    QPushButton *detailLna_part2;
+    QPushButton *importLna_part2;
+    QLabel *indicatorLna_part2;
+    QLabel *ledLna_part2;
+    QPushButton *rltLna_part2;
+    QLabel *label_124;
+    QCheckBox *mCbLna_part3;
+    QPushButton *detailLna_part3;
+    QPushButton *importLna_part3;
+    QLabel *indicatorLna_part3;
+    QLabel *ledLna_part3;
+    QPushButton *rltLna_part3;
+    QCheckBox *mCbLo;
+    QLabel *label_123;
+    QCheckBox *mCbLo_part1;
+    QPushButton *detailLo_part1;
+    QPushButton *importLo_part1;
+    QLabel *indicatorLo_part1;
+    QLabel *ledLo_part1;
+    QPushButton *rltLo_part1;
+    QLabel *label_121;
+    QCheckBox *mCbLo_part2;
     QPushButton *detailLo_part2;
+    QPushButton *importLo_part2;
+    QLabel *indicatorLo_part2;
+    QLabel *ledLo_part2;
+    QPushButton *rltLo_part2;
+    QLabel *label_122;
+    QCheckBox *mCbLo_part3;
+    QPushButton *detailLo_part3;
+    QPushButton *importLo_part3;
+    QLabel *indicatorLo_part3;
+    QLabel *ledLo_part3;
+    QPushButton *rltLo_part3;
+    QCheckBox *mCbRx;
+    QLabel *label_132;
+    QCheckBox *mCbRx_part1;
+    QPushButton *detailRx_part1;
+    QPushButton *importRx_part1;
+    QLabel *indicatorRx_part1;
+    QLabel *ledRx_part1;
+    QPushButton *rltRx_part1;
+    QLabel *label_130;
+    QCheckBox *mCbRx_part2;
+    QPushButton *detailRx_part2;
+    QPushButton *importRx_part2;
+    QLabel *indicatorRx_part2;
+    QLabel *ledRx_part2;
+    QPushButton *rltRx_part2;
+    QLabel *label_131;
+    QCheckBox *mCbRx_part3;
+    QPushButton *detailRx_part3;
+    QPushButton *importRx_part3;
+    QLabel *indicatorRx_part3;
+    QLabel *ledRx_part3;
+    QPushButton *rltRx_part3;
+    QCheckBox *mCbTx;
+    QLabel *label_127;
+    QCheckBox *mCbTx_part1;
+    QPushButton *detailTx_part1;
+    QPushButton *importTx_part1;
+    QLabel *indicatorTx_part1;
+    QLabel *ledTx_part1;
+    QPushButton *rltTx_part1;
+    QLabel *label_128;
+    QCheckBox *mCbTx_part2;
+    QPushButton *detailTx_part2;
+    QPushButton *importTx_part2;
+    QLabel *indicatorTx_part2;
+    QLabel *ledTx_part2;
+    QPushButton *rltTx_part2;
+    QLabel *label_129;
+    QCheckBox *mCbTx_part3;
+    QPushButton *detailTx_part3;
+    QPushButton *importTx_part3;
+    QLabel *indicatorTx_part3;
+    QLabel *ledTx_part3;
+    QPushButton *rltTx_part3;
+    QPushButton *detailComparator_part2;
+    QPushButton *rltComparator_part2;
+    QPushButton *importComparator_part2;
     QLabel *label_6;
     QLabel *label_21;
     QLabel *label_5;
@@ -479,8 +523,8 @@ public:
     QGridLayout *gridLayout_9;
     QPushButton *btnGuidleMte;
     QPushButton *btnLogMte;
+    QPushButton *btnPreviewMte;
     QPushButton *btnExportMte;
-    QPushButton *btnPrintMte;
     QGridLayout *gridLayout_4;
     QPushButton *btnUndoMte;
     QPushButton *btnRunMte;
@@ -2152,37 +2196,60 @@ public:
         scrollArea_2->setWidgetResizable(true);
         scrollAreaWidgetContents_3 = new QWidget();
         scrollAreaWidgetContents_3->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_3"));
-        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 589, 1279));
+        scrollAreaWidgetContents_3->setGeometry(QRect(0, -1040, 589, 1506));
         gridLayout_17 = new QGridLayout(scrollAreaWidgetContents_3);
         gridLayout_17->setObjectName(QString::fromUtf8("gridLayout_17"));
-        gridLayout_17->setContentsMargins(-1, -1, 0, 0);
-        detailHpa_part5 = new QPushButton(scrollAreaWidgetContents_3);
-        detailHpa_part5->setObjectName(QString::fromUtf8("detailHpa_part5"));
-        detailHpa_part5->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        All = new QCheckBox(scrollAreaWidgetContents_3);
+        All->setObjectName(QString::fromUtf8("All"));
+        All->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        detailHpa_part5->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailHpa_part5, 23, 2, 1, 1);
+        gridLayout_17->addWidget(All, 0, 0, 1, 2);
 
-        importLo_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        importLo_part3->setObjectName(QString::fromUtf8("importLo_part3"));
-        importLo_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        mCbAapderCirculator = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbAapderCirculator->setObjectName(QString::fromUtf8("mCbAapderCirculator"));
+        mCbAapderCirculator->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        importLo_part3->setIcon(icon2);
 
-        gridLayout_17->addWidget(importLo_part3, 37, 3, 1, 1);
+        gridLayout_17->addWidget(mCbAapderCirculator, 1, 0, 1, 2);
 
-        mCbXband_part1 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbXband_part1->setObjectName(QString::fromUtf8("mCbXband_part1"));
-        mCbXband_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        label_85 = new QLabel(scrollAreaWidgetContents_3);
+        label_85->setObjectName(QString::fromUtf8("label_85"));
+        sizePolicy.setHeightForWidth(label_85->sizePolicy().hasHeightForWidth());
+        label_85->setSizePolicy(sizePolicy);
+        label_85->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_85, 2, 0, 1, 1);
+
+        mCbCirculator_part1 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbCirculator_part1->setObjectName(QString::fromUtf8("mCbCirculator_part1"));
+        mCbCirculator_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -2198,13 +2265,64 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbXband_part1, 11, 1, 1, 1);
+        gridLayout_17->addWidget(mCbCirculator_part1, 2, 1, 1, 1);
 
-        indicatorFilterLORF = new QLabel(scrollAreaWidgetContents_3);
-        indicatorFilterLORF->setObjectName(QString::fromUtf8("indicatorFilterLORF"));
-        indicatorFilterLORF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+        detailCirculator_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        detailCirculator_part1->setObjectName(QString::fromUtf8("detailCirculator_part1"));
+        detailCirculator_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailCirculator_part1->setIcon(icon1);
 
-        gridLayout_17->addWidget(indicatorFilterLORF, 16, 4, 1, 1);
+        gridLayout_17->addWidget(detailCirculator_part1, 2, 2, 1, 1);
+
+        importCirculator_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        importCirculator_part1->setObjectName(QString::fromUtf8("importCirculator_part1"));
+        importCirculator_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importCirculator_part1->setIcon(icon2);
+
+        gridLayout_17->addWidget(importCirculator_part1, 2, 3, 1, 1);
+
+        indicatorCirculator_part1 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorCirculator_part1->setObjectName(QString::fromUtf8("indicatorCirculator_part1"));
+        indicatorCirculator_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorCirculator_part1, 2, 4, 1, 1);
+
+        ledCirculator_part1 = new QLabel(scrollAreaWidgetContents_3);
+        ledCirculator_part1->setObjectName(QString::fromUtf8("ledCirculator_part1"));
+        ledCirculator_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledCirculator_part1->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledCirculator_part1, 2, 5, 1, 1);
+
+        rltCirculator_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        rltCirculator_part1->setObjectName(QString::fromUtf8("rltCirculator_part1"));
+        rltCirculator_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltCirculator_part1->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltCirculator_part1, 2, 6, 1, 1);
+
+        label_86 = new QLabel(scrollAreaWidgetContents_3);
+        label_86->setObjectName(QString::fromUtf8("label_86"));
+        sizePolicy.setHeightForWidth(label_86->sizePolicy().hasHeightForWidth());
+        label_86->setSizePolicy(sizePolicy);
+        label_86->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_86, 3, 0, 1, 1);
 
         mCbCirculator_part2 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbCirculator_part2->setObjectName(QString::fromUtf8("mCbCirculator_part2"));
@@ -2228,391 +2346,17 @@ public:
 
         gridLayout_17->addWidget(mCbCirculator_part2, 3, 1, 1, 1);
 
-        rltHpa_part7 = new QPushButton(scrollAreaWidgetContents_3);
-        rltHpa_part7->setObjectName(QString::fromUtf8("rltHpa_part7"));
-        rltHpa_part7->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        detailCirculator_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        detailCirculator_part2->setObjectName(QString::fromUtf8("detailCirculator_part2"));
+        detailCirculator_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        rltHpa_part7->setIcon(icon3);
+        detailCirculator_part2->setIcon(icon1);
 
-        gridLayout_17->addWidget(rltHpa_part7, 25, 6, 1, 1);
-
-        mCbAapderCirculator = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbAapderCirculator->setObjectName(QString::fromUtf8("mCbAapderCirculator"));
-        mCbAapderCirculator->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbAapderCirculator, 1, 0, 1, 2);
-
-        indicatorFilterIF = new QLabel(scrollAreaWidgetContents_3);
-        indicatorFilterIF->setObjectName(QString::fromUtf8("indicatorFilterIF"));
-        indicatorFilterIF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorFilterIF, 14, 4, 1, 1);
-
-        mCbHpa = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbHpa->setObjectName(QString::fromUtf8("mCbHpa"));
-        mCbHpa->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbHpa, 18, 0, 1, 2);
-
-        label_129 = new QLabel(scrollAreaWidgetContents_3);
-        label_129->setObjectName(QString::fromUtf8("label_129"));
-        QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy2.setHorizontalStretch(0);
-        sizePolicy2.setVerticalStretch(0);
-        sizePolicy2.setHeightForWidth(label_129->sizePolicy().hasHeightForWidth());
-        label_129->setSizePolicy(sizePolicy2);
-        label_129->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_129, 45, 0, 1, 1);
-
-        mCbSMA_part2 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbSMA_part2->setObjectName(QString::fromUtf8("mCbSMA_part2"));
-        mCbSMA_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbSMA_part2, 9, 1, 1, 1);
-
-        rltLimiter_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        rltLimiter_part3->setObjectName(QString::fromUtf8("rltLimiter_part3"));
-        rltLimiter_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltLimiter_part3->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltLimiter_part3, 29, 6, 1, 1);
-
-        importTx_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        importTx_part2->setObjectName(QString::fromUtf8("importTx_part2"));
-        importTx_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importTx_part2->setIcon(icon2);
-
-        gridLayout_17->addWidget(importTx_part2, 44, 3, 1, 1);
-
-        mCbRx_part1 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbRx_part1->setObjectName(QString::fromUtf8("mCbRx_part1"));
-        mCbRx_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbRx_part1, 39, 1, 1, 1);
-
-        ledAttXband_part1 = new QLabel(scrollAreaWidgetContents_3);
-        ledAttXband_part1->setObjectName(QString::fromUtf8("ledAttXband_part1"));
-        ledAttXband_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledAttXband_part1->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledAttXband_part1, 11, 5, 1, 1);
-
-        label_98 = new QLabel(scrollAreaWidgetContents_3);
-        label_98->setObjectName(QString::fromUtf8("label_98"));
-        sizePolicy2.setHeightForWidth(label_98->sizePolicy().hasHeightForWidth());
-        label_98->setSizePolicy(sizePolicy2);
-        label_98->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_98, 20, 0, 1, 1);
-
-        rltLna_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        rltLna_part1->setObjectName(QString::fromUtf8("rltLna_part1"));
-        rltLna_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltLna_part1->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltLna_part1, 31, 6, 1, 1);
-
-        label_124 = new QLabel(scrollAreaWidgetContents_3);
-        label_124->setObjectName(QString::fromUtf8("label_124"));
-        sizePolicy2.setHeightForWidth(label_124->sizePolicy().hasHeightForWidth());
-        label_124->setSizePolicy(sizePolicy2);
-        label_124->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_124, 33, 0, 1, 1);
-
-        mCbHpa_part3 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbHpa_part3->setObjectName(QString::fromUtf8("mCbHpa_part3"));
-        mCbHpa_part3->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbHpa_part3, 21, 1, 1, 1);
-
-        ledSMA_part2 = new QLabel(scrollAreaWidgetContents_3);
-        ledSMA_part2->setObjectName(QString::fromUtf8("ledSMA_part2"));
-        ledSMA_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledSMA_part2->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledSMA_part2, 9, 5, 1, 1);
-
-        rltFilterIF = new QPushButton(scrollAreaWidgetContents_3);
-        rltFilterIF->setObjectName(QString::fromUtf8("rltFilterIF"));
-        rltFilterIF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltFilterIF->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltFilterIF, 14, 6, 1, 1);
-
-        indicatorSma_part2 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorSma_part2->setObjectName(QString::fromUtf8("indicatorSma_part2"));
-        indicatorSma_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorSma_part2, 9, 4, 1, 1);
-
-        detailRx_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        detailRx_part2->setObjectName(QString::fromUtf8("detailRx_part2"));
-        detailRx_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailRx_part2->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailRx_part2, 40, 2, 1, 1);
-
-        importLimiter_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        importLimiter_part1->setObjectName(QString::fromUtf8("importLimiter_part1"));
-        importLimiter_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importLimiter_part1->setIcon(icon2);
-
-        gridLayout_17->addWidget(importLimiter_part1, 27, 3, 1, 1);
-
-        label_123 = new QLabel(scrollAreaWidgetContents_3);
-        label_123->setObjectName(QString::fromUtf8("label_123"));
-        sizePolicy2.setHeightForWidth(label_123->sizePolicy().hasHeightForWidth());
-        label_123->setSizePolicy(sizePolicy2);
-        label_123->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_123, 35, 0, 1, 1);
-
-        importRx_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        importRx_part3->setObjectName(QString::fromUtf8("importRx_part3"));
-        importRx_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importRx_part3->setIcon(icon2);
-
-        gridLayout_17->addWidget(importRx_part3, 41, 3, 1, 1);
-
-        indicatorXband_part1 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorXband_part1->setObjectName(QString::fromUtf8("indicatorXband_part1"));
-        indicatorXband_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorXband_part1, 11, 4, 1, 1);
-
-        label_99 = new QLabel(scrollAreaWidgetContents_3);
-        label_99->setObjectName(QString::fromUtf8("label_99"));
-        sizePolicy2.setHeightForWidth(label_99->sizePolicy().hasHeightForWidth());
-        label_99->setSizePolicy(sizePolicy2);
-        label_99->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_99, 22, 0, 1, 1);
-
-        mCbLo_part2 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbLo_part2->setObjectName(QString::fromUtf8("mCbLo_part2"));
-        mCbLo_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbLo_part2, 36, 1, 1, 1);
-
-        mCbHpa_part5 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbHpa_part5->setObjectName(QString::fromUtf8("mCbHpa_part5"));
-        mCbHpa_part5->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbHpa_part5, 23, 1, 1, 1);
-
-        importTx_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        importTx_part1->setObjectName(QString::fromUtf8("importTx_part1"));
-        importTx_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importTx_part1->setIcon(icon2);
-
-        gridLayout_17->addWidget(importTx_part1, 43, 3, 1, 1);
-
-        indicatorHpa_part6 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorHpa_part6->setObjectName(QString::fromUtf8("indicatorHpa_part6"));
-        indicatorHpa_part6->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorHpa_part6, 24, 4, 1, 1);
-
-        mCbAdapterSMA = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbAdapterSMA->setObjectName(QString::fromUtf8("mCbAdapterSMA"));
-        mCbAdapterSMA->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbAdapterSMA, 7, 0, 1, 2);
-
-        indicatorLimiter_part2 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorLimiter_part2->setObjectName(QString::fromUtf8("indicatorLimiter_part2"));
-        indicatorLimiter_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorLimiter_part2, 28, 4, 1, 1);
-
-        indicatorCirculator_part2 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorCirculator_part2->setObjectName(QString::fromUtf8("indicatorCirculator_part2"));
-        indicatorCirculator_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorCirculator_part2, 3, 4, 1, 1);
-
-        indicatorComparator_part2 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorComparator_part2->setObjectName(QString::fromUtf8("indicatorComparator_part2"));
-        indicatorComparator_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorComparator_part2, 6, 4, 1, 1);
-
-        ledHpa_part7 = new QLabel(scrollAreaWidgetContents_3);
-        ledHpa_part7->setObjectName(QString::fromUtf8("ledHpa_part7"));
-        ledHpa_part7->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledHpa_part7->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledHpa_part7, 25, 5, 1, 1);
-
-        detailLo_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        detailLo_part3->setObjectName(QString::fromUtf8("detailLo_part3"));
-        detailLo_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailLo_part3->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailLo_part3, 37, 2, 1, 1);
+        gridLayout_17->addWidget(detailCirculator_part2, 3, 2, 1, 1);
 
         importCirculator_part2 = new QPushButton(scrollAreaWidgetContents_3);
         importCirculator_part2->setObjectName(QString::fromUtf8("importCirculator_part2"));
@@ -2626,405 +2370,18 @@ public:
 
         gridLayout_17->addWidget(importCirculator_part2, 3, 3, 1, 1);
 
-        detailCirculator_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        detailCirculator_part2->setObjectName(QString::fromUtf8("detailCirculator_part2"));
-        detailCirculator_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailCirculator_part2->setIcon(icon1);
+        indicatorCirculator_part2 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorCirculator_part2->setObjectName(QString::fromUtf8("indicatorCirculator_part2"));
+        indicatorCirculator_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(detailCirculator_part2, 3, 2, 1, 1);
+        gridLayout_17->addWidget(indicatorCirculator_part2, 3, 4, 1, 1);
 
-        rltFilterXband = new QPushButton(scrollAreaWidgetContents_3);
-        rltFilterXband->setObjectName(QString::fromUtf8("rltFilterXband"));
-        rltFilterXband->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltFilterXband->setIcon(icon3);
+        ledCirculator_part2 = new QLabel(scrollAreaWidgetContents_3);
+        ledCirculator_part2->setObjectName(QString::fromUtf8("ledCirculator_part2"));
+        ledCirculator_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledCirculator_part2->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(rltFilterXband, 17, 6, 1, 1);
-
-        rltTx_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        rltTx_part2->setObjectName(QString::fromUtf8("rltTx_part2"));
-        rltTx_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltTx_part2->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltTx_part2, 44, 6, 1, 1);
-
-        ledLimiter_part3 = new QLabel(scrollAreaWidgetContents_3);
-        ledLimiter_part3->setObjectName(QString::fromUtf8("ledLimiter_part3"));
-        ledLimiter_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledLimiter_part3->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledLimiter_part3, 29, 5, 1, 1);
-
-        rltHpa_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        rltHpa_part1->setObjectName(QString::fromUtf8("rltHpa_part1"));
-        rltHpa_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltHpa_part1->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltHpa_part1, 19, 6, 1, 1);
-
-        ledLna_part1 = new QLabel(scrollAreaWidgetContents_3);
-        ledLna_part1->setObjectName(QString::fromUtf8("ledLna_part1"));
-        ledLna_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledLna_part1->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledLna_part1, 31, 5, 1, 1);
-
-        label_87 = new QLabel(scrollAreaWidgetContents_3);
-        label_87->setObjectName(QString::fromUtf8("label_87"));
-        sizePolicy.setHeightForWidth(label_87->sizePolicy().hasHeightForWidth());
-        label_87->setSizePolicy(sizePolicy);
-        label_87->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_87, 5, 0, 1, 1);
-
-        label_132 = new QLabel(scrollAreaWidgetContents_3);
-        label_132->setObjectName(QString::fromUtf8("label_132"));
-        sizePolicy2.setHeightForWidth(label_132->sizePolicy().hasHeightForWidth());
-        label_132->setSizePolicy(sizePolicy2);
-        label_132->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_132, 39, 0, 1, 1);
-
-        importSMA_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        importSMA_part2->setObjectName(QString::fromUtf8("importSMA_part2"));
-        importSMA_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importSMA_part2->setIcon(icon2);
-
-        gridLayout_17->addWidget(importSMA_part2, 9, 3, 1, 1);
-
-        mCbComparator_part1 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbComparator_part1->setObjectName(QString::fromUtf8("mCbComparator_part1"));
-        mCbComparator_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbComparator_part1, 5, 1, 1, 1);
-
-        mCbRx_part2 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbRx_part2->setObjectName(QString::fromUtf8("mCbRx_part2"));
-        mCbRx_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbRx_part2, 40, 1, 1, 1);
-
-        rltLna_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        rltLna_part2->setObjectName(QString::fromUtf8("rltLna_part2"));
-        rltLna_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltLna_part2->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltLna_part2, 32, 6, 1, 1);
-
-        label_103 = new QLabel(scrollAreaWidgetContents_3);
-        label_103->setObjectName(QString::fromUtf8("label_103"));
-        sizePolicy2.setHeightForWidth(label_103->sizePolicy().hasHeightForWidth());
-        label_103->setSizePolicy(sizePolicy2);
-        label_103->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_103, 21, 0, 1, 1);
-
-        rltFilterLOIF = new QPushButton(scrollAreaWidgetContents_3);
-        rltFilterLOIF->setObjectName(QString::fromUtf8("rltFilterLOIF"));
-        rltFilterLOIF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltFilterLOIF->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltFilterLOIF, 15, 6, 1, 1);
-
-        detailRx_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        detailRx_part3->setObjectName(QString::fromUtf8("detailRx_part3"));
-        detailRx_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailRx_part3->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailRx_part3, 41, 2, 1, 1);
-
-        importFilterLORF = new QPushButton(scrollAreaWidgetContents_3);
-        importFilterLORF->setObjectName(QString::fromUtf8("importFilterLORF"));
-        importFilterLORF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importFilterLORF->setIcon(icon2);
-
-        gridLayout_17->addWidget(importFilterLORF, 16, 3, 1, 1);
-
-        mCbLo = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbLo->setObjectName(QString::fromUtf8("mCbLo"));
-        mCbLo->setAutoFillBackground(false);
-        mCbLo->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbLo, 34, 0, 1, 2);
-
-        detailLimiter_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        detailLimiter_part1->setObjectName(QString::fromUtf8("detailLimiter_part1"));
-        detailLimiter_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailLimiter_part1->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailLimiter_part1, 27, 2, 1, 1);
-
-        label_121 = new QLabel(scrollAreaWidgetContents_3);
-        label_121->setObjectName(QString::fromUtf8("label_121"));
-        sizePolicy2.setHeightForWidth(label_121->sizePolicy().hasHeightForWidth());
-        label_121->setSizePolicy(sizePolicy2);
-        label_121->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_121, 36, 0, 1, 1);
-
-        label_102 = new QLabel(scrollAreaWidgetContents_3);
-        label_102->setObjectName(QString::fromUtf8("label_102"));
-        sizePolicy2.setHeightForWidth(label_102->sizePolicy().hasHeightForWidth());
-        label_102->setSizePolicy(sizePolicy2);
-        label_102->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_102, 23, 0, 1, 1);
-
-        indicatorFilterLOIF = new QLabel(scrollAreaWidgetContents_3);
-        indicatorFilterLOIF->setObjectName(QString::fromUtf8("indicatorFilterLOIF"));
-        indicatorFilterLOIF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorFilterLOIF, 15, 4, 1, 1);
-
-        importLimiter_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        importLimiter_part2->setObjectName(QString::fromUtf8("importLimiter_part2"));
-        importLimiter_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importLimiter_part2->setIcon(icon2);
-
-        gridLayout_17->addWidget(importLimiter_part2, 28, 3, 1, 1);
-
-        indicatorHpa_part7 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorHpa_part7->setObjectName(QString::fromUtf8("indicatorHpa_part7"));
-        indicatorHpa_part7->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorHpa_part7, 25, 4, 1, 1);
-
-        detailTx_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        detailTx_part1->setObjectName(QString::fromUtf8("detailTx_part1"));
-        detailTx_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailTx_part1->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailTx_part1, 43, 2, 1, 1);
-
-        ledFilterXband = new QLabel(scrollAreaWidgetContents_3);
-        ledFilterXband->setObjectName(QString::fromUtf8("ledFilterXband"));
-        ledFilterXband->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledFilterXband->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledFilterXband, 17, 5, 1, 1);
-
-        indicatorLimiter_part3 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorLimiter_part3->setObjectName(QString::fromUtf8("indicatorLimiter_part3"));
-        indicatorLimiter_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorLimiter_part3, 29, 4, 1, 1);
-
-        mCbLo_part3 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbLo_part3->setObjectName(QString::fromUtf8("mCbLo_part3"));
-        mCbLo_part3->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbLo_part3, 37, 1, 1, 1);
-
-        label_92 = new QLabel(scrollAreaWidgetContents_3);
-        label_92->setObjectName(QString::fromUtf8("label_92"));
-        sizePolicy2.setHeightForWidth(label_92->sizePolicy().hasHeightForWidth());
-        label_92->setSizePolicy(sizePolicy2);
-        label_92->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_92, 12, 0, 1, 1);
-
-        mCbXband_part2 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbXband_part2->setObjectName(QString::fromUtf8("mCbXband_part2"));
-        mCbXband_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbXband_part2, 12, 1, 1, 1);
-
-        rltComparator_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        rltComparator_part1->setObjectName(QString::fromUtf8("rltComparator_part1"));
-        rltComparator_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltComparator_part1->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltComparator_part1, 5, 6, 1, 1);
-
-        mCbRx = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbRx->setObjectName(QString::fromUtf8("mCbRx"));
-        mCbRx->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbRx, 38, 0, 1, 2);
-
-        ledHpa_part1 = new QLabel(scrollAreaWidgetContents_3);
-        ledHpa_part1->setObjectName(QString::fromUtf8("ledHpa_part1"));
-        ledHpa_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledHpa_part1->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledHpa_part1, 19, 5, 1, 1);
-
-        indicatorLna_part1 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorLna_part1->setObjectName(QString::fromUtf8("indicatorLna_part1"));
-        indicatorLna_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorLna_part1, 31, 4, 1, 1);
-
-        ledTx_part2 = new QLabel(scrollAreaWidgetContents_3);
-        ledTx_part2->setObjectName(QString::fromUtf8("ledTx_part2"));
-        ledTx_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledTx_part2->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledTx_part2, 44, 5, 1, 1);
-
-        label_88 = new QLabel(scrollAreaWidgetContents_3);
-        label_88->setObjectName(QString::fromUtf8("label_88"));
-        sizePolicy.setHeightForWidth(label_88->sizePolicy().hasHeightForWidth());
-        label_88->setSizePolicy(sizePolicy);
-        label_88->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_88, 6, 0, 1, 1);
-
-        label_130 = new QLabel(scrollAreaWidgetContents_3);
-        label_130->setObjectName(QString::fromUtf8("label_130"));
-        sizePolicy2.setHeightForWidth(label_130->sizePolicy().hasHeightForWidth());
-        label_130->setSizePolicy(sizePolicy2);
-        label_130->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_130, 40, 0, 1, 1);
+        gridLayout_17->addWidget(ledCirculator_part2, 3, 5, 1, 1);
 
         rltCirculator_part2 = new QPushButton(scrollAreaWidgetContents_3);
         rltCirculator_part2->setObjectName(QString::fromUtf8("rltCirculator_part2"));
@@ -3037,582 +2394,6 @@ public:
         rltCirculator_part2->setIcon(icon3);
 
         gridLayout_17->addWidget(rltCirculator_part2, 3, 6, 1, 1);
-
-        ledLna_part2 = new QLabel(scrollAreaWidgetContents_3);
-        ledLna_part2->setObjectName(QString::fromUtf8("ledLna_part2"));
-        ledLna_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledLna_part2->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledLna_part2, 32, 5, 1, 1);
-
-        indicatorXband_part2 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorXband_part2->setObjectName(QString::fromUtf8("indicatorXband_part2"));
-        indicatorXband_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorXband_part2, 12, 4, 1, 1);
-
-        rltTx_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        rltTx_part3->setObjectName(QString::fromUtf8("rltTx_part3"));
-        rltTx_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltTx_part3->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltTx_part3, 45, 6, 1, 1);
-
-        rltLna_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        rltLna_part3->setObjectName(QString::fromUtf8("rltLna_part3"));
-        rltLna_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltLna_part3->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltLna_part3, 33, 6, 1, 1);
-
-        ledCirculator_part1 = new QLabel(scrollAreaWidgetContents_3);
-        ledCirculator_part1->setObjectName(QString::fromUtf8("ledCirculator_part1"));
-        ledCirculator_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledCirculator_part1->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledCirculator_part1, 2, 5, 1, 1);
-
-        rltHpa_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        rltHpa_part2->setObjectName(QString::fromUtf8("rltHpa_part2"));
-        rltHpa_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltHpa_part2->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltHpa_part2, 20, 6, 1, 1);
-
-        mCbLna_part2 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbLna_part2->setObjectName(QString::fromUtf8("mCbLna_part2"));
-        mCbLna_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbLna_part2, 32, 1, 1, 1);
-
-        ledFilterLOIF = new QLabel(scrollAreaWidgetContents_3);
-        ledFilterLOIF->setObjectName(QString::fromUtf8("ledFilterLOIF"));
-        ledFilterLOIF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledFilterLOIF->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledFilterLOIF, 15, 5, 1, 1);
-
-        ledAntena = new QLabel(scrollAreaWidgetContents_3);
-        ledAntena->setObjectName(QString::fromUtf8("ledAntena"));
-        ledAntena->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledAntena->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledAntena, 13, 5, 1, 1);
-
-        mCbRx_part3 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbRx_part3->setObjectName(QString::fromUtf8("mCbRx_part3"));
-        mCbRx_part3->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbRx_part3, 41, 1, 1, 1);
-
-        rltLo_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        rltLo_part1->setObjectName(QString::fromUtf8("rltLo_part1"));
-        rltLo_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltLo_part1->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltLo_part1, 35, 6, 1, 1);
-
-        mCbFilterLOIF = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbFilterLOIF->setObjectName(QString::fromUtf8("mCbFilterLOIF"));
-        mCbFilterLOIF->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbFilterLOIF, 15, 0, 1, 2);
-
-        label_89 = new QLabel(scrollAreaWidgetContents_3);
-        label_89->setObjectName(QString::fromUtf8("label_89"));
-        sizePolicy.setHeightForWidth(label_89->sizePolicy().hasHeightForWidth());
-        label_89->setSizePolicy(sizePolicy);
-        label_89->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_89, 8, 0, 1, 1);
-
-        mCbAntena = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbAntena->setObjectName(QString::fromUtf8("mCbAntena"));
-        mCbAntena->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbAntena, 13, 0, 1, 2);
-
-        rltHpa_part4 = new QPushButton(scrollAreaWidgetContents_3);
-        rltHpa_part4->setObjectName(QString::fromUtf8("rltHpa_part4"));
-        rltHpa_part4->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltHpa_part4->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltHpa_part4, 22, 6, 1, 1);
-
-        detailLimiter_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        detailLimiter_part2->setObjectName(QString::fromUtf8("detailLimiter_part2"));
-        detailLimiter_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailLimiter_part2->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailLimiter_part2, 28, 2, 1, 1);
-
-        mCbTx_part1 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbTx_part1->setObjectName(QString::fromUtf8("mCbTx_part1"));
-        mCbTx_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbTx_part1, 43, 1, 1, 1);
-
-        indicatorFilterXband = new QLabel(scrollAreaWidgetContents_3);
-        indicatorFilterXband->setObjectName(QString::fromUtf8("indicatorFilterXband"));
-        indicatorFilterXband->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorFilterXband, 17, 4, 1, 1);
-
-        importHpa_part7 = new QPushButton(scrollAreaWidgetContents_3);
-        importHpa_part7->setObjectName(QString::fromUtf8("importHpa_part7"));
-        importHpa_part7->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importHpa_part7->setIcon(icon2);
-
-        gridLayout_17->addWidget(importHpa_part7, 25, 3, 1, 1);
-
-        importLimiter_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        importLimiter_part3->setObjectName(QString::fromUtf8("importLimiter_part3"));
-        importLimiter_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importLimiter_part3->setIcon(icon2);
-
-        gridLayout_17->addWidget(importLimiter_part3, 29, 3, 1, 1);
-
-        detailTx_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        detailTx_part2->setObjectName(QString::fromUtf8("detailTx_part2"));
-        detailTx_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailTx_part2->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailTx_part2, 44, 2, 1, 1);
-
-        label_122 = new QLabel(scrollAreaWidgetContents_3);
-        label_122->setObjectName(QString::fromUtf8("label_122"));
-        sizePolicy2.setHeightForWidth(label_122->sizePolicy().hasHeightForWidth());
-        label_122->setSizePolicy(sizePolicy2);
-        label_122->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_122, 37, 0, 1, 1);
-
-        rltLo_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        rltLo_part3->setObjectName(QString::fromUtf8("rltLo_part3"));
-        rltLo_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltLo_part3->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltLo_part3, 37, 6, 1, 1);
-
-        mCbFilterXband = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbFilterXband->setObjectName(QString::fromUtf8("mCbFilterXband"));
-        mCbFilterXband->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbFilterXband, 17, 0, 1, 2);
-
-        detailAttXband_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        detailAttXband_part2->setObjectName(QString::fromUtf8("detailAttXband_part2"));
-        detailAttXband_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailAttXband_part2->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailAttXband_part2, 12, 2, 1, 1);
-
-        importLna_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        importLna_part1->setObjectName(QString::fromUtf8("importLna_part1"));
-        importLna_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importLna_part1->setIcon(icon2);
-
-        gridLayout_17->addWidget(importLna_part1, 31, 3, 1, 1);
-
-        importComparator_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        importComparator_part1->setObjectName(QString::fromUtf8("importComparator_part1"));
-        importComparator_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importComparator_part1->setIcon(icon2);
-
-        gridLayout_17->addWidget(importComparator_part1, 5, 3, 1, 1);
-
-        indicatorHpa_part1 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorHpa_part1->setObjectName(QString::fromUtf8("indicatorHpa_part1"));
-        indicatorHpa_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorHpa_part1, 19, 4, 1, 1);
-
-        ledTx_part3 = new QLabel(scrollAreaWidgetContents_3);
-        ledTx_part3->setObjectName(QString::fromUtf8("ledTx_part3"));
-        ledTx_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledTx_part3->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledTx_part3, 45, 5, 1, 1);
-
-        rltRx_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        rltRx_part1->setObjectName(QString::fromUtf8("rltRx_part1"));
-        rltRx_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltRx_part1->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltRx_part1, 39, 6, 1, 1);
-
-        ledLna_part3 = new QLabel(scrollAreaWidgetContents_3);
-        ledLna_part3->setObjectName(QString::fromUtf8("ledLna_part3"));
-        ledLna_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledLna_part3->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledLna_part3, 33, 5, 1, 1);
-
-        ledHpa_part2 = new QLabel(scrollAreaWidgetContents_3);
-        ledHpa_part2->setObjectName(QString::fromUtf8("ledHpa_part2"));
-        ledHpa_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledHpa_part2->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledHpa_part2, 20, 5, 1, 1);
-
-        indicatorLna_part2 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorLna_part2->setObjectName(QString::fromUtf8("indicatorLna_part2"));
-        indicatorLna_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorLna_part2, 32, 4, 1, 1);
-
-        ledCirculator_part2 = new QLabel(scrollAreaWidgetContents_3);
-        ledCirculator_part2->setObjectName(QString::fromUtf8("ledCirculator_part2"));
-        ledCirculator_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledCirculator_part2->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledCirculator_part2, 3, 5, 1, 1);
-
-        rltHpa_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        rltHpa_part3->setObjectName(QString::fromUtf8("rltHpa_part3"));
-        rltHpa_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltHpa_part3->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltHpa_part3, 21, 6, 1, 1);
-
-        label_131 = new QLabel(scrollAreaWidgetContents_3);
-        label_131->setObjectName(QString::fromUtf8("label_131"));
-        sizePolicy2.setHeightForWidth(label_131->sizePolicy().hasHeightForWidth());
-        label_131->setSizePolicy(sizePolicy2);
-        label_131->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_131, 41, 0, 1, 1);
-
-        mCbCirculator_part1 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbCirculator_part1->setObjectName(QString::fromUtf8("mCbCirculator_part1"));
-        mCbCirculator_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbCirculator_part1, 2, 1, 1, 1);
-
-        mCbLimiter_part2 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbLimiter_part2->setObjectName(QString::fromUtf8("mCbLimiter_part2"));
-        mCbLimiter_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbLimiter_part2, 28, 1, 1, 1);
-
-        label_127 = new QLabel(scrollAreaWidgetContents_3);
-        label_127->setObjectName(QString::fromUtf8("label_127"));
-        sizePolicy2.setHeightForWidth(label_127->sizePolicy().hasHeightForWidth());
-        label_127->setSizePolicy(sizePolicy2);
-        label_127->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_127, 43, 0, 1, 1);
-
-        importHpa_part6 = new QPushButton(scrollAreaWidgetContents_3);
-        importHpa_part6->setObjectName(QString::fromUtf8("importHpa_part6"));
-        importHpa_part6->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importHpa_part6->setIcon(icon2);
-
-        gridLayout_17->addWidget(importHpa_part6, 24, 3, 1, 1);
-
-        ledLo_part1 = new QLabel(scrollAreaWidgetContents_3);
-        ledLo_part1->setObjectName(QString::fromUtf8("ledLo_part1"));
-        ledLo_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledLo_part1->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledLo_part1, 35, 5, 1, 1);
-
-        rltSMA_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        rltSMA_part1->setObjectName(QString::fromUtf8("rltSMA_part1"));
-        rltSMA_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltSMA_part1->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltSMA_part1, 8, 6, 1, 1);
-
-        ledHpa_part4 = new QLabel(scrollAreaWidgetContents_3);
-        ledHpa_part4->setObjectName(QString::fromUtf8("ledHpa_part4"));
-        ledHpa_part4->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledHpa_part4->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledHpa_part4, 22, 5, 1, 1);
-
-        rltHpa_part5 = new QPushButton(scrollAreaWidgetContents_3);
-        rltHpa_part5->setObjectName(QString::fromUtf8("rltHpa_part5"));
-        rltHpa_part5->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltHpa_part5->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltHpa_part5, 23, 6, 1, 1);
-
-        indicatorCirculator_part1 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorCirculator_part1->setObjectName(QString::fromUtf8("indicatorCirculator_part1"));
-        indicatorCirculator_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorCirculator_part1, 2, 4, 1, 1);
-
-        detailFilterLOIF = new QPushButton(scrollAreaWidgetContents_3);
-        detailFilterLOIF->setObjectName(QString::fromUtf8("detailFilterLOIF"));
-        detailFilterLOIF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailFilterLOIF->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailFilterLOIF, 15, 2, 1, 1);
-
-        mCbTx_part2 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbTx_part2->setObjectName(QString::fromUtf8("mCbTx_part2"));
-        mCbTx_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbTx_part2, 44, 1, 1, 1);
-
-        detailFilterIF = new QPushButton(scrollAreaWidgetContents_3);
-        detailFilterIF->setObjectName(QString::fromUtf8("detailFilterIF"));
-        detailFilterIF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailFilterIF->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailFilterIF, 14, 2, 1, 1);
-
-        detailHpa_part7 = new QPushButton(scrollAreaWidgetContents_3);
-        detailHpa_part7->setObjectName(QString::fromUtf8("detailHpa_part7"));
-        detailHpa_part7->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailHpa_part7->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailHpa_part7, 25, 2, 1, 1);
-
-        detailLimiter_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        detailLimiter_part3->setObjectName(QString::fromUtf8("detailLimiter_part3"));
-        detailLimiter_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailLimiter_part3->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailLimiter_part3, 29, 2, 1, 1);
 
         mCbAdapterComparator = new QCheckBox(scrollAreaWidgetContents_3);
         mCbAdapterComparator->setObjectName(QString::fromUtf8("mCbAdapterComparator"));
@@ -3634,281 +2415,17 @@ public:
 
         gridLayout_17->addWidget(mCbAdapterComparator, 4, 0, 1, 2);
 
-        rltLo_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        rltLo_part2->setObjectName(QString::fromUtf8("rltLo_part2"));
-        rltLo_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltLo_part2->setIcon(icon3);
+        label_87 = new QLabel(scrollAreaWidgetContents_3);
+        label_87->setObjectName(QString::fromUtf8("label_87"));
+        sizePolicy.setHeightForWidth(label_87->sizePolicy().hasHeightForWidth());
+        label_87->setSizePolicy(sizePolicy);
+        label_87->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(rltLo_part2, 36, 6, 1, 1);
+        gridLayout_17->addWidget(label_87, 5, 0, 1, 1);
 
-        importFilterXband = new QPushButton(scrollAreaWidgetContents_3);
-        importFilterXband->setObjectName(QString::fromUtf8("importFilterXband"));
-        importFilterXband->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importFilterXband->setIcon(icon2);
-
-        gridLayout_17->addWidget(importFilterXband, 17, 3, 1, 1);
-
-        importAntena = new QPushButton(scrollAreaWidgetContents_3);
-        importAntena->setObjectName(QString::fromUtf8("importAntena"));
-        importAntena->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importAntena->setIcon(icon2);
-
-        gridLayout_17->addWidget(importAntena, 13, 3, 1, 1);
-
-        importSMA_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        importSMA_part1->setObjectName(QString::fromUtf8("importSMA_part1"));
-        importSMA_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importSMA_part1->setIcon(icon2);
-
-        gridLayout_17->addWidget(importSMA_part1, 8, 3, 1, 1);
-
-        ledLo_part3 = new QLabel(scrollAreaWidgetContents_3);
-        ledLo_part3->setObjectName(QString::fromUtf8("ledLo_part3"));
-        ledLo_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledLo_part3->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledLo_part3, 37, 5, 1, 1);
-
-        detailAttXband_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        detailAttXband_part1->setObjectName(QString::fromUtf8("detailAttXband_part1"));
-        detailAttXband_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailAttXband_part1->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailAttXband_part1, 11, 2, 1, 1);
-
-        rltFilterLORF = new QPushButton(scrollAreaWidgetContents_3);
-        rltFilterLORF->setObjectName(QString::fromUtf8("rltFilterLORF"));
-        rltFilterLORF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltFilterLORF->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltFilterLORF, 16, 6, 1, 1);
-
-        importHpa_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        importHpa_part1->setObjectName(QString::fromUtf8("importHpa_part1"));
-        importHpa_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importHpa_part1->setIcon(icon2);
-
-        gridLayout_17->addWidget(importHpa_part1, 19, 3, 1, 1);
-
-        indicatorTx_part3 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorTx_part3->setObjectName(QString::fromUtf8("indicatorTx_part3"));
-        indicatorTx_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorTx_part3, 45, 4, 1, 1);
-
-        detailLna_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        detailLna_part1->setObjectName(QString::fromUtf8("detailLna_part1"));
-        detailLna_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailLna_part1->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailLna_part1, 31, 2, 1, 1);
-
-        indicatorHpa_part2 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorHpa_part2->setObjectName(QString::fromUtf8("indicatorHpa_part2"));
-        indicatorHpa_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorHpa_part2, 20, 4, 1, 1);
-
-        detailCirculator_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        detailCirculator_part1->setObjectName(QString::fromUtf8("detailCirculator_part1"));
-        detailCirculator_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailCirculator_part1->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailCirculator_part1, 2, 2, 1, 1);
-
-        ledRx_part1 = new QLabel(scrollAreaWidgetContents_3);
-        ledRx_part1->setObjectName(QString::fromUtf8("ledRx_part1"));
-        ledRx_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledRx_part1->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledRx_part1, 39, 5, 1, 1);
-
-        importLna_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        importLna_part2->setObjectName(QString::fromUtf8("importLna_part2"));
-        importLna_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importLna_part2->setIcon(icon2);
-
-        gridLayout_17->addWidget(importLna_part2, 32, 3, 1, 1);
-
-        detailFilterLORF = new QPushButton(scrollAreaWidgetContents_3);
-        detailFilterLORF->setObjectName(QString::fromUtf8("detailFilterLORF"));
-        detailFilterLORF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailFilterLORF->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailFilterLORF, 16, 2, 1, 1);
-
-        rltRx_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        rltRx_part2->setObjectName(QString::fromUtf8("rltRx_part2"));
-        rltRx_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltRx_part2->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltRx_part2, 40, 6, 1, 1);
-
-        ledFilterIF = new QLabel(scrollAreaWidgetContents_3);
-        ledFilterIF->setObjectName(QString::fromUtf8("ledFilterIF"));
-        ledFilterIF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledFilterIF->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledFilterIF, 14, 5, 1, 1);
-
-        ledHpa_part3 = new QLabel(scrollAreaWidgetContents_3);
-        ledHpa_part3->setObjectName(QString::fromUtf8("ledHpa_part3"));
-        ledHpa_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledHpa_part3->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledHpa_part3, 21, 5, 1, 1);
-
-        indicatorLna_part3 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorLna_part3->setObjectName(QString::fromUtf8("indicatorLna_part3"));
-        indicatorLna_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorLna_part3, 33, 4, 1, 1);
-
-        importFilterLOIF = new QPushButton(scrollAreaWidgetContents_3);
-        importFilterLOIF->setObjectName(QString::fromUtf8("importFilterLOIF"));
-        importFilterLOIF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importFilterLOIF->setIcon(icon2);
-
-        gridLayout_17->addWidget(importFilterLOIF, 15, 3, 1, 1);
-
-        detailHpa_part6 = new QPushButton(scrollAreaWidgetContents_3);
-        detailHpa_part6->setObjectName(QString::fromUtf8("detailHpa_part6"));
-        detailHpa_part6->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailHpa_part6->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailHpa_part6, 24, 2, 1, 1);
-
-        label_118 = new QLabel(scrollAreaWidgetContents_3);
-        label_118->setObjectName(QString::fromUtf8("label_118"));
-        sizePolicy2.setHeightForWidth(label_118->sizePolicy().hasHeightForWidth());
-        label_118->setSizePolicy(sizePolicy2);
-        label_118->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_118, 28, 0, 1, 1);
-
-        mCbTx = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbTx->setObjectName(QString::fromUtf8("mCbTx"));
-        mCbTx->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbTx, 42, 0, 1, 2);
-
-        importAttXband_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        importAttXband_part2->setObjectName(QString::fromUtf8("importAttXband_part2"));
-        importAttXband_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importAttXband_part2->setIcon(icon2);
-
-        gridLayout_17->addWidget(importAttXband_part2, 12, 3, 1, 1);
-
-        indicatorLo_part1 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorLo_part1->setObjectName(QString::fromUtf8("indicatorLo_part1"));
-        indicatorLo_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorLo_part1, 35, 4, 1, 1);
-
-        importAttXband_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        importAttXband_part1->setObjectName(QString::fromUtf8("importAttXband_part1"));
-        importAttXband_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importAttXband_part1->setIcon(icon2);
-
-        gridLayout_17->addWidget(importAttXband_part1, 11, 3, 1, 1);
-
-        mCbHpa_part7 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbHpa_part7->setObjectName(QString::fromUtf8("mCbHpa_part7"));
-        mCbHpa_part7->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbComparator_part1 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbComparator_part1->setObjectName(QString::fromUtf8("mCbComparator_part1"));
+        mCbComparator_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -3924,221 +2441,64 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbHpa_part7, 25, 1, 1, 1);
+        gridLayout_17->addWidget(mCbComparator_part1, 5, 1, 1, 1);
 
-        indicatorHpa_part4 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorHpa_part4->setObjectName(QString::fromUtf8("indicatorHpa_part4"));
-        indicatorHpa_part4->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorHpa_part4, 22, 4, 1, 1);
-
-        ledLo_part2 = new QLabel(scrollAreaWidgetContents_3);
-        ledLo_part2->setObjectName(QString::fromUtf8("ledLo_part2"));
-        ledLo_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledLo_part2->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledLo_part2, 36, 5, 1, 1);
-
-        ledHpa_part5 = new QLabel(scrollAreaWidgetContents_3);
-        ledHpa_part5->setObjectName(QString::fromUtf8("ledHpa_part5"));
-        ledHpa_part5->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledHpa_part5->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledHpa_part5, 23, 5, 1, 1);
-
-        detailFilterXband = new QPushButton(scrollAreaWidgetContents_3);
-        detailFilterXband->setObjectName(QString::fromUtf8("detailFilterXband"));
-        detailFilterXband->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        detailComparator_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        detailComparator_part1->setObjectName(QString::fromUtf8("detailComparator_part1"));
+        detailComparator_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        detailFilterXband->setIcon(icon1);
+        detailComparator_part1->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailFilterXband, 17, 2, 1, 1);
+        gridLayout_17->addWidget(detailComparator_part1, 5, 2, 1, 1);
 
-        label_86 = new QLabel(scrollAreaWidgetContents_3);
-        label_86->setObjectName(QString::fromUtf8("label_86"));
-        sizePolicy.setHeightForWidth(label_86->sizePolicy().hasHeightForWidth());
-        label_86->setSizePolicy(sizePolicy);
-        label_86->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_86, 3, 0, 1, 1);
-
-        mCbLimiter_part1 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbLimiter_part1->setObjectName(QString::fromUtf8("mCbLimiter_part1"));
-        mCbLimiter_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
+        importComparator_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        importComparator_part1->setObjectName(QString::fromUtf8("importComparator_part1"));
+        importComparator_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
+        importComparator_part1->setIcon(icon2);
 
-        gridLayout_17->addWidget(mCbLimiter_part1, 27, 1, 1, 1);
+        gridLayout_17->addWidget(importComparator_part1, 5, 3, 1, 1);
 
-        mCbLimiter_part3 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbLimiter_part3->setObjectName(QString::fromUtf8("mCbLimiter_part3"));
-        mCbLimiter_part3->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
+        indicatorComparator_part1 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorComparator_part1->setObjectName(QString::fromUtf8("indicatorComparator_part1"));
+        indicatorComparator_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(mCbLimiter_part3, 29, 1, 1, 1);
+        gridLayout_17->addWidget(indicatorComparator_part1, 5, 4, 1, 1);
 
-        label_128 = new QLabel(scrollAreaWidgetContents_3);
-        label_128->setObjectName(QString::fromUtf8("label_128"));
-        sizePolicy2.setHeightForWidth(label_128->sizePolicy().hasHeightForWidth());
-        label_128->setSizePolicy(sizePolicy2);
-        label_128->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+        ledComparator_part1 = new QLabel(scrollAreaWidgetContents_3);
+        ledComparator_part1->setObjectName(QString::fromUtf8("ledComparator_part1"));
+        ledComparator_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledComparator_part1->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(label_128, 44, 0, 1, 1);
+        gridLayout_17->addWidget(ledComparator_part1, 5, 5, 1, 1);
 
-        detailHpa_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        detailHpa_part1->setObjectName(QString::fromUtf8("detailHpa_part1"));
-        detailHpa_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        rltComparator_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        rltComparator_part1->setObjectName(QString::fromUtf8("rltComparator_part1"));
+        rltComparator_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        detailHpa_part1->setIcon(icon1);
+        rltComparator_part1->setIcon(icon3);
 
-        gridLayout_17->addWidget(detailHpa_part1, 19, 2, 1, 1);
+        gridLayout_17->addWidget(rltComparator_part1, 5, 6, 1, 1);
 
-        indicatorLo_part3 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorLo_part3->setObjectName(QString::fromUtf8("indicatorLo_part3"));
-        indicatorLo_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+        label_88 = new QLabel(scrollAreaWidgetContents_3);
+        label_88->setObjectName(QString::fromUtf8("label_88"));
+        sizePolicy.setHeightForWidth(label_88->sizePolicy().hasHeightForWidth());
+        label_88->setSizePolicy(sizePolicy);
+        label_88->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(indicatorLo_part3, 37, 4, 1, 1);
-
-        ledFilterLORF = new QLabel(scrollAreaWidgetContents_3);
-        ledFilterLORF->setObjectName(QString::fromUtf8("ledFilterLORF"));
-        ledFilterLORF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledFilterLORF->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledFilterLORF, 16, 5, 1, 1);
-
-        mCbAttXband = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbAttXband->setObjectName(QString::fromUtf8("mCbAttXband"));
-        mCbAttXband->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbAttXband, 10, 0, 1, 2);
-
-        importFilterIF = new QPushButton(scrollAreaWidgetContents_3);
-        importFilterIF->setObjectName(QString::fromUtf8("importFilterIF"));
-        importFilterIF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importFilterIF->setIcon(icon2);
-
-        gridLayout_17->addWidget(importFilterIF, 14, 3, 1, 1);
-
-        indicatorRx_part1 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorRx_part1->setObjectName(QString::fromUtf8("indicatorRx_part1"));
-        indicatorRx_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorRx_part1, 39, 4, 1, 1);
-
-        mCbLna_part1 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbLna_part1->setObjectName(QString::fromUtf8("mCbLna_part1"));
-        mCbLna_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbLna_part1, 31, 1, 1, 1);
-
-        importTx_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        importTx_part3->setObjectName(QString::fromUtf8("importTx_part3"));
-        importTx_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importTx_part3->setIcon(icon2);
-
-        gridLayout_17->addWidget(importTx_part3, 45, 3, 1, 1);
-
-        importHpa_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        importHpa_part2->setObjectName(QString::fromUtf8("importHpa_part2"));
-        importHpa_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importHpa_part2->setIcon(icon2);
-
-        gridLayout_17->addWidget(importHpa_part2, 20, 3, 1, 1);
-
-        detailLna_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        detailLna_part2->setObjectName(QString::fromUtf8("detailLna_part2"));
-        detailLna_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailLna_part2->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailLna_part2, 32, 2, 1, 1);
-
-        ledRx_part2 = new QLabel(scrollAreaWidgetContents_3);
-        ledRx_part2->setObjectName(QString::fromUtf8("ledRx_part2"));
-        ledRx_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledRx_part2->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledRx_part2, 40, 5, 1, 1);
+        gridLayout_17->addWidget(label_88, 6, 0, 2, 1);
 
         mCbComparator_part2 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbComparator_part2->setObjectName(QString::fromUtf8("mCbComparator_part2"));
@@ -4160,21 +2520,50 @@ public:
 
         gridLayout_17->addWidget(mCbComparator_part2, 6, 1, 1, 1);
 
-        importLna_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        importLna_part3->setObjectName(QString::fromUtf8("importLna_part3"));
-        importLna_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        indicatorComparator_part2 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorComparator_part2->setObjectName(QString::fromUtf8("indicatorComparator_part2"));
+        indicatorComparator_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorComparator_part2, 6, 4, 2, 1);
+
+        ledComparator_part2 = new QLabel(scrollAreaWidgetContents_3);
+        ledComparator_part2->setObjectName(QString::fromUtf8("ledComparator_part2"));
+        ledComparator_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledComparator_part2->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledComparator_part2, 6, 5, 3, 1);
+
+        mCbAdapterSMA = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbAdapterSMA->setObjectName(QString::fromUtf8("mCbAdapterSMA"));
+        mCbAdapterSMA->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        importLna_part3->setIcon(icon2);
 
-        gridLayout_17->addWidget(importLna_part3, 33, 3, 1, 1);
+        gridLayout_17->addWidget(mCbAdapterSMA, 9, 0, 1, 2);
 
-        mCbHpa_part6 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbHpa_part6->setObjectName(QString::fromUtf8("mCbHpa_part6"));
-        mCbHpa_part6->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        label_89 = new QLabel(scrollAreaWidgetContents_3);
+        label_89->setObjectName(QString::fromUtf8("label_89"));
+        sizePolicy.setHeightForWidth(label_89->sizePolicy().hasHeightForWidth());
+        label_89->setSizePolicy(sizePolicy);
+        label_89->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_89, 10, 0, 1, 1);
+
+        mCbSMA_part1 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbSMA_part1->setObjectName(QString::fromUtf8("mCbSMA_part1"));
+        mCbSMA_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -4190,123 +2579,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbHpa_part6, 24, 1, 1, 1);
-
-        rltAntena = new QPushButton(scrollAreaWidgetContents_3);
-        rltAntena->setObjectName(QString::fromUtf8("rltAntena"));
-        rltAntena->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltAntena->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltAntena, 13, 6, 1, 1);
-
-        indicatorComparator_part1 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorComparator_part1->setObjectName(QString::fromUtf8("indicatorComparator_part1"));
-        indicatorComparator_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorComparator_part1, 5, 4, 1, 1);
-
-        rltComparator_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        rltComparator_part2->setObjectName(QString::fromUtf8("rltComparator_part2"));
-        rltComparator_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltComparator_part2->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltComparator_part2, 6, 6, 1, 1);
-
-        importLo_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        importLo_part1->setObjectName(QString::fromUtf8("importLo_part1"));
-        importLo_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importLo_part1->setIcon(icon2);
-
-        gridLayout_17->addWidget(importLo_part1, 35, 3, 1, 1);
-
-        rltAttXband_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        rltAttXband_part1->setObjectName(QString::fromUtf8("rltAttXband_part1"));
-        rltAttXband_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltAttXband_part1->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltAttXband_part1, 11, 6, 1, 1);
-
-        indicatorHpa_part3 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorHpa_part3->setObjectName(QString::fromUtf8("indicatorHpa_part3"));
-        indicatorHpa_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorHpa_part3, 21, 4, 1, 1);
-
-        importHpa_part4 = new QPushButton(scrollAreaWidgetContents_3);
-        importHpa_part4->setObjectName(QString::fromUtf8("importHpa_part4"));
-        importHpa_part4->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importHpa_part4->setIcon(icon2);
-
-        gridLayout_17->addWidget(importHpa_part4, 22, 3, 1, 1);
-
-        rltLimiter_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        rltLimiter_part1->setObjectName(QString::fromUtf8("rltLimiter_part1"));
-        rltLimiter_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltLimiter_part1->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltLimiter_part1, 27, 6, 1, 1);
-
-        rltRx_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        rltRx_part3->setObjectName(QString::fromUtf8("rltRx_part3"));
-        rltRx_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltRx_part3->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltRx_part3, 41, 6, 1, 1);
-
-        label_101 = new QLabel(scrollAreaWidgetContents_3);
-        label_101->setObjectName(QString::fromUtf8("label_101"));
-        sizePolicy2.setHeightForWidth(label_101->sizePolicy().hasHeightForWidth());
-        label_101->setSizePolicy(sizePolicy2);
-        label_101->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_101, 25, 0, 1, 1);
-
-        indicatorLo_part2 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorLo_part2->setObjectName(QString::fromUtf8("indicatorLo_part2"));
-        indicatorLo_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorLo_part2, 36, 4, 1, 1);
-
-        indicatorHpa_part5 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorHpa_part5->setObjectName(QString::fromUtf8("indicatorHpa_part5"));
-        indicatorHpa_part5->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorHpa_part5, 23, 4, 1, 1);
+        gridLayout_17->addWidget(mCbSMA_part1, 10, 1, 1, 1);
 
         detailSMA_part1 = new QPushButton(scrollAreaWidgetContents_3);
         detailSMA_part1->setObjectName(QString::fromUtf8("detailSMA_part1"));
@@ -4318,51 +2591,56 @@ public:
 "}"));
         detailSMA_part1->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailSMA_part1, 8, 2, 1, 1);
+        gridLayout_17->addWidget(detailSMA_part1, 10, 2, 1, 1);
 
-        rltCirculator_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        rltCirculator_part1->setObjectName(QString::fromUtf8("rltCirculator_part1"));
-        rltCirculator_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        importSMA_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        importSMA_part1->setObjectName(QString::fromUtf8("importSMA_part1"));
+        importSMA_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        rltCirculator_part1->setIcon(icon3);
+        importSMA_part1->setIcon(icon2);
 
-        gridLayout_17->addWidget(rltCirculator_part1, 2, 6, 1, 1);
+        gridLayout_17->addWidget(importSMA_part1, 10, 3, 1, 1);
 
-        label_119 = new QLabel(scrollAreaWidgetContents_3);
-        label_119->setObjectName(QString::fromUtf8("label_119"));
-        sizePolicy2.setHeightForWidth(label_119->sizePolicy().hasHeightForWidth());
-        label_119->setSizePolicy(sizePolicy2);
-        label_119->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+        indicatorSma_part1 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorSma_part1->setObjectName(QString::fromUtf8("indicatorSma_part1"));
+        indicatorSma_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(label_119, 29, 0, 1, 1);
+        gridLayout_17->addWidget(indicatorSma_part1, 10, 4, 1, 1);
 
-        rltTx_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        rltTx_part1->setObjectName(QString::fromUtf8("rltTx_part1"));
-        rltTx_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        ledSMA_part1 = new QLabel(scrollAreaWidgetContents_3);
+        ledSMA_part1->setObjectName(QString::fromUtf8("ledSMA_part1"));
+        ledSMA_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledSMA_part1->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledSMA_part1, 10, 5, 1, 1);
+
+        rltSMA_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        rltSMA_part1->setObjectName(QString::fromUtf8("rltSMA_part1"));
+        rltSMA_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        rltTx_part1->setIcon(icon3);
+        rltSMA_part1->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltTx_part1, 43, 6, 1, 1);
+        gridLayout_17->addWidget(rltSMA_part1, 10, 6, 1, 1);
 
-        label_120 = new QLabel(scrollAreaWidgetContents_3);
-        label_120->setObjectName(QString::fromUtf8("label_120"));
-        sizePolicy2.setHeightForWidth(label_120->sizePolicy().hasHeightForWidth());
-        label_120->setSizePolicy(sizePolicy2);
-        label_120->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+        label_90 = new QLabel(scrollAreaWidgetContents_3);
+        label_90->setObjectName(QString::fromUtf8("label_90"));
+        sizePolicy.setHeightForWidth(label_90->sizePolicy().hasHeightForWidth());
+        label_90->setSizePolicy(sizePolicy);
+        label_90->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_120, 27, 0, 1, 1);
+        gridLayout_17->addWidget(label_90, 11, 0, 1, 1);
 
-        mCbHpa_part1 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbHpa_part1->setObjectName(QString::fromUtf8("mCbHpa_part1"));
-        mCbHpa_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbSMA_part2 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbSMA_part2->setObjectName(QString::fromUtf8("mCbSMA_part2"));
+        mCbSMA_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -4378,22 +2656,302 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbHpa_part1, 19, 1, 1, 1);
+        gridLayout_17->addWidget(mCbSMA_part2, 11, 1, 1, 1);
 
-        label_126 = new QLabel(scrollAreaWidgetContents_3);
-        label_126->setObjectName(QString::fromUtf8("label_126"));
-        sizePolicy2.setHeightForWidth(label_126->sizePolicy().hasHeightForWidth());
-        label_126->setSizePolicy(sizePolicy2);
-        label_126->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+        detailSMA_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        detailSMA_part2->setObjectName(QString::fromUtf8("detailSMA_part2"));
+        detailSMA_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailSMA_part2->setIcon(icon1);
 
-        gridLayout_17->addWidget(label_126, 31, 0, 1, 1);
+        gridLayout_17->addWidget(detailSMA_part2, 11, 2, 1, 1);
 
-        ledSMA_part1 = new QLabel(scrollAreaWidgetContents_3);
-        ledSMA_part1->setObjectName(QString::fromUtf8("ledSMA_part1"));
-        ledSMA_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledSMA_part1->setAlignment(Qt::AlignCenter);
+        importSMA_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        importSMA_part2->setObjectName(QString::fromUtf8("importSMA_part2"));
+        importSMA_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importSMA_part2->setIcon(icon2);
 
-        gridLayout_17->addWidget(ledSMA_part1, 8, 5, 1, 1);
+        gridLayout_17->addWidget(importSMA_part2, 11, 3, 1, 1);
+
+        indicatorSma_part2 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorSma_part2->setObjectName(QString::fromUtf8("indicatorSma_part2"));
+        indicatorSma_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorSma_part2, 11, 4, 1, 1);
+
+        ledSMA_part2 = new QLabel(scrollAreaWidgetContents_3);
+        ledSMA_part2->setObjectName(QString::fromUtf8("ledSMA_part2"));
+        ledSMA_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledSMA_part2->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledSMA_part2, 11, 5, 1, 1);
+
+        rltSMA_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        rltSMA_part2->setObjectName(QString::fromUtf8("rltSMA_part2"));
+        rltSMA_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltSMA_part2->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltSMA_part2, 11, 6, 1, 1);
+
+        mCbAttXband = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbAttXband->setObjectName(QString::fromUtf8("mCbAttXband"));
+        mCbAttXband->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbAttXband, 12, 0, 1, 2);
+
+        label_91 = new QLabel(scrollAreaWidgetContents_3);
+        label_91->setObjectName(QString::fromUtf8("label_91"));
+        sizePolicy.setHeightForWidth(label_91->sizePolicy().hasHeightForWidth());
+        label_91->setSizePolicy(sizePolicy);
+        label_91->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_91, 13, 0, 1, 1);
+
+        mCbXband_part1 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbXband_part1->setObjectName(QString::fromUtf8("mCbXband_part1"));
+        mCbXband_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbXband_part1, 13, 1, 1, 1);
+
+        detailAttXband_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        detailAttXband_part1->setObjectName(QString::fromUtf8("detailAttXband_part1"));
+        detailAttXband_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailAttXband_part1->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailAttXband_part1, 13, 2, 1, 1);
+
+        importAttXband_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        importAttXband_part1->setObjectName(QString::fromUtf8("importAttXband_part1"));
+        importAttXband_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importAttXband_part1->setIcon(icon2);
+
+        gridLayout_17->addWidget(importAttXband_part1, 13, 3, 1, 1);
+
+        indicatorXband_part1 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorXband_part1->setObjectName(QString::fromUtf8("indicatorXband_part1"));
+        indicatorXband_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorXband_part1, 13, 4, 1, 1);
+
+        ledAttXband_part1 = new QLabel(scrollAreaWidgetContents_3);
+        ledAttXband_part1->setObjectName(QString::fromUtf8("ledAttXband_part1"));
+        ledAttXband_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledAttXband_part1->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledAttXband_part1, 13, 5, 1, 1);
+
+        rltAttXband_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        rltAttXband_part1->setObjectName(QString::fromUtf8("rltAttXband_part1"));
+        rltAttXband_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltAttXband_part1->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltAttXband_part1, 13, 6, 1, 1);
+
+        label_92 = new QLabel(scrollAreaWidgetContents_3);
+        label_92->setObjectName(QString::fromUtf8("label_92"));
+        QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(label_92->sizePolicy().hasHeightForWidth());
+        label_92->setSizePolicy(sizePolicy2);
+        label_92->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_92, 14, 0, 1, 1);
+
+        mCbXband_part2 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbXband_part2->setObjectName(QString::fromUtf8("mCbXband_part2"));
+        mCbXband_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbXband_part2, 14, 1, 1, 1);
+
+        detailAttXband_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        detailAttXband_part2->setObjectName(QString::fromUtf8("detailAttXband_part2"));
+        detailAttXband_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailAttXband_part2->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailAttXband_part2, 14, 2, 1, 1);
+
+        importAttXband_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        importAttXband_part2->setObjectName(QString::fromUtf8("importAttXband_part2"));
+        importAttXband_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importAttXband_part2->setIcon(icon2);
+
+        gridLayout_17->addWidget(importAttXband_part2, 14, 3, 1, 1);
+
+        indicatorXband_part2 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorXband_part2->setObjectName(QString::fromUtf8("indicatorXband_part2"));
+        indicatorXband_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorXband_part2, 14, 4, 1, 1);
+
+        ledAttXband_part2 = new QLabel(scrollAreaWidgetContents_3);
+        ledAttXband_part2->setObjectName(QString::fromUtf8("ledAttXband_part2"));
+        ledAttXband_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledAttXband_part2->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledAttXband_part2, 14, 5, 1, 1);
+
+        rltAttXband_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        rltAttXband_part2->setObjectName(QString::fromUtf8("rltAttXband_part2"));
+        rltAttXband_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltAttXband_part2->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltAttXband_part2, 14, 6, 1, 1);
+
+        mCbAntena = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbAntena->setObjectName(QString::fromUtf8("mCbAntena"));
+        mCbAntena->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbAntena, 15, 0, 1, 2);
+
+        detailAntena = new QPushButton(scrollAreaWidgetContents_3);
+        detailAntena->setObjectName(QString::fromUtf8("detailAntena"));
+        detailAntena->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailAntena->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailAntena, 15, 2, 1, 1);
+
+        importAntena = new QPushButton(scrollAreaWidgetContents_3);
+        importAntena->setObjectName(QString::fromUtf8("importAntena"));
+        importAntena->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importAntena->setIcon(icon2);
+
+        gridLayout_17->addWidget(importAntena, 15, 3, 1, 1);
+
+        indicatorAntena = new QLabel(scrollAreaWidgetContents_3);
+        indicatorAntena->setObjectName(QString::fromUtf8("indicatorAntena"));
+        indicatorAntena->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorAntena, 15, 4, 1, 1);
+
+        ledAntena = new QLabel(scrollAreaWidgetContents_3);
+        ledAntena->setObjectName(QString::fromUtf8("ledAntena"));
+        ledAntena->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledAntena->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledAntena, 15, 5, 1, 1);
+
+        rltAntena = new QPushButton(scrollAreaWidgetContents_3);
+        rltAntena->setObjectName(QString::fromUtf8("rltAntena"));
+        rltAntena->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltAntena->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltAntena, 15, 6, 1, 1);
 
         mCbFilterIf = new QCheckBox(scrollAreaWidgetContents_3);
         mCbFilterIf->setObjectName(QString::fromUtf8("mCbFilterIf"));
@@ -4413,97 +2971,60 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbFilterIf, 14, 0, 1, 2);
+        gridLayout_17->addWidget(mCbFilterIf, 16, 0, 1, 2);
 
-        rltSMA_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        rltSMA_part2->setObjectName(QString::fromUtf8("rltSMA_part2"));
-        rltSMA_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        detailFilterIF = new QPushButton(scrollAreaWidgetContents_3);
+        detailFilterIF->setObjectName(QString::fromUtf8("detailFilterIF"));
+        detailFilterIF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        rltSMA_part2->setIcon(icon3);
+        detailFilterIF->setIcon(icon1);
 
-        gridLayout_17->addWidget(rltSMA_part2, 9, 6, 1, 1);
+        gridLayout_17->addWidget(detailFilterIF, 16, 2, 1, 1);
 
-        detailSMA_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        detailSMA_part2->setObjectName(QString::fromUtf8("detailSMA_part2"));
-        detailSMA_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        importFilterIF = new QPushButton(scrollAreaWidgetContents_3);
+        importFilterIF->setObjectName(QString::fromUtf8("importFilterIF"));
+        importFilterIF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        detailSMA_part2->setIcon(icon1);
+        importFilterIF->setIcon(icon2);
 
-        gridLayout_17->addWidget(detailSMA_part2, 9, 2, 1, 1);
+        gridLayout_17->addWidget(importFilterIF, 16, 3, 1, 1);
 
-        importRx_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        importRx_part1->setObjectName(QString::fromUtf8("importRx_part1"));
-        importRx_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        indicatorFilterIF = new QLabel(scrollAreaWidgetContents_3);
+        indicatorFilterIF->setObjectName(QString::fromUtf8("indicatorFilterIF"));
+        indicatorFilterIF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorFilterIF, 16, 4, 1, 1);
+
+        ledFilterIF = new QLabel(scrollAreaWidgetContents_3);
+        ledFilterIF->setObjectName(QString::fromUtf8("ledFilterIF"));
+        ledFilterIF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledFilterIF->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledFilterIF, 16, 5, 1, 1);
+
+        rltFilterIF = new QPushButton(scrollAreaWidgetContents_3);
+        rltFilterIF->setObjectName(QString::fromUtf8("rltFilterIF"));
+        rltFilterIF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        importRx_part1->setIcon(icon2);
+        rltFilterIF->setIcon(icon3);
 
-        gridLayout_17->addWidget(importRx_part1, 39, 3, 1, 1);
+        gridLayout_17->addWidget(rltFilterIF, 16, 6, 1, 1);
 
-        label_85 = new QLabel(scrollAreaWidgetContents_3);
-        label_85->setObjectName(QString::fromUtf8("label_85"));
-        sizePolicy.setHeightForWidth(label_85->sizePolicy().hasHeightForWidth());
-        label_85->setSizePolicy(sizePolicy);
-        label_85->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_85, 2, 0, 1, 1);
-
-        detailHpa_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        detailHpa_part2->setObjectName(QString::fromUtf8("detailHpa_part2"));
-        detailHpa_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailHpa_part2->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailHpa_part2, 20, 2, 1, 1);
-
-        detailLna_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        detailLna_part3->setObjectName(QString::fromUtf8("detailLna_part3"));
-        detailLna_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailLna_part3->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailLna_part3, 33, 2, 1, 1);
-
-        detailTx_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        detailTx_part3->setObjectName(QString::fromUtf8("detailTx_part3"));
-        detailTx_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailTx_part3->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailTx_part3, 45, 2, 1, 1);
-
-        indicatorSma_part1 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorSma_part1->setObjectName(QString::fromUtf8("indicatorSma_part1"));
-        indicatorSma_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorSma_part1, 8, 4, 1, 1);
-
-        All = new QCheckBox(scrollAreaWidgetContents_3);
-        All->setObjectName(QString::fromUtf8("All"));
-        All->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
+        mCbFilterLOIF = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbFilterLOIF->setObjectName(QString::fromUtf8("mCbFilterLOIF"));
+        mCbFilterLOIF->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank.png\");\n"
@@ -4519,120 +3040,56 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(All, 0, 0, 1, 2);
+        gridLayout_17->addWidget(mCbFilterLOIF, 17, 0, 1, 2);
 
-        indicatorAntena = new QLabel(scrollAreaWidgetContents_3);
-        indicatorAntena->setObjectName(QString::fromUtf8("indicatorAntena"));
-        indicatorAntena->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorAntena, 13, 4, 1, 1);
-
-        indicatorRx_part2 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorRx_part2->setObjectName(QString::fromUtf8("indicatorRx_part2"));
-        indicatorRx_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorRx_part2, 40, 4, 1, 1);
-
-        detailLo_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        detailLo_part1->setObjectName(QString::fromUtf8("detailLo_part1"));
-        detailLo_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        detailFilterLOIF = new QPushButton(scrollAreaWidgetContents_3);
+        detailFilterLOIF->setObjectName(QString::fromUtf8("detailFilterLOIF"));
+        detailFilterLOIF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        detailLo_part1->setIcon(icon1);
+        detailFilterLOIF->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailLo_part1, 35, 2, 1, 1);
+        gridLayout_17->addWidget(detailFilterLOIF, 17, 2, 1, 1);
 
-        importHpa_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        importHpa_part3->setObjectName(QString::fromUtf8("importHpa_part3"));
-        importHpa_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        importFilterLOIF = new QPushButton(scrollAreaWidgetContents_3);
+        importFilterLOIF->setObjectName(QString::fromUtf8("importFilterLOIF"));
+        importFilterLOIF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        importHpa_part3->setIcon(icon2);
+        importFilterLOIF->setIcon(icon2);
 
-        gridLayout_17->addWidget(importHpa_part3, 21, 3, 1, 1);
+        gridLayout_17->addWidget(importFilterLOIF, 17, 3, 1, 1);
 
-        label_100 = new QLabel(scrollAreaWidgetContents_3);
-        label_100->setObjectName(QString::fromUtf8("label_100"));
-        sizePolicy2.setHeightForWidth(label_100->sizePolicy().hasHeightForWidth());
-        label_100->setSizePolicy(sizePolicy2);
-        label_100->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+        indicatorFilterLOIF = new QLabel(scrollAreaWidgetContents_3);
+        indicatorFilterLOIF->setObjectName(QString::fromUtf8("indicatorFilterLOIF"));
+        indicatorFilterLOIF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(label_100, 24, 0, 1, 1);
+        gridLayout_17->addWidget(indicatorFilterLOIF, 17, 4, 1, 1);
 
-        detailAntena = new QPushButton(scrollAreaWidgetContents_3);
-        detailAntena->setObjectName(QString::fromUtf8("detailAntena"));
-        detailAntena->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        ledFilterLOIF = new QLabel(scrollAreaWidgetContents_3);
+        ledFilterLOIF->setObjectName(QString::fromUtf8("ledFilterLOIF"));
+        ledFilterLOIF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledFilterLOIF->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledFilterLOIF, 17, 5, 1, 1);
+
+        rltFilterLOIF = new QPushButton(scrollAreaWidgetContents_3);
+        rltFilterLOIF->setObjectName(QString::fromUtf8("rltFilterLOIF"));
+        rltFilterLOIF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        detailAntena->setIcon(icon1);
+        rltFilterLOIF->setIcon(icon3);
 
-        gridLayout_17->addWidget(detailAntena, 13, 2, 1, 1);
-
-        detailHpa_part4 = new QPushButton(scrollAreaWidgetContents_3);
-        detailHpa_part4->setObjectName(QString::fromUtf8("detailHpa_part4"));
-        detailHpa_part4->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailHpa_part4->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailHpa_part4, 22, 2, 1, 1);
-
-        ledAttXband_part2 = new QLabel(scrollAreaWidgetContents_3);
-        ledAttXband_part2->setObjectName(QString::fromUtf8("ledAttXband_part2"));
-        ledAttXband_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledAttXband_part2->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledAttXband_part2, 12, 5, 1, 1);
-
-        rltAttXband_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        rltAttXband_part2->setObjectName(QString::fromUtf8("rltAttXband_part2"));
-        rltAttXband_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltAttXband_part2->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltAttXband_part2, 12, 6, 1, 1);
-
-        ledLimiter_part1 = new QLabel(scrollAreaWidgetContents_3);
-        ledLimiter_part1->setObjectName(QString::fromUtf8("ledLimiter_part1"));
-        ledLimiter_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledLimiter_part1->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledLimiter_part1, 27, 5, 1, 1);
-
-        ledRx_part3 = new QLabel(scrollAreaWidgetContents_3);
-        ledRx_part3->setObjectName(QString::fromUtf8("ledRx_part3"));
-        ledRx_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledRx_part3->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledRx_part3, 41, 5, 1, 1);
-
-        rltHpa_part6 = new QPushButton(scrollAreaWidgetContents_3);
-        rltHpa_part6->setObjectName(QString::fromUtf8("rltHpa_part6"));
-        rltHpa_part6->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltHpa_part6->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltHpa_part6, 24, 6, 1, 1);
+        gridLayout_17->addWidget(rltFilterLOIF, 17, 6, 1, 1);
 
         mCbFilterLORF = new QCheckBox(scrollAreaWidgetContents_3);
         mCbFilterLORF->setObjectName(QString::fromUtf8("mCbFilterLORF"));
@@ -4652,58 +3109,493 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbFilterLORF, 16, 0, 1, 2);
+        gridLayout_17->addWidget(mCbFilterLORF, 18, 0, 1, 2);
 
-        rltLimiter_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        rltLimiter_part2->setObjectName(QString::fromUtf8("rltLimiter_part2"));
-        rltLimiter_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        detailFilterLORF = new QPushButton(scrollAreaWidgetContents_3);
+        detailFilterLORF->setObjectName(QString::fromUtf8("detailFilterLORF"));
+        detailFilterLORF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        rltLimiter_part2->setIcon(icon3);
+        detailFilterLORF->setIcon(icon1);
 
-        gridLayout_17->addWidget(rltLimiter_part2, 28, 6, 1, 1);
+        gridLayout_17->addWidget(detailFilterLORF, 18, 2, 1, 1);
 
-        ledTx_part1 = new QLabel(scrollAreaWidgetContents_3);
-        ledTx_part1->setObjectName(QString::fromUtf8("ledTx_part1"));
-        ledTx_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledTx_part1->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledTx_part1, 43, 5, 1, 1);
-
-        label_90 = new QLabel(scrollAreaWidgetContents_3);
-        label_90->setObjectName(QString::fromUtf8("label_90"));
-        sizePolicy.setHeightForWidth(label_90->sizePolicy().hasHeightForWidth());
-        label_90->setSizePolicy(sizePolicy);
-        label_90->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_90, 9, 0, 1, 1);
-
-        importLo_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        importLo_part2->setObjectName(QString::fromUtf8("importLo_part2"));
-        importLo_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        importFilterLORF = new QPushButton(scrollAreaWidgetContents_3);
+        importFilterLORF->setObjectName(QString::fromUtf8("importFilterLORF"));
+        importFilterLORF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        importLo_part2->setIcon(icon2);
+        importFilterLORF->setIcon(icon2);
 
-        gridLayout_17->addWidget(importLo_part2, 36, 3, 1, 1);
+        gridLayout_17->addWidget(importFilterLORF, 18, 3, 1, 1);
 
-        detailComparator_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        detailComparator_part2->setObjectName(QString::fromUtf8("detailComparator_part2"));
-        detailComparator_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        indicatorFilterLORF = new QLabel(scrollAreaWidgetContents_3);
+        indicatorFilterLORF->setObjectName(QString::fromUtf8("indicatorFilterLORF"));
+        indicatorFilterLORF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorFilterLORF, 18, 4, 1, 1);
+
+        ledFilterLORF = new QLabel(scrollAreaWidgetContents_3);
+        ledFilterLORF->setObjectName(QString::fromUtf8("ledFilterLORF"));
+        ledFilterLORF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledFilterLORF->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledFilterLORF, 18, 5, 1, 1);
+
+        rltFilterLORF = new QPushButton(scrollAreaWidgetContents_3);
+        rltFilterLORF->setObjectName(QString::fromUtf8("rltFilterLORF"));
+        rltFilterLORF->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        detailComparator_part2->setIcon(icon1);
+        rltFilterLORF->setIcon(icon3);
 
-        gridLayout_17->addWidget(detailComparator_part2, 6, 2, 1, 1);
+        gridLayout_17->addWidget(rltFilterLORF, 18, 6, 1, 1);
+
+        mCbFilterXband = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbFilterXband->setObjectName(QString::fromUtf8("mCbFilterXband"));
+        mCbFilterXband->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbFilterXband, 19, 0, 1, 2);
+
+        detailFilterXband = new QPushButton(scrollAreaWidgetContents_3);
+        detailFilterXband->setObjectName(QString::fromUtf8("detailFilterXband"));
+        detailFilterXband->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailFilterXband->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailFilterXband, 19, 2, 1, 1);
+
+        importFilterXband = new QPushButton(scrollAreaWidgetContents_3);
+        importFilterXband->setObjectName(QString::fromUtf8("importFilterXband"));
+        importFilterXband->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importFilterXband->setIcon(icon2);
+
+        gridLayout_17->addWidget(importFilterXband, 19, 3, 1, 1);
+
+        indicatorFilterXband = new QLabel(scrollAreaWidgetContents_3);
+        indicatorFilterXband->setObjectName(QString::fromUtf8("indicatorFilterXband"));
+        indicatorFilterXband->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorFilterXband, 19, 4, 1, 1);
+
+        ledFilterXband = new QLabel(scrollAreaWidgetContents_3);
+        ledFilterXband->setObjectName(QString::fromUtf8("ledFilterXband"));
+        ledFilterXband->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledFilterXband->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledFilterXband, 19, 5, 1, 1);
+
+        rltFilterXband = new QPushButton(scrollAreaWidgetContents_3);
+        rltFilterXband->setObjectName(QString::fromUtf8("rltFilterXband"));
+        rltFilterXband->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltFilterXband->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltFilterXband, 19, 6, 1, 1);
+
+        mCbHpa = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbHpa->setObjectName(QString::fromUtf8("mCbHpa"));
+        mCbHpa->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbHpa, 20, 0, 1, 2);
+
+        label_97 = new QLabel(scrollAreaWidgetContents_3);
+        label_97->setObjectName(QString::fromUtf8("label_97"));
+        sizePolicy2.setHeightForWidth(label_97->sizePolicy().hasHeightForWidth());
+        label_97->setSizePolicy(sizePolicy2);
+        label_97->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_97, 21, 0, 1, 1);
+
+        mCbHpa_part1 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbHpa_part1->setObjectName(QString::fromUtf8("mCbHpa_part1"));
+        mCbHpa_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbHpa_part1, 21, 1, 1, 1);
+
+        detailHpa_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        detailHpa_part1->setObjectName(QString::fromUtf8("detailHpa_part1"));
+        detailHpa_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailHpa_part1->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailHpa_part1, 21, 2, 1, 1);
+
+        importHpa_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        importHpa_part1->setObjectName(QString::fromUtf8("importHpa_part1"));
+        importHpa_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importHpa_part1->setIcon(icon2);
+
+        gridLayout_17->addWidget(importHpa_part1, 21, 3, 1, 1);
+
+        indicatorHpa_part1 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorHpa_part1->setObjectName(QString::fromUtf8("indicatorHpa_part1"));
+        indicatorHpa_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorHpa_part1, 21, 4, 1, 1);
+
+        ledHpa_part1 = new QLabel(scrollAreaWidgetContents_3);
+        ledHpa_part1->setObjectName(QString::fromUtf8("ledHpa_part1"));
+        ledHpa_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledHpa_part1->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledHpa_part1, 21, 5, 1, 1);
+
+        rltHpa_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        rltHpa_part1->setObjectName(QString::fromUtf8("rltHpa_part1"));
+        rltHpa_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltHpa_part1->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltHpa_part1, 21, 6, 1, 1);
+
+        label_98 = new QLabel(scrollAreaWidgetContents_3);
+        label_98->setObjectName(QString::fromUtf8("label_98"));
+        sizePolicy2.setHeightForWidth(label_98->sizePolicy().hasHeightForWidth());
+        label_98->setSizePolicy(sizePolicy2);
+        label_98->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_98, 22, 0, 1, 1);
+
+        mCbHpa_part2 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbHpa_part2->setObjectName(QString::fromUtf8("mCbHpa_part2"));
+        mCbHpa_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbHpa_part2, 22, 1, 1, 1);
+
+        detailHpa_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        detailHpa_part2->setObjectName(QString::fromUtf8("detailHpa_part2"));
+        detailHpa_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailHpa_part2->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailHpa_part2, 22, 2, 1, 1);
+
+        importHpa_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        importHpa_part2->setObjectName(QString::fromUtf8("importHpa_part2"));
+        importHpa_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importHpa_part2->setIcon(icon2);
+
+        gridLayout_17->addWidget(importHpa_part2, 22, 3, 1, 1);
+
+        indicatorHpa_part2 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorHpa_part2->setObjectName(QString::fromUtf8("indicatorHpa_part2"));
+        indicatorHpa_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorHpa_part2, 22, 4, 1, 1);
+
+        ledHpa_part2 = new QLabel(scrollAreaWidgetContents_3);
+        ledHpa_part2->setObjectName(QString::fromUtf8("ledHpa_part2"));
+        ledHpa_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledHpa_part2->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledHpa_part2, 22, 5, 1, 1);
+
+        rltHpa_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        rltHpa_part2->setObjectName(QString::fromUtf8("rltHpa_part2"));
+        rltHpa_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltHpa_part2->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltHpa_part2, 22, 6, 1, 1);
+
+        label_103 = new QLabel(scrollAreaWidgetContents_3);
+        label_103->setObjectName(QString::fromUtf8("label_103"));
+        sizePolicy2.setHeightForWidth(label_103->sizePolicy().hasHeightForWidth());
+        label_103->setSizePolicy(sizePolicy2);
+        label_103->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_103, 23, 0, 1, 1);
+
+        mCbHpa_part3 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbHpa_part3->setObjectName(QString::fromUtf8("mCbHpa_part3"));
+        mCbHpa_part3->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbHpa_part3, 23, 1, 1, 1);
+
+        detailHpa_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        detailHpa_part3->setObjectName(QString::fromUtf8("detailHpa_part3"));
+        detailHpa_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailHpa_part3->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailHpa_part3, 23, 2, 1, 1);
+
+        importHpa_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        importHpa_part3->setObjectName(QString::fromUtf8("importHpa_part3"));
+        importHpa_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importHpa_part3->setIcon(icon2);
+
+        gridLayout_17->addWidget(importHpa_part3, 23, 3, 1, 1);
+
+        indicatorHpa_part3 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorHpa_part3->setObjectName(QString::fromUtf8("indicatorHpa_part3"));
+        indicatorHpa_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorHpa_part3, 23, 4, 1, 1);
+
+        ledHpa_part3 = new QLabel(scrollAreaWidgetContents_3);
+        ledHpa_part3->setObjectName(QString::fromUtf8("ledHpa_part3"));
+        ledHpa_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledHpa_part3->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledHpa_part3, 23, 5, 1, 1);
+
+        rltHpa_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        rltHpa_part3->setObjectName(QString::fromUtf8("rltHpa_part3"));
+        rltHpa_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltHpa_part3->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltHpa_part3, 23, 6, 1, 1);
+
+        label_99 = new QLabel(scrollAreaWidgetContents_3);
+        label_99->setObjectName(QString::fromUtf8("label_99"));
+        sizePolicy2.setHeightForWidth(label_99->sizePolicy().hasHeightForWidth());
+        label_99->setSizePolicy(sizePolicy2);
+        label_99->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_99, 24, 0, 1, 1);
+
+        mCbHpa_part4 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbHpa_part4->setObjectName(QString::fromUtf8("mCbHpa_part4"));
+        mCbHpa_part4->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbHpa_part4, 24, 1, 1, 1);
+
+        detailHpa_part4 = new QPushButton(scrollAreaWidgetContents_3);
+        detailHpa_part4->setObjectName(QString::fromUtf8("detailHpa_part4"));
+        detailHpa_part4->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailHpa_part4->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailHpa_part4, 24, 2, 1, 1);
+
+        importHpa_part4 = new QPushButton(scrollAreaWidgetContents_3);
+        importHpa_part4->setObjectName(QString::fromUtf8("importHpa_part4"));
+        importHpa_part4->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importHpa_part4->setIcon(icon2);
+
+        gridLayout_17->addWidget(importHpa_part4, 24, 3, 1, 1);
+
+        indicatorHpa_part4 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorHpa_part4->setObjectName(QString::fromUtf8("indicatorHpa_part4"));
+        indicatorHpa_part4->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorHpa_part4, 24, 4, 1, 1);
+
+        ledHpa_part4 = new QLabel(scrollAreaWidgetContents_3);
+        ledHpa_part4->setObjectName(QString::fromUtf8("ledHpa_part4"));
+        ledHpa_part4->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledHpa_part4->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledHpa_part4, 24, 5, 1, 1);
+
+        rltHpa_part4 = new QPushButton(scrollAreaWidgetContents_3);
+        rltHpa_part4->setObjectName(QString::fromUtf8("rltHpa_part4"));
+        rltHpa_part4->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltHpa_part4->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltHpa_part4, 24, 6, 1, 1);
+
+        label_102 = new QLabel(scrollAreaWidgetContents_3);
+        label_102->setObjectName(QString::fromUtf8("label_102"));
+        sizePolicy2.setHeightForWidth(label_102->sizePolicy().hasHeightForWidth());
+        label_102->setSizePolicy(sizePolicy2);
+        label_102->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_102, 25, 0, 1, 1);
+
+        mCbHpa_part5 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbHpa_part5->setObjectName(QString::fromUtf8("mCbHpa_part5"));
+        mCbHpa_part5->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbHpa_part5, 25, 1, 1, 1);
+
+        detailHpa_part5 = new QPushButton(scrollAreaWidgetContents_3);
+        detailHpa_part5->setObjectName(QString::fromUtf8("detailHpa_part5"));
+        detailHpa_part5->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailHpa_part5->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailHpa_part5, 25, 2, 1, 1);
 
         importHpa_part5 = new QPushButton(scrollAreaWidgetContents_3);
         importHpa_part5->setObjectName(QString::fromUtf8("importHpa_part5"));
@@ -4715,34 +3607,942 @@ public:
 "}"));
         importHpa_part5->setIcon(icon2);
 
-        gridLayout_17->addWidget(importHpa_part5, 23, 3, 1, 1);
+        gridLayout_17->addWidget(importHpa_part5, 25, 3, 1, 1);
 
-        detailComparator_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        detailComparator_part1->setObjectName(QString::fromUtf8("detailComparator_part1"));
-        detailComparator_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        indicatorHpa_part5 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorHpa_part5->setObjectName(QString::fromUtf8("indicatorHpa_part5"));
+        indicatorHpa_part5->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorHpa_part5, 25, 4, 1, 1);
+
+        ledHpa_part5 = new QLabel(scrollAreaWidgetContents_3);
+        ledHpa_part5->setObjectName(QString::fromUtf8("ledHpa_part5"));
+        ledHpa_part5->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledHpa_part5->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledHpa_part5, 25, 5, 1, 1);
+
+        rltHpa_part5 = new QPushButton(scrollAreaWidgetContents_3);
+        rltHpa_part5->setObjectName(QString::fromUtf8("rltHpa_part5"));
+        rltHpa_part5->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        detailComparator_part1->setIcon(icon1);
+        rltHpa_part5->setIcon(icon3);
 
-        gridLayout_17->addWidget(detailComparator_part1, 5, 2, 1, 1);
+        gridLayout_17->addWidget(rltHpa_part5, 25, 6, 1, 1);
 
-        ledComparator_part2 = new QLabel(scrollAreaWidgetContents_3);
-        ledComparator_part2->setObjectName(QString::fromUtf8("ledComparator_part2"));
-        ledComparator_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledComparator_part2->setAlignment(Qt::AlignCenter);
+        label_100 = new QLabel(scrollAreaWidgetContents_3);
+        label_100->setObjectName(QString::fromUtf8("label_100"));
+        sizePolicy2.setHeightForWidth(label_100->sizePolicy().hasHeightForWidth());
+        label_100->setSizePolicy(sizePolicy2);
+        label_100->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(ledComparator_part2, 6, 5, 1, 1);
+        gridLayout_17->addWidget(label_100, 26, 0, 1, 1);
 
-        label_97 = new QLabel(scrollAreaWidgetContents_3);
-        label_97->setObjectName(QString::fromUtf8("label_97"));
-        sizePolicy2.setHeightForWidth(label_97->sizePolicy().hasHeightForWidth());
-        label_97->setSizePolicy(sizePolicy2);
-        label_97->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+        mCbHpa_part6 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbHpa_part6->setObjectName(QString::fromUtf8("mCbHpa_part6"));
+        mCbHpa_part6->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
 
-        gridLayout_17->addWidget(label_97, 19, 0, 1, 1);
+        gridLayout_17->addWidget(mCbHpa_part6, 26, 1, 1, 1);
+
+        detailHpa_part6 = new QPushButton(scrollAreaWidgetContents_3);
+        detailHpa_part6->setObjectName(QString::fromUtf8("detailHpa_part6"));
+        detailHpa_part6->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailHpa_part6->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailHpa_part6, 26, 2, 1, 1);
+
+        importHpa_part6 = new QPushButton(scrollAreaWidgetContents_3);
+        importHpa_part6->setObjectName(QString::fromUtf8("importHpa_part6"));
+        importHpa_part6->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importHpa_part6->setIcon(icon2);
+
+        gridLayout_17->addWidget(importHpa_part6, 26, 3, 1, 1);
+
+        indicatorHpa_part6 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorHpa_part6->setObjectName(QString::fromUtf8("indicatorHpa_part6"));
+        indicatorHpa_part6->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorHpa_part6, 26, 4, 1, 1);
+
+        ledHpa_part6 = new QLabel(scrollAreaWidgetContents_3);
+        ledHpa_part6->setObjectName(QString::fromUtf8("ledHpa_part6"));
+        ledHpa_part6->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledHpa_part6->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledHpa_part6, 26, 5, 1, 1);
+
+        rltHpa_part6 = new QPushButton(scrollAreaWidgetContents_3);
+        rltHpa_part6->setObjectName(QString::fromUtf8("rltHpa_part6"));
+        rltHpa_part6->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltHpa_part6->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltHpa_part6, 26, 6, 1, 1);
+
+        label_101 = new QLabel(scrollAreaWidgetContents_3);
+        label_101->setObjectName(QString::fromUtf8("label_101"));
+        sizePolicy2.setHeightForWidth(label_101->sizePolicy().hasHeightForWidth());
+        label_101->setSizePolicy(sizePolicy2);
+        label_101->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_101, 27, 0, 1, 1);
+
+        mCbHpa_part7 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbHpa_part7->setObjectName(QString::fromUtf8("mCbHpa_part7"));
+        mCbHpa_part7->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbHpa_part7, 27, 1, 1, 1);
+
+        detailHpa_part7 = new QPushButton(scrollAreaWidgetContents_3);
+        detailHpa_part7->setObjectName(QString::fromUtf8("detailHpa_part7"));
+        detailHpa_part7->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailHpa_part7->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailHpa_part7, 27, 2, 1, 1);
+
+        importHpa_part7 = new QPushButton(scrollAreaWidgetContents_3);
+        importHpa_part7->setObjectName(QString::fromUtf8("importHpa_part7"));
+        importHpa_part7->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importHpa_part7->setIcon(icon2);
+
+        gridLayout_17->addWidget(importHpa_part7, 27, 3, 1, 1);
+
+        indicatorHpa_part7 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorHpa_part7->setObjectName(QString::fromUtf8("indicatorHpa_part7"));
+        indicatorHpa_part7->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorHpa_part7, 27, 4, 1, 1);
+
+        ledHpa_part7 = new QLabel(scrollAreaWidgetContents_3);
+        ledHpa_part7->setObjectName(QString::fromUtf8("ledHpa_part7"));
+        ledHpa_part7->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledHpa_part7->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledHpa_part7, 27, 5, 1, 1);
+
+        rltHpa_part7 = new QPushButton(scrollAreaWidgetContents_3);
+        rltHpa_part7->setObjectName(QString::fromUtf8("rltHpa_part7"));
+        rltHpa_part7->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltHpa_part7->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltHpa_part7, 27, 6, 1, 1);
+
+        mCbSwAntena = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbSwAntena->setObjectName(QString::fromUtf8("mCbSwAntena"));
+        mCbSwAntena->setAutoFillBackground(false);
+        mCbSwAntena->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbSwAntena, 28, 0, 1, 2);
+
+        label_136 = new QLabel(scrollAreaWidgetContents_3);
+        label_136->setObjectName(QString::fromUtf8("label_136"));
+        sizePolicy2.setHeightForWidth(label_136->sizePolicy().hasHeightForWidth());
+        label_136->setSizePolicy(sizePolicy2);
+        label_136->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_136, 29, 0, 1, 1);
+
+        mCbSwAntena_part1 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbSwAntena_part1->setObjectName(QString::fromUtf8("mCbSwAntena_part1"));
+        mCbSwAntena_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbSwAntena_part1, 29, 1, 1, 1);
+
+        detailSwAntena_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        detailSwAntena_part1->setObjectName(QString::fromUtf8("detailSwAntena_part1"));
+        detailSwAntena_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailSwAntena_part1->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailSwAntena_part1, 29, 2, 1, 1);
+
+        importSwAntena_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        importSwAntena_part1->setObjectName(QString::fromUtf8("importSwAntena_part1"));
+        importSwAntena_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importSwAntena_part1->setIcon(icon2);
+
+        gridLayout_17->addWidget(importSwAntena_part1, 29, 3, 1, 1);
+
+        indicatorSwAntena_part1 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorSwAntena_part1->setObjectName(QString::fromUtf8("indicatorSwAntena_part1"));
+        indicatorSwAntena_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorSwAntena_part1, 29, 4, 1, 1);
+
+        ledSwAntena_part1 = new QLabel(scrollAreaWidgetContents_3);
+        ledSwAntena_part1->setObjectName(QString::fromUtf8("ledSwAntena_part1"));
+        ledSwAntena_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledSwAntena_part1->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledSwAntena_part1, 29, 5, 1, 1);
+
+        rltSwAntena_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        rltSwAntena_part1->setObjectName(QString::fromUtf8("rltSwAntena_part1"));
+        rltSwAntena_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltSwAntena_part1->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltSwAntena_part1, 29, 6, 1, 1);
+
+        label_137 = new QLabel(scrollAreaWidgetContents_3);
+        label_137->setObjectName(QString::fromUtf8("label_137"));
+        sizePolicy2.setHeightForWidth(label_137->sizePolicy().hasHeightForWidth());
+        label_137->setSizePolicy(sizePolicy2);
+        label_137->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_137, 30, 0, 1, 1);
+
+        mCbSwAntena_part2 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbSwAntena_part2->setObjectName(QString::fromUtf8("mCbSwAntena_part2"));
+        mCbSwAntena_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbSwAntena_part2, 30, 1, 1, 1);
+
+        detailSwAntena_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        detailSwAntena_part2->setObjectName(QString::fromUtf8("detailSwAntena_part2"));
+        detailSwAntena_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailSwAntena_part2->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailSwAntena_part2, 30, 2, 1, 1);
+
+        importSwAntena_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        importSwAntena_part2->setObjectName(QString::fromUtf8("importSwAntena_part2"));
+        importSwAntena_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importSwAntena_part2->setIcon(icon2);
+
+        gridLayout_17->addWidget(importSwAntena_part2, 30, 3, 1, 1);
+
+        indicatorSwAntena_part2 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorSwAntena_part2->setObjectName(QString::fromUtf8("indicatorSwAntena_part2"));
+        indicatorSwAntena_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorSwAntena_part2, 30, 4, 1, 1);
+
+        ledSwAntena_part2 = new QLabel(scrollAreaWidgetContents_3);
+        ledSwAntena_part2->setObjectName(QString::fromUtf8("ledSwAntena_part2"));
+        ledSwAntena_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledSwAntena_part2->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledSwAntena_part2, 30, 5, 1, 1);
+
+        rltSwAntena_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        rltSwAntena_part2->setObjectName(QString::fromUtf8("rltSwAntena_part2"));
+        rltSwAntena_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltSwAntena_part2->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltSwAntena_part2, 30, 6, 1, 1);
+
+        label_138 = new QLabel(scrollAreaWidgetContents_3);
+        label_138->setObjectName(QString::fromUtf8("label_138"));
+        sizePolicy2.setHeightForWidth(label_138->sizePolicy().hasHeightForWidth());
+        label_138->setSizePolicy(sizePolicy2);
+        label_138->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_138, 31, 0, 1, 1);
+
+        mCbSwAntena_part3 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbSwAntena_part3->setObjectName(QString::fromUtf8("mCbSwAntena_part3"));
+        mCbSwAntena_part3->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbSwAntena_part3, 31, 1, 1, 1);
+
+        detailSwAntena_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        detailSwAntena_part3->setObjectName(QString::fromUtf8("detailSwAntena_part3"));
+        detailSwAntena_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailSwAntena_part3->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailSwAntena_part3, 31, 2, 1, 1);
+
+        importSwAntena_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        importSwAntena_part3->setObjectName(QString::fromUtf8("importSwAntena_part3"));
+        importSwAntena_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importSwAntena_part3->setIcon(icon2);
+
+        gridLayout_17->addWidget(importSwAntena_part3, 31, 3, 1, 1);
+
+        indicatorSwAntena_part3 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorSwAntena_part3->setObjectName(QString::fromUtf8("indicatorSwAntena_part3"));
+        indicatorSwAntena_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorSwAntena_part3, 31, 4, 1, 1);
+
+        ledSwAntena_part3 = new QLabel(scrollAreaWidgetContents_3);
+        ledSwAntena_part3->setObjectName(QString::fromUtf8("ledSwAntena_part3"));
+        ledSwAntena_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledSwAntena_part3->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledSwAntena_part3, 31, 5, 1, 1);
+
+        rltSwAntena_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        rltSwAntena_part3->setObjectName(QString::fromUtf8("rltSwAntena_part3"));
+        rltSwAntena_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltSwAntena_part3->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltSwAntena_part3, 31, 6, 1, 1);
+
+        mCbLimiterSum = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbLimiterSum->setObjectName(QString::fromUtf8("mCbLimiterSum"));
+        mCbLimiterSum->setAutoFillBackground(false);
+        mCbLimiterSum->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbLimiterSum, 32, 0, 1, 2);
+
+        label_120 = new QLabel(scrollAreaWidgetContents_3);
+        label_120->setObjectName(QString::fromUtf8("label_120"));
+        sizePolicy2.setHeightForWidth(label_120->sizePolicy().hasHeightForWidth());
+        label_120->setSizePolicy(sizePolicy2);
+        label_120->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_120, 33, 0, 1, 1);
+
+        mCbLimiterSum_part1 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbLimiterSum_part1->setObjectName(QString::fromUtf8("mCbLimiterSum_part1"));
+        mCbLimiterSum_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbLimiterSum_part1, 33, 1, 1, 1);
+
+        detailLimiterSum_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        detailLimiterSum_part1->setObjectName(QString::fromUtf8("detailLimiterSum_part1"));
+        detailLimiterSum_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailLimiterSum_part1->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailLimiterSum_part1, 33, 2, 1, 1);
+
+        importLimiterSum_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        importLimiterSum_part1->setObjectName(QString::fromUtf8("importLimiterSum_part1"));
+        importLimiterSum_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importLimiterSum_part1->setIcon(icon2);
+
+        gridLayout_17->addWidget(importLimiterSum_part1, 33, 3, 1, 1);
+
+        indicatorLimiterSum_part1 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorLimiterSum_part1->setObjectName(QString::fromUtf8("indicatorLimiterSum_part1"));
+        indicatorLimiterSum_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorLimiterSum_part1, 33, 4, 1, 1);
+
+        ledLimiterSum_part1 = new QLabel(scrollAreaWidgetContents_3);
+        ledLimiterSum_part1->setObjectName(QString::fromUtf8("ledLimiterSum_part1"));
+        ledLimiterSum_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledLimiterSum_part1->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledLimiterSum_part1, 33, 5, 1, 1);
+
+        rltLimiterSum_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        rltLimiterSum_part1->setObjectName(QString::fromUtf8("rltLimiterSum_part1"));
+        rltLimiterSum_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltLimiterSum_part1->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltLimiterSum_part1, 33, 6, 1, 1);
+
+        label_118 = new QLabel(scrollAreaWidgetContents_3);
+        label_118->setObjectName(QString::fromUtf8("label_118"));
+        sizePolicy2.setHeightForWidth(label_118->sizePolicy().hasHeightForWidth());
+        label_118->setSizePolicy(sizePolicy2);
+        label_118->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_118, 34, 0, 1, 1);
+
+        mCbLimiterSum_part2 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbLimiterSum_part2->setObjectName(QString::fromUtf8("mCbLimiterSum_part2"));
+        mCbLimiterSum_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbLimiterSum_part2, 34, 1, 1, 1);
+
+        detailLimiterSum_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        detailLimiterSum_part2->setObjectName(QString::fromUtf8("detailLimiterSum_part2"));
+        detailLimiterSum_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailLimiterSum_part2->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailLimiterSum_part2, 34, 2, 1, 1);
+
+        importLimiterSum_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        importLimiterSum_part2->setObjectName(QString::fromUtf8("importLimiterSum_part2"));
+        importLimiterSum_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importLimiterSum_part2->setIcon(icon2);
+
+        gridLayout_17->addWidget(importLimiterSum_part2, 34, 3, 1, 1);
+
+        indicatorLimiterSum_part2 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorLimiterSum_part2->setObjectName(QString::fromUtf8("indicatorLimiterSum_part2"));
+        indicatorLimiterSum_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorLimiterSum_part2, 34, 4, 1, 1);
+
+        ledLimiterSum_part2 = new QLabel(scrollAreaWidgetContents_3);
+        ledLimiterSum_part2->setObjectName(QString::fromUtf8("ledLimiterSum_part2"));
+        ledLimiterSum_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledLimiterSum_part2->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledLimiterSum_part2, 34, 5, 1, 1);
+
+        rltLimiterSum_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        rltLimiterSum_part2->setObjectName(QString::fromUtf8("rltLimiterSum_part2"));
+        rltLimiterSum_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltLimiterSum_part2->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltLimiterSum_part2, 34, 6, 1, 1);
+
+        label_119 = new QLabel(scrollAreaWidgetContents_3);
+        label_119->setObjectName(QString::fromUtf8("label_119"));
+        sizePolicy2.setHeightForWidth(label_119->sizePolicy().hasHeightForWidth());
+        label_119->setSizePolicy(sizePolicy2);
+        label_119->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_119, 35, 0, 1, 1);
+
+        mCbLimiterSum_part3 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbLimiterSum_part3->setObjectName(QString::fromUtf8("mCbLimiterSum_part3"));
+        mCbLimiterSum_part3->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbLimiterSum_part3, 35, 1, 1, 1);
+
+        detailLimiterSum_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        detailLimiterSum_part3->setObjectName(QString::fromUtf8("detailLimiterSum_part3"));
+        detailLimiterSum_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailLimiterSum_part3->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailLimiterSum_part3, 35, 2, 1, 1);
+
+        importLimiterSum_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        importLimiterSum_part3->setObjectName(QString::fromUtf8("importLimiterSum_part3"));
+        importLimiterSum_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importLimiterSum_part3->setIcon(icon2);
+
+        gridLayout_17->addWidget(importLimiterSum_part3, 35, 3, 1, 1);
+
+        indicatorLimiterSum_part3 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorLimiterSum_part3->setObjectName(QString::fromUtf8("indicatorLimiterSum_part3"));
+        indicatorLimiterSum_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorLimiterSum_part3, 35, 4, 1, 1);
+
+        ledLimiterSum_part3 = new QLabel(scrollAreaWidgetContents_3);
+        ledLimiterSum_part3->setObjectName(QString::fromUtf8("ledLimiterSum_part3"));
+        ledLimiterSum_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledLimiterSum_part3->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledLimiterSum_part3, 35, 5, 1, 1);
+
+        rltLimiterSum_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        rltLimiterSum_part3->setObjectName(QString::fromUtf8("rltLimiterSum_part3"));
+        rltLimiterSum_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltLimiterSum_part3->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltLimiterSum_part3, 35, 6, 1, 1);
+
+        mCbLimiterDiff = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbLimiterDiff->setObjectName(QString::fromUtf8("mCbLimiterDiff"));
+        mCbLimiterDiff->setAutoFillBackground(false);
+        mCbLimiterDiff->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbLimiterDiff, 36, 0, 1, 2);
+
+        label_135 = new QLabel(scrollAreaWidgetContents_3);
+        label_135->setObjectName(QString::fromUtf8("label_135"));
+        sizePolicy2.setHeightForWidth(label_135->sizePolicy().hasHeightForWidth());
+        label_135->setSizePolicy(sizePolicy2);
+        label_135->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_135, 37, 0, 1, 1);
+
+        mCbLimiterDiff_part1 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbLimiterDiff_part1->setObjectName(QString::fromUtf8("mCbLimiterDiff_part1"));
+        mCbLimiterDiff_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbLimiterDiff_part1, 37, 1, 1, 1);
+
+        detailLimiterDiff_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        detailLimiterDiff_part1->setObjectName(QString::fromUtf8("detailLimiterDiff_part1"));
+        detailLimiterDiff_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailLimiterDiff_part1->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailLimiterDiff_part1, 37, 2, 1, 1);
+
+        importLimiterDiff_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        importLimiterDiff_part1->setObjectName(QString::fromUtf8("importLimiterDiff_part1"));
+        importLimiterDiff_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importLimiterDiff_part1->setIcon(icon2);
+
+        gridLayout_17->addWidget(importLimiterDiff_part1, 37, 3, 1, 1);
+
+        indicatorLimiterDiff_part1 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorLimiterDiff_part1->setObjectName(QString::fromUtf8("indicatorLimiterDiff_part1"));
+        indicatorLimiterDiff_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorLimiterDiff_part1, 37, 4, 1, 1);
+
+        ledLimiterDiff_part1 = new QLabel(scrollAreaWidgetContents_3);
+        ledLimiterDiff_part1->setObjectName(QString::fromUtf8("ledLimiterDiff_part1"));
+        ledLimiterDiff_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledLimiterDiff_part1->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledLimiterDiff_part1, 37, 5, 1, 1);
+
+        rltLimiterDiff_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        rltLimiterDiff_part1->setObjectName(QString::fromUtf8("rltLimiterDiff_part1"));
+        rltLimiterDiff_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltLimiterDiff_part1->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltLimiterDiff_part1, 37, 6, 1, 1);
+
+        label_134 = new QLabel(scrollAreaWidgetContents_3);
+        label_134->setObjectName(QString::fromUtf8("label_134"));
+        sizePolicy2.setHeightForWidth(label_134->sizePolicy().hasHeightForWidth());
+        label_134->setSizePolicy(sizePolicy2);
+        label_134->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_134, 38, 0, 1, 1);
+
+        mCbLimiterDiff_part2 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbLimiterDiff_part2->setObjectName(QString::fromUtf8("mCbLimiterDiff_part2"));
+        mCbLimiterDiff_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbLimiterDiff_part2, 38, 1, 1, 1);
+
+        detailLimiterDiff_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        detailLimiterDiff_part2->setObjectName(QString::fromUtf8("detailLimiterDiff_part2"));
+        detailLimiterDiff_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailLimiterDiff_part2->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailLimiterDiff_part2, 38, 2, 1, 1);
+
+        importLimiterDiff_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        importLimiterDiff_part2->setObjectName(QString::fromUtf8("importLimiterDiff_part2"));
+        importLimiterDiff_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importLimiterDiff_part2->setIcon(icon2);
+
+        gridLayout_17->addWidget(importLimiterDiff_part2, 38, 3, 1, 1);
+
+        indicatorLimiterDiff_part2 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorLimiterDiff_part2->setObjectName(QString::fromUtf8("indicatorLimiterDiff_part2"));
+        indicatorLimiterDiff_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorLimiterDiff_part2, 38, 4, 1, 1);
+
+        ledLimiterDiff_part2 = new QLabel(scrollAreaWidgetContents_3);
+        ledLimiterDiff_part2->setObjectName(QString::fromUtf8("ledLimiterDiff_part2"));
+        ledLimiterDiff_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledLimiterDiff_part2->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledLimiterDiff_part2, 38, 5, 1, 1);
+
+        rltLimiterDiff_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        rltLimiterDiff_part2->setObjectName(QString::fromUtf8("rltLimiterDiff_part2"));
+        rltLimiterDiff_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltLimiterDiff_part2->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltLimiterDiff_part2, 38, 6, 1, 1);
+
+        label_133 = new QLabel(scrollAreaWidgetContents_3);
+        label_133->setObjectName(QString::fromUtf8("label_133"));
+        sizePolicy2.setHeightForWidth(label_133->sizePolicy().hasHeightForWidth());
+        label_133->setSizePolicy(sizePolicy2);
+        label_133->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_133, 39, 0, 1, 1);
+
+        mCbLimiterDiff_part3 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbLimiterDiff_part3->setObjectName(QString::fromUtf8("mCbLimiterDiff_part3"));
+        mCbLimiterDiff_part3->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbLimiterDiff_part3, 39, 1, 1, 1);
+
+        detailLimiterDiff_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        detailLimiterDiff_part3->setObjectName(QString::fromUtf8("detailLimiterDiff_part3"));
+        detailLimiterDiff_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailLimiterDiff_part3->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailLimiterDiff_part3, 39, 2, 1, 1);
+
+        importLimiterDiff_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        importLimiterDiff_part3->setObjectName(QString::fromUtf8("importLimiterDiff_part3"));
+        importLimiterDiff_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importLimiterDiff_part3->setIcon(icon2);
+
+        gridLayout_17->addWidget(importLimiterDiff_part3, 39, 3, 1, 1);
+
+        indicatorLimiterDiff_part3 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorLimiterDiff_part3->setObjectName(QString::fromUtf8("indicatorLimiterDiff_part3"));
+        indicatorLimiterDiff_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorLimiterDiff_part3, 39, 4, 1, 1);
+
+        ledLimiterDiff_part3 = new QLabel(scrollAreaWidgetContents_3);
+        ledLimiterDiff_part3->setObjectName(QString::fromUtf8("ledLimiterDiff_part3"));
+        ledLimiterDiff_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledLimiterDiff_part3->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledLimiterDiff_part3, 39, 5, 1, 1);
+
+        rltLimiterDiff_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        rltLimiterDiff_part3->setObjectName(QString::fromUtf8("rltLimiterDiff_part3"));
+        rltLimiterDiff_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltLimiterDiff_part3->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltLimiterDiff_part3, 39, 6, 1, 1);
 
         mCbLna = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLna->setObjectName(QString::fromUtf8("mCbLna"));
@@ -4763,44 +4563,19 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLna, 30, 0, 1, 2);
+        gridLayout_17->addWidget(mCbLna, 40, 0, 1, 2);
 
-        importCirculator_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        importCirculator_part1->setObjectName(QString::fromUtf8("importCirculator_part1"));
-        importCirculator_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importCirculator_part1->setIcon(icon2);
+        label_126 = new QLabel(scrollAreaWidgetContents_3);
+        label_126->setObjectName(QString::fromUtf8("label_126"));
+        sizePolicy2.setHeightForWidth(label_126->sizePolicy().hasHeightForWidth());
+        label_126->setSizePolicy(sizePolicy2);
+        label_126->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(importCirculator_part1, 2, 3, 1, 1);
+        gridLayout_17->addWidget(label_126, 41, 0, 1, 1);
 
-        mCbLimiter = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbLimiter->setObjectName(QString::fromUtf8("mCbLimiter"));
-        mCbLimiter->setAutoFillBackground(false);
-        mCbLimiter->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbLimiter, 26, 0, 1, 2);
-
-        mCbSMA_part1 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbSMA_part1->setObjectName(QString::fromUtf8("mCbSMA_part1"));
-        mCbSMA_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbLna_part1 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbLna_part1->setObjectName(QString::fromUtf8("mCbLna_part1"));
+        mCbLna_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -4816,25 +4591,141 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbSMA_part1, 8, 1, 1, 1);
+        gridLayout_17->addWidget(mCbLna_part1, 41, 1, 1, 1);
 
-        indicatorTx_part2 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorTx_part2->setObjectName(QString::fromUtf8("indicatorTx_part2"));
-        indicatorTx_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorTx_part2, 44, 4, 1, 1);
-
-        detailRx_part1 = new QPushButton(scrollAreaWidgetContents_3);
-        detailRx_part1->setObjectName(QString::fromUtf8("detailRx_part1"));
-        detailRx_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+        detailLna_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        detailLna_part1->setObjectName(QString::fromUtf8("detailLna_part1"));
+        detailLna_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        detailRx_part1->setIcon(icon1);
+        detailLna_part1->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailRx_part1, 39, 2, 1, 1);
+        gridLayout_17->addWidget(detailLna_part1, 41, 2, 1, 1);
+
+        importLna_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        importLna_part1->setObjectName(QString::fromUtf8("importLna_part1"));
+        importLna_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importLna_part1->setIcon(icon2);
+
+        gridLayout_17->addWidget(importLna_part1, 41, 3, 1, 1);
+
+        indicatorLna_part1 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorLna_part1->setObjectName(QString::fromUtf8("indicatorLna_part1"));
+        indicatorLna_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorLna_part1, 41, 4, 1, 1);
+
+        ledLna_part1 = new QLabel(scrollAreaWidgetContents_3);
+        ledLna_part1->setObjectName(QString::fromUtf8("ledLna_part1"));
+        ledLna_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledLna_part1->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledLna_part1, 41, 5, 1, 1);
+
+        rltLna_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        rltLna_part1->setObjectName(QString::fromUtf8("rltLna_part1"));
+        rltLna_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltLna_part1->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltLna_part1, 41, 6, 1, 1);
+
+        label_125 = new QLabel(scrollAreaWidgetContents_3);
+        label_125->setObjectName(QString::fromUtf8("label_125"));
+        sizePolicy2.setHeightForWidth(label_125->sizePolicy().hasHeightForWidth());
+        label_125->setSizePolicy(sizePolicy2);
+        label_125->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_125, 42, 0, 1, 1);
+
+        mCbLna_part2 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbLna_part2->setObjectName(QString::fromUtf8("mCbLna_part2"));
+        mCbLna_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbLna_part2, 42, 1, 1, 1);
+
+        detailLna_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        detailLna_part2->setObjectName(QString::fromUtf8("detailLna_part2"));
+        detailLna_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailLna_part2->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailLna_part2, 42, 2, 1, 1);
+
+        importLna_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        importLna_part2->setObjectName(QString::fromUtf8("importLna_part2"));
+        importLna_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importLna_part2->setIcon(icon2);
+
+        gridLayout_17->addWidget(importLna_part2, 42, 3, 1, 1);
+
+        indicatorLna_part2 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorLna_part2->setObjectName(QString::fromUtf8("indicatorLna_part2"));
+        indicatorLna_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorLna_part2, 42, 4, 1, 1);
+
+        ledLna_part2 = new QLabel(scrollAreaWidgetContents_3);
+        ledLna_part2->setObjectName(QString::fromUtf8("ledLna_part2"));
+        ledLna_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledLna_part2->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledLna_part2, 42, 5, 1, 1);
+
+        rltLna_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        rltLna_part2->setObjectName(QString::fromUtf8("rltLna_part2"));
+        rltLna_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltLna_part2->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltLna_part2, 42, 6, 1, 1);
+
+        label_124 = new QLabel(scrollAreaWidgetContents_3);
+        label_124->setObjectName(QString::fromUtf8("label_124"));
+        sizePolicy2.setHeightForWidth(label_124->sizePolicy().hasHeightForWidth());
+        label_124->setSizePolicy(sizePolicy2);
+        label_124->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_124, 43, 0, 1, 1);
 
         mCbLna_part3 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLna_part3->setObjectName(QString::fromUtf8("mCbLna_part3"));
@@ -4854,18 +4745,68 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLna_part3, 33, 1, 1, 1);
+        gridLayout_17->addWidget(mCbLna_part3, 43, 1, 1, 1);
 
-        mCbTx_part3 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbTx_part3->setObjectName(QString::fromUtf8("mCbTx_part3"));
-        mCbTx_part3->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        detailLna_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        detailLna_part3->setObjectName(QString::fromUtf8("detailLna_part3"));
+        detailLna_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailLna_part3->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailLna_part3, 43, 2, 1, 1);
+
+        importLna_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        importLna_part3->setObjectName(QString::fromUtf8("importLna_part3"));
+        importLna_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importLna_part3->setIcon(icon2);
+
+        gridLayout_17->addWidget(importLna_part3, 43, 3, 1, 1);
+
+        indicatorLna_part3 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorLna_part3->setObjectName(QString::fromUtf8("indicatorLna_part3"));
+        indicatorLna_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorLna_part3, 43, 4, 1, 1);
+
+        ledLna_part3 = new QLabel(scrollAreaWidgetContents_3);
+        ledLna_part3->setObjectName(QString::fromUtf8("ledLna_part3"));
+        ledLna_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledLna_part3->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledLna_part3, 43, 5, 1, 1);
+
+        rltLna_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        rltLna_part3->setObjectName(QString::fromUtf8("rltLna_part3"));
+        rltLna_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltLna_part3->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltLna_part3, 43, 6, 1, 1);
+
+        mCbLo = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbLo->setObjectName(QString::fromUtf8("mCbLo"));
+        mCbLo->setAutoFillBackground(false);
+        mCbLo->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"	image: url(\":/Test/images/box/box_blank.png\");\n"
 "}\n"
 "QCheckBox::indicator::checked\n"
 "{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"	image: url(\":/Test/images/box/box_success.png\");\n"
 "}\n"
 "QCheckBox::hover\n"
 "{\n"
@@ -4874,98 +4815,15 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbTx_part3, 45, 1, 1, 1);
+        gridLayout_17->addWidget(mCbLo, 44, 0, 1, 2);
 
-        ledComparator_part1 = new QLabel(scrollAreaWidgetContents_3);
-        ledComparator_part1->setObjectName(QString::fromUtf8("ledComparator_part1"));
-        ledComparator_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledComparator_part1->setAlignment(Qt::AlignCenter);
+        label_123 = new QLabel(scrollAreaWidgetContents_3);
+        label_123->setObjectName(QString::fromUtf8("label_123"));
+        sizePolicy2.setHeightForWidth(label_123->sizePolicy().hasHeightForWidth());
+        label_123->setSizePolicy(sizePolicy2);
+        label_123->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(ledComparator_part1, 5, 5, 1, 1);
-
-        mCbHpa_part2 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbHpa_part2->setObjectName(QString::fromUtf8("mCbHpa_part2"));
-        mCbHpa_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
-"QCheckBox::indicator::unchecked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
-"}\n"
-"QCheckBox::indicator::checked\n"
-"{\n"
-"	image: url(\":/Test/images/box/box_success_small.png\");\n"
-"}\n"
-"QCheckBox::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-
-        gridLayout_17->addWidget(mCbHpa_part2, 20, 1, 1, 1);
-
-        label_125 = new QLabel(scrollAreaWidgetContents_3);
-        label_125->setObjectName(QString::fromUtf8("label_125"));
-        sizePolicy2.setHeightForWidth(label_125->sizePolicy().hasHeightForWidth());
-        label_125->setSizePolicy(sizePolicy2);
-        label_125->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_125, 32, 0, 1, 1);
-
-        label_91 = new QLabel(scrollAreaWidgetContents_3);
-        label_91->setObjectName(QString::fromUtf8("label_91"));
-        sizePolicy.setHeightForWidth(label_91->sizePolicy().hasHeightForWidth());
-        label_91->setSizePolicy(sizePolicy);
-        label_91->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
-
-        gridLayout_17->addWidget(label_91, 11, 0, 1, 1);
-
-        importRx_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        importRx_part2->setObjectName(QString::fromUtf8("importRx_part2"));
-        importRx_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importRx_part2->setIcon(icon2);
-
-        gridLayout_17->addWidget(importRx_part2, 40, 3, 1, 1);
-
-        importComparator_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        importComparator_part2->setObjectName(QString::fromUtf8("importComparator_part2"));
-        importComparator_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importComparator_part2->setIcon(icon2);
-
-        gridLayout_17->addWidget(importComparator_part2, 6, 3, 1, 1);
-
-        indicatorLimiter_part1 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorLimiter_part1->setObjectName(QString::fromUtf8("indicatorLimiter_part1"));
-        indicatorLimiter_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorLimiter_part1, 27, 4, 1, 1);
-
-        indicatorRx_part3 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorRx_part3->setObjectName(QString::fromUtf8("indicatorRx_part3"));
-        indicatorRx_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorRx_part3, 41, 4, 1, 1);
-
-        detailHpa_part3 = new QPushButton(scrollAreaWidgetContents_3);
-        detailHpa_part3->setObjectName(QString::fromUtf8("detailHpa_part3"));
-        detailHpa_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailHpa_part3->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailHpa_part3, 21, 2, 1, 1);
+        gridLayout_17->addWidget(label_123, 45, 0, 1, 1);
 
         mCbLo_part1 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLo_part1->setObjectName(QString::fromUtf8("mCbLo_part1"));
@@ -4985,11 +4843,68 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLo_part1, 35, 1, 1, 1);
+        gridLayout_17->addWidget(mCbLo_part1, 45, 1, 1, 1);
 
-        mCbHpa_part4 = new QCheckBox(scrollAreaWidgetContents_3);
-        mCbHpa_part4->setObjectName(QString::fromUtf8("mCbHpa_part4"));
-        mCbHpa_part4->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        detailLo_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        detailLo_part1->setObjectName(QString::fromUtf8("detailLo_part1"));
+        detailLo_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailLo_part1->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailLo_part1, 45, 2, 1, 1);
+
+        importLo_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        importLo_part1->setObjectName(QString::fromUtf8("importLo_part1"));
+        importLo_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importLo_part1->setIcon(icon2);
+
+        gridLayout_17->addWidget(importLo_part1, 45, 3, 1, 1);
+
+        indicatorLo_part1 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorLo_part1->setObjectName(QString::fromUtf8("indicatorLo_part1"));
+        indicatorLo_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorLo_part1, 45, 4, 1, 1);
+
+        ledLo_part1 = new QLabel(scrollAreaWidgetContents_3);
+        ledLo_part1->setObjectName(QString::fromUtf8("ledLo_part1"));
+        ledLo_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledLo_part1->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledLo_part1, 45, 5, 1, 1);
+
+        rltLo_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        rltLo_part1->setObjectName(QString::fromUtf8("rltLo_part1"));
+        rltLo_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltLo_part1->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltLo_part1, 45, 6, 1, 1);
+
+        label_121 = new QLabel(scrollAreaWidgetContents_3);
+        label_121->setObjectName(QString::fromUtf8("label_121"));
+        sizePolicy2.setHeightForWidth(label_121->sizePolicy().hasHeightForWidth());
+        label_121->setSizePolicy(sizePolicy2);
+        label_121->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_121, 46, 0, 1, 1);
+
+        mCbLo_part2 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbLo_part2->setObjectName(QString::fromUtf8("mCbLo_part2"));
+        mCbLo_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -5005,27 +4920,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbHpa_part4, 22, 1, 1, 1);
-
-        ledLimiter_part2 = new QLabel(scrollAreaWidgetContents_3);
-        ledLimiter_part2->setObjectName(QString::fromUtf8("ledLimiter_part2"));
-        ledLimiter_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledLimiter_part2->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledLimiter_part2, 28, 5, 1, 1);
-
-        indicatorTx_part1 = new QLabel(scrollAreaWidgetContents_3);
-        indicatorTx_part1->setObjectName(QString::fromUtf8("indicatorTx_part1"));
-        indicatorTx_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-
-        gridLayout_17->addWidget(indicatorTx_part1, 43, 4, 1, 1);
-
-        ledHpa_part6 = new QLabel(scrollAreaWidgetContents_3);
-        ledHpa_part6->setObjectName(QString::fromUtf8("ledHpa_part6"));
-        ledHpa_part6->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        ledHpa_part6->setAlignment(Qt::AlignCenter);
-
-        gridLayout_17->addWidget(ledHpa_part6, 24, 5, 1, 1);
+        gridLayout_17->addWidget(mCbLo_part2, 46, 1, 1, 1);
 
         detailLo_part2 = new QPushButton(scrollAreaWidgetContents_3);
         detailLo_part2->setObjectName(QString::fromUtf8("detailLo_part2"));
@@ -5037,7 +4932,659 @@ public:
 "}"));
         detailLo_part2->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailLo_part2, 36, 2, 1, 1);
+        gridLayout_17->addWidget(detailLo_part2, 46, 2, 1, 1);
+
+        importLo_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        importLo_part2->setObjectName(QString::fromUtf8("importLo_part2"));
+        importLo_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importLo_part2->setIcon(icon2);
+
+        gridLayout_17->addWidget(importLo_part2, 46, 3, 1, 1);
+
+        indicatorLo_part2 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorLo_part2->setObjectName(QString::fromUtf8("indicatorLo_part2"));
+        indicatorLo_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorLo_part2, 46, 4, 1, 1);
+
+        ledLo_part2 = new QLabel(scrollAreaWidgetContents_3);
+        ledLo_part2->setObjectName(QString::fromUtf8("ledLo_part2"));
+        ledLo_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledLo_part2->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledLo_part2, 46, 5, 1, 1);
+
+        rltLo_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        rltLo_part2->setObjectName(QString::fromUtf8("rltLo_part2"));
+        rltLo_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltLo_part2->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltLo_part2, 46, 6, 1, 1);
+
+        label_122 = new QLabel(scrollAreaWidgetContents_3);
+        label_122->setObjectName(QString::fromUtf8("label_122"));
+        sizePolicy2.setHeightForWidth(label_122->sizePolicy().hasHeightForWidth());
+        label_122->setSizePolicy(sizePolicy2);
+        label_122->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_122, 47, 0, 1, 1);
+
+        mCbLo_part3 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbLo_part3->setObjectName(QString::fromUtf8("mCbLo_part3"));
+        mCbLo_part3->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbLo_part3, 47, 1, 1, 1);
+
+        detailLo_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        detailLo_part3->setObjectName(QString::fromUtf8("detailLo_part3"));
+        detailLo_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailLo_part3->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailLo_part3, 47, 2, 1, 1);
+
+        importLo_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        importLo_part3->setObjectName(QString::fromUtf8("importLo_part3"));
+        importLo_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importLo_part3->setIcon(icon2);
+
+        gridLayout_17->addWidget(importLo_part3, 47, 3, 1, 1);
+
+        indicatorLo_part3 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorLo_part3->setObjectName(QString::fromUtf8("indicatorLo_part3"));
+        indicatorLo_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorLo_part3, 47, 4, 1, 1);
+
+        ledLo_part3 = new QLabel(scrollAreaWidgetContents_3);
+        ledLo_part3->setObjectName(QString::fromUtf8("ledLo_part3"));
+        ledLo_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledLo_part3->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledLo_part3, 47, 5, 1, 1);
+
+        rltLo_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        rltLo_part3->setObjectName(QString::fromUtf8("rltLo_part3"));
+        rltLo_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltLo_part3->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltLo_part3, 47, 6, 1, 1);
+
+        mCbRx = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbRx->setObjectName(QString::fromUtf8("mCbRx"));
+        mCbRx->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbRx, 48, 0, 1, 2);
+
+        label_132 = new QLabel(scrollAreaWidgetContents_3);
+        label_132->setObjectName(QString::fromUtf8("label_132"));
+        sizePolicy2.setHeightForWidth(label_132->sizePolicy().hasHeightForWidth());
+        label_132->setSizePolicy(sizePolicy2);
+        label_132->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_132, 49, 0, 1, 1);
+
+        mCbRx_part1 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbRx_part1->setObjectName(QString::fromUtf8("mCbRx_part1"));
+        mCbRx_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbRx_part1, 49, 1, 1, 1);
+
+        detailRx_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        detailRx_part1->setObjectName(QString::fromUtf8("detailRx_part1"));
+        detailRx_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailRx_part1->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailRx_part1, 49, 2, 1, 1);
+
+        importRx_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        importRx_part1->setObjectName(QString::fromUtf8("importRx_part1"));
+        importRx_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importRx_part1->setIcon(icon2);
+
+        gridLayout_17->addWidget(importRx_part1, 49, 3, 1, 1);
+
+        indicatorRx_part1 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorRx_part1->setObjectName(QString::fromUtf8("indicatorRx_part1"));
+        indicatorRx_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorRx_part1, 49, 4, 1, 1);
+
+        ledRx_part1 = new QLabel(scrollAreaWidgetContents_3);
+        ledRx_part1->setObjectName(QString::fromUtf8("ledRx_part1"));
+        ledRx_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledRx_part1->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledRx_part1, 49, 5, 1, 1);
+
+        rltRx_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        rltRx_part1->setObjectName(QString::fromUtf8("rltRx_part1"));
+        rltRx_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltRx_part1->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltRx_part1, 49, 6, 1, 1);
+
+        label_130 = new QLabel(scrollAreaWidgetContents_3);
+        label_130->setObjectName(QString::fromUtf8("label_130"));
+        sizePolicy2.setHeightForWidth(label_130->sizePolicy().hasHeightForWidth());
+        label_130->setSizePolicy(sizePolicy2);
+        label_130->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_130, 50, 0, 1, 1);
+
+        mCbRx_part2 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbRx_part2->setObjectName(QString::fromUtf8("mCbRx_part2"));
+        mCbRx_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbRx_part2, 50, 1, 1, 1);
+
+        detailRx_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        detailRx_part2->setObjectName(QString::fromUtf8("detailRx_part2"));
+        detailRx_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailRx_part2->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailRx_part2, 50, 2, 1, 1);
+
+        importRx_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        importRx_part2->setObjectName(QString::fromUtf8("importRx_part2"));
+        importRx_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importRx_part2->setIcon(icon2);
+
+        gridLayout_17->addWidget(importRx_part2, 50, 3, 1, 1);
+
+        indicatorRx_part2 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorRx_part2->setObjectName(QString::fromUtf8("indicatorRx_part2"));
+        indicatorRx_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorRx_part2, 50, 4, 1, 1);
+
+        ledRx_part2 = new QLabel(scrollAreaWidgetContents_3);
+        ledRx_part2->setObjectName(QString::fromUtf8("ledRx_part2"));
+        ledRx_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledRx_part2->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledRx_part2, 50, 5, 1, 1);
+
+        rltRx_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        rltRx_part2->setObjectName(QString::fromUtf8("rltRx_part2"));
+        rltRx_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltRx_part2->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltRx_part2, 50, 6, 1, 1);
+
+        label_131 = new QLabel(scrollAreaWidgetContents_3);
+        label_131->setObjectName(QString::fromUtf8("label_131"));
+        sizePolicy2.setHeightForWidth(label_131->sizePolicy().hasHeightForWidth());
+        label_131->setSizePolicy(sizePolicy2);
+        label_131->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_131, 51, 0, 1, 1);
+
+        mCbRx_part3 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbRx_part3->setObjectName(QString::fromUtf8("mCbRx_part3"));
+        mCbRx_part3->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbRx_part3, 51, 1, 1, 1);
+
+        detailRx_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        detailRx_part3->setObjectName(QString::fromUtf8("detailRx_part3"));
+        detailRx_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailRx_part3->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailRx_part3, 51, 2, 1, 1);
+
+        importRx_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        importRx_part3->setObjectName(QString::fromUtf8("importRx_part3"));
+        importRx_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importRx_part3->setIcon(icon2);
+
+        gridLayout_17->addWidget(importRx_part3, 51, 3, 1, 1);
+
+        indicatorRx_part3 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorRx_part3->setObjectName(QString::fromUtf8("indicatorRx_part3"));
+        indicatorRx_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorRx_part3, 51, 4, 1, 1);
+
+        ledRx_part3 = new QLabel(scrollAreaWidgetContents_3);
+        ledRx_part3->setObjectName(QString::fromUtf8("ledRx_part3"));
+        ledRx_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledRx_part3->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledRx_part3, 51, 5, 1, 1);
+
+        rltRx_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        rltRx_part3->setObjectName(QString::fromUtf8("rltRx_part3"));
+        rltRx_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltRx_part3->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltRx_part3, 51, 6, 1, 1);
+
+        mCbTx = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbTx->setObjectName(QString::fromUtf8("mCbTx"));
+        mCbTx->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbTx, 52, 0, 1, 2);
+
+        label_127 = new QLabel(scrollAreaWidgetContents_3);
+        label_127->setObjectName(QString::fromUtf8("label_127"));
+        sizePolicy2.setHeightForWidth(label_127->sizePolicy().hasHeightForWidth());
+        label_127->setSizePolicy(sizePolicy2);
+        label_127->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_127, 53, 0, 1, 1);
+
+        mCbTx_part1 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbTx_part1->setObjectName(QString::fromUtf8("mCbTx_part1"));
+        mCbTx_part1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbTx_part1, 53, 1, 1, 1);
+
+        detailTx_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        detailTx_part1->setObjectName(QString::fromUtf8("detailTx_part1"));
+        detailTx_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailTx_part1->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailTx_part1, 53, 2, 1, 1);
+
+        importTx_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        importTx_part1->setObjectName(QString::fromUtf8("importTx_part1"));
+        importTx_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importTx_part1->setIcon(icon2);
+
+        gridLayout_17->addWidget(importTx_part1, 53, 3, 1, 1);
+
+        indicatorTx_part1 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorTx_part1->setObjectName(QString::fromUtf8("indicatorTx_part1"));
+        indicatorTx_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorTx_part1, 53, 4, 1, 1);
+
+        ledTx_part1 = new QLabel(scrollAreaWidgetContents_3);
+        ledTx_part1->setObjectName(QString::fromUtf8("ledTx_part1"));
+        ledTx_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledTx_part1->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledTx_part1, 53, 5, 1, 1);
+
+        rltTx_part1 = new QPushButton(scrollAreaWidgetContents_3);
+        rltTx_part1->setObjectName(QString::fromUtf8("rltTx_part1"));
+        rltTx_part1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltTx_part1->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltTx_part1, 53, 6, 1, 1);
+
+        label_128 = new QLabel(scrollAreaWidgetContents_3);
+        label_128->setObjectName(QString::fromUtf8("label_128"));
+        sizePolicy2.setHeightForWidth(label_128->sizePolicy().hasHeightForWidth());
+        label_128->setSizePolicy(sizePolicy2);
+        label_128->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_128, 54, 0, 1, 1);
+
+        mCbTx_part2 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbTx_part2->setObjectName(QString::fromUtf8("mCbTx_part2"));
+        mCbTx_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbTx_part2, 54, 1, 1, 1);
+
+        detailTx_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        detailTx_part2->setObjectName(QString::fromUtf8("detailTx_part2"));
+        detailTx_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailTx_part2->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailTx_part2, 54, 2, 1, 1);
+
+        importTx_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        importTx_part2->setObjectName(QString::fromUtf8("importTx_part2"));
+        importTx_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importTx_part2->setIcon(icon2);
+
+        gridLayout_17->addWidget(importTx_part2, 54, 3, 1, 1);
+
+        indicatorTx_part2 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorTx_part2->setObjectName(QString::fromUtf8("indicatorTx_part2"));
+        indicatorTx_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorTx_part2, 54, 4, 1, 1);
+
+        ledTx_part2 = new QLabel(scrollAreaWidgetContents_3);
+        ledTx_part2->setObjectName(QString::fromUtf8("ledTx_part2"));
+        ledTx_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledTx_part2->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledTx_part2, 54, 5, 1, 1);
+
+        rltTx_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        rltTx_part2->setObjectName(QString::fromUtf8("rltTx_part2"));
+        rltTx_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltTx_part2->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltTx_part2, 54, 6, 1, 1);
+
+        label_129 = new QLabel(scrollAreaWidgetContents_3);
+        label_129->setObjectName(QString::fromUtf8("label_129"));
+        sizePolicy2.setHeightForWidth(label_129->sizePolicy().hasHeightForWidth());
+        label_129->setSizePolicy(sizePolicy2);
+        label_129->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
+
+        gridLayout_17->addWidget(label_129, 55, 0, 1, 1);
+
+        mCbTx_part3 = new QCheckBox(scrollAreaWidgetContents_3);
+        mCbTx_part3->setObjectName(QString::fromUtf8("mCbTx_part3"));
+        mCbTx_part3->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+"QCheckBox::indicator::unchecked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_blank_small.png\");\n"
+"}\n"
+"QCheckBox::indicator::checked\n"
+"{\n"
+"	image: url(\":/Test/images/box/box_success_small.png\");\n"
+"}\n"
+"QCheckBox::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_17->addWidget(mCbTx_part3, 55, 1, 1, 1);
+
+        detailTx_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        detailTx_part3->setObjectName(QString::fromUtf8("detailTx_part3"));
+        detailTx_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailTx_part3->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailTx_part3, 55, 2, 1, 1);
+
+        importTx_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        importTx_part3->setObjectName(QString::fromUtf8("importTx_part3"));
+        importTx_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importTx_part3->setIcon(icon2);
+
+        gridLayout_17->addWidget(importTx_part3, 55, 3, 1, 1);
+
+        indicatorTx_part3 = new QLabel(scrollAreaWidgetContents_3);
+        indicatorTx_part3->setObjectName(QString::fromUtf8("indicatorTx_part3"));
+        indicatorTx_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
+
+        gridLayout_17->addWidget(indicatorTx_part3, 55, 4, 1, 1);
+
+        ledTx_part3 = new QLabel(scrollAreaWidgetContents_3);
+        ledTx_part3->setObjectName(QString::fromUtf8("ledTx_part3"));
+        ledTx_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
+        ledTx_part3->setAlignment(Qt::AlignCenter);
+
+        gridLayout_17->addWidget(ledTx_part3, 55, 5, 1, 1);
+
+        rltTx_part3 = new QPushButton(scrollAreaWidgetContents_3);
+        rltTx_part3->setObjectName(QString::fromUtf8("rltTx_part3"));
+        rltTx_part3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltTx_part3->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltTx_part3, 55, 6, 1, 1);
+
+        detailComparator_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        detailComparator_part2->setObjectName(QString::fromUtf8("detailComparator_part2"));
+        detailComparator_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailComparator_part2->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailComparator_part2, 6, 2, 1, 1);
+
+        rltComparator_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        rltComparator_part2->setObjectName(QString::fromUtf8("rltComparator_part2"));
+        rltComparator_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltComparator_part2->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltComparator_part2, 6, 6, 1, 1);
+
+        importComparator_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        importComparator_part2->setObjectName(QString::fromUtf8("importComparator_part2"));
+        importComparator_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importComparator_part2->setIcon(icon2);
+
+        gridLayout_17->addWidget(importComparator_part2, 6, 3, 1, 1);
 
         scrollArea_2->setWidget(scrollAreaWidgetContents_3);
 
@@ -5716,6 +6263,33 @@ public:
 
         gridLayout_9->addWidget(btnLogMte, 1, 0, 1, 1);
 
+        btnPreviewMte = new QPushButton(frame_6);
+        btnPreviewMte->setObjectName(QString::fromUtf8("btnPreviewMte"));
+        sizePolicy5.setHeightForWidth(btnPreviewMte->sizePolicy().hasHeightForWidth());
+        btnPreviewMte->setSizePolicy(sizePolicy5);
+        btnPreviewMte->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{\n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(177,188,190); \n"
+"font: 87 10pt \"Myriad Pro\";\n"
+"font:bold;\n"
+"outline:none;\n"
+"border:none;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        QIcon icon7;
+        icon7.addFile(QString::fromUtf8(":/Test/images/button/preview.png"), QSize(), QIcon::Normal, QIcon::Off);
+        btnPreviewMte->setIcon(icon7);
+        btnPreviewMte->setIconSize(QSize(20, 20));
+
+        gridLayout_9->addWidget(btnPreviewMte, 2, 0, 1, 1);
+
         btnExportMte = new QPushButton(frame_6);
         btnExportMte->setObjectName(QString::fromUtf8("btnExportMte"));
         sizePolicy5.setHeightForWidth(btnExportMte->sizePolicy().hasHeightForWidth());
@@ -5736,39 +6310,12 @@ public:
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        QIcon icon7;
-        icon7.addFile(QString::fromUtf8(":/Test/images/button/export_icon2.png"), QSize(), QIcon::Normal, QIcon::Off);
-        btnExportMte->setIcon(icon7);
+        QIcon icon8;
+        icon8.addFile(QString::fromUtf8(":/Test/images/button/export_icon2.png"), QSize(), QIcon::Normal, QIcon::Off);
+        btnExportMte->setIcon(icon8);
         btnExportMte->setIconSize(QSize(20, 20));
 
-        gridLayout_9->addWidget(btnExportMte, 2, 0, 1, 1);
-
-        btnPrintMte = new QPushButton(frame_6);
-        btnPrintMte->setObjectName(QString::fromUtf8("btnPrintMte"));
-        sizePolicy5.setHeightForWidth(btnPrintMte->sizePolicy().hasHeightForWidth());
-        btnPrintMte->setSizePolicy(sizePolicy5);
-        btnPrintMte->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"border-color: rgb(49, 67, 100);\n"
-"color: rgb(49,67,100);\n"
-"background-color: rgb(177,188,190); \n"
-"font: 87 10pt \"Myriad Pro\";\n"
-"font:bold;\n"
-"outline:none;\n"
-"border:none;\n"
-"}\n"
-"QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(146,165,201);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        QIcon icon8;
-        icon8.addFile(QString::fromUtf8(":/Test/images/button/print-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        btnPrintMte->setIcon(icon8);
-        btnPrintMte->setIconSize(QSize(20, 20));
-
-        gridLayout_9->addWidget(btnPrintMte, 3, 0, 1, 1);
+        gridLayout_9->addWidget(btnExportMte, 3, 0, 1, 1);
 
         gridLayout_4 = new QGridLayout();
         gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
@@ -6047,257 +6594,301 @@ public:
         pushButton_64->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(DigitalModule), QCoreApplication::translate("testModule", " Digital Module ", nullptr));
         label_20->setText(QCoreApplication::translate("testModule", "Import", nullptr));
-        detailHpa_part5->setText(QString());
-        importLo_part3->setText(QString());
-        mCbXband_part1->setText(QCoreApplication::translate("testModule", "\304\220o h/s\341\273\221 suy hao khi \304\221k", nullptr));
-        indicatorFilterLORF->setText(QString());
-        mCbCirculator_part2->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 suy hao, c\303\241ch ly", nullptr));
-        rltHpa_part7->setText(QString());
+        All->setText(QCoreApplication::translate("testModule", "All", nullptr));
         mCbAapderCirculator->setText(QCoreApplication::translate("testModule", "Module_Adapter_Circulator", nullptr));
-        indicatorFilterIF->setText(QString());
-        mCbHpa->setText(QCoreApplication::translate("testModule", "Module HPA", nullptr));
-        label_129->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        mCbSMA_part2->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 suy hao", nullptr));
-        rltLimiter_part3->setText(QString());
-        importTx_part2->setText(QString());
-        mCbRx_part1->setText(QCoreApplication::translate("testModule", "\304\220o suy hao c\303\241p", nullptr));
-        ledAttXband_part1->setText(QString());
-        label_98->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        rltLna_part1->setText(QString());
-        label_124->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        mCbHpa_part3->setText(QCoreApplication::translate("testModule", "M\341\273\251c h\303\240i", nullptr));
-        ledSMA_part2->setText(QString());
-        rltFilterIF->setText(QString());
-        indicatorSma_part2->setText(QString());
-        detailRx_part2->setText(QString());
-        importLimiter_part1->setText(QString());
-        label_123->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        importRx_part3->setText(QString());
-        indicatorXband_part1->setText(QString());
-        label_99->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        mCbLo_part2->setText(QCoreApplication::translate("testModule", "\304\220o t\341\272\247n s\341\273\221 v\303\240 c/su\341\272\245t \304\221\341\272\247u ra, m\341\273\251c h\303\240i", nullptr));
-        mCbHpa_part5->setText(QCoreApplication::translate("testModule", "CH\341\273\251c n\304\203ng gi\303\241m s\303\241t", nullptr));
-        importTx_part1->setText(QString());
-        indicatorHpa_part6->setText(QString());
-        mCbAdapterSMA->setText(QCoreApplication::translate("testModule", "Module_Adapter_SMA", nullptr));
-        indicatorLimiter_part2->setText(QString());
-        indicatorCirculator_part2->setText(QString());
-        indicatorComparator_part2->setText(QString());
-        ledHpa_part7->setText(QString());
-        detailLo_part3->setText(QString());
-        importCirculator_part2->setText(QString());
+        label_85->setText(QCoreApplication::translate("testModule", ".....", nullptr));
+        mCbCirculator_part1->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 s\303\263ng \304\221\341\273\251ng", nullptr));
+        detailCirculator_part1->setText(QString());
+        importCirculator_part1->setText(QString());
+        indicatorCirculator_part1->setText(QString());
+        ledCirculator_part1->setText(QString());
+        rltCirculator_part1->setText(QString());
+        label_86->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbCirculator_part2->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 suy hao, c\303\241ch ly", nullptr));
         detailCirculator_part2->setText(QString());
-        rltFilterXband->setText(QString());
-        rltTx_part2->setText(QString());
-        ledLimiter_part3->setText(QString());
-        rltHpa_part1->setText(QString());
-        ledLna_part1->setText(QString());
+        importCirculator_part2->setText(QString());
+        indicatorCirculator_part2->setText(QString());
+        ledCirculator_part2->setText(QString());
+        rltCirculator_part2->setText(QString());
+        mCbAdapterComparator->setText(QCoreApplication::translate("testModule", "Module_Adapter_Comparator", nullptr));
         label_87->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        label_132->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        importSMA_part2->setText(QString());
         mCbComparator_part1->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 s\303\263ng \304\221\341\273\251ng", nullptr));
-        mCbRx_part2->setText(QCoreApplication::translate("testModule", "\304\220o HSKD, Noise, Power max", nullptr));
-        rltLna_part2->setText(QString());
-        label_103->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        rltFilterLOIF->setText(QString());
-        detailRx_part3->setText(QString());
-        importFilterLORF->setText(QString());
-        mCbLo->setText(QCoreApplication::translate("testModule", "Module LO", nullptr));
-        detailLimiter_part1->setText(QString());
-        label_121->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        label_102->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        indicatorFilterLOIF->setText(QString());
-        importLimiter_part2->setText(QString());
-        indicatorHpa_part7->setText(QString());
-        detailTx_part1->setText(QString());
-        ledFilterXband->setText(QString());
-        indicatorLimiter_part3->setText(QString());
-        mCbLo_part3->setText(QCoreApplication::translate("testModule", "\304\220o phase noise", nullptr));
+        detailComparator_part1->setText(QString());
+        importComparator_part1->setText(QString());
+        indicatorComparator_part1->setText(QString());
+        ledComparator_part1->setText(QString());
+        rltComparator_part1->setText(QString());
+        label_88->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbComparator_part2->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 suy hao, c\303\241ch ly", nullptr));
+        indicatorComparator_part2->setText(QString());
+        ledComparator_part2->setText(QString());
+        mCbAdapterSMA->setText(QCoreApplication::translate("testModule", "Module_Adapter_SMA", nullptr));
+        label_89->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbSMA_part1->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 s\303\263ng \304\221\341\273\251ng", nullptr));
+        detailSMA_part1->setText(QString());
+        importSMA_part1->setText(QString());
+        indicatorSma_part1->setText(QString());
+        ledSMA_part1->setText(QString());
+        rltSMA_part1->setText(QString());
+        label_90->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbSMA_part2->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 suy hao", nullptr));
+        detailSMA_part2->setText(QString());
+        importSMA_part2->setText(QString());
+        indicatorSma_part2->setText(QString());
+        ledSMA_part2->setText(QString());
+        rltSMA_part2->setText(QString());
+        mCbAttXband->setText(QCoreApplication::translate("testModule", "Module_ATT_XBAND", nullptr));
+        label_91->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbXband_part1->setText(QCoreApplication::translate("testModule", "\304\220o h/s\341\273\221 suy hao khi \304\221k", nullptr));
+        detailAttXband_part1->setText(QString());
+        importAttXband_part1->setText(QString());
+        indicatorXband_part1->setText(QString());
+        ledAttXband_part1->setText(QString());
+        rltAttXband_part1->setText(QString());
         label_92->setText(QCoreApplication::translate("testModule", "...", nullptr));
         mCbXband_part2->setText(QCoreApplication::translate("testModule", "\304\220o h/s\341\273\221 suy khao khi kh\303\264ng \304\221k", nullptr));
-        rltComparator_part1->setText(QString());
-        mCbRx->setText(QCoreApplication::translate("testModule", "Module RX", nullptr));
-        ledHpa_part1->setText(QString());
-        indicatorLna_part1->setText(QString());
-        ledTx_part2->setText(QString());
-        label_88->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        label_130->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        rltCirculator_part2->setText(QString());
-        ledLna_part2->setText(QString());
-        indicatorXband_part2->setText(QString());
-        rltTx_part3->setText(QString());
-        rltLna_part3->setText(QString());
-        ledCirculator_part1->setText(QString());
-        rltHpa_part2->setText(QString());
-        mCbLna_part2->setText(QCoreApplication::translate("testModule", "\304\220o h/s\341\273\221 k/\304\221\341\272\241i, power max in/output", nullptr));
-        ledFilterLOIF->setText(QString());
-        ledAntena->setText(QString());
-        mCbRx_part3->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 t\341\272\241p", nullptr));
-        rltLo_part1->setText(QString());
-        mCbFilterLOIF->setText(QCoreApplication::translate("testModule", "Module_Filter_LOIF", nullptr));
-        label_89->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        mCbAntena->setText(QCoreApplication::translate("testModule", "Module_Antena", nullptr));
-        rltHpa_part4->setText(QString());
-        detailLimiter_part2->setText(QString());
-        mCbTx_part1->setText(QCoreApplication::translate("testModule", "\304\220o suy hao c\303\241p", nullptr));
-        indicatorFilterXband->setText(QString());
-        importHpa_part7->setText(QString());
-        importLimiter_part3->setText(QString());
-        detailTx_part2->setText(QString());
-        label_122->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        rltLo_part3->setText(QString());
-        mCbFilterXband->setText(QCoreApplication::translate("testModule", "Module_Filter_XBAND", nullptr));
         detailAttXband_part2->setText(QString());
-        importLna_part1->setText(QString());
-        importComparator_part1->setText(QString());
-        indicatorHpa_part1->setText(QString());
-        ledTx_part3->setText(QString());
-        rltRx_part1->setText(QString());
-        ledLna_part3->setText(QString());
-        ledHpa_part2->setText(QString());
-        indicatorLna_part2->setText(QString());
-        ledCirculator_part2->setText(QString());
-        rltHpa_part3->setText(QString());
-        label_131->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        mCbCirculator_part1->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 s\303\263ng \304\221\341\273\251ng", nullptr));
-        mCbLimiter_part2->setText(QCoreApplication::translate("testModule", "\304\220o suy hao limiter", nullptr));
-        label_127->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        importHpa_part6->setText(QString());
-        ledLo_part1->setText(QString());
-        rltSMA_part1->setText(QString());
-        ledHpa_part4->setText(QString());
-        rltHpa_part5->setText(QString());
-        indicatorCirculator_part1->setText(QString());
-        detailFilterLOIF->setText(QString());
-        mCbTx_part2->setText(QCoreApplication::translate("testModule", "\304\220o HSKD, Power max", nullptr));
-        detailFilterIF->setText(QString());
-        detailHpa_part7->setText(QString());
-        detailLimiter_part3->setText(QString());
-        mCbAdapterComparator->setText(QCoreApplication::translate("testModule", "Module_Adapter_Comparator", nullptr));
-        rltLo_part2->setText(QString());
-        importFilterXband->setText(QString());
-        importAntena->setText(QString());
-        importSMA_part1->setText(QString());
-        ledLo_part3->setText(QString());
-        detailAttXband_part1->setText(QString());
-        rltFilterLORF->setText(QString());
-        importHpa_part1->setText(QString());
-        indicatorTx_part3->setText(QString());
-        detailLna_part1->setText(QString());
-        indicatorHpa_part2->setText(QString());
-        detailCirculator_part1->setText(QString());
-        ledRx_part1->setText(QString());
-        importLna_part2->setText(QString());
-        detailFilterLORF->setText(QString());
-        rltRx_part2->setText(QString());
-        ledFilterIF->setText(QString());
-        ledHpa_part3->setText(QString());
-        indicatorLna_part3->setText(QString());
-        importFilterLOIF->setText(QString());
-        detailHpa_part6->setText(QString());
-        label_118->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        mCbTx->setText(QCoreApplication::translate("testModule", "Module TX", nullptr));
         importAttXband_part2->setText(QString());
-        indicatorLo_part1->setText(QString());
-        importAttXband_part1->setText(QString());
-        mCbHpa_part7->setText(QCoreApplication::translate("testModule", "Ngu\341\273\223n \304\221\341\272\247u v\303\240o, c\303\264ng su\341\272\245t ti\303\252u th\341\273\245", nullptr));
-        indicatorHpa_part4->setText(QString());
-        ledLo_part2->setText(QString());
-        ledHpa_part5->setText(QString());
-        detailFilterXband->setText(QString());
-        label_86->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        mCbLimiter_part1->setText(QCoreApplication::translate("testModule", "\304\220o suy hao c\303\241p", nullptr));
-        mCbLimiter_part3->setText(QCoreApplication::translate("testModule", "\304\220o c/su\341\272\245t output max && max limiter", nullptr));
-        label_128->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        detailHpa_part1->setText(QString());
-        indicatorLo_part3->setText(QString());
-        ledFilterLORF->setText(QString());
-        mCbAttXband->setText(QCoreApplication::translate("testModule", "Module_ATT_XBAND", nullptr));
-        importFilterIF->setText(QString());
-        indicatorRx_part1->setText(QString());
-        mCbLna_part1->setText(QCoreApplication::translate("testModule", "\304\220o suy hao c\303\241p", nullptr));
-        importTx_part3->setText(QString());
-        importHpa_part2->setText(QString());
-        detailLna_part2->setText(QString());
-        ledRx_part2->setText(QString());
-        mCbComparator_part2->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 suy hao, c\303\241ch ly", nullptr));
-        importLna_part3->setText(QString());
-        mCbHpa_part6->setText(QCoreApplication::translate("testModule", "\304\220\341\273\231 r\341\273\231ng xung cao t\341\272\247n", nullptr));
-        rltAntena->setText(QString());
-        indicatorComparator_part1->setText(QString());
-        rltComparator_part2->setText(QString());
-        importLo_part1->setText(QString());
-        rltAttXband_part1->setText(QString());
-        indicatorHpa_part3->setText(QString());
-        importHpa_part4->setText(QString());
-        rltLimiter_part1->setText(QString());
-        rltRx_part3->setText(QString());
-        label_101->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        indicatorLo_part2->setText(QString());
-        indicatorHpa_part5->setText(QString());
-        detailSMA_part1->setText(QString());
-        rltCirculator_part1->setText(QString());
-        label_119->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        rltTx_part1->setText(QString());
-        label_120->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        mCbHpa_part1->setText(QCoreApplication::translate("testModule", "T\341\273\261 k\303\255ch", nullptr));
-        label_126->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        ledSMA_part1->setText(QString());
-        mCbFilterIf->setText(QCoreApplication::translate("testModule", "Module_Filter_IF", nullptr));
-        rltSMA_part2->setText(QString());
-        detailSMA_part2->setText(QString());
-        importRx_part1->setText(QString());
-        label_85->setText(QCoreApplication::translate("testModule", ".....", nullptr));
-        detailHpa_part2->setText(QString());
-        detailLna_part3->setText(QString());
-        detailTx_part3->setText(QString());
-        indicatorSma_part1->setText(QString());
-        All->setText(QCoreApplication::translate("testModule", "All", nullptr));
-        indicatorAntena->setText(QString());
-        indicatorRx_part2->setText(QString());
-        detailLo_part1->setText(QString());
-        importHpa_part3->setText(QString());
-        label_100->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        detailAntena->setText(QString());
-        detailHpa_part4->setText(QString());
+        indicatorXband_part2->setText(QString());
         ledAttXband_part2->setText(QString());
         rltAttXband_part2->setText(QString());
-        ledLimiter_part1->setText(QString());
-        ledRx_part3->setText(QString());
-        rltHpa_part6->setText(QString());
+        mCbAntena->setText(QCoreApplication::translate("testModule", "Module_Antena", nullptr));
+        detailAntena->setText(QString());
+        importAntena->setText(QString());
+        indicatorAntena->setText(QString());
+        ledAntena->setText(QString());
+        rltAntena->setText(QString());
+        mCbFilterIf->setText(QCoreApplication::translate("testModule", "Module_Filter_IF", nullptr));
+        detailFilterIF->setText(QString());
+        importFilterIF->setText(QString());
+        indicatorFilterIF->setText(QString());
+        ledFilterIF->setText(QString());
+        rltFilterIF->setText(QString());
+        mCbFilterLOIF->setText(QCoreApplication::translate("testModule", "Module_Filter_LOIF", nullptr));
+        detailFilterLOIF->setText(QString());
+        importFilterLOIF->setText(QString());
+        indicatorFilterLOIF->setText(QString());
+        ledFilterLOIF->setText(QString());
+        rltFilterLOIF->setText(QString());
         mCbFilterLORF->setText(QCoreApplication::translate("testModule", "Module_Filter_LORF", nullptr));
-        rltLimiter_part2->setText(QString());
-        ledTx_part1->setText(QString());
-        label_90->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        importLo_part2->setText(QString());
-        detailComparator_part2->setText(QString());
-        importHpa_part5->setText(QString());
-        detailComparator_part1->setText(QString());
-        ledComparator_part2->setText(QString());
+        detailFilterLORF->setText(QString());
+        importFilterLORF->setText(QString());
+        indicatorFilterLORF->setText(QString());
+        ledFilterLORF->setText(QString());
+        rltFilterLORF->setText(QString());
+        mCbFilterXband->setText(QCoreApplication::translate("testModule", "Module_Filter_XBAND", nullptr));
+        detailFilterXband->setText(QString());
+        importFilterXband->setText(QString());
+        indicatorFilterXband->setText(QString());
+        ledFilterXband->setText(QString());
+        rltFilterXband->setText(QString());
+        mCbHpa->setText(QCoreApplication::translate("testModule", "Module HPA", nullptr));
         label_97->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        mCbLna->setText(QCoreApplication::translate("testModule", "Module LNA", nullptr));
-        importCirculator_part1->setText(QString());
-        mCbLimiter->setText(QCoreApplication::translate("testModule", "Module Limiter", nullptr));
-        mCbSMA_part1->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 s\303\263ng \304\221\341\273\251ng", nullptr));
-        indicatorTx_part2->setText(QString());
-        detailRx_part1->setText(QString());
-        mCbLna_part3->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 t\341\272\241p", nullptr));
-        mCbTx_part3->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 t\341\272\241p", nullptr));
-        ledComparator_part1->setText(QString());
+        mCbHpa_part1->setText(QCoreApplication::translate("testModule", "T\341\273\261 k\303\255ch", nullptr));
+        detailHpa_part1->setText(QString());
+        importHpa_part1->setText(QString());
+        indicatorHpa_part1->setText(QString());
+        ledHpa_part1->setText(QString());
+        rltHpa_part1->setText(QString());
+        label_98->setText(QCoreApplication::translate("testModule", "...", nullptr));
         mCbHpa_part2->setText(QCoreApplication::translate("testModule", "\304\220\341\272\267c tuy\341\272\277n Pout-Pinu", nullptr));
-        label_125->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        label_91->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        importRx_part2->setText(QString());
-        importComparator_part2->setText(QString());
-        indicatorLimiter_part1->setText(QString());
-        indicatorRx_part3->setText(QString());
+        detailHpa_part2->setText(QString());
+        importHpa_part2->setText(QString());
+        indicatorHpa_part2->setText(QString());
+        ledHpa_part2->setText(QString());
+        rltHpa_part2->setText(QString());
+        label_103->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbHpa_part3->setText(QCoreApplication::translate("testModule", "M\341\273\251c h\303\240i", nullptr));
         detailHpa_part3->setText(QString());
-        mCbLo_part1->setText(QCoreApplication::translate("testModule", "\304\220o suy hao c\303\241p", nullptr));
+        importHpa_part3->setText(QString());
+        indicatorHpa_part3->setText(QString());
+        ledHpa_part3->setText(QString());
+        rltHpa_part3->setText(QString());
+        label_99->setText(QCoreApplication::translate("testModule", "...", nullptr));
         mCbHpa_part4->setText(QCoreApplication::translate("testModule", "D\341\272\243i t\341\272\247n ho\341\272\241t \304\221\341\273\231ng", nullptr));
-        ledLimiter_part2->setText(QString());
-        indicatorTx_part1->setText(QString());
+        detailHpa_part4->setText(QString());
+        importHpa_part4->setText(QString());
+        indicatorHpa_part4->setText(QString());
+        ledHpa_part4->setText(QString());
+        rltHpa_part4->setText(QString());
+        label_102->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbHpa_part5->setText(QCoreApplication::translate("testModule", "CH\341\273\251c n\304\203ng gi\303\241m s\303\241t", nullptr));
+        detailHpa_part5->setText(QString());
+        importHpa_part5->setText(QString());
+        indicatorHpa_part5->setText(QString());
+        ledHpa_part5->setText(QString());
+        rltHpa_part5->setText(QString());
+        label_100->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbHpa_part6->setText(QCoreApplication::translate("testModule", "\304\220\341\273\231 r\341\273\231ng xung cao t\341\272\247n", nullptr));
+        detailHpa_part6->setText(QString());
+        importHpa_part6->setText(QString());
+        indicatorHpa_part6->setText(QString());
         ledHpa_part6->setText(QString());
+        rltHpa_part6->setText(QString());
+        label_101->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbHpa_part7->setText(QCoreApplication::translate("testModule", "Ngu\341\273\223n \304\221\341\272\247u v\303\240o, c\303\264ng su\341\272\245t ti\303\252u th\341\273\245", nullptr));
+        detailHpa_part7->setText(QString());
+        importHpa_part7->setText(QString());
+        indicatorHpa_part7->setText(QString());
+        ledHpa_part7->setText(QString());
+        rltHpa_part7->setText(QString());
+        mCbSwAntena->setText(QCoreApplication::translate("testModule", "Module Switch Antena", nullptr));
+        label_136->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbSwAntena_part1->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 suy hao", nullptr));
+        detailSwAntena_part1->setText(QString());
+        importSwAntena_part1->setText(QString());
+        indicatorSwAntena_part1->setText(QString());
+        ledSwAntena_part1->setText(QString());
+        rltSwAntena_part1->setText(QString());
+        label_137->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbSwAntena_part2->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 c\303\241ch ly", nullptr));
+        detailSwAntena_part2->setText(QString());
+        importSwAntena_part2->setText(QString());
+        indicatorSwAntena_part2->setText(QString());
+        ledSwAntena_part2->setText(QString());
+        rltSwAntena_part2->setText(QString());
+        label_138->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbSwAntena_part3->setText(QCoreApplication::translate("testModule", "\304\220o t\341\273\221c \304\221\341\273\231 \304\221\303\241p \341\273\251ng", nullptr));
+        detailSwAntena_part3->setText(QString());
+        importSwAntena_part3->setText(QString());
+        indicatorSwAntena_part3->setText(QString());
+        ledSwAntena_part3->setText(QString());
+        rltSwAntena_part3->setText(QString());
+        mCbLimiterSum->setText(QCoreApplication::translate("testModule", "Module Limiter Sum", nullptr));
+        label_120->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbLimiterSum_part1->setText(QCoreApplication::translate("testModule", "\304\220o suy hao c\303\241p", nullptr));
+        detailLimiterSum_part1->setText(QString());
+        importLimiterSum_part1->setText(QString());
+        indicatorLimiterSum_part1->setText(QString());
+        ledLimiterSum_part1->setText(QString());
+        rltLimiterSum_part1->setText(QString());
+        label_118->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbLimiterSum_part2->setText(QCoreApplication::translate("testModule", "\304\220o suy hao limiter", nullptr));
+        detailLimiterSum_part2->setText(QString());
+        importLimiterSum_part2->setText(QString());
+        indicatorLimiterSum_part2->setText(QString());
+        ledLimiterSum_part2->setText(QString());
+        rltLimiterSum_part2->setText(QString());
+        label_119->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbLimiterSum_part3->setText(QCoreApplication::translate("testModule", "\304\220o c/su\341\272\245t output max && max limiter", nullptr));
+        detailLimiterSum_part3->setText(QString());
+        importLimiterSum_part3->setText(QString());
+        indicatorLimiterSum_part3->setText(QString());
+        ledLimiterSum_part3->setText(QString());
+        rltLimiterSum_part3->setText(QString());
+        mCbLimiterDiff->setText(QCoreApplication::translate("testModule", "Module Limiter Diff", nullptr));
+        label_135->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbLimiterDiff_part1->setText(QCoreApplication::translate("testModule", "\304\220o suy hao c\303\241p", nullptr));
+        detailLimiterDiff_part1->setText(QString());
+        importLimiterDiff_part1->setText(QString());
+        indicatorLimiterDiff_part1->setText(QString());
+        ledLimiterDiff_part1->setText(QString());
+        rltLimiterDiff_part1->setText(QString());
+        label_134->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbLimiterDiff_part2->setText(QCoreApplication::translate("testModule", "\304\220o suy hao limiter", nullptr));
+        detailLimiterDiff_part2->setText(QString());
+        importLimiterDiff_part2->setText(QString());
+        indicatorLimiterDiff_part2->setText(QString());
+        ledLimiterDiff_part2->setText(QString());
+        rltLimiterDiff_part2->setText(QString());
+        label_133->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbLimiterDiff_part3->setText(QCoreApplication::translate("testModule", "\304\220o c/su\341\272\245t output max && max limiter", nullptr));
+        detailLimiterDiff_part3->setText(QString());
+        importLimiterDiff_part3->setText(QString());
+        indicatorLimiterDiff_part3->setText(QString());
+        ledLimiterDiff_part3->setText(QString());
+        rltLimiterDiff_part3->setText(QString());
+        mCbLna->setText(QCoreApplication::translate("testModule", "Module LNA", nullptr));
+        label_126->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbLna_part1->setText(QCoreApplication::translate("testModule", "\304\220o suy hao c\303\241p", nullptr));
+        detailLna_part1->setText(QString());
+        importLna_part1->setText(QString());
+        indicatorLna_part1->setText(QString());
+        ledLna_part1->setText(QString());
+        rltLna_part1->setText(QString());
+        label_125->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbLna_part2->setText(QCoreApplication::translate("testModule", "\304\220o h/s\341\273\221 k/\304\221\341\272\241i, power max in/output", nullptr));
+        detailLna_part2->setText(QString());
+        importLna_part2->setText(QString());
+        indicatorLna_part2->setText(QString());
+        ledLna_part2->setText(QString());
+        rltLna_part2->setText(QString());
+        label_124->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbLna_part3->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 t\341\272\241p", nullptr));
+        detailLna_part3->setText(QString());
+        importLna_part3->setText(QString());
+        indicatorLna_part3->setText(QString());
+        ledLna_part3->setText(QString());
+        rltLna_part3->setText(QString());
+        mCbLo->setText(QCoreApplication::translate("testModule", "Module LO", nullptr));
+        label_123->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbLo_part1->setText(QCoreApplication::translate("testModule", "\304\220o suy hao c\303\241p", nullptr));
+        detailLo_part1->setText(QString());
+        importLo_part1->setText(QString());
+        indicatorLo_part1->setText(QString());
+        ledLo_part1->setText(QString());
+        rltLo_part1->setText(QString());
+        label_121->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbLo_part2->setText(QCoreApplication::translate("testModule", "\304\220o t\341\272\247n s\341\273\221 v\303\240 c/su\341\272\245t \304\221\341\272\247u ra, m\341\273\251c h\303\240i", nullptr));
         detailLo_part2->setText(QString());
+        importLo_part2->setText(QString());
+        indicatorLo_part2->setText(QString());
+        ledLo_part2->setText(QString());
+        rltLo_part2->setText(QString());
+        label_122->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbLo_part3->setText(QCoreApplication::translate("testModule", "\304\220o phase noise", nullptr));
+        detailLo_part3->setText(QString());
+        importLo_part3->setText(QString());
+        indicatorLo_part3->setText(QString());
+        ledLo_part3->setText(QString());
+        rltLo_part3->setText(QString());
+        mCbRx->setText(QCoreApplication::translate("testModule", "Module RX", nullptr));
+        label_132->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbRx_part1->setText(QCoreApplication::translate("testModule", "\304\220o suy hao c\303\241p", nullptr));
+        detailRx_part1->setText(QString());
+        importRx_part1->setText(QString());
+        indicatorRx_part1->setText(QString());
+        ledRx_part1->setText(QString());
+        rltRx_part1->setText(QString());
+        label_130->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbRx_part2->setText(QCoreApplication::translate("testModule", "\304\220o HSKD, Noise, Power max", nullptr));
+        detailRx_part2->setText(QString());
+        importRx_part2->setText(QString());
+        indicatorRx_part2->setText(QString());
+        ledRx_part2->setText(QString());
+        rltRx_part2->setText(QString());
+        label_131->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbRx_part3->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 t\341\272\241p", nullptr));
+        detailRx_part3->setText(QString());
+        importRx_part3->setText(QString());
+        indicatorRx_part3->setText(QString());
+        ledRx_part3->setText(QString());
+        rltRx_part3->setText(QString());
+        mCbTx->setText(QCoreApplication::translate("testModule", "Module TX", nullptr));
+        label_127->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbTx_part1->setText(QCoreApplication::translate("testModule", "\304\220o suy hao c\303\241p", nullptr));
+        detailTx_part1->setText(QString());
+        importTx_part1->setText(QString());
+        indicatorTx_part1->setText(QString());
+        ledTx_part1->setText(QString());
+        rltTx_part1->setText(QString());
+        label_128->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbTx_part2->setText(QCoreApplication::translate("testModule", "\304\220o HSKD, Power max", nullptr));
+        detailTx_part2->setText(QString());
+        importTx_part2->setText(QString());
+        indicatorTx_part2->setText(QString());
+        ledTx_part2->setText(QString());
+        rltTx_part2->setText(QString());
+        label_129->setText(QCoreApplication::translate("testModule", "...", nullptr));
+        mCbTx_part3->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 t\341\272\241p", nullptr));
+        detailTx_part3->setText(QString());
+        importTx_part3->setText(QString());
+        indicatorTx_part3->setText(QString());
+        ledTx_part3->setText(QString());
+        rltTx_part3->setText(QString());
+        detailComparator_part2->setText(QString());
+        rltComparator_part2->setText(QString());
+        importComparator_part2->setText(QString());
         label_6->setText(QCoreApplication::translate("testModule", "Detail", nullptr));
         label_21->setText(QCoreApplication::translate("testModule", "Result", nullptr));
         label_5->setText(QCoreApplication::translate("testModule", "Select Module", nullptr));
@@ -6324,10 +6915,10 @@ public:
         btnSignGen->setText(QCoreApplication::translate("testModule", "Signal Generation", nullptr));
         toolButton_8->setText(QCoreApplication::translate("testModule", "...", nullptr));
         label_2->setText(QCoreApplication::translate("testModule", " Test Sequence/ Output Terminal", nullptr));
-        btnGuidleMte->setText(QCoreApplication::translate("testModule", "Guidle", nullptr));
-        btnLogMte->setText(QCoreApplication::translate("testModule", "Log", nullptr));
-        btnExportMte->setText(QCoreApplication::translate("testModule", "Export", nullptr));
-        btnPrintMte->setText(QCoreApplication::translate("testModule", "Print", nullptr));
+        btnGuidleMte->setText(QCoreApplication::translate("testModule", "Guidle          ", nullptr));
+        btnLogMte->setText(QCoreApplication::translate("testModule", " Log              ", nullptr));
+        btnPreviewMte->setText(QCoreApplication::translate("testModule", "Preview        ", nullptr));
+        btnExportMte->setText(QCoreApplication::translate("testModule", "Export report", nullptr));
         btnUndoMte->setText(QCoreApplication::translate("testModule", "Undo", nullptr));
         btnRunMte->setText(QCoreApplication::translate("testModule", "Run", nullptr));
         btnStopMte->setText(QCoreApplication::translate("testModule", "Stop", nullptr));

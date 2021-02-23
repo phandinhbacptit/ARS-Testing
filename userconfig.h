@@ -73,6 +73,15 @@
 #define path_antena "libKdReport/xml/Module/Antena/Antena.csv"
 #define path_filterIF "libKdReport/xml/Module/FilterIF/FilterIF.csv"
 #define path_filterXband "libKdReport/xml/Module/Filter_XBAND/filterXband.csv"
+#define path_filter_LORF  "libKdReport/xml/Module/Filter_LORF/filterLORF.csv"
+#define path_filter_LOIF  "libKdReport/xml/Module/Filter_LORF/filterLOIF.csv"
+
+#define path_SwAntena_part1 "libKdReport/xml/Module/SwAntena/swAntena_part1.csv"
+#define path_SwAntena_part2 "libKdReport/xml/Module/SwAntena/swAntena_part2.csv"
+#define path_SwAntena_part3 "libKdReport/xml/Module/SwAntena/swAntena_part3.csv"
+
+#define path_limiterDiff "libKdReport/xml/Module/LimiterDiff/Limiter_diff.csv"
+#define path_limiterSum "libKdReport/xml/Module/LimiterSum/Limiter_sum.csv"
 
 /*______________Define name folder logfile__________*/
 const QString logFolderElectricalCable = "logs/logsElectricCable";
@@ -124,6 +133,17 @@ static table Circulator {
     .pathPart3 = path_Circulator_part3,
 };
 
+static table Comparator {
+    .namePart = "Comparator Module",
+    .title1 = "1.1. Hệ số sóng đứng",
+    .pathPart1 = path_Circulator_part1,
+
+    .title2 = "1.2. Hệ số suy hao",
+    .pathPart2 = path_Circulator_part2,
+
+    .title3 = "1.3. Hệ số cách ly",
+    .pathPart3 = path_Circulator_part3,
+};
 static table Adapter_SMA {
     .namePart = "Adapter SMA Module",
     .title1 = "1.1. Hệ số sóng đứng",
@@ -137,7 +157,7 @@ static table Adapter_SMA {
 };
 
 static table AttXband {
-    .namePart = "Adapter ATT Xband Module",
+    .namePart = "ATT Xband Module",
     .title1 = "1.1. Suy hao chưa điều khiển",
     .pathPart1 = path_att_xband_part1,
 
@@ -171,11 +191,132 @@ static table FilterIF {
     .title3 = nullptr,
     .pathPart3 = nullptr,
 };
+/*______________________________________________*/
+static table Filter_LOIF {
+    .namePart = "FilterLOIF Module",
+    .title1 = "Kết quả đo kiểm",
+    .pathPart1 = path_filter_LOIF,
+
+    .title2 = nullptr,
+    .pathPart2 = nullptr,
+
+    .title3 = nullptr,
+    .pathPart3 = nullptr,
+};
+/*______________________________________________*/
+static table Filter_LORF {
+    .namePart = "FilterLORF Module",
+    .title1 = "Kết quả đo kiểm",
+    .pathPart1 = path_filter_LORF,
+
+    .title2 = nullptr,
+    .pathPart2 = nullptr,
+
+    .title3 = nullptr,
+    .pathPart3 = nullptr,
+};
 
 static table FilterXband {
     .namePart = "FilterXband Module",
     .title1 = "Kết quả đo kiểm",
     .pathPart1 = path_filterXband,
+
+    .title2 = nullptr,
+    .pathPart2 = nullptr,
+
+    .title3 = nullptr,
+    .pathPart3 = nullptr,
+};
+
+static table Hpa {
+    .namePart = "KDCS Module",
+    .title1 = "Kết quả đo kiểm",
+    .pathPart1 = path_filterXband,
+
+    .title2 = nullptr,
+    .pathPart2 = nullptr,
+
+    .title3 = nullptr,
+    .pathPart3 = nullptr,
+};
+
+
+static table SwAntena {
+    .namePart = "SwAntena Module",
+    .title1 = "1.1. Hệ số suy hao",
+    .pathPart1 = path_SwAntena_part1,
+
+    .title2 = "1.2 Hệ số cách ly",
+    .pathPart2 = path_SwAntena_part2,
+
+    .title3 = "1.3. Tốc độ đáp ứng",
+    .pathPart3 = path_SwAntena_part3,
+};
+
+static table LimiterDiff {
+    .namePart = "LimiterDiff Module",
+    .title1 = "Kết quả đo kiểm",
+    .pathPart1 = path_limiterDiff,
+
+    .title2 = nullptr,
+    .pathPart2 = nullptr,
+
+    .title3 = nullptr,
+    .pathPart3 = nullptr,
+};
+
+static table LimiterSum {
+    .namePart = "LimiterSum Module",
+    .title1 = "Kết quả đo kiểm",
+    .pathPart1 = path_limiterSum,
+
+    .title2 = nullptr,
+    .pathPart2 = nullptr,
+
+    .title3 = nullptr,
+    .pathPart3 = nullptr,
+};
+/*______________________________________________*/
+static table LNA {
+    .namePart = "LNA Module",
+    .title1 = "Kết quả đo kiểm",
+    .pathPart1 = path_limiterSum,
+
+    .title2 = nullptr,
+    .pathPart2 = nullptr,
+
+    .title3 = nullptr,
+    .pathPart3 = nullptr,
+};
+/*______________________________________________*/
+static table LO {
+    .namePart = "LO Module",
+    .title1 = "Kết quả đo kiểm",
+    .pathPart1 = path_limiterSum,
+
+    .title2 = nullptr,
+    .pathPart2 = nullptr,
+
+    .title3 = nullptr,
+    .pathPart3 = nullptr,
+};
+/*______________________________________________*/
+static table TX {
+    .namePart = "TX Module",
+    .title1 = "Kết quả đo kiểm",
+    .pathPart1 = path_limiterSum,
+
+    .title2 = nullptr,
+    .pathPart2 = nullptr,
+
+    .title3 = nullptr,
+    .pathPart3 = nullptr,
+};
+/*______________________________________________*/
+static table RX {
+    .namePart = "RX Module",
+    .title1 = "Kết quả đo kiểm",
+    .pathPart1 = path_limiterSum,
 
     .title2 = nullptr,
     .pathPart2 = nullptr,

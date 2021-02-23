@@ -18,6 +18,7 @@
 #include <QMessageBox>
 #include <QFile>
 #include <QDir>
+#include <QTime>
 
 #include "mainwindow.h"
 #include "testelectriccable.h"
@@ -42,7 +43,7 @@ public:
     ~bussinessManager();
     void setup(Ui::MainWindow *ui);
     void setupELectric(Ui::TestElectricCable *ui);
-    void createReport(KDReports::Report *report, QString typeTest, table part);
+    void createReport(KDReports::Report *report, QString typeTest, table part, QString mode);
     void createTable(KDReports::Report *report, QString Title, QString pathCsv);
 
     Ui::MainWindow  *ui() const;
@@ -57,6 +58,8 @@ public slots:
     void slt_enableTestProcess();
 
     void slt_exportCteReport();
+
+    void slt_previewMteReport();
     void slt_exportMteReport();
 
     void slt_showCteInterface();

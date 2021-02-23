@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'testrfcable.ui'
 **
-** Created by: Qt User Interface Compiler version 5.9.0
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,13 +10,11 @@
 #define UI_TESTRFCABLE_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
@@ -230,66 +228,66 @@ public:
     void setupUi(QWidget *TestRfCable)
     {
         if (TestRfCable->objectName().isEmpty())
-            TestRfCable->setObjectName(QStringLiteral("TestRfCable"));
+            TestRfCable->setObjectName(QString::fromUtf8("TestRfCable"));
         TestRfCable->resize(988, 712);
-        TestRfCable->setStyleSheet(QStringLiteral("background-color: none;"));
+        TestRfCable->setStyleSheet(QString::fromUtf8("background-color: none;"));
         gridLayout = new QGridLayout(TestRfCable);
         gridLayout->setSpacing(1);
-        gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
         frame_2 = new QFrame(TestRfCable);
-        frame_2->setObjectName(QStringLiteral("frame_2"));
-        frame_2->setStyleSheet(QStringLiteral("background-color: rgba(194,204,205);"));
+        frame_2->setObjectName(QString::fromUtf8("frame_2"));
+        frame_2->setStyleSheet(QString::fromUtf8("background-color: rgba(194,204,205);"));
         frame_2->setFrameShape(QFrame::StyledPanel);
         frame_2->setFrameShadow(QFrame::Raised);
         gridLayout_2 = new QGridLayout(frame_2);
-        gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         gridLayout_2->setHorizontalSpacing(5);
         gridLayout_2->setVerticalSpacing(2);
         gridLayout_2->setContentsMargins(1, 1, 1, 0);
         label_70 = new QLabel(frame_2);
-        label_70->setObjectName(QStringLiteral("label_70"));
-        label_70->setStyleSheet(QLatin1String("color: rgb(49,67,100);\n"
+        label_70->setObjectName(QString::fromUtf8("label_70"));
+        label_70->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
 "font: 87 12pt \"Myriad Pro\"; font:bold;\n"
 "background-color:none;"));
 
         gridLayout_2->addWidget(label_70, 0, 0, 1, 1);
 
         label_3 = new QLabel(frame_2);
-        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setObjectName(QString::fromUtf8("label_3"));
 
         gridLayout_2->addWidget(label_3, 0, 1, 1, 1);
 
         label_71 = new QLabel(frame_2);
-        label_71->setObjectName(QStringLiteral("label_71"));
-        label_71->setStyleSheet(QLatin1String("color: rgb(49,67,100);\n"
+        label_71->setObjectName(QString::fromUtf8("label_71"));
+        label_71->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
 "font: 87 12pt \"Myriad Pro\"; font:bold;\n"
 "background-color:none;"));
 
         gridLayout_2->addWidget(label_71, 0, 2, 1, 1);
 
         label_4 = new QLabel(frame_2);
-        label_4->setObjectName(QStringLiteral("label_4"));
+        label_4->setObjectName(QString::fromUtf8("label_4"));
 
         gridLayout_2->addWidget(label_4, 0, 3, 1, 1);
 
         label_75 = new QLabel(frame_2);
-        label_75->setObjectName(QStringLiteral("label_75"));
-        label_75->setStyleSheet(QLatin1String("color: rgb(49,67,100);\n"
+        label_75->setObjectName(QString::fromUtf8("label_75"));
+        label_75->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
 "font: 87 12pt \"Myriad Pro\"; font:bold;\n"
 "background-color:none;"));
 
         gridLayout_2->addWidget(label_75, 0, 4, 1, 1);
 
         label_5 = new QLabel(frame_2);
-        label_5->setObjectName(QStringLiteral("label_5"));
+        label_5->setObjectName(QString::fromUtf8("label_5"));
 
         gridLayout_2->addWidget(label_5, 0, 5, 1, 1);
 
         pushButton_63 = new QPushButton(frame_2);
-        pushButton_63->setObjectName(QStringLiteral("pushButton_63"));
+        pushButton_63->setObjectName(QString::fromUtf8("pushButton_63"));
         QIcon icon;
-        icon.addFile(QStringLiteral(":/Test/images/button/exit_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/Test/images/button/exit_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_63->setIcon(icon);
         pushButton_63->setIconSize(QSize(25, 25));
         pushButton_63->setFlat(true);
@@ -297,39 +295,39 @@ public:
         gridLayout_2->addWidget(pushButton_63, 0, 6, 1, 1, Qt::AlignRight);
 
         scrollArea = new QScrollArea(frame_2);
-        scrollArea->setObjectName(QStringLiteral("scrollArea"));
+        scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
         scrollArea->setAutoFillBackground(false);
-        scrollArea->setStyleSheet(QStringLiteral("background-color: rgb(242,242,242);"));
+        scrollArea->setStyleSheet(QString::fromUtf8("background-color: rgb(242,242,242);"));
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
-        scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
+        scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
         scrollAreaWidgetContents->setGeometry(QRect(0, 0, 473, 1025));
-        scrollAreaWidgetContents->setStyleSheet(QLatin1String("#scrollAreaWidgetContents {\n"
+        scrollAreaWidgetContents->setStyleSheet(QString::fromUtf8("#scrollAreaWidgetContents {\n"
 "	background-color: transparent;\n"
 "}\n"
 "QScrollArea {\n"
 "	background-color: transparent;\n"
 "}"));
         gridLayout_3 = new QGridLayout(scrollAreaWidgetContents);
-        gridLayout_3->setObjectName(QStringLiteral("gridLayout_3"));
+        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         gridLayout_3->setContentsMargins(10, 2, 2, 2);
         label_28 = new QLabel(scrollAreaWidgetContents);
-        label_28->setObjectName(QStringLiteral("label_28"));
+        label_28->setObjectName(QString::fromUtf8("label_28"));
         label_28->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_28->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_28, 12, 3, 1, 1);
 
         detailRf21 = new QPushButton(scrollAreaWidgetContents);
-        detailRf21->setObjectName(QStringLiteral("detailRf21"));
-        detailRf21->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf21->setObjectName(QString::fromUtf8("detailRf21"));
+        detailRf21->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
         QIcon icon1;
-        icon1.addFile(QStringLiteral(":/Test/images/icon-detail_2.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QString::fromUtf8(":/Test/images/icon-detail_2.png"), QSize(), QIcon::Normal, QIcon::Off);
         detailRf21->setIcon(icon1);
         detailRf21->setIconSize(QSize(20, 20));
         detailRf21->setFlat(true);
@@ -337,15 +335,15 @@ public:
         gridLayout_3->addWidget(detailRf21, 23, 1, 1, 1);
 
         label_25 = new QLabel(scrollAreaWidgetContents);
-        label_25->setObjectName(QStringLiteral("label_25"));
+        label_25->setObjectName(QString::fromUtf8("label_25"));
         label_25->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_25->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_25, 9, 3, 1, 1);
 
         mCbCableRf3 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf3->setObjectName(QStringLiteral("mCbCableRf3"));
-        mCbCableRf3->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf3->setObjectName(QString::fromUtf8("mCbCableRf3"));
+        mCbCableRf3->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -364,8 +362,8 @@ public:
         gridLayout_3->addWidget(mCbCableRf3, 4, 0, 1, 1);
 
         detailRf10 = new QPushButton(scrollAreaWidgetContents);
-        detailRf10->setObjectName(QStringLiteral("detailRf10"));
-        detailRf10->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf10->setObjectName(QString::fromUtf8("detailRf10"));
+        detailRf10->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -378,15 +376,15 @@ public:
         gridLayout_3->addWidget(detailRf10, 11, 1, 1, 1);
 
         pushButton_48 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_48->setObjectName(QStringLiteral("pushButton_48"));
-        pushButton_48->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_48->setObjectName(QString::fromUtf8("pushButton_48"));
+        pushButton_48->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
         QIcon icon2;
-        icon2.addFile(QStringLiteral(":/Test/images/result_icon_2.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon2.addFile(QString::fromUtf8(":/Test/images/result_icon_2.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_48->setIcon(icon2);
         pushButton_48->setIconSize(QSize(20, 20));
         pushButton_48->setFlat(true);
@@ -394,14 +392,14 @@ public:
         gridLayout_3->addWidget(pushButton_48, 19, 4, 1, 1);
 
         label_35 = new QLabel(scrollAreaWidgetContents);
-        label_35->setObjectName(QStringLiteral("label_35"));
+        label_35->setObjectName(QString::fromUtf8("label_35"));
         label_35->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorFail.png")));
         label_35->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_35, 17, 2, 1, 1);
 
         label_50 = new QLabel(scrollAreaWidgetContents);
-        label_50->setObjectName(QStringLiteral("label_50"));
+        label_50->setObjectName(QString::fromUtf8("label_50"));
         label_50->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/red_led.png")));
         label_50->setAlignment(Qt::AlignCenter);
         label_50->setWordWrap(false);
@@ -409,8 +407,8 @@ public:
         gridLayout_3->addWidget(label_50, 24, 3, 1, 1);
 
         pushButton_23 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_23->setObjectName(QStringLiteral("pushButton_23"));
-        pushButton_23->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_23->setObjectName(QString::fromUtf8("pushButton_23"));
+        pushButton_23->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -423,8 +421,8 @@ public:
         gridLayout_3->addWidget(pushButton_23, 11, 4, 1, 1);
 
         detailRf28 = new QPushButton(scrollAreaWidgetContents);
-        detailRf28->setObjectName(QStringLiteral("detailRf28"));
-        detailRf28->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf28->setObjectName(QString::fromUtf8("detailRf28"));
+        detailRf28->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -437,8 +435,8 @@ public:
         gridLayout_3->addWidget(detailRf28, 30, 1, 1, 1);
 
         mCbCableRf31 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf31->setObjectName(QStringLiteral("mCbCableRf31"));
-        mCbCableRf31->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf31->setObjectName(QString::fromUtf8("mCbCableRf31"));
+        mCbCableRf31->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -457,8 +455,8 @@ public:
         gridLayout_3->addWidget(mCbCableRf31, 33, 0, 1, 1);
 
         pushButton_53 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_53->setObjectName(QStringLiteral("pushButton_53"));
-        pushButton_53->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_53->setObjectName(QString::fromUtf8("pushButton_53"));
+        pushButton_53->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -471,15 +469,15 @@ public:
         gridLayout_3->addWidget(pushButton_53, 24, 4, 1, 1);
 
         label_64 = new QLabel(scrollAreaWidgetContents);
-        label_64->setObjectName(QStringLiteral("label_64"));
+        label_64->setObjectName(QString::fromUtf8("label_64"));
         label_64->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_64->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_64, 31, 3, 1, 1);
 
         label_14 = new QLabel(scrollAreaWidgetContents);
-        label_14->setObjectName(QStringLiteral("label_14"));
-        label_14->setStyleSheet(QLatin1String("background-color:transparent;\n"
+        label_14->setObjectName(QString::fromUtf8("label_14"));
+        label_14->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "background-color: none;"));
         label_14->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_14->setAlignment(Qt::AlignCenter);
@@ -487,8 +485,8 @@ public:
         gridLayout_3->addWidget(label_14, 7, 2, 1, 1);
 
         detailRf29 = new QPushButton(scrollAreaWidgetContents);
-        detailRf29->setObjectName(QStringLiteral("detailRf29"));
-        detailRf29->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf29->setObjectName(QString::fromUtf8("detailRf29"));
+        detailRf29->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -501,8 +499,8 @@ public:
         gridLayout_3->addWidget(detailRf29, 31, 1, 1, 1);
 
         detailRf31 = new QPushButton(scrollAreaWidgetContents);
-        detailRf31->setObjectName(QStringLiteral("detailRf31"));
-        detailRf31->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf31->setObjectName(QString::fromUtf8("detailRf31"));
+        detailRf31->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -515,15 +513,15 @@ public:
         gridLayout_3->addWidget(detailRf31, 33, 1, 1, 1);
 
         label_68 = new QLabel(scrollAreaWidgetContents);
-        label_68->setObjectName(QStringLiteral("label_68"));
+        label_68->setObjectName(QString::fromUtf8("label_68"));
         label_68->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_68->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_68, 33, 3, 1, 1);
 
         mCbCableRf30 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf30->setObjectName(QStringLiteral("mCbCableRf30"));
-        mCbCableRf30->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf30->setObjectName(QString::fromUtf8("mCbCableRf30"));
+        mCbCableRf30->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -542,15 +540,15 @@ public:
         gridLayout_3->addWidget(mCbCableRf30, 32, 0, 1, 1);
 
         label_15 = new QLabel(scrollAreaWidgetContents);
-        label_15->setObjectName(QStringLiteral("label_15"));
+        label_15->setObjectName(QString::fromUtf8("label_15"));
         label_15->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_15->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_15, 10, 2, 1, 1);
 
         pushButton_59 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_59->setObjectName(QStringLiteral("pushButton_59"));
-        pushButton_59->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_59->setObjectName(QString::fromUtf8("pushButton_59"));
+        pushButton_59->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -563,15 +561,15 @@ public:
         gridLayout_3->addWidget(pushButton_59, 30, 4, 1, 1);
 
         label_31 = new QLabel(scrollAreaWidgetContents);
-        label_31->setObjectName(QStringLiteral("label_31"));
+        label_31->setObjectName(QString::fromUtf8("label_31"));
         label_31->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_31->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_31, 15, 2, 1, 1);
 
         pushButton_21 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_21->setObjectName(QStringLiteral("pushButton_21"));
-        pushButton_21->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_21->setObjectName(QString::fromUtf8("pushButton_21"));
+        pushButton_21->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -584,8 +582,8 @@ public:
         gridLayout_3->addWidget(pushButton_21, 13, 4, 1, 1);
 
         pushButton_56 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_56->setObjectName(QStringLiteral("pushButton_56"));
-        pushButton_56->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_56->setObjectName(QString::fromUtf8("pushButton_56"));
+        pushButton_56->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -598,8 +596,8 @@ public:
         gridLayout_3->addWidget(pushButton_56, 27, 4, 1, 1);
 
         mCbCableRf18 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf18->setObjectName(QStringLiteral("mCbCableRf18"));
-        mCbCableRf18->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf18->setObjectName(QString::fromUtf8("mCbCableRf18"));
+        mCbCableRf18->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -618,7 +616,7 @@ public:
         gridLayout_3->addWidget(mCbCableRf18, 20, 0, 1, 1);
 
         label_34 = new QLabel(scrollAreaWidgetContents);
-        label_34->setObjectName(QStringLiteral("label_34"));
+        label_34->setObjectName(QString::fromUtf8("label_34"));
         label_34->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/red_led.png")));
         label_34->setAlignment(Qt::AlignCenter);
         label_34->setWordWrap(false);
@@ -626,8 +624,8 @@ public:
         gridLayout_3->addWidget(label_34, 16, 3, 1, 1);
 
         mCbCableRf24 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf24->setObjectName(QStringLiteral("mCbCableRf24"));
-        mCbCableRf24->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf24->setObjectName(QString::fromUtf8("mCbCableRf24"));
+        mCbCableRf24->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -646,22 +644,22 @@ public:
         gridLayout_3->addWidget(mCbCableRf24, 26, 0, 1, 1);
 
         label_61 = new QLabel(scrollAreaWidgetContents);
-        label_61->setObjectName(QStringLiteral("label_61"));
+        label_61->setObjectName(QString::fromUtf8("label_61"));
         label_61->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_61->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_61, 30, 2, 1, 1);
 
         label_33 = new QLabel(scrollAreaWidgetContents);
-        label_33->setObjectName(QStringLiteral("label_33"));
+        label_33->setObjectName(QString::fromUtf8("label_33"));
         label_33->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorFail.png")));
         label_33->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_33, 16, 2, 1, 1);
 
         detailRf27 = new QPushButton(scrollAreaWidgetContents);
-        detailRf27->setObjectName(QStringLiteral("detailRf27"));
-        detailRf27->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf27->setObjectName(QString::fromUtf8("detailRf27"));
+        detailRf27->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -674,8 +672,8 @@ public:
         gridLayout_3->addWidget(detailRf27, 29, 1, 1, 1);
 
         detailRf19 = new QPushButton(scrollAreaWidgetContents);
-        detailRf19->setObjectName(QStringLiteral("detailRf19"));
-        detailRf19->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf19->setObjectName(QString::fromUtf8("detailRf19"));
+        detailRf19->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -688,8 +686,8 @@ public:
         gridLayout_3->addWidget(detailRf19, 21, 1, 1, 1);
 
         mCbCableRf26 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf26->setObjectName(QStringLiteral("mCbCableRf26"));
-        mCbCableRf26->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf26->setObjectName(QString::fromUtf8("mCbCableRf26"));
+        mCbCableRf26->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -708,8 +706,8 @@ public:
         gridLayout_3->addWidget(mCbCableRf26, 28, 0, 1, 1);
 
         label_10 = new QLabel(scrollAreaWidgetContents);
-        label_10->setObjectName(QStringLiteral("label_10"));
-        label_10->setStyleSheet(QLatin1String("background-color:transparent;\n"
+        label_10->setObjectName(QString::fromUtf8("label_10"));
+        label_10->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "background-color: none;"));
         label_10->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_10->setAlignment(Qt::AlignCenter);
@@ -717,13 +715,13 @@ public:
         gridLayout_3->addWidget(label_10, 5, 2, 1, 1);
 
         line = new QFrame(scrollAreaWidgetContents);
-        line->setObjectName(QStringLiteral("line"));
+        line->setObjectName(QString::fromUtf8("line"));
         QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(2);
         sizePolicy.setVerticalStretch(18);
         sizePolicy.setHeightForWidth(line->sizePolicy().hasHeightForWidth());
         line->setSizePolicy(sizePolicy);
-        line->setStyleSheet(QLatin1String("Line {\n"
+        line->setStyleSheet(QString::fromUtf8("Line {\n"
 "	Background-color: rgb(0, 69,138);\n"
 "	border:none;\n"
 "}"));
@@ -733,22 +731,22 @@ public:
         gridLayout_3->addWidget(line, 0, 0, 1, 1);
 
         label_29 = new QLabel(scrollAreaWidgetContents);
-        label_29->setObjectName(QStringLiteral("label_29"));
+        label_29->setObjectName(QString::fromUtf8("label_29"));
         label_29->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_29->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_29, 13, 3, 1, 1);
 
         label_18 = new QLabel(scrollAreaWidgetContents);
-        label_18->setObjectName(QStringLiteral("label_18"));
+        label_18->setObjectName(QString::fromUtf8("label_18"));
         label_18->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_18->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_18, 11, 2, 1, 1);
 
         mCbCableRf6 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf6->setObjectName(QStringLiteral("mCbCableRf6"));
-        mCbCableRf6->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf6->setObjectName(QString::fromUtf8("mCbCableRf6"));
+        mCbCableRf6->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -767,8 +765,8 @@ public:
         gridLayout_3->addWidget(mCbCableRf6, 7, 0, 1, 1);
 
         detailRf25 = new QPushButton(scrollAreaWidgetContents);
-        detailRf25->setObjectName(QStringLiteral("detailRf25"));
-        detailRf25->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf25->setObjectName(QString::fromUtf8("detailRf25"));
+        detailRf25->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -781,8 +779,8 @@ public:
         gridLayout_3->addWidget(detailRf25, 27, 1, 1, 1);
 
         detailRf26 = new QPushButton(scrollAreaWidgetContents);
-        detailRf26->setObjectName(QStringLiteral("detailRf26"));
-        detailRf26->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf26->setObjectName(QString::fromUtf8("detailRf26"));
+        detailRf26->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -795,8 +793,8 @@ public:
         gridLayout_3->addWidget(detailRf26, 28, 1, 1, 1);
 
         detailRf13 = new QPushButton(scrollAreaWidgetContents);
-        detailRf13->setObjectName(QStringLiteral("detailRf13"));
-        detailRf13->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf13->setObjectName(QString::fromUtf8("detailRf13"));
+        detailRf13->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -809,8 +807,8 @@ public:
         gridLayout_3->addWidget(detailRf13, 15, 1, 1, 1);
 
         detailRf22 = new QPushButton(scrollAreaWidgetContents);
-        detailRf22->setObjectName(QStringLiteral("detailRf22"));
-        detailRf22->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf22->setObjectName(QString::fromUtf8("detailRf22"));
+        detailRf22->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -823,8 +821,8 @@ public:
         gridLayout_3->addWidget(detailRf22, 24, 1, 1, 1);
 
         mCbCableRf14 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf14->setObjectName(QStringLiteral("mCbCableRf14"));
-        mCbCableRf14->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf14->setObjectName(QString::fromUtf8("mCbCableRf14"));
+        mCbCableRf14->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -843,8 +841,8 @@ public:
         gridLayout_3->addWidget(mCbCableRf14, 16, 0, 1, 1);
 
         pushButton_5 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
-        pushButton_5->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+        pushButton_5->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -857,8 +855,8 @@ public:
         gridLayout_3->addWidget(pushButton_5, 4, 4, 1, 1);
 
         detailRf11 = new QPushButton(scrollAreaWidgetContents);
-        detailRf11->setObjectName(QStringLiteral("detailRf11"));
-        detailRf11->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf11->setObjectName(QString::fromUtf8("detailRf11"));
+        detailRf11->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -871,15 +869,15 @@ public:
         gridLayout_3->addWidget(detailRf11, 12, 1, 1, 1);
 
         label_43 = new QLabel(scrollAreaWidgetContents);
-        label_43->setObjectName(QStringLiteral("label_43"));
+        label_43->setObjectName(QString::fromUtf8("label_43"));
         label_43->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorFail.png")));
         label_43->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_43, 21, 2, 1, 1);
 
         pushButton_54 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_54->setObjectName(QStringLiteral("pushButton_54"));
-        pushButton_54->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_54->setObjectName(QString::fromUtf8("pushButton_54"));
+        pushButton_54->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -892,10 +890,10 @@ public:
         gridLayout_3->addWidget(pushButton_54, 25, 4, 1, 1);
 
         line_2 = new QFrame(scrollAreaWidgetContents);
-        line_2->setObjectName(QStringLiteral("line_2"));
+        line_2->setObjectName(QString::fromUtf8("line_2"));
         sizePolicy.setHeightForWidth(line_2->sizePolicy().hasHeightForWidth());
         line_2->setSizePolicy(sizePolicy);
-        line_2->setStyleSheet(QLatin1String("Line {\n"
+        line_2->setStyleSheet(QString::fromUtf8("Line {\n"
 "	Background-color: rgb(0, 69,138);\n"
 "	border:none;\n"
 "}"));
@@ -905,8 +903,8 @@ public:
         gridLayout_3->addWidget(line_2, 0, 1, 1, 1);
 
         pushButton_45 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_45->setObjectName(QStringLiteral("pushButton_45"));
-        pushButton_45->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_45->setObjectName(QString::fromUtf8("pushButton_45"));
+        pushButton_45->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -919,8 +917,8 @@ public:
         gridLayout_3->addWidget(pushButton_45, 16, 4, 1, 1);
 
         mCbCableRf9 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf9->setObjectName(QStringLiteral("mCbCableRf9"));
-        mCbCableRf9->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf9->setObjectName(QString::fromUtf8("mCbCableRf9"));
+        mCbCableRf9->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -939,7 +937,7 @@ public:
         gridLayout_3->addWidget(mCbCableRf9, 10, 0, 1, 1);
 
         label_36 = new QLabel(scrollAreaWidgetContents);
-        label_36->setObjectName(QStringLiteral("label_36"));
+        label_36->setObjectName(QString::fromUtf8("label_36"));
         label_36->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/red_led.png")));
         label_36->setAlignment(Qt::AlignCenter);
         label_36->setWordWrap(false);
@@ -947,8 +945,8 @@ public:
         gridLayout_3->addWidget(label_36, 17, 3, 1, 1);
 
         mCbCableRf23 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf23->setObjectName(QStringLiteral("mCbCableRf23"));
-        mCbCableRf23->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf23->setObjectName(QString::fromUtf8("mCbCableRf23"));
+        mCbCableRf23->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -967,8 +965,8 @@ public:
         gridLayout_3->addWidget(mCbCableRf23, 25, 0, 1, 1);
 
         detailRf16 = new QPushButton(scrollAreaWidgetContents);
-        detailRf16->setObjectName(QStringLiteral("detailRf16"));
-        detailRf16->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf16->setObjectName(QString::fromUtf8("detailRf16"));
+        detailRf16->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -981,8 +979,8 @@ public:
         gridLayout_3->addWidget(detailRf16, 18, 1, 1, 1);
 
         pushButton_17 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_17->setObjectName(QStringLiteral("pushButton_17"));
-        pushButton_17->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_17->setObjectName(QString::fromUtf8("pushButton_17"));
+        pushButton_17->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -995,15 +993,15 @@ public:
         gridLayout_3->addWidget(pushButton_17, 8, 4, 1, 1);
 
         label_51 = new QLabel(scrollAreaWidgetContents);
-        label_51->setObjectName(QStringLiteral("label_51"));
+        label_51->setObjectName(QString::fromUtf8("label_51"));
         label_51->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorFail.png")));
         label_51->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_51, 25, 2, 1, 1);
 
         mCbCableRf10 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf10->setObjectName(QStringLiteral("mCbCableRf10"));
-        mCbCableRf10->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf10->setObjectName(QString::fromUtf8("mCbCableRf10"));
+        mCbCableRf10->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -1022,15 +1020,15 @@ public:
         gridLayout_3->addWidget(mCbCableRf10, 11, 0, 1, 1);
 
         label_30 = new QLabel(scrollAreaWidgetContents);
-        label_30->setObjectName(QStringLiteral("label_30"));
+        label_30->setObjectName(QString::fromUtf8("label_30"));
         label_30->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_30->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_30, 11, 3, 1, 1);
 
         mCbCableRf11 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf11->setObjectName(QStringLiteral("mCbCableRf11"));
-        mCbCableRf11->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf11->setObjectName(QString::fromUtf8("mCbCableRf11"));
+        mCbCableRf11->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -1049,22 +1047,22 @@ public:
         gridLayout_3->addWidget(mCbCableRf11, 12, 0, 1, 1);
 
         label_49 = new QLabel(scrollAreaWidgetContents);
-        label_49->setObjectName(QStringLiteral("label_49"));
+        label_49->setObjectName(QString::fromUtf8("label_49"));
         label_49->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorFail.png")));
         label_49->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_49, 24, 2, 1, 1);
 
         label_45 = new QLabel(scrollAreaWidgetContents);
-        label_45->setObjectName(QStringLiteral("label_45"));
+        label_45->setObjectName(QString::fromUtf8("label_45"));
         label_45->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorFail.png")));
         label_45->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_45, 22, 2, 1, 1);
 
         detailRf4 = new QPushButton(scrollAreaWidgetContents);
-        detailRf4->setObjectName(QStringLiteral("detailRf4"));
-        detailRf4->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf4->setObjectName(QString::fromUtf8("detailRf4"));
+        detailRf4->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1077,16 +1075,16 @@ public:
         gridLayout_3->addWidget(detailRf4, 5, 1, 1, 1);
 
         label_7 = new QLabel(scrollAreaWidgetContents);
-        label_7->setObjectName(QStringLiteral("label_7"));
-        label_7->setStyleSheet(QStringLiteral("background-color: none;"));
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setStyleSheet(QString::fromUtf8("background-color: none;"));
         label_7->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_7->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_7, 2, 2, 1, 1);
 
         detailRf17 = new QPushButton(scrollAreaWidgetContents);
-        detailRf17->setObjectName(QStringLiteral("detailRf17"));
-        detailRf17->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf17->setObjectName(QString::fromUtf8("detailRf17"));
+        detailRf17->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1099,36 +1097,36 @@ public:
         gridLayout_3->addWidget(detailRf17, 19, 1, 1, 1);
 
         label_19 = new QLabel(scrollAreaWidgetContents);
-        label_19->setObjectName(QStringLiteral("label_19"));
+        label_19->setObjectName(QString::fromUtf8("label_19"));
         label_19->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_19->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_19, 2, 3, 1, 1);
 
         label_21 = new QLabel(scrollAreaWidgetContents);
-        label_21->setObjectName(QStringLiteral("label_21"));
+        label_21->setObjectName(QString::fromUtf8("label_21"));
         label_21->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_21->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_21, 5, 3, 1, 1);
 
         label_37 = new QLabel(scrollAreaWidgetContents);
-        label_37->setObjectName(QStringLiteral("label_37"));
+        label_37->setObjectName(QString::fromUtf8("label_37"));
         label_37->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorFail.png")));
         label_37->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_37, 18, 2, 1, 1);
 
         label_27 = new QLabel(scrollAreaWidgetContents);
-        label_27->setObjectName(QStringLiteral("label_27"));
+        label_27->setObjectName(QString::fromUtf8("label_27"));
         label_27->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_27->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_27, 10, 3, 1, 1);
 
         pushButton_62 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_62->setObjectName(QStringLiteral("pushButton_62"));
-        pushButton_62->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_62->setObjectName(QString::fromUtf8("pushButton_62"));
+        pushButton_62->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1141,15 +1139,15 @@ public:
         gridLayout_3->addWidget(pushButton_62, 33, 4, 1, 1);
 
         label_39 = new QLabel(scrollAreaWidgetContents);
-        label_39->setObjectName(QStringLiteral("label_39"));
+        label_39->setObjectName(QString::fromUtf8("label_39"));
         label_39->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorFail.png")));
         label_39->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_39, 19, 2, 1, 1);
 
         detailRf1 = new QPushButton(scrollAreaWidgetContents);
-        detailRf1->setObjectName(QStringLiteral("detailRf1"));
-        detailRf1->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf1->setObjectName(QString::fromUtf8("detailRf1"));
+        detailRf1->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1162,8 +1160,8 @@ public:
         gridLayout_3->addWidget(detailRf1, 2, 1, 1, 1);
 
         detailRf6 = new QPushButton(scrollAreaWidgetContents);
-        detailRf6->setObjectName(QStringLiteral("detailRf6"));
-        detailRf6->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf6->setObjectName(QString::fromUtf8("detailRf6"));
+        detailRf6->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1176,21 +1174,21 @@ public:
         gridLayout_3->addWidget(detailRf6, 7, 1, 1, 1);
 
         label_23 = new QLabel(scrollAreaWidgetContents);
-        label_23->setObjectName(QStringLiteral("label_23"));
+        label_23->setObjectName(QString::fromUtf8("label_23"));
         label_23->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_23->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_23, 6, 3, 1, 1);
 
         label_32 = new QLabel(scrollAreaWidgetContents);
-        label_32->setObjectName(QStringLiteral("label_32"));
+        label_32->setObjectName(QString::fromUtf8("label_32"));
         label_32->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_32->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_32, 15, 3, 1, 1);
 
         label_44 = new QLabel(scrollAreaWidgetContents);
-        label_44->setObjectName(QStringLiteral("label_44"));
+        label_44->setObjectName(QString::fromUtf8("label_44"));
         label_44->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/red_led.png")));
         label_44->setAlignment(Qt::AlignCenter);
         label_44->setWordWrap(false);
@@ -1198,8 +1196,8 @@ public:
         gridLayout_3->addWidget(label_44, 21, 3, 1, 1);
 
         pushButton_19 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_19->setObjectName(QStringLiteral("pushButton_19"));
-        pushButton_19->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_19->setObjectName(QString::fromUtf8("pushButton_19"));
+        pushButton_19->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1212,8 +1210,8 @@ public:
         gridLayout_3->addWidget(pushButton_19, 7, 4, 1, 1);
 
         pushButton_57 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_57->setObjectName(QStringLiteral("pushButton_57"));
-        pushButton_57->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_57->setObjectName(QString::fromUtf8("pushButton_57"));
+        pushButton_57->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1226,8 +1224,8 @@ public:
         gridLayout_3->addWidget(pushButton_57, 28, 4, 1, 1);
 
         detailRf14 = new QPushButton(scrollAreaWidgetContents);
-        detailRf14->setObjectName(QStringLiteral("detailRf14"));
-        detailRf14->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf14->setObjectName(QString::fromUtf8("detailRf14"));
+        detailRf14->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1240,8 +1238,8 @@ public:
         gridLayout_3->addWidget(detailRf14, 16, 1, 1, 1);
 
         detailRf23 = new QPushButton(scrollAreaWidgetContents);
-        detailRf23->setObjectName(QStringLiteral("detailRf23"));
-        detailRf23->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf23->setObjectName(QString::fromUtf8("detailRf23"));
+        detailRf23->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1254,22 +1252,22 @@ public:
         gridLayout_3->addWidget(detailRf23, 25, 1, 1, 1);
 
         label_26 = new QLabel(scrollAreaWidgetContents);
-        label_26->setObjectName(QStringLiteral("label_26"));
+        label_26->setObjectName(QString::fromUtf8("label_26"));
         label_26->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_26->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_26, 7, 3, 1, 1);
 
         label_22 = new QLabel(scrollAreaWidgetContents);
-        label_22->setObjectName(QStringLiteral("label_22"));
+        label_22->setObjectName(QString::fromUtf8("label_22"));
         label_22->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_22->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_22, 3, 3, 1, 1);
 
         detailRf9 = new QPushButton(scrollAreaWidgetContents);
-        detailRf9->setObjectName(QStringLiteral("detailRf9"));
-        detailRf9->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf9->setObjectName(QString::fromUtf8("detailRf9"));
+        detailRf9->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1282,8 +1280,8 @@ public:
         gridLayout_3->addWidget(detailRf9, 10, 1, 1, 1);
 
         mCbCableRf21 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf21->setObjectName(QStringLiteral("mCbCableRf21"));
-        mCbCableRf21->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf21->setObjectName(QString::fromUtf8("mCbCableRf21"));
+        mCbCableRf21->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -1302,8 +1300,8 @@ public:
         gridLayout_3->addWidget(mCbCableRf21, 23, 0, 1, 1);
 
         mCbCableRf7 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf7->setObjectName(QStringLiteral("mCbCableRf7"));
-        mCbCableRf7->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf7->setObjectName(QString::fromUtf8("mCbCableRf7"));
+        mCbCableRf7->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -1322,8 +1320,8 @@ public:
         gridLayout_3->addWidget(mCbCableRf7, 8, 0, 1, 1);
 
         pushButton_44 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_44->setObjectName(QStringLiteral("pushButton_44"));
-        pushButton_44->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_44->setObjectName(QString::fromUtf8("pushButton_44"));
+        pushButton_44->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1336,8 +1334,8 @@ public:
         gridLayout_3->addWidget(pushButton_44, 15, 4, 1, 1);
 
         mCbCableRf4 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf4->setObjectName(QStringLiteral("mCbCableRf4"));
-        mCbCableRf4->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf4->setObjectName(QString::fromUtf8("mCbCableRf4"));
+        mCbCableRf4->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -1356,8 +1354,8 @@ public:
         gridLayout_3->addWidget(mCbCableRf4, 5, 0, 1, 1);
 
         pushButton_52 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_52->setObjectName(QStringLiteral("pushButton_52"));
-        pushButton_52->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_52->setObjectName(QString::fromUtf8("pushButton_52"));
+        pushButton_52->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1370,15 +1368,15 @@ public:
         gridLayout_3->addWidget(pushButton_52, 23, 4, 1, 1);
 
         label_53 = new QLabel(scrollAreaWidgetContents);
-        label_53->setObjectName(QStringLiteral("label_53"));
+        label_53->setObjectName(QString::fromUtf8("label_53"));
         label_53->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorFail.png")));
         label_53->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_53, 26, 2, 1, 1);
 
         pushButton_18 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_18->setObjectName(QStringLiteral("pushButton_18"));
-        pushButton_18->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_18->setObjectName(QString::fromUtf8("pushButton_18"));
+        pushButton_18->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1391,8 +1389,8 @@ public:
         gridLayout_3->addWidget(pushButton_18, 9, 4, 1, 1);
 
         pushButton_46 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_46->setObjectName(QStringLiteral("pushButton_46"));
-        pushButton_46->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_46->setObjectName(QString::fromUtf8("pushButton_46"));
+        pushButton_46->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1405,8 +1403,8 @@ public:
         gridLayout_3->addWidget(pushButton_46, 17, 4, 1, 1);
 
         detailRf3 = new QPushButton(scrollAreaWidgetContents);
-        detailRf3->setObjectName(QStringLiteral("detailRf3"));
-        detailRf3->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf3->setObjectName(QString::fromUtf8("detailRf3"));
+        detailRf3->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1419,8 +1417,8 @@ public:
         gridLayout_3->addWidget(detailRf3, 4, 1, 1, 1);
 
         detailRf15 = new QPushButton(scrollAreaWidgetContents);
-        detailRf15->setObjectName(QStringLiteral("detailRf15"));
-        detailRf15->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf15->setObjectName(QString::fromUtf8("detailRf15"));
+        detailRf15->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1433,8 +1431,8 @@ public:
         gridLayout_3->addWidget(detailRf15, 17, 1, 1, 1);
 
         pushButton_22 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_22->setObjectName(QStringLiteral("pushButton_22"));
-        pushButton_22->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_22->setObjectName(QString::fromUtf8("pushButton_22"));
+        pushButton_22->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1447,8 +1445,8 @@ public:
         gridLayout_3->addWidget(pushButton_22, 12, 4, 1, 1);
 
         mCbCableRf19 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf19->setObjectName(QStringLiteral("mCbCableRf19"));
-        mCbCableRf19->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf19->setObjectName(QString::fromUtf8("mCbCableRf19"));
+        mCbCableRf19->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -1467,8 +1465,8 @@ public:
         gridLayout_3->addWidget(mCbCableRf19, 21, 0, 1, 1);
 
         label_8 = new QLabel(scrollAreaWidgetContents);
-        label_8->setObjectName(QStringLiteral("label_8"));
-        label_8->setStyleSheet(QLatin1String("background-color:transparent;\n"
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "background-color: none;"));
         label_8->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_8->setAlignment(Qt::AlignCenter);
@@ -1476,7 +1474,7 @@ public:
         gridLayout_3->addWidget(label_8, 3, 2, 1, 1);
 
         label_56 = new QLabel(scrollAreaWidgetContents);
-        label_56->setObjectName(QStringLiteral("label_56"));
+        label_56->setObjectName(QString::fromUtf8("label_56"));
         label_56->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/red_led.png")));
         label_56->setAlignment(Qt::AlignCenter);
         label_56->setWordWrap(false);
@@ -1484,8 +1482,8 @@ public:
         gridLayout_3->addWidget(label_56, 27, 3, 1, 1);
 
         pushButton_61 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_61->setObjectName(QStringLiteral("pushButton_61"));
-        pushButton_61->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_61->setObjectName(QString::fromUtf8("pushButton_61"));
+        pushButton_61->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1498,8 +1496,8 @@ public:
         gridLayout_3->addWidget(pushButton_61, 32, 4, 1, 1);
 
         detailRf20 = new QPushButton(scrollAreaWidgetContents);
-        detailRf20->setObjectName(QStringLiteral("detailRf20"));
-        detailRf20->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf20->setObjectName(QString::fromUtf8("detailRf20"));
+        detailRf20->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1512,8 +1510,8 @@ public:
         gridLayout_3->addWidget(detailRf20, 22, 1, 1, 1);
 
         mCbCableRf25 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf25->setObjectName(QStringLiteral("mCbCableRf25"));
-        mCbCableRf25->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf25->setObjectName(QString::fromUtf8("mCbCableRf25"));
+        mCbCableRf25->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -1532,8 +1530,8 @@ public:
         gridLayout_3->addWidget(mCbCableRf25, 27, 0, 1, 1);
 
         mCbCableRf27 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf27->setObjectName(QStringLiteral("mCbCableRf27"));
-        mCbCableRf27->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf27->setObjectName(QString::fromUtf8("mCbCableRf27"));
+        mCbCableRf27->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -1552,15 +1550,15 @@ public:
         gridLayout_3->addWidget(mCbCableRf27, 29, 0, 1, 1);
 
         label_47 = new QLabel(scrollAreaWidgetContents);
-        label_47->setObjectName(QStringLiteral("label_47"));
+        label_47->setObjectName(QString::fromUtf8("label_47"));
         label_47->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorFail.png")));
         label_47->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_47, 23, 2, 1, 1);
 
         pushButton_55 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_55->setObjectName(QStringLiteral("pushButton_55"));
-        pushButton_55->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_55->setObjectName(QString::fromUtf8("pushButton_55"));
+        pushButton_55->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1573,8 +1571,8 @@ public:
         gridLayout_3->addWidget(pushButton_55, 26, 4, 1, 1);
 
         mCbCableRf28 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf28->setObjectName(QStringLiteral("mCbCableRf28"));
-        mCbCableRf28->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf28->setObjectName(QString::fromUtf8("mCbCableRf28"));
+        mCbCableRf28->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -1593,8 +1591,8 @@ public:
         gridLayout_3->addWidget(mCbCableRf28, 30, 0, 1, 1);
 
         mCbCableRf1 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf1->setObjectName(QStringLiteral("mCbCableRf1"));
-        mCbCableRf1->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf1->setObjectName(QString::fromUtf8("mCbCableRf1"));
+        mCbCableRf1->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -1613,15 +1611,15 @@ public:
         gridLayout_3->addWidget(mCbCableRf1, 2, 0, 1, 1);
 
         label_59 = new QLabel(scrollAreaWidgetContents);
-        label_59->setObjectName(QStringLiteral("label_59"));
+        label_59->setObjectName(QString::fromUtf8("label_59"));
         label_59->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_59->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_59, 29, 2, 1, 1);
 
         detailRf7 = new QPushButton(scrollAreaWidgetContents);
-        detailRf7->setObjectName(QStringLiteral("detailRf7"));
-        detailRf7->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf7->setObjectName(QString::fromUtf8("detailRf7"));
+        detailRf7->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1634,8 +1632,8 @@ public:
         gridLayout_3->addWidget(detailRf7, 8, 1, 1, 1);
 
         mCbCableRf2 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf2->setObjectName(QStringLiteral("mCbCableRf2"));
-        mCbCableRf2->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf2->setObjectName(QString::fromUtf8("mCbCableRf2"));
+        mCbCableRf2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -1654,7 +1652,7 @@ public:
         gridLayout_3->addWidget(mCbCableRf2, 3, 0, 1, 1);
 
         label_54 = new QLabel(scrollAreaWidgetContents);
-        label_54->setObjectName(QStringLiteral("label_54"));
+        label_54->setObjectName(QString::fromUtf8("label_54"));
         label_54->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/red_led.png")));
         label_54->setAlignment(Qt::AlignCenter);
         label_54->setWordWrap(false);
@@ -1662,8 +1660,8 @@ public:
         gridLayout_3->addWidget(label_54, 26, 3, 1, 1);
 
         mCbCableRf16 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf16->setObjectName(QStringLiteral("mCbCableRf16"));
-        mCbCableRf16->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf16->setObjectName(QString::fromUtf8("mCbCableRf16"));
+        mCbCableRf16->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -1682,14 +1680,14 @@ public:
         gridLayout_3->addWidget(mCbCableRf16, 18, 0, 1, 1);
 
         label_60 = new QLabel(scrollAreaWidgetContents);
-        label_60->setObjectName(QStringLiteral("label_60"));
+        label_60->setObjectName(QString::fromUtf8("label_60"));
         label_60->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_60->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_60, 29, 3, 1, 1);
 
         label_40 = new QLabel(scrollAreaWidgetContents);
-        label_40->setObjectName(QStringLiteral("label_40"));
+        label_40->setObjectName(QString::fromUtf8("label_40"));
         label_40->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/red_led.png")));
         label_40->setAlignment(Qt::AlignCenter);
         label_40->setWordWrap(false);
@@ -1697,7 +1695,7 @@ public:
         gridLayout_3->addWidget(label_40, 19, 3, 1, 1);
 
         label_48 = new QLabel(scrollAreaWidgetContents);
-        label_48->setObjectName(QStringLiteral("label_48"));
+        label_48->setObjectName(QString::fromUtf8("label_48"));
         label_48->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/red_led.png")));
         label_48->setAlignment(Qt::AlignCenter);
         label_48->setWordWrap(false);
@@ -1705,15 +1703,15 @@ public:
         gridLayout_3->addWidget(label_48, 23, 3, 1, 1);
 
         label_55 = new QLabel(scrollAreaWidgetContents);
-        label_55->setObjectName(QStringLiteral("label_55"));
+        label_55->setObjectName(QString::fromUtf8("label_55"));
         label_55->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorFail.png")));
         label_55->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_55, 27, 2, 1, 1);
 
         detailRf12 = new QPushButton(scrollAreaWidgetContents);
-        detailRf12->setObjectName(QStringLiteral("detailRf12"));
-        detailRf12->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf12->setObjectName(QString::fromUtf8("detailRf12"));
+        detailRf12->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1726,7 +1724,7 @@ public:
         gridLayout_3->addWidget(detailRf12, 13, 1, 1, 1);
 
         label_46 = new QLabel(scrollAreaWidgetContents);
-        label_46->setObjectName(QStringLiteral("label_46"));
+        label_46->setObjectName(QString::fromUtf8("label_46"));
         label_46->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/red_led.png")));
         label_46->setAlignment(Qt::AlignCenter);
         label_46->setWordWrap(false);
@@ -1734,8 +1732,8 @@ public:
         gridLayout_3->addWidget(label_46, 22, 3, 1, 1);
 
         pushButton_24 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_24->setObjectName(QStringLiteral("pushButton_24"));
-        pushButton_24->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_24->setObjectName(QString::fromUtf8("pushButton_24"));
+        pushButton_24->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1748,21 +1746,21 @@ public:
         gridLayout_3->addWidget(pushButton_24, 10, 4, 1, 1);
 
         label_13 = new QLabel(scrollAreaWidgetContents);
-        label_13->setObjectName(QStringLiteral("label_13"));
+        label_13->setObjectName(QString::fromUtf8("label_13"));
         label_13->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_13->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_13, 9, 2, 1, 1);
 
         label_67 = new QLabel(scrollAreaWidgetContents);
-        label_67->setObjectName(QStringLiteral("label_67"));
+        label_67->setObjectName(QString::fromUtf8("label_67"));
         label_67->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_67->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_67, 33, 2, 1, 1);
 
         label_52 = new QLabel(scrollAreaWidgetContents);
-        label_52->setObjectName(QStringLiteral("label_52"));
+        label_52->setObjectName(QString::fromUtf8("label_52"));
         label_52->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/red_led.png")));
         label_52->setAlignment(Qt::AlignCenter);
         label_52->setWordWrap(false);
@@ -1770,8 +1768,8 @@ public:
         gridLayout_3->addWidget(label_52, 25, 3, 1, 1);
 
         label_9 = new QLabel(scrollAreaWidgetContents);
-        label_9->setObjectName(QStringLiteral("label_9"));
-        label_9->setStyleSheet(QLatin1String("background-color:transparent;\n"
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+        label_9->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "background-color: none;"));
         label_9->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_9->setAlignment(Qt::AlignCenter);
@@ -1779,15 +1777,15 @@ public:
         gridLayout_3->addWidget(label_9, 4, 2, 1, 1);
 
         label_41 = new QLabel(scrollAreaWidgetContents);
-        label_41->setObjectName(QStringLiteral("label_41"));
+        label_41->setObjectName(QString::fromUtf8("label_41"));
         label_41->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorFail.png")));
         label_41->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_41, 20, 2, 1, 1);
 
         pushButton_49 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_49->setObjectName(QStringLiteral("pushButton_49"));
-        pushButton_49->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_49->setObjectName(QString::fromUtf8("pushButton_49"));
+        pushButton_49->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1800,15 +1798,15 @@ public:
         gridLayout_3->addWidget(pushButton_49, 20, 4, 1, 1);
 
         label_63 = new QLabel(scrollAreaWidgetContents);
-        label_63->setObjectName(QStringLiteral("label_63"));
+        label_63->setObjectName(QString::fromUtf8("label_63"));
         label_63->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_63->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_63, 31, 2, 1, 1);
 
         detailRf24 = new QPushButton(scrollAreaWidgetContents);
-        detailRf24->setObjectName(QStringLiteral("detailRf24"));
-        detailRf24->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf24->setObjectName(QString::fromUtf8("detailRf24"));
+        detailRf24->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1821,8 +1819,8 @@ public:
         gridLayout_3->addWidget(detailRf24, 26, 1, 1, 1);
 
         mCbCableRf8 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf8->setObjectName(QStringLiteral("mCbCableRf8"));
-        mCbCableRf8->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf8->setObjectName(QString::fromUtf8("mCbCableRf8"));
+        mCbCableRf8->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -1841,8 +1839,8 @@ public:
         gridLayout_3->addWidget(mCbCableRf8, 9, 0, 1, 1);
 
         detailRf5 = new QPushButton(scrollAreaWidgetContents);
-        detailRf5->setObjectName(QStringLiteral("detailRf5"));
-        detailRf5->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf5->setObjectName(QString::fromUtf8("detailRf5"));
+        detailRf5->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1855,8 +1853,8 @@ public:
         gridLayout_3->addWidget(detailRf5, 6, 1, 1, 1);
 
         pushButton_51 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_51->setObjectName(QStringLiteral("pushButton_51"));
-        pushButton_51->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_51->setObjectName(QString::fromUtf8("pushButton_51"));
+        pushButton_51->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1869,8 +1867,8 @@ public:
         gridLayout_3->addWidget(pushButton_51, 22, 4, 1, 1);
 
         pushButton_8 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_8->setObjectName(QStringLiteral("pushButton_8"));
-        pushButton_8->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_8->setObjectName(QString::fromUtf8("pushButton_8"));
+        pushButton_8->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1883,8 +1881,8 @@ public:
         gridLayout_3->addWidget(pushButton_8, 2, 4, 1, 1);
 
         mCbCableRf5 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf5->setObjectName(QStringLiteral("mCbCableRf5"));
-        mCbCableRf5->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf5->setObjectName(QString::fromUtf8("mCbCableRf5"));
+        mCbCableRf5->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -1903,8 +1901,8 @@ public:
         gridLayout_3->addWidget(mCbCableRf5, 6, 0, 1, 1);
 
         label_11 = new QLabel(scrollAreaWidgetContents);
-        label_11->setObjectName(QStringLiteral("label_11"));
-        label_11->setStyleSheet(QLatin1String("background-color:transparent;\n"
+        label_11->setObjectName(QString::fromUtf8("label_11"));
+        label_11->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "background-color: none;"));
         label_11->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_11->setAlignment(Qt::AlignCenter);
@@ -1912,7 +1910,7 @@ public:
         gridLayout_3->addWidget(label_11, 6, 2, 1, 1);
 
         label_38 = new QLabel(scrollAreaWidgetContents);
-        label_38->setObjectName(QStringLiteral("label_38"));
+        label_38->setObjectName(QString::fromUtf8("label_38"));
         label_38->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/red_led.png")));
         label_38->setAlignment(Qt::AlignCenter);
         label_38->setWordWrap(false);
@@ -1920,8 +1918,8 @@ public:
         gridLayout_3->addWidget(label_38, 18, 3, 1, 1);
 
         pushButton_50 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_50->setObjectName(QStringLiteral("pushButton_50"));
-        pushButton_50->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_50->setObjectName(QString::fromUtf8("pushButton_50"));
+        pushButton_50->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1934,8 +1932,8 @@ public:
         gridLayout_3->addWidget(pushButton_50, 21, 4, 1, 1);
 
         detailRf30 = new QPushButton(scrollAreaWidgetContents);
-        detailRf30->setObjectName(QStringLiteral("detailRf30"));
-        detailRf30->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf30->setObjectName(QString::fromUtf8("detailRf30"));
+        detailRf30->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1948,15 +1946,15 @@ public:
         gridLayout_3->addWidget(detailRf30, 32, 1, 1, 1);
 
         label_65 = new QLabel(scrollAreaWidgetContents);
-        label_65->setObjectName(QStringLiteral("label_65"));
+        label_65->setObjectName(QString::fromUtf8("label_65"));
         label_65->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_65->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_65, 32, 2, 1, 1);
 
         mCbCableRf13 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf13->setObjectName(QStringLiteral("mCbCableRf13"));
-        mCbCableRf13->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf13->setObjectName(QString::fromUtf8("mCbCableRf13"));
+        mCbCableRf13->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -1975,15 +1973,15 @@ public:
         gridLayout_3->addWidget(mCbCableRf13, 15, 0, 1, 1);
 
         label_16 = new QLabel(scrollAreaWidgetContents);
-        label_16->setObjectName(QStringLiteral("label_16"));
+        label_16->setObjectName(QString::fromUtf8("label_16"));
         label_16->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_16->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_16, 12, 2, 1, 1);
 
         pushButton_20 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_20->setObjectName(QStringLiteral("pushButton_20"));
-        pushButton_20->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_20->setObjectName(QString::fromUtf8("pushButton_20"));
+        pushButton_20->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -1996,8 +1994,8 @@ public:
         gridLayout_3->addWidget(pushButton_20, 6, 4, 1, 1);
 
         mCbCableRf17 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf17->setObjectName(QStringLiteral("mCbCableRf17"));
-        mCbCableRf17->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf17->setObjectName(QString::fromUtf8("mCbCableRf17"));
+        mCbCableRf17->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -2016,8 +2014,8 @@ public:
         gridLayout_3->addWidget(mCbCableRf17, 19, 0, 1, 1);
 
         mCbCableRf29 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf29->setObjectName(QStringLiteral("mCbCableRf29"));
-        mCbCableRf29->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf29->setObjectName(QString::fromUtf8("mCbCableRf29"));
+        mCbCableRf29->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -2036,15 +2034,15 @@ public:
         gridLayout_3->addWidget(mCbCableRf29, 31, 0, 1, 1);
 
         label_12 = new QLabel(scrollAreaWidgetContents);
-        label_12->setObjectName(QStringLiteral("label_12"));
+        label_12->setObjectName(QString::fromUtf8("label_12"));
         label_12->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_12->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_12, 8, 2, 1, 1);
 
         pushButton_47 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_47->setObjectName(QStringLiteral("pushButton_47"));
-        pushButton_47->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_47->setObjectName(QString::fromUtf8("pushButton_47"));
+        pushButton_47->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -2057,8 +2055,8 @@ public:
         gridLayout_3->addWidget(pushButton_47, 18, 4, 1, 1);
 
         mCbCableRf22 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf22->setObjectName(QStringLiteral("mCbCableRf22"));
-        mCbCableRf22->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf22->setObjectName(QString::fromUtf8("mCbCableRf22"));
+        mCbCableRf22->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -2077,8 +2075,8 @@ public:
         gridLayout_3->addWidget(mCbCableRf22, 24, 0, 1, 1);
 
         mCbCableRf20 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf20->setObjectName(QStringLiteral("mCbCableRf20"));
-        mCbCableRf20->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf20->setObjectName(QString::fromUtf8("mCbCableRf20"));
+        mCbCableRf20->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -2097,8 +2095,8 @@ public:
         gridLayout_3->addWidget(mCbCableRf20, 22, 0, 1, 1);
 
         pushButton_6 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
-        pushButton_6->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
+        pushButton_6->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -2111,8 +2109,8 @@ public:
         gridLayout_3->addWidget(pushButton_6, 5, 4, 1, 1);
 
         pushButton_58 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_58->setObjectName(QStringLiteral("pushButton_58"));
-        pushButton_58->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_58->setObjectName(QString::fromUtf8("pushButton_58"));
+        pushButton_58->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -2125,8 +2123,8 @@ public:
         gridLayout_3->addWidget(pushButton_58, 29, 4, 1, 1);
 
         detailRf18 = new QPushButton(scrollAreaWidgetContents);
-        detailRf18->setObjectName(QStringLiteral("detailRf18"));
-        detailRf18->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf18->setObjectName(QString::fromUtf8("detailRf18"));
+        detailRf18->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -2139,8 +2137,8 @@ public:
         gridLayout_3->addWidget(detailRf18, 20, 1, 1, 1);
 
         pushButton_60 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_60->setObjectName(QStringLiteral("pushButton_60"));
-        pushButton_60->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_60->setObjectName(QString::fromUtf8("pushButton_60"));
+        pushButton_60->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -2153,23 +2151,23 @@ public:
         gridLayout_3->addWidget(pushButton_60, 31, 4, 1, 1);
 
         label_66 = new QLabel(scrollAreaWidgetContents);
-        label_66->setObjectName(QStringLiteral("label_66"));
+        label_66->setObjectName(QString::fromUtf8("label_66"));
         label_66->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_66->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_66, 32, 3, 1, 1);
 
         label_20 = new QLabel(scrollAreaWidgetContents);
-        label_20->setObjectName(QStringLiteral("label_20"));
-        label_20->setStyleSheet(QStringLiteral(""));
+        label_20->setObjectName(QString::fromUtf8("label_20"));
+        label_20->setStyleSheet(QString::fromUtf8(""));
         label_20->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_20->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_20, 4, 3, 1, 1);
 
         detailRf2 = new QPushButton(scrollAreaWidgetContents);
-        detailRf2->setObjectName(QStringLiteral("detailRf2"));
-        detailRf2->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf2->setObjectName(QString::fromUtf8("detailRf2"));
+        detailRf2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -2182,7 +2180,7 @@ public:
         gridLayout_3->addWidget(detailRf2, 3, 1, 1, 1);
 
         label_42 = new QLabel(scrollAreaWidgetContents);
-        label_42->setObjectName(QStringLiteral("label_42"));
+        label_42->setObjectName(QString::fromUtf8("label_42"));
         label_42->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/red_led.png")));
         label_42->setAlignment(Qt::AlignCenter);
         label_42->setWordWrap(false);
@@ -2190,15 +2188,15 @@ public:
         gridLayout_3->addWidget(label_42, 20, 3, 1, 1);
 
         label_24 = new QLabel(scrollAreaWidgetContents);
-        label_24->setObjectName(QStringLiteral("label_24"));
+        label_24->setObjectName(QString::fromUtf8("label_24"));
         label_24->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_24->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_24, 8, 3, 1, 1);
 
         mCbCableRf15 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf15->setObjectName(QStringLiteral("mCbCableRf15"));
-        mCbCableRf15->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf15->setObjectName(QString::fromUtf8("mCbCableRf15"));
+        mCbCableRf15->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -2217,7 +2215,7 @@ public:
         gridLayout_3->addWidget(mCbCableRf15, 17, 0, 1, 1);
 
         label_58 = new QLabel(scrollAreaWidgetContents);
-        label_58->setObjectName(QStringLiteral("label_58"));
+        label_58->setObjectName(QString::fromUtf8("label_58"));
         label_58->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/red_led.png")));
         label_58->setAlignment(Qt::AlignCenter);
         label_58->setWordWrap(false);
@@ -2225,8 +2223,8 @@ public:
         gridLayout_3->addWidget(label_58, 28, 3, 1, 1);
 
         mCbCableRf12 = new QCheckBox(scrollAreaWidgetContents);
-        mCbCableRf12->setObjectName(QStringLiteral("mCbCableRf12"));
-        mCbCableRf12->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbCableRf12->setObjectName(QString::fromUtf8("mCbCableRf12"));
+        mCbCableRf12->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -2245,22 +2243,22 @@ public:
         gridLayout_3->addWidget(mCbCableRf12, 13, 0, 1, 1);
 
         label_57 = new QLabel(scrollAreaWidgetContents);
-        label_57->setObjectName(QStringLiteral("label_57"));
+        label_57->setObjectName(QString::fromUtf8("label_57"));
         label_57->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorFail.png")));
         label_57->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_57, 28, 2, 1, 1);
 
         label_17 = new QLabel(scrollAreaWidgetContents);
-        label_17->setObjectName(QStringLiteral("label_17"));
+        label_17->setObjectName(QString::fromUtf8("label_17"));
         label_17->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_17->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_17, 13, 2, 1, 1);
 
         pushButton_7 = new QPushButton(scrollAreaWidgetContents);
-        pushButton_7->setObjectName(QStringLiteral("pushButton_7"));
-        pushButton_7->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
+        pushButton_7->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -2273,10 +2271,10 @@ public:
         gridLayout_3->addWidget(pushButton_7, 3, 4, 1, 1);
 
         line_3 = new QFrame(scrollAreaWidgetContents);
-        line_3->setObjectName(QStringLiteral("line_3"));
+        line_3->setObjectName(QString::fromUtf8("line_3"));
         sizePolicy.setHeightForWidth(line_3->sizePolicy().hasHeightForWidth());
         line_3->setSizePolicy(sizePolicy);
-        line_3->setStyleSheet(QLatin1String("Line {\n"
+        line_3->setStyleSheet(QString::fromUtf8("Line {\n"
 "	Background-color: rgb(0, 69,138);\n"
 "	border:none;\n"
 "}"));
@@ -2286,8 +2284,8 @@ public:
         gridLayout_3->addWidget(line_3, 0, 2, 1, 3);
 
         detailRf8 = new QPushButton(scrollAreaWidgetContents);
-        detailRf8->setObjectName(QStringLiteral("detailRf8"));
-        detailRf8->setStyleSheet(QLatin1String("QPushButton::hover\n"
+        detailRf8->setObjectName(QString::fromUtf8("detailRf8"));
+        detailRf8->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
 "{\n"
 "   background-color:rgba(179,192,217);\n"
 "  	border:none;\n"
@@ -2300,15 +2298,15 @@ public:
         gridLayout_3->addWidget(detailRf8, 9, 1, 1, 1);
 
         label_62 = new QLabel(scrollAreaWidgetContents);
-        label_62->setObjectName(QStringLiteral("label_62"));
+        label_62->setObjectName(QString::fromUtf8("label_62"));
         label_62->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_62->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_62, 30, 3, 1, 1);
 
         mCbRfAll = new QCheckBox(scrollAreaWidgetContents);
-        mCbRfAll->setObjectName(QStringLiteral("mCbRfAll"));
-        mCbRfAll->setStyleSheet(QLatin1String("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
+        mCbRfAll->setObjectName(QString::fromUtf8("mCbRfAll"));
+        mCbRfAll->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 9pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
 "	image: url(\":/Test/images/box/box_blank_small.png\");\n"
@@ -2512,21 +2510,21 @@ public:
         gridLayout->addWidget(frame_2, 0, 1, 2, 1);
 
         frame_4 = new QFrame(TestRfCable);
-        frame_4->setObjectName(QStringLiteral("frame_4"));
-        frame_4->setStyleSheet(QStringLiteral("background-color: rgba(194,204,205);"));
+        frame_4->setObjectName(QString::fromUtf8("frame_4"));
+        frame_4->setStyleSheet(QString::fromUtf8("background-color: rgba(194,204,205);"));
         frame_4->setFrameShape(QFrame::StyledPanel);
         frame_4->setFrameShadow(QFrame::Raised);
         gridLayout_4 = new QGridLayout(frame_4);
-        gridLayout_4->setObjectName(QStringLiteral("gridLayout_4"));
+        gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
         label = new QLabel(frame_4);
-        label->setObjectName(QStringLiteral("label"));
-        label->setStyleSheet(QLatin1String("color: rgb(49, 62, 70);\n"
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setStyleSheet(QString::fromUtf8("color: rgb(49, 62, 70);\n"
 "font: 87 24pt \"Myriad Pro\"; font:bold;"));
 
         gridLayout_4->addWidget(label, 0, 1, 1, 1);
 
         label_69 = new QLabel(frame_4);
-        label_69->setObjectName(QStringLiteral("label_69"));
+        label_69->setObjectName(QString::fromUtf8("label_69"));
         label_69->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/logo_small.png")));
         label_69->setAlignment(Qt::AlignCenter);
 
@@ -2538,29 +2536,29 @@ public:
         gridLayout->addWidget(frame_4, 0, 0, 1, 1);
 
         frame = new QFrame(TestRfCable);
-        frame->setObjectName(QStringLiteral("frame"));
-        frame->setStyleSheet(QStringLiteral(""));
+        frame->setObjectName(QString::fromUtf8("frame"));
+        frame->setStyleSheet(QString::fromUtf8(""));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
         gridLayout_7 = new QGridLayout(frame);
         gridLayout_7->setSpacing(0);
-        gridLayout_7->setObjectName(QStringLiteral("gridLayout_7"));
+        gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
         gridLayout_7->setContentsMargins(0, 0, 0, 0);
         frame_7 = new QFrame(frame);
-        frame_7->setObjectName(QStringLiteral("frame_7"));
+        frame_7->setObjectName(QString::fromUtf8("frame_7"));
         frame_7->setFrameShape(QFrame::StyledPanel);
         frame_7->setFrameShadow(QFrame::Raised);
         gridLayout_8 = new QGridLayout(frame_7);
         gridLayout_8->setSpacing(0);
-        gridLayout_8->setObjectName(QStringLiteral("gridLayout_8"));
+        gridLayout_8->setObjectName(QString::fromUtf8("gridLayout_8"));
         gridLayout_8->setContentsMargins(0, 0, 0, 0);
         pdfRfShow = new QWidget(frame_7);
-        pdfRfShow->setObjectName(QStringLiteral("pdfRfShow"));
+        pdfRfShow->setObjectName(QString::fromUtf8("pdfRfShow"));
 
         gridLayout_8->addWidget(pdfRfShow, 0, 0, 1, 1);
 
         gRfSignal = new QWidget(frame_7);
-        gRfSignal->setObjectName(QStringLiteral("gRfSignal"));
+        gRfSignal->setObjectName(QString::fromUtf8("gRfSignal"));
 
         gridLayout_8->addWidget(gRfSignal, 1, 0, 1, 1);
 
@@ -2574,8 +2572,8 @@ public:
         gridLayout->addWidget(frame, 1, 0, 2, 1);
 
         frame_3 = new QFrame(TestRfCable);
-        frame_3->setObjectName(QStringLiteral("frame_3"));
-        frame_3->setStyleSheet(QLatin1String("QFrame\n"
+        frame_3->setObjectName(QString::fromUtf8("frame_3"));
+        frame_3->setStyleSheet(QString::fromUtf8("QFrame\n"
 "{\n"
 "font: 87 10pt \"Sans\"; \n"
 "font:bold;\n"
@@ -2586,11 +2584,11 @@ public:
         frame_3->setFrameShadow(QFrame::Raised);
         gridLayout_9 = new QGridLayout(frame_3);
         gridLayout_9->setSpacing(1);
-        gridLayout_9->setObjectName(QStringLiteral("gridLayout_9"));
+        gridLayout_9->setObjectName(QString::fromUtf8("gridLayout_9"));
         gridLayout_9->setContentsMargins(0, 0, 0, 0);
         label_2 = new QLabel(frame_3);
-        label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setStyleSheet(QLatin1String("color: rgb(49, 62, 70);\n"
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setStyleSheet(QString::fromUtf8("color: rgb(49, 62, 70);\n"
 "font: 87 10pt \"Myriad Pro\";\n"
 "font: bold;\n"
 ""));
@@ -2598,8 +2596,8 @@ public:
         gridLayout_9->addWidget(label_2, 0, 0, 1, 1);
 
         frame_5 = new QFrame(frame_3);
-        frame_5->setObjectName(QStringLiteral("frame_5"));
-        frame_5->setStyleSheet(QLatin1String("QFrame\n"
+        frame_5->setObjectName(QString::fromUtf8("frame_5"));
+        frame_5->setStyleSheet(QString::fromUtf8("QFrame\n"
 "{\n"
 "font: 87 10pt \"Sans\"; \n"
 "font:bold;\n"
@@ -2613,8 +2611,8 @@ public:
         gridLayout_9->addWidget(frame_5, 1, 0, 1, 1);
 
         progressBar = new QProgressBar(frame_3);
-        progressBar->setObjectName(QStringLiteral("progressBar"));
-        progressBar->setStyleSheet(QLatin1String("background-color:rgba(97, 137, 147, 55);\n"
+        progressBar->setObjectName(QString::fromUtf8("progressBar"));
+        progressBar->setStyleSheet(QString::fromUtf8("background-color:rgba(97, 137, 147, 55);\n"
 "font: 8pt \"Waree\";\n"
 "color: rgb(13, 52, 62);\n"
 "border: none;\n"
@@ -2627,8 +2625,8 @@ public:
         gridLayout_9->addWidget(progressBar, 2, 0, 1, 1);
 
         frame_6 = new QFrame(frame_3);
-        frame_6->setObjectName(QStringLiteral("frame_6"));
-        frame_6->setStyleSheet(QLatin1String("QFrame\n"
+        frame_6->setObjectName(QString::fromUtf8("frame_6"));
+        frame_6->setStyleSheet(QString::fromUtf8("QFrame\n"
 "{\n"
 "font: 87 10pt \"Sans\"; \n"
 "font:bold;\n"
@@ -2640,16 +2638,16 @@ public:
         frame_6->setFrameShadow(QFrame::Raised);
         gridLayout_6 = new QGridLayout(frame_6);
         gridLayout_6->setSpacing(1);
-        gridLayout_6->setObjectName(QStringLiteral("gridLayout_6"));
+        gridLayout_6->setObjectName(QString::fromUtf8("gridLayout_6"));
         gridLayout_6->setContentsMargins(0, 0, 0, 0);
         btnGuidleRfte = new QPushButton(frame_6);
-        btnGuidleRfte->setObjectName(QStringLiteral("btnGuidleRfte"));
+        btnGuidleRfte->setObjectName(QString::fromUtf8("btnGuidleRfte"));
         QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Preferred);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(btnGuidleRfte->sizePolicy().hasHeightForWidth());
         btnGuidleRfte->setSizePolicy(sizePolicy1);
-        btnGuidleRfte->setStyleSheet(QLatin1String("QPushButton\n"
+        btnGuidleRfte->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
@@ -2666,17 +2664,17 @@ public:
 "  	outline:none;\n"
 "}"));
         QIcon icon3;
-        icon3.addFile(QStringLiteral(":/Test/images/button/guidle_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon3.addFile(QString::fromUtf8(":/Test/images/button/guidle_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
         btnGuidleRfte->setIcon(icon3);
         btnGuidleRfte->setIconSize(QSize(20, 20));
 
         gridLayout_6->addWidget(btnGuidleRfte, 0, 0, 1, 1);
 
         btnImportRfte = new QPushButton(frame_6);
-        btnImportRfte->setObjectName(QStringLiteral("btnImportRfte"));
+        btnImportRfte->setObjectName(QString::fromUtf8("btnImportRfte"));
         sizePolicy1.setHeightForWidth(btnImportRfte->sizePolicy().hasHeightForWidth());
         btnImportRfte->setSizePolicy(sizePolicy1);
-        btnImportRfte->setStyleSheet(QLatin1String("QPushButton\n"
+        btnImportRfte->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
@@ -2693,17 +2691,17 @@ public:
 "  	outline:none;\n"
 "}"));
         QIcon icon4;
-        icon4.addFile(QStringLiteral(":/Test/images/button/import_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon4.addFile(QString::fromUtf8(":/Test/images/button/import_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
         btnImportRfte->setIcon(icon4);
         btnImportRfte->setIconSize(QSize(20, 20));
 
         gridLayout_6->addWidget(btnImportRfte, 1, 0, 1, 1);
 
         btnLogRfte = new QPushButton(frame_6);
-        btnLogRfte->setObjectName(QStringLiteral("btnLogRfte"));
+        btnLogRfte->setObjectName(QString::fromUtf8("btnLogRfte"));
         sizePolicy1.setHeightForWidth(btnLogRfte->sizePolicy().hasHeightForWidth());
         btnLogRfte->setSizePolicy(sizePolicy1);
-        btnLogRfte->setStyleSheet(QLatin1String("QPushButton\n"
+        btnLogRfte->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
@@ -2720,17 +2718,17 @@ public:
 "  	outline:none;\n"
 "}"));
         QIcon icon5;
-        icon5.addFile(QStringLiteral(":/Test/images/button/log_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon5.addFile(QString::fromUtf8(":/Test/images/button/log_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
         btnLogRfte->setIcon(icon5);
         btnLogRfte->setIconSize(QSize(20, 20));
 
         gridLayout_6->addWidget(btnLogRfte, 2, 0, 1, 1);
 
         btnExportRfte = new QPushButton(frame_6);
-        btnExportRfte->setObjectName(QStringLiteral("btnExportRfte"));
+        btnExportRfte->setObjectName(QString::fromUtf8("btnExportRfte"));
         sizePolicy1.setHeightForWidth(btnExportRfte->sizePolicy().hasHeightForWidth());
         btnExportRfte->setSizePolicy(sizePolicy1);
-        btnExportRfte->setStyleSheet(QLatin1String("QPushButton\n"
+        btnExportRfte->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
@@ -2747,17 +2745,17 @@ public:
 "  	outline:none;\n"
 "}"));
         QIcon icon6;
-        icon6.addFile(QStringLiteral(":/Test/images/button/export_icon2.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon6.addFile(QString::fromUtf8(":/Test/images/button/preview.png"), QSize(), QIcon::Normal, QIcon::Off);
         btnExportRfte->setIcon(icon6);
         btnExportRfte->setIconSize(QSize(20, 20));
 
         gridLayout_6->addWidget(btnExportRfte, 3, 0, 1, 1);
 
         btnPrintRfte = new QPushButton(frame_6);
-        btnPrintRfte->setObjectName(QStringLiteral("btnPrintRfte"));
+        btnPrintRfte->setObjectName(QString::fromUtf8("btnPrintRfte"));
         sizePolicy1.setHeightForWidth(btnPrintRfte->sizePolicy().hasHeightForWidth());
         btnPrintRfte->setSizePolicy(sizePolicy1);
-        btnPrintRfte->setStyleSheet(QLatin1String("QPushButton\n"
+        btnPrintRfte->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
@@ -2774,7 +2772,7 @@ public:
 "  	outline:none;\n"
 "}"));
         QIcon icon7;
-        icon7.addFile(QStringLiteral(":/Test/images/button/print-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon7.addFile(QString::fromUtf8(":/Test/images/button/export_icon2.png"), QSize(), QIcon::Normal, QIcon::Off);
         btnPrintRfte->setIcon(icon7);
         btnPrintRfte->setIconSize(QSize(20, 20));
 
@@ -2782,11 +2780,11 @@ public:
 
         gridLayout_5 = new QGridLayout();
         gridLayout_5->setSpacing(1);
-        gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
+        gridLayout_5->setObjectName(QString::fromUtf8("gridLayout_5"));
         btnUndoRfte = new QPushButton(frame_6);
-        btnUndoRfte->setObjectName(QStringLiteral("btnUndoRfte"));
+        btnUndoRfte->setObjectName(QString::fromUtf8("btnUndoRfte"));
         btnUndoRfte->setMinimumSize(QSize(0, 35));
-        btnUndoRfte->setStyleSheet(QLatin1String("QPushButton\n"
+        btnUndoRfte->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
@@ -2803,18 +2801,18 @@ public:
 "  	outline:none;\n"
 "}"));
         QIcon icon8;
-        icon8.addFile(QStringLiteral(":/Test/images/button/back_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon8.addFile(QString::fromUtf8(":/Test/images/button/back_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
         btnUndoRfte->setIcon(icon8);
         btnUndoRfte->setIconSize(QSize(20, 20));
 
         gridLayout_5->addWidget(btnUndoRfte, 0, 0, 1, 1);
 
         btnRunRfte = new QPushButton(frame_6);
-        btnRunRfte->setObjectName(QStringLiteral("btnRunRfte"));
+        btnRunRfte->setObjectName(QString::fromUtf8("btnRunRfte"));
         sizePolicy1.setHeightForWidth(btnRunRfte->sizePolicy().hasHeightForWidth());
         btnRunRfte->setSizePolicy(sizePolicy1);
         btnRunRfte->setMinimumSize(QSize(0, 35));
-        btnRunRfte->setStyleSheet(QLatin1String("QPushButton\n"
+        btnRunRfte->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
@@ -2831,7 +2829,7 @@ public:
 "  	outline:none;\n"
 "}"));
         QIcon icon9;
-        icon9.addFile(QStringLiteral(":/Test/images/button/start_icon_3.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon9.addFile(QString::fromUtf8(":/Test/images/button/start_icon_3.png"), QSize(), QIcon::Normal, QIcon::Off);
         btnRunRfte->setIcon(icon9);
         btnRunRfte->setIconSize(QSize(20, 20));
 
@@ -2843,11 +2841,11 @@ public:
         gridLayout_6->addLayout(gridLayout_5, 5, 0, 1, 1);
 
         btnStopRfte = new QPushButton(frame_6);
-        btnStopRfte->setObjectName(QStringLiteral("btnStopRfte"));
+        btnStopRfte->setObjectName(QString::fromUtf8("btnStopRfte"));
         btnStopRfte->setEnabled(false);
         sizePolicy1.setHeightForWidth(btnStopRfte->sizePolicy().hasHeightForWidth());
         btnStopRfte->setSizePolicy(sizePolicy1);
-        btnStopRfte->setStyleSheet(QLatin1String("QPushButton\n"
+        btnStopRfte->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "border-color: rgb(49, 67, 100);\n"
 "color: rgb(49,67,100);\n"
@@ -2864,7 +2862,7 @@ public:
 "  	outline:none;\n"
 "}"));
         QIcon icon10;
-        icon10.addFile(QStringLiteral(":/Test/images/button/Stop_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon10.addFile(QString::fromUtf8(":/Test/images/button/Stop_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
         btnStopRfte->setIcon(icon10);
         btnStopRfte->setIconSize(QSize(25, 25));
 
@@ -2893,68 +2891,68 @@ public:
 
     void retranslateUi(QWidget *TestRfCable)
     {
-        TestRfCable->setWindowTitle(QApplication::translate("TestRfCable", "Form", Q_NULLPTR));
-        label_70->setText(QApplication::translate("TestRfCable", "  Select RF Cable", Q_NULLPTR));
+        TestRfCable->setWindowTitle(QCoreApplication::translate("TestRfCable", "Form", nullptr));
+        label_70->setText(QCoreApplication::translate("TestRfCable", "  Select RF Cable", nullptr));
         label_3->setText(QString());
-        label_71->setText(QApplication::translate("TestRfCable", "Detail", Q_NULLPTR));
+        label_71->setText(QCoreApplication::translate("TestRfCable", "Detail", nullptr));
         label_4->setText(QString());
-        label_75->setText(QApplication::translate("TestRfCable", "Result", Q_NULLPTR));
+        label_75->setText(QCoreApplication::translate("TestRfCable", "Result", nullptr));
         label_5->setText(QString());
         pushButton_63->setText(QString());
         label_28->setText(QString());
         detailRf21->setText(QString());
         label_25->setText(QString());
-        mCbCableRf3->setText(QApplication::translate("TestRfCable", "Cable RF3", Q_NULLPTR));
+        mCbCableRf3->setText(QCoreApplication::translate("TestRfCable", "Cable RF3", nullptr));
         detailRf10->setText(QString());
         pushButton_48->setText(QString());
         label_35->setText(QString());
         label_50->setText(QString());
         pushButton_23->setText(QString());
         detailRf28->setText(QString());
-        mCbCableRf31->setText(QApplication::translate("TestRfCable", "Cable RF31", Q_NULLPTR));
+        mCbCableRf31->setText(QCoreApplication::translate("TestRfCable", "Cable RF31", nullptr));
         pushButton_53->setText(QString());
         label_64->setText(QString());
         label_14->setText(QString());
         detailRf29->setText(QString());
         detailRf31->setText(QString());
         label_68->setText(QString());
-        mCbCableRf30->setText(QApplication::translate("TestRfCable", "Cable RF30", Q_NULLPTR));
+        mCbCableRf30->setText(QCoreApplication::translate("TestRfCable", "Cable RF30", nullptr));
         label_15->setText(QString());
         pushButton_59->setText(QString());
         label_31->setText(QString());
         pushButton_21->setText(QString());
         pushButton_56->setText(QString());
-        mCbCableRf18->setText(QApplication::translate("TestRfCable", "Cable RF18", Q_NULLPTR));
+        mCbCableRf18->setText(QCoreApplication::translate("TestRfCable", "Cable RF18", nullptr));
         label_34->setText(QString());
-        mCbCableRf24->setText(QApplication::translate("TestRfCable", "Cable RF24", Q_NULLPTR));
+        mCbCableRf24->setText(QCoreApplication::translate("TestRfCable", "Cable RF24", nullptr));
         label_61->setText(QString());
         label_33->setText(QString());
         detailRf27->setText(QString());
         detailRf19->setText(QString());
-        mCbCableRf26->setText(QApplication::translate("TestRfCable", "Cable RF26", Q_NULLPTR));
+        mCbCableRf26->setText(QCoreApplication::translate("TestRfCable", "Cable RF26", nullptr));
         label_10->setText(QString());
         label_29->setText(QString());
         label_18->setText(QString());
-        mCbCableRf6->setText(QApplication::translate("TestRfCable", "Cable RF6", Q_NULLPTR));
+        mCbCableRf6->setText(QCoreApplication::translate("TestRfCable", "Cable RF6", nullptr));
         detailRf25->setText(QString());
         detailRf26->setText(QString());
         detailRf13->setText(QString());
         detailRf22->setText(QString());
-        mCbCableRf14->setText(QApplication::translate("TestRfCable", "Cable RF14", Q_NULLPTR));
+        mCbCableRf14->setText(QCoreApplication::translate("TestRfCable", "Cable RF14", nullptr));
         pushButton_5->setText(QString());
         detailRf11->setText(QString());
         label_43->setText(QString());
         pushButton_54->setText(QString());
         pushButton_45->setText(QString());
-        mCbCableRf9->setText(QApplication::translate("TestRfCable", "Cable RF9", Q_NULLPTR));
+        mCbCableRf9->setText(QCoreApplication::translate("TestRfCable", "Cable RF9", nullptr));
         label_36->setText(QString());
-        mCbCableRf23->setText(QApplication::translate("TestRfCable", "Cable RF23", Q_NULLPTR));
+        mCbCableRf23->setText(QCoreApplication::translate("TestRfCable", "Cable RF23", nullptr));
         detailRf16->setText(QString());
         pushButton_17->setText(QString());
         label_51->setText(QString());
-        mCbCableRf10->setText(QApplication::translate("TestRfCable", "Cable RF10", Q_NULLPTR));
+        mCbCableRf10->setText(QCoreApplication::translate("TestRfCable", "Cable RF10", nullptr));
         label_30->setText(QString());
-        mCbCableRf11->setText(QApplication::translate("TestRfCable", "Cable RF11", Q_NULLPTR));
+        mCbCableRf11->setText(QCoreApplication::translate("TestRfCable", "Cable RF11", nullptr));
         label_49->setText(QString());
         label_45->setText(QString());
         detailRf4->setText(QString());
@@ -2978,10 +2976,10 @@ public:
         label_26->setText(QString());
         label_22->setText(QString());
         detailRf9->setText(QString());
-        mCbCableRf21->setText(QApplication::translate("TestRfCable", "Cable RF21", Q_NULLPTR));
-        mCbCableRf7->setText(QApplication::translate("TestRfCable", "Cable RF7", Q_NULLPTR));
+        mCbCableRf21->setText(QCoreApplication::translate("TestRfCable", "Cable RF21", nullptr));
+        mCbCableRf7->setText(QCoreApplication::translate("TestRfCable", "Cable RF7", nullptr));
         pushButton_44->setText(QString());
-        mCbCableRf4->setText(QApplication::translate("TestRfCable", "Cable RF4", Q_NULLPTR));
+        mCbCableRf4->setText(QCoreApplication::translate("TestRfCable", "Cable RF4", nullptr));
         pushButton_52->setText(QString());
         label_53->setText(QString());
         pushButton_18->setText(QString());
@@ -2989,22 +2987,22 @@ public:
         detailRf3->setText(QString());
         detailRf15->setText(QString());
         pushButton_22->setText(QString());
-        mCbCableRf19->setText(QApplication::translate("TestRfCable", "Cable RF19", Q_NULLPTR));
+        mCbCableRf19->setText(QCoreApplication::translate("TestRfCable", "Cable RF19", nullptr));
         label_8->setText(QString());
         label_56->setText(QString());
         pushButton_61->setText(QString());
         detailRf20->setText(QString());
-        mCbCableRf25->setText(QApplication::translate("TestRfCable", "Cable RF25", Q_NULLPTR));
-        mCbCableRf27->setText(QApplication::translate("TestRfCable", "Cable RF27", Q_NULLPTR));
+        mCbCableRf25->setText(QCoreApplication::translate("TestRfCable", "Cable RF25", nullptr));
+        mCbCableRf27->setText(QCoreApplication::translate("TestRfCable", "Cable RF27", nullptr));
         label_47->setText(QString());
         pushButton_55->setText(QString());
-        mCbCableRf28->setText(QApplication::translate("TestRfCable", "Cable RF28", Q_NULLPTR));
-        mCbCableRf1->setText(QApplication::translate("TestRfCable", "Cable RF1", Q_NULLPTR));
+        mCbCableRf28->setText(QCoreApplication::translate("TestRfCable", "Cable RF28", nullptr));
+        mCbCableRf1->setText(QCoreApplication::translate("TestRfCable", "Cable RF1", nullptr));
         label_59->setText(QString());
         detailRf7->setText(QString());
-        mCbCableRf2->setText(QApplication::translate("TestRfCable", "Cable RF2", Q_NULLPTR));
+        mCbCableRf2->setText(QCoreApplication::translate("TestRfCable", "Cable RF2", nullptr));
         label_54->setText(QString());
-        mCbCableRf16->setText(QApplication::translate("TestRfCable", "Cable RF16", Q_NULLPTR));
+        mCbCableRf16->setText(QCoreApplication::translate("TestRfCable", "Cable RF16", nullptr));
         label_60->setText(QString());
         label_40->setText(QString());
         label_48->setText(QString());
@@ -3020,25 +3018,25 @@ public:
         pushButton_49->setText(QString());
         label_63->setText(QString());
         detailRf24->setText(QString());
-        mCbCableRf8->setText(QApplication::translate("TestRfCable", "Cable RF8", Q_NULLPTR));
+        mCbCableRf8->setText(QCoreApplication::translate("TestRfCable", "Cable RF8", nullptr));
         detailRf5->setText(QString());
         pushButton_51->setText(QString());
         pushButton_8->setText(QString());
-        mCbCableRf5->setText(QApplication::translate("TestRfCable", "Cable RF5", Q_NULLPTR));
+        mCbCableRf5->setText(QCoreApplication::translate("TestRfCable", "Cable RF5", nullptr));
         label_11->setText(QString());
         label_38->setText(QString());
         pushButton_50->setText(QString());
         detailRf30->setText(QString());
         label_65->setText(QString());
-        mCbCableRf13->setText(QApplication::translate("TestRfCable", "Cable RF13", Q_NULLPTR));
+        mCbCableRf13->setText(QCoreApplication::translate("TestRfCable", "Cable RF13", nullptr));
         label_16->setText(QString());
         pushButton_20->setText(QString());
-        mCbCableRf17->setText(QApplication::translate("TestRfCable", "Cable RF17", Q_NULLPTR));
-        mCbCableRf29->setText(QApplication::translate("TestRfCable", "Cable RF29", Q_NULLPTR));
+        mCbCableRf17->setText(QCoreApplication::translate("TestRfCable", "Cable RF17", nullptr));
+        mCbCableRf29->setText(QCoreApplication::translate("TestRfCable", "Cable RF29", nullptr));
         label_12->setText(QString());
         pushButton_47->setText(QString());
-        mCbCableRf22->setText(QApplication::translate("TestRfCable", "Cable RF22", Q_NULLPTR));
-        mCbCableRf20->setText(QApplication::translate("TestRfCable", "Cable RF20", Q_NULLPTR));
+        mCbCableRf22->setText(QCoreApplication::translate("TestRfCable", "Cable RF22", nullptr));
+        mCbCableRf20->setText(QCoreApplication::translate("TestRfCable", "Cable RF20", nullptr));
         pushButton_6->setText(QString());
         pushButton_58->setText(QString());
         detailRf18->setText(QString());
@@ -3048,26 +3046,26 @@ public:
         detailRf2->setText(QString());
         label_42->setText(QString());
         label_24->setText(QString());
-        mCbCableRf15->setText(QApplication::translate("TestRfCable", "Cable RF15", Q_NULLPTR));
+        mCbCableRf15->setText(QCoreApplication::translate("TestRfCable", "Cable RF15", nullptr));
         label_58->setText(QString());
-        mCbCableRf12->setText(QApplication::translate("TestRfCable", "Cable RF12", Q_NULLPTR));
+        mCbCableRf12->setText(QCoreApplication::translate("TestRfCable", "Cable RF12", nullptr));
         label_57->setText(QString());
         label_17->setText(QString());
         pushButton_7->setText(QString());
         detailRf8->setText(QString());
         label_62->setText(QString());
-        mCbRfAll->setText(QApplication::translate("TestRfCable", "ALL", Q_NULLPTR));
-        label->setText(QApplication::translate("TestRfCable", "Test RF Cable", Q_NULLPTR));
+        mCbRfAll->setText(QCoreApplication::translate("TestRfCable", "ALL", nullptr));
+        label->setText(QCoreApplication::translate("TestRfCable", "Test RF Cable", nullptr));
         label_69->setText(QString());
-        label_2->setText(QApplication::translate("TestRfCable", "Test Sequence/Ouput Terminal", Q_NULLPTR));
-        btnGuidleRfte->setText(QApplication::translate("TestRfCable", "Guidle", Q_NULLPTR));
-        btnImportRfte->setText(QApplication::translate("TestRfCable", "Import", Q_NULLPTR));
-        btnLogRfte->setText(QApplication::translate("TestRfCable", "Log", Q_NULLPTR));
-        btnExportRfte->setText(QApplication::translate("TestRfCable", "Export", Q_NULLPTR));
-        btnPrintRfte->setText(QApplication::translate("TestRfCable", "Print", Q_NULLPTR));
-        btnUndoRfte->setText(QApplication::translate("TestRfCable", "Undo", Q_NULLPTR));
-        btnRunRfte->setText(QApplication::translate("TestRfCable", "Run", Q_NULLPTR));
-        btnStopRfte->setText(QApplication::translate("TestRfCable", "Stop", Q_NULLPTR));
+        label_2->setText(QCoreApplication::translate("TestRfCable", "Test Sequence/Ouput Terminal", nullptr));
+        btnGuidleRfte->setText(QCoreApplication::translate("TestRfCable", "Guidle         ", nullptr));
+        btnImportRfte->setText(QCoreApplication::translate("TestRfCable", "Import         ", nullptr));
+        btnLogRfte->setText(QCoreApplication::translate("TestRfCable", "Log               ", nullptr));
+        btnExportRfte->setText(QCoreApplication::translate("TestRfCable", "Preview       ", nullptr));
+        btnPrintRfte->setText(QCoreApplication::translate("TestRfCable", "Export report", nullptr));
+        btnUndoRfte->setText(QCoreApplication::translate("TestRfCable", "Undo", nullptr));
+        btnRunRfte->setText(QCoreApplication::translate("TestRfCable", "Run", nullptr));
+        btnStopRfte->setText(QCoreApplication::translate("TestRfCable", "Stop", nullptr));
     } // retranslateUi
 
 };

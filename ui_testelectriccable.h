@@ -3545,7 +3545,7 @@ public:
 "  	outline:none;\n"
 "}"));
         QIcon icon6;
-        icon6.addFile(QString::fromUtf8(":/Test/images/button/export_icon2.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon6.addFile(QString::fromUtf8(":/Test/images/button/preview.png"), QSize(), QIcon::Normal, QIcon::Off);
         btnExportCte->setIcon(icon6);
         btnExportCte->setIconSize(QSize(20, 20));
         btnExportCte->setFlat(false);
@@ -3573,7 +3573,7 @@ public:
 "  	outline:none;\n"
 "}"));
         QIcon icon7;
-        icon7.addFile(QString::fromUtf8(":/Test/images/button/print-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon7.addFile(QString::fromUtf8(":/Test/images/button/export_icon2.png"), QSize(), QIcon::Normal, QIcon::Off);
         btnPrintCte->setIcon(icon7);
         btnPrintCte->setIconSize(QSize(20, 20));
         btnPrintCte->setFlat(false);
@@ -4028,11 +4028,11 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_8), QCoreApplication::translate("TestElectricCable", "REARPANEL", nullptr));
         btn_exit->setText(QString());
         label_114->setText(QCoreApplication::translate("TestElectricCable", "  Test Sequence/ Output Terminal", nullptr));
-        btnGuidleCte->setText(QCoreApplication::translate("TestElectricCable", "Guidle", nullptr));
-        btnImportCte->setText(QCoreApplication::translate("TestElectricCable", "Import", nullptr));
-        btnLogCte->setText(QCoreApplication::translate("TestElectricCable", "Log", nullptr));
-        btnExportCte->setText(QCoreApplication::translate("TestElectricCable", "Export", nullptr));
-        btnPrintCte->setText(QCoreApplication::translate("TestElectricCable", "Print", nullptr));
+        btnGuidleCte->setText(QCoreApplication::translate("TestElectricCable", "Guidle         ", nullptr));
+        btnImportCte->setText(QCoreApplication::translate("TestElectricCable", "Import         ", nullptr));
+        btnLogCte->setText(QCoreApplication::translate("TestElectricCable", "Log              ", nullptr));
+        btnExportCte->setText(QCoreApplication::translate("TestElectricCable", "Preview        ", nullptr));
+        btnPrintCte->setText(QCoreApplication::translate("TestElectricCable", "Export report", nullptr));
         btnUndoCte->setText(QCoreApplication::translate("TestElectricCable", "Undo", nullptr));
         btnRunCte->setText(QCoreApplication::translate("TestElectricCable", "   Run", nullptr));
         btnStopCte->setText(QCoreApplication::translate("TestElectricCable", "Stop", nullptr));
