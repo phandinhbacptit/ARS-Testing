@@ -26,6 +26,11 @@
 #include "userconfig.h"
 #include "testrfcable.h"
 
+#include "qtCsv/include/qtcsv_global.h"
+#include "qtCsv/include/stringdata.h"
+#include "qtCsv/include/reader.h"
+#include "qtCsv/include/writer.h"
+
 #include "KDReports/KDReports.h"
 #include "KDReports/KDReportsReport.h"
 #include "KDReports/KDReportsTableElement.h"
@@ -53,6 +58,9 @@ public:
 
     void setupModule(Ui::testModule *ui);
     void setupRf(Ui::TestRfCable *ui);
+    /*_______Add more___________*/
+    void writeToFile(QString filepath, defineCsv data);
+
 public slots:
 
     void slt_enableTestProcess();
@@ -92,6 +100,7 @@ public slots:
     void slt_showRfteInterface();
 
     void slt_resultTest(bool state);
+    void slt_guidlefile();
 
 signals:
 

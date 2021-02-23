@@ -4,7 +4,7 @@
 #include <QList>
 #include <QTextCodec>
 
-#include "qtcsv/qtcsv_global.h"
+#include "qtCsv/include/qtcsv_global.h"
 
 class QIODevice;
 class QStringList;

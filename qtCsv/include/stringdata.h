@@ -1,8 +1,8 @@
 #ifndef QTCSVSTRINGDATA_H
 #define QTCSVSTRINGDATA_H
 
-#include "qtcsv/qtcsv_global.h"
-#include "qtcsv/abstractdata.h"
+#include "qtCsv/include/qtcsv_global.h"
+#include "qtCsv/include/abstractdata.h"
 
 class QString;
 class QStringList;

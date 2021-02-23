@@ -73,8 +73,8 @@
 #define path_antena "libKdReport/xml/Module/Antena/Antena.csv"
 #define path_filterIF "libKdReport/xml/Module/FilterIF/FilterIF.csv"
 #define path_filterXband "libKdReport/xml/Module/Filter_XBAND/filterXband.csv"
-#define path_filter_LORF  "libKdReport/xml/Module/Filter_LORF/filterLORF.csv"
-#define path_filter_LOIF  "libKdReport/xml/Module/Filter_LORF/filterLOIF.csv"
+#define path_filter_LORF  "libKdReport/xml/Module/Filter_LORF/FilterLORF.csv"
+#define path_filter_LOIF  "libKdReport/xml/Module/Filter_LORF/FilterLOIF.csv"
 
 #define path_SwAntena_part1 "libKdReport/xml/Module/SwAntena/swAntena_part1.csv"
 #define path_SwAntena_part2 "libKdReport/xml/Module/SwAntena/swAntena_part2.csv"
@@ -82,6 +82,8 @@
 
 #define path_limiterDiff "libKdReport/xml/Module/LimiterDiff/Limiter_diff.csv"
 #define path_limiterSum "libKdReport/xml/Module/LimiterSum/Limiter_sum.csv"
+
+#define path_test "/libKdReport/xml/Module/Circulator/Circulator_part1.csv"
 
 /*______________Define name folder logfile__________*/
 const QString logFolderElectricalCable = "logs/logsElectricCable";
@@ -108,6 +110,25 @@ struct table
     QString  pathPart3;
 };
 
+struct defineCsv
+{
+    int numColumn;
+    int numRow;
+    QString header[9];
+    QString row1[9];
+    QString row2[9];
+    QString row3[9];
+};
+
+static defineCsv testCreate
+{
+    .numColumn = 5,
+    .numRow = 3,
+    {"" , "9.3HZ" , "9.4HZ" ,"9.5HZ", "9.6hZ", "Min" , "Max" , "Tiêu chuẩn", "Đánh giá" },
+    {"" , "9.3HZ" , "9.4HZ" ,"9.5HZ", "9.6hZ", "Min" , "Max" , "Tiêu chuẩn", "Đánh giá" },
+    {"" , "9.3HZ" , "9.4HZ" ,"9.5HZ", "9.6hZ", "Min" , "Max" , "Tiêu chuẩn", "Đánh giá" },
+    {"" , "9.3HZ" , "9.4HZ" ,"9.5HZ", "9.6hZ", "Min" , "Max" , "Tiêu chuẩn", "Đánh giá" }
+};
 static table Cable2 {
     .namePart = "Cable2",
     .title1 = "Resistance",

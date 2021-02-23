@@ -117,6 +117,7 @@ void bussinessManager::setupModule(Ui::testModule *ui)
     connect(mMTE->btnSignGen, SIGNAL(clicked()), this, SLOT(slt_connSignalGeneration()));
     connect(mMTE->btnNetAnalizer, SIGNAL(clicked()), this, SLOT(slt_connNetworkAnalizer()));
     connect(mMTE->btnSpecAnalizer, SIGNAL(clicked()), this, SLOT(slt_connSpectumeAnalizer()));
+    connect(mMTE->btnGuidleMte, SIGNAL(clicked()), this, SLOT(slt_guidlefile()));
 
     qDebug() << "[Bussiness] Setup gui MTE";
 }
@@ -917,4 +918,80 @@ void bussinessManager::slt_connSpectumeAnalizer()
         connectColor = QString ("background-color: rgb(177,188,190); outline: none; border: none;color: rgb(49,67,100);font-family:Myriad Pro; font-size: 8pt; font:bold; ");
     }
     mMTE->btnSpecAnalizer->setStyleSheet(connectColor);
+}
+
+ /*___________Function add more____________*/
+/*
+"","9.3hZ","9.4hZ"," ","9.6hZ","Min","Max","Tiêu chuẩn","Đánh giá"
+"Cổng 1",,,,,,,"VSWR ≤ 1.4",
+"Cổng 2",,,,,,,"VSWR ≤ 1.4",
+"Cổng 3",,,,,,,"VSWR ≤ 1.4",
+*/
+void bussinessManager::writeToFile(QString filepath, defineCsv data)
+{
+      QStringList strList;
+      QtCSV::StringData strData;
+      int _numRow = 0;
+
+
+      for(int j= 0; j < data.numColumn; j++) {
+        strList << data.header[j];
+      }
+      strData.addRow(strList);
+      strList.clear();
+      _numRow++;
+
+      if (data.numRow > _numRow) {
+          data.row1[1] = "20";
+          data.row1[2] = "40";
+          for(int j= 0; j < data.numColumn; j++) {
+            strList << data.row1[j];
+          }
+          strData.addRow(strList);
+          strList.clear();
+      }
+      _numRow++;
+
+      if (data.numRow > _numRow) {
+          for(int j= 0; j < data.numColumn; j++) {
+            strList << data.row2[j];
+          }
+          strData.addRow(strList);
+          strList.clear();
+      }
+      _numRow++;
+      if (data.numRow > _numRow) {
+          for(int j= 0; j < data.numColumn; j++) {
+            strList << data.row3[j];
+          }
+          strData.addRow(strList);
+          strList.clear();
+      }
+      _numRow++;
+
+
+
+
+//    QStringList strList;
+//    strList << "" << "9.3hZ" << "9.4hZ" << "9.5hZ"<< "9.6hZ"<< "Min" << "Max" <<  "Tiêu chuẩn" << "Đánh giá";
+//    QtCSV::StringData strData;
+//    strData.addRow(strList);
+//    strList.clear();
+//    strList << "Cổng 1" << "100" << "20" << ""<< ""<< "" << "" <<  "VSWR ≤ 1.4" << "";
+//    strData.addRow(strList);
+//    strList.clear();
+//    strList << "Cổng 2" << "2" << "3" << "3"<< ""<< "" << "" <<  "VSWR ≤ 1.4" << "";
+//    strData.addRow(strList);
+//    strList.clear();
+//    strList << "Cổng 3" << "3" << "3" << ""<< "3"<< "" << "" <<  "VSWR ≤ 1.4" << "";
+//    strData.addRow(strList);
+
+    QString filepath_new = QDir::currentPath() + filepath;
+    QtCSV::Writer::write(filepath_new, strData);
+}
+
+void bussinessManager::slt_guidlefile()
+{
+//    qDebug() << "Come here";
+    writeToFile(path_test, testCreate);
 }

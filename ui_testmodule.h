@@ -2196,7 +2196,7 @@ public:
         scrollArea_2->setWidgetResizable(true);
         scrollAreaWidgetContents_3 = new QWidget();
         scrollAreaWidgetContents_3->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_3"));
-        scrollAreaWidgetContents_3->setGeometry(QRect(0, -1040, 589, 1506));
+        scrollAreaWidgetContents_3->setGeometry(QRect(0, -335, 589, 1506));
         gridLayout_17 = new QGridLayout(scrollAreaWidgetContents_3);
         gridLayout_17->setObjectName(QString::fromUtf8("gridLayout_17"));
         All = new QCheckBox(scrollAreaWidgetContents_3);
@@ -6691,7 +6691,7 @@ public:
         ledHpa_part1->setText(QString());
         rltHpa_part1->setText(QString());
         label_98->setText(QCoreApplication::translate("testModule", "...", nullptr));
-        mCbHpa_part2->setText(QCoreApplication::translate("testModule", "\304\220\341\272\267c tuy\341\272\277n Pout-Pinu", nullptr));
+        mCbHpa_part2->setText(QCoreApplication::translate("testModule", "\304\220\341\272\267c tuy\341\272\277n Pout-Pin", nullptr));
         detailHpa_part2->setText(QString());
         importHpa_part2->setText(QString());
         indicatorHpa_part2->setText(QString());
