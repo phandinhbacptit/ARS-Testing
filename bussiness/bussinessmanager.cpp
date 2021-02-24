@@ -608,14 +608,16 @@ void bussinessManager::slt_enableTestProcess()
 /*____________Slot CTE________________________________________________________ */
 void bussinessManager::slt_runCTE(){
     cntRunCte++;
-    mCTE->btnStopCte->setEnabled(true);
+
     if (cntRunCte == 1) {
+        mCTE->btnStopCte->setEnabled(true);
         qDebug() << "[Bussiness] Run process test electrical cable";
         mCTE->btnRunCte->setText(" Pause");
         mCTE->btnRunCte->setIcon(QIcon(":/Test/images/button/pause_icon.png"));
 
     }
     else if (cntRunCte == 2) {
+        mCTE->btnStopCte->setEnabled(true);
         qDebug() << "[Bussiness] Pause process test electrical cable";
         mCTE->btnRunCte->setText("Resume");
         mCTE->btnRunCte->setIcon(QIcon(":/Test/images/button/resum_icon.png"));
@@ -648,18 +650,24 @@ void bussinessManager::slt_logCTE()
 void bussinessManager::slt_stopCTE()
 {
     mCTE->btnStopCte->setEnabled(false);
+    cntRunCte = 2;
+    slt_runCTE();
 }
 /*____________Slot MTE________________________________________________________ */
 void bussinessManager::slt_runMTE()
 {
-    mMTE->btnStopMte->setEnabled(true);
+
     cntRunMte++;
+    qDebug() << "cntRunMte: " + QString::number(cntRunMte);
+
     if (cntRunMte == 1) {
+        mMTE->btnStopMte->setEnabled(true);
         qDebug() << "[Bussiness] Run process test module";
         mMTE->btnRunMte->setText(" Pause");
         mMTE->btnRunMte->setIcon(QIcon(":/Test/images/button/pause_icon.png"));
     }
     else if (cntRunMte == 2) {
+        mMTE->btnStopMte->setEnabled(true);
         qDebug() << "[Bussiness] Pause process test module";
         mMTE->btnRunMte->setText("Resume");
         mMTE->btnRunMte->setIcon(QIcon(":/Test/images/button/resum_icon.png"));
@@ -693,18 +701,22 @@ void bussinessManager::slt_logMTE()
 void bussinessManager::slt_stopMTE()
 {
     mMTE->btnStopMte->setEnabled(false);
+    cntRunMte = 2;
+    slt_runMTE();
 }
 /*____________Slot RFTE________________________________________________________ */
 void bussinessManager::slt_runRFTE()
 {
     cntRunRfte++;
-    mRFTE->btnStopRfte->setEnabled(true);
+
     if (cntRunRfte == 1) {
+        mRFTE->btnStopRfte->setEnabled(true);
         qDebug() << "[Bussiness] Run process test RF cable";
         mRFTE->btnRunRfte->setText("Stop");
         mRFTE->btnRunRfte->setIcon(QIcon(":/Test/images/button/pause_icon.png"));
     }
     else if (cntRunRfte == 2) {
+        mRFTE->btnStopRfte->setEnabled(true);
         qDebug() << "[Bussiness] Pause process  test RF cable";
         mRFTE->btnRunRfte->setText("Stop");
         mRFTE->btnRunRfte->setIcon(QIcon(":/Test/images/button/resum_icon.png"));
@@ -738,6 +750,8 @@ void bussinessManager::slt_logRFTE()
 void bussinessManager::slt_stopRFTE()
 {
     mRFTE->btnStopRfte->setEnabled(false);
+    cntRunRfte = 2;
+    slt_runRFTE();
 }
 /*________________________________________________________________________________________*/
 
