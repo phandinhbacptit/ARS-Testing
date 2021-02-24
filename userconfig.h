@@ -110,25 +110,22 @@ struct table
     QString  pathPart3;
 };
 
+#define maxLengthBuf 15
 struct defineCsv
 {
+    QString pathCsv;
     int numColumn;
     int numRow;
-    QString header[9];
-    QString row1[9];
-    QString row2[9];
-    QString row3[9];
+    QString header[maxLengthBuf];
+    QString row1[maxLengthBuf];
+    QString row2[maxLengthBuf];
+    QString row3[maxLengthBuf];
+    QString row4[maxLengthBuf];
+    QString row5[maxLengthBuf];
+    QString row6[maxLengthBuf];
+    QString row7[maxLengthBuf];
 };
 
-static defineCsv testCreate
-{
-    .numColumn = 5,
-    .numRow = 3,
-    {"" , "9.3HZ" , "9.4HZ" ,"9.5HZ", "9.6hZ", "Min" , "Max" , "Tiêu chuẩn", "Đánh giá" },
-    {"" , "9.3HZ" , "9.4HZ" ,"9.5HZ", "9.6hZ", "Min" , "Max" , "Tiêu chuẩn", "Đánh giá" },
-    {"" , "9.3HZ" , "9.4HZ" ,"9.5HZ", "9.6hZ", "Min" , "Max" , "Tiêu chuẩn", "Đánh giá" },
-    {"" , "9.3HZ" , "9.4HZ" ,"9.5HZ", "9.6hZ", "Min" , "Max" , "Tiêu chuẩn", "Đánh giá" }
-};
 static table Cable2 {
     .namePart = "Cable2",
     .title1 = "Resistance",
@@ -142,6 +139,42 @@ static table Cable2 {
 };
 
 /*____________________Define module property___________________*/
+static defineCsv csvCirculator_part1
+{
+    .pathCsv = path_Circulator_part1,
+    .numColumn = 9,
+    .numRow = 4,
+    {"","9.3hZ","9.4hZ","9.5hZ","9.6hZ","Min","Max","Tiêu chuẩn","Đánh giá"},
+    {"Cổng 1","","","","","","","VSWR ≤ 1.4", ""},
+    {"Cổng 2","","","","","","","VSWR ≤ 1.4", ""},
+    {"Cổng 3","","","","","","","VSWR ≤ 1.4", ""},
+    {},{},{},{},
+};
+
+static defineCsv csvCirculator_part2
+{
+    .pathCsv = path_Circulator_part2,
+    .numColumn = 9,
+    .numRow = 4,
+    {"","9.3hZ","9.4hZ","9.5hZ","9.6hZ","Min","Max","Tiêu chuẩn","Đánh giá"},
+    {"S21","","","","","","","≤ 0.5dB", ""},
+    {"S32","","","","","","","≤ 0.5dB", ""},
+    {"S13","","","","","","","≤ 0.5dB", ""},
+    {},{},{},{},
+};
+
+static defineCsv csvCirculator_part3
+{
+    .pathCsv = path_Circulator_part3,
+    .numColumn = 9,
+    .numRow = 4,
+    {"","9.3hZ","9.4hZ","9.5hZ","9.6hZ","Min","Max","Tiêu chuẩn","Đánh giá"},
+    {"S12","","","","","","","≥ 20dB", ""},
+    {"S23","","","","","","","≥ 20dB", ""},
+    {"S31","","","","","","","≥ 20dB", ""},
+    {},{},{},{},
+};
+
 static table Circulator {
     .namePart = "Circulator Module",
     .title1 = "1.1. Hệ số sóng đứng",
@@ -153,7 +186,7 @@ static table Circulator {
     .title3 = "1.3. Hệ số cách ly",
     .pathPart3 = path_Circulator_part3,
 };
-
+/****************************************************************************/
 static table Comparator {
     .namePart = "Comparator Module",
     .title1 = "1.1. Hệ số sóng đứng",
@@ -164,6 +197,36 @@ static table Comparator {
 
     .title3 = "1.3. Hệ số cách ly",
     .pathPart3 = path_Circulator_part3,
+};
+/****************************************************************************/
+static defineCsv csvSMA_part1
+{
+    .pathCsv = path_SMA_part1,
+    .numColumn = 9,
+    .numRow = 7,
+    {"","9.3hZ","9.4hZ","9.5hZ","9.6hZ","Min","Max","Tiêu chuẩn","Đánh giá"},
+    {"Tx","","","","","","","VSWR ≤ 1.2", ""},
+    {"∑Rx+","","","","","","","VSWR ≤ 1.2", ""},
+    {"ΔAzi","","","","","","","VSWR ≤ 1.2", ""},
+    {"ΔElv","","","","","","","VSWR ≤ 1.2", ""},
+    {"ATT1","","","","","","","VSWR ≤ 1.2", ""},
+    {"ATT2","","","","","","","VSWR ≤ 1.2", ""},
+    {},
+};
+
+static defineCsv csvSMA_part2
+{
+    .pathCsv = path_SMA_part2,
+    .numColumn = 9,
+    .numRow = 7,
+    {"","9.3hZ","9.4hZ","9.5hZ","9.6hZ","Min","Max","Tiêu chuẩn","Đánh giá"},
+    {"Tx","","","","","","","≤ 0.5dB", ""},
+    {"∑Rx+","","","","","","","≤ 0.5dB", ""},
+    {"ΔAzi","","","","","","","≤ 0.5dB", ""},
+    {"ΔElv","","","","","","","≤ 0.5dB", ""},
+    {"ATT1","","","","","","","≤ 0.5dB", ""},
+    {"ATT2","","","","","","","≤ 0.5dB", ""},
+    {},
 };
 static table Adapter_SMA {
     .namePart = "Adapter SMA Module",
@@ -176,7 +239,27 @@ static table Adapter_SMA {
     .title3 = nullptr,
     .pathPart3 = nullptr,
 };
-
+/****************************************************************************/
+static defineCsv csvAttXband_part1
+{
+    .pathCsv = path_att_xband_part1,
+    .numColumn = 9,
+    .numRow = 2,
+    {"","9.3hZ","9.4hZ","9.5hZ","9.6hZ","Min","Max","Tiêu chuẩn","Đánh giá"},
+    {"ATT Tổng","","","","","","","≤ 1.5dB", ""},
+    {},{},{},{},{},{},
+};
+static defineCsv csvAttXband_part2
+{
+    .pathCsv = path_att_xband_part2,
+    .numColumn = 5,
+    .numRow = 4,
+    {"Suy hao diode từng tầng","Điện áp (V)","Suy hao","Tiêu chuẩn","Đánh giá"},
+    {"D1","","","≤ 10 ± 1dB", ""},
+    {"D2","","","≤ 20 ± 1dB", ""},
+    {"D3","","","≤ 20 ± 1dB", ""},
+    {},{},{},{},
+};
 static table AttXband {
     .namePart = "ATT Xband Module",
     .title1 = "1.1. Suy hao chưa điều khiển",
@@ -188,7 +271,19 @@ static table AttXband {
     .title3 = nullptr,
     .pathPart3 = nullptr,
 };
-
+/****************************************************************************/
+static defineCsv csvAntena
+{
+    .pathCsv = path_antena,
+    .numColumn = 9,
+    .numRow = 5,
+    {"WSWR","9.3hZ","9.4hZ","9.5hZ","9.6hZ","Min","Max","Tiêu chuẩn","Đánh giá"},
+    {"Cổng 1","","","","","","","VSWR ≤ 1.5", ""},
+    {"Cổng 2","","","","","","","VSWR ≤ 1.5", ""},
+    {"Cổng 3","","","","","","","VSWR ≤ 1.5", ""},
+    {"Cổng 4","","","","","","","VSWR ≤ 1.5", ""},
+    {},{},{},
+};
 static table Antena {
     .namePart = "Antena Module",
     .title1 = "Kết quả đo VSWR",
@@ -200,7 +295,18 @@ static table Antena {
     .title3 = nullptr,
     .pathPart3 = nullptr,
 };
-
+/****************************************************************************/
+static defineCsv csvFilterIF
+{
+    .pathCsv = path_filterIF,
+    .numColumn = 6,
+    .numRow = 4,
+    {"STT","Suy hao 70Mhz (Marker1 ≤ 6dB)","Marker1 (Mhz)","Marker2 (Mhz)","Dai thong 3dB (≤ 5Mhz)","Đánh giá"},
+    {"1","","","","",},
+    {"STT","Suy hao 70Mhz (Marker1 ≤ 6dB)","Marker1 (Mhz)","Marker2 (Mhz)","Dai thong 3dB (≤ 3.5Mhz)","Đánh giá"},
+    {"1","","","","",},
+    {},{},{},{},
+};
 static table FilterIF {
     .namePart = "FilterIF Module",
     .title1 = "Kết quả đo kiểm",
@@ -212,6 +318,7 @@ static table FilterIF {
     .title3 = nullptr,
     .pathPart3 = nullptr,
 };
+/****************************************************************************/
 /*______________________________________________*/
 static table Filter_LOIF {
     .namePart = "FilterLOIF Module",
@@ -224,6 +331,7 @@ static table Filter_LOIF {
     .title3 = nullptr,
     .pathPart3 = nullptr,
 };
+/****************************************************************************/
 /*______________________________________________*/
 static table Filter_LORF {
     .namePart = "FilterLORF Module",
@@ -236,7 +344,18 @@ static table Filter_LORF {
     .title3 = nullptr,
     .pathPart3 = nullptr,
 };
-
+/****************************************************************************/
+static defineCsv csvFilterXband
+{
+    .pathCsv = path_filterXband,
+    .numColumn = 5,
+    .numRow = 4,
+    {"STT","Tham số","Chỉ tiêu kĩ thuật","Kết quả đo","Đánh giá"},
+    {"1","Tần số lọc","9200-9600 Mhz","",""},
+    {"2","Suy hao","≤ 0.8dB","",""},
+    {"3","Hệ số sóng đứng","≤ 1.25","",""},
+    {},{},{},{},
+};
 static table FilterXband {
     .namePart = "FilterXband Module",
     .title1 = "Kết quả đo kiểm",
@@ -248,6 +367,7 @@ static table FilterXband {
     .title3 = nullptr,
     .pathPart3 = nullptr,
 };
+/****************************************************************************/
 
 static table Hpa {
     .namePart = "KDCS Module",
@@ -260,7 +380,38 @@ static table Hpa {
     .title3 = nullptr,
     .pathPart3 = nullptr,
 };
+/****************************************************************************/
+static defineCsv csvSwAntena_part1
+{
+    .pathCsv = path_SwAntena_part1,
+    .numColumn = 9,
+    .numRow = 3,
+    {"","9.3hZ","9.4hZ","9.5hZ","9.6hZ","Min","Max","Tiêu chuẩn","Đánh giá"},
+    {"Cổng 1","","","","","","","≤ 2dB",""},
+    {"Cổng 2","","","","","","","≤ 2dB",""},
+    {},{}, {},{},{},
+};
 
+static defineCsv csvSwAntena_part2
+{
+    .pathCsv = path_SwAntena_part2,
+    .numColumn = 9,
+    .numRow = 3,
+    {"","9.3hZ","9.4hZ","9.5hZ","9.6hZ","Min","Max","Tiêu chuẩn","Đánh giá"},
+    {"Cổng 1","","","","","","","≥ 60dB",""},
+    {"Cổng 2","","","","","","","≥ 60dB",""},
+    {},{}, {},{},{},
+};
+
+static defineCsv csvSwAntena_part3
+{
+    .pathCsv = path_SwAntena_part3,
+    .numColumn = 5,
+    .numRow = 2,
+    {"","Sườn lên","Sườn xuống","Tiêu chuẩn","Đánh giá"},
+    {"Tốc độ đáp ứng","","","≤ 1µs",""},
+    {},{},{},{},{},{},
+};
 
 static table SwAntena {
     .namePart = "SwAntena Module",
@@ -273,7 +424,20 @@ static table SwAntena {
     .title3 = "1.3. Tốc độ đáp ứng",
     .pathPart3 = path_SwAntena_part3,
 };
-
+/****************************************************************************/
+static defineCsv csvLimiterDiff
+{
+    .pathCsv = path_limiterDiff,
+    .numColumn = 8,
+    .numRow = 6,
+    {"STT","Tần số (Mhz)","Suy hao cáp RF1 (dB)","Suy hao cáp RF2 (dB)","Suy hao (≥1dB)","Max Power output (≤10dBm)","Max Power input (≤30dBm)","Đánh giá"},
+    {"1","9200"},
+    {"2","9300"},
+    {"3","9400"},
+    {"4","9500"},
+    {"5","9600"},
+    {},{},
+};
 static table LimiterDiff {
     .namePart = "LimiterDiff Module",
     .title1 = "Kết quả đo kiểm",
@@ -285,7 +449,20 @@ static table LimiterDiff {
     .title3 = nullptr,
     .pathPart3 = nullptr,
 };
-
+/****************************************************************************/
+static defineCsv csvLimiterSum
+{
+    .pathCsv = path_limiterSum,
+    .numColumn = 8,
+    .numRow = 6,
+    {"STT","Tần số (Mhz)","Suy hao cáp RF1 (dB)","Suy hao cáp RF2 (dB)","Suy hao (≥1dB)","Max Power output (≤15dBm)","Max Power input (≤34dBm)","Đánh giá"},
+    {"1","9200"},
+    {"2","9300"},
+    {"3","9400"},
+    {"4","9500"},
+    {"5","9600"},
+    {},{},
+};
 static table LimiterSum {
     .namePart = "LimiterSum Module",
     .title1 = "Kết quả đo kiểm",
@@ -297,6 +474,7 @@ static table LimiterSum {
     .title3 = nullptr,
     .pathPart3 = nullptr,
 };
+/****************************************************************************/
 /*______________________________________________*/
 static table LNA {
     .namePart = "LNA Module",
@@ -309,6 +487,7 @@ static table LNA {
     .title3 = nullptr,
     .pathPart3 = nullptr,
 };
+/****************************************************************************/
 /*______________________________________________*/
 static table LO {
     .namePart = "LO Module",
@@ -321,6 +500,7 @@ static table LO {
     .title3 = nullptr,
     .pathPart3 = nullptr,
 };
+/****************************************************************************/
 /*______________________________________________*/
 static table TX {
     .namePart = "TX Module",
@@ -333,6 +513,7 @@ static table TX {
     .title3 = nullptr,
     .pathPart3 = nullptr,
 };
+/****************************************************************************/
 /*______________________________________________*/
 static table RX {
     .namePart = "RX Module",

@@ -927,7 +927,7 @@ void bussinessManager::slt_connSpectumeAnalizer()
 "Cổng 2",,,,,,,"VSWR ≤ 1.4",
 "Cổng 3",,,,,,,"VSWR ≤ 1.4",
 */
-void bussinessManager::writeToFile(QString filepath, defineCsv data)
+void bussinessManager::writeToCsvFile(defineCsv data)
 {
       QStringList strList;
       QtCSV::StringData strData;
@@ -942,8 +942,6 @@ void bussinessManager::writeToFile(QString filepath, defineCsv data)
       _numRow++;
 
       if (data.numRow > _numRow) {
-          data.row1[1] = "20";
-          data.row1[2] = "40";
           for(int j= 0; j < data.numColumn; j++) {
             strList << data.row1[j];
           }
@@ -968,30 +966,73 @@ void bussinessManager::writeToFile(QString filepath, defineCsv data)
           strList.clear();
       }
       _numRow++;
+      if (data.numRow > _numRow) {
+          for(int j= 0; j < data.numColumn; j++) {
+            strList << data.row4[j];
+          }
+          strData.addRow(strList);
+          strList.clear();
+      }
+      _numRow++;
+      if (data.numRow > _numRow) {
+          for(int j= 0; j < data.numColumn; j++) {
+            strList << data.row5[j];
+          }
+          strData.addRow(strList);
+          strList.clear();
+      }
+      _numRow++;
+      if (data.numRow > _numRow) {
+          for(int j= 0; j < data.numColumn; j++) {
+            strList << data.row6[j];
+          }
+          strData.addRow(strList);
+          strList.clear();
+      }
+      _numRow++;
+      if (data.numRow > _numRow) {
+          for(int j= 0; j < data.numColumn; j++) {
+            strList << data.row7[j];
+          }
+          strData.addRow(strList);
+          strList.clear();
+      }
 
-
-
-
-//    QStringList strList;
-//    strList << "" << "9.3hZ" << "9.4hZ" << "9.5hZ"<< "9.6hZ"<< "Min" << "Max" <<  "Tiêu chuẩn" << "Đánh giá";
-//    QtCSV::StringData strData;
-//    strData.addRow(strList);
-//    strList.clear();
-//    strList << "Cổng 1" << "100" << "20" << ""<< ""<< "" << "" <<  "VSWR ≤ 1.4" << "";
-//    strData.addRow(strList);
-//    strList.clear();
-//    strList << "Cổng 2" << "2" << "3" << "3"<< ""<< "" << "" <<  "VSWR ≤ 1.4" << "";
-//    strData.addRow(strList);
-//    strList.clear();
-//    strList << "Cổng 3" << "3" << "3" << ""<< "3"<< "" << "" <<  "VSWR ≤ 1.4" << "";
-//    strData.addRow(strList);
-
-    QString filepath_new = QDir::currentPath() + filepath;
-    QtCSV::Writer::write(filepath_new, strData);
+    QString _filepath = QDir::currentPath() + "/" + data.pathCsv;
+    QtCSV::Writer::write(_filepath, strData);
 }
 
 void bussinessManager::slt_guidlefile()
 {
 //    qDebug() << "Come here";
-    writeToFile(path_test, testCreate);
+//    csvCirculator_part1.row1[2] = "10";
+//    csvCirculator_part1.row1[3] = "20";
+//    writeToCsvFile(csvCirculator_part1);
+//    writeToCsvFile(csvCirculator_part2);
+//    writeToCsvFile(csvCirculator_part3);
+
+//      csvSMA_part1.row1[2] = "30";
+//      csvSMA_part1.row1[3] = "50";
+//      writeToCsvFile(csvSMA_part1);
+//      writeToCsvFile(csvSMA_part2);
+//    csvAntena.row1[2] = "10";
+//    writeToCsvFile(csvAntena);
+
+//      csvAttXband_part1.row1[2] = "30";
+//      csvAttXband_part1.row1[3] = "50";
+//      writeToCsvFile(csvAttXband_part1);
+//      writeToCsvFile(csvAttXband_part2);
+
+//        csvFilterXband.row1[3] = "50";
+//        writeToCsvFile(csvFilterXband);
+
+//        csvLimiterSum.row1[3] = "10";
+//        csvLimiterSum.row1[4] = "20";
+//        writeToCsvFile(csvLimiterSum);
+
+     csvSwAntena_part2.row1[2] = "10";
+     csvSwAntena_part2.row1[3] = "20";
+     writeToCsvFile(csvSwAntena_part1);
+     writeToCsvFile(csvSwAntena_part2);
+     writeToCsvFile(csvSwAntena_part3);
 }

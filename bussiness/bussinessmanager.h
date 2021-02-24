@@ -59,7 +59,7 @@ public:
     void setupModule(Ui::testModule *ui);
     void setupRf(Ui::TestRfCable *ui);
     /*_______Add more___________*/
-    void writeToFile(QString filepath, defineCsv data);
+    void writeToCsvFile(defineCsv data);
 
 public slots:
 
