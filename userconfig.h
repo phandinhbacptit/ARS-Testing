@@ -64,6 +64,14 @@
 #define path_Circulator_part2 "libKdReport/xml/Module/Circulator/Circulator_part2.csv"
 #define path_Circulator_part3 "libKdReport/xml/Module/Circulator/Circulator_part3.csv"
 
+#define path_Comparator_part1   "libKdReport/xml/Module/Comparator/Comparator_part1.csv"
+#define path_Comparator_part2   "libKdReport/xml/Module/Comparator/Comparator_part2.csv"
+#define path_Comparator_part3   "libKdReport/xml/Module/Comparator/Comparator_part3.csv"
+#define path_Comparator_part4   "libKdReport/xml/Module/Comparator/Comparator_part4.csv"
+#define path_Comparator_part5   "libKdReport/xml/Module/Comparator/Comparator_part5.csv"
+#define path_Comparator_part6   "libKdReport/xml/Module/Comparator/Comparator_part6.csv"
+#define path_Comparator_part7   "libKdReport/xml/Module/Comparator/Comparator_part7.csv"
+
 #define path_SMA_part1 "libKdReport/xml/Module/Adapter_SMA/SMA_part1.csv"
 #define path_SMA_part2 "libKdReport/xml/Module/Adapter_SMA/SMA_part2.csv"
 
@@ -73,8 +81,12 @@
 #define path_antena "libKdReport/xml/Module/Antena/Antena.csv"
 #define path_filterIF "libKdReport/xml/Module/FilterIF/FilterIF.csv"
 #define path_filterXband "libKdReport/xml/Module/Filter_XBAND/filterXband.csv"
-#define path_filter_LORF  "libKdReport/xml/Module/Filter_LORF/FilterLORF.csv"
-#define path_filter_LOIF  "libKdReport/xml/Module/Filter_LORF/FilterLOIF.csv"
+
+#define path_filter_LORF_part1  "libKdReport/xml/Module/Filter_LORF/FilterLORF_part1.csv"
+#define path_filter_LORF_part2  "libKdReport/xml/Module/Filter_LORF/FilterLORF_part2.csv"
+
+#define path_filter_LOIF_part1  "libKdReport/xml/Module/Filter_LOIF/FilterLOIF_part1.csv"
+#define path_filter_LOIF_part2  "libKdReport/xml/Module/Filter_LOIF/FilterLOIF_part2.csv"
 
 #define path_SwAntena_part1 "libKdReport/xml/Module/SwAntena/swAntena_part1.csv"
 #define path_SwAntena_part2 "libKdReport/xml/Module/SwAntena/swAntena_part2.csv"
@@ -82,6 +94,14 @@
 
 #define path_limiterDiff "libKdReport/xml/Module/LimiterDiff/Limiter_diff.csv"
 #define path_limiterSum "libKdReport/xml/Module/LimiterSum/Limiter_sum.csv"
+
+#define path_LNA_part1  "libKdReport/xml/Module/LNA/csvLNA_part1.csv"
+#define path_LNA_part23  "libKdReport/xml/Module/LNA/csvLNA_part2.csv"
+
+#define path_LO_part1   "libKdReport/xml/Module/LO/csvLO_part1.csv"
+#define path_LO_part2   "libKdReport/xml/Module/LO/csvLO_part2.csv"
+#define path_LO_part3   "libKdReport/xml/Module/LO/csvLO_part3.csv"
+#define path_LO_part4   "libKdReport/xml/Module/LO/csvLO_part4.csv"
 
 #define path_test "/libKdReport/xml/Module/Circulator/Circulator_part1.csv"
 
@@ -108,6 +128,18 @@ struct table
 
     QString  title3;
     QString  pathPart3;
+
+    QString  title4;
+    QString  pathPart4;
+
+    QString  title5;
+    QString  pathPart5;
+
+    QString  title6;
+    QString  pathPart6;
+
+    QString  title7;
+    QString  pathPart7;
 };
 
 #define maxLengthBuf 15
@@ -187,16 +219,111 @@ static table Circulator {
     .pathPart3 = path_Circulator_part3,
 };
 /****************************************************************************/
+static defineCsv csvComparator_part1
+{
+    .pathCsv = path_Comparator_part1,
+    .numColumn = 9,
+    .numRow = 4,
+    {"VSWR","9.3hZ","9.4hZ","9.5hZ","9.6hZ","Min","Max","Tiêu chuẩn","Đánh giá"},
+    {"Cổng tổng","","","","","","","≤ 1.5", ""},
+    {"Cổng hiệu ngang","","","","","","","≤ 1.5", ""},
+    {"Cổng hiệu đứng","","","","","","","≤ 1.5", ""},
+    {},{},{},{},
+};
+static defineCsv csvComparator_part2
+{
+    .pathCsv = path_Comparator_part2,
+    .numColumn = 9,
+    .numRow = 5,
+    {"","9.3hZ","9.4hZ","9.5hZ","9.6hZ","Min","Max","Tiêu chuẩn","Đánh giá"},
+    {"S51","","","","","","","6 ± 1dB", ""},
+    {"S52","","","","","","","6 ± 1dB", ""},
+    {"S53","","","","","","","6 ± 1dB", ""},
+    {"S54","","","","","","","6 ± 1dB", ""},
+    {},{},{},
+};
+static defineCsv csvComparator_part3
+{
+    .pathCsv = path_Comparator_part3,
+    .numColumn = 9,
+    .numRow = 5,
+    {"","9.3hZ","9.4hZ","9.5hZ","9.6hZ","Min","Max","Tiêu chuẩn","Đánh giá"},
+    {"S61","","","","","","","6 ± 1dB", ""},
+    {"S62","","","","","","","6 ± 1dB", ""},
+    {"S63","","","","","","","6 ± 1dB", ""},
+    {"S64","","","","","","","6 ± 1dB", ""},
+    {},{},{},
+};
+static defineCsv csvComparator_part4
+{
+    .pathCsv = path_Comparator_part4,
+    .numColumn = 9,
+    .numRow = 5,
+    {"","9.3hZ","9.4hZ","9.5hZ","9.6hZ","Min","Max","Tiêu chuẩn","Đánh giá"},
+    {"S71","","","","","","","6 ± 1dB", ""},
+    {"S72","","","","","","","6 ± 1dB", ""},
+    {"S73","","","","","","","6 ± 1dB", ""},
+    {"S74","","","","","","","6 ± 1dB", ""},
+    {},{},{},
+};
+static defineCsv csvComparator_part5
+{
+    .pathCsv = path_Comparator_part5,
+    .numColumn = 9,
+    .numRow = 5,
+    {"","9.3hZ  ","9.4hZ  ","9.5hZ  ","9.6hZ  ","Min","Max","Tiêu chuẩn","Đánh giá"},
+    {"S51","","","","","","","|Φ51 – Φ52|= 0 ± 10 && |Φ51 – Φ53|=0±10 ", ""},
+    {"S52","","","","","","","|Φ51 – Φ54|= 0 ± 10 && |Φ52 – Φ53|=0±10", ""},
+    {"S53","","","","","","","|Φ52 – Φ54|= 0 ± 10", ""},
+    {"S54","","","","","","","|Φ53 – Φ54|= 0 ± 10", ""},
+    {},{},{},
+};
+static defineCsv csvComparator_part6
+{
+    .pathCsv = path_Comparator_part6,
+    .numColumn = 9,
+    .numRow = 5,
+    {"","9.3hZ","9.4hZ","9.5hZ","9.6hZ","Min","Max","Tiêu chuẩn","Đánh giá"},
+    {"S61","","","","","","","|Φ61 – Φ62|= 180 ± 10", ""},
+    {"S62","","","","","","","|Φ61 – Φ63|= 180 ± 10", ""},
+    {"S63","","","","","","","|Φ61 – Φ64|= 0 ± 10", ""},
+    {"S64","","","","","","","|Φ62 – Φ63|= 0 ± 10", ""},
+    {},{},{},
+};
+static defineCsv csvComparator_part7
+{
+    .pathCsv = path_Comparator_part7,
+    .numColumn = 9,
+    .numRow = 5,
+    {"","9.3hZ","9.4hZ","9.5hZ","9.6hZ","Min","Max","Tiêu chuẩn","Đánh giá"},
+    {"S71","","","","","","","|Φ71 – Φ72|= 0 ± 10", ""},
+    {"S72","","","","","","","|Φ73 – Φ74|= 0 ± 10", ""},
+    {"S73","","","","","","","|Φ71 – Φ73|= 180 ± 10", ""},
+    {"S74","","","","","","","|Φ71 – Φ74|= 180 ± 10", ""},
+    {},{},{},
+};
 static table Comparator {
     .namePart = "Comparator Module",
     .title1 = "1.1. Hệ số sóng đứng",
-    .pathPart1 = path_Circulator_part1,
+    .pathPart1 = path_Comparator_part1,
 
-    .title2 = "1.2. Hệ số suy hao",
-    .pathPart2 = path_Circulator_part2,
+    .title2 = "1.2.Mức chia - Cổng tổng (Cổng 5)",
+    .pathPart2 = path_Comparator_part2,
 
-    .title3 = "1.3. Hệ số cách ly",
-    .pathPart3 = path_Circulator_part3,
+    .title3 = "1.3. Mức chia - Cổng hiệu ngang (Cổng 6)",
+    .pathPart3 = path_Comparator_part3,
+
+    .title4 = "1.4. Mức chia - Cổng hiệu đứng (Cổng 7)",
+    .pathPart4 = path_Comparator_part4,
+
+    .title5 = "1.5. Hệ số pha - Cổng tổng (Cổng 5)",
+    .pathPart5 = path_Comparator_part5,
+
+    .title6 = "1.6. Hệ số pha - Cổng hiệu ngang (Cổng 6)",
+    .pathPart6 = path_Comparator_part6,
+
+    .title7 = "1.7. Hệ số pha - Cổng hiệu đứng (Cổng 7)",
+    .pathPart7 = path_Comparator_part7,
 };
 /****************************************************************************/
 static defineCsv csvSMA_part1
@@ -319,27 +446,70 @@ static table FilterIF {
     .pathPart3 = nullptr,
 };
 /****************************************************************************/
-/*______________________________________________*/
+static defineCsv csvFilter_LOIF_part1
+{
+    .pathCsv = path_filter_LOIF_part1,
+    .numColumn = 7,
+    .numRow = 2,
+    {"Điểm marker","Marker 1 tại 1220MHz (≤-35dB)",
+        "Marker 2 tại 1420MHz (≤-35dB)",
+        "Marker 3 tại 1120MHz (≤-55dB)",
+        "Marker 4 tại 1520MHz (≤-55dB)",
+        "Đánh giá"},
+    {"Giá trị","","","","", ""},
+    {},{},{},{},{},{},
+};
+static defineCsv csvFilter_LOIF_part2
+{
+    .pathCsv = path_filter_LOIF_part2,
+    .numColumn = 4,
+    .numRow = 2,
+    {"Điểm marker","Marker 5 tại 1300MHz (≥-2dB)","Marker 6 tại 1340MHz (≥-2dB)","Đánh giá"},
+    {"Giá trị","","",""},
+    {},{},{},{},{},{},
+};
 static table Filter_LOIF {
     .namePart = "FilterLOIF Module",
-    .title1 = "Kết quả đo kiểm",
-    .pathPart1 = path_filter_LOIF,
+    .title1 = "1.1 Kết quả đo kiểm suy hao dải chắn",
+    .pathPart1 = path_filter_LOIF_part1,
 
-    .title2 = nullptr,
-    .pathPart2 = nullptr,
+    .title2 = "1.2 Kết quả đo kiểm suy hao dải thông",
+    .pathPart2 = path_filter_LOIF_part2,
 
     .title3 = nullptr,
     .pathPart3 = nullptr,
 };
 /****************************************************************************/
-/*______________________________________________*/
+static defineCsv csvFilter_LORF_part1
+{
+    .pathCsv = path_filter_LORF_part1,
+    .numColumn = 7,
+    .numRow = 2,
+    {"Điểm marker","Marker 2 tại 7810MHz (≤-2.5dB)",
+        "Marker 3 tại 7910MHz (≤-2.5dB)",
+        "Marker 4 tại 8010MHz (≤-2.5dB)",
+        "Marker 5 tại 8110MHz (≤-2.5dB)",
+        "Marker 6 tại 8210MHz (≤-2.5dB)",
+        "Đánh giá"},
+    {"Giá trị","","","","", "", ""},
+    {},{},{},{},{},{},
+};
+static defineCsv csvFilter_LORF_part2
+{
+    .pathCsv = path_filter_LORF_part2,
+    .numColumn = 4,
+    .numRow = 2,
+    {"Điểm marker","Marker 1 tại 7510MHz (≤-55dB)","Marker 7 tại 8510MHz (≤-55dB)","Đánh giá"},
+    {"Giá trị","","",""},
+    {},{},{},{},{},{},
+};
 static table Filter_LORF {
     .namePart = "FilterLORF Module",
-    .title1 = "Kết quả đo kiểm",
-    .pathPart1 = path_filter_LORF,
+    .title1 = "1.1 Kết quả đo kiểm suy hao dải thông 1",
+    .pathPart1 = path_filter_LORF_part1,
 
-    .title2 = nullptr,
-    .pathPart2 = nullptr,
+    .title2 = "1.2 Kết quả đo kiểm suy hao dải thông 2",
+    .pathPart2 = path_filter_LORF_part2,
 
     .title3 = nullptr,
     .pathPart3 = nullptr,
@@ -475,30 +645,106 @@ static table LimiterSum {
     .pathPart3 = nullptr,
 };
 /****************************************************************************/
-/*______________________________________________*/
+static defineCsv csvLNA_part1
+{
+    .pathCsv = path_LNA_part1,
+    .numColumn = 8,
+    .numRow = 3,
+    {"Cable/Tần số","9.2(Ghz)","9.3(Ghz)","9.4(Ghz)","9.5(Ghz)","9.6(Ghz)","Chỉ tiêu","Đánh giá"},
+    {"RF1"},
+    {"RF2"},
+    {},{},{},{},{},
+};
+
+static defineCsv csvLNA_part23
+{
+    .pathCsv = path_LNA_part23,
+    .numColumn = 9,
+    .numRow = 5,
+    {"STT","Tham số / Tần số","9.2(Ghz)","9.3(Ghz)","9.4(Ghz)","9.5(Ghz)","9.6(Ghz)","Chỉ tiêu","Đánh giá"},
+    {"1","Hệ số khuếch đại","","","","","","≥30dB",""},
+    {"2","Hệ số nhiễu tạp âm","","","","","","≤1.5dB",""},
+    {"3","Công suất tối đa đầu ra","","","","","","≥10dBm",""},
+    {"4","Công suất tối đa đầu vào","","","","","","≤10dBm",""},
+    {},{},{},
+};
+
 static table LNA {
     .namePart = "LNA Module",
-    .title1 = "Kết quả đo kiểm",
-    .pathPart1 = path_limiterSum,
+    .title1 = "1.1 Kết quả đo kiểm suy hao cáp",
+    .pathPart1 = path_LNA_part1,
 
-    .title2 = nullptr,
-    .pathPart2 = nullptr,
+    .title2 = "1.2 Kết quả đo kiểm LNA kênh tổng",
+    .pathPart2 = path_LNA_part23,
 
-    .title3 = nullptr,
-    .pathPart3 = nullptr,
+    .title3 = "1.3 Kết quả đo kiểm LNA kênh hiệu",
+    .pathPart3 = path_LNA_part23,
 };
 /****************************************************************************/
-/*______________________________________________*/
+static defineCsv csvLO_part1
+{
+    .pathCsv = path_LO_part1,
+    .numColumn = 9,
+    .numRow = 8,
+    {"STT","Công suất đầu ra/Tần số (Mhz)","7810","7910","8010","8110","8210","Chỉ tiêu","Đánh giá"},
+    {"1","Giá trị đo được RF+","","","","","","-",""},
+    {"2","Giá trị đo được RF","","","","","","-",""},
+    {"3","Giá trị đo được RF-","","","","","","-",""},
+    {"4", "Suy hao cáp","","","","","","-",""},
+    {"5", "Giá trị sau bù suy hao RF+","","","","","","≥ 0dBm",""},
+    {"6", "Giá trị sau bù suy hao RF","","","","","","≥ 4dBm",""},
+    {"7", "Giá trị sau bù suy hao RF-","","","","","","≥ 0dBm",""},
+};
+
+static defineCsv csvLO_part2
+{
+    .pathCsv = path_LO_part2,
+    .numColumn = 9,
+    .numRow = 3,
+    {"STT","Tham số/Tần số (Mhz)","7810","7910","8010","8110","8210","Chỉ tiêu","Đánh giá"},
+    {"1","Mức hài","","","","","","≤ -45dBc",""},
+    {"2","Phase noise @100kHz offset","","","","","","≤ -75dBc/Hz",""},
+    {},{},{},{},{},
+};
+
+static defineCsv csvLO_part3
+{
+    .pathCsv = path_LO_part3,
+    .numColumn = 5,
+    .numRow = 8,
+    {"STT","Công suất đầu ra/Tần số","1320 Mhz","Chỉ tiêu","Đánh giá"},
+    {"1","G/trị đo được RF+","","≥0 dBm",""},
+    {"2","G/trị đo được RF","","≥0 dBm",""},
+    {"3","G/trị đo được RF-","","≥0 dBm",""},
+    {"4", "Suy hao cáp","","≥0 dBm",""},
+    {"5", "Giá trị sau bù suy hao RF+","","≥0 dBm",""},
+    {"6", "Giá trị sau bù suy hao RF","","≥0 dBm",""},
+    {"7", "Giá trị sau bù suy hao RF-","","","≥0 dBm",""},
+};
+
+static defineCsv csvLO_part4
+{
+    .pathCsv = path_LO_part4,
+    .numColumn = 5,
+    .numRow = 3,
+    {"STT","Tham số/Tần số","1320 Mhz","Chỉ tiêu","Đánh giá"},
+    {"1","Mức hài","","≤ -45dBc",""},
+    {"2","Phase noise @100kHz offset","","≤ -75dBc/Hz",""},
+    {},{},{},{},{},
+};
 static table LO {
     .namePart = "LO Module",
-    .title1 = "Kết quả đo kiểm",
-    .pathPart1 = path_limiterSum,
+    .title1 = "1. Kết quả kiểm tra bộ dao động ngoại sao cao tần \n 1.1. Kết quả công suất đầu ra",
+    .pathPart1 = path_LO_part1,
 
-    .title2 = nullptr,
-    .pathPart2 = nullptr,
+    .title2 = "1.2. Kêt quả đo kiểm Mức hài và Phase noise",
+    .pathPart2 = path_LO_part2,
 
-    .title3 = nullptr,
-    .pathPart3 = nullptr,
+    .title3 = "2. Kết quả kiểm tra bộ dao động ngoại sao trung tần \n 2.1. Kết quả công suất đầu ra",
+    .pathPart3 = path_LO_part3,
+
+    .title4 = "2.2. Kêt quả đo kiểm Mức hài và Phase noise",
+    .pathPart4 = path_LO_part4,
 };
 /****************************************************************************/
 /*______________________________________________*/

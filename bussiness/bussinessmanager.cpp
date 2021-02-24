@@ -211,6 +211,8 @@ void bussinessManager::createReport(KDReports::Report *report, QString typeTest,
     header.addInlineElement(KDReports::TextElement(mUi->mLeWorkSupervisor->text()));
     header.addElement(KDReports::HLineElement());
 
+
+
     if (part.title1 != NULL) {
         createTable(report, part.title1, part.pathPart1);
     }
@@ -220,7 +222,46 @@ void bussinessManager::createReport(KDReports::Report *report, QString typeTest,
     if (part.title3 != NULL) {
         createTable(report, part.title3, part.pathPart3);
     }
+    if (part.title4 != NULL) {
+        createTable(report, part.title4, part.pathPart4);
+    }
+    if (part.title5 != NULL) {
+        createTable(report, part.title5, part.pathPart5);
+    }
+    if (part.title6 != NULL) {
+        createTable(report, part.title6, part.pathPart6);
+    }
+    if (part.title7 != NULL) {
+        createTable(report, part.title7, part.pathPart7);
+    }
     qDebug() << "Export " + part.namePart + " report";
+
+    KDReports::TableElement tableFooter;
+    tableFooter.setHeaderRowCount(2);
+    tableFooter.setPadding(1);
+    QColor headerColor("#DADADF");
+
+    KDReports::Cell& topExcutor = tableFooter.cell( 0, 0 );
+    topExcutor.setBackground( headerColor );
+    topExcutor.setColumnSpan(2);
+    topExcutor.addElement(KDReports::TextElement("Thời gian: "), Qt::AlignHCenter );
+    topExcutor.addVariable(KDReports::TextTime);
+    topExcutor.addInlineElement(KDReports::TextElement("-"));
+    topExcutor.addVariable( KDReports::TextDate);
+    topExcutor.addInlineElement(KDReports::TextElement("              "));
+
+    KDReports::Cell& topSupervisor = tableFooter.cell( 0, 2 );
+    topSupervisor.setBackground( headerColor );
+    topSupervisor.setColumnSpan(2);
+    topSupervisor.addElement(KDReports::TextElement("Thời gian: "), Qt::AlignHCenter );
+    topSupervisor.addVariable(KDReports::TextTime);
+    topSupervisor.addInlineElement(KDReports::TextElement("-"));
+    topSupervisor.addVariable(KDReports::TextDate);
+    topSupervisor.addInlineElement(KDReports::TextElement("              "));
+
+    tableFooter.cell(2,0).addElement(KDReports::TextElement(mUi->mLeNameExecutor->text()));
+    tableFooter.cell(2,1).addElement(KDReports::TextElement(mUi->mLeNameSupervisor->text()));
+    report->addElement(tableFooter);
 
     if (mode == "AutoSave") {
         if (!QDir("report/module").exists()) {
@@ -1044,9 +1085,25 @@ void bussinessManager::slt_guidlefile()
 //        csvLimiterSum.row1[4] = "20";
 //        writeToCsvFile(csvLimiterSum);
 
-     csvSwAntena_part2.row1[2] = "10";
-     csvSwAntena_part2.row1[3] = "20";
-     writeToCsvFile(csvSwAntena_part1);
-     writeToCsvFile(csvSwAntena_part2);
-     writeToCsvFile(csvSwAntena_part3);
+//     csvSwAntena_part2.row1[2] = "10";
+//     csvSwAntena_part2.row1[3] = "20";
+//     writeToCsvFile(csvSwAntena_part1);
+//     writeToCsvFile(csvSwAntena_part2);
+//     writeToCsvFile(csvSwAntena_part3);
+
+//       writeToCsvFile(csvComparator_part1);
+//       writeToCsvFile(csvComparator_part2);
+//       writeToCsvFile(csvComparator_part3);
+//       writeToCsvFile(csvComparator_part4);
+//       writeToCsvFile(csvComparator_part5);
+//       writeToCsvFile(csvComparator_part6);
+//       writeToCsvFile(csvComparator_part7);
+
+//    writeToCsvFile(csvFilter_LOIF_part1);
+//    writeToCsvFile(csvFilter_LOIF_part2);
+
+    writeToCsvFile(csvLO_part1);
+    writeToCsvFile(csvLO_part2);
+    writeToCsvFile(csvLO_part3);
+    writeToCsvFile(csvLO_part4);
 }
