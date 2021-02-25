@@ -137,6 +137,7 @@ void bussinessManager::createTable(KDReports::Report *report, QString Title, QSt
     const QColor titleElementColor( 204, 204, 255 );
     KDReports::TextElement tableTitleElement(Title);
     tableTitleElement.setBold( true );
+    tableTitleElement.setFont(QFont("Sans-serif"));
     report->addElement( tableTitleElement, Qt::AlignLeft, titleElementColor );
     TableModel R_Cable;
     R_Cable.setDataHasVerticalHeaders(false);
@@ -148,14 +149,16 @@ void bussinessManager::createTable(KDReports::Report *report, QString Title, QSt
 }
 void bussinessManager::createReport(KDReports::Report *report, QString typeTest, table part, QString mode)
 {
-    report->setHeaderBodySpacing(10); // mm
-    report->setFooterBodySpacing(10); // mm
+    report->setHeaderBodySpacing(1); // mm
+    report->setFooterBodySpacing(1); // mm
+    report->defaultFont();
 
     KDReports::Header& header = report->header( KDReports::OddPages );
 
-    KDReports::TextElement mainTitle("Test Report \t \t \t \t");
+    KDReports::TextElement mainTitle("Test Report \t \t \t");
     mainTitle.setBold(true);
     mainTitle.setPointSize(30);
+    mainTitle.setFont(QFont( "Sans-serif"));
 
     QPixmap kdab( ":/Test/images/logo_vtx.png" );
     KDReports::ImageElement imageElement( kdab );
@@ -236,31 +239,50 @@ void bussinessManager::createReport(KDReports::Report *report, QString typeTest,
     }
     qDebug() << "Export " + part.namePart + " report";
 
+
+    report->footer().addElement(KDReports::HLineElement());
+    KDReports::TextElement footerText;
+    footerText << "Report of " + part.namePart + " trên ĐTD VCM-01, TT Đầu tự dẫn, Viện HKVT";
+    footerText.setPointSize(8);
+    report->footer().addElement( footerText, Qt::AlignCenter );
+
     KDReports::TableElement tableFooter;
     tableFooter.setHeaderRowCount(2);
-    tableFooter.setPadding(1);
+    tableFooter.setPadding(0);
+    tableFooter.setBorder(0);
     QColor headerColor("#DADADF");
 
-    KDReports::Cell& topExcutor = tableFooter.cell( 0, 0 );
-    topExcutor.setBackground( headerColor );
-    topExcutor.setColumnSpan(2);
-    topExcutor.addElement(KDReports::TextElement("Thời gian: "), Qt::AlignHCenter );
-    topExcutor.addVariable(KDReports::TextTime);
-    topExcutor.addInlineElement(KDReports::TextElement("-"));
-    topExcutor.addVariable( KDReports::TextDate);
-    topExcutor.addInlineElement(KDReports::TextElement("              "));
+    QDate _current = QDate::currentDate();
+    //qDebug() << " Date: " + QString::number(_current.day());
 
-    KDReports::Cell& topSupervisor = tableFooter.cell( 0, 2 );
-    topSupervisor.setBackground( headerColor );
-    topSupervisor.setColumnSpan(2);
-    topSupervisor.addElement(KDReports::TextElement("Thời gian: "), Qt::AlignHCenter );
-    topSupervisor.addVariable(KDReports::TextTime);
-    topSupervisor.addInlineElement(KDReports::TextElement("-"));
-    topSupervisor.addVariable(KDReports::TextDate);
-    topSupervisor.addInlineElement(KDReports::TextElement("              "));
+    KDReports::Cell& topSupervisor = tableFooter.cell(0, 0);
+    topSupervisor.addInlineElement(KDReports::TextElement(" \t \t \t \t \t  "));
 
-    tableFooter.cell(2,0).addElement(KDReports::TextElement(mUi->mLeNameExecutor->text()));
-    tableFooter.cell(2,1).addElement(KDReports::TextElement(mUi->mLeNameSupervisor->text()));
+    KDReports::Cell& topExcutor = tableFooter.cell(0,1 );
+    topExcutor.addElement(KDReports::TextElement(mUi->mLeLocalTest->text() +
+                                                 ", Ngày " + QString::number(_current.day()) +
+                                                 " tháng " + QString::number(_current.month()) +
+                                                 " năm " + QString::number(_current.year())
+                                                 ), Qt::AlignHCenter);
+    topExcutor.addInlineElement(KDReports::TextElement("\t \t \t "));
+
+
+    tableFooter.cell(1,0).addElement(KDReports::TextElement("Người thực hiện"), Qt::AlignCenter);
+    tableFooter.cell(1,0).addElement(KDReports::TextElement("(Ký, họ tên)"), Qt::AlignCenter);
+    tableFooter.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    tableFooter.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    tableFooter.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    tableFooter.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    tableFooter.cell(1,0).addElement(KDReports::TextElement(mUi->mLeNameExecutor->text()),
+                                     Qt::AlignCenter);
+
+    tableFooter.cell(1,1).addElement(KDReports::TextElement("Người giám sát"), Qt::AlignCenter);
+    tableFooter.cell(1,1).addElement(KDReports::TextElement("(Ký, họ tên)"), Qt::AlignCenter);
+    tableFooter.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    tableFooter.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    tableFooter.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    tableFooter.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    tableFooter.cell(1,1).addElement(KDReports::TextElement(mUi->mLeNameSupervisor->text()), Qt::AlignCenter);
     report->addElement(tableFooter);
 
     if (mode == "AutoSave") {

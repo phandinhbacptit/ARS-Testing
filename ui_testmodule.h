@@ -2196,7 +2196,7 @@ public:
         scrollArea_2->setWidgetResizable(true);
         scrollAreaWidgetContents_3 = new QWidget();
         scrollAreaWidgetContents_3->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_3"));
-        scrollAreaWidgetContents_3->setGeometry(QRect(0, -335, 589, 1506));
+        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 589, 1506));
         gridLayout_17 = new QGridLayout(scrollAreaWidgetContents_3);
         gridLayout_17->setObjectName(QString::fromUtf8("gridLayout_17"));
         All = new QCheckBox(scrollAreaWidgetContents_3);
@@ -6191,6 +6191,13 @@ public:
         gridLayout_10->setContentsMargins(0, 0, 0, 0);
         label_2 = new QLabel(frame_4);
         label_2->setObjectName(QString::fromUtf8("label_2"));
+        QFont font;
+        font.setFamily(QString::fromUtf8("Sans"));
+        font.setPointSize(9);
+        font.setBold(true);
+        font.setItalic(false);
+        font.setWeight(75);
+        label_2->setFont(font);
         label_2->setStyleSheet(QString::fromUtf8("background-color: rgb(220,225,226);\n"
 "color: rgb(156,114,50);\n"
 "font:9pt \"Sans\";\n"
@@ -6455,7 +6462,7 @@ public:
 
         retranslateUi(testModule);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(2);
         tabWidget_2->setCurrentIndex(1);
 
 
