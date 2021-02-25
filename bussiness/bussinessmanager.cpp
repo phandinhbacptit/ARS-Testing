@@ -1052,7 +1052,78 @@ void bussinessManager::writeToCsvFile(defineCsv data)
           strData.addRow(strList);
           strList.clear();
       }
-
+      _numRow++;
+      if (data.numRow > _numRow) {
+          for(int j= 0; j < data.numColumn; j++) {
+            strList << data.row8[j];
+          }
+          strData.addRow(strList);
+          strList.clear();
+      }
+      _numRow++;
+      if (data.numRow > _numRow) {
+          for(int j= 0; j < data.numColumn; j++) {
+            strList << data.row9[j];
+          }
+          strData.addRow(strList);
+          strList.clear();
+      }
+      _numRow++;
+      if (data.numRow > _numRow) {
+          for(int j= 0; j < data.numColumn; j++) {
+            strList << data.row10[j];
+          }
+          strData.addRow(strList);
+          strList.clear();
+      }
+      _numRow++;
+      if (data.numRow > _numRow) {
+          for(int j= 0; j < data.numColumn; j++) {
+            strList << data.row11[j];
+          }
+          strData.addRow(strList);
+          strList.clear();
+      }
+      _numRow++;
+      if (data.numRow > _numRow) {
+          for(int j= 0; j < data.numColumn; j++) {
+            strList << data.row12[j];
+          }
+          strData.addRow(strList);
+          strList.clear();
+      }
+      _numRow++;
+      if (data.numRow > _numRow) {
+          for(int j= 0; j < data.numColumn; j++) {
+            strList << data.row13[j];
+          }
+          strData.addRow(strList);
+          strList.clear();
+      }
+      _numRow++;
+      if (data.numRow > _numRow) {
+          for(int j= 0; j < data.numColumn; j++) {
+            strList << data.row14[j];
+          }
+          strData.addRow(strList);
+          strList.clear();
+      }
+      _numRow++;
+      if (data.numRow > _numRow) {
+          for(int j= 0; j < data.numColumn; j++) {
+            strList << data.row15[j];
+          }
+          strData.addRow(strList);
+          strList.clear();
+      }
+      _numRow++;
+      if (data.numRow > _numRow) {
+          for(int j= 0; j < data.numColumn; j++) {
+            strList << data.row16[j];
+          }
+          strData.addRow(strList);
+          strList.clear();
+      }
     QString _filepath = QDir::currentPath() + "/" + data.pathCsv;
     QtCSV::Writer::write(_filepath, strData);
 }
@@ -1102,8 +1173,10 @@ void bussinessManager::slt_guidlefile()
 //    writeToCsvFile(csvFilter_LOIF_part1);
 //    writeToCsvFile(csvFilter_LOIF_part2);
 
-    writeToCsvFile(csvLO_part1);
-    writeToCsvFile(csvLO_part2);
-    writeToCsvFile(csvLO_part3);
-    writeToCsvFile(csvLO_part4);
+    writeToCsvFile(csvHPA_part1);
+    writeToCsvFile(csvHPA_part2);
+    writeToCsvFile(csvHPA_part3);
+    writeToCsvFile(csvHPA_part4);
+    writeToCsvFile(csvHPA_part5);
+    writeToCsvFile(csvHPA_part6);
 }
