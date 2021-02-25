@@ -149,73 +149,76 @@ void bussinessManager::createTable(KDReports::Report *report, QString Title, QSt
 }
 void bussinessManager::createReport(KDReports::Report *report, QString typeTest, table part, QString mode)
 {
-    report->setHeaderBodySpacing(1); // mm
-    report->setFooterBodySpacing(1); // mm
+    QString ResultTest = "PASS";
+//    report->setHeaderBodySpacing(1); // mm
+//    report->setFooterBodySpacing(1); // mm
     report->defaultFont();
 
-    KDReports::Header& header = report->header( KDReports::OddPages );
+    KDReports::Header& header = report->header();
 
     KDReports::TextElement mainTitle("Test Report \t \t \t");
     mainTitle.setBold(true);
     mainTitle.setPointSize(30);
-    mainTitle.setFont(QFont( "Sans-serif"));
+    mainTitle.setFont(QFont("Sans-serif"));
 
-    QPixmap kdab( ":/Test/images/logo_vtx.png" );
-    KDReports::ImageElement imageElement( kdab );
-    imageElement.setWidth( 20, KDReports::Percent );
+    QPixmap kdab(":/Test/images/logo_vtx.png");
+    KDReports::ImageElement imageElement(kdab);
+    imageElement.setWidth(20, KDReports::Percent );
 
     header.addElement(mainTitle);
     header.addInlineElement(imageElement );
     header.addElement(KDReports::HLineElement());
 
-    header.addElement(KDReports::TextElement("Type: "));
+    /* Create header of report */
+    KDReports::TableElement tableHeade1;
+    tableHeade1.setHeaderRowCount(2);
+    tableHeade1.setPadding(0);
+    tableHeade1.setBorder(0);
+    tableHeade1.cell(0,0).addElement(KDReports::TextElement("Type: "), Qt::AlignLeft);
     if (typeTest == "CTE") {
-        header.addInlineElement(KDReports::TextElement("Kiểm tra cáp điện"));
+        tableHeade1.cell(0,1).addElement(KDReports::TextElement("Kiểm tra cáp điện   "), Qt::AlignLeft);
     }
-    else if (typeTest == "MTE") {
-        header.addInlineElement(KDReports::TextElement("Kiểm tra module"));
+    else {
+        tableHeade1.cell(0,1).addElement(KDReports::TextElement("Kiểm tra module   "), Qt::AlignLeft);
     }
-    header.addInlineElement(KDReports::TextElement("\t \t"));
-    header.addInlineElement(KDReports::TextElement("Test Date: "));
-    header.addVariable( KDReports::TextDate);
-    header.addInlineElement(KDReports::TextElement("\t"));
-    header.addInlineElement(KDReports::TextElement("RunNumber: "));
+    tableHeade1.cell(0,2).addElement(KDReports::TextElement("\t"), Qt::AlignHCenter);
     if (typeTest == "CTE") {
-        header.addElement(KDReports::TextElement("Name Cable: "));
+        tableHeade1.cell(0,3).addElement(KDReports::TextElement("Name Cable: "), Qt::AlignHCenter);
+    } else {
+        tableHeade1.cell(0,3).addElement(KDReports::TextElement("Name Module: "), Qt::AlignHCenter);
     }
-    else if (typeTest == "MTE") {
-        header.addElement(KDReports::TextElement("Name Module: "));
-    }
-    header.addInlineElement(KDReports::TextElement(part.namePart));
-    header.addInlineElement(KDReports::TextElement("\t"));
-    header.addInlineElement(KDReports::TextElement("Test Time: "));
-    header.addVariable( KDReports::TextTime);
-    header.addInlineElement(KDReports::TextElement("\t \t \t"));
-    header.addInlineElement(KDReports::TextElement("Place: "));
-    header.addInlineElement(KDReports::TextElement(mUi->mLeLocalTest->text()));
+    tableHeade1.cell(0,4).addElement(KDReports::TextElement(part.namePart), Qt::AlignLeft);
+    tableHeade1.cell(0,5).addElement(KDReports::TextElement("\t"), Qt::AlignLeft);
+    tableHeade1.cell(0,6).addElement(KDReports::TextElement("Result: "), Qt::AlignRight);
+    tableHeade1.cell(0,7).addElement(KDReports::TextElement(ResultTest), Qt::AlignLeft);
+    header.addElement(tableHeade1);
     header.addElement(KDReports::HLineElement());
 
-    header.addElement(KDReports::TextElement("Excutor: "));
-    header.addInlineElement(KDReports::TextElement(mUi->mLeNameExecutor->text()));
-    header.addInlineElement(KDReports::TextElement("\t"));
-    header.addInlineElement(KDReports::TextElement("ID Excutor: "));
-    header.addInlineElement(KDReports::TextElement(mUi->mLeIDExecutor->text()));
-    header.addInlineElement(KDReports::TextElement("\t \t"));
-    header.addInlineElement(KDReports::TextElement("WorkdPlace: "));
-    header.addInlineElement(KDReports::TextElement(mUi->mLeWorkExecutor->text()));
+    KDReports::TableElement tableHeade2;
+    tableHeade2.setHeaderRowCount(2);
+    tableHeade2.setPadding(0);
+    tableHeade2.setBorder(0);
+    tableHeade2.cell(0,0).addElement(KDReports::TextElement("Excutor: "), Qt::AlignLeft);
+    tableHeade2.cell(0,1).addElement(KDReports::TextElement(mUi->mLeNameExecutor->text()), Qt::AlignLeft);
+    tableHeade2.cell(0,2).addElement(KDReports::TextElement("\t"), Qt::AlignLeft);
+    tableHeade2.cell(0,3).addElement(KDReports::TextElement("ID Excutor: "), Qt::AlignLeft);
+    tableHeade2.cell(0,4).addElement(KDReports::TextElement(mUi->mLeIDExecutor->text()), Qt::AlignLeft);
+    tableHeade2.cell(0,5).addElement(KDReports::TextElement("\t"), Qt::AlignLeft);
+    tableHeade2.cell(0,6).addElement(KDReports::TextElement("Work: "), Qt::AlignLeft);
+    tableHeade2.cell(0,7).addElement(KDReports::TextElement(mUi->mLeWorkExecutor->text()), Qt::AlignLeft);
 
-    header.addElement(KDReports::TextElement("Supervisor: "));
-    header.addInlineElement(KDReports::TextElement(mUi->mLeNameSupervisor->text()));
-    header.addInlineElement(KDReports::TextElement("\t"));
-    header.addInlineElement(KDReports::TextElement("ID Supervisor: "));
-    header.addInlineElement(KDReports::TextElement(mUi->mLeIDSupervisor->text()));
-    header.addInlineElement(KDReports::TextElement("\t \t"));
-    header.addInlineElement(KDReports::TextElement("WorkdPlace: "));
-    header.addInlineElement(KDReports::TextElement(mUi->mLeWorkSupervisor->text()));
+    tableHeade2.cell(1,0).addElement(KDReports::TextElement("Supervisor: "), Qt::AlignLeft);
+    tableHeade2.cell(1,1).addElement(KDReports::TextElement(mUi->mLeNameSupervisor->text()), Qt::AlignLeft);
+    tableHeade2.cell(1,2).addElement(KDReports::TextElement("\t"), Qt::AlignLeft);
+    tableHeade2.cell(1,3).addElement(KDReports::TextElement("ID Supervisor: "), Qt::AlignLeft);
+    tableHeade2.cell(1,4).addElement(KDReports::TextElement(mUi->mLeIDSupervisor->text()), Qt::AlignLeft);
+    tableHeade2.cell(1,5).addElement(KDReports::TextElement("\t"), Qt::AlignLeft);
+    tableHeade2.cell(1,6).addElement(KDReports::TextElement("Work: "), Qt::AlignLeft);
+    tableHeade2.cell(1,7).addElement(KDReports::TextElement(mUi->mLeWorkSupervisor->text()), Qt::AlignLeft);
+    header.addElement(tableHeade2);
     header.addElement(KDReports::HLineElement());
 
-
-
+    /* Create table contain result measurment parameter of each module*/
     if (part.title1 != NULL) {
         createTable(report, part.title1, part.pathPart1);
     }
@@ -239,51 +242,59 @@ void bussinessManager::createReport(KDReports::Report *report, QString typeTest,
     }
     qDebug() << "Export " + part.namePart + " report";
 
-
+    /*Create footer for report*/
     report->footer().addElement(KDReports::HLineElement());
     KDReports::TextElement footerText;
-    footerText << "Report of " + part.namePart + " trên ĐTD VCM-01, TT Đầu tự dẫn, Viện HKVT";
+    footerText << "           Report of " + part.namePart + " created at " + QTime::currentTime().toString("hh:mm:ss") + " \t \t \t Page ";
     footerText.setPointSize(8);
-    report->footer().addElement( footerText, Qt::AlignCenter );
+    footerText.setItalic(true);
+    report->footer().addElement(footerText, Qt::AlignCenter );
+    report->footer().addVariable(KDReports::PageNumber);
 
-    KDReports::TableElement tableFooter;
-    tableFooter.setHeaderRowCount(2);
-    tableFooter.setPadding(0);
-    tableFooter.setBorder(0);
+    /*Create note*/
+    KDReports::TextElement noteTitle("Ghi chú: ");
+    noteTitle.setBold(true);
+    noteTitle.setPointSize(10);
+    noteTitle.setFont(QFont("Sans-serif"));
+    report->addElement(noteTitle);
+    report->addInlineElement(KDReports::TextElement("............................................................................."
+                                                    "................................."));
+    report->addElement(KDReports::TextElement("    "));
+
+    /*Create table signature for excutor and supervisor*/
+    KDReports::TableElement tableSign;
+    tableSign.setHeaderRowCount(2);
+    tableSign.setPadding(0);
+    tableSign.setBorder(0);
     QColor headerColor("#DADADF");
-
     QDate _current = QDate::currentDate();
-    //qDebug() << " Date: " + QString::number(_current.day());
+    KDReports::Cell& signSupervisor = tableSign.cell(0, 0);
+    signSupervisor.addInlineElement(KDReports::TextElement(" \t \t \t \t \t  "));
 
-    KDReports::Cell& topSupervisor = tableFooter.cell(0, 0);
-    topSupervisor.addInlineElement(KDReports::TextElement(" \t \t \t \t \t  "));
-
-    KDReports::Cell& topExcutor = tableFooter.cell(0,1 );
-    topExcutor.addElement(KDReports::TextElement(mUi->mLeLocalTest->text() +
+    KDReports::Cell& signExcutor = tableSign.cell(0,1 );
+    signExcutor.addElement(KDReports::TextElement(mUi->mLeLocalTest->text() +
                                                  ", Ngày " + QString::number(_current.day()) +
                                                  " tháng " + QString::number(_current.month()) +
                                                  " năm " + QString::number(_current.year())
                                                  ), Qt::AlignHCenter);
-    topExcutor.addInlineElement(KDReports::TextElement("\t \t \t "));
-
-
-    tableFooter.cell(1,0).addElement(KDReports::TextElement("Người thực hiện"), Qt::AlignCenter);
-    tableFooter.cell(1,0).addElement(KDReports::TextElement("(Ký, họ tên)"), Qt::AlignCenter);
-    tableFooter.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-    tableFooter.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-    tableFooter.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-    tableFooter.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-    tableFooter.cell(1,0).addElement(KDReports::TextElement(mUi->mLeNameExecutor->text()),
+    signExcutor.addInlineElement(KDReports::TextElement("\t \t \t "));
+    tableSign.cell(1,0).addElement(KDReports::TextElement("Người thực hiện"), Qt::AlignCenter);
+    tableSign.cell(1,0).addElement(KDReports::TextElement("(Ký, họ tên)"), Qt::AlignCenter);
+    tableSign.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    tableSign.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    tableSign.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    tableSign.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    tableSign.cell(1,0).addElement(KDReports::TextElement(mUi->mLeNameExecutor->text()),
                                      Qt::AlignCenter);
 
-    tableFooter.cell(1,1).addElement(KDReports::TextElement("Người giám sát"), Qt::AlignCenter);
-    tableFooter.cell(1,1).addElement(KDReports::TextElement("(Ký, họ tên)"), Qt::AlignCenter);
-    tableFooter.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-    tableFooter.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-    tableFooter.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-    tableFooter.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-    tableFooter.cell(1,1).addElement(KDReports::TextElement(mUi->mLeNameSupervisor->text()), Qt::AlignCenter);
-    report->addElement(tableFooter);
+    tableSign.cell(1,1).addElement(KDReports::TextElement("Người giám sát"), Qt::AlignCenter);
+    tableSign.cell(1,1).addElement(KDReports::TextElement("(Ký, họ tên)"), Qt::AlignCenter);
+    tableSign.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    tableSign.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    tableSign.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    tableSign.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    tableSign.cell(1,1).addElement(KDReports::TextElement(mUi->mLeNameSupervisor->text()), Qt::AlignCenter);
+    report->addElement(tableSign);
 
     if (mode == "AutoSave") {
         if (!QDir("report/module").exists()) {
