@@ -34,6 +34,7 @@ public:
     QFrame *frame;
     QGridLayout *gridLayout_6;
     QLabel *label;
+    QLabel *label_3;
     QFrame *frame_2;
     QGridLayout *gridLayout_18;
     QFrame *frame_9;
@@ -556,7 +557,18 @@ public:
 "font:bold;\n"
 "background-color: none;"));
 
-        gridLayout_6->addWidget(label, 0, 0, 1, 1, Qt::AlignLeft);
+        gridLayout_6->addWidget(label, 0, 1, 1, 1, Qt::AlignLeft);
+
+        label_3 = new QLabel(frame);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(label_3->sizePolicy().hasHeightForWidth());
+        label_3->setSizePolicy(sizePolicy);
+        label_3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/logo_viettel.png")));
+
+        gridLayout_6->addWidget(label_3, 0, 0, 1, 1);
 
         gridLayout_6->setColumnStretch(0, 1);
 
@@ -694,7 +706,7 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 563, 383));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 520, 383));
         scrollAreaWidgetContents->setStyleSheet(QString::fromUtf8("background-color: rgb(235,235,235);"));
         gridLayout = new QGridLayout(scrollAreaWidgetContents);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
@@ -754,11 +766,11 @@ public:
 
         line = new QFrame(scrollAreaWidgetContents);
         line->setObjectName(QString::fromUtf8("line"));
-        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(line->sizePolicy().hasHeightForWidth());
-        line->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(line->sizePolicy().hasHeightForWidth());
+        line->setSizePolicy(sizePolicy1);
         line->setStyleSheet(QString::fromUtf8("background-color: rgb(49,67,100);"));
         line->setFrameShape(QFrame::HLine);
         line->setFrameShadow(QFrame::Sunken);
@@ -781,7 +793,7 @@ public:
         detailCtrMotorAzi->setWidgetResizable(true);
         scrollAreaWidgetContents_2 = new QWidget();
         scrollAreaWidgetContents_2->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_2"));
-        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 549, 531));
+        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 506, 531));
         scrollAreaWidgetContents_2->setStyleSheet(QString::fromUtf8("background-color: rgb(235,235,235);"));
         gridLayout_7 = new QGridLayout(scrollAreaWidgetContents_2);
         gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
@@ -833,11 +845,11 @@ public:
 
         label_13 = new QLabel(scrollAreaWidgetContents_2);
         label_13->setObjectName(QString::fromUtf8("label_13"));
-        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Preferred);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(label_13->sizePolicy().hasHeightForWidth());
-        label_13->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Preferred);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(label_13->sizePolicy().hasHeightForWidth());
+        label_13->setSizePolicy(sizePolicy2);
         label_13->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_7->addWidget(label_13, 2, 0, 1, 1);
@@ -926,8 +938,8 @@ public:
 
         label_12 = new QLabel(scrollAreaWidgetContents_2);
         label_12->setObjectName(QString::fromUtf8("label_12"));
-        sizePolicy1.setHeightForWidth(label_12->sizePolicy().hasHeightForWidth());
-        label_12->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(label_12->sizePolicy().hasHeightForWidth());
+        label_12->setSizePolicy(sizePolicy2);
         label_12->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_7->addWidget(label_12, 3, 0, 1, 1);
@@ -1010,8 +1022,8 @@ public:
 
         label_14 = new QLabel(scrollAreaWidgetContents_2);
         label_14->setObjectName(QString::fromUtf8("label_14"));
-        sizePolicy1.setHeightForWidth(label_14->sizePolicy().hasHeightForWidth());
-        label_14->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(label_14->sizePolicy().hasHeightForWidth());
+        label_14->setSizePolicy(sizePolicy2);
         label_14->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_7->addWidget(label_14, 4, 0, 1, 1);
@@ -1094,8 +1106,8 @@ public:
 
         label_15 = new QLabel(scrollAreaWidgetContents_2);
         label_15->setObjectName(QString::fromUtf8("label_15"));
-        sizePolicy1.setHeightForWidth(label_15->sizePolicy().hasHeightForWidth());
-        label_15->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(label_15->sizePolicy().hasHeightForWidth());
+        label_15->setSizePolicy(sizePolicy2);
         label_15->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_7->addWidget(label_15, 5, 0, 1, 1);
@@ -1178,8 +1190,8 @@ public:
 
         label_19 = new QLabel(scrollAreaWidgetContents_2);
         label_19->setObjectName(QString::fromUtf8("label_19"));
-        sizePolicy1.setHeightForWidth(label_19->sizePolicy().hasHeightForWidth());
-        label_19->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(label_19->sizePolicy().hasHeightForWidth());
+        label_19->setSizePolicy(sizePolicy2);
         label_19->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_7->addWidget(label_19, 6, 0, 1, 1);
@@ -1262,8 +1274,8 @@ public:
 
         label_16 = new QLabel(scrollAreaWidgetContents_2);
         label_16->setObjectName(QString::fromUtf8("label_16"));
-        sizePolicy1.setHeightForWidth(label_16->sizePolicy().hasHeightForWidth());
-        label_16->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(label_16->sizePolicy().hasHeightForWidth());
+        label_16->setSizePolicy(sizePolicy2);
         label_16->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_7->addWidget(label_16, 7, 0, 1, 1);
@@ -1346,8 +1358,8 @@ public:
 
         label_17 = new QLabel(scrollAreaWidgetContents_2);
         label_17->setObjectName(QString::fromUtf8("label_17"));
-        sizePolicy1.setHeightForWidth(label_17->sizePolicy().hasHeightForWidth());
-        label_17->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(label_17->sizePolicy().hasHeightForWidth());
+        label_17->setSizePolicy(sizePolicy2);
         label_17->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_7->addWidget(label_17, 8, 0, 1, 1);
@@ -1430,8 +1442,8 @@ public:
 
         label_18 = new QLabel(scrollAreaWidgetContents_2);
         label_18->setObjectName(QString::fromUtf8("label_18"));
-        sizePolicy1.setHeightForWidth(label_18->sizePolicy().hasHeightForWidth());
-        label_18->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(label_18->sizePolicy().hasHeightForWidth());
+        label_18->setSizePolicy(sizePolicy2);
         label_18->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_7->addWidget(label_18, 9, 0, 1, 1);
@@ -2109,7 +2121,7 @@ public:
         scrollArea_2->setWidgetResizable(true);
         scrollAreaWidgetContents_3 = new QWidget();
         scrollAreaWidgetContents_3->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_3"));
-        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 549, 1435));
+        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 506, 1435));
         gridLayout_17 = new QGridLayout(scrollAreaWidgetContents_3);
         gridLayout_17->setObjectName(QString::fromUtf8("gridLayout_17"));
         gridLayout_17->setHorizontalSpacing(6);
@@ -2157,8 +2169,8 @@ public:
 
         label_85 = new QLabel(scrollAreaWidgetContents_3);
         label_85->setObjectName(QString::fromUtf8("label_85"));
-        sizePolicy1.setHeightForWidth(label_85->sizePolicy().hasHeightForWidth());
-        label_85->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(label_85->sizePolicy().hasHeightForWidth());
+        label_85->setSizePolicy(sizePolicy2);
         label_85->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_85, 2, 0, 1, 1);
@@ -2234,16 +2246,16 @@ public:
 
         label_86 = new QLabel(scrollAreaWidgetContents_3);
         label_86->setObjectName(QString::fromUtf8("label_86"));
-        sizePolicy1.setHeightForWidth(label_86->sizePolicy().hasHeightForWidth());
-        label_86->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(label_86->sizePolicy().hasHeightForWidth());
+        label_86->setSizePolicy(sizePolicy2);
         label_86->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_86, 3, 0, 1, 1);
 
         mCbCirculator_part2 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbCirculator_part2->setObjectName(QString::fromUtf8("mCbCirculator_part2"));
-        sizePolicy.setHeightForWidth(mCbCirculator_part2->sizePolicy().hasHeightForWidth());
-        mCbCirculator_part2->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(mCbCirculator_part2->sizePolicy().hasHeightForWidth());
+        mCbCirculator_part2->setSizePolicy(sizePolicy1);
         mCbCirculator_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
@@ -2333,8 +2345,8 @@ public:
 
         label_87 = new QLabel(scrollAreaWidgetContents_3);
         label_87->setObjectName(QString::fromUtf8("label_87"));
-        sizePolicy1.setHeightForWidth(label_87->sizePolicy().hasHeightForWidth());
-        label_87->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(label_87->sizePolicy().hasHeightForWidth());
+        label_87->setSizePolicy(sizePolicy2);
         label_87->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_87, 5, 0, 1, 1);
@@ -2410,8 +2422,8 @@ public:
 
         label_88 = new QLabel(scrollAreaWidgetContents_3);
         label_88->setObjectName(QString::fromUtf8("label_88"));
-        sizePolicy1.setHeightForWidth(label_88->sizePolicy().hasHeightForWidth());
-        label_88->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(label_88->sizePolicy().hasHeightForWidth());
+        label_88->setSizePolicy(sizePolicy2);
         label_88->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_88, 6, 0, 1, 1);
@@ -2507,8 +2519,8 @@ public:
 
         label_89 = new QLabel(scrollAreaWidgetContents_3);
         label_89->setObjectName(QString::fromUtf8("label_89"));
-        sizePolicy1.setHeightForWidth(label_89->sizePolicy().hasHeightForWidth());
-        label_89->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(label_89->sizePolicy().hasHeightForWidth());
+        label_89->setSizePolicy(sizePolicy2);
         label_89->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_89, 8, 0, 1, 1);
@@ -2584,8 +2596,8 @@ public:
 
         label_90 = new QLabel(scrollAreaWidgetContents_3);
         label_90->setObjectName(QString::fromUtf8("label_90"));
-        sizePolicy1.setHeightForWidth(label_90->sizePolicy().hasHeightForWidth());
-        label_90->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(label_90->sizePolicy().hasHeightForWidth());
+        label_90->setSizePolicy(sizePolicy2);
         label_90->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_90, 9, 0, 1, 1);
@@ -2681,8 +2693,8 @@ public:
 
         label_91 = new QLabel(scrollAreaWidgetContents_3);
         label_91->setObjectName(QString::fromUtf8("label_91"));
-        sizePolicy1.setHeightForWidth(label_91->sizePolicy().hasHeightForWidth());
-        label_91->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(label_91->sizePolicy().hasHeightForWidth());
+        label_91->setSizePolicy(sizePolicy2);
         label_91->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_91, 11, 0, 1, 1);
@@ -2758,11 +2770,8 @@ public:
 
         label_92 = new QLabel(scrollAreaWidgetContents_3);
         label_92->setObjectName(QString::fromUtf8("label_92"));
-        QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy2.setHorizontalStretch(0);
-        sizePolicy2.setVerticalStretch(0);
-        sizePolicy2.setHeightForWidth(label_92->sizePolicy().hasHeightForWidth());
-        label_92->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_92->sizePolicy().hasHeightForWidth());
+        label_92->setSizePolicy(sizePolicy);
         label_92->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_92, 12, 0, 1, 1);
@@ -3203,8 +3212,8 @@ public:
 
         label_97 = new QLabel(scrollAreaWidgetContents_3);
         label_97->setObjectName(QString::fromUtf8("label_97"));
-        sizePolicy2.setHeightForWidth(label_97->sizePolicy().hasHeightForWidth());
-        label_97->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_97->sizePolicy().hasHeightForWidth());
+        label_97->setSizePolicy(sizePolicy);
         label_97->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_97, 19, 0, 1, 1);
@@ -3280,8 +3289,8 @@ public:
 
         label_98 = new QLabel(scrollAreaWidgetContents_3);
         label_98->setObjectName(QString::fromUtf8("label_98"));
-        sizePolicy2.setHeightForWidth(label_98->sizePolicy().hasHeightForWidth());
-        label_98->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_98->sizePolicy().hasHeightForWidth());
+        label_98->setSizePolicy(sizePolicy);
         label_98->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_98, 20, 0, 1, 1);
@@ -3357,8 +3366,8 @@ public:
 
         label_103 = new QLabel(scrollAreaWidgetContents_3);
         label_103->setObjectName(QString::fromUtf8("label_103"));
-        sizePolicy2.setHeightForWidth(label_103->sizePolicy().hasHeightForWidth());
-        label_103->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_103->sizePolicy().hasHeightForWidth());
+        label_103->setSizePolicy(sizePolicy);
         label_103->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_103, 21, 0, 1, 1);
@@ -3434,8 +3443,8 @@ public:
 
         label_99 = new QLabel(scrollAreaWidgetContents_3);
         label_99->setObjectName(QString::fromUtf8("label_99"));
-        sizePolicy2.setHeightForWidth(label_99->sizePolicy().hasHeightForWidth());
-        label_99->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_99->sizePolicy().hasHeightForWidth());
+        label_99->setSizePolicy(sizePolicy);
         label_99->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_99, 22, 0, 1, 1);
@@ -3511,8 +3520,8 @@ public:
 
         label_102 = new QLabel(scrollAreaWidgetContents_3);
         label_102->setObjectName(QString::fromUtf8("label_102"));
-        sizePolicy2.setHeightForWidth(label_102->sizePolicy().hasHeightForWidth());
-        label_102->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_102->sizePolicy().hasHeightForWidth());
+        label_102->setSizePolicy(sizePolicy);
         label_102->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_102, 23, 0, 1, 1);
@@ -3588,8 +3597,8 @@ public:
 
         label_100 = new QLabel(scrollAreaWidgetContents_3);
         label_100->setObjectName(QString::fromUtf8("label_100"));
-        sizePolicy2.setHeightForWidth(label_100->sizePolicy().hasHeightForWidth());
-        label_100->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_100->sizePolicy().hasHeightForWidth());
+        label_100->setSizePolicy(sizePolicy);
         label_100->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_100, 24, 0, 1, 1);
@@ -3665,8 +3674,8 @@ public:
 
         label_101 = new QLabel(scrollAreaWidgetContents_3);
         label_101->setObjectName(QString::fromUtf8("label_101"));
-        sizePolicy2.setHeightForWidth(label_101->sizePolicy().hasHeightForWidth());
-        label_101->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_101->sizePolicy().hasHeightForWidth());
+        label_101->setSizePolicy(sizePolicy);
         label_101->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_101, 25, 0, 1, 1);
@@ -3763,8 +3772,8 @@ public:
 
         label_136 = new QLabel(scrollAreaWidgetContents_3);
         label_136->setObjectName(QString::fromUtf8("label_136"));
-        sizePolicy2.setHeightForWidth(label_136->sizePolicy().hasHeightForWidth());
-        label_136->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_136->sizePolicy().hasHeightForWidth());
+        label_136->setSizePolicy(sizePolicy);
         label_136->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_136, 27, 0, 1, 1);
@@ -3840,8 +3849,8 @@ public:
 
         label_137 = new QLabel(scrollAreaWidgetContents_3);
         label_137->setObjectName(QString::fromUtf8("label_137"));
-        sizePolicy2.setHeightForWidth(label_137->sizePolicy().hasHeightForWidth());
-        label_137->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_137->sizePolicy().hasHeightForWidth());
+        label_137->setSizePolicy(sizePolicy);
         label_137->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_137, 28, 0, 1, 1);
@@ -3917,8 +3926,8 @@ public:
 
         label_138 = new QLabel(scrollAreaWidgetContents_3);
         label_138->setObjectName(QString::fromUtf8("label_138"));
-        sizePolicy2.setHeightForWidth(label_138->sizePolicy().hasHeightForWidth());
-        label_138->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_138->sizePolicy().hasHeightForWidth());
+        label_138->setSizePolicy(sizePolicy);
         label_138->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_138, 29, 0, 1, 1);
@@ -4015,8 +4024,8 @@ public:
 
         label_120 = new QLabel(scrollAreaWidgetContents_3);
         label_120->setObjectName(QString::fromUtf8("label_120"));
-        sizePolicy2.setHeightForWidth(label_120->sizePolicy().hasHeightForWidth());
-        label_120->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_120->sizePolicy().hasHeightForWidth());
+        label_120->setSizePolicy(sizePolicy);
         label_120->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_120, 31, 0, 1, 1);
@@ -4092,8 +4101,8 @@ public:
 
         label_118 = new QLabel(scrollAreaWidgetContents_3);
         label_118->setObjectName(QString::fromUtf8("label_118"));
-        sizePolicy2.setHeightForWidth(label_118->sizePolicy().hasHeightForWidth());
-        label_118->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_118->sizePolicy().hasHeightForWidth());
+        label_118->setSizePolicy(sizePolicy);
         label_118->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_118, 32, 0, 1, 1);
@@ -4169,8 +4178,8 @@ public:
 
         label_119 = new QLabel(scrollAreaWidgetContents_3);
         label_119->setObjectName(QString::fromUtf8("label_119"));
-        sizePolicy2.setHeightForWidth(label_119->sizePolicy().hasHeightForWidth());
-        label_119->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_119->sizePolicy().hasHeightForWidth());
+        label_119->setSizePolicy(sizePolicy);
         label_119->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_119, 33, 0, 1, 1);
@@ -4267,8 +4276,8 @@ public:
 
         label_135 = new QLabel(scrollAreaWidgetContents_3);
         label_135->setObjectName(QString::fromUtf8("label_135"));
-        sizePolicy2.setHeightForWidth(label_135->sizePolicy().hasHeightForWidth());
-        label_135->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_135->sizePolicy().hasHeightForWidth());
+        label_135->setSizePolicy(sizePolicy);
         label_135->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_135, 35, 0, 1, 1);
@@ -4344,8 +4353,8 @@ public:
 
         label_134 = new QLabel(scrollAreaWidgetContents_3);
         label_134->setObjectName(QString::fromUtf8("label_134"));
-        sizePolicy2.setHeightForWidth(label_134->sizePolicy().hasHeightForWidth());
-        label_134->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_134->sizePolicy().hasHeightForWidth());
+        label_134->setSizePolicy(sizePolicy);
         label_134->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_134, 36, 0, 1, 1);
@@ -4421,8 +4430,8 @@ public:
 
         label_133 = new QLabel(scrollAreaWidgetContents_3);
         label_133->setObjectName(QString::fromUtf8("label_133"));
-        sizePolicy2.setHeightForWidth(label_133->sizePolicy().hasHeightForWidth());
-        label_133->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_133->sizePolicy().hasHeightForWidth());
+        label_133->setSizePolicy(sizePolicy);
         label_133->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_133, 37, 0, 1, 1);
@@ -4519,8 +4528,8 @@ public:
 
         label_126 = new QLabel(scrollAreaWidgetContents_3);
         label_126->setObjectName(QString::fromUtf8("label_126"));
-        sizePolicy2.setHeightForWidth(label_126->sizePolicy().hasHeightForWidth());
-        label_126->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_126->sizePolicy().hasHeightForWidth());
+        label_126->setSizePolicy(sizePolicy);
         label_126->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_126, 39, 0, 1, 1);
@@ -4596,8 +4605,8 @@ public:
 
         label_125 = new QLabel(scrollAreaWidgetContents_3);
         label_125->setObjectName(QString::fromUtf8("label_125"));
-        sizePolicy2.setHeightForWidth(label_125->sizePolicy().hasHeightForWidth());
-        label_125->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_125->sizePolicy().hasHeightForWidth());
+        label_125->setSizePolicy(sizePolicy);
         label_125->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_125, 40, 0, 1, 1);
@@ -4673,8 +4682,8 @@ public:
 
         label_124 = new QLabel(scrollAreaWidgetContents_3);
         label_124->setObjectName(QString::fromUtf8("label_124"));
-        sizePolicy2.setHeightForWidth(label_124->sizePolicy().hasHeightForWidth());
-        label_124->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_124->sizePolicy().hasHeightForWidth());
+        label_124->setSizePolicy(sizePolicy);
         label_124->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_124, 41, 0, 1, 1);
@@ -4771,8 +4780,8 @@ public:
 
         label_123 = new QLabel(scrollAreaWidgetContents_3);
         label_123->setObjectName(QString::fromUtf8("label_123"));
-        sizePolicy2.setHeightForWidth(label_123->sizePolicy().hasHeightForWidth());
-        label_123->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_123->sizePolicy().hasHeightForWidth());
+        label_123->setSizePolicy(sizePolicy);
         label_123->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_123, 43, 0, 1, 1);
@@ -4848,8 +4857,8 @@ public:
 
         label_121 = new QLabel(scrollAreaWidgetContents_3);
         label_121->setObjectName(QString::fromUtf8("label_121"));
-        sizePolicy2.setHeightForWidth(label_121->sizePolicy().hasHeightForWidth());
-        label_121->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_121->sizePolicy().hasHeightForWidth());
+        label_121->setSizePolicy(sizePolicy);
         label_121->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_121, 44, 0, 1, 1);
@@ -4925,8 +4934,8 @@ public:
 
         label_122 = new QLabel(scrollAreaWidgetContents_3);
         label_122->setObjectName(QString::fromUtf8("label_122"));
-        sizePolicy2.setHeightForWidth(label_122->sizePolicy().hasHeightForWidth());
-        label_122->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_122->sizePolicy().hasHeightForWidth());
+        label_122->setSizePolicy(sizePolicy);
         label_122->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_122, 45, 0, 1, 1);
@@ -5022,8 +5031,8 @@ public:
 
         label_132 = new QLabel(scrollAreaWidgetContents_3);
         label_132->setObjectName(QString::fromUtf8("label_132"));
-        sizePolicy2.setHeightForWidth(label_132->sizePolicy().hasHeightForWidth());
-        label_132->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_132->sizePolicy().hasHeightForWidth());
+        label_132->setSizePolicy(sizePolicy);
         label_132->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_132, 47, 0, 1, 1);
@@ -5099,8 +5108,8 @@ public:
 
         label_130 = new QLabel(scrollAreaWidgetContents_3);
         label_130->setObjectName(QString::fromUtf8("label_130"));
-        sizePolicy2.setHeightForWidth(label_130->sizePolicy().hasHeightForWidth());
-        label_130->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_130->sizePolicy().hasHeightForWidth());
+        label_130->setSizePolicy(sizePolicy);
         label_130->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_130, 48, 0, 1, 1);
@@ -5176,8 +5185,8 @@ public:
 
         label_131 = new QLabel(scrollAreaWidgetContents_3);
         label_131->setObjectName(QString::fromUtf8("label_131"));
-        sizePolicy2.setHeightForWidth(label_131->sizePolicy().hasHeightForWidth());
-        label_131->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_131->sizePolicy().hasHeightForWidth());
+        label_131->setSizePolicy(sizePolicy);
         label_131->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_131, 49, 0, 1, 1);
@@ -5273,8 +5282,8 @@ public:
 
         label_127 = new QLabel(scrollAreaWidgetContents_3);
         label_127->setObjectName(QString::fromUtf8("label_127"));
-        sizePolicy2.setHeightForWidth(label_127->sizePolicy().hasHeightForWidth());
-        label_127->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_127->sizePolicy().hasHeightForWidth());
+        label_127->setSizePolicy(sizePolicy);
         label_127->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_127, 51, 0, 1, 1);
@@ -5350,8 +5359,8 @@ public:
 
         label_128 = new QLabel(scrollAreaWidgetContents_3);
         label_128->setObjectName(QString::fromUtf8("label_128"));
-        sizePolicy2.setHeightForWidth(label_128->sizePolicy().hasHeightForWidth());
-        label_128->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_128->sizePolicy().hasHeightForWidth());
+        label_128->setSizePolicy(sizePolicy);
         label_128->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_128, 52, 0, 1, 1);
@@ -5427,8 +5436,8 @@ public:
 
         label_129 = new QLabel(scrollAreaWidgetContents_3);
         label_129->setObjectName(QString::fromUtf8("label_129"));
-        sizePolicy2.setHeightForWidth(label_129->sizePolicy().hasHeightForWidth());
-        label_129->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(label_129->sizePolicy().hasHeightForWidth());
+        label_129->setSizePolicy(sizePolicy);
         label_129->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_129, 53, 0, 1, 1);
@@ -6144,7 +6153,7 @@ public:
 "  	outline:none;\n"
 "}"));
         QIcon icon7;
-        icon7.addFile(QString::fromUtf8(":/Test/images/button/note.jpeg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon7.addFile(QString::fromUtf8(":/Test/images/button/note.png"), QSize(), QIcon::Normal, QIcon::Off);
         btnNoteSign->setIcon(icon7);
         btnNoteSign->setIconSize(QSize(20, 20));
 
@@ -6356,6 +6365,7 @@ public:
     {
         testModule->setWindowTitle(QCoreApplication::translate("testModule", "Form", nullptr));
         label->setText(QCoreApplication::translate("testModule", "             Test Module", nullptr));
+        label_3->setText(QString());
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_3), QCoreApplication::translate("testModule", "Tab 1", nullptr));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_4), QCoreApplication::translate("testModule", "Tab 2", nullptr));
         btnExitMTE->setText(QString());
@@ -6791,7 +6801,7 @@ public:
         label_2->setText(QCoreApplication::translate("testModule", " Test Sequence/ Output Terminal", nullptr));
         btnGuidleMte->setText(QCoreApplication::translate("testModule", "Guidle          ", nullptr));
         btnLogMte->setText(QCoreApplication::translate("testModule", " Log              ", nullptr));
-        btnNoteSign->setText(QCoreApplication::translate("testModule", "Note - Sign", nullptr));
+        btnNoteSign->setText(QCoreApplication::translate("testModule", " Note - Sign ", nullptr));
         btnPreviewMte->setText(QCoreApplication::translate("testModule", "Preview        ", nullptr));
         btnExportMte->setText(QCoreApplication::translate("testModule", "Export report", nullptr));
         btnUndoMte->setText(QCoreApplication::translate("testModule", "Undo", nullptr));

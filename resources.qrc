@@ -58,6 +58,8 @@
         <file>images/button/disconnected.svg</file>
         <file>images/button/preview.png</file>
         <file>images/button/note.jpeg</file>
+        <file>images/logo_viettel.png</file>
+        <file>images/button/note.png</file>
     </qresource>
     <qresource prefix="/File"/>
     <qresource prefix="/">
@@ -83,5 +85,8 @@
         <file>libKdReport/xml/ElectricCable/R_Cable11.csv</file>
         <file>libKdReport/xml/ElectricCable/R_Cable12.csv</file>
         <file>libKdReport/xml/ElectricCable/R_Cable13.csv</file>
+        <file>images/sign/signature1.png</file>
+        <file>images/sign/signature2.png</file>
+        <file>images/sign/signature3.png</file>
     </qresource>
 </RCC>

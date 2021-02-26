@@ -301,21 +301,35 @@ void bussinessManager::createReport(KDReports::Report *report, QString typeTest,
                                                  " tháng " + QString::number(_current.month()) +
                                                  " năm " + QString::number(_current.year())
                                                  ), Qt::AlignHCenter);
+
+
+
     signExcutor.addInlineElement(KDReports::TextElement("\t \t \t "));
     tableSign.cell(1,0).addElement(KDReports::TextElement("Người thực hiện"), Qt::AlignCenter);
     tableSign.cell(1,0).addElement(KDReports::TextElement("(Ký, họ tên)"), Qt::AlignCenter);
     tableSign.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+
+    QPixmap signature1(":/images/sign/signature1.png");
+    KDReports::ImageElement sign1Element(signature1);
+    sign1Element.setWidth(35);
+    tableSign.cell(1,0).addElement(sign1Element, Qt::AlignCenter);
     tableSign.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-    tableSign.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-    tableSign.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+//    tableSign.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+//    tableSign.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
     tableSign.cell(1,0).addElement(KDReports::TextElement(mUi->mLeNameExecutor->text()),
                                      Qt::AlignCenter);
 
     tableSign.cell(1,1).addElement(KDReports::TextElement("Người giám sát"), Qt::AlignCenter);
     tableSign.cell(1,1).addElement(KDReports::TextElement("(Ký, họ tên)"), Qt::AlignCenter);
     tableSign.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-    tableSign.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-    tableSign.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+
+    QPixmap signature2(":/images/sign/signature2.png");
+    KDReports::ImageElement sign2Element(signature2);
+    sign2Element.setWidth(35);
+    tableSign.cell(1,1).addElement(sign2Element, Qt::AlignCenter);
+
+//    tableSign.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+//    tableSign.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
     tableSign.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
     tableSign.cell(1,1).addElement(KDReports::TextElement(mUi->mLeNameSupervisor->text()), Qt::AlignCenter);
     report->addElement(tableSign);
