@@ -28,6 +28,7 @@ private slots:
 
 private:
     Ui::MainWindow *mUi;
+    QCloseEvent *event;
 };
 
 #endif // MAINWINDOW_H

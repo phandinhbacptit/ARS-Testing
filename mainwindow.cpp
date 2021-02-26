@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QDesktopWidget>
 #include <QDebug>
+#include <QCloseEvent>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -64,7 +65,9 @@ void MainWindow::setUi(Ui::MainWindow *ui)
 
 void MainWindow::on_btnMainExit_clicked()
 {
-    this->close();
+    if (QMessageBox::Yes == QMessageBox::question(this, "Close confirm", "Thoát khỏi phần mềm kiểm tra các thành phần của ĐTD?", QMessageBox::Yes | QMessageBox::No)) {
+        this->close();
+    }
 }
 
 //void MainWindow::on_mBtModuleTest_clicked()

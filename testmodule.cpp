@@ -162,8 +162,11 @@ void testModule::on_mCbEnc_all_clicked(bool checked)
 
 void testModule::on_pushButton_12_clicked()
 {
-    this->close();
-    LOGUTILS::stopLogging();
+    if (QMessageBox::Yes == QMessageBox::question(this, "Close confirm", "Thoát khỏi Tab kiểm tra các module trên ĐTD?", QMessageBox::Yes | QMessageBox::No)) {
+        this->close();
+        LOGUTILS::stopLogging();
+    }
+
 }
 
 void testModule::on_detailCtrXlth_clicked()

@@ -60,6 +60,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp\
         mainwindow.cpp \
+    noteandsign.cpp \
     testelectriccable.cpp \
     testrfcable.cpp \
     testmodule.cpp \
@@ -70,6 +71,7 @@ SOURCES += \
     utils/srcReport.cpp
 HEADERS += \
         mainwindow.h \
+    noteandsign.h \
     testelectriccable.h \
     testrfcable.h \
     testmodule.h \
@@ -82,6 +84,7 @@ HEADERS += \
     utils/srcReport.h
 FORMS += \
         mainwindow.ui \
+    noteandsign.ui \
     testelectriccable.ui \
     testrfcable.ui \
     testmodule.ui \

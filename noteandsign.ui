@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>noteAndSign</class>
+ <widget class="QDialog" name="noteAndSign">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>484</width>
+    <height>352</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(227,234,235);
+
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0" colspan="3">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">font: 87 9pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(156,114,50);</string>
+     </property>
+     <property name="text">
+      <string>Note:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="3">
+    <widget class="QTextBrowser" name="tbGetNote">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border:none;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(205,216,217);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QComboBox" name="pathSignExcutor"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="btnImportSignExcutor">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QCheckBox" name="cbSignExecutor">
+        <property name="styleSheet">
+         <string notr="true">QCheckBox{font: 87 9pt &quot;Sans&quot;; font: bold; background-color: none; color: rgb(49,67,100);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Hiện chữ kí người thực hiện</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="4" column="1" colspan="2">
+    <widget class="QFrame" name="frame_2">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(205,216,217);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QComboBox" name="pathSignSupervisor"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="btnImportSignSupervisor">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QCheckBox" name="cbSignSupervisor">
+        <property name="styleSheet">
+         <string notr="true">QCheckBox{font: 87 9pt &quot;Sans&quot;; font: bold; background-color: none; color: rgb(49,67,100);}
+QCheckBox::indicator::unchecked
+{
+	image: url(&quot;:/Test/images/box/box_blank_small.png&quot;);
+}
+QCheckBox::indicator::checked
+{
+	image: url(&quot;:/Test/images/box/box_success_small.png&quot;);
+}
+QCheckBox::hover
+{
+   background-color:rgba(179,192,217);
+  	border:none;
+  	outline:none;
+}</string>
+        </property>
+        <property name="text">
+         <string>HIện chữ kí người kiểm tra</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>50</horstretch>
+       <verstretch>50</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+border-color: rgb(49, 67, 100);
+color: rgb(49,67,100);
+background-color: rgb(177,188,190); 
+font: 87 8pt &quot;Myriad Pro&quot;;
+font:bold;
+outline:none;
+}
+QPushButton::hover
+{
+   background-color:rgba(146,165,201);
+  	outline:none;
+}</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="3">
+    <widget class="QLabel" name="label_2">
+     <property name="styleSheet">
+      <string notr="true">font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(49,67,100);</string>
+     </property>
+     <property name="text">
+      <string>Đồng ý xuất báo cáo những mục đã chọn?</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>noteAndSign</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>noteAndSign</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

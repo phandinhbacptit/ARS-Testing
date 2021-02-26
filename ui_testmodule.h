@@ -28,31 +28,48 @@ QT_BEGIN_NAMESPACE
 class Ui_testModule
 {
 public:
-    QGridLayout *gridLayout_3;
+    QGridLayout *gridLayout_14;
+    QFrame *frame_11;
+    QGridLayout *gridLayout_11;
     QFrame *frame;
     QGridLayout *gridLayout_6;
     QLabel *label;
-    QLabel *label_3;
+    QFrame *frame_2;
+    QGridLayout *gridLayout_18;
+    QFrame *frame_9;
+    QGridLayout *gridLayout_13;
+    QTabWidget *tabWidget_2;
+    QWidget *tab_3;
+    QGridLayout *gridLayout_15;
+    QWidget *pdfModuleShow;
+    QWidget *tab_4;
+    QGridLayout *gridLayout_19;
+    QFrame *frame_10;
+    QWidget *m_graphdata;
+    QFrame *frame_12;
+    QGridLayout *gridLayout_3;
     QPushButton *pushButton_12;
     QFrame *frame_3;
     QGridLayout *gridLayout_2;
     QTabWidget *tabWidget;
     QWidget *DigitalModule;
-    QGridLayout *gridLayout_7;
+    QGridLayout *gridLayout_8;
     QScrollArea *scrollArea;
     QWidget *scrollAreaWidgetContents;
-    QGridLayout *gridLayout_8;
-    QScrollArea *detailCtrMotorAzi;
-    QWidget *scrollAreaWidgetContents_2;
     QGridLayout *gridLayout;
-    QLabel *label_4;
-    QLabel *label_7;
-    QLabel *label_8;
-    QLabel *label_9;
+    QFrame *line_4;
     QLabel *label_10;
     QFrame *line_3;
-    QFrame *line_4;
+    QLabel *label_7;
+    QFrame *line_2;
+    QLabel *label_8;
+    QFrame *line;
+    QLabel *label_4;
+    QScrollArea *detailCtrMotorAzi;
+    QWidget *scrollAreaWidgetContents_2;
+    QGridLayout *gridLayout_7;
     QCheckBox *mCbAll;
+    QLabel *label_9;
     QCheckBox *mCbControl_all;
     QLabel *label_13;
     QCheckBox *mCbControl_xlth;
@@ -111,11 +128,6 @@ public:
     QLabel *label_24;
     QPushButton *pushButton_49;
     QCheckBox *mCbGyro_all;
-    QPushButton *detailGyroModule;
-    QPushButton *pushButton_67;
-    QLabel *label_57;
-    QLabel *label_56;
-    QPushButton *pushButton_68;
     QLabel *label_55;
     QCheckBox *mCbGyro_azi;
     QPushButton *detailGyroAzi;
@@ -131,11 +143,6 @@ public:
     QLabel *label_41;
     QPushButton *pushButton_47;
     QCheckBox *mCbEnc_all;
-    QPushButton *detailEncModule;
-    QPushButton *pushButton_71;
-    QLabel *label_58;
-    QLabel *label_59;
-    QPushButton *pushButton_70;
     QLabel *label_61;
     QCheckBox *mCbEnc_azi;
     QPushButton *detailEncAzi;
@@ -151,11 +158,6 @@ public:
     QLabel *label_50;
     QPushButton *pushButton_45;
     QCheckBox *mCbMotor_all;
-    QPushButton *detailModuleMotor;
-    QPushButton *pushButton_38;
-    QLabel *label_49;
-    QLabel *label_48;
-    QPushButton *pushButton_44;
     QLabel *label_63;
     QCheckBox *mCbMotor_azi;
     QPushButton *detailMotorAzi;
@@ -171,8 +173,6 @@ public:
     QLabel *label_52;
     QLabel *label_53;
     QPushButton *pushButton_64;
-    QFrame *line;
-    QFrame *line_2;
     QWidget *MicrowaveModule;
     QGridLayout *gridLayout_16;
     QLabel *label_20;
@@ -205,8 +205,11 @@ public:
     QPushButton *rltComparator_part1;
     QLabel *label_88;
     QCheckBox *mCbComparator_part2;
+    QPushButton *detailComparator_part2;
+    QPushButton *importComparator_part2;
     QLabel *indicatorComparator_part2;
     QLabel *ledComparator_part2;
+    QPushButton *rltComparator_part2;
     QCheckBox *mCbAdapterSMA;
     QLabel *label_89;
     QCheckBox *mCbSMA_part1;
@@ -471,9 +474,6 @@ public:
     QLabel *indicatorTx_part3;
     QLabel *ledTx_part3;
     QPushButton *rltTx_part3;
-    QPushButton *detailComparator_part2;
-    QPushButton *rltComparator_part2;
-    QPushButton *importComparator_part2;
     QLabel *label_6;
     QLabel *label_21;
     QLabel *label_5;
@@ -483,18 +483,6 @@ public:
     QFrame *line_9;
     QWidget *tab_2;
     QWidget *tab;
-    QFrame *frame_2;
-    QGridLayout *gridLayout_11;
-    QFrame *frame_9;
-    QGridLayout *gridLayout_13;
-    QTabWidget *tabWidget_2;
-    QWidget *tab_3;
-    QGridLayout *gridLayout_15;
-    QWidget *pdfModuleShow;
-    QWidget *tab_4;
-    QGridLayout *gridLayout_14;
-    QFrame *frame_10;
-    QWidget *m_graphdata;
     QFrame *frame_8;
     QGridLayout *gridLayout_12;
     QFrame *frame_7;
@@ -538,11 +526,19 @@ public:
             testModule->setObjectName(QString::fromUtf8("testModule"));
         testModule->resize(1151, 667);
         testModule->setStyleSheet(QString::fromUtf8("background-color: rgba(194,204,205);"));
-        gridLayout_3 = new QGridLayout(testModule);
-        gridLayout_3->setSpacing(1);
-        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
-        gridLayout_3->setContentsMargins(0, 0, 0, 0);
-        frame = new QFrame(testModule);
+        gridLayout_14 = new QGridLayout(testModule);
+        gridLayout_14->setSpacing(0);
+        gridLayout_14->setObjectName(QString::fromUtf8("gridLayout_14"));
+        gridLayout_14->setContentsMargins(0, 0, 0, 0);
+        frame_11 = new QFrame(testModule);
+        frame_11->setObjectName(QString::fromUtf8("frame_11"));
+        frame_11->setFrameShape(QFrame::StyledPanel);
+        frame_11->setFrameShadow(QFrame::Raised);
+        gridLayout_11 = new QGridLayout(frame_11);
+        gridLayout_11->setSpacing(0);
+        gridLayout_11->setObjectName(QString::fromUtf8("gridLayout_11"));
+        gridLayout_11->setContentsMargins(0, 0, 0, 0);
+        frame = new QFrame(frame_11);
         frame->setObjectName(QString::fromUtf8("frame"));
         frame->setStyleSheet(QString::fromUtf8("background-color: rgba(194,204,205);\n"
 "border:none;"));
@@ -551,27 +547,101 @@ public:
         gridLayout_6 = new QGridLayout(frame);
         gridLayout_6->setObjectName(QString::fromUtf8("gridLayout_6"));
         gridLayout_6->setHorizontalSpacing(0);
+        gridLayout_6->setContentsMargins(0, 0, 0, 0);
         label = new QLabel(frame);
         label->setObjectName(QString::fromUtf8("label"));
         label->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
-"font:25pt \"Sans\";\n"
+"font:20pt \"Sans\";\n"
 "font:bold;\n"
 "background-color: none;"));
 
-        gridLayout_6->addWidget(label, 0, 1, 1, 1);
-
-        label_3 = new QLabel(frame);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/logo_small.png")));
-
-        gridLayout_6->addWidget(label_3, 0, 0, 1, 1);
+        gridLayout_6->addWidget(label, 0, 0, 1, 1, Qt::AlignLeft);
 
         gridLayout_6->setColumnStretch(0, 1);
-        gridLayout_6->setColumnStretch(1, 2);
 
-        gridLayout_3->addWidget(frame, 0, 0, 2, 1);
+        gridLayout_11->addWidget(frame, 0, 0, 1, 1);
 
-        pushButton_12 = new QPushButton(testModule);
+        frame_2 = new QFrame(frame_11);
+        frame_2->setObjectName(QString::fromUtf8("frame_2"));
+        frame_2->setStyleSheet(QString::fromUtf8("QFrame\n"
+"{\n"
+"font: 87 10pt \"Sans\"; \n"
+"font:bold;\n"
+" background-color: rgb(250, 250, 250); \n"
+"color: rgb(49, 67, 100);\n"
+"border:none;\n"
+"}"));
+        frame_2->setFrameShape(QFrame::StyledPanel);
+        frame_2->setFrameShadow(QFrame::Raised);
+        gridLayout_18 = new QGridLayout(frame_2);
+        gridLayout_18->setSpacing(0);
+        gridLayout_18->setObjectName(QString::fromUtf8("gridLayout_18"));
+        gridLayout_18->setContentsMargins(0, 0, 0, 0);
+        frame_9 = new QFrame(frame_2);
+        frame_9->setObjectName(QString::fromUtf8("frame_9"));
+        frame_9->setFrameShape(QFrame::StyledPanel);
+        frame_9->setFrameShadow(QFrame::Raised);
+        gridLayout_13 = new QGridLayout(frame_9);
+        gridLayout_13->setObjectName(QString::fromUtf8("gridLayout_13"));
+        gridLayout_13->setContentsMargins(0, 0, 0, 0);
+        tabWidget_2 = new QTabWidget(frame_9);
+        tabWidget_2->setObjectName(QString::fromUtf8("tabWidget_2"));
+        tab_3 = new QWidget();
+        tab_3->setObjectName(QString::fromUtf8("tab_3"));
+        gridLayout_15 = new QGridLayout(tab_3);
+        gridLayout_15->setObjectName(QString::fromUtf8("gridLayout_15"));
+        gridLayout_15->setContentsMargins(0, 0, 0, 0);
+        pdfModuleShow = new QWidget(tab_3);
+        pdfModuleShow->setObjectName(QString::fromUtf8("pdfModuleShow"));
+
+        gridLayout_15->addWidget(pdfModuleShow, 0, 0, 1, 1);
+
+        tabWidget_2->addTab(tab_3, QString());
+        tab_4 = new QWidget();
+        tab_4->setObjectName(QString::fromUtf8("tab_4"));
+        gridLayout_19 = new QGridLayout(tab_4);
+        gridLayout_19->setSpacing(0);
+        gridLayout_19->setObjectName(QString::fromUtf8("gridLayout_19"));
+        gridLayout_19->setContentsMargins(0, 0, 0, 0);
+        frame_10 = new QFrame(tab_4);
+        frame_10->setObjectName(QString::fromUtf8("frame_10"));
+        frame_10->setFrameShape(QFrame::StyledPanel);
+        frame_10->setFrameShadow(QFrame::Raised);
+
+        gridLayout_19->addWidget(frame_10, 0, 0, 1, 1);
+
+        tabWidget_2->addTab(tab_4, QString());
+
+        gridLayout_13->addWidget(tabWidget_2, 0, 0, 1, 1);
+
+
+        gridLayout_18->addWidget(frame_9, 0, 0, 1, 1);
+
+        m_graphdata = new QWidget(frame_2);
+        m_graphdata->setObjectName(QString::fromUtf8("m_graphdata"));
+        m_graphdata->setStyleSheet(QString::fromUtf8("background-color: rgb(46, 52, 54);"));
+
+        gridLayout_18->addWidget(m_graphdata, 1, 0, 1, 1);
+
+        gridLayout_18->setRowStretch(0, 12);
+        gridLayout_18->setRowStretch(1, 7);
+
+        gridLayout_11->addWidget(frame_2, 1, 0, 1, 1);
+
+        gridLayout_11->setRowStretch(0, 1);
+        gridLayout_11->setRowStretch(1, 10);
+
+        gridLayout_14->addWidget(frame_11, 0, 0, 1, 1);
+
+        frame_12 = new QFrame(testModule);
+        frame_12->setObjectName(QString::fromUtf8("frame_12"));
+        frame_12->setFrameShape(QFrame::StyledPanel);
+        frame_12->setFrameShadow(QFrame::Raised);
+        gridLayout_3 = new QGridLayout(frame_12);
+        gridLayout_3->setSpacing(0);
+        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
+        gridLayout_3->setContentsMargins(0, 0, 0, 0);
+        pushButton_12 = new QPushButton(frame_12);
         pushButton_12->setObjectName(QString::fromUtf8("pushButton_12"));
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/Test/images/button/exit_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -579,9 +649,9 @@ public:
         pushButton_12->setIconSize(QSize(25, 25));
         pushButton_12->setFlat(true);
 
-        gridLayout_3->addWidget(pushButton_12, 0, 1, 1, 1, Qt::AlignRight);
+        gridLayout_3->addWidget(pushButton_12, 0, 0, 1, 1, Qt::AlignRight);
 
-        frame_3 = new QFrame(testModule);
+        frame_3 = new QFrame(frame_12);
         frame_3->setObjectName(QString::fromUtf8("frame_3"));
         frame_3->setStyleSheet(QString::fromUtf8("background-color: rgb(235, 235, 235); \n"
 "border:none;"));
@@ -613,89 +683,108 @@ public:
 ""));
         DigitalModule = new QWidget();
         DigitalModule->setObjectName(QString::fromUtf8("DigitalModule"));
-        gridLayout_7 = new QGridLayout(DigitalModule);
-        gridLayout_7->setSpacing(2);
-        gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
-        gridLayout_7->setContentsMargins(0, 0, 0, 0);
+        gridLayout_8 = new QGridLayout(DigitalModule);
+        gridLayout_8->setSpacing(0);
+        gridLayout_8->setObjectName(QString::fromUtf8("gridLayout_8"));
+        gridLayout_8->setContentsMargins(10, 0, 0, 0);
         scrollArea = new QScrollArea(DigitalModule);
         scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
         scrollArea->setStyleSheet(QString::fromUtf8(" background-color: rgb(250, 250, 250); "));
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 613, 367));
-        gridLayout_8 = new QGridLayout(scrollAreaWidgetContents);
-        gridLayout_8->setObjectName(QString::fromUtf8("gridLayout_8"));
-        gridLayout_8->setHorizontalSpacing(1);
-        gridLayout_8->setVerticalSpacing(2);
-        gridLayout_8->setContentsMargins(0, 0, 0, 0);
-        detailCtrMotorAzi = new QScrollArea(scrollAreaWidgetContents);
-        detailCtrMotorAzi->setObjectName(QString::fromUtf8("detailCtrMotorAzi"));
-        detailCtrMotorAzi->setStyleSheet(QString::fromUtf8("border:none;\n"
-"background-color: rgb(242,242,242);"));
-        detailCtrMotorAzi->setWidgetResizable(true);
-        scrollAreaWidgetContents_2 = new QWidget();
-        scrollAreaWidgetContents_2->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_2"));
-        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 599, 566));
-        gridLayout = new QGridLayout(scrollAreaWidgetContents_2);
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 563, 383));
+        scrollAreaWidgetContents->setStyleSheet(QString::fromUtf8("background-color: rgb(235,235,235);"));
+        gridLayout = new QGridLayout(scrollAreaWidgetContents);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        label_4 = new QLabel(scrollAreaWidgetContents_2);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
-"font:13pt \"Sans\";\n"
-"font:bold;\n"
-"background-color: none;"));
+        gridLayout->setHorizontalSpacing(5);
+        gridLayout->setVerticalSpacing(0);
+        gridLayout->setContentsMargins(0, 7, 0, 0);
+        line_4 = new QFrame(scrollAreaWidgetContents);
+        line_4->setObjectName(QString::fromUtf8("line_4"));
+        line_4->setStyleSheet(QString::fromUtf8("background-color: rgb(49,67,100);"));
+        line_4->setFrameShape(QFrame::HLine);
+        line_4->setFrameShadow(QFrame::Sunken);
 
-        gridLayout->addWidget(label_4, 0, 2, 1, 1);
+        gridLayout->addWidget(line_4, 1, 3, 1, 1);
 
-        label_7 = new QLabel(scrollAreaWidgetContents_2);
-        label_7->setObjectName(QString::fromUtf8("label_7"));
-        label_7->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
-"font:12pt \"Sans\";\n"
-"font:bold;\n"
-"background-color: none;"));
-
-        gridLayout->addWidget(label_7, 0, 4, 1, 2);
-
-        label_8 = new QLabel(scrollAreaWidgetContents_2);
-        label_8->setObjectName(QString::fromUtf8("label_8"));
-        label_8->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
-"font:12pt \"Sans\";\n"
-"font:bold;\n"
-"background-color: none;"));
-
-        gridLayout->addWidget(label_8, 0, 6, 1, 1);
-
-        label_9 = new QLabel(scrollAreaWidgetContents_2);
-        label_9->setObjectName(QString::fromUtf8("label_9"));
-
-        gridLayout->addWidget(label_9, 0, 7, 1, 1);
-
-        label_10 = new QLabel(scrollAreaWidgetContents_2);
+        label_10 = new QLabel(scrollAreaWidgetContents);
         label_10->setObjectName(QString::fromUtf8("label_10"));
         label_10->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
 "font:12pt \"Sans\";\n"
 "font:bold;\n"
 "background-color: none;"));
 
-        gridLayout->addWidget(label_10, 0, 8, 1, 1);
+        gridLayout->addWidget(label_10, 0, 3, 1, 1);
 
-        line_3 = new QFrame(scrollAreaWidgetContents_2);
+        line_3 = new QFrame(scrollAreaWidgetContents);
         line_3->setObjectName(QString::fromUtf8("line_3"));
         line_3->setStyleSheet(QString::fromUtf8("background-color: rgb(49,67,100);"));
         line_3->setFrameShape(QFrame::HLine);
         line_3->setFrameShadow(QFrame::Sunken);
 
-        gridLayout->addWidget(line_3, 1, 6, 1, 1);
+        gridLayout->addWidget(line_3, 1, 2, 1, 1);
 
-        line_4 = new QFrame(scrollAreaWidgetContents_2);
-        line_4->setObjectName(QString::fromUtf8("line_4"));
-        line_4->setStyleSheet(QString::fromUtf8("background-color: rgb(49,67,100);"));
-        line_4->setFrameShape(QFrame::HLine);
-        line_4->setFrameShadow(QFrame::Sunken);
+        label_7 = new QLabel(scrollAreaWidgetContents);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
+"font:12pt \"Sans\";\n"
+"font:bold;\n"
+"background-color: none;"));
 
-        gridLayout->addWidget(line_4, 1, 7, 1, 3);
+        gridLayout->addWidget(label_7, 0, 1, 1, 1);
 
+        line_2 = new QFrame(scrollAreaWidgetContents);
+        line_2->setObjectName(QString::fromUtf8("line_2"));
+        line_2->setStyleSheet(QString::fromUtf8("background-color: rgb(49,67,100);"));
+        line_2->setFrameShape(QFrame::HLine);
+        line_2->setFrameShadow(QFrame::Sunken);
+
+        gridLayout->addWidget(line_2, 1, 1, 1, 1);
+
+        label_8 = new QLabel(scrollAreaWidgetContents);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
+"font:12pt \"Sans\";\n"
+"font:bold;\n"
+"background-color: none;"));
+
+        gridLayout->addWidget(label_8, 0, 2, 1, 1);
+
+        line = new QFrame(scrollAreaWidgetContents);
+        line->setObjectName(QString::fromUtf8("line"));
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(line->sizePolicy().hasHeightForWidth());
+        line->setSizePolicy(sizePolicy);
+        line->setStyleSheet(QString::fromUtf8("background-color: rgb(49,67,100);"));
+        line->setFrameShape(QFrame::HLine);
+        line->setFrameShadow(QFrame::Sunken);
+
+        gridLayout->addWidget(line, 1, 0, 1, 1);
+
+        label_4 = new QLabel(scrollAreaWidgetContents);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
+"font:13pt \"Sans\";\n"
+"font:bold;\n"
+"background-color: none;"));
+
+        gridLayout->addWidget(label_4, 0, 0, 1, 1);
+
+        detailCtrMotorAzi = new QScrollArea(scrollAreaWidgetContents);
+        detailCtrMotorAzi->setObjectName(QString::fromUtf8("detailCtrMotorAzi"));
+        detailCtrMotorAzi->setStyleSheet(QString::fromUtf8("border:none;\n"
+"background-color: rgb(235,235,235);"));
+        detailCtrMotorAzi->setWidgetResizable(true);
+        scrollAreaWidgetContents_2 = new QWidget();
+        scrollAreaWidgetContents_2->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_2"));
+        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 549, 531));
+        scrollAreaWidgetContents_2->setStyleSheet(QString::fromUtf8("background-color: rgb(235,235,235);"));
+        gridLayout_7 = new QGridLayout(scrollAreaWidgetContents_2);
+        gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
+        gridLayout_7->setContentsMargins(5, -1, -1, -1);
         mCbAll = new QCheckBox(scrollAreaWidgetContents_2);
         mCbAll->setObjectName(QString::fromUtf8("mCbAll"));
         mCbAll->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
@@ -714,7 +803,12 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbAll, 2, 0, 1, 2);
+        gridLayout_7->addWidget(mCbAll, 0, 0, 1, 2);
+
+        label_9 = new QLabel(scrollAreaWidgetContents_2);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+
+        gridLayout_7->addWidget(label_9, 0, 5, 1, 1);
 
         mCbControl_all = new QCheckBox(scrollAreaWidgetContents_2);
         mCbControl_all->setObjectName(QString::fromUtf8("mCbControl_all"));
@@ -734,18 +828,18 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbControl_all, 3, 0, 1, 3);
+        gridLayout_7->addWidget(mCbControl_all, 1, 0, 1, 2);
 
         label_13 = new QLabel(scrollAreaWidgetContents_2);
         label_13->setObjectName(QString::fromUtf8("label_13"));
-        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(label_13->sizePolicy().hasHeightForWidth());
-        label_13->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Preferred);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(label_13->sizePolicy().hasHeightForWidth());
+        label_13->setSizePolicy(sizePolicy1);
         label_13->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout->addWidget(label_13, 4, 0, 1, 1);
+        gridLayout_7->addWidget(label_13, 2, 0, 1, 1);
 
         mCbControl_xlth = new QCheckBox(scrollAreaWidgetContents_2);
         mCbControl_xlth->setObjectName(QString::fromUtf8("mCbControl_xlth"));
@@ -765,7 +859,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbControl_xlth, 4, 1, 1, 3);
+        gridLayout_7->addWidget(mCbControl_xlth, 2, 1, 1, 2);
 
         detailCtrXlth = new QPushButton(scrollAreaWidgetContents_2);
         detailCtrXlth->setObjectName(QString::fromUtf8("detailCtrXlth"));
@@ -781,7 +875,7 @@ public:
         detailCtrXlth->setIconSize(QSize(20, 20));
         detailCtrXlth->setFlat(true);
 
-        gridLayout->addWidget(detailCtrXlth, 4, 5, 1, 1);
+        gridLayout_7->addWidget(detailCtrXlth, 2, 3, 1, 1);
 
         pushButton_22 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_22->setObjectName(QString::fromUtf8("pushButton_22"));
@@ -797,21 +891,21 @@ public:
         pushButton_22->setIconSize(QSize(20, 20));
         pushButton_22->setFlat(true);
 
-        gridLayout->addWidget(pushButton_22, 4, 6, 1, 1);
+        gridLayout_7->addWidget(pushButton_22, 2, 4, 1, 1);
 
         label_11 = new QLabel(scrollAreaWidgetContents_2);
         label_11->setObjectName(QString::fromUtf8("label_11"));
         label_11->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_11->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_11, 4, 7, 1, 1);
+        gridLayout_7->addWidget(label_11, 2, 5, 1, 1);
 
         label_26 = new QLabel(scrollAreaWidgetContents_2);
         label_26->setObjectName(QString::fromUtf8("label_26"));
         label_26->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_26->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_26, 4, 8, 1, 1);
+        gridLayout_7->addWidget(label_26, 2, 6, 1, 1);
 
         pushButton_36 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_36->setObjectName(QString::fromUtf8("pushButton_36"));
@@ -827,15 +921,15 @@ public:
         pushButton_36->setIconSize(QSize(20, 20));
         pushButton_36->setFlat(true);
 
-        gridLayout->addWidget(pushButton_36, 4, 9, 1, 1);
+        gridLayout_7->addWidget(pushButton_36, 2, 7, 1, 1);
 
         label_12 = new QLabel(scrollAreaWidgetContents_2);
         label_12->setObjectName(QString::fromUtf8("label_12"));
-        sizePolicy.setHeightForWidth(label_12->sizePolicy().hasHeightForWidth());
-        label_12->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_12->sizePolicy().hasHeightForWidth());
+        label_12->setSizePolicy(sizePolicy1);
         label_12->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout->addWidget(label_12, 5, 0, 1, 1);
+        gridLayout_7->addWidget(label_12, 3, 0, 1, 1);
 
         mCbControl_bite = new QCheckBox(scrollAreaWidgetContents_2);
         mCbControl_bite->setObjectName(QString::fromUtf8("mCbControl_bite"));
@@ -855,7 +949,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbControl_bite, 5, 1, 1, 3);
+        gridLayout_7->addWidget(mCbControl_bite, 3, 1, 1, 1);
 
         detailCtrBite = new QPushButton(scrollAreaWidgetContents_2);
         detailCtrBite->setObjectName(QString::fromUtf8("detailCtrBite"));
@@ -869,7 +963,7 @@ public:
         detailCtrBite->setIconSize(QSize(20, 20));
         detailCtrBite->setFlat(true);
 
-        gridLayout->addWidget(detailCtrBite, 5, 5, 1, 1);
+        gridLayout_7->addWidget(detailCtrBite, 3, 3, 1, 1);
 
         pushButton_21 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_21->setObjectName(QString::fromUtf8("pushButton_21"));
@@ -883,21 +977,21 @@ public:
         pushButton_21->setIconSize(QSize(20, 20));
         pushButton_21->setFlat(true);
 
-        gridLayout->addWidget(pushButton_21, 5, 6, 1, 1);
+        gridLayout_7->addWidget(pushButton_21, 3, 4, 1, 1);
 
         label_37 = new QLabel(scrollAreaWidgetContents_2);
         label_37->setObjectName(QString::fromUtf8("label_37"));
         label_37->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorFail.png")));
         label_37->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_37, 5, 7, 1, 1);
+        gridLayout_7->addWidget(label_37, 3, 5, 1, 1);
 
         label_36 = new QLabel(scrollAreaWidgetContents_2);
         label_36->setObjectName(QString::fromUtf8("label_36"));
         label_36->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/red_led.png")));
         label_36->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_36, 5, 8, 1, 1);
+        gridLayout_7->addWidget(label_36, 3, 6, 1, 1);
 
         pushButton_35 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_35->setObjectName(QString::fromUtf8("pushButton_35"));
@@ -911,15 +1005,15 @@ public:
         pushButton_35->setIconSize(QSize(20, 20));
         pushButton_35->setFlat(true);
 
-        gridLayout->addWidget(pushButton_35, 5, 9, 1, 1);
+        gridLayout_7->addWidget(pushButton_35, 3, 7, 1, 1);
 
         label_14 = new QLabel(scrollAreaWidgetContents_2);
         label_14->setObjectName(QString::fromUtf8("label_14"));
-        sizePolicy.setHeightForWidth(label_14->sizePolicy().hasHeightForWidth());
-        label_14->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_14->sizePolicy().hasHeightForWidth());
+        label_14->setSizePolicy(sizePolicy1);
         label_14->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout->addWidget(label_14, 6, 0, 1, 1);
+        gridLayout_7->addWidget(label_14, 4, 0, 1, 1);
 
         mCbControl_kdcs = new QCheckBox(scrollAreaWidgetContents_2);
         mCbControl_kdcs->setObjectName(QString::fromUtf8("mCbControl_kdcs"));
@@ -939,7 +1033,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbControl_kdcs, 6, 1, 1, 3);
+        gridLayout_7->addWidget(mCbControl_kdcs, 4, 1, 1, 2);
 
         detailCtrKdcs = new QPushButton(scrollAreaWidgetContents_2);
         detailCtrKdcs->setObjectName(QString::fromUtf8("detailCtrKdcs"));
@@ -953,7 +1047,7 @@ public:
         detailCtrKdcs->setIconSize(QSize(20, 20));
         detailCtrKdcs->setFlat(true);
 
-        gridLayout->addWidget(detailCtrKdcs, 6, 5, 1, 1);
+        gridLayout_7->addWidget(detailCtrKdcs, 4, 3, 1, 1);
 
         pushButton_20 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_20->setObjectName(QString::fromUtf8("pushButton_20"));
@@ -967,21 +1061,21 @@ public:
         pushButton_20->setIconSize(QSize(20, 20));
         pushButton_20->setFlat(true);
 
-        gridLayout->addWidget(pushButton_20, 6, 6, 1, 1);
+        gridLayout_7->addWidget(pushButton_20, 4, 4, 1, 1);
 
         label_35 = new QLabel(scrollAreaWidgetContents_2);
         label_35->setObjectName(QString::fromUtf8("label_35"));
         label_35->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorFail.png")));
         label_35->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_35, 6, 7, 1, 1);
+        gridLayout_7->addWidget(label_35, 4, 5, 1, 1);
 
         label_34 = new QLabel(scrollAreaWidgetContents_2);
         label_34->setObjectName(QString::fromUtf8("label_34"));
         label_34->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/red_led.png")));
         label_34->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_34, 6, 8, 1, 1);
+        gridLayout_7->addWidget(label_34, 4, 6, 1, 1);
 
         pushButton_43 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_43->setObjectName(QString::fromUtf8("pushButton_43"));
@@ -995,15 +1089,15 @@ public:
         pushButton_43->setIconSize(QSize(20, 20));
         pushButton_43->setFlat(true);
 
-        gridLayout->addWidget(pushButton_43, 6, 9, 1, 1);
+        gridLayout_7->addWidget(pushButton_43, 4, 7, 1, 1);
 
         label_15 = new QLabel(scrollAreaWidgetContents_2);
         label_15->setObjectName(QString::fromUtf8("label_15"));
-        sizePolicy.setHeightForWidth(label_15->sizePolicy().hasHeightForWidth());
-        label_15->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_15->sizePolicy().hasHeightForWidth());
+        label_15->setSizePolicy(sizePolicy1);
         label_15->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout->addWidget(label_15, 7, 0, 1, 1);
+        gridLayout_7->addWidget(label_15, 5, 0, 1, 1);
 
         mCbControl_gyro = new QCheckBox(scrollAreaWidgetContents_2);
         mCbControl_gyro->setObjectName(QString::fromUtf8("mCbControl_gyro"));
@@ -1023,7 +1117,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbControl_gyro, 7, 1, 1, 3);
+        gridLayout_7->addWidget(mCbControl_gyro, 5, 1, 1, 2);
 
         detailCtrGyro = new QPushButton(scrollAreaWidgetContents_2);
         detailCtrGyro->setObjectName(QString::fromUtf8("detailCtrGyro"));
@@ -1037,7 +1131,7 @@ public:
         detailCtrGyro->setIconSize(QSize(20, 20));
         detailCtrGyro->setFlat(true);
 
-        gridLayout->addWidget(detailCtrGyro, 7, 5, 1, 1);
+        gridLayout_7->addWidget(detailCtrGyro, 5, 3, 1, 1);
 
         pushButton_19 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_19->setObjectName(QString::fromUtf8("pushButton_19"));
@@ -1051,21 +1145,21 @@ public:
         pushButton_19->setIconSize(QSize(20, 20));
         pushButton_19->setFlat(true);
 
-        gridLayout->addWidget(pushButton_19, 7, 6, 1, 1);
+        gridLayout_7->addWidget(pushButton_19, 5, 4, 1, 1);
 
         label_33 = new QLabel(scrollAreaWidgetContents_2);
         label_33->setObjectName(QString::fromUtf8("label_33"));
         label_33->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_33->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_33, 7, 7, 1, 1);
+        gridLayout_7->addWidget(label_33, 5, 5, 1, 1);
 
         label_32 = new QLabel(scrollAreaWidgetContents_2);
         label_32->setObjectName(QString::fromUtf8("label_32"));
         label_32->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_32->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_32, 7, 8, 1, 1);
+        gridLayout_7->addWidget(label_32, 5, 6, 1, 1);
 
         pushButton_34 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_34->setObjectName(QString::fromUtf8("pushButton_34"));
@@ -1079,15 +1173,15 @@ public:
         pushButton_34->setIconSize(QSize(20, 20));
         pushButton_34->setFlat(true);
 
-        gridLayout->addWidget(pushButton_34, 7, 9, 1, 1);
+        gridLayout_7->addWidget(pushButton_34, 5, 7, 1, 1);
 
         label_19 = new QLabel(scrollAreaWidgetContents_2);
         label_19->setObjectName(QString::fromUtf8("label_19"));
-        sizePolicy.setHeightForWidth(label_19->sizePolicy().hasHeightForWidth());
-        label_19->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_19->sizePolicy().hasHeightForWidth());
+        label_19->setSizePolicy(sizePolicy1);
         label_19->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout->addWidget(label_19, 8, 0, 1, 1);
+        gridLayout_7->addWidget(label_19, 6, 0, 1, 1);
 
         mCbControl_encAzi = new QCheckBox(scrollAreaWidgetContents_2);
         mCbControl_encAzi->setObjectName(QString::fromUtf8("mCbControl_encAzi"));
@@ -1107,7 +1201,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbControl_encAzi, 8, 1, 1, 2);
+        gridLayout_7->addWidget(mCbControl_encAzi, 6, 1, 1, 1);
 
         detailCtrEncAzi = new QPushButton(scrollAreaWidgetContents_2);
         detailCtrEncAzi->setObjectName(QString::fromUtf8("detailCtrEncAzi"));
@@ -1121,7 +1215,7 @@ public:
         detailCtrEncAzi->setIconSize(QSize(20, 20));
         detailCtrEncAzi->setFlat(true);
 
-        gridLayout->addWidget(detailCtrEncAzi, 8, 5, 1, 1);
+        gridLayout_7->addWidget(detailCtrEncAzi, 6, 3, 1, 1);
 
         pushButton_18 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_18->setObjectName(QString::fromUtf8("pushButton_18"));
@@ -1135,21 +1229,21 @@ public:
         pushButton_18->setIconSize(QSize(20, 20));
         pushButton_18->setFlat(true);
 
-        gridLayout->addWidget(pushButton_18, 8, 6, 1, 1);
+        gridLayout_7->addWidget(pushButton_18, 6, 4, 1, 1);
 
         label_31 = new QLabel(scrollAreaWidgetContents_2);
         label_31->setObjectName(QString::fromUtf8("label_31"));
         label_31->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_31->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_31, 8, 7, 1, 1);
+        gridLayout_7->addWidget(label_31, 6, 5, 1, 1);
 
         label_30 = new QLabel(scrollAreaWidgetContents_2);
         label_30->setObjectName(QString::fromUtf8("label_30"));
         label_30->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_30->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_30, 8, 8, 1, 1);
+        gridLayout_7->addWidget(label_30, 6, 6, 1, 1);
 
         pushButton_33 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_33->setObjectName(QString::fromUtf8("pushButton_33"));
@@ -1163,15 +1257,15 @@ public:
         pushButton_33->setIconSize(QSize(20, 20));
         pushButton_33->setFlat(true);
 
-        gridLayout->addWidget(pushButton_33, 8, 9, 1, 1);
+        gridLayout_7->addWidget(pushButton_33, 6, 7, 1, 1);
 
         label_16 = new QLabel(scrollAreaWidgetContents_2);
         label_16->setObjectName(QString::fromUtf8("label_16"));
-        sizePolicy.setHeightForWidth(label_16->sizePolicy().hasHeightForWidth());
-        label_16->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_16->sizePolicy().hasHeightForWidth());
+        label_16->setSizePolicy(sizePolicy1);
         label_16->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout->addWidget(label_16, 9, 0, 1, 1);
+        gridLayout_7->addWidget(label_16, 7, 0, 1, 1);
 
         mCbControl_encElv = new QCheckBox(scrollAreaWidgetContents_2);
         mCbControl_encElv->setObjectName(QString::fromUtf8("mCbControl_encElv"));
@@ -1191,7 +1285,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbControl_encElv, 9, 1, 1, 2);
+        gridLayout_7->addWidget(mCbControl_encElv, 7, 1, 1, 1);
 
         detailCtrEncElv = new QPushButton(scrollAreaWidgetContents_2);
         detailCtrEncElv->setObjectName(QString::fromUtf8("detailCtrEncElv"));
@@ -1205,7 +1299,7 @@ public:
         detailCtrEncElv->setIconSize(QSize(20, 20));
         detailCtrEncElv->setFlat(true);
 
-        gridLayout->addWidget(detailCtrEncElv, 9, 5, 1, 1);
+        gridLayout_7->addWidget(detailCtrEncElv, 7, 3, 1, 1);
 
         pushButton_17 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_17->setObjectName(QString::fromUtf8("pushButton_17"));
@@ -1219,21 +1313,21 @@ public:
         pushButton_17->setIconSize(QSize(20, 20));
         pushButton_17->setFlat(true);
 
-        gridLayout->addWidget(pushButton_17, 9, 6, 1, 1);
+        gridLayout_7->addWidget(pushButton_17, 7, 4, 1, 1);
 
         label_29 = new QLabel(scrollAreaWidgetContents_2);
         label_29->setObjectName(QString::fromUtf8("label_29"));
         label_29->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_29->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_29, 9, 7, 1, 1);
+        gridLayout_7->addWidget(label_29, 7, 5, 1, 1);
 
         label_28 = new QLabel(scrollAreaWidgetContents_2);
         label_28->setObjectName(QString::fromUtf8("label_28"));
         label_28->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_28->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_28, 9, 8, 1, 1);
+        gridLayout_7->addWidget(label_28, 7, 6, 1, 1);
 
         pushButton_51 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_51->setObjectName(QString::fromUtf8("pushButton_51"));
@@ -1247,15 +1341,15 @@ public:
         pushButton_51->setIconSize(QSize(20, 20));
         pushButton_51->setFlat(true);
 
-        gridLayout->addWidget(pushButton_51, 9, 9, 1, 1);
+        gridLayout_7->addWidget(pushButton_51, 7, 7, 1, 1);
 
         label_17 = new QLabel(scrollAreaWidgetContents_2);
         label_17->setObjectName(QString::fromUtf8("label_17"));
-        sizePolicy.setHeightForWidth(label_17->sizePolicy().hasHeightForWidth());
-        label_17->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_17->sizePolicy().hasHeightForWidth());
+        label_17->setSizePolicy(sizePolicy1);
         label_17->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout->addWidget(label_17, 10, 0, 1, 1);
+        gridLayout_7->addWidget(label_17, 8, 0, 1, 1);
 
         mCbControl_motorAzi = new QCheckBox(scrollAreaWidgetContents_2);
         mCbControl_motorAzi->setObjectName(QString::fromUtf8("mCbControl_motorAzi"));
@@ -1275,7 +1369,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbControl_motorAzi, 10, 1, 1, 2);
+        gridLayout_7->addWidget(mCbControl_motorAzi, 8, 1, 1, 1);
 
         detailCtrMotorAzi_2 = new QPushButton(scrollAreaWidgetContents_2);
         detailCtrMotorAzi_2->setObjectName(QString::fromUtf8("detailCtrMotorAzi_2"));
@@ -1289,7 +1383,7 @@ public:
         detailCtrMotorAzi_2->setIconSize(QSize(20, 20));
         detailCtrMotorAzi_2->setFlat(true);
 
-        gridLayout->addWidget(detailCtrMotorAzi_2, 10, 5, 1, 1);
+        gridLayout_7->addWidget(detailCtrMotorAzi_2, 8, 3, 1, 1);
 
         pushButton_16 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_16->setObjectName(QString::fromUtf8("pushButton_16"));
@@ -1303,21 +1397,21 @@ public:
         pushButton_16->setIconSize(QSize(20, 20));
         pushButton_16->setFlat(true);
 
-        gridLayout->addWidget(pushButton_16, 10, 6, 1, 1);
+        gridLayout_7->addWidget(pushButton_16, 8, 4, 1, 1);
 
         label_27 = new QLabel(scrollAreaWidgetContents_2);
         label_27->setObjectName(QString::fromUtf8("label_27"));
         label_27->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_27->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_27, 10, 7, 1, 1);
+        gridLayout_7->addWidget(label_27, 8, 5, 1, 1);
 
         label_25 = new QLabel(scrollAreaWidgetContents_2);
         label_25->setObjectName(QString::fromUtf8("label_25"));
         label_25->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_25->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_25, 10, 8, 1, 1);
+        gridLayout_7->addWidget(label_25, 8, 6, 1, 1);
 
         pushButton_50 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_50->setObjectName(QString::fromUtf8("pushButton_50"));
@@ -1331,15 +1425,15 @@ public:
         pushButton_50->setIconSize(QSize(20, 20));
         pushButton_50->setFlat(true);
 
-        gridLayout->addWidget(pushButton_50, 10, 9, 1, 1);
+        gridLayout_7->addWidget(pushButton_50, 8, 7, 1, 1);
 
         label_18 = new QLabel(scrollAreaWidgetContents_2);
         label_18->setObjectName(QString::fromUtf8("label_18"));
-        sizePolicy.setHeightForWidth(label_18->sizePolicy().hasHeightForWidth());
-        label_18->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_18->sizePolicy().hasHeightForWidth());
+        label_18->setSizePolicy(sizePolicy1);
         label_18->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout->addWidget(label_18, 11, 0, 1, 1);
+        gridLayout_7->addWidget(label_18, 9, 0, 1, 1);
 
         mCbControl_MotorElv = new QCheckBox(scrollAreaWidgetContents_2);
         mCbControl_MotorElv->setObjectName(QString::fromUtf8("mCbControl_MotorElv"));
@@ -1359,7 +1453,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbControl_MotorElv, 11, 1, 1, 2);
+        gridLayout_7->addWidget(mCbControl_MotorElv, 9, 1, 1, 1);
 
         detailCtrMotorElv = new QPushButton(scrollAreaWidgetContents_2);
         detailCtrMotorElv->setObjectName(QString::fromUtf8("detailCtrMotorElv"));
@@ -1373,7 +1467,7 @@ public:
         detailCtrMotorElv->setIconSize(QSize(20, 20));
         detailCtrMotorElv->setFlat(true);
 
-        gridLayout->addWidget(detailCtrMotorElv, 11, 5, 1, 1);
+        gridLayout_7->addWidget(detailCtrMotorElv, 9, 3, 1, 1);
 
         pushButton_15 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_15->setObjectName(QString::fromUtf8("pushButton_15"));
@@ -1387,21 +1481,21 @@ public:
         pushButton_15->setIconSize(QSize(20, 20));
         pushButton_15->setFlat(true);
 
-        gridLayout->addWidget(pushButton_15, 11, 6, 1, 1);
+        gridLayout_7->addWidget(pushButton_15, 9, 4, 1, 1);
 
         label_45 = new QLabel(scrollAreaWidgetContents_2);
         label_45->setObjectName(QString::fromUtf8("label_45"));
         label_45->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_45->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_45, 11, 7, 1, 1);
+        gridLayout_7->addWidget(label_45, 9, 5, 1, 1);
 
         label_24 = new QLabel(scrollAreaWidgetContents_2);
         label_24->setObjectName(QString::fromUtf8("label_24"));
         label_24->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_24->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_24, 11, 8, 1, 1);
+        gridLayout_7->addWidget(label_24, 9, 6, 1, 1);
 
         pushButton_49 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_49->setObjectName(QString::fromUtf8("pushButton_49"));
@@ -1415,7 +1509,7 @@ public:
         pushButton_49->setIconSize(QSize(20, 20));
         pushButton_49->setFlat(true);
 
-        gridLayout->addWidget(pushButton_49, 11, 9, 1, 1);
+        gridLayout_7->addWidget(pushButton_49, 9, 7, 1, 1);
 
         mCbGyro_all = new QCheckBox(scrollAreaWidgetContents_2);
         mCbGyro_all->setObjectName(QString::fromUtf8("mCbGyro_all"));
@@ -1435,69 +1529,13 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbGyro_all, 12, 0, 1, 3);
-
-        detailGyroModule = new QPushButton(scrollAreaWidgetContents_2);
-        detailGyroModule->setObjectName(QString::fromUtf8("detailGyroModule"));
-        detailGyroModule->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailGyroModule->setIcon(icon1);
-        detailGyroModule->setIconSize(QSize(20, 20));
-        detailGyroModule->setFlat(true);
-
-        gridLayout->addWidget(detailGyroModule, 12, 5, 1, 1);
-
-        pushButton_67 = new QPushButton(scrollAreaWidgetContents_2);
-        pushButton_67->setObjectName(QString::fromUtf8("pushButton_67"));
-        pushButton_67->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        pushButton_67->setIcon(icon2);
-        pushButton_67->setIconSize(QSize(20, 20));
-        pushButton_67->setFlat(true);
-
-        gridLayout->addWidget(pushButton_67, 12, 6, 1, 1);
-
-        label_57 = new QLabel(scrollAreaWidgetContents_2);
-        label_57->setObjectName(QString::fromUtf8("label_57"));
-        label_57->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-        label_57->setAlignment(Qt::AlignCenter);
-
-        gridLayout->addWidget(label_57, 12, 7, 1, 1);
-
-        label_56 = new QLabel(scrollAreaWidgetContents_2);
-        label_56->setObjectName(QString::fromUtf8("label_56"));
-        label_56->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        label_56->setAlignment(Qt::AlignCenter);
-
-        gridLayout->addWidget(label_56, 12, 8, 1, 1);
-
-        pushButton_68 = new QPushButton(scrollAreaWidgetContents_2);
-        pushButton_68->setObjectName(QString::fromUtf8("pushButton_68"));
-        pushButton_68->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        pushButton_68->setIcon(icon3);
-        pushButton_68->setIconSize(QSize(20, 20));
-        pushButton_68->setFlat(true);
-
-        gridLayout->addWidget(pushButton_68, 12, 9, 1, 1);
+        gridLayout_7->addWidget(mCbGyro_all, 10, 0, 1, 2);
 
         label_55 = new QLabel(scrollAreaWidgetContents_2);
         label_55->setObjectName(QString::fromUtf8("label_55"));
         label_55->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout->addWidget(label_55, 13, 0, 1, 1);
+        gridLayout_7->addWidget(label_55, 11, 0, 1, 1);
 
         mCbGyro_azi = new QCheckBox(scrollAreaWidgetContents_2);
         mCbGyro_azi->setObjectName(QString::fromUtf8("mCbGyro_azi"));
@@ -1517,7 +1555,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbGyro_azi, 13, 1, 1, 2);
+        gridLayout_7->addWidget(mCbGyro_azi, 11, 1, 1, 1);
 
         detailGyroAzi = new QPushButton(scrollAreaWidgetContents_2);
         detailGyroAzi->setObjectName(QString::fromUtf8("detailGyroAzi"));
@@ -1531,7 +1569,7 @@ public:
         detailGyroAzi->setIconSize(QSize(20, 20));
         detailGyroAzi->setFlat(true);
 
-        gridLayout->addWidget(detailGyroAzi, 13, 5, 1, 1);
+        gridLayout_7->addWidget(detailGyroAzi, 11, 3, 1, 1);
 
         pushButton_42 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_42->setObjectName(QString::fromUtf8("pushButton_42"));
@@ -1545,21 +1583,21 @@ public:
         pushButton_42->setIconSize(QSize(20, 20));
         pushButton_42->setFlat(true);
 
-        gridLayout->addWidget(pushButton_42, 13, 6, 1, 1);
+        gridLayout_7->addWidget(pushButton_42, 11, 4, 1, 1);
 
         label_44 = new QLabel(scrollAreaWidgetContents_2);
         label_44->setObjectName(QString::fromUtf8("label_44"));
         label_44->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorFail.png")));
         label_44->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_44, 13, 7, 1, 1);
+        gridLayout_7->addWidget(label_44, 11, 5, 1, 1);
 
         label_43 = new QLabel(scrollAreaWidgetContents_2);
         label_43->setObjectName(QString::fromUtf8("label_43"));
         label_43->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/red_led.png")));
         label_43->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_43, 13, 8, 1, 1);
+        gridLayout_7->addWidget(label_43, 11, 6, 1, 1);
 
         pushButton_48 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_48->setObjectName(QString::fromUtf8("pushButton_48"));
@@ -1573,13 +1611,13 @@ public:
         pushButton_48->setIconSize(QSize(20, 20));
         pushButton_48->setFlat(true);
 
-        gridLayout->addWidget(pushButton_48, 13, 9, 1, 1);
+        gridLayout_7->addWidget(pushButton_48, 11, 7, 1, 1);
 
         label_54 = new QLabel(scrollAreaWidgetContents_2);
         label_54->setObjectName(QString::fromUtf8("label_54"));
         label_54->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout->addWidget(label_54, 14, 0, 1, 1);
+        gridLayout_7->addWidget(label_54, 12, 0, 1, 1);
 
         mCbGyro_elv = new QCheckBox(scrollAreaWidgetContents_2);
         mCbGyro_elv->setObjectName(QString::fromUtf8("mCbGyro_elv"));
@@ -1599,7 +1637,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbGyro_elv, 14, 1, 1, 2);
+        gridLayout_7->addWidget(mCbGyro_elv, 12, 1, 1, 1);
 
         detailGyroElv = new QPushButton(scrollAreaWidgetContents_2);
         detailGyroElv->setObjectName(QString::fromUtf8("detailGyroElv"));
@@ -1613,7 +1651,7 @@ public:
         detailGyroElv->setIconSize(QSize(20, 20));
         detailGyroElv->setFlat(true);
 
-        gridLayout->addWidget(detailGyroElv, 14, 5, 1, 1);
+        gridLayout_7->addWidget(detailGyroElv, 12, 3, 1, 1);
 
         pushButton_41 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_41->setObjectName(QString::fromUtf8("pushButton_41"));
@@ -1627,21 +1665,21 @@ public:
         pushButton_41->setIconSize(QSize(20, 20));
         pushButton_41->setFlat(true);
 
-        gridLayout->addWidget(pushButton_41, 14, 6, 1, 1);
+        gridLayout_7->addWidget(pushButton_41, 12, 4, 1, 1);
 
         label_42 = new QLabel(scrollAreaWidgetContents_2);
         label_42->setObjectName(QString::fromUtf8("label_42"));
         label_42->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_42->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_42, 14, 7, 1, 1);
+        gridLayout_7->addWidget(label_42, 12, 5, 1, 1);
 
         label_41 = new QLabel(scrollAreaWidgetContents_2);
         label_41->setObjectName(QString::fromUtf8("label_41"));
         label_41->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_41->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_41, 14, 8, 1, 1);
+        gridLayout_7->addWidget(label_41, 12, 6, 1, 1);
 
         pushButton_47 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_47->setObjectName(QString::fromUtf8("pushButton_47"));
@@ -1655,7 +1693,7 @@ public:
         pushButton_47->setIconSize(QSize(20, 20));
         pushButton_47->setFlat(true);
 
-        gridLayout->addWidget(pushButton_47, 14, 9, 1, 1);
+        gridLayout_7->addWidget(pushButton_47, 12, 7, 1, 1);
 
         mCbEnc_all = new QCheckBox(scrollAreaWidgetContents_2);
         mCbEnc_all->setObjectName(QString::fromUtf8("mCbEnc_all"));
@@ -1675,69 +1713,13 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbEnc_all, 15, 0, 1, 3);
-
-        detailEncModule = new QPushButton(scrollAreaWidgetContents_2);
-        detailEncModule->setObjectName(QString::fromUtf8("detailEncModule"));
-        detailEncModule->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailEncModule->setIcon(icon1);
-        detailEncModule->setIconSize(QSize(20, 20));
-        detailEncModule->setFlat(true);
-
-        gridLayout->addWidget(detailEncModule, 15, 5, 1, 1);
-
-        pushButton_71 = new QPushButton(scrollAreaWidgetContents_2);
-        pushButton_71->setObjectName(QString::fromUtf8("pushButton_71"));
-        pushButton_71->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        pushButton_71->setIcon(icon2);
-        pushButton_71->setIconSize(QSize(20, 20));
-        pushButton_71->setFlat(true);
-
-        gridLayout->addWidget(pushButton_71, 15, 6, 1, 1);
-
-        label_58 = new QLabel(scrollAreaWidgetContents_2);
-        label_58->setObjectName(QString::fromUtf8("label_58"));
-        label_58->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-        label_58->setAlignment(Qt::AlignCenter);
-
-        gridLayout->addWidget(label_58, 15, 7, 1, 1);
-
-        label_59 = new QLabel(scrollAreaWidgetContents_2);
-        label_59->setObjectName(QString::fromUtf8("label_59"));
-        label_59->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        label_59->setAlignment(Qt::AlignCenter);
-
-        gridLayout->addWidget(label_59, 15, 8, 1, 1);
-
-        pushButton_70 = new QPushButton(scrollAreaWidgetContents_2);
-        pushButton_70->setObjectName(QString::fromUtf8("pushButton_70"));
-        pushButton_70->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        pushButton_70->setIcon(icon3);
-        pushButton_70->setIconSize(QSize(20, 20));
-        pushButton_70->setFlat(true);
-
-        gridLayout->addWidget(pushButton_70, 15, 9, 1, 1);
+        gridLayout_7->addWidget(mCbEnc_all, 13, 0, 1, 2);
 
         label_61 = new QLabel(scrollAreaWidgetContents_2);
         label_61->setObjectName(QString::fromUtf8("label_61"));
         label_61->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout->addWidget(label_61, 16, 0, 1, 1);
+        gridLayout_7->addWidget(label_61, 14, 0, 1, 1);
 
         mCbEnc_azi = new QCheckBox(scrollAreaWidgetContents_2);
         mCbEnc_azi->setObjectName(QString::fromUtf8("mCbEnc_azi"));
@@ -1757,7 +1739,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbEnc_azi, 16, 1, 1, 2);
+        gridLayout_7->addWidget(mCbEnc_azi, 14, 1, 1, 1);
 
         detailEncAzi = new QPushButton(scrollAreaWidgetContents_2);
         detailEncAzi->setObjectName(QString::fromUtf8("detailEncAzi"));
@@ -1771,7 +1753,7 @@ public:
         detailEncAzi->setIconSize(QSize(20, 20));
         detailEncAzi->setFlat(true);
 
-        gridLayout->addWidget(detailEncAzi, 16, 5, 1, 1);
+        gridLayout_7->addWidget(detailEncAzi, 14, 3, 1, 1);
 
         pushButton_40 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_40->setObjectName(QString::fromUtf8("pushButton_40"));
@@ -1785,21 +1767,21 @@ public:
         pushButton_40->setIconSize(QSize(20, 20));
         pushButton_40->setFlat(true);
 
-        gridLayout->addWidget(pushButton_40, 16, 6, 1, 1);
+        gridLayout_7->addWidget(pushButton_40, 14, 4, 1, 1);
 
         label_40 = new QLabel(scrollAreaWidgetContents_2);
         label_40->setObjectName(QString::fromUtf8("label_40"));
         label_40->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_40->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_40, 16, 7, 1, 1);
+        gridLayout_7->addWidget(label_40, 14, 5, 1, 1);
 
         label_39 = new QLabel(scrollAreaWidgetContents_2);
         label_39->setObjectName(QString::fromUtf8("label_39"));
         label_39->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_39->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_39, 16, 8, 1, 1);
+        gridLayout_7->addWidget(label_39, 14, 6, 1, 1);
 
         pushButton_46 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_46->setObjectName(QString::fromUtf8("pushButton_46"));
@@ -1813,13 +1795,13 @@ public:
         pushButton_46->setIconSize(QSize(20, 20));
         pushButton_46->setFlat(true);
 
-        gridLayout->addWidget(pushButton_46, 16, 9, 1, 1);
+        gridLayout_7->addWidget(pushButton_46, 14, 7, 1, 1);
 
         label_60 = new QLabel(scrollAreaWidgetContents_2);
         label_60->setObjectName(QString::fromUtf8("label_60"));
         label_60->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout->addWidget(label_60, 17, 0, 1, 1);
+        gridLayout_7->addWidget(label_60, 15, 0, 1, 1);
 
         mCbEnc_elv = new QCheckBox(scrollAreaWidgetContents_2);
         mCbEnc_elv->setObjectName(QString::fromUtf8("mCbEnc_elv"));
@@ -1839,7 +1821,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbEnc_elv, 17, 1, 1, 2);
+        gridLayout_7->addWidget(mCbEnc_elv, 15, 1, 1, 1);
 
         detailEncElv = new QPushButton(scrollAreaWidgetContents_2);
         detailEncElv->setObjectName(QString::fromUtf8("detailEncElv"));
@@ -1853,7 +1835,7 @@ public:
         detailEncElv->setIconSize(QSize(20, 20));
         detailEncElv->setFlat(true);
 
-        gridLayout->addWidget(detailEncElv, 17, 5, 1, 1);
+        gridLayout_7->addWidget(detailEncElv, 15, 3, 1, 1);
 
         pushButton_39 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_39->setObjectName(QString::fromUtf8("pushButton_39"));
@@ -1867,21 +1849,21 @@ public:
         pushButton_39->setIconSize(QSize(20, 20));
         pushButton_39->setFlat(true);
 
-        gridLayout->addWidget(pushButton_39, 17, 6, 1, 1);
+        gridLayout_7->addWidget(pushButton_39, 15, 4, 1, 1);
 
         label_51 = new QLabel(scrollAreaWidgetContents_2);
         label_51->setObjectName(QString::fromUtf8("label_51"));
         label_51->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_51->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_51, 17, 7, 1, 1);
+        gridLayout_7->addWidget(label_51, 15, 5, 1, 1);
 
         label_50 = new QLabel(scrollAreaWidgetContents_2);
         label_50->setObjectName(QString::fromUtf8("label_50"));
         label_50->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_50->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_50, 17, 8, 1, 1);
+        gridLayout_7->addWidget(label_50, 15, 6, 1, 1);
 
         pushButton_45 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_45->setObjectName(QString::fromUtf8("pushButton_45"));
@@ -1895,7 +1877,7 @@ public:
         pushButton_45->setIconSize(QSize(20, 20));
         pushButton_45->setFlat(true);
 
-        gridLayout->addWidget(pushButton_45, 17, 9, 1, 1);
+        gridLayout_7->addWidget(pushButton_45, 15, 7, 1, 1);
 
         mCbMotor_all = new QCheckBox(scrollAreaWidgetContents_2);
         mCbMotor_all->setObjectName(QString::fromUtf8("mCbMotor_all"));
@@ -1915,69 +1897,13 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbMotor_all, 18, 0, 1, 3);
-
-        detailModuleMotor = new QPushButton(scrollAreaWidgetContents_2);
-        detailModuleMotor->setObjectName(QString::fromUtf8("detailModuleMotor"));
-        detailModuleMotor->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailModuleMotor->setIcon(icon1);
-        detailModuleMotor->setIconSize(QSize(20, 20));
-        detailModuleMotor->setFlat(true);
-
-        gridLayout->addWidget(detailModuleMotor, 18, 5, 1, 1);
-
-        pushButton_38 = new QPushButton(scrollAreaWidgetContents_2);
-        pushButton_38->setObjectName(QString::fromUtf8("pushButton_38"));
-        pushButton_38->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        pushButton_38->setIcon(icon2);
-        pushButton_38->setIconSize(QSize(20, 20));
-        pushButton_38->setFlat(true);
-
-        gridLayout->addWidget(pushButton_38, 18, 6, 1, 1);
-
-        label_49 = new QLabel(scrollAreaWidgetContents_2);
-        label_49->setObjectName(QString::fromUtf8("label_49"));
-        label_49->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
-        label_49->setAlignment(Qt::AlignCenter);
-
-        gridLayout->addWidget(label_49, 18, 7, 1, 1);
-
-        label_48 = new QLabel(scrollAreaWidgetContents_2);
-        label_48->setObjectName(QString::fromUtf8("label_48"));
-        label_48->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
-        label_48->setAlignment(Qt::AlignCenter);
-
-        gridLayout->addWidget(label_48, 18, 8, 1, 1);
-
-        pushButton_44 = new QPushButton(scrollAreaWidgetContents_2);
-        pushButton_44->setObjectName(QString::fromUtf8("pushButton_44"));
-        pushButton_44->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        pushButton_44->setIcon(icon3);
-        pushButton_44->setIconSize(QSize(20, 20));
-        pushButton_44->setFlat(true);
-
-        gridLayout->addWidget(pushButton_44, 18, 9, 1, 1);
+        gridLayout_7->addWidget(mCbMotor_all, 16, 0, 1, 2);
 
         label_63 = new QLabel(scrollAreaWidgetContents_2);
         label_63->setObjectName(QString::fromUtf8("label_63"));
         label_63->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout->addWidget(label_63, 19, 0, 1, 1);
+        gridLayout_7->addWidget(label_63, 17, 0, 1, 1);
 
         mCbMotor_azi = new QCheckBox(scrollAreaWidgetContents_2);
         mCbMotor_azi->setObjectName(QString::fromUtf8("mCbMotor_azi"));
@@ -1997,7 +1923,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbMotor_azi, 19, 1, 1, 2);
+        gridLayout_7->addWidget(mCbMotor_azi, 17, 1, 1, 1);
 
         detailMotorAzi = new QPushButton(scrollAreaWidgetContents_2);
         detailMotorAzi->setObjectName(QString::fromUtf8("detailMotorAzi"));
@@ -2011,7 +1937,7 @@ public:
         detailMotorAzi->setIconSize(QSize(20, 20));
         detailMotorAzi->setFlat(true);
 
-        gridLayout->addWidget(detailMotorAzi, 19, 5, 1, 1);
+        gridLayout_7->addWidget(detailMotorAzi, 17, 3, 1, 1);
 
         pushButton_37 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_37->setObjectName(QString::fromUtf8("pushButton_37"));
@@ -2025,21 +1951,21 @@ public:
         pushButton_37->setIconSize(QSize(20, 20));
         pushButton_37->setFlat(true);
 
-        gridLayout->addWidget(pushButton_37, 19, 6, 1, 1);
+        gridLayout_7->addWidget(pushButton_37, 17, 4, 1, 1);
 
         label_47 = new QLabel(scrollAreaWidgetContents_2);
         label_47->setObjectName(QString::fromUtf8("label_47"));
         label_47->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_47->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_47, 19, 7, 1, 1);
+        gridLayout_7->addWidget(label_47, 17, 5, 1, 1);
 
         label_46 = new QLabel(scrollAreaWidgetContents_2);
         label_46->setObjectName(QString::fromUtf8("label_46"));
         label_46->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_46->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_46, 19, 8, 1, 1);
+        gridLayout_7->addWidget(label_46, 17, 6, 1, 1);
 
         pushButton_32 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_32->setObjectName(QString::fromUtf8("pushButton_32"));
@@ -2053,13 +1979,13 @@ public:
         pushButton_32->setIconSize(QSize(20, 20));
         pushButton_32->setFlat(true);
 
-        gridLayout->addWidget(pushButton_32, 19, 9, 1, 1);
+        gridLayout_7->addWidget(pushButton_32, 17, 7, 1, 1);
 
         label_62 = new QLabel(scrollAreaWidgetContents_2);
         label_62->setObjectName(QString::fromUtf8("label_62"));
         label_62->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout->addWidget(label_62, 20, 0, 1, 1);
+        gridLayout_7->addWidget(label_62, 18, 0, 1, 1);
 
         mCbMotor_elv = new QCheckBox(scrollAreaWidgetContents_2);
         mCbMotor_elv->setObjectName(QString::fromUtf8("mCbMotor_elv"));
@@ -2079,12 +2005,12 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout->addWidget(mCbMotor_elv, 20, 1, 1, 2);
+        gridLayout_7->addWidget(mCbMotor_elv, 18, 1, 1, 1);
 
         label_23 = new QLabel(scrollAreaWidgetContents_2);
         label_23->setObjectName(QString::fromUtf8("label_23"));
 
-        gridLayout->addWidget(label_23, 20, 3, 1, 1);
+        gridLayout_7->addWidget(label_23, 18, 2, 1, 1);
 
         detailMotorElv = new QPushButton(scrollAreaWidgetContents_2);
         detailMotorElv->setObjectName(QString::fromUtf8("detailMotorElv"));
@@ -2098,7 +2024,7 @@ public:
         detailMotorElv->setIconSize(QSize(20, 20));
         detailMotorElv->setFlat(true);
 
-        gridLayout->addWidget(detailMotorElv, 20, 5, 1, 1);
+        gridLayout_7->addWidget(detailMotorElv, 18, 3, 1, 1);
 
         pushButton_62 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_62->setObjectName(QString::fromUtf8("pushButton_62"));
@@ -2112,21 +2038,21 @@ public:
         pushButton_62->setIconSize(QSize(20, 20));
         pushButton_62->setFlat(true);
 
-        gridLayout->addWidget(pushButton_62, 20, 6, 1, 1);
+        gridLayout_7->addWidget(pushButton_62, 18, 4, 1, 1);
 
         label_52 = new QLabel(scrollAreaWidgetContents_2);
         label_52->setObjectName(QString::fromUtf8("label_52"));
         label_52->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
         label_52->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_52, 20, 7, 1, 1);
+        gridLayout_7->addWidget(label_52, 18, 5, 1, 1);
 
         label_53 = new QLabel(scrollAreaWidgetContents_2);
         label_53->setObjectName(QString::fromUtf8("label_53"));
         label_53->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         label_53->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(label_53, 20, 8, 1, 1);
+        gridLayout_7->addWidget(label_53, 18, 6, 1, 1);
 
         pushButton_64 = new QPushButton(scrollAreaWidgetContents_2);
         pushButton_64->setObjectName(QString::fromUtf8("pushButton_64"));
@@ -2140,37 +2066,23 @@ public:
         pushButton_64->setIconSize(QSize(20, 20));
         pushButton_64->setFlat(true);
 
-        gridLayout->addWidget(pushButton_64, 20, 9, 1, 1);
+        gridLayout_7->addWidget(pushButton_64, 18, 7, 1, 1);
 
-        line = new QFrame(scrollAreaWidgetContents_2);
-        line->setObjectName(QString::fromUtf8("line"));
-        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Fixed);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(line->sizePolicy().hasHeightForWidth());
-        line->setSizePolicy(sizePolicy1);
-        line->setStyleSheet(QString::fromUtf8("background-color: rgb(49,67,100);"));
-        line->setFrameShape(QFrame::HLine);
-        line->setFrameShadow(QFrame::Sunken);
-
-        gridLayout->addWidget(line, 1, 0, 1, 4);
-
-        line_2 = new QFrame(scrollAreaWidgetContents_2);
-        line_2->setObjectName(QString::fromUtf8("line_2"));
-        line_2->setStyleSheet(QString::fromUtf8("background-color: rgb(49,67,100);"));
-        line_2->setFrameShape(QFrame::HLine);
-        line_2->setFrameShadow(QFrame::Sunken);
-
-        gridLayout->addWidget(line_2, 1, 4, 1, 2);
-
+        gridLayout_7->setColumnStretch(1, 4);
+        gridLayout_7->setColumnStretch(3, 1);
+        gridLayout_7->setColumnStretch(4, 1);
+        gridLayout_7->setColumnStretch(5, 1);
         detailCtrMotorAzi->setWidget(scrollAreaWidgetContents_2);
 
-        gridLayout_8->addWidget(detailCtrMotorAzi, 0, 0, 1, 1);
+        gridLayout->addWidget(detailCtrMotorAzi, 2, 0, 1, 4);
 
-        gridLayout_8->setColumnStretch(0, 3);
+        gridLayout->setColumnStretch(0, 6);
+        gridLayout->setColumnStretch(1, 1);
+        gridLayout->setColumnStretch(2, 1);
+        gridLayout->setColumnStretch(3, 3);
         scrollArea->setWidget(scrollAreaWidgetContents);
 
-        gridLayout_7->addWidget(scrollArea, 0, 0, 1, 1);
+        gridLayout_8->addWidget(scrollArea, 0, 0, 1, 1);
 
         tabWidget->addTab(DigitalModule, QString());
         MicrowaveModule = new QWidget();
@@ -2196,9 +2108,12 @@ public:
         scrollArea_2->setWidgetResizable(true);
         scrollAreaWidgetContents_3 = new QWidget();
         scrollAreaWidgetContents_3->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_3"));
-        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 589, 1506));
+        scrollAreaWidgetContents_3->setGeometry(QRect(0, -619, 549, 1435));
         gridLayout_17 = new QGridLayout(scrollAreaWidgetContents_3);
         gridLayout_17->setObjectName(QString::fromUtf8("gridLayout_17"));
+        gridLayout_17->setHorizontalSpacing(6);
+        gridLayout_17->setVerticalSpacing(5);
+        gridLayout_17->setContentsMargins(5, 0, 5, 0);
         All = new QCheckBox(scrollAreaWidgetContents_3);
         All->setObjectName(QString::fromUtf8("All"));
         All->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(156,114,50);}\n"
@@ -2241,8 +2156,8 @@ public:
 
         label_85 = new QLabel(scrollAreaWidgetContents_3);
         label_85->setObjectName(QString::fromUtf8("label_85"));
-        sizePolicy.setHeightForWidth(label_85->sizePolicy().hasHeightForWidth());
-        label_85->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_85->sizePolicy().hasHeightForWidth());
+        label_85->setSizePolicy(sizePolicy1);
         label_85->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_85, 2, 0, 1, 1);
@@ -2318,16 +2233,16 @@ public:
 
         label_86 = new QLabel(scrollAreaWidgetContents_3);
         label_86->setObjectName(QString::fromUtf8("label_86"));
-        sizePolicy.setHeightForWidth(label_86->sizePolicy().hasHeightForWidth());
-        label_86->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_86->sizePolicy().hasHeightForWidth());
+        label_86->setSizePolicy(sizePolicy1);
         label_86->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_86, 3, 0, 1, 1);
 
         mCbCirculator_part2 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbCirculator_part2->setObjectName(QString::fromUtf8("mCbCirculator_part2"));
-        sizePolicy1.setHeightForWidth(mCbCirculator_part2->sizePolicy().hasHeightForWidth());
-        mCbCirculator_part2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(mCbCirculator_part2->sizePolicy().hasHeightForWidth());
+        mCbCirculator_part2->setSizePolicy(sizePolicy);
         mCbCirculator_part2->setStyleSheet(QString::fromUtf8("QCheckBox{font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);}\n"
 "QCheckBox::indicator::unchecked\n"
 "{\n"
@@ -2417,8 +2332,8 @@ public:
 
         label_87 = new QLabel(scrollAreaWidgetContents_3);
         label_87->setObjectName(QString::fromUtf8("label_87"));
-        sizePolicy.setHeightForWidth(label_87->sizePolicy().hasHeightForWidth());
-        label_87->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_87->sizePolicy().hasHeightForWidth());
+        label_87->setSizePolicy(sizePolicy1);
         label_87->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
         gridLayout_17->addWidget(label_87, 5, 0, 1, 1);
@@ -2494,11 +2409,11 @@ public:
 
         label_88 = new QLabel(scrollAreaWidgetContents_3);
         label_88->setObjectName(QString::fromUtf8("label_88"));
-        sizePolicy.setHeightForWidth(label_88->sizePolicy().hasHeightForWidth());
-        label_88->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_88->sizePolicy().hasHeightForWidth());
+        label_88->setSizePolicy(sizePolicy1);
         label_88->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_88, 6, 0, 2, 1);
+        gridLayout_17->addWidget(label_88, 6, 0, 1, 1);
 
         mCbComparator_part2 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbComparator_part2->setObjectName(QString::fromUtf8("mCbComparator_part2"));
@@ -2520,18 +2435,54 @@ public:
 
         gridLayout_17->addWidget(mCbComparator_part2, 6, 1, 1, 1);
 
+        detailComparator_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        detailComparator_part2->setObjectName(QString::fromUtf8("detailComparator_part2"));
+        detailComparator_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        detailComparator_part2->setIcon(icon1);
+
+        gridLayout_17->addWidget(detailComparator_part2, 6, 2, 1, 1);
+
+        importComparator_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        importComparator_part2->setObjectName(QString::fromUtf8("importComparator_part2"));
+        importComparator_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        importComparator_part2->setIcon(icon2);
+
+        gridLayout_17->addWidget(importComparator_part2, 6, 3, 1, 1);
+
         indicatorComparator_part2 = new QLabel(scrollAreaWidgetContents_3);
         indicatorComparator_part2->setObjectName(QString::fromUtf8("indicatorComparator_part2"));
         indicatorComparator_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorComparator_part2, 6, 4, 2, 1);
+        gridLayout_17->addWidget(indicatorComparator_part2, 6, 4, 1, 1);
 
         ledComparator_part2 = new QLabel(scrollAreaWidgetContents_3);
         ledComparator_part2->setObjectName(QString::fromUtf8("ledComparator_part2"));
         ledComparator_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledComparator_part2->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledComparator_part2, 6, 5, 3, 1);
+        gridLayout_17->addWidget(ledComparator_part2, 6, 5, 1, 1);
+
+        rltComparator_part2 = new QPushButton(scrollAreaWidgetContents_3);
+        rltComparator_part2->setObjectName(QString::fromUtf8("rltComparator_part2"));
+        rltComparator_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(179,192,217);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        rltComparator_part2->setIcon(icon3);
+
+        gridLayout_17->addWidget(rltComparator_part2, 6, 6, 1, 1);
 
         mCbAdapterSMA = new QCheckBox(scrollAreaWidgetContents_3);
         mCbAdapterSMA->setObjectName(QString::fromUtf8("mCbAdapterSMA"));
@@ -2551,15 +2502,15 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbAdapterSMA, 9, 0, 1, 2);
+        gridLayout_17->addWidget(mCbAdapterSMA, 7, 0, 1, 2);
 
         label_89 = new QLabel(scrollAreaWidgetContents_3);
         label_89->setObjectName(QString::fromUtf8("label_89"));
-        sizePolicy.setHeightForWidth(label_89->sizePolicy().hasHeightForWidth());
-        label_89->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_89->sizePolicy().hasHeightForWidth());
+        label_89->setSizePolicy(sizePolicy1);
         label_89->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_89, 10, 0, 1, 1);
+        gridLayout_17->addWidget(label_89, 8, 0, 1, 1);
 
         mCbSMA_part1 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbSMA_part1->setObjectName(QString::fromUtf8("mCbSMA_part1"));
@@ -2579,7 +2530,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbSMA_part1, 10, 1, 1, 1);
+        gridLayout_17->addWidget(mCbSMA_part1, 8, 1, 1, 1);
 
         detailSMA_part1 = new QPushButton(scrollAreaWidgetContents_3);
         detailSMA_part1->setObjectName(QString::fromUtf8("detailSMA_part1"));
@@ -2591,7 +2542,7 @@ public:
 "}"));
         detailSMA_part1->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailSMA_part1, 10, 2, 1, 1);
+        gridLayout_17->addWidget(detailSMA_part1, 8, 2, 1, 1);
 
         importSMA_part1 = new QPushButton(scrollAreaWidgetContents_3);
         importSMA_part1->setObjectName(QString::fromUtf8("importSMA_part1"));
@@ -2603,20 +2554,20 @@ public:
 "}"));
         importSMA_part1->setIcon(icon2);
 
-        gridLayout_17->addWidget(importSMA_part1, 10, 3, 1, 1);
+        gridLayout_17->addWidget(importSMA_part1, 8, 3, 1, 1);
 
         indicatorSma_part1 = new QLabel(scrollAreaWidgetContents_3);
         indicatorSma_part1->setObjectName(QString::fromUtf8("indicatorSma_part1"));
         indicatorSma_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorSma_part1, 10, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorSma_part1, 8, 4, 1, 1);
 
         ledSMA_part1 = new QLabel(scrollAreaWidgetContents_3);
         ledSMA_part1->setObjectName(QString::fromUtf8("ledSMA_part1"));
         ledSMA_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledSMA_part1->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledSMA_part1, 10, 5, 1, 1);
+        gridLayout_17->addWidget(ledSMA_part1, 8, 5, 1, 1);
 
         rltSMA_part1 = new QPushButton(scrollAreaWidgetContents_3);
         rltSMA_part1->setObjectName(QString::fromUtf8("rltSMA_part1"));
@@ -2628,15 +2579,15 @@ public:
 "}"));
         rltSMA_part1->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltSMA_part1, 10, 6, 1, 1);
+        gridLayout_17->addWidget(rltSMA_part1, 8, 6, 1, 1);
 
         label_90 = new QLabel(scrollAreaWidgetContents_3);
         label_90->setObjectName(QString::fromUtf8("label_90"));
-        sizePolicy.setHeightForWidth(label_90->sizePolicy().hasHeightForWidth());
-        label_90->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_90->sizePolicy().hasHeightForWidth());
+        label_90->setSizePolicy(sizePolicy1);
         label_90->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_90, 11, 0, 1, 1);
+        gridLayout_17->addWidget(label_90, 9, 0, 1, 1);
 
         mCbSMA_part2 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbSMA_part2->setObjectName(QString::fromUtf8("mCbSMA_part2"));
@@ -2656,7 +2607,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbSMA_part2, 11, 1, 1, 1);
+        gridLayout_17->addWidget(mCbSMA_part2, 9, 1, 1, 1);
 
         detailSMA_part2 = new QPushButton(scrollAreaWidgetContents_3);
         detailSMA_part2->setObjectName(QString::fromUtf8("detailSMA_part2"));
@@ -2668,7 +2619,7 @@ public:
 "}"));
         detailSMA_part2->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailSMA_part2, 11, 2, 1, 1);
+        gridLayout_17->addWidget(detailSMA_part2, 9, 2, 1, 1);
 
         importSMA_part2 = new QPushButton(scrollAreaWidgetContents_3);
         importSMA_part2->setObjectName(QString::fromUtf8("importSMA_part2"));
@@ -2680,20 +2631,20 @@ public:
 "}"));
         importSMA_part2->setIcon(icon2);
 
-        gridLayout_17->addWidget(importSMA_part2, 11, 3, 1, 1);
+        gridLayout_17->addWidget(importSMA_part2, 9, 3, 1, 1);
 
         indicatorSma_part2 = new QLabel(scrollAreaWidgetContents_3);
         indicatorSma_part2->setObjectName(QString::fromUtf8("indicatorSma_part2"));
         indicatorSma_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorSma_part2, 11, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorSma_part2, 9, 4, 1, 1);
 
         ledSMA_part2 = new QLabel(scrollAreaWidgetContents_3);
         ledSMA_part2->setObjectName(QString::fromUtf8("ledSMA_part2"));
         ledSMA_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledSMA_part2->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledSMA_part2, 11, 5, 1, 1);
+        gridLayout_17->addWidget(ledSMA_part2, 9, 5, 1, 1);
 
         rltSMA_part2 = new QPushButton(scrollAreaWidgetContents_3);
         rltSMA_part2->setObjectName(QString::fromUtf8("rltSMA_part2"));
@@ -2705,7 +2656,7 @@ public:
 "}"));
         rltSMA_part2->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltSMA_part2, 11, 6, 1, 1);
+        gridLayout_17->addWidget(rltSMA_part2, 9, 6, 1, 1);
 
         mCbAttXband = new QCheckBox(scrollAreaWidgetContents_3);
         mCbAttXband->setObjectName(QString::fromUtf8("mCbAttXband"));
@@ -2725,15 +2676,15 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbAttXband, 12, 0, 1, 2);
+        gridLayout_17->addWidget(mCbAttXband, 10, 0, 1, 2);
 
         label_91 = new QLabel(scrollAreaWidgetContents_3);
         label_91->setObjectName(QString::fromUtf8("label_91"));
-        sizePolicy.setHeightForWidth(label_91->sizePolicy().hasHeightForWidth());
-        label_91->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_91->sizePolicy().hasHeightForWidth());
+        label_91->setSizePolicy(sizePolicy1);
         label_91->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_91, 13, 0, 1, 1);
+        gridLayout_17->addWidget(label_91, 11, 0, 1, 1);
 
         mCbXband_part1 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbXband_part1->setObjectName(QString::fromUtf8("mCbXband_part1"));
@@ -2753,7 +2704,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbXband_part1, 13, 1, 1, 1);
+        gridLayout_17->addWidget(mCbXband_part1, 11, 1, 1, 1);
 
         detailAttXband_part1 = new QPushButton(scrollAreaWidgetContents_3);
         detailAttXband_part1->setObjectName(QString::fromUtf8("detailAttXband_part1"));
@@ -2765,7 +2716,7 @@ public:
 "}"));
         detailAttXband_part1->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailAttXband_part1, 13, 2, 1, 1);
+        gridLayout_17->addWidget(detailAttXband_part1, 11, 2, 1, 1);
 
         importAttXband_part1 = new QPushButton(scrollAreaWidgetContents_3);
         importAttXband_part1->setObjectName(QString::fromUtf8("importAttXband_part1"));
@@ -2777,20 +2728,20 @@ public:
 "}"));
         importAttXband_part1->setIcon(icon2);
 
-        gridLayout_17->addWidget(importAttXband_part1, 13, 3, 1, 1);
+        gridLayout_17->addWidget(importAttXband_part1, 11, 3, 1, 1);
 
         indicatorXband_part1 = new QLabel(scrollAreaWidgetContents_3);
         indicatorXband_part1->setObjectName(QString::fromUtf8("indicatorXband_part1"));
         indicatorXband_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorXband_part1, 13, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorXband_part1, 11, 4, 1, 1);
 
         ledAttXband_part1 = new QLabel(scrollAreaWidgetContents_3);
         ledAttXband_part1->setObjectName(QString::fromUtf8("ledAttXband_part1"));
         ledAttXband_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledAttXband_part1->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledAttXband_part1, 13, 5, 1, 1);
+        gridLayout_17->addWidget(ledAttXband_part1, 11, 5, 1, 1);
 
         rltAttXband_part1 = new QPushButton(scrollAreaWidgetContents_3);
         rltAttXband_part1->setObjectName(QString::fromUtf8("rltAttXband_part1"));
@@ -2802,7 +2753,7 @@ public:
 "}"));
         rltAttXband_part1->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltAttXband_part1, 13, 6, 1, 1);
+        gridLayout_17->addWidget(rltAttXband_part1, 11, 6, 1, 1);
 
         label_92 = new QLabel(scrollAreaWidgetContents_3);
         label_92->setObjectName(QString::fromUtf8("label_92"));
@@ -2813,7 +2764,7 @@ public:
         label_92->setSizePolicy(sizePolicy2);
         label_92->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_92, 14, 0, 1, 1);
+        gridLayout_17->addWidget(label_92, 12, 0, 1, 1);
 
         mCbXband_part2 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbXband_part2->setObjectName(QString::fromUtf8("mCbXband_part2"));
@@ -2833,7 +2784,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbXband_part2, 14, 1, 1, 1);
+        gridLayout_17->addWidget(mCbXband_part2, 12, 1, 1, 1);
 
         detailAttXband_part2 = new QPushButton(scrollAreaWidgetContents_3);
         detailAttXband_part2->setObjectName(QString::fromUtf8("detailAttXband_part2"));
@@ -2845,7 +2796,7 @@ public:
 "}"));
         detailAttXband_part2->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailAttXband_part2, 14, 2, 1, 1);
+        gridLayout_17->addWidget(detailAttXband_part2, 12, 2, 1, 1);
 
         importAttXband_part2 = new QPushButton(scrollAreaWidgetContents_3);
         importAttXband_part2->setObjectName(QString::fromUtf8("importAttXband_part2"));
@@ -2857,20 +2808,20 @@ public:
 "}"));
         importAttXband_part2->setIcon(icon2);
 
-        gridLayout_17->addWidget(importAttXband_part2, 14, 3, 1, 1);
+        gridLayout_17->addWidget(importAttXband_part2, 12, 3, 1, 1);
 
         indicatorXband_part2 = new QLabel(scrollAreaWidgetContents_3);
         indicatorXband_part2->setObjectName(QString::fromUtf8("indicatorXband_part2"));
         indicatorXband_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorXband_part2, 14, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorXband_part2, 12, 4, 1, 1);
 
         ledAttXband_part2 = new QLabel(scrollAreaWidgetContents_3);
         ledAttXband_part2->setObjectName(QString::fromUtf8("ledAttXband_part2"));
         ledAttXband_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledAttXband_part2->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledAttXband_part2, 14, 5, 1, 1);
+        gridLayout_17->addWidget(ledAttXband_part2, 12, 5, 1, 1);
 
         rltAttXband_part2 = new QPushButton(scrollAreaWidgetContents_3);
         rltAttXband_part2->setObjectName(QString::fromUtf8("rltAttXband_part2"));
@@ -2882,7 +2833,7 @@ public:
 "}"));
         rltAttXband_part2->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltAttXband_part2, 14, 6, 1, 1);
+        gridLayout_17->addWidget(rltAttXband_part2, 12, 6, 1, 1);
 
         mCbAntena = new QCheckBox(scrollAreaWidgetContents_3);
         mCbAntena->setObjectName(QString::fromUtf8("mCbAntena"));
@@ -2902,7 +2853,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbAntena, 15, 0, 1, 2);
+        gridLayout_17->addWidget(mCbAntena, 13, 0, 1, 2);
 
         detailAntena = new QPushButton(scrollAreaWidgetContents_3);
         detailAntena->setObjectName(QString::fromUtf8("detailAntena"));
@@ -2914,7 +2865,7 @@ public:
 "}"));
         detailAntena->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailAntena, 15, 2, 1, 1);
+        gridLayout_17->addWidget(detailAntena, 13, 2, 1, 1);
 
         importAntena = new QPushButton(scrollAreaWidgetContents_3);
         importAntena->setObjectName(QString::fromUtf8("importAntena"));
@@ -2926,20 +2877,20 @@ public:
 "}"));
         importAntena->setIcon(icon2);
 
-        gridLayout_17->addWidget(importAntena, 15, 3, 1, 1);
+        gridLayout_17->addWidget(importAntena, 13, 3, 1, 1);
 
         indicatorAntena = new QLabel(scrollAreaWidgetContents_3);
         indicatorAntena->setObjectName(QString::fromUtf8("indicatorAntena"));
         indicatorAntena->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorAntena, 15, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorAntena, 13, 4, 1, 1);
 
         ledAntena = new QLabel(scrollAreaWidgetContents_3);
         ledAntena->setObjectName(QString::fromUtf8("ledAntena"));
         ledAntena->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledAntena->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledAntena, 15, 5, 1, 1);
+        gridLayout_17->addWidget(ledAntena, 13, 5, 1, 1);
 
         rltAntena = new QPushButton(scrollAreaWidgetContents_3);
         rltAntena->setObjectName(QString::fromUtf8("rltAntena"));
@@ -2951,7 +2902,7 @@ public:
 "}"));
         rltAntena->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltAntena, 15, 6, 1, 1);
+        gridLayout_17->addWidget(rltAntena, 13, 6, 1, 1);
 
         mCbFilterIf = new QCheckBox(scrollAreaWidgetContents_3);
         mCbFilterIf->setObjectName(QString::fromUtf8("mCbFilterIf"));
@@ -2971,7 +2922,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbFilterIf, 16, 0, 1, 2);
+        gridLayout_17->addWidget(mCbFilterIf, 14, 0, 1, 2);
 
         detailFilterIF = new QPushButton(scrollAreaWidgetContents_3);
         detailFilterIF->setObjectName(QString::fromUtf8("detailFilterIF"));
@@ -2983,7 +2934,7 @@ public:
 "}"));
         detailFilterIF->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailFilterIF, 16, 2, 1, 1);
+        gridLayout_17->addWidget(detailFilterIF, 14, 2, 1, 1);
 
         importFilterIF = new QPushButton(scrollAreaWidgetContents_3);
         importFilterIF->setObjectName(QString::fromUtf8("importFilterIF"));
@@ -2995,20 +2946,20 @@ public:
 "}"));
         importFilterIF->setIcon(icon2);
 
-        gridLayout_17->addWidget(importFilterIF, 16, 3, 1, 1);
+        gridLayout_17->addWidget(importFilterIF, 14, 3, 1, 1);
 
         indicatorFilterIF = new QLabel(scrollAreaWidgetContents_3);
         indicatorFilterIF->setObjectName(QString::fromUtf8("indicatorFilterIF"));
         indicatorFilterIF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorFilterIF, 16, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorFilterIF, 14, 4, 1, 1);
 
         ledFilterIF = new QLabel(scrollAreaWidgetContents_3);
         ledFilterIF->setObjectName(QString::fromUtf8("ledFilterIF"));
         ledFilterIF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledFilterIF->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledFilterIF, 16, 5, 1, 1);
+        gridLayout_17->addWidget(ledFilterIF, 14, 5, 1, 1);
 
         rltFilterIF = new QPushButton(scrollAreaWidgetContents_3);
         rltFilterIF->setObjectName(QString::fromUtf8("rltFilterIF"));
@@ -3020,7 +2971,7 @@ public:
 "}"));
         rltFilterIF->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltFilterIF, 16, 6, 1, 1);
+        gridLayout_17->addWidget(rltFilterIF, 14, 6, 1, 1);
 
         mCbFilterLOIF = new QCheckBox(scrollAreaWidgetContents_3);
         mCbFilterLOIF->setObjectName(QString::fromUtf8("mCbFilterLOIF"));
@@ -3040,7 +2991,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbFilterLOIF, 17, 0, 1, 2);
+        gridLayout_17->addWidget(mCbFilterLOIF, 15, 0, 1, 2);
 
         detailFilterLOIF = new QPushButton(scrollAreaWidgetContents_3);
         detailFilterLOIF->setObjectName(QString::fromUtf8("detailFilterLOIF"));
@@ -3052,7 +3003,7 @@ public:
 "}"));
         detailFilterLOIF->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailFilterLOIF, 17, 2, 1, 1);
+        gridLayout_17->addWidget(detailFilterLOIF, 15, 2, 1, 1);
 
         importFilterLOIF = new QPushButton(scrollAreaWidgetContents_3);
         importFilterLOIF->setObjectName(QString::fromUtf8("importFilterLOIF"));
@@ -3064,20 +3015,20 @@ public:
 "}"));
         importFilterLOIF->setIcon(icon2);
 
-        gridLayout_17->addWidget(importFilterLOIF, 17, 3, 1, 1);
+        gridLayout_17->addWidget(importFilterLOIF, 15, 3, 1, 1);
 
         indicatorFilterLOIF = new QLabel(scrollAreaWidgetContents_3);
         indicatorFilterLOIF->setObjectName(QString::fromUtf8("indicatorFilterLOIF"));
         indicatorFilterLOIF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorFilterLOIF, 17, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorFilterLOIF, 15, 4, 1, 1);
 
         ledFilterLOIF = new QLabel(scrollAreaWidgetContents_3);
         ledFilterLOIF->setObjectName(QString::fromUtf8("ledFilterLOIF"));
         ledFilterLOIF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledFilterLOIF->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledFilterLOIF, 17, 5, 1, 1);
+        gridLayout_17->addWidget(ledFilterLOIF, 15, 5, 1, 1);
 
         rltFilterLOIF = new QPushButton(scrollAreaWidgetContents_3);
         rltFilterLOIF->setObjectName(QString::fromUtf8("rltFilterLOIF"));
@@ -3089,7 +3040,7 @@ public:
 "}"));
         rltFilterLOIF->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltFilterLOIF, 17, 6, 1, 1);
+        gridLayout_17->addWidget(rltFilterLOIF, 15, 6, 1, 1);
 
         mCbFilterLORF = new QCheckBox(scrollAreaWidgetContents_3);
         mCbFilterLORF->setObjectName(QString::fromUtf8("mCbFilterLORF"));
@@ -3109,7 +3060,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbFilterLORF, 18, 0, 1, 2);
+        gridLayout_17->addWidget(mCbFilterLORF, 16, 0, 1, 2);
 
         detailFilterLORF = new QPushButton(scrollAreaWidgetContents_3);
         detailFilterLORF->setObjectName(QString::fromUtf8("detailFilterLORF"));
@@ -3121,7 +3072,7 @@ public:
 "}"));
         detailFilterLORF->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailFilterLORF, 18, 2, 1, 1);
+        gridLayout_17->addWidget(detailFilterLORF, 16, 2, 1, 1);
 
         importFilterLORF = new QPushButton(scrollAreaWidgetContents_3);
         importFilterLORF->setObjectName(QString::fromUtf8("importFilterLORF"));
@@ -3133,20 +3084,20 @@ public:
 "}"));
         importFilterLORF->setIcon(icon2);
 
-        gridLayout_17->addWidget(importFilterLORF, 18, 3, 1, 1);
+        gridLayout_17->addWidget(importFilterLORF, 16, 3, 1, 1);
 
         indicatorFilterLORF = new QLabel(scrollAreaWidgetContents_3);
         indicatorFilterLORF->setObjectName(QString::fromUtf8("indicatorFilterLORF"));
         indicatorFilterLORF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorFilterLORF, 18, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorFilterLORF, 16, 4, 1, 1);
 
         ledFilterLORF = new QLabel(scrollAreaWidgetContents_3);
         ledFilterLORF->setObjectName(QString::fromUtf8("ledFilterLORF"));
         ledFilterLORF->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledFilterLORF->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledFilterLORF, 18, 5, 1, 1);
+        gridLayout_17->addWidget(ledFilterLORF, 16, 5, 1, 1);
 
         rltFilterLORF = new QPushButton(scrollAreaWidgetContents_3);
         rltFilterLORF->setObjectName(QString::fromUtf8("rltFilterLORF"));
@@ -3158,7 +3109,7 @@ public:
 "}"));
         rltFilterLORF->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltFilterLORF, 18, 6, 1, 1);
+        gridLayout_17->addWidget(rltFilterLORF, 16, 6, 1, 1);
 
         mCbFilterXband = new QCheckBox(scrollAreaWidgetContents_3);
         mCbFilterXband->setObjectName(QString::fromUtf8("mCbFilterXband"));
@@ -3178,7 +3129,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbFilterXband, 19, 0, 1, 2);
+        gridLayout_17->addWidget(mCbFilterXband, 17, 0, 1, 2);
 
         detailFilterXband = new QPushButton(scrollAreaWidgetContents_3);
         detailFilterXband->setObjectName(QString::fromUtf8("detailFilterXband"));
@@ -3190,7 +3141,7 @@ public:
 "}"));
         detailFilterXband->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailFilterXband, 19, 2, 1, 1);
+        gridLayout_17->addWidget(detailFilterXband, 17, 2, 1, 1);
 
         importFilterXband = new QPushButton(scrollAreaWidgetContents_3);
         importFilterXband->setObjectName(QString::fromUtf8("importFilterXband"));
@@ -3202,20 +3153,20 @@ public:
 "}"));
         importFilterXband->setIcon(icon2);
 
-        gridLayout_17->addWidget(importFilterXband, 19, 3, 1, 1);
+        gridLayout_17->addWidget(importFilterXband, 17, 3, 1, 1);
 
         indicatorFilterXband = new QLabel(scrollAreaWidgetContents_3);
         indicatorFilterXband->setObjectName(QString::fromUtf8("indicatorFilterXband"));
         indicatorFilterXband->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorFilterXband, 19, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorFilterXband, 17, 4, 1, 1);
 
         ledFilterXband = new QLabel(scrollAreaWidgetContents_3);
         ledFilterXband->setObjectName(QString::fromUtf8("ledFilterXband"));
         ledFilterXband->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledFilterXband->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledFilterXband, 19, 5, 1, 1);
+        gridLayout_17->addWidget(ledFilterXband, 17, 5, 1, 1);
 
         rltFilterXband = new QPushButton(scrollAreaWidgetContents_3);
         rltFilterXband->setObjectName(QString::fromUtf8("rltFilterXband"));
@@ -3227,7 +3178,7 @@ public:
 "}"));
         rltFilterXband->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltFilterXband, 19, 6, 1, 1);
+        gridLayout_17->addWidget(rltFilterXband, 17, 6, 1, 1);
 
         mCbHpa = new QCheckBox(scrollAreaWidgetContents_3);
         mCbHpa->setObjectName(QString::fromUtf8("mCbHpa"));
@@ -3247,7 +3198,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbHpa, 20, 0, 1, 2);
+        gridLayout_17->addWidget(mCbHpa, 18, 0, 1, 2);
 
         label_97 = new QLabel(scrollAreaWidgetContents_3);
         label_97->setObjectName(QString::fromUtf8("label_97"));
@@ -3255,7 +3206,7 @@ public:
         label_97->setSizePolicy(sizePolicy2);
         label_97->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_97, 21, 0, 1, 1);
+        gridLayout_17->addWidget(label_97, 19, 0, 1, 1);
 
         mCbHpa_part1 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbHpa_part1->setObjectName(QString::fromUtf8("mCbHpa_part1"));
@@ -3275,7 +3226,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbHpa_part1, 21, 1, 1, 1);
+        gridLayout_17->addWidget(mCbHpa_part1, 19, 1, 1, 1);
 
         detailHpa_part1 = new QPushButton(scrollAreaWidgetContents_3);
         detailHpa_part1->setObjectName(QString::fromUtf8("detailHpa_part1"));
@@ -3287,7 +3238,7 @@ public:
 "}"));
         detailHpa_part1->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailHpa_part1, 21, 2, 1, 1);
+        gridLayout_17->addWidget(detailHpa_part1, 19, 2, 1, 1);
 
         importHpa_part1 = new QPushButton(scrollAreaWidgetContents_3);
         importHpa_part1->setObjectName(QString::fromUtf8("importHpa_part1"));
@@ -3299,20 +3250,20 @@ public:
 "}"));
         importHpa_part1->setIcon(icon2);
 
-        gridLayout_17->addWidget(importHpa_part1, 21, 3, 1, 1);
+        gridLayout_17->addWidget(importHpa_part1, 19, 3, 1, 1);
 
         indicatorHpa_part1 = new QLabel(scrollAreaWidgetContents_3);
         indicatorHpa_part1->setObjectName(QString::fromUtf8("indicatorHpa_part1"));
         indicatorHpa_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorHpa_part1, 21, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorHpa_part1, 19, 4, 1, 1);
 
         ledHpa_part1 = new QLabel(scrollAreaWidgetContents_3);
         ledHpa_part1->setObjectName(QString::fromUtf8("ledHpa_part1"));
         ledHpa_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledHpa_part1->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledHpa_part1, 21, 5, 1, 1);
+        gridLayout_17->addWidget(ledHpa_part1, 19, 5, 1, 1);
 
         rltHpa_part1 = new QPushButton(scrollAreaWidgetContents_3);
         rltHpa_part1->setObjectName(QString::fromUtf8("rltHpa_part1"));
@@ -3324,7 +3275,7 @@ public:
 "}"));
         rltHpa_part1->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltHpa_part1, 21, 6, 1, 1);
+        gridLayout_17->addWidget(rltHpa_part1, 19, 6, 1, 1);
 
         label_98 = new QLabel(scrollAreaWidgetContents_3);
         label_98->setObjectName(QString::fromUtf8("label_98"));
@@ -3332,7 +3283,7 @@ public:
         label_98->setSizePolicy(sizePolicy2);
         label_98->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_98, 22, 0, 1, 1);
+        gridLayout_17->addWidget(label_98, 20, 0, 1, 1);
 
         mCbHpa_part2 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbHpa_part2->setObjectName(QString::fromUtf8("mCbHpa_part2"));
@@ -3352,7 +3303,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbHpa_part2, 22, 1, 1, 1);
+        gridLayout_17->addWidget(mCbHpa_part2, 20, 1, 1, 1);
 
         detailHpa_part2 = new QPushButton(scrollAreaWidgetContents_3);
         detailHpa_part2->setObjectName(QString::fromUtf8("detailHpa_part2"));
@@ -3364,7 +3315,7 @@ public:
 "}"));
         detailHpa_part2->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailHpa_part2, 22, 2, 1, 1);
+        gridLayout_17->addWidget(detailHpa_part2, 20, 2, 1, 1);
 
         importHpa_part2 = new QPushButton(scrollAreaWidgetContents_3);
         importHpa_part2->setObjectName(QString::fromUtf8("importHpa_part2"));
@@ -3376,20 +3327,20 @@ public:
 "}"));
         importHpa_part2->setIcon(icon2);
 
-        gridLayout_17->addWidget(importHpa_part2, 22, 3, 1, 1);
+        gridLayout_17->addWidget(importHpa_part2, 20, 3, 1, 1);
 
         indicatorHpa_part2 = new QLabel(scrollAreaWidgetContents_3);
         indicatorHpa_part2->setObjectName(QString::fromUtf8("indicatorHpa_part2"));
         indicatorHpa_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorHpa_part2, 22, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorHpa_part2, 20, 4, 1, 1);
 
         ledHpa_part2 = new QLabel(scrollAreaWidgetContents_3);
         ledHpa_part2->setObjectName(QString::fromUtf8("ledHpa_part2"));
         ledHpa_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledHpa_part2->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledHpa_part2, 22, 5, 1, 1);
+        gridLayout_17->addWidget(ledHpa_part2, 20, 5, 1, 1);
 
         rltHpa_part2 = new QPushButton(scrollAreaWidgetContents_3);
         rltHpa_part2->setObjectName(QString::fromUtf8("rltHpa_part2"));
@@ -3401,7 +3352,7 @@ public:
 "}"));
         rltHpa_part2->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltHpa_part2, 22, 6, 1, 1);
+        gridLayout_17->addWidget(rltHpa_part2, 20, 6, 1, 1);
 
         label_103 = new QLabel(scrollAreaWidgetContents_3);
         label_103->setObjectName(QString::fromUtf8("label_103"));
@@ -3409,7 +3360,7 @@ public:
         label_103->setSizePolicy(sizePolicy2);
         label_103->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_103, 23, 0, 1, 1);
+        gridLayout_17->addWidget(label_103, 21, 0, 1, 1);
 
         mCbHpa_part3 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbHpa_part3->setObjectName(QString::fromUtf8("mCbHpa_part3"));
@@ -3429,7 +3380,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbHpa_part3, 23, 1, 1, 1);
+        gridLayout_17->addWidget(mCbHpa_part3, 21, 1, 1, 1);
 
         detailHpa_part3 = new QPushButton(scrollAreaWidgetContents_3);
         detailHpa_part3->setObjectName(QString::fromUtf8("detailHpa_part3"));
@@ -3441,7 +3392,7 @@ public:
 "}"));
         detailHpa_part3->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailHpa_part3, 23, 2, 1, 1);
+        gridLayout_17->addWidget(detailHpa_part3, 21, 2, 1, 1);
 
         importHpa_part3 = new QPushButton(scrollAreaWidgetContents_3);
         importHpa_part3->setObjectName(QString::fromUtf8("importHpa_part3"));
@@ -3453,20 +3404,20 @@ public:
 "}"));
         importHpa_part3->setIcon(icon2);
 
-        gridLayout_17->addWidget(importHpa_part3, 23, 3, 1, 1);
+        gridLayout_17->addWidget(importHpa_part3, 21, 3, 1, 1);
 
         indicatorHpa_part3 = new QLabel(scrollAreaWidgetContents_3);
         indicatorHpa_part3->setObjectName(QString::fromUtf8("indicatorHpa_part3"));
         indicatorHpa_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorHpa_part3, 23, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorHpa_part3, 21, 4, 1, 1);
 
         ledHpa_part3 = new QLabel(scrollAreaWidgetContents_3);
         ledHpa_part3->setObjectName(QString::fromUtf8("ledHpa_part3"));
         ledHpa_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledHpa_part3->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledHpa_part3, 23, 5, 1, 1);
+        gridLayout_17->addWidget(ledHpa_part3, 21, 5, 1, 1);
 
         rltHpa_part3 = new QPushButton(scrollAreaWidgetContents_3);
         rltHpa_part3->setObjectName(QString::fromUtf8("rltHpa_part3"));
@@ -3478,7 +3429,7 @@ public:
 "}"));
         rltHpa_part3->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltHpa_part3, 23, 6, 1, 1);
+        gridLayout_17->addWidget(rltHpa_part3, 21, 6, 1, 1);
 
         label_99 = new QLabel(scrollAreaWidgetContents_3);
         label_99->setObjectName(QString::fromUtf8("label_99"));
@@ -3486,7 +3437,7 @@ public:
         label_99->setSizePolicy(sizePolicy2);
         label_99->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_99, 24, 0, 1, 1);
+        gridLayout_17->addWidget(label_99, 22, 0, 1, 1);
 
         mCbHpa_part4 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbHpa_part4->setObjectName(QString::fromUtf8("mCbHpa_part4"));
@@ -3506,7 +3457,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbHpa_part4, 24, 1, 1, 1);
+        gridLayout_17->addWidget(mCbHpa_part4, 22, 1, 1, 1);
 
         detailHpa_part4 = new QPushButton(scrollAreaWidgetContents_3);
         detailHpa_part4->setObjectName(QString::fromUtf8("detailHpa_part4"));
@@ -3518,7 +3469,7 @@ public:
 "}"));
         detailHpa_part4->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailHpa_part4, 24, 2, 1, 1);
+        gridLayout_17->addWidget(detailHpa_part4, 22, 2, 1, 1);
 
         importHpa_part4 = new QPushButton(scrollAreaWidgetContents_3);
         importHpa_part4->setObjectName(QString::fromUtf8("importHpa_part4"));
@@ -3530,20 +3481,20 @@ public:
 "}"));
         importHpa_part4->setIcon(icon2);
 
-        gridLayout_17->addWidget(importHpa_part4, 24, 3, 1, 1);
+        gridLayout_17->addWidget(importHpa_part4, 22, 3, 1, 1);
 
         indicatorHpa_part4 = new QLabel(scrollAreaWidgetContents_3);
         indicatorHpa_part4->setObjectName(QString::fromUtf8("indicatorHpa_part4"));
         indicatorHpa_part4->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorHpa_part4, 24, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorHpa_part4, 22, 4, 1, 1);
 
         ledHpa_part4 = new QLabel(scrollAreaWidgetContents_3);
         ledHpa_part4->setObjectName(QString::fromUtf8("ledHpa_part4"));
         ledHpa_part4->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledHpa_part4->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledHpa_part4, 24, 5, 1, 1);
+        gridLayout_17->addWidget(ledHpa_part4, 22, 5, 1, 1);
 
         rltHpa_part4 = new QPushButton(scrollAreaWidgetContents_3);
         rltHpa_part4->setObjectName(QString::fromUtf8("rltHpa_part4"));
@@ -3555,7 +3506,7 @@ public:
 "}"));
         rltHpa_part4->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltHpa_part4, 24, 6, 1, 1);
+        gridLayout_17->addWidget(rltHpa_part4, 22, 6, 1, 1);
 
         label_102 = new QLabel(scrollAreaWidgetContents_3);
         label_102->setObjectName(QString::fromUtf8("label_102"));
@@ -3563,7 +3514,7 @@ public:
         label_102->setSizePolicy(sizePolicy2);
         label_102->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_102, 25, 0, 1, 1);
+        gridLayout_17->addWidget(label_102, 23, 0, 1, 1);
 
         mCbHpa_part5 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbHpa_part5->setObjectName(QString::fromUtf8("mCbHpa_part5"));
@@ -3583,7 +3534,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbHpa_part5, 25, 1, 1, 1);
+        gridLayout_17->addWidget(mCbHpa_part5, 23, 1, 1, 1);
 
         detailHpa_part5 = new QPushButton(scrollAreaWidgetContents_3);
         detailHpa_part5->setObjectName(QString::fromUtf8("detailHpa_part5"));
@@ -3595,7 +3546,7 @@ public:
 "}"));
         detailHpa_part5->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailHpa_part5, 25, 2, 1, 1);
+        gridLayout_17->addWidget(detailHpa_part5, 23, 2, 1, 1);
 
         importHpa_part5 = new QPushButton(scrollAreaWidgetContents_3);
         importHpa_part5->setObjectName(QString::fromUtf8("importHpa_part5"));
@@ -3607,20 +3558,20 @@ public:
 "}"));
         importHpa_part5->setIcon(icon2);
 
-        gridLayout_17->addWidget(importHpa_part5, 25, 3, 1, 1);
+        gridLayout_17->addWidget(importHpa_part5, 23, 3, 1, 1);
 
         indicatorHpa_part5 = new QLabel(scrollAreaWidgetContents_3);
         indicatorHpa_part5->setObjectName(QString::fromUtf8("indicatorHpa_part5"));
         indicatorHpa_part5->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorHpa_part5, 25, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorHpa_part5, 23, 4, 1, 1);
 
         ledHpa_part5 = new QLabel(scrollAreaWidgetContents_3);
         ledHpa_part5->setObjectName(QString::fromUtf8("ledHpa_part5"));
         ledHpa_part5->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledHpa_part5->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledHpa_part5, 25, 5, 1, 1);
+        gridLayout_17->addWidget(ledHpa_part5, 23, 5, 1, 1);
 
         rltHpa_part5 = new QPushButton(scrollAreaWidgetContents_3);
         rltHpa_part5->setObjectName(QString::fromUtf8("rltHpa_part5"));
@@ -3632,7 +3583,7 @@ public:
 "}"));
         rltHpa_part5->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltHpa_part5, 25, 6, 1, 1);
+        gridLayout_17->addWidget(rltHpa_part5, 23, 6, 1, 1);
 
         label_100 = new QLabel(scrollAreaWidgetContents_3);
         label_100->setObjectName(QString::fromUtf8("label_100"));
@@ -3640,7 +3591,7 @@ public:
         label_100->setSizePolicy(sizePolicy2);
         label_100->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_100, 26, 0, 1, 1);
+        gridLayout_17->addWidget(label_100, 24, 0, 1, 1);
 
         mCbHpa_part6 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbHpa_part6->setObjectName(QString::fromUtf8("mCbHpa_part6"));
@@ -3660,7 +3611,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbHpa_part6, 26, 1, 1, 1);
+        gridLayout_17->addWidget(mCbHpa_part6, 24, 1, 1, 1);
 
         detailHpa_part6 = new QPushButton(scrollAreaWidgetContents_3);
         detailHpa_part6->setObjectName(QString::fromUtf8("detailHpa_part6"));
@@ -3672,7 +3623,7 @@ public:
 "}"));
         detailHpa_part6->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailHpa_part6, 26, 2, 1, 1);
+        gridLayout_17->addWidget(detailHpa_part6, 24, 2, 1, 1);
 
         importHpa_part6 = new QPushButton(scrollAreaWidgetContents_3);
         importHpa_part6->setObjectName(QString::fromUtf8("importHpa_part6"));
@@ -3684,20 +3635,20 @@ public:
 "}"));
         importHpa_part6->setIcon(icon2);
 
-        gridLayout_17->addWidget(importHpa_part6, 26, 3, 1, 1);
+        gridLayout_17->addWidget(importHpa_part6, 24, 3, 1, 1);
 
         indicatorHpa_part6 = new QLabel(scrollAreaWidgetContents_3);
         indicatorHpa_part6->setObjectName(QString::fromUtf8("indicatorHpa_part6"));
         indicatorHpa_part6->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorHpa_part6, 26, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorHpa_part6, 24, 4, 1, 1);
 
         ledHpa_part6 = new QLabel(scrollAreaWidgetContents_3);
         ledHpa_part6->setObjectName(QString::fromUtf8("ledHpa_part6"));
         ledHpa_part6->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledHpa_part6->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledHpa_part6, 26, 5, 1, 1);
+        gridLayout_17->addWidget(ledHpa_part6, 24, 5, 1, 1);
 
         rltHpa_part6 = new QPushButton(scrollAreaWidgetContents_3);
         rltHpa_part6->setObjectName(QString::fromUtf8("rltHpa_part6"));
@@ -3709,7 +3660,7 @@ public:
 "}"));
         rltHpa_part6->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltHpa_part6, 26, 6, 1, 1);
+        gridLayout_17->addWidget(rltHpa_part6, 24, 6, 1, 1);
 
         label_101 = new QLabel(scrollAreaWidgetContents_3);
         label_101->setObjectName(QString::fromUtf8("label_101"));
@@ -3717,7 +3668,7 @@ public:
         label_101->setSizePolicy(sizePolicy2);
         label_101->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_101, 27, 0, 1, 1);
+        gridLayout_17->addWidget(label_101, 25, 0, 1, 1);
 
         mCbHpa_part7 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbHpa_part7->setObjectName(QString::fromUtf8("mCbHpa_part7"));
@@ -3737,7 +3688,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbHpa_part7, 27, 1, 1, 1);
+        gridLayout_17->addWidget(mCbHpa_part7, 25, 1, 1, 1);
 
         detailHpa_part7 = new QPushButton(scrollAreaWidgetContents_3);
         detailHpa_part7->setObjectName(QString::fromUtf8("detailHpa_part7"));
@@ -3749,7 +3700,7 @@ public:
 "}"));
         detailHpa_part7->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailHpa_part7, 27, 2, 1, 1);
+        gridLayout_17->addWidget(detailHpa_part7, 25, 2, 1, 1);
 
         importHpa_part7 = new QPushButton(scrollAreaWidgetContents_3);
         importHpa_part7->setObjectName(QString::fromUtf8("importHpa_part7"));
@@ -3761,20 +3712,20 @@ public:
 "}"));
         importHpa_part7->setIcon(icon2);
 
-        gridLayout_17->addWidget(importHpa_part7, 27, 3, 1, 1);
+        gridLayout_17->addWidget(importHpa_part7, 25, 3, 1, 1);
 
         indicatorHpa_part7 = new QLabel(scrollAreaWidgetContents_3);
         indicatorHpa_part7->setObjectName(QString::fromUtf8("indicatorHpa_part7"));
         indicatorHpa_part7->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorHpa_part7, 27, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorHpa_part7, 25, 4, 1, 1);
 
         ledHpa_part7 = new QLabel(scrollAreaWidgetContents_3);
         ledHpa_part7->setObjectName(QString::fromUtf8("ledHpa_part7"));
         ledHpa_part7->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledHpa_part7->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledHpa_part7, 27, 5, 1, 1);
+        gridLayout_17->addWidget(ledHpa_part7, 25, 5, 1, 1);
 
         rltHpa_part7 = new QPushButton(scrollAreaWidgetContents_3);
         rltHpa_part7->setObjectName(QString::fromUtf8("rltHpa_part7"));
@@ -3786,7 +3737,7 @@ public:
 "}"));
         rltHpa_part7->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltHpa_part7, 27, 6, 1, 1);
+        gridLayout_17->addWidget(rltHpa_part7, 25, 6, 1, 1);
 
         mCbSwAntena = new QCheckBox(scrollAreaWidgetContents_3);
         mCbSwAntena->setObjectName(QString::fromUtf8("mCbSwAntena"));
@@ -3807,7 +3758,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbSwAntena, 28, 0, 1, 2);
+        gridLayout_17->addWidget(mCbSwAntena, 26, 0, 1, 2);
 
         label_136 = new QLabel(scrollAreaWidgetContents_3);
         label_136->setObjectName(QString::fromUtf8("label_136"));
@@ -3815,7 +3766,7 @@ public:
         label_136->setSizePolicy(sizePolicy2);
         label_136->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_136, 29, 0, 1, 1);
+        gridLayout_17->addWidget(label_136, 27, 0, 1, 1);
 
         mCbSwAntena_part1 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbSwAntena_part1->setObjectName(QString::fromUtf8("mCbSwAntena_part1"));
@@ -3835,7 +3786,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbSwAntena_part1, 29, 1, 1, 1);
+        gridLayout_17->addWidget(mCbSwAntena_part1, 27, 1, 1, 1);
 
         detailSwAntena_part1 = new QPushButton(scrollAreaWidgetContents_3);
         detailSwAntena_part1->setObjectName(QString::fromUtf8("detailSwAntena_part1"));
@@ -3847,7 +3798,7 @@ public:
 "}"));
         detailSwAntena_part1->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailSwAntena_part1, 29, 2, 1, 1);
+        gridLayout_17->addWidget(detailSwAntena_part1, 27, 2, 1, 1);
 
         importSwAntena_part1 = new QPushButton(scrollAreaWidgetContents_3);
         importSwAntena_part1->setObjectName(QString::fromUtf8("importSwAntena_part1"));
@@ -3859,20 +3810,20 @@ public:
 "}"));
         importSwAntena_part1->setIcon(icon2);
 
-        gridLayout_17->addWidget(importSwAntena_part1, 29, 3, 1, 1);
+        gridLayout_17->addWidget(importSwAntena_part1, 27, 3, 1, 1);
 
         indicatorSwAntena_part1 = new QLabel(scrollAreaWidgetContents_3);
         indicatorSwAntena_part1->setObjectName(QString::fromUtf8("indicatorSwAntena_part1"));
         indicatorSwAntena_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorSwAntena_part1, 29, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorSwAntena_part1, 27, 4, 1, 1);
 
         ledSwAntena_part1 = new QLabel(scrollAreaWidgetContents_3);
         ledSwAntena_part1->setObjectName(QString::fromUtf8("ledSwAntena_part1"));
         ledSwAntena_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledSwAntena_part1->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledSwAntena_part1, 29, 5, 1, 1);
+        gridLayout_17->addWidget(ledSwAntena_part1, 27, 5, 1, 1);
 
         rltSwAntena_part1 = new QPushButton(scrollAreaWidgetContents_3);
         rltSwAntena_part1->setObjectName(QString::fromUtf8("rltSwAntena_part1"));
@@ -3884,7 +3835,7 @@ public:
 "}"));
         rltSwAntena_part1->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltSwAntena_part1, 29, 6, 1, 1);
+        gridLayout_17->addWidget(rltSwAntena_part1, 27, 6, 1, 1);
 
         label_137 = new QLabel(scrollAreaWidgetContents_3);
         label_137->setObjectName(QString::fromUtf8("label_137"));
@@ -3892,7 +3843,7 @@ public:
         label_137->setSizePolicy(sizePolicy2);
         label_137->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_137, 30, 0, 1, 1);
+        gridLayout_17->addWidget(label_137, 28, 0, 1, 1);
 
         mCbSwAntena_part2 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbSwAntena_part2->setObjectName(QString::fromUtf8("mCbSwAntena_part2"));
@@ -3912,7 +3863,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbSwAntena_part2, 30, 1, 1, 1);
+        gridLayout_17->addWidget(mCbSwAntena_part2, 28, 1, 1, 1);
 
         detailSwAntena_part2 = new QPushButton(scrollAreaWidgetContents_3);
         detailSwAntena_part2->setObjectName(QString::fromUtf8("detailSwAntena_part2"));
@@ -3924,7 +3875,7 @@ public:
 "}"));
         detailSwAntena_part2->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailSwAntena_part2, 30, 2, 1, 1);
+        gridLayout_17->addWidget(detailSwAntena_part2, 28, 2, 1, 1);
 
         importSwAntena_part2 = new QPushButton(scrollAreaWidgetContents_3);
         importSwAntena_part2->setObjectName(QString::fromUtf8("importSwAntena_part2"));
@@ -3936,20 +3887,20 @@ public:
 "}"));
         importSwAntena_part2->setIcon(icon2);
 
-        gridLayout_17->addWidget(importSwAntena_part2, 30, 3, 1, 1);
+        gridLayout_17->addWidget(importSwAntena_part2, 28, 3, 1, 1);
 
         indicatorSwAntena_part2 = new QLabel(scrollAreaWidgetContents_3);
         indicatorSwAntena_part2->setObjectName(QString::fromUtf8("indicatorSwAntena_part2"));
         indicatorSwAntena_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorSwAntena_part2, 30, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorSwAntena_part2, 28, 4, 1, 1);
 
         ledSwAntena_part2 = new QLabel(scrollAreaWidgetContents_3);
         ledSwAntena_part2->setObjectName(QString::fromUtf8("ledSwAntena_part2"));
         ledSwAntena_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledSwAntena_part2->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledSwAntena_part2, 30, 5, 1, 1);
+        gridLayout_17->addWidget(ledSwAntena_part2, 28, 5, 1, 1);
 
         rltSwAntena_part2 = new QPushButton(scrollAreaWidgetContents_3);
         rltSwAntena_part2->setObjectName(QString::fromUtf8("rltSwAntena_part2"));
@@ -3961,7 +3912,7 @@ public:
 "}"));
         rltSwAntena_part2->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltSwAntena_part2, 30, 6, 1, 1);
+        gridLayout_17->addWidget(rltSwAntena_part2, 28, 6, 1, 1);
 
         label_138 = new QLabel(scrollAreaWidgetContents_3);
         label_138->setObjectName(QString::fromUtf8("label_138"));
@@ -3969,7 +3920,7 @@ public:
         label_138->setSizePolicy(sizePolicy2);
         label_138->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_138, 31, 0, 1, 1);
+        gridLayout_17->addWidget(label_138, 29, 0, 1, 1);
 
         mCbSwAntena_part3 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbSwAntena_part3->setObjectName(QString::fromUtf8("mCbSwAntena_part3"));
@@ -3989,7 +3940,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbSwAntena_part3, 31, 1, 1, 1);
+        gridLayout_17->addWidget(mCbSwAntena_part3, 29, 1, 1, 1);
 
         detailSwAntena_part3 = new QPushButton(scrollAreaWidgetContents_3);
         detailSwAntena_part3->setObjectName(QString::fromUtf8("detailSwAntena_part3"));
@@ -4001,7 +3952,7 @@ public:
 "}"));
         detailSwAntena_part3->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailSwAntena_part3, 31, 2, 1, 1);
+        gridLayout_17->addWidget(detailSwAntena_part3, 29, 2, 1, 1);
 
         importSwAntena_part3 = new QPushButton(scrollAreaWidgetContents_3);
         importSwAntena_part3->setObjectName(QString::fromUtf8("importSwAntena_part3"));
@@ -4013,20 +3964,20 @@ public:
 "}"));
         importSwAntena_part3->setIcon(icon2);
 
-        gridLayout_17->addWidget(importSwAntena_part3, 31, 3, 1, 1);
+        gridLayout_17->addWidget(importSwAntena_part3, 29, 3, 1, 1);
 
         indicatorSwAntena_part3 = new QLabel(scrollAreaWidgetContents_3);
         indicatorSwAntena_part3->setObjectName(QString::fromUtf8("indicatorSwAntena_part3"));
         indicatorSwAntena_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorSwAntena_part3, 31, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorSwAntena_part3, 29, 4, 1, 1);
 
         ledSwAntena_part3 = new QLabel(scrollAreaWidgetContents_3);
         ledSwAntena_part3->setObjectName(QString::fromUtf8("ledSwAntena_part3"));
         ledSwAntena_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledSwAntena_part3->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledSwAntena_part3, 31, 5, 1, 1);
+        gridLayout_17->addWidget(ledSwAntena_part3, 29, 5, 1, 1);
 
         rltSwAntena_part3 = new QPushButton(scrollAreaWidgetContents_3);
         rltSwAntena_part3->setObjectName(QString::fromUtf8("rltSwAntena_part3"));
@@ -4038,7 +3989,7 @@ public:
 "}"));
         rltSwAntena_part3->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltSwAntena_part3, 31, 6, 1, 1);
+        gridLayout_17->addWidget(rltSwAntena_part3, 29, 6, 1, 1);
 
         mCbLimiterSum = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLimiterSum->setObjectName(QString::fromUtf8("mCbLimiterSum"));
@@ -4059,7 +4010,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLimiterSum, 32, 0, 1, 2);
+        gridLayout_17->addWidget(mCbLimiterSum, 30, 0, 1, 2);
 
         label_120 = new QLabel(scrollAreaWidgetContents_3);
         label_120->setObjectName(QString::fromUtf8("label_120"));
@@ -4067,7 +4018,7 @@ public:
         label_120->setSizePolicy(sizePolicy2);
         label_120->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_120, 33, 0, 1, 1);
+        gridLayout_17->addWidget(label_120, 31, 0, 1, 1);
 
         mCbLimiterSum_part1 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLimiterSum_part1->setObjectName(QString::fromUtf8("mCbLimiterSum_part1"));
@@ -4087,7 +4038,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLimiterSum_part1, 33, 1, 1, 1);
+        gridLayout_17->addWidget(mCbLimiterSum_part1, 31, 1, 1, 1);
 
         detailLimiterSum_part1 = new QPushButton(scrollAreaWidgetContents_3);
         detailLimiterSum_part1->setObjectName(QString::fromUtf8("detailLimiterSum_part1"));
@@ -4099,7 +4050,7 @@ public:
 "}"));
         detailLimiterSum_part1->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailLimiterSum_part1, 33, 2, 1, 1);
+        gridLayout_17->addWidget(detailLimiterSum_part1, 31, 2, 1, 1);
 
         importLimiterSum_part1 = new QPushButton(scrollAreaWidgetContents_3);
         importLimiterSum_part1->setObjectName(QString::fromUtf8("importLimiterSum_part1"));
@@ -4111,20 +4062,20 @@ public:
 "}"));
         importLimiterSum_part1->setIcon(icon2);
 
-        gridLayout_17->addWidget(importLimiterSum_part1, 33, 3, 1, 1);
+        gridLayout_17->addWidget(importLimiterSum_part1, 31, 3, 1, 1);
 
         indicatorLimiterSum_part1 = new QLabel(scrollAreaWidgetContents_3);
         indicatorLimiterSum_part1->setObjectName(QString::fromUtf8("indicatorLimiterSum_part1"));
         indicatorLimiterSum_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorLimiterSum_part1, 33, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorLimiterSum_part1, 31, 4, 1, 1);
 
         ledLimiterSum_part1 = new QLabel(scrollAreaWidgetContents_3);
         ledLimiterSum_part1->setObjectName(QString::fromUtf8("ledLimiterSum_part1"));
         ledLimiterSum_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledLimiterSum_part1->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledLimiterSum_part1, 33, 5, 1, 1);
+        gridLayout_17->addWidget(ledLimiterSum_part1, 31, 5, 1, 1);
 
         rltLimiterSum_part1 = new QPushButton(scrollAreaWidgetContents_3);
         rltLimiterSum_part1->setObjectName(QString::fromUtf8("rltLimiterSum_part1"));
@@ -4136,7 +4087,7 @@ public:
 "}"));
         rltLimiterSum_part1->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltLimiterSum_part1, 33, 6, 1, 1);
+        gridLayout_17->addWidget(rltLimiterSum_part1, 31, 6, 1, 1);
 
         label_118 = new QLabel(scrollAreaWidgetContents_3);
         label_118->setObjectName(QString::fromUtf8("label_118"));
@@ -4144,7 +4095,7 @@ public:
         label_118->setSizePolicy(sizePolicy2);
         label_118->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_118, 34, 0, 1, 1);
+        gridLayout_17->addWidget(label_118, 32, 0, 1, 1);
 
         mCbLimiterSum_part2 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLimiterSum_part2->setObjectName(QString::fromUtf8("mCbLimiterSum_part2"));
@@ -4164,7 +4115,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLimiterSum_part2, 34, 1, 1, 1);
+        gridLayout_17->addWidget(mCbLimiterSum_part2, 32, 1, 1, 1);
 
         detailLimiterSum_part2 = new QPushButton(scrollAreaWidgetContents_3);
         detailLimiterSum_part2->setObjectName(QString::fromUtf8("detailLimiterSum_part2"));
@@ -4176,7 +4127,7 @@ public:
 "}"));
         detailLimiterSum_part2->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailLimiterSum_part2, 34, 2, 1, 1);
+        gridLayout_17->addWidget(detailLimiterSum_part2, 32, 2, 1, 1);
 
         importLimiterSum_part2 = new QPushButton(scrollAreaWidgetContents_3);
         importLimiterSum_part2->setObjectName(QString::fromUtf8("importLimiterSum_part2"));
@@ -4188,20 +4139,20 @@ public:
 "}"));
         importLimiterSum_part2->setIcon(icon2);
 
-        gridLayout_17->addWidget(importLimiterSum_part2, 34, 3, 1, 1);
+        gridLayout_17->addWidget(importLimiterSum_part2, 32, 3, 1, 1);
 
         indicatorLimiterSum_part2 = new QLabel(scrollAreaWidgetContents_3);
         indicatorLimiterSum_part2->setObjectName(QString::fromUtf8("indicatorLimiterSum_part2"));
         indicatorLimiterSum_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorLimiterSum_part2, 34, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorLimiterSum_part2, 32, 4, 1, 1);
 
         ledLimiterSum_part2 = new QLabel(scrollAreaWidgetContents_3);
         ledLimiterSum_part2->setObjectName(QString::fromUtf8("ledLimiterSum_part2"));
         ledLimiterSum_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledLimiterSum_part2->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledLimiterSum_part2, 34, 5, 1, 1);
+        gridLayout_17->addWidget(ledLimiterSum_part2, 32, 5, 1, 1);
 
         rltLimiterSum_part2 = new QPushButton(scrollAreaWidgetContents_3);
         rltLimiterSum_part2->setObjectName(QString::fromUtf8("rltLimiterSum_part2"));
@@ -4213,7 +4164,7 @@ public:
 "}"));
         rltLimiterSum_part2->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltLimiterSum_part2, 34, 6, 1, 1);
+        gridLayout_17->addWidget(rltLimiterSum_part2, 32, 6, 1, 1);
 
         label_119 = new QLabel(scrollAreaWidgetContents_3);
         label_119->setObjectName(QString::fromUtf8("label_119"));
@@ -4221,7 +4172,7 @@ public:
         label_119->setSizePolicy(sizePolicy2);
         label_119->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_119, 35, 0, 1, 1);
+        gridLayout_17->addWidget(label_119, 33, 0, 1, 1);
 
         mCbLimiterSum_part3 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLimiterSum_part3->setObjectName(QString::fromUtf8("mCbLimiterSum_part3"));
@@ -4241,7 +4192,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLimiterSum_part3, 35, 1, 1, 1);
+        gridLayout_17->addWidget(mCbLimiterSum_part3, 33, 1, 1, 1);
 
         detailLimiterSum_part3 = new QPushButton(scrollAreaWidgetContents_3);
         detailLimiterSum_part3->setObjectName(QString::fromUtf8("detailLimiterSum_part3"));
@@ -4253,7 +4204,7 @@ public:
 "}"));
         detailLimiterSum_part3->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailLimiterSum_part3, 35, 2, 1, 1);
+        gridLayout_17->addWidget(detailLimiterSum_part3, 33, 2, 1, 1);
 
         importLimiterSum_part3 = new QPushButton(scrollAreaWidgetContents_3);
         importLimiterSum_part3->setObjectName(QString::fromUtf8("importLimiterSum_part3"));
@@ -4265,20 +4216,20 @@ public:
 "}"));
         importLimiterSum_part3->setIcon(icon2);
 
-        gridLayout_17->addWidget(importLimiterSum_part3, 35, 3, 1, 1);
+        gridLayout_17->addWidget(importLimiterSum_part3, 33, 3, 1, 1);
 
         indicatorLimiterSum_part3 = new QLabel(scrollAreaWidgetContents_3);
         indicatorLimiterSum_part3->setObjectName(QString::fromUtf8("indicatorLimiterSum_part3"));
         indicatorLimiterSum_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorLimiterSum_part3, 35, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorLimiterSum_part3, 33, 4, 1, 1);
 
         ledLimiterSum_part3 = new QLabel(scrollAreaWidgetContents_3);
         ledLimiterSum_part3->setObjectName(QString::fromUtf8("ledLimiterSum_part3"));
         ledLimiterSum_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledLimiterSum_part3->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledLimiterSum_part3, 35, 5, 1, 1);
+        gridLayout_17->addWidget(ledLimiterSum_part3, 33, 5, 1, 1);
 
         rltLimiterSum_part3 = new QPushButton(scrollAreaWidgetContents_3);
         rltLimiterSum_part3->setObjectName(QString::fromUtf8("rltLimiterSum_part3"));
@@ -4290,7 +4241,7 @@ public:
 "}"));
         rltLimiterSum_part3->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltLimiterSum_part3, 35, 6, 1, 1);
+        gridLayout_17->addWidget(rltLimiterSum_part3, 33, 6, 1, 1);
 
         mCbLimiterDiff = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLimiterDiff->setObjectName(QString::fromUtf8("mCbLimiterDiff"));
@@ -4311,7 +4262,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLimiterDiff, 36, 0, 1, 2);
+        gridLayout_17->addWidget(mCbLimiterDiff, 34, 0, 1, 2);
 
         label_135 = new QLabel(scrollAreaWidgetContents_3);
         label_135->setObjectName(QString::fromUtf8("label_135"));
@@ -4319,7 +4270,7 @@ public:
         label_135->setSizePolicy(sizePolicy2);
         label_135->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_135, 37, 0, 1, 1);
+        gridLayout_17->addWidget(label_135, 35, 0, 1, 1);
 
         mCbLimiterDiff_part1 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLimiterDiff_part1->setObjectName(QString::fromUtf8("mCbLimiterDiff_part1"));
@@ -4339,7 +4290,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLimiterDiff_part1, 37, 1, 1, 1);
+        gridLayout_17->addWidget(mCbLimiterDiff_part1, 35, 1, 1, 1);
 
         detailLimiterDiff_part1 = new QPushButton(scrollAreaWidgetContents_3);
         detailLimiterDiff_part1->setObjectName(QString::fromUtf8("detailLimiterDiff_part1"));
@@ -4351,7 +4302,7 @@ public:
 "}"));
         detailLimiterDiff_part1->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailLimiterDiff_part1, 37, 2, 1, 1);
+        gridLayout_17->addWidget(detailLimiterDiff_part1, 35, 2, 1, 1);
 
         importLimiterDiff_part1 = new QPushButton(scrollAreaWidgetContents_3);
         importLimiterDiff_part1->setObjectName(QString::fromUtf8("importLimiterDiff_part1"));
@@ -4363,20 +4314,20 @@ public:
 "}"));
         importLimiterDiff_part1->setIcon(icon2);
 
-        gridLayout_17->addWidget(importLimiterDiff_part1, 37, 3, 1, 1);
+        gridLayout_17->addWidget(importLimiterDiff_part1, 35, 3, 1, 1);
 
         indicatorLimiterDiff_part1 = new QLabel(scrollAreaWidgetContents_3);
         indicatorLimiterDiff_part1->setObjectName(QString::fromUtf8("indicatorLimiterDiff_part1"));
         indicatorLimiterDiff_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorLimiterDiff_part1, 37, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorLimiterDiff_part1, 35, 4, 1, 1);
 
         ledLimiterDiff_part1 = new QLabel(scrollAreaWidgetContents_3);
         ledLimiterDiff_part1->setObjectName(QString::fromUtf8("ledLimiterDiff_part1"));
         ledLimiterDiff_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledLimiterDiff_part1->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledLimiterDiff_part1, 37, 5, 1, 1);
+        gridLayout_17->addWidget(ledLimiterDiff_part1, 35, 5, 1, 1);
 
         rltLimiterDiff_part1 = new QPushButton(scrollAreaWidgetContents_3);
         rltLimiterDiff_part1->setObjectName(QString::fromUtf8("rltLimiterDiff_part1"));
@@ -4388,7 +4339,7 @@ public:
 "}"));
         rltLimiterDiff_part1->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltLimiterDiff_part1, 37, 6, 1, 1);
+        gridLayout_17->addWidget(rltLimiterDiff_part1, 35, 6, 1, 1);
 
         label_134 = new QLabel(scrollAreaWidgetContents_3);
         label_134->setObjectName(QString::fromUtf8("label_134"));
@@ -4396,7 +4347,7 @@ public:
         label_134->setSizePolicy(sizePolicy2);
         label_134->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_134, 38, 0, 1, 1);
+        gridLayout_17->addWidget(label_134, 36, 0, 1, 1);
 
         mCbLimiterDiff_part2 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLimiterDiff_part2->setObjectName(QString::fromUtf8("mCbLimiterDiff_part2"));
@@ -4416,7 +4367,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLimiterDiff_part2, 38, 1, 1, 1);
+        gridLayout_17->addWidget(mCbLimiterDiff_part2, 36, 1, 1, 1);
 
         detailLimiterDiff_part2 = new QPushButton(scrollAreaWidgetContents_3);
         detailLimiterDiff_part2->setObjectName(QString::fromUtf8("detailLimiterDiff_part2"));
@@ -4428,7 +4379,7 @@ public:
 "}"));
         detailLimiterDiff_part2->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailLimiterDiff_part2, 38, 2, 1, 1);
+        gridLayout_17->addWidget(detailLimiterDiff_part2, 36, 2, 1, 1);
 
         importLimiterDiff_part2 = new QPushButton(scrollAreaWidgetContents_3);
         importLimiterDiff_part2->setObjectName(QString::fromUtf8("importLimiterDiff_part2"));
@@ -4440,20 +4391,20 @@ public:
 "}"));
         importLimiterDiff_part2->setIcon(icon2);
 
-        gridLayout_17->addWidget(importLimiterDiff_part2, 38, 3, 1, 1);
+        gridLayout_17->addWidget(importLimiterDiff_part2, 36, 3, 1, 1);
 
         indicatorLimiterDiff_part2 = new QLabel(scrollAreaWidgetContents_3);
         indicatorLimiterDiff_part2->setObjectName(QString::fromUtf8("indicatorLimiterDiff_part2"));
         indicatorLimiterDiff_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorLimiterDiff_part2, 38, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorLimiterDiff_part2, 36, 4, 1, 1);
 
         ledLimiterDiff_part2 = new QLabel(scrollAreaWidgetContents_3);
         ledLimiterDiff_part2->setObjectName(QString::fromUtf8("ledLimiterDiff_part2"));
         ledLimiterDiff_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledLimiterDiff_part2->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledLimiterDiff_part2, 38, 5, 1, 1);
+        gridLayout_17->addWidget(ledLimiterDiff_part2, 36, 5, 1, 1);
 
         rltLimiterDiff_part2 = new QPushButton(scrollAreaWidgetContents_3);
         rltLimiterDiff_part2->setObjectName(QString::fromUtf8("rltLimiterDiff_part2"));
@@ -4465,7 +4416,7 @@ public:
 "}"));
         rltLimiterDiff_part2->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltLimiterDiff_part2, 38, 6, 1, 1);
+        gridLayout_17->addWidget(rltLimiterDiff_part2, 36, 6, 1, 1);
 
         label_133 = new QLabel(scrollAreaWidgetContents_3);
         label_133->setObjectName(QString::fromUtf8("label_133"));
@@ -4473,7 +4424,7 @@ public:
         label_133->setSizePolicy(sizePolicy2);
         label_133->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_133, 39, 0, 1, 1);
+        gridLayout_17->addWidget(label_133, 37, 0, 1, 1);
 
         mCbLimiterDiff_part3 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLimiterDiff_part3->setObjectName(QString::fromUtf8("mCbLimiterDiff_part3"));
@@ -4493,7 +4444,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLimiterDiff_part3, 39, 1, 1, 1);
+        gridLayout_17->addWidget(mCbLimiterDiff_part3, 37, 1, 1, 1);
 
         detailLimiterDiff_part3 = new QPushButton(scrollAreaWidgetContents_3);
         detailLimiterDiff_part3->setObjectName(QString::fromUtf8("detailLimiterDiff_part3"));
@@ -4505,7 +4456,7 @@ public:
 "}"));
         detailLimiterDiff_part3->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailLimiterDiff_part3, 39, 2, 1, 1);
+        gridLayout_17->addWidget(detailLimiterDiff_part3, 37, 2, 1, 1);
 
         importLimiterDiff_part3 = new QPushButton(scrollAreaWidgetContents_3);
         importLimiterDiff_part3->setObjectName(QString::fromUtf8("importLimiterDiff_part3"));
@@ -4517,20 +4468,20 @@ public:
 "}"));
         importLimiterDiff_part3->setIcon(icon2);
 
-        gridLayout_17->addWidget(importLimiterDiff_part3, 39, 3, 1, 1);
+        gridLayout_17->addWidget(importLimiterDiff_part3, 37, 3, 1, 1);
 
         indicatorLimiterDiff_part3 = new QLabel(scrollAreaWidgetContents_3);
         indicatorLimiterDiff_part3->setObjectName(QString::fromUtf8("indicatorLimiterDiff_part3"));
         indicatorLimiterDiff_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorLimiterDiff_part3, 39, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorLimiterDiff_part3, 37, 4, 1, 1);
 
         ledLimiterDiff_part3 = new QLabel(scrollAreaWidgetContents_3);
         ledLimiterDiff_part3->setObjectName(QString::fromUtf8("ledLimiterDiff_part3"));
         ledLimiterDiff_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledLimiterDiff_part3->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledLimiterDiff_part3, 39, 5, 1, 1);
+        gridLayout_17->addWidget(ledLimiterDiff_part3, 37, 5, 1, 1);
 
         rltLimiterDiff_part3 = new QPushButton(scrollAreaWidgetContents_3);
         rltLimiterDiff_part3->setObjectName(QString::fromUtf8("rltLimiterDiff_part3"));
@@ -4542,7 +4493,7 @@ public:
 "}"));
         rltLimiterDiff_part3->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltLimiterDiff_part3, 39, 6, 1, 1);
+        gridLayout_17->addWidget(rltLimiterDiff_part3, 37, 6, 1, 1);
 
         mCbLna = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLna->setObjectName(QString::fromUtf8("mCbLna"));
@@ -4563,7 +4514,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLna, 40, 0, 1, 2);
+        gridLayout_17->addWidget(mCbLna, 38, 0, 1, 2);
 
         label_126 = new QLabel(scrollAreaWidgetContents_3);
         label_126->setObjectName(QString::fromUtf8("label_126"));
@@ -4571,7 +4522,7 @@ public:
         label_126->setSizePolicy(sizePolicy2);
         label_126->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_126, 41, 0, 1, 1);
+        gridLayout_17->addWidget(label_126, 39, 0, 1, 1);
 
         mCbLna_part1 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLna_part1->setObjectName(QString::fromUtf8("mCbLna_part1"));
@@ -4591,7 +4542,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLna_part1, 41, 1, 1, 1);
+        gridLayout_17->addWidget(mCbLna_part1, 39, 1, 1, 1);
 
         detailLna_part1 = new QPushButton(scrollAreaWidgetContents_3);
         detailLna_part1->setObjectName(QString::fromUtf8("detailLna_part1"));
@@ -4603,7 +4554,7 @@ public:
 "}"));
         detailLna_part1->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailLna_part1, 41, 2, 1, 1);
+        gridLayout_17->addWidget(detailLna_part1, 39, 2, 1, 1);
 
         importLna_part1 = new QPushButton(scrollAreaWidgetContents_3);
         importLna_part1->setObjectName(QString::fromUtf8("importLna_part1"));
@@ -4615,20 +4566,20 @@ public:
 "}"));
         importLna_part1->setIcon(icon2);
 
-        gridLayout_17->addWidget(importLna_part1, 41, 3, 1, 1);
+        gridLayout_17->addWidget(importLna_part1, 39, 3, 1, 1);
 
         indicatorLna_part1 = new QLabel(scrollAreaWidgetContents_3);
         indicatorLna_part1->setObjectName(QString::fromUtf8("indicatorLna_part1"));
         indicatorLna_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorLna_part1, 41, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorLna_part1, 39, 4, 1, 1);
 
         ledLna_part1 = new QLabel(scrollAreaWidgetContents_3);
         ledLna_part1->setObjectName(QString::fromUtf8("ledLna_part1"));
         ledLna_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledLna_part1->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledLna_part1, 41, 5, 1, 1);
+        gridLayout_17->addWidget(ledLna_part1, 39, 5, 1, 1);
 
         rltLna_part1 = new QPushButton(scrollAreaWidgetContents_3);
         rltLna_part1->setObjectName(QString::fromUtf8("rltLna_part1"));
@@ -4640,7 +4591,7 @@ public:
 "}"));
         rltLna_part1->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltLna_part1, 41, 6, 1, 1);
+        gridLayout_17->addWidget(rltLna_part1, 39, 6, 1, 1);
 
         label_125 = new QLabel(scrollAreaWidgetContents_3);
         label_125->setObjectName(QString::fromUtf8("label_125"));
@@ -4648,7 +4599,7 @@ public:
         label_125->setSizePolicy(sizePolicy2);
         label_125->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_125, 42, 0, 1, 1);
+        gridLayout_17->addWidget(label_125, 40, 0, 1, 1);
 
         mCbLna_part2 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLna_part2->setObjectName(QString::fromUtf8("mCbLna_part2"));
@@ -4668,7 +4619,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLna_part2, 42, 1, 1, 1);
+        gridLayout_17->addWidget(mCbLna_part2, 40, 1, 1, 1);
 
         detailLna_part2 = new QPushButton(scrollAreaWidgetContents_3);
         detailLna_part2->setObjectName(QString::fromUtf8("detailLna_part2"));
@@ -4680,7 +4631,7 @@ public:
 "}"));
         detailLna_part2->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailLna_part2, 42, 2, 1, 1);
+        gridLayout_17->addWidget(detailLna_part2, 40, 2, 1, 1);
 
         importLna_part2 = new QPushButton(scrollAreaWidgetContents_3);
         importLna_part2->setObjectName(QString::fromUtf8("importLna_part2"));
@@ -4692,20 +4643,20 @@ public:
 "}"));
         importLna_part2->setIcon(icon2);
 
-        gridLayout_17->addWidget(importLna_part2, 42, 3, 1, 1);
+        gridLayout_17->addWidget(importLna_part2, 40, 3, 1, 1);
 
         indicatorLna_part2 = new QLabel(scrollAreaWidgetContents_3);
         indicatorLna_part2->setObjectName(QString::fromUtf8("indicatorLna_part2"));
         indicatorLna_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorLna_part2, 42, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorLna_part2, 40, 4, 1, 1);
 
         ledLna_part2 = new QLabel(scrollAreaWidgetContents_3);
         ledLna_part2->setObjectName(QString::fromUtf8("ledLna_part2"));
         ledLna_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledLna_part2->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledLna_part2, 42, 5, 1, 1);
+        gridLayout_17->addWidget(ledLna_part2, 40, 5, 1, 1);
 
         rltLna_part2 = new QPushButton(scrollAreaWidgetContents_3);
         rltLna_part2->setObjectName(QString::fromUtf8("rltLna_part2"));
@@ -4717,7 +4668,7 @@ public:
 "}"));
         rltLna_part2->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltLna_part2, 42, 6, 1, 1);
+        gridLayout_17->addWidget(rltLna_part2, 40, 6, 1, 1);
 
         label_124 = new QLabel(scrollAreaWidgetContents_3);
         label_124->setObjectName(QString::fromUtf8("label_124"));
@@ -4725,7 +4676,7 @@ public:
         label_124->setSizePolicy(sizePolicy2);
         label_124->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_124, 43, 0, 1, 1);
+        gridLayout_17->addWidget(label_124, 41, 0, 1, 1);
 
         mCbLna_part3 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLna_part3->setObjectName(QString::fromUtf8("mCbLna_part3"));
@@ -4745,7 +4696,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLna_part3, 43, 1, 1, 1);
+        gridLayout_17->addWidget(mCbLna_part3, 41, 1, 1, 1);
 
         detailLna_part3 = new QPushButton(scrollAreaWidgetContents_3);
         detailLna_part3->setObjectName(QString::fromUtf8("detailLna_part3"));
@@ -4757,7 +4708,7 @@ public:
 "}"));
         detailLna_part3->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailLna_part3, 43, 2, 1, 1);
+        gridLayout_17->addWidget(detailLna_part3, 41, 2, 1, 1);
 
         importLna_part3 = new QPushButton(scrollAreaWidgetContents_3);
         importLna_part3->setObjectName(QString::fromUtf8("importLna_part3"));
@@ -4769,20 +4720,20 @@ public:
 "}"));
         importLna_part3->setIcon(icon2);
 
-        gridLayout_17->addWidget(importLna_part3, 43, 3, 1, 1);
+        gridLayout_17->addWidget(importLna_part3, 41, 3, 1, 1);
 
         indicatorLna_part3 = new QLabel(scrollAreaWidgetContents_3);
         indicatorLna_part3->setObjectName(QString::fromUtf8("indicatorLna_part3"));
         indicatorLna_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorLna_part3, 43, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorLna_part3, 41, 4, 1, 1);
 
         ledLna_part3 = new QLabel(scrollAreaWidgetContents_3);
         ledLna_part3->setObjectName(QString::fromUtf8("ledLna_part3"));
         ledLna_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledLna_part3->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledLna_part3, 43, 5, 1, 1);
+        gridLayout_17->addWidget(ledLna_part3, 41, 5, 1, 1);
 
         rltLna_part3 = new QPushButton(scrollAreaWidgetContents_3);
         rltLna_part3->setObjectName(QString::fromUtf8("rltLna_part3"));
@@ -4794,7 +4745,7 @@ public:
 "}"));
         rltLna_part3->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltLna_part3, 43, 6, 1, 1);
+        gridLayout_17->addWidget(rltLna_part3, 41, 6, 1, 1);
 
         mCbLo = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLo->setObjectName(QString::fromUtf8("mCbLo"));
@@ -4815,7 +4766,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLo, 44, 0, 1, 2);
+        gridLayout_17->addWidget(mCbLo, 42, 0, 1, 2);
 
         label_123 = new QLabel(scrollAreaWidgetContents_3);
         label_123->setObjectName(QString::fromUtf8("label_123"));
@@ -4823,7 +4774,7 @@ public:
         label_123->setSizePolicy(sizePolicy2);
         label_123->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_123, 45, 0, 1, 1);
+        gridLayout_17->addWidget(label_123, 43, 0, 1, 1);
 
         mCbLo_part1 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLo_part1->setObjectName(QString::fromUtf8("mCbLo_part1"));
@@ -4843,7 +4794,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLo_part1, 45, 1, 1, 1);
+        gridLayout_17->addWidget(mCbLo_part1, 43, 1, 1, 1);
 
         detailLo_part1 = new QPushButton(scrollAreaWidgetContents_3);
         detailLo_part1->setObjectName(QString::fromUtf8("detailLo_part1"));
@@ -4855,7 +4806,7 @@ public:
 "}"));
         detailLo_part1->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailLo_part1, 45, 2, 1, 1);
+        gridLayout_17->addWidget(detailLo_part1, 43, 2, 1, 1);
 
         importLo_part1 = new QPushButton(scrollAreaWidgetContents_3);
         importLo_part1->setObjectName(QString::fromUtf8("importLo_part1"));
@@ -4867,20 +4818,20 @@ public:
 "}"));
         importLo_part1->setIcon(icon2);
 
-        gridLayout_17->addWidget(importLo_part1, 45, 3, 1, 1);
+        gridLayout_17->addWidget(importLo_part1, 43, 3, 1, 1);
 
         indicatorLo_part1 = new QLabel(scrollAreaWidgetContents_3);
         indicatorLo_part1->setObjectName(QString::fromUtf8("indicatorLo_part1"));
         indicatorLo_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorLo_part1, 45, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorLo_part1, 43, 4, 1, 1);
 
         ledLo_part1 = new QLabel(scrollAreaWidgetContents_3);
         ledLo_part1->setObjectName(QString::fromUtf8("ledLo_part1"));
         ledLo_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledLo_part1->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledLo_part1, 45, 5, 1, 1);
+        gridLayout_17->addWidget(ledLo_part1, 43, 5, 1, 1);
 
         rltLo_part1 = new QPushButton(scrollAreaWidgetContents_3);
         rltLo_part1->setObjectName(QString::fromUtf8("rltLo_part1"));
@@ -4892,7 +4843,7 @@ public:
 "}"));
         rltLo_part1->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltLo_part1, 45, 6, 1, 1);
+        gridLayout_17->addWidget(rltLo_part1, 43, 6, 1, 1);
 
         label_121 = new QLabel(scrollAreaWidgetContents_3);
         label_121->setObjectName(QString::fromUtf8("label_121"));
@@ -4900,7 +4851,7 @@ public:
         label_121->setSizePolicy(sizePolicy2);
         label_121->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_121, 46, 0, 1, 1);
+        gridLayout_17->addWidget(label_121, 44, 0, 1, 1);
 
         mCbLo_part2 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLo_part2->setObjectName(QString::fromUtf8("mCbLo_part2"));
@@ -4920,7 +4871,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLo_part2, 46, 1, 1, 1);
+        gridLayout_17->addWidget(mCbLo_part2, 44, 1, 1, 1);
 
         detailLo_part2 = new QPushButton(scrollAreaWidgetContents_3);
         detailLo_part2->setObjectName(QString::fromUtf8("detailLo_part2"));
@@ -4932,7 +4883,7 @@ public:
 "}"));
         detailLo_part2->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailLo_part2, 46, 2, 1, 1);
+        gridLayout_17->addWidget(detailLo_part2, 44, 2, 1, 1);
 
         importLo_part2 = new QPushButton(scrollAreaWidgetContents_3);
         importLo_part2->setObjectName(QString::fromUtf8("importLo_part2"));
@@ -4944,20 +4895,20 @@ public:
 "}"));
         importLo_part2->setIcon(icon2);
 
-        gridLayout_17->addWidget(importLo_part2, 46, 3, 1, 1);
+        gridLayout_17->addWidget(importLo_part2, 44, 3, 1, 1);
 
         indicatorLo_part2 = new QLabel(scrollAreaWidgetContents_3);
         indicatorLo_part2->setObjectName(QString::fromUtf8("indicatorLo_part2"));
         indicatorLo_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorLo_part2, 46, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorLo_part2, 44, 4, 1, 1);
 
         ledLo_part2 = new QLabel(scrollAreaWidgetContents_3);
         ledLo_part2->setObjectName(QString::fromUtf8("ledLo_part2"));
         ledLo_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledLo_part2->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledLo_part2, 46, 5, 1, 1);
+        gridLayout_17->addWidget(ledLo_part2, 44, 5, 1, 1);
 
         rltLo_part2 = new QPushButton(scrollAreaWidgetContents_3);
         rltLo_part2->setObjectName(QString::fromUtf8("rltLo_part2"));
@@ -4969,7 +4920,7 @@ public:
 "}"));
         rltLo_part2->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltLo_part2, 46, 6, 1, 1);
+        gridLayout_17->addWidget(rltLo_part2, 44, 6, 1, 1);
 
         label_122 = new QLabel(scrollAreaWidgetContents_3);
         label_122->setObjectName(QString::fromUtf8("label_122"));
@@ -4977,7 +4928,7 @@ public:
         label_122->setSizePolicy(sizePolicy2);
         label_122->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_122, 47, 0, 1, 1);
+        gridLayout_17->addWidget(label_122, 45, 0, 1, 1);
 
         mCbLo_part3 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbLo_part3->setObjectName(QString::fromUtf8("mCbLo_part3"));
@@ -4997,7 +4948,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbLo_part3, 47, 1, 1, 1);
+        gridLayout_17->addWidget(mCbLo_part3, 45, 1, 1, 1);
 
         detailLo_part3 = new QPushButton(scrollAreaWidgetContents_3);
         detailLo_part3->setObjectName(QString::fromUtf8("detailLo_part3"));
@@ -5009,7 +4960,7 @@ public:
 "}"));
         detailLo_part3->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailLo_part3, 47, 2, 1, 1);
+        gridLayout_17->addWidget(detailLo_part3, 45, 2, 1, 1);
 
         importLo_part3 = new QPushButton(scrollAreaWidgetContents_3);
         importLo_part3->setObjectName(QString::fromUtf8("importLo_part3"));
@@ -5021,20 +4972,20 @@ public:
 "}"));
         importLo_part3->setIcon(icon2);
 
-        gridLayout_17->addWidget(importLo_part3, 47, 3, 1, 1);
+        gridLayout_17->addWidget(importLo_part3, 45, 3, 1, 1);
 
         indicatorLo_part3 = new QLabel(scrollAreaWidgetContents_3);
         indicatorLo_part3->setObjectName(QString::fromUtf8("indicatorLo_part3"));
         indicatorLo_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorLo_part3, 47, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorLo_part3, 45, 4, 1, 1);
 
         ledLo_part3 = new QLabel(scrollAreaWidgetContents_3);
         ledLo_part3->setObjectName(QString::fromUtf8("ledLo_part3"));
         ledLo_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledLo_part3->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledLo_part3, 47, 5, 1, 1);
+        gridLayout_17->addWidget(ledLo_part3, 45, 5, 1, 1);
 
         rltLo_part3 = new QPushButton(scrollAreaWidgetContents_3);
         rltLo_part3->setObjectName(QString::fromUtf8("rltLo_part3"));
@@ -5046,7 +4997,7 @@ public:
 "}"));
         rltLo_part3->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltLo_part3, 47, 6, 1, 1);
+        gridLayout_17->addWidget(rltLo_part3, 45, 6, 1, 1);
 
         mCbRx = new QCheckBox(scrollAreaWidgetContents_3);
         mCbRx->setObjectName(QString::fromUtf8("mCbRx"));
@@ -5066,7 +5017,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbRx, 48, 0, 1, 2);
+        gridLayout_17->addWidget(mCbRx, 46, 0, 1, 2);
 
         label_132 = new QLabel(scrollAreaWidgetContents_3);
         label_132->setObjectName(QString::fromUtf8("label_132"));
@@ -5074,7 +5025,7 @@ public:
         label_132->setSizePolicy(sizePolicy2);
         label_132->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_132, 49, 0, 1, 1);
+        gridLayout_17->addWidget(label_132, 47, 0, 1, 1);
 
         mCbRx_part1 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbRx_part1->setObjectName(QString::fromUtf8("mCbRx_part1"));
@@ -5094,7 +5045,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbRx_part1, 49, 1, 1, 1);
+        gridLayout_17->addWidget(mCbRx_part1, 47, 1, 1, 1);
 
         detailRx_part1 = new QPushButton(scrollAreaWidgetContents_3);
         detailRx_part1->setObjectName(QString::fromUtf8("detailRx_part1"));
@@ -5106,7 +5057,7 @@ public:
 "}"));
         detailRx_part1->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailRx_part1, 49, 2, 1, 1);
+        gridLayout_17->addWidget(detailRx_part1, 47, 2, 1, 1);
 
         importRx_part1 = new QPushButton(scrollAreaWidgetContents_3);
         importRx_part1->setObjectName(QString::fromUtf8("importRx_part1"));
@@ -5118,20 +5069,20 @@ public:
 "}"));
         importRx_part1->setIcon(icon2);
 
-        gridLayout_17->addWidget(importRx_part1, 49, 3, 1, 1);
+        gridLayout_17->addWidget(importRx_part1, 47, 3, 1, 1);
 
         indicatorRx_part1 = new QLabel(scrollAreaWidgetContents_3);
         indicatorRx_part1->setObjectName(QString::fromUtf8("indicatorRx_part1"));
         indicatorRx_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorRx_part1, 49, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorRx_part1, 47, 4, 1, 1);
 
         ledRx_part1 = new QLabel(scrollAreaWidgetContents_3);
         ledRx_part1->setObjectName(QString::fromUtf8("ledRx_part1"));
         ledRx_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledRx_part1->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledRx_part1, 49, 5, 1, 1);
+        gridLayout_17->addWidget(ledRx_part1, 47, 5, 1, 1);
 
         rltRx_part1 = new QPushButton(scrollAreaWidgetContents_3);
         rltRx_part1->setObjectName(QString::fromUtf8("rltRx_part1"));
@@ -5143,7 +5094,7 @@ public:
 "}"));
         rltRx_part1->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltRx_part1, 49, 6, 1, 1);
+        gridLayout_17->addWidget(rltRx_part1, 47, 6, 1, 1);
 
         label_130 = new QLabel(scrollAreaWidgetContents_3);
         label_130->setObjectName(QString::fromUtf8("label_130"));
@@ -5151,7 +5102,7 @@ public:
         label_130->setSizePolicy(sizePolicy2);
         label_130->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_130, 50, 0, 1, 1);
+        gridLayout_17->addWidget(label_130, 48, 0, 1, 1);
 
         mCbRx_part2 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbRx_part2->setObjectName(QString::fromUtf8("mCbRx_part2"));
@@ -5171,7 +5122,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbRx_part2, 50, 1, 1, 1);
+        gridLayout_17->addWidget(mCbRx_part2, 48, 1, 1, 1);
 
         detailRx_part2 = new QPushButton(scrollAreaWidgetContents_3);
         detailRx_part2->setObjectName(QString::fromUtf8("detailRx_part2"));
@@ -5183,7 +5134,7 @@ public:
 "}"));
         detailRx_part2->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailRx_part2, 50, 2, 1, 1);
+        gridLayout_17->addWidget(detailRx_part2, 48, 2, 1, 1);
 
         importRx_part2 = new QPushButton(scrollAreaWidgetContents_3);
         importRx_part2->setObjectName(QString::fromUtf8("importRx_part2"));
@@ -5195,20 +5146,20 @@ public:
 "}"));
         importRx_part2->setIcon(icon2);
 
-        gridLayout_17->addWidget(importRx_part2, 50, 3, 1, 1);
+        gridLayout_17->addWidget(importRx_part2, 48, 3, 1, 1);
 
         indicatorRx_part2 = new QLabel(scrollAreaWidgetContents_3);
         indicatorRx_part2->setObjectName(QString::fromUtf8("indicatorRx_part2"));
         indicatorRx_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorRx_part2, 50, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorRx_part2, 48, 4, 1, 1);
 
         ledRx_part2 = new QLabel(scrollAreaWidgetContents_3);
         ledRx_part2->setObjectName(QString::fromUtf8("ledRx_part2"));
         ledRx_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledRx_part2->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledRx_part2, 50, 5, 1, 1);
+        gridLayout_17->addWidget(ledRx_part2, 48, 5, 1, 1);
 
         rltRx_part2 = new QPushButton(scrollAreaWidgetContents_3);
         rltRx_part2->setObjectName(QString::fromUtf8("rltRx_part2"));
@@ -5220,7 +5171,7 @@ public:
 "}"));
         rltRx_part2->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltRx_part2, 50, 6, 1, 1);
+        gridLayout_17->addWidget(rltRx_part2, 48, 6, 1, 1);
 
         label_131 = new QLabel(scrollAreaWidgetContents_3);
         label_131->setObjectName(QString::fromUtf8("label_131"));
@@ -5228,7 +5179,7 @@ public:
         label_131->setSizePolicy(sizePolicy2);
         label_131->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_131, 51, 0, 1, 1);
+        gridLayout_17->addWidget(label_131, 49, 0, 1, 1);
 
         mCbRx_part3 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbRx_part3->setObjectName(QString::fromUtf8("mCbRx_part3"));
@@ -5248,7 +5199,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbRx_part3, 51, 1, 1, 1);
+        gridLayout_17->addWidget(mCbRx_part3, 49, 1, 1, 1);
 
         detailRx_part3 = new QPushButton(scrollAreaWidgetContents_3);
         detailRx_part3->setObjectName(QString::fromUtf8("detailRx_part3"));
@@ -5260,7 +5211,7 @@ public:
 "}"));
         detailRx_part3->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailRx_part3, 51, 2, 1, 1);
+        gridLayout_17->addWidget(detailRx_part3, 49, 2, 1, 1);
 
         importRx_part3 = new QPushButton(scrollAreaWidgetContents_3);
         importRx_part3->setObjectName(QString::fromUtf8("importRx_part3"));
@@ -5272,20 +5223,20 @@ public:
 "}"));
         importRx_part3->setIcon(icon2);
 
-        gridLayout_17->addWidget(importRx_part3, 51, 3, 1, 1);
+        gridLayout_17->addWidget(importRx_part3, 49, 3, 1, 1);
 
         indicatorRx_part3 = new QLabel(scrollAreaWidgetContents_3);
         indicatorRx_part3->setObjectName(QString::fromUtf8("indicatorRx_part3"));
         indicatorRx_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorRx_part3, 51, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorRx_part3, 49, 4, 1, 1);
 
         ledRx_part3 = new QLabel(scrollAreaWidgetContents_3);
         ledRx_part3->setObjectName(QString::fromUtf8("ledRx_part3"));
         ledRx_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledRx_part3->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledRx_part3, 51, 5, 1, 1);
+        gridLayout_17->addWidget(ledRx_part3, 49, 5, 1, 1);
 
         rltRx_part3 = new QPushButton(scrollAreaWidgetContents_3);
         rltRx_part3->setObjectName(QString::fromUtf8("rltRx_part3"));
@@ -5297,7 +5248,7 @@ public:
 "}"));
         rltRx_part3->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltRx_part3, 51, 6, 1, 1);
+        gridLayout_17->addWidget(rltRx_part3, 49, 6, 1, 1);
 
         mCbTx = new QCheckBox(scrollAreaWidgetContents_3);
         mCbTx->setObjectName(QString::fromUtf8("mCbTx"));
@@ -5317,7 +5268,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbTx, 52, 0, 1, 2);
+        gridLayout_17->addWidget(mCbTx, 50, 0, 1, 2);
 
         label_127 = new QLabel(scrollAreaWidgetContents_3);
         label_127->setObjectName(QString::fromUtf8("label_127"));
@@ -5325,7 +5276,7 @@ public:
         label_127->setSizePolicy(sizePolicy2);
         label_127->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_127, 53, 0, 1, 1);
+        gridLayout_17->addWidget(label_127, 51, 0, 1, 1);
 
         mCbTx_part1 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbTx_part1->setObjectName(QString::fromUtf8("mCbTx_part1"));
@@ -5345,7 +5296,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbTx_part1, 53, 1, 1, 1);
+        gridLayout_17->addWidget(mCbTx_part1, 51, 1, 1, 1);
 
         detailTx_part1 = new QPushButton(scrollAreaWidgetContents_3);
         detailTx_part1->setObjectName(QString::fromUtf8("detailTx_part1"));
@@ -5357,7 +5308,7 @@ public:
 "}"));
         detailTx_part1->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailTx_part1, 53, 2, 1, 1);
+        gridLayout_17->addWidget(detailTx_part1, 51, 2, 1, 1);
 
         importTx_part1 = new QPushButton(scrollAreaWidgetContents_3);
         importTx_part1->setObjectName(QString::fromUtf8("importTx_part1"));
@@ -5369,20 +5320,20 @@ public:
 "}"));
         importTx_part1->setIcon(icon2);
 
-        gridLayout_17->addWidget(importTx_part1, 53, 3, 1, 1);
+        gridLayout_17->addWidget(importTx_part1, 51, 3, 1, 1);
 
         indicatorTx_part1 = new QLabel(scrollAreaWidgetContents_3);
         indicatorTx_part1->setObjectName(QString::fromUtf8("indicatorTx_part1"));
         indicatorTx_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorTx_part1, 53, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorTx_part1, 51, 4, 1, 1);
 
         ledTx_part1 = new QLabel(scrollAreaWidgetContents_3);
         ledTx_part1->setObjectName(QString::fromUtf8("ledTx_part1"));
         ledTx_part1->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledTx_part1->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledTx_part1, 53, 5, 1, 1);
+        gridLayout_17->addWidget(ledTx_part1, 51, 5, 1, 1);
 
         rltTx_part1 = new QPushButton(scrollAreaWidgetContents_3);
         rltTx_part1->setObjectName(QString::fromUtf8("rltTx_part1"));
@@ -5394,7 +5345,7 @@ public:
 "}"));
         rltTx_part1->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltTx_part1, 53, 6, 1, 1);
+        gridLayout_17->addWidget(rltTx_part1, 51, 6, 1, 1);
 
         label_128 = new QLabel(scrollAreaWidgetContents_3);
         label_128->setObjectName(QString::fromUtf8("label_128"));
@@ -5402,7 +5353,7 @@ public:
         label_128->setSizePolicy(sizePolicy2);
         label_128->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_128, 54, 0, 1, 1);
+        gridLayout_17->addWidget(label_128, 52, 0, 1, 1);
 
         mCbTx_part2 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbTx_part2->setObjectName(QString::fromUtf8("mCbTx_part2"));
@@ -5422,7 +5373,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbTx_part2, 54, 1, 1, 1);
+        gridLayout_17->addWidget(mCbTx_part2, 52, 1, 1, 1);
 
         detailTx_part2 = new QPushButton(scrollAreaWidgetContents_3);
         detailTx_part2->setObjectName(QString::fromUtf8("detailTx_part2"));
@@ -5434,7 +5385,7 @@ public:
 "}"));
         detailTx_part2->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailTx_part2, 54, 2, 1, 1);
+        gridLayout_17->addWidget(detailTx_part2, 52, 2, 1, 1);
 
         importTx_part2 = new QPushButton(scrollAreaWidgetContents_3);
         importTx_part2->setObjectName(QString::fromUtf8("importTx_part2"));
@@ -5446,20 +5397,20 @@ public:
 "}"));
         importTx_part2->setIcon(icon2);
 
-        gridLayout_17->addWidget(importTx_part2, 54, 3, 1, 1);
+        gridLayout_17->addWidget(importTx_part2, 52, 3, 1, 1);
 
         indicatorTx_part2 = new QLabel(scrollAreaWidgetContents_3);
         indicatorTx_part2->setObjectName(QString::fromUtf8("indicatorTx_part2"));
         indicatorTx_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorTx_part2, 54, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorTx_part2, 52, 4, 1, 1);
 
         ledTx_part2 = new QLabel(scrollAreaWidgetContents_3);
         ledTx_part2->setObjectName(QString::fromUtf8("ledTx_part2"));
         ledTx_part2->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledTx_part2->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledTx_part2, 54, 5, 1, 1);
+        gridLayout_17->addWidget(ledTx_part2, 52, 5, 1, 1);
 
         rltTx_part2 = new QPushButton(scrollAreaWidgetContents_3);
         rltTx_part2->setObjectName(QString::fromUtf8("rltTx_part2"));
@@ -5471,7 +5422,7 @@ public:
 "}"));
         rltTx_part2->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltTx_part2, 54, 6, 1, 1);
+        gridLayout_17->addWidget(rltTx_part2, 52, 6, 1, 1);
 
         label_129 = new QLabel(scrollAreaWidgetContents_3);
         label_129->setObjectName(QString::fromUtf8("label_129"));
@@ -5479,7 +5430,7 @@ public:
         label_129->setSizePolicy(sizePolicy2);
         label_129->setStyleSheet(QString::fromUtf8("color: rgb(242,242,242);"));
 
-        gridLayout_17->addWidget(label_129, 55, 0, 1, 1);
+        gridLayout_17->addWidget(label_129, 53, 0, 1, 1);
 
         mCbTx_part3 = new QCheckBox(scrollAreaWidgetContents_3);
         mCbTx_part3->setObjectName(QString::fromUtf8("mCbTx_part3"));
@@ -5499,7 +5450,7 @@ public:
 "  	outline:none;\n"
 "}"));
 
-        gridLayout_17->addWidget(mCbTx_part3, 55, 1, 1, 1);
+        gridLayout_17->addWidget(mCbTx_part3, 53, 1, 1, 1);
 
         detailTx_part3 = new QPushButton(scrollAreaWidgetContents_3);
         detailTx_part3->setObjectName(QString::fromUtf8("detailTx_part3"));
@@ -5511,7 +5462,7 @@ public:
 "}"));
         detailTx_part3->setIcon(icon1);
 
-        gridLayout_17->addWidget(detailTx_part3, 55, 2, 1, 1);
+        gridLayout_17->addWidget(detailTx_part3, 53, 2, 1, 1);
 
         importTx_part3 = new QPushButton(scrollAreaWidgetContents_3);
         importTx_part3->setObjectName(QString::fromUtf8("importTx_part3"));
@@ -5523,20 +5474,20 @@ public:
 "}"));
         importTx_part3->setIcon(icon2);
 
-        gridLayout_17->addWidget(importTx_part3, 55, 3, 1, 1);
+        gridLayout_17->addWidget(importTx_part3, 53, 3, 1, 1);
 
         indicatorTx_part3 = new QLabel(scrollAreaWidgetContents_3);
         indicatorTx_part3->setObjectName(QString::fromUtf8("indicatorTx_part3"));
         indicatorTx_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/indicator/indicatorOk.png")));
 
-        gridLayout_17->addWidget(indicatorTx_part3, 55, 4, 1, 1);
+        gridLayout_17->addWidget(indicatorTx_part3, 53, 4, 1, 1);
 
         ledTx_part3 = new QLabel(scrollAreaWidgetContents_3);
         ledTx_part3->setObjectName(QString::fromUtf8("ledTx_part3"));
         ledTx_part3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/led/green_led.png")));
         ledTx_part3->setAlignment(Qt::AlignCenter);
 
-        gridLayout_17->addWidget(ledTx_part3, 55, 5, 1, 1);
+        gridLayout_17->addWidget(ledTx_part3, 53, 5, 1, 1);
 
         rltTx_part3 = new QPushButton(scrollAreaWidgetContents_3);
         rltTx_part3->setObjectName(QString::fromUtf8("rltTx_part3"));
@@ -5548,44 +5499,11 @@ public:
 "}"));
         rltTx_part3->setIcon(icon3);
 
-        gridLayout_17->addWidget(rltTx_part3, 55, 6, 1, 1);
+        gridLayout_17->addWidget(rltTx_part3, 53, 6, 1, 1);
 
-        detailComparator_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        detailComparator_part2->setObjectName(QString::fromUtf8("detailComparator_part2"));
-        detailComparator_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        detailComparator_part2->setIcon(icon1);
-
-        gridLayout_17->addWidget(detailComparator_part2, 6, 2, 1, 1);
-
-        rltComparator_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        rltComparator_part2->setObjectName(QString::fromUtf8("rltComparator_part2"));
-        rltComparator_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        rltComparator_part2->setIcon(icon3);
-
-        gridLayout_17->addWidget(rltComparator_part2, 6, 6, 1, 1);
-
-        importComparator_part2 = new QPushButton(scrollAreaWidgetContents_3);
-        importComparator_part2->setObjectName(QString::fromUtf8("importComparator_part2"));
-        importComparator_part2->setStyleSheet(QString::fromUtf8("QPushButton::hover\n"
-"{\n"
-"   background-color:rgba(179,192,217);\n"
-"  	border:none;\n"
-"  	outline:none;\n"
-"}"));
-        importComparator_part2->setIcon(icon2);
-
-        gridLayout_17->addWidget(importComparator_part2, 6, 3, 1, 1);
-
+        gridLayout_17->setColumnStretch(1, 1);
+        gridLayout_17->setColumnStretch(3, 4);
+        gridLayout_17->setColumnStretch(6, 1);
         scrollArea_2->setWidget(scrollAreaWidgetContents_3);
 
         gridLayout_16->addWidget(scrollArea_2, 2, 0, 1, 4);
@@ -5662,8 +5580,7 @@ public:
 
         gridLayout_16->addWidget(line_9, 1, 3, 1, 1);
 
-        gridLayout_16->setColumnStretch(0, 8);
-        gridLayout_16->setColumnStretch(2, 1);
+        gridLayout_16->setColumnStretch(0, 12);
         gridLayout_16->setColumnStretch(3, 4);
         tabWidget->addTab(MicrowaveModule, QString());
         tab_2 = new QWidget();
@@ -5676,75 +5593,9 @@ public:
         gridLayout_2->addWidget(tabWidget, 0, 0, 1, 1);
 
 
-        gridLayout_3->addWidget(frame_3, 1, 1, 2, 1);
+        gridLayout_3->addWidget(frame_3, 1, 0, 1, 1);
 
-        frame_2 = new QFrame(testModule);
-        frame_2->setObjectName(QString::fromUtf8("frame_2"));
-        frame_2->setStyleSheet(QString::fromUtf8("QFrame\n"
-"{\n"
-"font: 87 10pt \"Sans\"; \n"
-"font:bold;\n"
-" background-color: rgb(250, 250, 250); \n"
-"color: rgb(49, 67, 100);\n"
-"border:none;\n"
-"}"));
-        frame_2->setFrameShape(QFrame::StyledPanel);
-        frame_2->setFrameShadow(QFrame::Raised);
-        gridLayout_11 = new QGridLayout(frame_2);
-        gridLayout_11->setSpacing(2);
-        gridLayout_11->setObjectName(QString::fromUtf8("gridLayout_11"));
-        gridLayout_11->setContentsMargins(0, 0, 0, 0);
-        frame_9 = new QFrame(frame_2);
-        frame_9->setObjectName(QString::fromUtf8("frame_9"));
-        frame_9->setFrameShape(QFrame::StyledPanel);
-        frame_9->setFrameShadow(QFrame::Raised);
-        gridLayout_13 = new QGridLayout(frame_9);
-        gridLayout_13->setObjectName(QString::fromUtf8("gridLayout_13"));
-        gridLayout_13->setContentsMargins(0, 0, 0, 0);
-        tabWidget_2 = new QTabWidget(frame_9);
-        tabWidget_2->setObjectName(QString::fromUtf8("tabWidget_2"));
-        tab_3 = new QWidget();
-        tab_3->setObjectName(QString::fromUtf8("tab_3"));
-        gridLayout_15 = new QGridLayout(tab_3);
-        gridLayout_15->setObjectName(QString::fromUtf8("gridLayout_15"));
-        gridLayout_15->setContentsMargins(0, 0, 0, 0);
-        pdfModuleShow = new QWidget(tab_3);
-        pdfModuleShow->setObjectName(QString::fromUtf8("pdfModuleShow"));
-
-        gridLayout_15->addWidget(pdfModuleShow, 0, 0, 1, 1);
-
-        tabWidget_2->addTab(tab_3, QString());
-        tab_4 = new QWidget();
-        tab_4->setObjectName(QString::fromUtf8("tab_4"));
-        gridLayout_14 = new QGridLayout(tab_4);
-        gridLayout_14->setObjectName(QString::fromUtf8("gridLayout_14"));
-        gridLayout_14->setContentsMargins(0, 0, 0, 0);
-        frame_10 = new QFrame(tab_4);
-        frame_10->setObjectName(QString::fromUtf8("frame_10"));
-        frame_10->setFrameShape(QFrame::StyledPanel);
-        frame_10->setFrameShadow(QFrame::Raised);
-
-        gridLayout_14->addWidget(frame_10, 0, 0, 1, 1);
-
-        tabWidget_2->addTab(tab_4, QString());
-
-        gridLayout_13->addWidget(tabWidget_2, 0, 0, 1, 1);
-
-
-        gridLayout_11->addWidget(frame_9, 0, 0, 1, 1);
-
-        m_graphdata = new QWidget(frame_2);
-        m_graphdata->setObjectName(QString::fromUtf8("m_graphdata"));
-        m_graphdata->setStyleSheet(QString::fromUtf8("background-color: rgb(46, 52, 54);"));
-
-        gridLayout_11->addWidget(m_graphdata, 1, 0, 1, 1);
-
-        gridLayout_11->setRowStretch(0, 3);
-        gridLayout_11->setRowStretch(1, 2);
-
-        gridLayout_3->addWidget(frame_2, 2, 0, 2, 1);
-
-        frame_8 = new QFrame(testModule);
+        frame_8 = new QFrame(frame_12);
         frame_8->setObjectName(QString::fromUtf8("frame_8"));
         frame_8->setStyleSheet(QString::fromUtf8("border:none;"));
         frame_8->setFrameShape(QFrame::StyledPanel);
@@ -6453,17 +6304,20 @@ public:
         gridLayout_12->addWidget(frame_4, 0, 1, 1, 1);
 
 
-        gridLayout_3->addWidget(frame_8, 3, 1, 1, 1);
+        gridLayout_3->addWidget(frame_8, 2, 0, 1, 1);
 
-        gridLayout_3->setRowStretch(2, 6);
-        gridLayout_3->setRowStretch(3, 4);
-        gridLayout_3->setColumnStretch(0, 7);
-        gridLayout_3->setColumnStretch(1, 8);
+        gridLayout_3->setRowStretch(1, 2);
+        gridLayout_3->setRowStretch(2, 1);
+
+        gridLayout_14->addWidget(frame_12, 0, 1, 1, 1);
+
+        gridLayout_14->setColumnStretch(0, 1);
+        gridLayout_14->setColumnStretch(1, 1);
 
         retranslateUi(testModule);
 
-        tabWidget->setCurrentIndex(2);
-        tabWidget_2->setCurrentIndex(1);
+        tabWidget_2->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(testModule);
@@ -6472,15 +6326,16 @@ public:
     void retranslateUi(QWidget *testModule)
     {
         testModule->setWindowTitle(QCoreApplication::translate("testModule", "Form", nullptr));
-        label->setText(QCoreApplication::translate("testModule", "Test Module", nullptr));
-        label_3->setText(QString());
+        label->setText(QCoreApplication::translate("testModule", "             Test Module", nullptr));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_3), QCoreApplication::translate("testModule", "Tab 1", nullptr));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_4), QCoreApplication::translate("testModule", "Tab 2", nullptr));
         pushButton_12->setText(QString());
-        label_4->setText(QCoreApplication::translate("testModule", "Select module", nullptr));
+        label_10->setText(QCoreApplication::translate("testModule", "Result", nullptr));
         label_7->setText(QCoreApplication::translate("testModule", " Detail", nullptr));
         label_8->setText(QCoreApplication::translate("testModule", "Import", nullptr));
-        label_9->setText(QString());
-        label_10->setText(QCoreApplication::translate("testModule", "Result", nullptr));
+        label_4->setText(QCoreApplication::translate("testModule", "  Select module", nullptr));
         mCbAll->setText(QCoreApplication::translate("testModule", "ALL", nullptr));
+        label_9->setText(QString());
         mCbControl_all->setText(QCoreApplication::translate("testModule", "Module Control", nullptr));
         label_13->setText(QCoreApplication::translate("testModule", ".....", nullptr));
         mCbControl_xlth->setText(QCoreApplication::translate("testModule", "Communication with XLTH", nullptr));
@@ -6539,11 +6394,6 @@ public:
         label_24->setText(QString());
         pushButton_49->setText(QString());
         mCbGyro_all->setText(QCoreApplication::translate("testModule", "Module Gyro", nullptr));
-        detailGyroModule->setText(QString());
-        pushButton_67->setText(QString());
-        label_57->setText(QString());
-        label_56->setText(QString());
-        pushButton_68->setText(QString());
         label_55->setText(QCoreApplication::translate("testModule", ".....", nullptr));
         mCbGyro_azi->setText(QCoreApplication::translate("testModule", "Gyro AZI", nullptr));
         detailGyroAzi->setText(QString());
@@ -6559,11 +6409,6 @@ public:
         label_41->setText(QString());
         pushButton_47->setText(QString());
         mCbEnc_all->setText(QCoreApplication::translate("testModule", "Module Encoder", nullptr));
-        detailEncModule->setText(QString());
-        pushButton_71->setText(QString());
-        label_58->setText(QString());
-        label_59->setText(QString());
-        pushButton_70->setText(QString());
         label_61->setText(QCoreApplication::translate("testModule", ".....", nullptr));
         mCbEnc_azi->setText(QCoreApplication::translate("testModule", "Encoder AZI", nullptr));
         detailEncAzi->setText(QString());
@@ -6579,11 +6424,6 @@ public:
         label_50->setText(QString());
         pushButton_45->setText(QString());
         mCbMotor_all->setText(QCoreApplication::translate("testModule", "Module Motor", nullptr));
-        detailModuleMotor->setText(QString());
-        pushButton_38->setText(QString());
-        label_49->setText(QString());
-        label_48->setText(QString());
-        pushButton_44->setText(QString());
         label_63->setText(QCoreApplication::translate("testModule", ".....", nullptr));
         mCbMotor_azi->setText(QCoreApplication::translate("testModule", "Motor AZI", nullptr));
         detailMotorAzi->setText(QString());
@@ -6627,8 +6467,11 @@ public:
         rltComparator_part1->setText(QString());
         label_88->setText(QCoreApplication::translate("testModule", "...", nullptr));
         mCbComparator_part2->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 suy hao, c\303\241ch ly", nullptr));
+        detailComparator_part2->setText(QString());
+        importComparator_part2->setText(QString());
         indicatorComparator_part2->setText(QString());
         ledComparator_part2->setText(QString());
+        rltComparator_part2->setText(QString());
         mCbAdapterSMA->setText(QCoreApplication::translate("testModule", "Module_Adapter_SMA", nullptr));
         label_89->setText(QCoreApplication::translate("testModule", "...", nullptr));
         mCbSMA_part1->setText(QCoreApplication::translate("testModule", "\304\220o h\341\273\207 s\341\273\221 s\303\263ng \304\221\341\273\251ng", nullptr));
@@ -6893,17 +6736,12 @@ public:
         indicatorTx_part3->setText(QString());
         ledTx_part3->setText(QString());
         rltTx_part3->setText(QString());
-        detailComparator_part2->setText(QString());
-        rltComparator_part2->setText(QString());
-        importComparator_part2->setText(QString());
         label_6->setText(QCoreApplication::translate("testModule", "Detail", nullptr));
         label_21->setText(QCoreApplication::translate("testModule", "Result", nullptr));
         label_5->setText(QCoreApplication::translate("testModule", "Select Module", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(MicrowaveModule), QCoreApplication::translate("testModule", " Microwave Module ", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("testModule", " Power Module ", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("testModule", " All System  ", nullptr));
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_3), QCoreApplication::translate("testModule", "Tab 1", nullptr));
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_4), QCoreApplication::translate("testModule", "Tab 2", nullptr));
         btnSpecAnalizer->setText(QCoreApplication::translate("testModule", "Spectum Analyzer", nullptr));
         label_38->setText(QCoreApplication::translate("testModule", "Connect/Disconnect", nullptr));
         toolButton->setText(QCoreApplication::translate("testModule", "...", nullptr));
