@@ -136,7 +136,7 @@ const QString logFolderMechanical = "logs/logsMechanical";
 
 struct table
 {
-    QString  namePart;
+    QString namePart;
 
     QString  title1;
     QString  pathPart1;
@@ -158,6 +158,9 @@ struct table
 
     QString  title7;
     QString  pathPart7;
+
+    QString stringNote;
+    bool    isNote;
 };
 
 #define maxLengthBuf 15

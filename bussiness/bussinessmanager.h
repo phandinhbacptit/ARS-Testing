@@ -95,6 +95,7 @@ public slots:
 
     /*____Handle note and sign____*/
     void slt_acceptExportReport();
+    void slt_addNote();
 
     /*___Connect Equipment____*/
     void slt_connDcPower();

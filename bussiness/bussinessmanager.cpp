@@ -144,6 +144,7 @@ void bussinessManager::setupNS(Ui::noteAndSign *ui)
         this->mNS = ui;
     }
     connect(mNS->buttonBox, SIGNAL(accepted()), this, SLOT(slt_acceptExportReport()));
+    connect(mNS->btnAddNote, SIGNAL(clicked()), this, SLOT(slt_addNote()));
     qDebug() << "[Business] Setup Gui Note and sign";
 
 }
@@ -272,7 +273,12 @@ void bussinessManager::createReport(KDReports::Report *report, QString typeTest,
     noteTitle.setPointSize(10);
     noteTitle.setFont(QFont("Sans-serif"));
     report->addElement(noteTitle);
-    report->addInlineElement(KDReports::TextElement(mNS->teNoteReport->toPlainText()));
+    if (part.isNote == true) {
+        report->addInlineElement(KDReports::TextElement(mNS->teNoteReport->toPlainText()));
+    }
+    else {
+        report->addInlineElement(KDReports::TextElement(" "));
+    }
     report->addElement(KDReports::TextElement("    "));
 
     /*Create table signature for excutor and supervisor*/
@@ -881,6 +887,79 @@ void bussinessManager::slt_acceptExportReport()
 
 }
 
+void bussinessManager::slt_addNote()
+{
+     QString noteItem = mNS->cbNoteModule->currentText();
+
+     if (noteItem == "Adapter Circulator") {
+         Circulator.isNote = true;
+         Circulator.stringNote = mNS->teNoteReport->toPlainText();
+     }
+     if (noteItem == "Adapter Comparator") {
+         Comparator.isNote = true;
+         Comparator.stringNote = mNS->teNoteReport->toPlainText();
+     }
+     if (noteItem == "Adapter SMA") {
+         Adapter_SMA.isNote = true;
+         Adapter_SMA.stringNote = mNS->teNoteReport->toPlainText();
+     }
+     if (noteItem == "Antena") {
+         Antena.isNote = true;
+         Antena.stringNote = mNS->teNoteReport->toPlainText();
+     }
+     if (noteItem == "ATT Xband") {
+         AttXband.isNote = true;
+         AttXband.stringNote = mNS->teNoteReport->toPlainText();
+     }
+     if (noteItem == "FilterIF") {
+         FilterIF.isNote = true;
+         FilterIF.stringNote = mNS->teNoteReport->toPlainText();
+     }
+     if (noteItem == "Filter LOIF") {
+         Filter_LOIF.isNote = true;
+         Filter_LOIF.stringNote = mNS->teNoteReport->toPlainText();
+     }
+     if (noteItem == "Filter LORF") {
+         Filter_LORF.isNote = true;
+         Filter_LORF.stringNote = mNS->teNoteReport->toPlainText();
+     }
+     if (noteItem == "Filter Xband") {
+         FilterXband.isNote = true;
+         FilterXband.stringNote = mNS->teNoteReport->toPlainText();
+     }
+     if (noteItem == "HPA") {
+         Hpa.isNote = true;
+         Hpa.stringNote = mNS->teNoteReport->toPlainText();
+     }
+     if (noteItem == "LNA") {
+         LNA.isNote = true;
+         LNA.stringNote = mNS->teNoteReport->toPlainText();
+     }
+     if (noteItem == "LO") {
+         LO.isNote = true;
+         LO.stringNote = mNS->teNoteReport->toPlainText();
+     }
+     if (noteItem == "RX") {
+         RX.isNote = true;
+         RX.stringNote = mNS->teNoteReport->toPlainText();
+     }
+     if (noteItem == "TX") {
+         TX.isNote = true;
+         TX.stringNote = mNS->teNoteReport->toPlainText();
+     }
+     if (noteItem == "Switch Antena") {
+         SwAntena.isNote = true;
+         SwAntena.stringNote = mNS->teNoteReport->toPlainText();
+     }
+     if (noteItem == "Limiter Diff") {
+         LimiterDiff.isNote = true;
+         LimiterDiff.stringNote = mNS->teNoteReport->toPlainText();
+     }
+     if (noteItem == "Limiter Sum") {
+         LimiterSum.isNote = true;
+         LimiterSum.stringNote = mNS->teNoteReport->toPlainText();
+     }
+}
 /*_____________Connect Equipment_________________________________________________________*/
 void bussinessManager::slt_connDcPower()
 {
