@@ -5254,7 +5254,7 @@ QCheckBox::hover
           </widget>
          </item>
          <item row="0" column="0" alignment="Qt::AlignRight">
-          <widget class="QPushButton" name="btn_exit">
+          <widget class="QPushButton" name="btnExitCTE">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
              <horstretch>0</horstretch>

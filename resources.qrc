@@ -57,6 +57,7 @@
         <file>images/button/resum_icon.png</file>
         <file>images/button/disconnected.svg</file>
         <file>images/button/preview.png</file>
+        <file>images/button/note.jpeg</file>
     </qresource>
     <qresource prefix="/File"/>
     <qresource prefix="/">

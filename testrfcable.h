@@ -29,7 +29,6 @@ public:
     Ui::TestRfCable *getUi() const;
     void setUi(Ui::TestRfCable *value);
 private slots:
-    void on_pushButton_63_clicked();
     void on_mCbRfAll_clicked(bool checked);
     void onOpenFile(QString path);
 

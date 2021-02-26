@@ -66,13 +66,6 @@ TestRfCable::~TestRfCable()
     delete ui;
 }
 
-void TestRfCable::on_pushButton_63_clicked()
-{
-    if (QMessageBox::Yes == QMessageBox::question(this, "Close confirm", "Thoát khỏi Tab kiểm tra các cáp RF trên ĐTD?", QMessageBox::Yes | QMessageBox::No)) {
-        this->close();
-        LOGUTILS::stopLogging();
-    }
-}
 
 void TestRfCable::on_mCbRfAll_clicked(bool checked)
 {

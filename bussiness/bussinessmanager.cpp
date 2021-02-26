@@ -97,6 +97,7 @@ void bussinessManager::setupELectric(Ui::TestElectricCable *ui)
     connect(mCTE->btnRunCte, SIGNAL(clicked()), this, SLOT(slt_runCTE()));
     connect(mCTE->btnLogCte, SIGNAL(clicked()), this, SLOT(slt_logCTE()));
     connect(mCTE->btnStopCte, SIGNAL(clicked()), this, SLOT(slt_stopCTE()));
+    connect(mCTE->btnExitCTE, SIGNAL(clicked()), this, SLOT(slt_closeCTE()));
 
     connect(mCTE->mCbCable1, SIGNAL(clicked(bool)), this, SLOT(slt_resultTest(bool)));
     connect(mTestElectricalCable, &TestElectricCable::sign_checkAllCable, this, &bussinessManager::slt_resultTest, Qt::UniqueConnection);
@@ -112,7 +113,8 @@ void bussinessManager::setupModule(Ui::testModule *ui)
     connect(mMTE->btnLogMte, SIGNAL(clicked()), this, SLOT(slt_logMTE()));
     connect(mMTE->btnStopMte, SIGNAL(clicked()), this, SLOT(slt_stopMTE()));
     connect(mMTE->btnPreviewMte, SIGNAL(clicked()), this, SLOT(slt_previewMteReport()));
-    connect(mMTE->btnExportMte, SIGNAL(clicked()), this, SLOT(slt_clickedMteReport()));
+    connect(mMTE->btnExportMte, SIGNAL(clicked()), this, SLOT(slt_exportMteReport()));
+    connect(mMTE->btnNoteSign, SIGNAL(clicked()), this, SLOT(slt_noteAndSign()));
 
     connect(mMTE->btnDcPwr, SIGNAL(clicked()), this, SLOT(slt_connDcPower()));
     connect(mMTE->btnDcLoad, SIGNAL(clicked()), this, SLOT(slt_connDcLoad()));
@@ -123,6 +125,7 @@ void bussinessManager::setupModule(Ui::testModule *ui)
     connect(mMTE->btnNetAnalizer, SIGNAL(clicked()), this, SLOT(slt_connNetworkAnalizer()));
     connect(mMTE->btnSpecAnalizer, SIGNAL(clicked()), this, SLOT(slt_connSpectumeAnalizer()));
     connect(mMTE->btnGuidleMte, SIGNAL(clicked()), this, SLOT(slt_guidlefile()));
+    connect(mMTE->btnExitMTE, SIGNAL(clicked()), this, SLOT(slt_closeMTE()));
 
     qDebug() << "[Bussiness] Setup gui MTE";
 }
@@ -135,6 +138,7 @@ void bussinessManager::setupRf(Ui::TestRfCable *ui)
     connect(mRFTE->btnRunRfte, SIGNAL(clicked()), this, SLOT(slt_runRFTE()));
     connect(mRFTE->btnLogRfte, SIGNAL(clicked()), this, SLOT(slt_logRFTE()));
     connect(mRFTE->btnStopRfte, SIGNAL(clicked()), this, SLOT(slt_stopRFTE()));
+    connect(mRFTE->btnExitRFTE, SIGNAL(clicked()), this, SLOT(slt_closeRFTE()));
     qDebug() << "[Bussiness] Setup gui RFTE";
 }
 
@@ -526,98 +530,81 @@ void bussinessManager::slt_previewMteReport()
         createReport(reportCTE, "MTE", RX, "Preview");
     }
 }
-void bussinessManager::acceptMteReport()
-{
 
-}
-
-void bussinessManager::slt_clickedMteReport()
-{
-    mNoteAndSign = new noteAndSign();
-
-    qDebug("Jump to window export Report");
-    QRect tScreenGeometry = QApplication::desktop()->screenGeometry();
-    int x = (tScreenGeometry.width() - mNoteAndSign->width()) / 2;
-    int y = (tScreenGeometry.height() - mNoteAndSign->height()) / 2;
-
-    mNoteAndSign->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
-    mNoteAndSign->move(x, y);
-    mNoteAndSign->show();
-
-    setupNS(mNoteAndSign->getUi());
-}
 void bussinessManager::slt_exportMteReport()
 {
-    if (mMTE->mCbAapderCirculator->checkState() != 0) {
-        qDebug() << "Export circulator report";
-        reportCTE = new KDReports::Report();
-        createReport(reportCTE, "MTE", Circulator, "AutoSave");
-    }
-    if (mMTE->mCbAdapterComparator->checkState() != 0) {
-        reportCTE = new KDReports::Report();
-        createReport(reportCTE, "MTE", Comparator, "AutoSave" );
-    }
-    if (mMTE->mCbAdapterSMA->checkState() != 0) {
-        reportCTE = new KDReports::Report();
-        createReport(reportCTE, "MTE", Adapter_SMA, "AutoSave");
-    }
-    if (mMTE->mCbAttXband->checkState() != 0) {
-        reportCTE = new KDReports::Report();
-        createReport(reportCTE, "MTE", AttXband, "AutoSave");
-    }
-    if (mMTE->mCbAntena->checkState() != 0) {
-        qDebug() << "Export Antena report";
-        reportCTE = new KDReports::Report();
-        createReport(reportCTE, "MTE", Antena, "AutoSave");
-    }
-    if (mMTE->mCbFilterIf->checkState() != 0) {
-        qDebug() << "Export FIlter if report";
-        reportCTE = new KDReports::Report();
-        createReport(reportCTE, "MTE", FilterIF, "AutoSave");
-    }
-    if (mMTE->mCbFilterLOIF->checkState() != 0) {
-        reportCTE = new KDReports::Report();
-        createReport(reportCTE, "MTE", Filter_LOIF, "AutoSave");
-    }
-    if (mMTE->mCbFilterLORF->checkState() != 0) {
-        reportCTE = new KDReports::Report();
-        createReport(reportCTE, "MTE", Filter_LORF, "AutoSave");
-    }
-    if (mMTE->mCbFilterXband->checkState() != 0) {
-        reportCTE = new KDReports::Report();
-        createReport(reportCTE, "MTE", FilterXband, "AutoSave");
-    }
-    if (mMTE->mCbHpa->checkState() != 0) {
-        reportCTE = new KDReports::Report();
-        createReport(reportCTE, "MTE", Hpa, "AutoSave");
-    }
-    if (mMTE->mCbSwAntena->checkState() != 0) {
-        reportCTE = new KDReports::Report();
-        createReport(reportCTE, "MTE", SwAntena, "AutoSave");
-    }
-    if (mMTE->mCbLimiterSum->checkState() != 0) {
-        reportCTE = new KDReports::Report();
-        createReport(reportCTE, "MTE", LimiterSum, "AutoSave");
-    }
-    if (mMTE->mCbLimiterDiff->checkState() != 0) {
-        reportCTE = new KDReports::Report();
-        createReport(reportCTE, "MTE", LimiterDiff, "AutoSave");
-    }
-    if (mMTE->mCbLna->checkState() != 0) {
-        reportCTE = new KDReports::Report();
-        createReport(reportCTE, "MTE", LNA, "AutoSave");
-    }
-    if (mMTE->mCbLo->checkState() != 0) {
-        reportCTE = new KDReports::Report();
-        createReport(reportCTE, "MTE", LO, "AutoSave");
-    }
-    if (mMTE->mCbTx->checkState() != 0) {
-        reportCTE = new KDReports::Report();
-        createReport(reportCTE, "MTE", TX, "AutoSave");
-    }
-    if (mMTE->mCbRx->checkState() != 0) {
-        reportCTE = new KDReports::Report();
-        createReport(reportCTE, "MTE", RX, "AutoSave");
+    if (QMessageBox::Yes == QMessageBox::question(mTestModule, "Notify...", "Xuất báo cáo những mục đã chọn?", QMessageBox::Yes | QMessageBox::No)) {
+        if (mMTE->mCbAapderCirculator->checkState() != 0) {
+            qDebug() << "Export circulator report";
+            reportCTE = new KDReports::Report();
+            createReport(reportCTE, "MTE", Circulator, "AutoSave");
+        }
+        if (mMTE->mCbAdapterComparator->checkState() != 0) {
+            reportCTE = new KDReports::Report();
+            createReport(reportCTE, "MTE", Comparator, "AutoSave" );
+        }
+        if (mMTE->mCbAdapterSMA->checkState() != 0) {
+            reportCTE = new KDReports::Report();
+            createReport(reportCTE, "MTE", Adapter_SMA, "AutoSave");
+        }
+        if (mMTE->mCbAttXband->checkState() != 0) {
+            reportCTE = new KDReports::Report();
+            createReport(reportCTE, "MTE", AttXband, "AutoSave");
+        }
+        if (mMTE->mCbAntena->checkState() != 0) {
+            qDebug() << "Export Antena report";
+            reportCTE = new KDReports::Report();
+            createReport(reportCTE, "MTE", Antena, "AutoSave");
+        }
+        if (mMTE->mCbFilterIf->checkState() != 0) {
+            qDebug() << "Export FIlter if report";
+            reportCTE = new KDReports::Report();
+            createReport(reportCTE, "MTE", FilterIF, "AutoSave");
+        }
+        if (mMTE->mCbFilterLOIF->checkState() != 0) {
+            reportCTE = new KDReports::Report();
+            createReport(reportCTE, "MTE", Filter_LOIF, "AutoSave");
+        }
+        if (mMTE->mCbFilterLORF->checkState() != 0) {
+            reportCTE = new KDReports::Report();
+            createReport(reportCTE, "MTE", Filter_LORF, "AutoSave");
+        }
+        if (mMTE->mCbFilterXband->checkState() != 0) {
+            reportCTE = new KDReports::Report();
+            createReport(reportCTE, "MTE", FilterXband, "AutoSave");
+        }
+        if (mMTE->mCbHpa->checkState() != 0) {
+            reportCTE = new KDReports::Report();
+            createReport(reportCTE, "MTE", Hpa, "AutoSave");
+        }
+        if (mMTE->mCbSwAntena->checkState() != 0) {
+            reportCTE = new KDReports::Report();
+            createReport(reportCTE, "MTE", SwAntena, "AutoSave");
+        }
+        if (mMTE->mCbLimiterSum->checkState() != 0) {
+            reportCTE = new KDReports::Report();
+            createReport(reportCTE, "MTE", LimiterSum, "AutoSave");
+        }
+        if (mMTE->mCbLimiterDiff->checkState() != 0) {
+            reportCTE = new KDReports::Report();
+            createReport(reportCTE, "MTE", LimiterDiff, "AutoSave");
+        }
+        if (mMTE->mCbLna->checkState() != 0) {
+            reportCTE = new KDReports::Report();
+            createReport(reportCTE, "MTE", LNA, "AutoSave");
+        }
+        if (mMTE->mCbLo->checkState() != 0) {
+            reportCTE = new KDReports::Report();
+            createReport(reportCTE, "MTE", LO, "AutoSave");
+        }
+        if (mMTE->mCbTx->checkState() != 0) {
+            reportCTE = new KDReports::Report();
+            createReport(reportCTE, "MTE", TX, "AutoSave");
+        }
+        if (mMTE->mCbRx->checkState() != 0) {
+            reportCTE = new KDReports::Report();
+            createReport(reportCTE, "MTE", RX, "AutoSave");
+        }
     }
 }
 
@@ -767,6 +754,13 @@ void bussinessManager::slt_stopCTE()
     cntRunCte = 2;
     slt_runCTE();
 }
+void bussinessManager::slt_closeCTE()
+{
+    if (QMessageBox::Yes == QMessageBox::question(mTestElectricalCable, "Close confirm", "Thoát khỏi Tab kiểm tra các cáp điện trên ĐTD?", QMessageBox::Yes | QMessageBox::No)) {
+        mTestElectricalCable->close();
+        LOGUTILS::stopLogging();
+    }
+}
 /*____________Slot MTE________________________________________________________ */
 void bussinessManager::slt_runMTE()
 {
@@ -779,6 +773,7 @@ void bussinessManager::slt_runMTE()
         qDebug() << "[Bussiness] Run process test module";
         mMTE->btnRunMte->setText(" Pause");
         mMTE->btnRunMte->setIcon(QIcon(":/Test/images/button/pause_icon.png"));
+        resetNote();
     }
     else if (cntRunMte == 2) {
         mMTE->btnStopMte->setEnabled(true);
@@ -817,6 +812,14 @@ void bussinessManager::slt_stopMTE()
     mMTE->btnStopMte->setEnabled(false);
     cntRunMte = 2;
     slt_runMTE();
+}
+void bussinessManager::slt_closeMTE()
+{
+    if (QMessageBox::Yes == QMessageBox::question(mTestModule, "Close confirm", "Thoát khỏi Tab kiểm tra các module trên ĐTD?", QMessageBox::Yes | QMessageBox::No)) {
+        mTestModule->close();
+        LOGUTILS::stopLogging();
+        resetNote();
+    }
 }
 /*____________Slot RFTE________________________________________________________ */
 void bussinessManager::slt_runRFTE()
@@ -867,6 +870,13 @@ void bussinessManager::slt_stopRFTE()
     cntRunRfte = 2;
     slt_runRFTE();
 }
+void bussinessManager::slt_closeRFTE()
+{
+    if (QMessageBox::Yes == QMessageBox::question(mTestRfCable, "Close confirm", "Thoát khỏi Tab kiểm tra các cáp RF trên ĐTD?", QMessageBox::Yes | QMessageBox::No)) {
+        mTestRfCable->close();
+        LOGUTILS::stopLogging();
+    }
+}
 /*________________________________________________________________________________________*/
 
 void bussinessManager::slt_resultTest(bool state)
@@ -882,11 +892,79 @@ void bussinessManager::slt_resultTest(bool state)
 /*____________ Handle Note and Signature_________________________________________________*/
 void bussinessManager::slt_acceptExportReport()
 {
-    //qDebug() << "Data input" + mNS->teNoteReport->toPlainText();
-    slt_exportMteReport();
+
 
 }
+void bussinessManager::slt_noteAndSign()
+{
+    mNoteAndSign = new noteAndSign();
 
+    qDebug("Jump to window export Report");
+    QRect tScreenGeometry = QApplication::desktop()->screenGeometry();
+    int x = (tScreenGeometry.width() - mNoteAndSign->width()) / 2;
+    int y = (tScreenGeometry.height() - mNoteAndSign->height()) / 2;
+
+    mNoteAndSign->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
+    mNoteAndSign->move(x, y);
+    mNoteAndSign->show();
+
+    setupNS(mNoteAndSign->getUi());
+}
+
+void bussinessManager::resetNote()
+{
+        qDebug() << "Clear all note in MTE report";
+        Circulator.isNote = false;
+        Circulator.stringNote = " ";
+
+        Comparator.isNote = false;
+        Comparator.stringNote = " ";
+
+        Adapter_SMA.isNote = false;
+        Adapter_SMA.stringNote = " ";
+
+        Antena.isNote = false;
+        Antena.stringNote = " ";
+
+        AttXband.isNote = false;
+        AttXband.stringNote = " ";
+
+        FilterIF.isNote = false;
+        FilterIF.stringNote = " ";
+
+        Filter_LOIF.isNote = false;
+        Filter_LOIF.stringNote = " ";
+
+        Filter_LORF.isNote = false;
+        Filter_LORF.stringNote = " ";
+
+        FilterXband.isNote = false;
+        FilterXband.stringNote = " ";
+
+        Hpa.isNote = false;
+        Hpa.stringNote = " ";
+
+        LNA.isNote = false;
+        LNA.stringNote = " ";
+
+        LO.isNote = false;
+        LO.stringNote = " ";
+
+        RX.isNote = false;
+        RX.stringNote = " ";
+
+        TX.isNote = false;
+        TX.stringNote = " ";
+
+        SwAntena.isNote = false;
+        SwAntena.stringNote = " ";
+
+        LimiterDiff.isNote = false;
+        LimiterDiff.stringNote = " ";
+
+        LimiterSum.isNote = false;
+        LimiterSum.stringNote = " ";
+}
 void bussinessManager::slt_addNote()
 {
      QString noteItem = mNS->cbNoteModule->currentText();
@@ -1130,10 +1208,6 @@ void bussinessManager::slt_connSpectumeAnalizer()
 
  /*___________Function add more____________*/
 /*
-"","9.3hZ","9.4hZ"," ","9.6hZ","Min","Max","Tiêu chuẩn","Đánh giá"
-"Cổng 1",,,,,,,"VSWR ≤ 1.4",
-"Cổng 2",,,,,,,"VSWR ≤ 1.4",
-"Cổng 3",,,,,,,"VSWR ≤ 1.4",
 */
 void bussinessManager::writeToCsvFile(defineCsv data)
 {

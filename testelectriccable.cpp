@@ -47,13 +47,6 @@ void TestElectricCable::setUi(Ui::TestElectricCable *value)
     ui = value;
 }
 
-void TestElectricCable::on_btn_exit_clicked()
-{
-    if (QMessageBox::Yes == QMessageBox::question(this, "Close confirm", "Thoát khỏi Tab kiểm tra các cáp điện trên ĐTD?", QMessageBox::Yes | QMessageBox::No)) {
-        this->close();
-        LOGUTILS::stopLogging();
-    }
-}
 
 void TestElectricCable::onOpenFile(QString path)
 {

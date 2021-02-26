@@ -38,7 +38,6 @@ public slots:
 
 
 private slots:
-    void on_btn_exit_clicked();
     void onOpenFile(QString path);
 
     void on_detail_cable1_clicked();

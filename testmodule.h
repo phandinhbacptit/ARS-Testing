@@ -35,7 +35,6 @@ private:
     Ui::testModule *ui;
     QPdfWidget *m_pPdfWidget;
 
-
 signals:
     void signal_setpage(int numPage);
 
@@ -49,7 +48,7 @@ private slots:
     void on_mCbGyro_all_clicked(bool checked);
     void on_mCbMotor_all_clicked(bool checked);
     void on_mCbEnc_all_clicked(bool checked);
-    void on_pushButton_12_clicked();
+//    void on_pushButton_12_clicked();
     void on_detailCtrXlth_clicked();
     void on_detailCtrBite_clicked();
     void on_detailCtrKdcs_clicked();
@@ -77,7 +76,6 @@ private slots:
     void on_mCbRx_clicked(bool checked);
     void on_mCbTx_clicked(bool checked);
     void on_All_clicked(bool checked);
-    void on_btnExportMte_clicked();
     void on_mCbLimiterSum_clicked(bool checked);
     void on_mCbLimiterDiff_clicked(bool checked);
     void on_mCbSwAntena_clicked(bool checked);

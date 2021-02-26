@@ -120,7 +120,7 @@ background-color:none;</string>
        </widget>
       </item>
       <item row="0" column="6" alignment="Qt::AlignRight">
-       <widget class="QPushButton" name="pushButton_63">
+       <widget class="QPushButton" name="btnExitRFTE">
         <property name="text">
          <string/>
         </property>
@@ -3780,7 +3780,7 @@ QCheckBox::hover
      <zorder>label_70</zorder>
      <zorder>label_71</zorder>
      <zorder>label_75</zorder>
-     <zorder>pushButton_63</zorder>
+     <zorder>btnExitRFTE</zorder>
      <zorder>label_3</zorder>
      <zorder>label_4</zorder>
      <zorder>label_5</zorder>

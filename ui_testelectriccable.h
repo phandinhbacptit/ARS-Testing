@@ -292,7 +292,7 @@ public:
     QLabel *label_28;
     QCheckBox *mCbAll_AttDivider;
     QPushButton *pushButton_83;
-    QPushButton *btn_exit;
+    QPushButton *btnExitCTE;
     QFrame *frame_3;
     QGridLayout *gridLayout_11;
     QLabel *label_114;
@@ -3361,20 +3361,20 @@ public:
 
         gridLayout_6->addWidget(tabWidget, 1, 0, 1, 1);
 
-        btn_exit = new QPushButton(frame_6);
-        btn_exit->setObjectName(QString::fromUtf8("btn_exit"));
+        btnExitCTE = new QPushButton(frame_6);
+        btnExitCTE->setObjectName(QString::fromUtf8("btnExitCTE"));
         QSizePolicy sizePolicy2(QSizePolicy::Minimum, QSizePolicy::Fixed);
         sizePolicy2.setHorizontalStretch(0);
         sizePolicy2.setVerticalStretch(0);
-        sizePolicy2.setHeightForWidth(btn_exit->sizePolicy().hasHeightForWidth());
-        btn_exit->setSizePolicy(sizePolicy2);
+        sizePolicy2.setHeightForWidth(btnExitCTE->sizePolicy().hasHeightForWidth());
+        btnExitCTE->setSizePolicy(sizePolicy2);
         QIcon icon2;
         icon2.addFile(QString::fromUtf8(":/Test/images/button/exit_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        btn_exit->setIcon(icon2);
-        btn_exit->setIconSize(QSize(25, 25));
-        btn_exit->setFlat(true);
+        btnExitCTE->setIcon(icon2);
+        btnExitCTE->setIconSize(QSize(25, 25));
+        btnExitCTE->setFlat(true);
 
-        gridLayout_6->addWidget(btn_exit, 0, 0, 1, 1, Qt::AlignRight);
+        gridLayout_6->addWidget(btnExitCTE, 0, 0, 1, 1, Qt::AlignRight);
 
 
         gridLayout_3->addWidget(frame_6, 0, 1, 2, 1);
@@ -4026,7 +4026,7 @@ public:
         mCbAll_AttDivider->setText(QCoreApplication::translate("TestElectricCable", "ATT_DIVIDER_TX_R - ALL", nullptr));
         pushButton_83->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_8), QCoreApplication::translate("TestElectricCable", "REARPANEL", nullptr));
-        btn_exit->setText(QString());
+        btnExitCTE->setText(QString());
         label_114->setText(QCoreApplication::translate("TestElectricCable", "  Test Sequence/ Output Terminal", nullptr));
         btnGuidleCte->setText(QCoreApplication::translate("TestElectricCable", "Guidle         ", nullptr));
         btnImportCte->setText(QCoreApplication::translate("TestElectricCable", "Import         ", nullptr));

@@ -35,7 +35,7 @@ public:
     QLabel *label_4;
     QLabel *label_75;
     QLabel *label_5;
-    QPushButton *pushButton_63;
+    QPushButton *btnExitRFTE;
     QScrollArea *scrollArea;
     QWidget *scrollAreaWidgetContents;
     QGridLayout *gridLayout_3;
@@ -284,15 +284,15 @@ public:
 
         gridLayout_2->addWidget(label_5, 0, 5, 1, 1);
 
-        pushButton_63 = new QPushButton(frame_2);
-        pushButton_63->setObjectName(QString::fromUtf8("pushButton_63"));
+        btnExitRFTE = new QPushButton(frame_2);
+        btnExitRFTE->setObjectName(QString::fromUtf8("btnExitRFTE"));
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/Test/images/button/exit_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_63->setIcon(icon);
-        pushButton_63->setIconSize(QSize(25, 25));
-        pushButton_63->setFlat(true);
+        btnExitRFTE->setIcon(icon);
+        btnExitRFTE->setIconSize(QSize(25, 25));
+        btnExitRFTE->setFlat(true);
 
-        gridLayout_2->addWidget(pushButton_63, 0, 6, 1, 1, Qt::AlignRight);
+        gridLayout_2->addWidget(btnExitRFTE, 0, 6, 1, 1, Qt::AlignRight);
 
         scrollArea = new QScrollArea(frame_2);
         scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
@@ -2502,7 +2502,7 @@ public:
         label_70->raise();
         label_71->raise();
         label_75->raise();
-        pushButton_63->raise();
+        btnExitRFTE->raise();
         label_3->raise();
         label_4->raise();
         label_5->raise();
@@ -2898,7 +2898,7 @@ public:
         label_4->setText(QString());
         label_75->setText(QCoreApplication::translate("TestRfCable", "Result", nullptr));
         label_5->setText(QString());
-        pushButton_63->setText(QString());
+        btnExitRFTE->setText(QString());
         label_28->setText(QString());
         detailRf21->setText(QString());
         label_25->setText(QString());

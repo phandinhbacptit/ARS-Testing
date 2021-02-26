@@ -52,6 +52,7 @@ public:
     void setupModule(Ui::testModule *ui);
     void setupRf(Ui::TestRfCable *ui);
     void setupNS(Ui::noteAndSign *ui);
+    void resetNote();
 
 
     void createReport(KDReports::Report *report, QString typeTest, table part, QString mode);
@@ -69,7 +70,6 @@ public:
 public slots:
 
     void slt_enableTestProcess();
-
     void slt_exportCteReport();
 
     void slt_previewMteReport();
@@ -80,22 +80,25 @@ public slots:
     void slt_runCTE();
     void slt_logCTE();
     void slt_stopCTE();
+    void slt_closeCTE();
 
     /*____Module test equipment___*/
     void slt_runMTE();
     void slt_logMTE();
     void slt_stopMTE();
+    void slt_closeMTE();
 
-    void slt_clickedMteReport();
 
     /*____RF test equipment___*/
     void slt_runRFTE();
     void slt_logRFTE();
     void slt_stopRFTE();
+    void slt_closeRFTE();
 
     /*____Handle note and sign____*/
     void slt_acceptExportReport();
     void slt_addNote();
+    void slt_noteAndSign();
 
     /*___Connect Equipment____*/
     void slt_connDcPower();
@@ -131,7 +134,6 @@ private:
     KDReports::Report *reportCTE;
 
     void createCableReport(KDReports::Report *report, QString nameCable);
-    void acceptMteReport();
 
     int cntRunCte = 0;
     int cntLogCte = 0;

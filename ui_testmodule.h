@@ -48,7 +48,7 @@ public:
     QWidget *m_graphdata;
     QFrame *frame_12;
     QGridLayout *gridLayout_3;
-    QPushButton *pushButton_12;
+    QPushButton *btnExitMTE;
     QFrame *frame_3;
     QGridLayout *gridLayout_2;
     QTabWidget *tabWidget;
@@ -511,6 +511,7 @@ public:
     QGridLayout *gridLayout_9;
     QPushButton *btnGuidleMte;
     QPushButton *btnLogMte;
+    QPushButton *btnNoteSign;
     QPushButton *btnPreviewMte;
     QPushButton *btnExportMte;
     QGridLayout *gridLayout_4;
@@ -641,15 +642,15 @@ public:
         gridLayout_3->setSpacing(0);
         gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         gridLayout_3->setContentsMargins(0, 0, 0, 0);
-        pushButton_12 = new QPushButton(frame_12);
-        pushButton_12->setObjectName(QString::fromUtf8("pushButton_12"));
+        btnExitMTE = new QPushButton(frame_12);
+        btnExitMTE->setObjectName(QString::fromUtf8("btnExitMTE"));
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/Test/images/button/exit_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_12->setIcon(icon);
-        pushButton_12->setIconSize(QSize(25, 25));
-        pushButton_12->setFlat(true);
+        btnExitMTE->setIcon(icon);
+        btnExitMTE->setIconSize(QSize(25, 25));
+        btnExitMTE->setFlat(true);
 
-        gridLayout_3->addWidget(pushButton_12, 0, 0, 1, 1, Qt::AlignRight);
+        gridLayout_3->addWidget(btnExitMTE, 0, 0, 1, 1, Qt::AlignRight);
 
         frame_3 = new QFrame(frame_12);
         frame_3->setObjectName(QString::fromUtf8("frame_3"));
@@ -2108,7 +2109,7 @@ public:
         scrollArea_2->setWidgetResizable(true);
         scrollAreaWidgetContents_3 = new QWidget();
         scrollAreaWidgetContents_3->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_3"));
-        scrollAreaWidgetContents_3->setGeometry(QRect(0, -619, 549, 1435));
+        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 549, 1435));
         gridLayout_17 = new QGridLayout(scrollAreaWidgetContents_3);
         gridLayout_17->setObjectName(QString::fromUtf8("gridLayout_17"));
         gridLayout_17->setHorizontalSpacing(6);
@@ -6061,8 +6062,9 @@ public:
         frame_6->setFrameShape(QFrame::StyledPanel);
         frame_6->setFrameShadow(QFrame::Raised);
         gridLayout_9 = new QGridLayout(frame_6);
-        gridLayout_9->setSpacing(1);
         gridLayout_9->setObjectName(QString::fromUtf8("gridLayout_9"));
+        gridLayout_9->setHorizontalSpacing(0);
+        gridLayout_9->setVerticalSpacing(1);
         gridLayout_9->setContentsMargins(0, 0, 0, 0);
         btnGuidleMte = new QPushButton(frame_6);
         btnGuidleMte->setObjectName(QString::fromUtf8("btnGuidleMte"));
@@ -6121,6 +6123,33 @@ public:
 
         gridLayout_9->addWidget(btnLogMte, 1, 0, 1, 1);
 
+        btnNoteSign = new QPushButton(frame_6);
+        btnNoteSign->setObjectName(QString::fromUtf8("btnNoteSign"));
+        sizePolicy4.setHeightForWidth(btnNoteSign->sizePolicy().hasHeightForWidth());
+        btnNoteSign->setSizePolicy(sizePolicy4);
+        btnNoteSign->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{\n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(177,188,190); \n"
+"font: 87 10pt \"Myriad Pro\";\n"
+"font:bold;\n"
+"outline:none;\n"
+"border:none;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+        QIcon icon7;
+        icon7.addFile(QString::fromUtf8(":/Test/images/button/note.jpeg"), QSize(), QIcon::Normal, QIcon::Off);
+        btnNoteSign->setIcon(icon7);
+        btnNoteSign->setIconSize(QSize(20, 20));
+
+        gridLayout_9->addWidget(btnNoteSign, 2, 0, 1, 1);
+
         btnPreviewMte = new QPushButton(frame_6);
         btnPreviewMte->setObjectName(QString::fromUtf8("btnPreviewMte"));
         sizePolicy5.setHeightForWidth(btnPreviewMte->sizePolicy().hasHeightForWidth());
@@ -6141,12 +6170,12 @@ public:
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        QIcon icon7;
-        icon7.addFile(QString::fromUtf8(":/Test/images/button/preview.png"), QSize(), QIcon::Normal, QIcon::Off);
-        btnPreviewMte->setIcon(icon7);
+        QIcon icon8;
+        icon8.addFile(QString::fromUtf8(":/Test/images/button/preview.png"), QSize(), QIcon::Normal, QIcon::Off);
+        btnPreviewMte->setIcon(icon8);
         btnPreviewMte->setIconSize(QSize(20, 20));
 
-        gridLayout_9->addWidget(btnPreviewMte, 2, 0, 1, 1);
+        gridLayout_9->addWidget(btnPreviewMte, 3, 0, 1, 1);
 
         btnExportMte = new QPushButton(frame_6);
         btnExportMte->setObjectName(QString::fromUtf8("btnExportMte"));
@@ -6168,12 +6197,12 @@ public:
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        QIcon icon8;
-        icon8.addFile(QString::fromUtf8(":/Test/images/button/export_icon2.png"), QSize(), QIcon::Normal, QIcon::Off);
-        btnExportMte->setIcon(icon8);
+        QIcon icon9;
+        icon9.addFile(QString::fromUtf8(":/Test/images/button/export_icon2.png"), QSize(), QIcon::Normal, QIcon::Off);
+        btnExportMte->setIcon(icon9);
         btnExportMte->setIconSize(QSize(20, 20));
 
-        gridLayout_9->addWidget(btnExportMte, 3, 0, 1, 1);
+        gridLayout_9->addWidget(btnExportMte, 4, 0, 1, 1);
 
         gridLayout_4 = new QGridLayout();
         gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
@@ -6196,9 +6225,9 @@ public:
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        QIcon icon9;
-        icon9.addFile(QString::fromUtf8(":/Test/images/button/back_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        btnUndoMte->setIcon(icon9);
+        QIcon icon10;
+        icon10.addFile(QString::fromUtf8(":/Test/images/button/back_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        btnUndoMte->setIcon(icon10);
         btnUndoMte->setIconSize(QSize(20, 20));
 
         gridLayout_4->addWidget(btnUndoMte, 0, 0, 1, 1);
@@ -6224,9 +6253,9 @@ public:
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        QIcon icon10;
-        icon10.addFile(QString::fromUtf8(":/Test/images/button/start_icon_3.png"), QSize(), QIcon::Normal, QIcon::Off);
-        btnRunMte->setIcon(icon10);
+        QIcon icon11;
+        icon11.addFile(QString::fromUtf8(":/Test/images/button/start_icon_3.png"), QSize(), QIcon::Normal, QIcon::Off);
+        btnRunMte->setIcon(icon11);
         btnRunMte->setIconSize(QSize(20, 20));
 
         gridLayout_4->addWidget(btnRunMte, 0, 1, 1, 1);
@@ -6234,7 +6263,7 @@ public:
         gridLayout_4->setColumnStretch(0, 1);
         gridLayout_4->setColumnStretch(1, 3);
 
-        gridLayout_9->addLayout(gridLayout_4, 4, 0, 1, 1);
+        gridLayout_9->addLayout(gridLayout_4, 5, 0, 1, 1);
 
         btnStopMte = new QPushButton(frame_6);
         btnStopMte->setObjectName(QString::fromUtf8("btnStopMte"));
@@ -6256,12 +6285,12 @@ public:
 "  	border:none;\n"
 "  	outline:none;\n"
 "}"));
-        QIcon icon11;
-        icon11.addFile(QString::fromUtf8(":/Test/images/button/Stop_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        btnStopMte->setIcon(icon11);
+        QIcon icon12;
+        icon12.addFile(QString::fromUtf8(":/Test/images/button/Stop_icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        btnStopMte->setIcon(icon12);
         btnStopMte->setIconSize(QSize(25, 25));
 
-        gridLayout_9->addWidget(btnStopMte, 5, 0, 1, 1);
+        gridLayout_9->addWidget(btnStopMte, 6, 0, 1, 1);
 
 
         gridLayout_10->addWidget(frame_6, 0, 1, 3, 1);
@@ -6317,7 +6346,7 @@ public:
         retranslateUi(testModule);
 
         tabWidget_2->setCurrentIndex(0);
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(testModule);
@@ -6329,7 +6358,7 @@ public:
         label->setText(QCoreApplication::translate("testModule", "             Test Module", nullptr));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_3), QCoreApplication::translate("testModule", "Tab 1", nullptr));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_4), QCoreApplication::translate("testModule", "Tab 2", nullptr));
-        pushButton_12->setText(QString());
+        btnExitMTE->setText(QString());
         label_10->setText(QCoreApplication::translate("testModule", "Result", nullptr));
         label_7->setText(QCoreApplication::translate("testModule", " Detail", nullptr));
         label_8->setText(QCoreApplication::translate("testModule", "Import", nullptr));
@@ -6762,6 +6791,7 @@ public:
         label_2->setText(QCoreApplication::translate("testModule", " Test Sequence/ Output Terminal", nullptr));
         btnGuidleMte->setText(QCoreApplication::translate("testModule", "Guidle          ", nullptr));
         btnLogMte->setText(QCoreApplication::translate("testModule", " Log              ", nullptr));
+        btnNoteSign->setText(QCoreApplication::translate("testModule", "Note - Sign", nullptr));
         btnPreviewMte->setText(QCoreApplication::translate("testModule", "Preview        ", nullptr));
         btnExportMte->setText(QCoreApplication::translate("testModule", "Export report", nullptr));
         btnUndoMte->setText(QCoreApplication::translate("testModule", "Undo", nullptr));
