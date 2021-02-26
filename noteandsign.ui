@@ -19,7 +19,17 @@
 </string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="1" column="0" colspan="3">
+   <item row="0" column="0" colspan="2">
+    <widget class="QLabel" name="label_2">
+     <property name="styleSheet">
+      <string notr="true">font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(49,67,100);</string>
+     </property>
+     <property name="text">
+      <string>Đồng ý xuất báo cáo những mục đã chọn?</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
     <widget class="Line" name="line">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -36,8 +46,8 @@
      </property>
     </widget>
    </item>
-   <item row="3" column="0" colspan="3">
-    <widget class="QTextBrowser" name="tbGetNote">
+   <item row="3" column="0" colspan="2">
+    <widget class="QTextEdit" name="teNoteReport">
      <property name="styleSheet">
       <string notr="true">background-color: rgb(255, 255, 255);
 border:none;</string>
@@ -93,7 +103,7 @@ QCheckBox::hover
      </layout>
     </widget>
    </item>
-   <item row="4" column="1" colspan="2">
+   <item row="4" column="1">
     <widget class="QFrame" name="frame_2">
      <property name="styleSheet">
       <string notr="true">background-color: rgba(205,216,217);</string>
@@ -142,7 +152,7 @@ QCheckBox::hover
      </layout>
     </widget>
    </item>
-   <item row="5" column="2">
+   <item row="5" column="1">
     <widget class="QDialogButtonBox" name="buttonBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -171,16 +181,6 @@ QPushButton::hover
      </property>
      <property name="standardButtons">
       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="0" colspan="3">
-    <widget class="QLabel" name="label_2">
-     <property name="styleSheet">
-      <string notr="true">font: 87 10.5pt &quot;Sans&quot;; font:bold; background-color: none; color: rgb(49,67,100);</string>
-     </property>
-     <property name="text">
-      <string>Đồng ý xuất báo cáo những mục đã chọn?</string>
      </property>
     </widget>
    </item>

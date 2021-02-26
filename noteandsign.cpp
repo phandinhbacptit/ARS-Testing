@@ -12,3 +12,13 @@ noteAndSign::~noteAndSign()
 {
     delete ui;
 }
+
+Ui::noteAndSign *noteAndSign::getUi() const
+{
+    return  ui;
+}
+
+void noteAndSign::setUi(Ui::noteAndSign *value)
+{
+    ui = value;
+}

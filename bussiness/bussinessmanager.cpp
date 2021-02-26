@@ -4,6 +4,7 @@
 #include "ui_testmodule.h"
 #include "ui_testrfcable.h"
 #include "ui_testmechanical.h"
+#include "ui_noteandsign.h"
 #include "utils/logutils.h"
 
 bussinessManager::bussinessManager(QObject *parent) : QObject(parent)
@@ -34,11 +35,10 @@ bussinessManager::~bussinessManager()
        mTestRfCable = NULL;
     }
 
-//    if (reportElectrical != NULL) {
-//        delete reportElectrical;
-//        reportElectrical = NULL;
-//    }
-
+    if (mNoteAndSign != NULL) {
+        delete mNoteAndSign;
+        mNoteAndSign = NULL;
+    }
 }
 
 Ui::MainWindow *bussinessManager::ui() const
@@ -54,6 +54,11 @@ Ui::TestElectricCable *bussinessManager::getGui() const
 Ui::testModule *bussinessManager::getGuiMte() const
 {
     return mMTE;
+}
+
+Ui::noteAndSign *bussinessManager::getGuiNS() const
+{
+    return mNS;
 }
 
 //Ui::TestRfCable *bussinessManager::getGui() const
@@ -107,7 +112,7 @@ void bussinessManager::setupModule(Ui::testModule *ui)
     connect(mMTE->btnLogMte, SIGNAL(clicked()), this, SLOT(slt_logMTE()));
     connect(mMTE->btnStopMte, SIGNAL(clicked()), this, SLOT(slt_stopMTE()));
     connect(mMTE->btnPreviewMte, SIGNAL(clicked()), this, SLOT(slt_previewMteReport()));
-    connect(mMTE->btnExportMte, SIGNAL(clicked()), this, SLOT(slt_exportMteReport()));
+    connect(mMTE->btnExportMte, SIGNAL(clicked()), this, SLOT(slt_clickedMteReport()));
 
     connect(mMTE->btnDcPwr, SIGNAL(clicked()), this, SLOT(slt_connDcPower()));
     connect(mMTE->btnDcLoad, SIGNAL(clicked()), this, SLOT(slt_connDcLoad()));
@@ -131,6 +136,16 @@ void bussinessManager::setupRf(Ui::TestRfCable *ui)
     connect(mRFTE->btnLogRfte, SIGNAL(clicked()), this, SLOT(slt_logRFTE()));
     connect(mRFTE->btnStopRfte, SIGNAL(clicked()), this, SLOT(slt_stopRFTE()));
     qDebug() << "[Bussiness] Setup gui RFTE";
+}
+
+void bussinessManager::setupNS(Ui::noteAndSign *ui)
+{
+    if (ui != NULL) {
+        this->mNS = ui;
+    }
+    connect(mNS->buttonBox, SIGNAL(accepted()), this, SLOT(slt_acceptExportReport()));
+    qDebug() << "[Business] Setup Gui Note and sign";
+
 }
 void bussinessManager::createTable(KDReports::Report *report, QString Title, QString pathCsv)
 {
@@ -257,8 +272,7 @@ void bussinessManager::createReport(KDReports::Report *report, QString typeTest,
     noteTitle.setPointSize(10);
     noteTitle.setFont(QFont("Sans-serif"));
     report->addElement(noteTitle);
-    report->addInlineElement(KDReports::TextElement("............................................................................."
-                                                    "................................."));
+    report->addInlineElement(KDReports::TextElement(mNS->teNoteReport->toPlainText()));
     report->addElement(KDReports::TextElement("    "));
 
     /*Create table signature for excutor and supervisor*/
@@ -505,6 +519,26 @@ void bussinessManager::slt_previewMteReport()
         reportCTE = new KDReports::Report();
         createReport(reportCTE, "MTE", RX, "Preview");
     }
+}
+void bussinessManager::acceptMteReport()
+{
+
+}
+
+void bussinessManager::slt_clickedMteReport()
+{
+    mNoteAndSign = new noteAndSign();
+
+    qDebug("Jump to window export Report");
+    QRect tScreenGeometry = QApplication::desktop()->screenGeometry();
+    int x = (tScreenGeometry.width() - mNoteAndSign->width()) / 2;
+    int y = (tScreenGeometry.height() - mNoteAndSign->height()) / 2;
+
+    mNoteAndSign->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
+    mNoteAndSign->move(x, y);
+    mNoteAndSign->show();
+
+    setupNS(mNoteAndSign->getUi());
 }
 void bussinessManager::slt_exportMteReport()
 {
@@ -839,6 +873,13 @@ void bussinessManager::slt_resultTest(bool state)
 //    }
 }
 
+/*____________ Handle Note and Signature_________________________________________________*/
+void bussinessManager::slt_acceptExportReport()
+{
+    //qDebug() << "Data input" + mNS->teNoteReport->toPlainText();
+    slt_exportMteReport();
+
+}
 
 /*_____________Connect Equipment_________________________________________________________*/
 void bussinessManager::slt_connDcPower()

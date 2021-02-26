@@ -25,6 +25,7 @@
 #include "testmodule.h"
 #include "userconfig.h"
 #include "testrfcable.h"
+#include "noteandsign.h"
 
 #include "qtCsv/include/qtcsv_global.h"
 #include "qtCsv/include/stringdata.h"
@@ -48,16 +49,20 @@ public:
     ~bussinessManager();
     void setup(Ui::MainWindow *ui);
     void setupELectric(Ui::TestElectricCable *ui);
+    void setupModule(Ui::testModule *ui);
+    void setupRf(Ui::TestRfCable *ui);
+    void setupNS(Ui::noteAndSign *ui);
+
+
     void createReport(KDReports::Report *report, QString typeTest, table part, QString mode);
     void createTable(KDReports::Report *report, QString Title, QString pathCsv);
 
     Ui::MainWindow  *ui() const;
     Ui::TestElectricCable *getGui() const;
     Ui::testModule *getGuiMte() const;
+    Ui::noteAndSign *getGuiNS() const;
 //    Ui::TestRfCable *getGui() const;
 
-    void setupModule(Ui::testModule *ui);
-    void setupRf(Ui::TestRfCable *ui);
     /*_______Add more___________*/
     void writeToCsvFile(defineCsv data);
 
@@ -81,10 +86,15 @@ public slots:
     void slt_logMTE();
     void slt_stopMTE();
 
+    void slt_clickedMteReport();
+
     /*____RF test equipment___*/
     void slt_runRFTE();
     void slt_logRFTE();
     void slt_stopRFTE();
+
+    /*____Handle note and sign____*/
+    void slt_acceptExportReport();
 
     /*___Connect Equipment____*/
     void slt_connDcPower();
@@ -110,14 +120,17 @@ private:
     Ui::testModule *mMTE;
     Ui::TestRfCable *mRFTE;
     Ui::MainWindow *mUi;
+    Ui::noteAndSign *mNS;
 
     TestElectricCable *mTestElectricalCable;
     testModule *mTestModule;
     TestRfCable *mTestRfCable;
+    noteAndSign *mNoteAndSign;
 
     KDReports::Report *reportCTE;
 
     void createCableReport(KDReports::Report *report, QString nameCable);
+    void acceptMteReport();
 
     int cntRunCte = 0;
     int cntLogCte = 0;

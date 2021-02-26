@@ -14,6 +14,9 @@ class noteAndSign : public QDialog
 public:
     explicit noteAndSign(QWidget *parent = nullptr);
     ~noteAndSign();
+    Ui::noteAndSign *getUi() const;
+    void setUi(Ui::noteAndSign *value);
+
 
 private:
     Ui::noteAndSign *ui;

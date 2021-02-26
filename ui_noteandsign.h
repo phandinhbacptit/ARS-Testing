@@ -18,7 +18,7 @@
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QTextBrowser>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QToolButton>
 
 QT_BEGIN_NAMESPACE
@@ -27,9 +27,10 @@ class Ui_noteAndSign
 {
 public:
     QGridLayout *gridLayout;
+    QLabel *label_2;
     QFrame *line;
     QLabel *label;
-    QTextBrowser *tbGetNote;
+    QTextEdit *teNoteReport;
     QFrame *frame;
     QGridLayout *gridLayout_3;
     QComboBox *pathSignExcutor;
@@ -41,7 +42,6 @@ public:
     QToolButton *btnImportSignSupervisor;
     QCheckBox *cbSignSupervisor;
     QDialogButtonBox *buttonBox;
-    QLabel *label_2;
 
     void setupUi(QDialog *noteAndSign)
     {
@@ -53,12 +53,18 @@ public:
 ""));
         gridLayout = new QGridLayout(noteAndSign);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        label_2 = new QLabel(noteAndSign);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setStyleSheet(QString::fromUtf8("font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);"));
+
+        gridLayout->addWidget(label_2, 0, 0, 1, 2);
+
         line = new QFrame(noteAndSign);
         line->setObjectName(QString::fromUtf8("line"));
         line->setFrameShape(QFrame::HLine);
         line->setFrameShadow(QFrame::Sunken);
 
-        gridLayout->addWidget(line, 1, 0, 1, 3);
+        gridLayout->addWidget(line, 1, 0, 1, 2);
 
         label = new QLabel(noteAndSign);
         label->setObjectName(QString::fromUtf8("label"));
@@ -66,12 +72,12 @@ public:
 
         gridLayout->addWidget(label, 2, 0, 1, 1);
 
-        tbGetNote = new QTextBrowser(noteAndSign);
-        tbGetNote->setObjectName(QString::fromUtf8("tbGetNote"));
-        tbGetNote->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+        teNoteReport = new QTextEdit(noteAndSign);
+        teNoteReport->setObjectName(QString::fromUtf8("teNoteReport"));
+        teNoteReport->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border:none;"));
 
-        gridLayout->addWidget(tbGetNote, 3, 0, 1, 3);
+        gridLayout->addWidget(teNoteReport, 3, 0, 1, 2);
 
         frame = new QFrame(noteAndSign);
         frame->setObjectName(QString::fromUtf8("frame"));
@@ -151,7 +157,7 @@ public:
         gridLayout_2->addWidget(cbSignSupervisor, 1, 0, 1, 2);
 
 
-        gridLayout->addWidget(frame_2, 4, 1, 1, 2);
+        gridLayout->addWidget(frame_2, 4, 1, 1, 1);
 
         buttonBox = new QDialogButtonBox(noteAndSign);
         buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
@@ -177,13 +183,7 @@ public:
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
 
-        gridLayout->addWidget(buttonBox, 5, 2, 1, 1);
-
-        label_2 = new QLabel(noteAndSign);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setStyleSheet(QString::fromUtf8("font: 87 10.5pt \"Sans\"; font:bold; background-color: none; color: rgb(49,67,100);"));
-
-        gridLayout->addWidget(label_2, 0, 0, 1, 3);
+        gridLayout->addWidget(buttonBox, 5, 1, 1, 1);
 
 
         retranslateUi(noteAndSign);
@@ -196,12 +196,12 @@ public:
     void retranslateUi(QDialog *noteAndSign)
     {
         noteAndSign->setWindowTitle(QCoreApplication::translate("noteAndSign", "Dialog", nullptr));
+        label_2->setText(QCoreApplication::translate("noteAndSign", "\304\220\341\273\223ng \303\275 xu\341\272\245t b\303\241o c\303\241o nh\341\273\257ng m\341\273\245c \304\221\303\243 ch\341\273\215n?", nullptr));
         label->setText(QCoreApplication::translate("noteAndSign", "Note:", nullptr));
         btnImportSignExcutor->setText(QCoreApplication::translate("noteAndSign", "...", nullptr));
         cbSignExecutor->setText(QCoreApplication::translate("noteAndSign", "Hi\341\273\207n ch\341\273\257 k\303\255 ng\306\260\341\273\235i th\341\273\261c hi\341\273\207n", nullptr));
         btnImportSignSupervisor->setText(QCoreApplication::translate("noteAndSign", "...", nullptr));
         cbSignSupervisor->setText(QCoreApplication::translate("noteAndSign", "HI\341\273\207n ch\341\273\257 k\303\255 ng\306\260\341\273\235i ki\341\273\203m tra", nullptr));
-        label_2->setText(QCoreApplication::translate("noteAndSign", "\304\220\341\273\223ng \303\275 xu\341\272\245t b\303\241o c\303\241o nh\341\273\257ng m\341\273\245c \304\221\303\243 ch\341\273\215n?", nullptr));
     } // retranslateUi
 
 };
