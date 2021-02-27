@@ -68,15 +68,15 @@ border:none;</string>
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <layout class="QGridLayout" name="gridLayout_6" columnstretch="1,0">
+        <layout class="QGridLayout" name="gridLayout_6" columnstretch="0,0">
          <property name="leftMargin">
-          <number>0</number>
+          <number>10</number>
          </property>
          <property name="topMargin">
           <number>0</number>
          </property>
          <property name="rightMargin">
-          <number>0</number>
+          <number>10</number>
          </property>
          <property name="bottomMargin">
           <number>0</number>
@@ -84,7 +84,7 @@ border:none;</string>
          <property name="horizontalSpacing">
           <number>0</number>
          </property>
-         <item row="0" column="1" alignment="Qt::AlignLeft">
+         <item row="0" column="1" alignment="Qt::AlignRight">
           <widget class="QLabel" name="label">
            <property name="styleSheet">
             <string notr="true">color: rgb(49,67,100);
@@ -109,7 +109,7 @@ background-color: none;</string>
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="resources.qrc">:/Test/images/logo_viettel.png</pixmap>
+            <pixmap resource="resources.qrc">:/Test/images/logo_viettel_30.png</pixmap>
            </property>
           </widget>
          </item>
@@ -376,7 +376,7 @@ QTabWidget
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>520</width>
+                  <width>563</width>
                   <height>383</height>
                  </rect>
                 </property>
@@ -514,7 +514,7 @@ background-color: rgb(235,235,235);</string>
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>506</width>
+                      <width>549</width>
                       <height>531</height>
                      </rect>
                     </property>
@@ -2785,7 +2785,7 @@ font:bold;
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>506</width>
+                  <width>549</width>
                   <height>1435</height>
                  </rect>
                 </property>

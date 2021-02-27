@@ -2519,13 +2519,13 @@ public:
         label = new QLabel(frame_4);
         label->setObjectName(QString::fromUtf8("label"));
         label->setStyleSheet(QString::fromUtf8("color: rgb(49, 62, 70);\n"
-"font: 87 24pt \"Myriad Pro\"; font:bold;"));
+"font: 87 20pt \"Myriad Pro\"; font:bold;"));
 
-        gridLayout_4->addWidget(label, 0, 1, 1, 1);
+        gridLayout_4->addWidget(label, 0, 1, 1, 1, Qt::AlignRight);
 
         label_69 = new QLabel(frame_4);
         label_69->setObjectName(QString::fromUtf8("label_69"));
-        label_69->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/logo_small.png")));
+        label_69->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/logo_viettel_30.png")));
         label_69->setAlignment(Qt::AlignCenter);
 
         gridLayout_4->addWidget(label_69, 0, 0, 1, 1);

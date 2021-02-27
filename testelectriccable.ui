@@ -5863,7 +5863,7 @@ outline: none;
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="resources.qrc">:/Test/images/logo_small.png</pixmap>
+            <pixmap resource="resources.qrc">:/Test/images/logo_viettel_30.png</pixmap>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>

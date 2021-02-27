@@ -147,10 +147,9 @@ void bussinessManager::setupNS(Ui::noteAndSign *ui)
     if (ui != NULL) {
         this->mNS = ui;
     }
-    connect(mNS->buttonBox, SIGNAL(accepted()), this, SLOT(slt_acceptExportReport()));
+    connect(mNS->buttonBox, SIGNAL(accepted()), this, SLOT(slt_enableOrDisableSign()));
     connect(mNS->btnAddNote, SIGNAL(clicked()), this, SLOT(slt_addNote()));
     qDebug() << "[Business] Setup Gui Note and sign";
-
 }
 void bussinessManager::createTable(KDReports::Report *report, QString Title, QString pathCsv)
 {
@@ -159,13 +158,13 @@ void bussinessManager::createTable(KDReports::Report *report, QString Title, QSt
     tableTitleElement.setBold( true );
     tableTitleElement.setFont(QFont("Sans-serif"));
     report->addElement( tableTitleElement, Qt::AlignLeft, titleElementColor );
-    TableModel R_Cable;
-    R_Cable.setDataHasVerticalHeaders(false);
-    R_Cable.loadFromCSV(pathCsv);
-    KDReports::AutoTableElement autoTableElement1( &R_Cable );
-    autoTableElement1.setWidth( 100, KDReports::Percent );
-    report->addElement( autoTableElement1 );
-    report->addVerticalSpacing(5);
+    TableModel table;
+    table.setDataHasVerticalHeaders(false);
+    table.loadFromCSV(pathCsv);
+    KDReports::AutoTableElement autoTableElement1(&table);
+    autoTableElement1.setWidth(100, KDReports::Percent);
+    report->addElement(autoTableElement1);
+    report->addVerticalSpacing(1);
 }
 void bussinessManager::createReport(KDReports::Report *report, QString typeTest, table part, QString mode)
 {
@@ -194,6 +193,7 @@ void bussinessManager::createReport(KDReports::Report *report, QString typeTest,
     tableHeade1.setHeaderRowCount(2);
     tableHeade1.setPadding(0);
     tableHeade1.setBorder(0);
+    tableHeade1.setWidth(100, KDReports::Percent);
     tableHeade1.cell(0,0).addElement(KDReports::TextElement("Type: "), Qt::AlignLeft);
     if (typeTest == "CTE") {
         tableHeade1.cell(0,1).addElement(KDReports::TextElement("Kiểm tra cáp điện   "), Qt::AlignLeft);
@@ -218,6 +218,7 @@ void bussinessManager::createReport(KDReports::Report *report, QString typeTest,
     tableHeade2.setHeaderRowCount(2);
     tableHeade2.setPadding(0);
     tableHeade2.setBorder(0);
+    tableHeade2.setWidth(100, KDReports::Percent);
     tableHeade2.cell(0,0).addElement(KDReports::TextElement("Excutor: "), Qt::AlignLeft);
     tableHeade2.cell(0,1).addElement(KDReports::TextElement(mUi->mLeNameExecutor->text()), Qt::AlignLeft);
     tableHeade2.cell(0,2).addElement(KDReports::TextElement("\t"), Qt::AlignLeft);
@@ -285,53 +286,55 @@ void bussinessManager::createReport(KDReports::Report *report, QString typeTest,
     }
     report->addElement(KDReports::TextElement("    "));
 
+    QDate _current = QDate::currentDate();
+    report->addElement(KDReports::TextElement(mUi->mLeLocalTest->text() +
+                                              ", Ngày " + QString::number(_current.day()) +
+                                              " tháng " + QString::number(_current.month()) +
+                                              " năm " + QString::number(_current.year())
+                                              ), Qt::AlignRight);
+    report->addElement(KDReports::TextElement("    "));
+
     /*Create table signature for excutor and supervisor*/
     KDReports::TableElement tableSign;
     tableSign.setHeaderRowCount(2);
     tableSign.setPadding(0);
     tableSign.setBorder(0);
-    QColor headerColor("#DADADF");
-    QDate _current = QDate::currentDate();
-    KDReports::Cell& signSupervisor = tableSign.cell(0, 0);
-    signSupervisor.addInlineElement(KDReports::TextElement(" \t \t \t \t \t  "));
+    tableSign.setWidth(100, KDReports::Percent);
 
-    KDReports::Cell& signExcutor = tableSign.cell(0,1 );
-    signExcutor.addElement(KDReports::TextElement(mUi->mLeLocalTest->text() +
-                                                 ", Ngày " + QString::number(_current.day()) +
-                                                 " tháng " + QString::number(_current.month()) +
-                                                 " năm " + QString::number(_current.year())
-                                                 ), Qt::AlignHCenter);
+    tableSign.cell(0,0).addElement(KDReports::TextElement("Người thực hiện"), Qt::AlignCenter);
+    tableSign.cell(0,0).addElement(KDReports::TextElement("(Ký, họ tên)"), Qt::AlignCenter);
+//    tableSign.cell(0,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    if (enableSignExcutor == true) {
+        QPixmap signature1(":/images/sign/signature1.png");
+        KDReports::ImageElement sign1Element(signature1);
+        sign1Element.setWidth(35);
+        tableSign.cell(0,0).addElement(sign1Element, Qt::AlignCenter);
+//        tableSign.cell(0,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    }
+    else {
+        tableSign.cell(0,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+        tableSign.cell(0,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+        tableSign.cell(0,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    }
+    tableSign.cell(0,0).addElement(KDReports::TextElement(mUi->mLeNameExecutor->text()), Qt::AlignCenter);
 
+    tableSign.cell(0,1).addElement(KDReports::TextElement("Người giám sát"), Qt::AlignCenter);
+    tableSign.cell(0,1).addElement(KDReports::TextElement("(Ký, họ tên)"), Qt::AlignCenter);
+//    tableSign.cell(0,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
 
-
-    signExcutor.addInlineElement(KDReports::TextElement("\t \t \t "));
-    tableSign.cell(1,0).addElement(KDReports::TextElement("Người thực hiện"), Qt::AlignCenter);
-    tableSign.cell(1,0).addElement(KDReports::TextElement("(Ký, họ tên)"), Qt::AlignCenter);
-    tableSign.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-
-    QPixmap signature1(":/images/sign/signature1.png");
-    KDReports::ImageElement sign1Element(signature1);
-    sign1Element.setWidth(35);
-    tableSign.cell(1,0).addElement(sign1Element, Qt::AlignCenter);
-    tableSign.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-//    tableSign.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-//    tableSign.cell(1,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-    tableSign.cell(1,0).addElement(KDReports::TextElement(mUi->mLeNameExecutor->text()),
-                                     Qt::AlignCenter);
-
-    tableSign.cell(1,1).addElement(KDReports::TextElement("Người giám sát"), Qt::AlignCenter);
-    tableSign.cell(1,1).addElement(KDReports::TextElement("(Ký, họ tên)"), Qt::AlignCenter);
-    tableSign.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-
-    QPixmap signature2(":/images/sign/signature2.png");
-    KDReports::ImageElement sign2Element(signature2);
-    sign2Element.setWidth(35);
-    tableSign.cell(1,1).addElement(sign2Element, Qt::AlignCenter);
-
-//    tableSign.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-//    tableSign.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-    tableSign.cell(1,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-    tableSign.cell(1,1).addElement(KDReports::TextElement(mUi->mLeNameSupervisor->text()), Qt::AlignCenter);
+    if (enableSignaSupervisor == true) {
+        QPixmap signature2(":/images/sign/signature2.png");
+        KDReports::ImageElement sign2Element(signature2);
+        sign2Element.setWidth(35);
+        tableSign.cell(0,1).addElement(sign2Element, Qt::AlignCenter);
+    }
+    else {
+        tableSign.cell(0,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+        tableSign.cell(0,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+        tableSign.cell(0,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    }
+//    tableSign.cell(0,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
+    tableSign.cell(0,1).addElement(KDReports::TextElement(mUi->mLeNameSupervisor->text()), Qt::AlignCenter);
     report->addElement(tableSign);
 
     if (mode == "AutoSave") {
@@ -923,8 +926,24 @@ void bussinessManager::slt_noteAndSign()
     mNoteAndSign->show();
 
     setupNS(mNoteAndSign->getUi());
+    recoverStateSign();
 }
+void bussinessManager::recoverStateSign()
+{
+    if (enableSignExcutor == true) {
+        mNS->cbSignExecutor->setChecked(true);
+    }
+    else {
+        mNS->cbSignExecutor->setChecked(false);
+    }
 
+    if (enableSignaSupervisor == true) {
+        mNS->cbSignSupervisor->setChecked(true);
+    }
+    else {
+        mNS->cbSignSupervisor->setChecked(false);
+    }
+}
 void bussinessManager::resetNote()
 {
         qDebug() << "Clear all note in MTE report";
@@ -1051,6 +1070,26 @@ void bussinessManager::slt_addNote()
          LimiterSum.isNote = true;
          LimiterSum.stringNote = mNS->teNoteReport->toPlainText();
      }
+}
+void bussinessManager::slt_enableOrDisableSign()
+{
+    if (mNS->cbSignExecutor->checkState() == 0) {
+        enableSignExcutor = false;
+        qDebug() << "[Bussiness] Disable Excutor sign";
+    }
+    else{
+        enableSignExcutor = true;
+        qDebug() << "[Bussiness] Enable Excutor sign";
+    }
+
+    if (mNS->cbSignSupervisor->checkState() == 0) {
+        enableSignaSupervisor = false;
+        qDebug() << "[Bussiness] Disable Supervisor sign";
+    }
+    else {
+        enableSignaSupervisor = true;
+        qDebug() << "[Bussiness] Enable Supervisor sign";
+    }
 }
 /*_____________Connect Equipment_________________________________________________________*/
 void bussinessManager::slt_connDcPower()

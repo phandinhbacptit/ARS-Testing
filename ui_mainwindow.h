@@ -31,7 +31,6 @@ public:
     QFrame *frame_7;
     QGridLayout *gridLayout_2;
     QLabel *label;
-    QLabel *label_14;
     QPushButton *btnMainExit;
     QFrame *frame;
     QGridLayout *gridLayout_4;
@@ -112,14 +111,7 @@ public:
 
         gridLayout_2->addWidget(label, 0, 0, 1, 1);
 
-        label_14 = new QLabel(frame_7);
-        label_14->setObjectName(QString::fromUtf8("label_14"));
-        label_14->setStyleSheet(QString::fromUtf8("border-image: url(\":/Test/images/logo.png\");"));
-
-        gridLayout_2->addWidget(label_14, 1, 0, 1, 1);
-
         gridLayout_2->setRowStretch(0, 1);
-        gridLayout_2->setRowStretch(1, 3);
 
         gridLayout_3->addWidget(frame_7, 0, 0, 2, 1);
 
@@ -504,7 +496,6 @@ public:
     {
         MainWindow->setWindowTitle(QString());
         label->setText(QCoreApplication::translate("MainWindow", "ARS-Testing", nullptr));
-        label_14->setText(QString());
         btnMainExit->setText(QString());
         mLeNameExecutor->setText(QString());
         mLeNameExecutor->setPlaceholderText(QCoreApplication::translate("MainWindow", "Name", nullptr));

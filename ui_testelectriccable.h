@@ -3741,7 +3741,7 @@ public:
         label_30 = new QLabel(frame_2);
         label_30->setObjectName(QString::fromUtf8("label_30"));
         label_30->setStyleSheet(QString::fromUtf8("background-color: rgb(220,225,226);"));
-        label_30->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/logo_small.png")));
+        label_30->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/logo_viettel_30.png")));
         label_30->setAlignment(Qt::AlignCenter);
 
         gridLayout_9->addWidget(label_30, 0, 0, 1, 1);

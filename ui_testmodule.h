@@ -549,7 +549,7 @@ public:
         gridLayout_6 = new QGridLayout(frame);
         gridLayout_6->setObjectName(QString::fromUtf8("gridLayout_6"));
         gridLayout_6->setHorizontalSpacing(0);
-        gridLayout_6->setContentsMargins(0, 0, 0, 0);
+        gridLayout_6->setContentsMargins(10, 0, 10, 0);
         label = new QLabel(frame);
         label->setObjectName(QString::fromUtf8("label"));
         label->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
@@ -557,7 +557,7 @@ public:
 "font:bold;\n"
 "background-color: none;"));
 
-        gridLayout_6->addWidget(label, 0, 1, 1, 1, Qt::AlignLeft);
+        gridLayout_6->addWidget(label, 0, 1, 1, 1, Qt::AlignRight);
 
         label_3 = new QLabel(frame);
         label_3->setObjectName(QString::fromUtf8("label_3"));
@@ -566,11 +566,10 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(label_3->sizePolicy().hasHeightForWidth());
         label_3->setSizePolicy(sizePolicy);
-        label_3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/logo_viettel.png")));
+        label_3->setPixmap(QPixmap(QString::fromUtf8(":/Test/images/logo_viettel_30.png")));
 
         gridLayout_6->addWidget(label_3, 0, 0, 1, 1);
 
-        gridLayout_6->setColumnStretch(0, 1);
 
         gridLayout_11->addWidget(frame, 0, 0, 1, 1);
 
@@ -706,7 +705,7 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 520, 383));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 563, 383));
         scrollAreaWidgetContents->setStyleSheet(QString::fromUtf8("background-color: rgb(235,235,235);"));
         gridLayout = new QGridLayout(scrollAreaWidgetContents);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
@@ -793,7 +792,7 @@ public:
         detailCtrMotorAzi->setWidgetResizable(true);
         scrollAreaWidgetContents_2 = new QWidget();
         scrollAreaWidgetContents_2->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_2"));
-        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 506, 531));
+        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 549, 531));
         scrollAreaWidgetContents_2->setStyleSheet(QString::fromUtf8("background-color: rgb(235,235,235);"));
         gridLayout_7 = new QGridLayout(scrollAreaWidgetContents_2);
         gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
@@ -2121,7 +2120,7 @@ public:
         scrollArea_2->setWidgetResizable(true);
         scrollAreaWidgetContents_3 = new QWidget();
         scrollAreaWidgetContents_3->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_3"));
-        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 506, 1435));
+        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 549, 1435));
         gridLayout_17 = new QGridLayout(scrollAreaWidgetContents_3);
         gridLayout_17->setObjectName(QString::fromUtf8("gridLayout_17"));
         gridLayout_17->setHorizontalSpacing(6);

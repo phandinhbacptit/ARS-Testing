@@ -53,6 +53,7 @@ public:
     void setupRf(Ui::TestRfCable *ui);
     void setupNS(Ui::noteAndSign *ui);
     void resetNote();
+    void recoverStateSign();
 
 
     void createReport(KDReports::Report *report, QString typeTest, table part, QString mode);
@@ -99,6 +100,7 @@ public slots:
     void slt_acceptExportReport();
     void slt_addNote();
     void slt_noteAndSign();
+    void slt_enableOrDisableSign();
 
     /*___Connect Equipment____*/
     void slt_connDcPower();
@@ -135,6 +137,8 @@ private:
 
     void createCableReport(KDReports::Report *report, QString nameCable);
 
+    bool enableSignExcutor = false;
+    bool enableSignaSupervisor = false;
     int cntRunCte = 0;
     int cntLogCte = 0;
 
