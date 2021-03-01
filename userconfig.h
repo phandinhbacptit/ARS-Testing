@@ -9,6 +9,8 @@
 
 #define OK      1
 #define FAIL    0
+/* Define path contain update information of combobox*/
+#define nameExcutorPath "/inform/saveInform.csv"
 
 /* Electrical cable design document path*/
 

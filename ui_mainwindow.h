@@ -12,13 +12,14 @@
 #include <QtCore/QVariant>
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QToolButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -35,20 +36,47 @@ public:
     QFrame *frame;
     QGridLayout *gridLayout_4;
     QGridLayout *gridLayout;
-    QLineEdit *mLeNameExecutor;
-    QLabel *label_3;
-    QLabel *label_2;
-    QLabel *label_8;
-    QLabel *label_7;
-    QLineEdit *mLeLocalTest;
-    QLineEdit *mLeIDExecutor;
+    QFrame *frame_9;
+    QGridLayout *gridLayout_14;
+    QComboBox *cbNameExcutor;
+    QToolButton *addNameExcutor;
+    QToolButton *subNameExcutor;
     QLabel *label_4;
-    QLineEdit *mLeWorkSupervisor;
-    QLineEdit *mLeIDSupervisor;
-    QLineEdit *mLeNameSupervisor;
-    QLabel *label_9;
-    QLineEdit *mLeWorkExecutor;
+    QFrame *frame_15;
+    QGridLayout *gridLayout_19;
+    QComboBox *cbWorkSupervisor;
+    QToolButton *addWorkSupervisor;
+    QToolButton *subWorkSupervisor;
+    QLabel *label_3;
+    QFrame *frame_16;
+    QGridLayout *gridLayout_20;
+    QComboBox *cbIDSupervisor;
+    QToolButton *addIDSupervisor;
+    QToolButton *subIDSupervisor;
+    QFrame *frame_10;
+    QGridLayout *gridLayout_15;
+    QComboBox *cbNameSupervisor;
+    QToolButton *addNameSupervisor;
+    QToolButton *subNameSupervisor;
     QLabel *label_6;
+    QLabel *label_7;
+    QFrame *frame_13;
+    QGridLayout *gridLayout_16;
+    QComboBox *cbLocalTest;
+    QToolButton *addLocalTest;
+    QToolButton *subLocalTest;
+    QFrame *frame_14;
+    QGridLayout *gridLayout_18;
+    QComboBox *cbWorkExcutor;
+    QToolButton *addWorkExcutor;
+    QToolButton *subWorkExcutor;
+    QLabel *label_8;
+    QLabel *label_2;
+    QFrame *frame_17;
+    QGridLayout *gridLayout_12;
+    QComboBox *cbIDExcutor;
+    QToolButton *addIDExcutor;
+    QToolButton *subIDExcutor;
     QFrame *frame_6;
     QGridLayout *gridLayout_5;
     QGridLayout *gridLayout_7;
@@ -134,70 +162,95 @@ public:
         gridLayout_4->setSpacing(6);
         gridLayout_4->setContentsMargins(11, 11, 11, 11);
         gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
-        gridLayout_4->setContentsMargins(0, 0, 0, 0);
         gridLayout = new QGridLayout();
         gridLayout->setSpacing(6);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setHorizontalSpacing(10);
         gridLayout->setVerticalSpacing(15);
         gridLayout->setContentsMargins(10, 10, 10, 10);
-        mLeNameExecutor = new QLineEdit(frame);
-        mLeNameExecutor->setObjectName(QString::fromUtf8("mLeNameExecutor"));
-        mLeNameExecutor->setStyleSheet(QString::fromUtf8("background-color: rgb(220,225,226);"));
+        frame_9 = new QFrame(frame);
+        frame_9->setObjectName(QString::fromUtf8("frame_9"));
+        frame_9->setStyleSheet(QString::fromUtf8("border: none;"));
+        frame_9->setFrameShape(QFrame::StyledPanel);
+        frame_9->setFrameShadow(QFrame::Raised);
+        gridLayout_14 = new QGridLayout(frame_9);
+        gridLayout_14->setSpacing(1);
+        gridLayout_14->setContentsMargins(11, 11, 11, 11);
+        gridLayout_14->setObjectName(QString::fromUtf8("gridLayout_14"));
+        gridLayout_14->setContentsMargins(0, 0, 0, 0);
+        cbNameExcutor = new QComboBox(frame_9);
+        cbNameExcutor->setObjectName(QString::fromUtf8("cbNameExcutor"));
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(cbNameExcutor->sizePolicy().hasHeightForWidth());
+        cbNameExcutor->setSizePolicy(sizePolicy);
+        cbNameExcutor->setStyleSheet(QString::fromUtf8("border:none;\n"
+"background-color: rgb(234,234,234);"));
 
-        gridLayout->addWidget(mLeNameExecutor, 1, 1, 1, 1);
+        gridLayout_14->addWidget(cbNameExcutor, 0, 0, 2, 1);
 
-        label_3 = new QLabel(frame);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
-"font: 11pt \"Sans\";\n"
+        addNameExcutor = new QToolButton(frame_9);
+        addNameExcutor->setObjectName(QString::fromUtf8("addNameExcutor"));
+        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(addNameExcutor->sizePolicy().hasHeightForWidth());
+        addNameExcutor->setSizePolicy(sizePolicy1);
+        QFont font1;
+        font1.setFamily(QString::fromUtf8("Myriad Pro"));
+        font1.setPointSize(5);
+        font1.setBold(true);
+        font1.setItalic(false);
+        font1.setWeight(75);
+        addNameExcutor->setFont(font1);
+        addNameExcutor->setStyleSheet(QString::fromUtf8("QToolButton\n"
+"{\n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(177,188,190); \n"
+"font: 87 5pt \"Myriad Pro\";\n"
 "font:bold;\n"
-"background-color: none;"));
-        label_3->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+"outline:none;\n"
+"border:none;\n"
+"}\n"
+"QToolButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
 
-        gridLayout->addWidget(label_3, 2, 0, 1, 1);
+        gridLayout_14->addWidget(addNameExcutor, 0, 1, 1, 1);
 
-        label_2 = new QLabel(frame);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
-"font: 11pt \"Sans\";\n"
+        subNameExcutor = new QToolButton(frame_9);
+        subNameExcutor->setObjectName(QString::fromUtf8("subNameExcutor"));
+        sizePolicy1.setHeightForWidth(subNameExcutor->sizePolicy().hasHeightForWidth());
+        subNameExcutor->setSizePolicy(sizePolicy1);
+        subNameExcutor->setFont(font1);
+        subNameExcutor->setStyleSheet(QString::fromUtf8("QToolButton\n"
+"{\n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(177,188,190); \n"
+"font: 87 5pt \"Myriad Pro\";\n"
 "font:bold;\n"
-"background-color: none;"));
-        label_2->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+"outline:none;\n"
+"border:none;\n"
+"}\n"
+"QToolButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
 
-        gridLayout->addWidget(label_2, 1, 0, 1, 1);
+        gridLayout_14->addWidget(subNameExcutor, 1, 1, 1, 1);
 
-        label_8 = new QLabel(frame);
-        label_8->setObjectName(QString::fromUtf8("label_8"));
-        label_8->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
-"font: 11pt \"Sans\";\n"
-"font:bold;\n"
-"background-color: none;"));
-        label_8->setAlignment(Qt::AlignCenter);
+        gridLayout_14->setColumnStretch(0, 10);
+        gridLayout_14->setColumnStretch(1, 1);
 
-        gridLayout->addWidget(label_8, 0, 3, 1, 1);
-
-        label_7 = new QLabel(frame);
-        label_7->setObjectName(QString::fromUtf8("label_7"));
-        label_7->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
-"font: 11pt \"Sans\";\n"
-"font:bold;\n"
-"background-color: none;"));
-        label_7->setAlignment(Qt::AlignCenter);
-
-        gridLayout->addWidget(label_7, 0, 2, 1, 1);
-
-        mLeLocalTest = new QLineEdit(frame);
-        mLeLocalTest->setObjectName(QString::fromUtf8("mLeLocalTest"));
-        mLeLocalTest->setStyleSheet(QString::fromUtf8("background-color: rgb(220,225,226);"));
-
-        gridLayout->addWidget(mLeLocalTest, 3, 1, 1, 1);
-
-        mLeIDExecutor = new QLineEdit(frame);
-        mLeIDExecutor->setObjectName(QString::fromUtf8("mLeIDExecutor"));
-        mLeIDExecutor->setStyleSheet(QString::fromUtf8("background-color: rgb(220,225,226);"));
-
-        gridLayout->addWidget(mLeIDExecutor, 1, 2, 1, 1);
+        gridLayout->addWidget(frame_9, 1, 1, 1, 1);
 
         label_4 = new QLabel(frame);
         label_4->setObjectName(QString::fromUtf8("label_4"));
@@ -209,34 +262,228 @@ public:
 
         gridLayout->addWidget(label_4, 3, 0, 1, 1);
 
-        mLeWorkSupervisor = new QLineEdit(frame);
-        mLeWorkSupervisor->setObjectName(QString::fromUtf8("mLeWorkSupervisor"));
-        mLeWorkSupervisor->setStyleSheet(QString::fromUtf8("background-color: rgb(220,225,226);"));
+        frame_15 = new QFrame(frame);
+        frame_15->setObjectName(QString::fromUtf8("frame_15"));
+        frame_15->setStyleSheet(QString::fromUtf8("border:none;"));
+        frame_15->setFrameShape(QFrame::StyledPanel);
+        frame_15->setFrameShadow(QFrame::Raised);
+        gridLayout_19 = new QGridLayout(frame_15);
+        gridLayout_19->setSpacing(1);
+        gridLayout_19->setContentsMargins(11, 11, 11, 11);
+        gridLayout_19->setObjectName(QString::fromUtf8("gridLayout_19"));
+        gridLayout_19->setContentsMargins(0, 0, 0, 0);
+        cbWorkSupervisor = new QComboBox(frame_15);
+        cbWorkSupervisor->setObjectName(QString::fromUtf8("cbWorkSupervisor"));
+        sizePolicy.setHeightForWidth(cbWorkSupervisor->sizePolicy().hasHeightForWidth());
+        cbWorkSupervisor->setSizePolicy(sizePolicy);
+        cbWorkSupervisor->setStyleSheet(QString::fromUtf8("background-color: rgb(234,234,234);"));
 
-        gridLayout->addWidget(mLeWorkSupervisor, 2, 3, 1, 1);
+        gridLayout_19->addWidget(cbWorkSupervisor, 0, 0, 2, 1);
 
-        mLeIDSupervisor = new QLineEdit(frame);
-        mLeIDSupervisor->setObjectName(QString::fromUtf8("mLeIDSupervisor"));
-        mLeIDSupervisor->setStyleSheet(QString::fromUtf8("background-color: rgb(220,225,226);"));
+        addWorkSupervisor = new QToolButton(frame_15);
+        addWorkSupervisor->setObjectName(QString::fromUtf8("addWorkSupervisor"));
+        sizePolicy1.setHeightForWidth(addWorkSupervisor->sizePolicy().hasHeightForWidth());
+        addWorkSupervisor->setSizePolicy(sizePolicy1);
+        addWorkSupervisor->setFont(font1);
+        addWorkSupervisor->setStyleSheet(QString::fromUtf8("QToolButton\n"
+"{\n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(177,188,190); \n"
+"font: 87 5pt \"Myriad Pro\";\n"
+"font:bold;\n"
+"outline:none;\n"
+"border:none;\n"
+"}\n"
+"QToolButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
 
-        gridLayout->addWidget(mLeIDSupervisor, 2, 2, 1, 1);
+        gridLayout_19->addWidget(addWorkSupervisor, 0, 1, 1, 1);
 
-        mLeNameSupervisor = new QLineEdit(frame);
-        mLeNameSupervisor->setObjectName(QString::fromUtf8("mLeNameSupervisor"));
-        mLeNameSupervisor->setStyleSheet(QString::fromUtf8("background-color: rgb(220,225,226);"));
+        subWorkSupervisor = new QToolButton(frame_15);
+        subWorkSupervisor->setObjectName(QString::fromUtf8("subWorkSupervisor"));
+        sizePolicy1.setHeightForWidth(subWorkSupervisor->sizePolicy().hasHeightForWidth());
+        subWorkSupervisor->setSizePolicy(sizePolicy1);
+        subWorkSupervisor->setFont(font1);
+        subWorkSupervisor->setStyleSheet(QString::fromUtf8("QToolButton\n"
+"{\n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(177,188,190); \n"
+"font: 87 5pt \"Myriad Pro\";\n"
+"font:bold;\n"
+"outline:none;\n"
+"border:none;\n"
+"}\n"
+"QToolButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
 
-        gridLayout->addWidget(mLeNameSupervisor, 2, 1, 1, 1);
+        gridLayout_19->addWidget(subWorkSupervisor, 1, 1, 1, 1);
 
-        label_9 = new QLabel(frame);
-        label_9->setObjectName(QString::fromUtf8("label_9"));
+        gridLayout_19->setColumnStretch(0, 10);
+        gridLayout_19->setColumnStretch(1, 1);
 
-        gridLayout->addWidget(label_9, 0, 0, 1, 1);
+        gridLayout->addWidget(frame_15, 2, 3, 1, 1);
 
-        mLeWorkExecutor = new QLineEdit(frame);
-        mLeWorkExecutor->setObjectName(QString::fromUtf8("mLeWorkExecutor"));
-        mLeWorkExecutor->setStyleSheet(QString::fromUtf8("background-color: rgb(220,225,226);"));
+        label_3 = new QLabel(frame);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
+"font: 11pt \"Sans\";\n"
+"font:bold;\n"
+"background-color: none;"));
+        label_3->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
-        gridLayout->addWidget(mLeWorkExecutor, 1, 3, 1, 1);
+        gridLayout->addWidget(label_3, 2, 0, 1, 1);
+
+        frame_16 = new QFrame(frame);
+        frame_16->setObjectName(QString::fromUtf8("frame_16"));
+        frame_16->setStyleSheet(QString::fromUtf8("border:none;"));
+        frame_16->setFrameShape(QFrame::StyledPanel);
+        frame_16->setFrameShadow(QFrame::Raised);
+        gridLayout_20 = new QGridLayout(frame_16);
+        gridLayout_20->setSpacing(1);
+        gridLayout_20->setContentsMargins(11, 11, 11, 11);
+        gridLayout_20->setObjectName(QString::fromUtf8("gridLayout_20"));
+        gridLayout_20->setContentsMargins(0, 0, 0, 0);
+        cbIDSupervisor = new QComboBox(frame_16);
+        cbIDSupervisor->setObjectName(QString::fromUtf8("cbIDSupervisor"));
+        sizePolicy.setHeightForWidth(cbIDSupervisor->sizePolicy().hasHeightForWidth());
+        cbIDSupervisor->setSizePolicy(sizePolicy);
+        cbIDSupervisor->setStyleSheet(QString::fromUtf8("background-color: rgb(234,234,234);"));
+
+        gridLayout_20->addWidget(cbIDSupervisor, 0, 0, 2, 1);
+
+        addIDSupervisor = new QToolButton(frame_16);
+        addIDSupervisor->setObjectName(QString::fromUtf8("addIDSupervisor"));
+        sizePolicy1.setHeightForWidth(addIDSupervisor->sizePolicy().hasHeightForWidth());
+        addIDSupervisor->setSizePolicy(sizePolicy1);
+        addIDSupervisor->setFont(font1);
+        addIDSupervisor->setStyleSheet(QString::fromUtf8("QToolButton\n"
+"{\n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(177,188,190); \n"
+"font: 87 5pt \"Myriad Pro\";\n"
+"font:bold;\n"
+"outline:none;\n"
+"border:none;\n"
+"}\n"
+"QToolButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_20->addWidget(addIDSupervisor, 0, 1, 1, 1);
+
+        subIDSupervisor = new QToolButton(frame_16);
+        subIDSupervisor->setObjectName(QString::fromUtf8("subIDSupervisor"));
+        sizePolicy1.setHeightForWidth(subIDSupervisor->sizePolicy().hasHeightForWidth());
+        subIDSupervisor->setSizePolicy(sizePolicy1);
+        subIDSupervisor->setFont(font1);
+        subIDSupervisor->setStyleSheet(QString::fromUtf8("QToolButton\n"
+"{\n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(177,188,190); \n"
+"font: 87 5pt \"Myriad Pro\";\n"
+"font:bold;\n"
+"outline:none;\n"
+"border:none;\n"
+"}\n"
+"QToolButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_20->addWidget(subIDSupervisor, 1, 1, 1, 1);
+
+        gridLayout_20->setColumnStretch(0, 10);
+        gridLayout_20->setColumnStretch(1, 1);
+
+        gridLayout->addWidget(frame_16, 2, 2, 1, 1);
+
+        frame_10 = new QFrame(frame);
+        frame_10->setObjectName(QString::fromUtf8("frame_10"));
+        frame_10->setStyleSheet(QString::fromUtf8("border:none;"));
+        frame_10->setFrameShape(QFrame::StyledPanel);
+        frame_10->setFrameShadow(QFrame::Raised);
+        gridLayout_15 = new QGridLayout(frame_10);
+        gridLayout_15->setSpacing(1);
+        gridLayout_15->setContentsMargins(11, 11, 11, 11);
+        gridLayout_15->setObjectName(QString::fromUtf8("gridLayout_15"));
+        gridLayout_15->setContentsMargins(0, 0, 0, 0);
+        cbNameSupervisor = new QComboBox(frame_10);
+        cbNameSupervisor->setObjectName(QString::fromUtf8("cbNameSupervisor"));
+        sizePolicy.setHeightForWidth(cbNameSupervisor->sizePolicy().hasHeightForWidth());
+        cbNameSupervisor->setSizePolicy(sizePolicy);
+        cbNameSupervisor->setStyleSheet(QString::fromUtf8("background-color: rgb(234,234,234);"));
+
+        gridLayout_15->addWidget(cbNameSupervisor, 0, 0, 2, 1);
+
+        addNameSupervisor = new QToolButton(frame_10);
+        addNameSupervisor->setObjectName(QString::fromUtf8("addNameSupervisor"));
+        sizePolicy1.setHeightForWidth(addNameSupervisor->sizePolicy().hasHeightForWidth());
+        addNameSupervisor->setSizePolicy(sizePolicy1);
+        addNameSupervisor->setFont(font1);
+        addNameSupervisor->setStyleSheet(QString::fromUtf8("QToolButton\n"
+"{\n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(177,188,190); \n"
+"font: 87 5pt \"Myriad Pro\";\n"
+"font:bold;\n"
+"outline:none;\n"
+"border:none;\n"
+"}\n"
+"QToolButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_15->addWidget(addNameSupervisor, 0, 1, 1, 1);
+
+        subNameSupervisor = new QToolButton(frame_10);
+        subNameSupervisor->setObjectName(QString::fromUtf8("subNameSupervisor"));
+        sizePolicy1.setHeightForWidth(subNameSupervisor->sizePolicy().hasHeightForWidth());
+        subNameSupervisor->setSizePolicy(sizePolicy1);
+        subNameSupervisor->setFont(font1);
+        subNameSupervisor->setStyleSheet(QString::fromUtf8("QToolButton\n"
+"{\n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(177,188,190); \n"
+"font: 87 5pt \"Myriad Pro\";\n"
+"font:bold;\n"
+"outline:none;\n"
+"border:none;\n"
+"}\n"
+"QToolButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_15->addWidget(subNameSupervisor, 1, 1, 1, 1);
+
+        gridLayout_15->setColumnStretch(0, 10);
+        gridLayout_15->setColumnStretch(1, 1);
+
+        gridLayout->addWidget(frame_10, 2, 1, 1, 1);
 
         label_6 = new QLabel(frame);
         label_6->setObjectName(QString::fromUtf8("label_6"));
@@ -248,14 +495,252 @@ public:
 
         gridLayout->addWidget(label_6, 0, 1, 1, 1);
 
+        label_7 = new QLabel(frame);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
+"font: 11pt \"Sans\";\n"
+"font:bold;\n"
+"background-color: none;"));
+        label_7->setAlignment(Qt::AlignCenter);
+
+        gridLayout->addWidget(label_7, 0, 2, 1, 1);
+
+        frame_13 = new QFrame(frame);
+        frame_13->setObjectName(QString::fromUtf8("frame_13"));
+        frame_13->setStyleSheet(QString::fromUtf8("border:none;"));
+        frame_13->setFrameShape(QFrame::StyledPanel);
+        frame_13->setFrameShadow(QFrame::Raised);
+        gridLayout_16 = new QGridLayout(frame_13);
+        gridLayout_16->setSpacing(1);
+        gridLayout_16->setContentsMargins(11, 11, 11, 11);
+        gridLayout_16->setObjectName(QString::fromUtf8("gridLayout_16"));
+        gridLayout_16->setContentsMargins(0, 0, 0, 0);
+        cbLocalTest = new QComboBox(frame_13);
+        cbLocalTest->setObjectName(QString::fromUtf8("cbLocalTest"));
+        sizePolicy.setHeightForWidth(cbLocalTest->sizePolicy().hasHeightForWidth());
+        cbLocalTest->setSizePolicy(sizePolicy);
+        cbLocalTest->setStyleSheet(QString::fromUtf8("background-color: rgb(234,234,234);"));
+
+        gridLayout_16->addWidget(cbLocalTest, 0, 0, 2, 1);
+
+        addLocalTest = new QToolButton(frame_13);
+        addLocalTest->setObjectName(QString::fromUtf8("addLocalTest"));
+        sizePolicy1.setHeightForWidth(addLocalTest->sizePolicy().hasHeightForWidth());
+        addLocalTest->setSizePolicy(sizePolicy1);
+        addLocalTest->setFont(font1);
+        addLocalTest->setStyleSheet(QString::fromUtf8("QToolButton\n"
+"{\n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(177,188,190); \n"
+"font: 87 5pt \"Myriad Pro\";\n"
+"font:bold;\n"
+"outline:none;\n"
+"border:none;\n"
+"}\n"
+"QToolButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_16->addWidget(addLocalTest, 0, 1, 1, 1);
+
+        subLocalTest = new QToolButton(frame_13);
+        subLocalTest->setObjectName(QString::fromUtf8("subLocalTest"));
+        sizePolicy1.setHeightForWidth(subLocalTest->sizePolicy().hasHeightForWidth());
+        subLocalTest->setSizePolicy(sizePolicy1);
+        subLocalTest->setFont(font1);
+        subLocalTest->setStyleSheet(QString::fromUtf8("QToolButton\n"
+"{\n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(177,188,190); \n"
+"font: 87 5pt \"Myriad Pro\";\n"
+"font:bold;\n"
+"outline:none;\n"
+"border:none;\n"
+"}\n"
+"QToolButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_16->addWidget(subLocalTest, 1, 1, 1, 1);
+
+        gridLayout_16->setColumnStretch(0, 10);
+        gridLayout_16->setColumnStretch(1, 1);
+
+        gridLayout->addWidget(frame_13, 3, 1, 1, 1);
+
+        frame_14 = new QFrame(frame);
+        frame_14->setObjectName(QString::fromUtf8("frame_14"));
+        frame_14->setStyleSheet(QString::fromUtf8("border:none;"));
+        frame_14->setFrameShape(QFrame::StyledPanel);
+        frame_14->setFrameShadow(QFrame::Raised);
+        gridLayout_18 = new QGridLayout(frame_14);
+        gridLayout_18->setSpacing(1);
+        gridLayout_18->setContentsMargins(11, 11, 11, 11);
+        gridLayout_18->setObjectName(QString::fromUtf8("gridLayout_18"));
+        gridLayout_18->setContentsMargins(0, 0, 0, 0);
+        cbWorkExcutor = new QComboBox(frame_14);
+        cbWorkExcutor->setObjectName(QString::fromUtf8("cbWorkExcutor"));
+        sizePolicy.setHeightForWidth(cbWorkExcutor->sizePolicy().hasHeightForWidth());
+        cbWorkExcutor->setSizePolicy(sizePolicy);
+        cbWorkExcutor->setStyleSheet(QString::fromUtf8("background-color: rgb(234,234,234);"));
+
+        gridLayout_18->addWidget(cbWorkExcutor, 0, 0, 2, 1);
+
+        addWorkExcutor = new QToolButton(frame_14);
+        addWorkExcutor->setObjectName(QString::fromUtf8("addWorkExcutor"));
+        sizePolicy1.setHeightForWidth(addWorkExcutor->sizePolicy().hasHeightForWidth());
+        addWorkExcutor->setSizePolicy(sizePolicy1);
+        addWorkExcutor->setFont(font1);
+        addWorkExcutor->setStyleSheet(QString::fromUtf8("QToolButton\n"
+"{\n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(177,188,190); \n"
+"font: 87 5pt \"Myriad Pro\";\n"
+"font:bold;\n"
+"outline:none;\n"
+"border:none;\n"
+"}\n"
+"QToolButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_18->addWidget(addWorkExcutor, 0, 1, 1, 1);
+
+        subWorkExcutor = new QToolButton(frame_14);
+        subWorkExcutor->setObjectName(QString::fromUtf8("subWorkExcutor"));
+        sizePolicy1.setHeightForWidth(subWorkExcutor->sizePolicy().hasHeightForWidth());
+        subWorkExcutor->setSizePolicy(sizePolicy1);
+        subWorkExcutor->setFont(font1);
+        subWorkExcutor->setStyleSheet(QString::fromUtf8("QToolButton\n"
+"{\n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(177,188,190); \n"
+"font: 87 5pt \"Myriad Pro\";\n"
+"font:bold;\n"
+"outline:none;\n"
+"border:none;\n"
+"}\n"
+"QToolButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_18->addWidget(subWorkExcutor, 1, 1, 1, 1);
+
+        gridLayout_18->setColumnStretch(0, 10);
+        gridLayout_18->setColumnStretch(1, 1);
+
+        gridLayout->addWidget(frame_14, 1, 3, 1, 1);
+
+        label_8 = new QLabel(frame);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
+"font: 11pt \"Sans\";\n"
+"font:bold;\n"
+"background-color: none;"));
+        label_8->setAlignment(Qt::AlignCenter);
+
+        gridLayout->addWidget(label_8, 0, 3, 1, 1);
+
+        label_2 = new QLabel(frame);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setStyleSheet(QString::fromUtf8("color: rgb(49,67,100);\n"
+"font: 11pt \"Sans\";\n"
+"font:bold;\n"
+"background-color: none;"));
+        label_2->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+
+        gridLayout->addWidget(label_2, 1, 0, 1, 1);
+
+        frame_17 = new QFrame(frame);
+        frame_17->setObjectName(QString::fromUtf8("frame_17"));
+        frame_17->setStyleSheet(QString::fromUtf8("border:none;"));
+        frame_17->setFrameShape(QFrame::StyledPanel);
+        frame_17->setFrameShadow(QFrame::Raised);
+        gridLayout_12 = new QGridLayout(frame_17);
+        gridLayout_12->setSpacing(1);
+        gridLayout_12->setContentsMargins(11, 11, 11, 11);
+        gridLayout_12->setObjectName(QString::fromUtf8("gridLayout_12"));
+        gridLayout_12->setContentsMargins(0, 0, 0, 0);
+        cbIDExcutor = new QComboBox(frame_17);
+        cbIDExcutor->setObjectName(QString::fromUtf8("cbIDExcutor"));
+        sizePolicy.setHeightForWidth(cbIDExcutor->sizePolicy().hasHeightForWidth());
+        cbIDExcutor->setSizePolicy(sizePolicy);
+        cbIDExcutor->setStyleSheet(QString::fromUtf8("background-color: rgb(234,234,234);"));
+
+        gridLayout_12->addWidget(cbIDExcutor, 0, 0, 2, 1);
+
+        addIDExcutor = new QToolButton(frame_17);
+        addIDExcutor->setObjectName(QString::fromUtf8("addIDExcutor"));
+        sizePolicy1.setHeightForWidth(addIDExcutor->sizePolicy().hasHeightForWidth());
+        addIDExcutor->setSizePolicy(sizePolicy1);
+        addIDExcutor->setFont(font1);
+        addIDExcutor->setStyleSheet(QString::fromUtf8("QToolButton\n"
+"{\n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(177,188,190); \n"
+"font: 87 5pt \"Myriad Pro\";\n"
+"font:bold;\n"
+"outline:none;\n"
+"border:none;\n"
+"}\n"
+"QToolButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_12->addWidget(addIDExcutor, 0, 1, 1, 1);
+
+        subIDExcutor = new QToolButton(frame_17);
+        subIDExcutor->setObjectName(QString::fromUtf8("subIDExcutor"));
+        sizePolicy1.setHeightForWidth(subIDExcutor->sizePolicy().hasHeightForWidth());
+        subIDExcutor->setSizePolicy(sizePolicy1);
+        subIDExcutor->setFont(font1);
+        subIDExcutor->setStyleSheet(QString::fromUtf8("QToolButton\n"
+"{\n"
+"border-color: rgb(49, 67, 100);\n"
+"color: rgb(49,67,100);\n"
+"background-color: rgb(177,188,190); \n"
+"font: 87 5pt \"Myriad Pro\";\n"
+"font:bold;\n"
+"outline:none;\n"
+"border:none;\n"
+"}\n"
+"QToolButton::hover\n"
+"{\n"
+"   background-color:rgba(146,165,201);\n"
+"  	border:none;\n"
+"  	outline:none;\n"
+"}"));
+
+        gridLayout_12->addWidget(subIDExcutor, 1, 1, 1, 1);
+
+        gridLayout_12->setColumnStretch(0, 10);
+
+        gridLayout->addWidget(frame_17, 1, 2, 1, 1);
+
         gridLayout->setRowStretch(0, 1);
-        gridLayout->setRowStretch(1, 2);
-        gridLayout->setRowStretch(2, 2);
-        gridLayout->setRowStretch(3, 2);
 
         gridLayout_4->addLayout(gridLayout, 0, 0, 1, 1);
 
-        gridLayout_4->setRowStretch(0, 1);
 
         gridLayout_3->addWidget(frame, 1, 1, 1, 1);
 
@@ -291,11 +776,11 @@ public:
         mBtCableTest = new QPushButton(frame_2);
         mBtCableTest->setObjectName(QString::fromUtf8("mBtCableTest"));
         mBtCableTest->setEnabled(true);
-        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Preferred);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(mBtCableTest->sizePolicy().hasHeightForWidth());
-        mBtCableTest->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy2(QSizePolicy::Minimum, QSizePolicy::Preferred);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(mBtCableTest->sizePolicy().hasHeightForWidth());
+        mBtCableTest->setSizePolicy(sizePolicy2);
         mBtCableTest->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "background-color: rgba(207,215,216, 255);\n"
@@ -351,8 +836,8 @@ public:
         mBtRfTest = new QPushButton(frame_3);
         mBtRfTest->setObjectName(QString::fromUtf8("mBtRfTest"));
         mBtRfTest->setEnabled(true);
-        sizePolicy.setHeightForWidth(mBtRfTest->sizePolicy().hasHeightForWidth());
-        mBtRfTest->setSizePolicy(sizePolicy);
+        sizePolicy2.setHeightForWidth(mBtRfTest->sizePolicy().hasHeightForWidth());
+        mBtRfTest->setSizePolicy(sizePolicy2);
         mBtRfTest->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "background-color: rgb(220,225,226);\n"
@@ -398,8 +883,8 @@ public:
         mBtModuleTest = new QPushButton(frame_4);
         mBtModuleTest->setObjectName(QString::fromUtf8("mBtModuleTest"));
         mBtModuleTest->setEnabled(true);
-        sizePolicy.setHeightForWidth(mBtModuleTest->sizePolicy().hasHeightForWidth());
-        mBtModuleTest->setSizePolicy(sizePolicy);
+        sizePolicy2.setHeightForWidth(mBtModuleTest->sizePolicy().hasHeightForWidth());
+        mBtModuleTest->setSizePolicy(sizePolicy2);
         mBtModuleTest->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "background-color: rgb(220,225,226);\n"
@@ -446,8 +931,8 @@ public:
         mBtMechanicalTest = new QPushButton(frame_5);
         mBtMechanicalTest->setObjectName(QString::fromUtf8("mBtMechanicalTest"));
         mBtMechanicalTest->setEnabled(true);
-        sizePolicy.setHeightForWidth(mBtMechanicalTest->sizePolicy().hasHeightForWidth());
-        mBtMechanicalTest->setSizePolicy(sizePolicy);
+        sizePolicy2.setHeightForWidth(mBtMechanicalTest->sizePolicy().hasHeightForWidth());
+        mBtMechanicalTest->setSizePolicy(sizePolicy2);
         mBtMechanicalTest->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "background-color: rgb(220,225,226);\n"
@@ -497,21 +982,26 @@ public:
         MainWindow->setWindowTitle(QString());
         label->setText(QCoreApplication::translate("MainWindow", "ARS-Testing", nullptr));
         btnMainExit->setText(QString());
-        mLeNameExecutor->setText(QString());
-        mLeNameExecutor->setPlaceholderText(QCoreApplication::translate("MainWindow", "Name", nullptr));
-        label_3->setText(QCoreApplication::translate("MainWindow", "Supervisor", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "Executor", nullptr));
-        label_8->setText(QCoreApplication::translate("MainWindow", "Workplace", nullptr));
-        label_7->setText(QCoreApplication::translate("MainWindow", "ID staff", nullptr));
-        mLeLocalTest->setPlaceholderText(QCoreApplication::translate("MainWindow", "Location", nullptr));
-        mLeIDExecutor->setPlaceholderText(QCoreApplication::translate("MainWindow", "ID Number", nullptr));
+        addNameExcutor->setText(QCoreApplication::translate("MainWindow", "+", nullptr));
+        subNameExcutor->setText(QCoreApplication::translate("MainWindow", "- ", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "Location Test", nullptr));
-        mLeWorkSupervisor->setPlaceholderText(QCoreApplication::translate("MainWindow", "Workplace ", nullptr));
-        mLeIDSupervisor->setPlaceholderText(QCoreApplication::translate("MainWindow", "ID Number", nullptr));
-        mLeNameSupervisor->setPlaceholderText(QCoreApplication::translate("MainWindow", "Name", nullptr));
-        label_9->setText(QString());
-        mLeWorkExecutor->setPlaceholderText(QCoreApplication::translate("MainWindow", "Workplace", nullptr));
+        addWorkSupervisor->setText(QCoreApplication::translate("MainWindow", "+", nullptr));
+        subWorkSupervisor->setText(QCoreApplication::translate("MainWindow", "- ", nullptr));
+        label_3->setText(QCoreApplication::translate("MainWindow", "Supervisor", nullptr));
+        addIDSupervisor->setText(QCoreApplication::translate("MainWindow", "+", nullptr));
+        subIDSupervisor->setText(QCoreApplication::translate("MainWindow", "- ", nullptr));
+        addNameSupervisor->setText(QCoreApplication::translate("MainWindow", "+", nullptr));
+        subNameSupervisor->setText(QCoreApplication::translate("MainWindow", "- ", nullptr));
         label_6->setText(QCoreApplication::translate("MainWindow", "Name", nullptr));
+        label_7->setText(QCoreApplication::translate("MainWindow", "ID staff", nullptr));
+        addLocalTest->setText(QCoreApplication::translate("MainWindow", "+", nullptr));
+        subLocalTest->setText(QCoreApplication::translate("MainWindow", "- ", nullptr));
+        addWorkExcutor->setText(QCoreApplication::translate("MainWindow", "+", nullptr));
+        subWorkExcutor->setText(QCoreApplication::translate("MainWindow", "- ", nullptr));
+        label_8->setText(QCoreApplication::translate("MainWindow", "Workplace", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "Executor", nullptr));
+        addIDExcutor->setText(QCoreApplication::translate("MainWindow", "+", nullptr));
+        subIDExcutor->setText(QCoreApplication::translate("MainWindow", "- ", nullptr));
         mBtCableTest->setText(QString());
         mlElectricCable->setText(QCoreApplication::translate("MainWindow", "Test Electrical Cable ", nullptr));
         mlRfCable->setText(QCoreApplication::translate("MainWindow", "Test RF Cable", nullptr));

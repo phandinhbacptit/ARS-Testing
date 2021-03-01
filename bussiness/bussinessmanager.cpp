@@ -73,13 +73,13 @@ void bussinessManager::setup(Ui::MainWindow *ui)
 
         this->mUi = ui;
     }
-    connect(mUi->mLeNameExecutor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
-    connect(mUi->mLeIDExecutor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
-    connect(mUi->mLeWorkExecutor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
-    connect(mUi->mLeNameSupervisor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
-    connect(mUi->mLeIDSupervisor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
-    connect(mUi->mLeWorkSupervisor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
-    connect(mUi->mLeLocalTest, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
+//    connect(mUi->mLeNameExecutor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
+//    connect(mUi->mLeIDExecutor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
+//    connect(mUi->mLeWorkExecutor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
+//    connect(mUi->mLeNameSupervisor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
+//    connect(mUi->mLeIDSupervisor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
+//    connect(mUi->mLeWorkSupervisor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
+//    connect(mUi->mLeLocalTest, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
 
     connect(mUi->mBtCableTest, SIGNAL(clicked()), this, SLOT(slt_showCteInterface()));
     connect(mUi->mBtModuleTest, SIGNAL(clicked()), this, SLOT(slt_showMteInterface()));
@@ -220,22 +220,22 @@ void bussinessManager::createReport(KDReports::Report *report, QString typeTest,
     tableHeade2.setBorder(0);
     tableHeade2.setWidth(100, KDReports::Percent);
     tableHeade2.cell(0,0).addElement(KDReports::TextElement("Excutor: "), Qt::AlignLeft);
-    tableHeade2.cell(0,1).addElement(KDReports::TextElement(mUi->mLeNameExecutor->text()), Qt::AlignLeft);
+    tableHeade2.cell(0,1).addElement(KDReports::TextElement(mUi->cbNameExcutor->currentText()), Qt::AlignLeft);
     tableHeade2.cell(0,2).addElement(KDReports::TextElement("\t"), Qt::AlignLeft);
     tableHeade2.cell(0,3).addElement(KDReports::TextElement("ID Excutor: "), Qt::AlignLeft);
-    tableHeade2.cell(0,4).addElement(KDReports::TextElement(mUi->mLeIDExecutor->text()), Qt::AlignLeft);
+    tableHeade2.cell(0,4).addElement(KDReports::TextElement(mUi->cbIDExcutor->currentText()), Qt::AlignLeft);
     tableHeade2.cell(0,5).addElement(KDReports::TextElement("\t"), Qt::AlignLeft);
     tableHeade2.cell(0,6).addElement(KDReports::TextElement("Work: "), Qt::AlignLeft);
-    tableHeade2.cell(0,7).addElement(KDReports::TextElement(mUi->mLeWorkExecutor->text()), Qt::AlignLeft);
+    tableHeade2.cell(0,7).addElement(KDReports::TextElement(mUi->cbWorkExcutor->currentText()), Qt::AlignLeft);
 
     tableHeade2.cell(1,0).addElement(KDReports::TextElement("Supervisor: "), Qt::AlignLeft);
-    tableHeade2.cell(1,1).addElement(KDReports::TextElement(mUi->mLeNameSupervisor->text()), Qt::AlignLeft);
+    tableHeade2.cell(1,1).addElement(KDReports::TextElement(mUi->cbNameSupervisor->currentText()), Qt::AlignLeft);
     tableHeade2.cell(1,2).addElement(KDReports::TextElement("\t"), Qt::AlignLeft);
     tableHeade2.cell(1,3).addElement(KDReports::TextElement("ID Supervisor: "), Qt::AlignLeft);
-    tableHeade2.cell(1,4).addElement(KDReports::TextElement(mUi->mLeIDSupervisor->text()), Qt::AlignLeft);
+    tableHeade2.cell(1,4).addElement(KDReports::TextElement(mUi->cbIDSupervisor->currentText()), Qt::AlignLeft);
     tableHeade2.cell(1,5).addElement(KDReports::TextElement("\t"), Qt::AlignLeft);
     tableHeade2.cell(1,6).addElement(KDReports::TextElement("Work: "), Qt::AlignLeft);
-    tableHeade2.cell(1,7).addElement(KDReports::TextElement(mUi->mLeWorkSupervisor->text()), Qt::AlignLeft);
+    tableHeade2.cell(1,7).addElement(KDReports::TextElement(mUi->cbWorkSupervisor->currentText()), Qt::AlignLeft);
     header.addElement(tableHeade2);
     header.addElement(KDReports::HLineElement());
 
@@ -287,7 +287,7 @@ void bussinessManager::createReport(KDReports::Report *report, QString typeTest,
     report->addElement(KDReports::TextElement("    "));
 
     QDate _current = QDate::currentDate();
-    report->addElement(KDReports::TextElement(mUi->mLeLocalTest->text() +
+    report->addElement(KDReports::TextElement(mUi->cbLocalTest->currentText() +
                                               ", Ngày " + QString::number(_current.day()) +
                                               " tháng " + QString::number(_current.month()) +
                                               " năm " + QString::number(_current.year())
@@ -316,7 +316,7 @@ void bussinessManager::createReport(KDReports::Report *report, QString typeTest,
         tableSign.cell(0,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
         tableSign.cell(0,0).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
     }
-    tableSign.cell(0,0).addElement(KDReports::TextElement(mUi->mLeNameExecutor->text()), Qt::AlignCenter);
+    tableSign.cell(0,0).addElement(KDReports::TextElement(mUi->cbNameExcutor->currentText()), Qt::AlignCenter);
 
     tableSign.cell(0,1).addElement(KDReports::TextElement("Người giám sát"), Qt::AlignCenter);
     tableSign.cell(0,1).addElement(KDReports::TextElement("(Ký, họ tên)"), Qt::AlignCenter);
@@ -334,7 +334,7 @@ void bussinessManager::createReport(KDReports::Report *report, QString typeTest,
         tableSign.cell(0,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
     }
 //    tableSign.cell(0,1).addElement(KDReports::TextElement("               "), Qt::AlignCenter);
-    tableSign.cell(0,1).addElement(KDReports::TextElement(mUi->mLeNameSupervisor->text()), Qt::AlignCenter);
+    tableSign.cell(0,1).addElement(KDReports::TextElement(mUi->cbNameSupervisor->currentText()), Qt::AlignCenter);
     report->addElement(tableSign);
 
     if (mode == "AutoSave") {
@@ -372,39 +372,39 @@ void bussinessManager::createCableReport(KDReports::Report *report, QString name
     header.addInlineElement(imageElement );
     header.addElement(KDReports::HLineElement());
 
-    header.addElement(KDReports::TextElement(" \t \t"));
-    header.addInlineElement(KDReports::TextElement("Test Date: "));
-    header.addVariable( KDReports::TextDate);
-    header.addInlineElement(KDReports::TextElement("\t \t"));
-    header.addInlineElement(KDReports::TextElement("RunNumber: "));
-    header.addElement(KDReports::TextElement("Name Cable: "));
-    header.addInlineElement(KDReports::TextElement(nameCable));
-    header.addInlineElement(KDReports::TextElement("\t"));
-    header.addInlineElement(KDReports::TextElement("Test Time: "));
-    header.addVariable( KDReports::TextTime);
-    header.addInlineElement(KDReports::TextElement("\t \t \t"));
-    header.addInlineElement(KDReports::TextElement("Place: "));
-    header.addInlineElement(KDReports::TextElement(mUi->mLeLocalTest->text()));
-    header.addElement(KDReports::HLineElement());
+//    header.addElement(KDReports::TextElement(" \t \t"));
+//    header.addInlineElement(KDReports::TextElement("Test Date: "));
+//    header.addVariable( KDReports::TextDate);
+//    header.addInlineElement(KDReports::TextElement("\t \t"));
+//    header.addInlineElement(KDReports::TextElement("RunNumber: "));
+//    header.addElement(KDReports::TextElement("Name Cable: "));
+//    header.addInlineElement(KDReports::TextElement(nameCable));
+//    header.addInlineElement(KDReports::TextElement("\t"));
+//    header.addInlineElement(KDReports::TextElement("Test Time: "));
+//    header.addVariable( KDReports::TextTime);
+//    header.addInlineElement(KDReports::TextElement("\t \t \t"));
+//    header.addInlineElement(KDReports::TextElement("Place: "));
+//    header.addInlineElement(KDReports::TextElement(mUi->mLeLocalTest->text()));
+//    header.addElement(KDReports::HLineElement());
 
-    header.addElement(KDReports::TextElement("Excutor: "));
-    header.addInlineElement(KDReports::TextElement(mUi->mLeNameExecutor->text()));
-    header.addInlineElement(KDReports::TextElement("\t"));
-    header.addInlineElement(KDReports::TextElement("ID Excutor: "));
-    header.addInlineElement(KDReports::TextElement(mUi->mLeIDExecutor->text()));
-    header.addInlineElement(KDReports::TextElement("\t \t"));
-    header.addInlineElement(KDReports::TextElement("WorkdPlace: "));
-    header.addInlineElement(KDReports::TextElement(mUi->mLeWorkExecutor->text()));
+//    header.addElement(KDReports::TextElement("Excutor: "));
+//    header.addInlineElement(KDReports::TextElement(mUi->mLeNameExecutor->text()));
+//    header.addInlineElement(KDReports::TextElement("\t"));
+//    header.addInlineElement(KDReports::TextElement("ID Excutor: "));
+//    header.addInlineElement(KDReports::TextElement(mUi->mLeIDExecutor->text()));
+//    header.addInlineElement(KDReports::TextElement("\t \t"));
+//    header.addInlineElement(KDReports::TextElement("WorkdPlace: "));
+//    header.addInlineElement(KDReports::TextElement(mUi->mLeWorkExecutor->text()));
 
-    header.addElement(KDReports::TextElement("Supervisor: "));
-    header.addInlineElement(KDReports::TextElement(mUi->mLeNameSupervisor->text()));
-    header.addInlineElement(KDReports::TextElement("\t"));
-    header.addInlineElement(KDReports::TextElement("ID Supervisor: "));
-    header.addInlineElement(KDReports::TextElement(mUi->mLeIDSupervisor->text()));
-    header.addInlineElement(KDReports::TextElement("\t \t"));
-    header.addInlineElement(KDReports::TextElement("WorkdPlace: "));
-    header.addInlineElement(KDReports::TextElement(mUi->mLeWorkSupervisor->text()));
-    header.addElement(KDReports::HLineElement());
+//    header.addElement(KDReports::TextElement("Supervisor: "));
+//    header.addInlineElement(KDReports::TextElement(mUi->mLeNameSupervisor->text()));
+//    header.addInlineElement(KDReports::TextElement("\t"));
+//    header.addInlineElement(KDReports::TextElement("ID Supervisor: "));
+//    header.addInlineElement(KDReports::TextElement(mUi->mLeIDSupervisor->text()));
+//    header.addInlineElement(KDReports::TextElement("\t \t"));
+//    header.addInlineElement(KDReports::TextElement("WorkdPlace: "));
+//    header.addInlineElement(KDReports::TextElement(mUi->mLeWorkSupervisor->text()));
+//    header.addElement(KDReports::HLineElement());
 
     const QColor titleElementColor( 204, 204, 255 );
     KDReports::TextElement tableTitleElement( "Resistance" );
@@ -682,13 +682,13 @@ void bussinessManager::slt_enableTestProcess()
 {
     bool state(true);
 
-    state &= !mUi->mLeNameExecutor->text().isEmpty();
-    state &= !mUi->mLeIDExecutor->text().isEmpty();
-    state &= !mUi->mLeWorkExecutor->text().isEmpty();
-    state &= !mUi->mLeNameSupervisor->text().isEmpty();
-    state &= !mUi->mLeIDSupervisor->text().isEmpty();
-    state &= !mUi->mLeWorkSupervisor->text().isEmpty();
-    state &= !mUi->mLeLocalTest->text().isEmpty();
+//    state &= !mUi->mLeNameExecutor->text().isEmpty();
+//    state &= !mUi->mLeIDExecutor->text().isEmpty();
+//    state &= !mUi->mLeWorkExecutor->text().isEmpty();
+//    state &= !mUi->mLeNameSupervisor->text().isEmpty();
+//    state &= !mUi->mLeIDSupervisor->text().isEmpty();
+//    state &= !mUi->mLeWorkSupervisor->text().isEmpty();
+//    state &= !mUi->mLeLocalTest->text().isEmpty();
 
     if (state == OK) {
         mUi->mBtCableTest->setEnabled(1);

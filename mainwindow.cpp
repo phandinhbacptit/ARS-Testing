@@ -3,6 +3,13 @@
 #include <QDesktopWidget>
 #include <QDebug>
 #include <QCloseEvent>
+#include <QDir>
+#include <QString>
+
+#include "qtCsv/include/qtcsv_global.h"
+#include "qtCsv/include/stringdata.h"
+#include "qtCsv/include/reader.h"
+#include "qtCsv/include/writer.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -17,6 +24,13 @@ MainWindow::MainWindow(QWidget *parent) :
     this->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     this->move(x, y);
 
+    mUi->cbNameExcutor->setEditable(true);
+    mUi->cbNameSupervisor->setEditable(true);
+    mUi->cbIDExcutor->setEditable(true);
+    mUi->cbIDSupervisor->setEditable(true);
+    mUi->cbWorkExcutor->setEditable(true);
+    mUi->cbWorkSupervisor->setEditable(true);
+    mUi->cbLocalTest->setEditable(true);
 
 //    mTestElectricCable = new TestElectricCable();
 //    mTestModule = new testModule();
@@ -91,3 +105,66 @@ void MainWindow::on_btnMainExit_clicked()
 //    mTestRfCable->move(x, y);
 //    mTestRfCable->show();
 //}
+
+void MainWindow::initCombobox(QString path, QString nameCombobox)
+{
+    QString filePath = QDir::currentPath() + path;
+    QStringList listItem;
+
+    QList<QStringList> getData = QtCSV::Reader::readToList(filePath);
+    for (int i = 0; i < getData.at(0).size(); i++) {
+        listItem << getData.at(0).at(i);
+    }
+    if (nameCombobox == "nameExcutor") {
+//        mUi->comboBox->addItems(listItem);
+    }
+}
+
+void MainWindow::saveInformCombobox(QString DataSave, QString nameCobobox, QString path)
+{
+    QString filePath = QDir::currentPath() + path;
+    QStringList listItem;
+    QtCSV::StringData strData;
+
+    QList<QStringList> getData = QtCSV::Reader::readToList(filePath);
+    for (int i = 0; i < getData.at(0).size(); i++) {
+        listItem << getData.at(0).at(i);
+    }
+    listItem << DataSave;
+
+//    if (nameCobobox == "nameExcutor") {
+//        if (_currentText != mUi->comboBox->currentText()) {
+//            strData.addRow(listItem);
+////            _currentText = mUi->comboBox->currentText();
+//        }
+//    }
+
+    QtCSV::Writer::write(filePath, strData);
+}
+void MainWindow::on_toolButton_clicked()
+{
+    initCombobox(nameExcutorPath, "nameExcutor");
+
+}
+
+void MainWindow::on_toolButton_2_clicked()
+{
+    QString filePath = QDir::currentPath() + nameExcutorPath;
+    QStringList listItem;
+    QtCSV::StringData strData;
+
+
+    QList<QStringList> getData = QtCSV::Reader::readToList(filePath);
+    for (int i = 0; i < getData.at(0).size(); i++) {
+        listItem << getData.at(0).at(i);
+    }
+
+//    if (_currentText != mUi->comboBox->currentText()) {
+//        listItem << mUi->comboBox->currentText();
+//        _currentText = mUi->comboBox->currentText();
+//    }
+
+    strData.addRow(listItem);
+
+    QtCSV::Writer::write(filePath, strData);
+}
