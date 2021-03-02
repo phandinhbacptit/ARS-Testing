@@ -7,6 +7,8 @@
 #include "testrfcable.h"
 #include "userconfig.h"
 
+#include <QSettings>
+
 namespace Ui {
 class MainWindow;
 }
@@ -49,6 +51,9 @@ private:
     Ui::MainWindow *mUi;
     QCloseEvent *event;
     QString _currentText;
+
+    void saveSetting();
+    void loadSetting();
 
     void initCombobox(QString path, QString nameCombobox);
     void saveInformCombobox(QString DataSave, QString nameCobobox, QString path);

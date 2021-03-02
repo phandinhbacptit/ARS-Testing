@@ -32,13 +32,15 @@ MainWindow::MainWindow(QWidget *parent) :
     mUi->cbWorkSupervisor->setEditable(true);
     mUi->cbLocalTest->setEditable(true);
 
-    initCombobox(nameExcutorPath, "nameExcutor");
-    initCombobox(idExcutorPath, "IDExcutor");
-    initCombobox(workExcutorPath, "workExcutor");
-    initCombobox(nameSupervisorPath, "nameSupervisor");
-    initCombobox(idSupervisorPath, "IDSupervisor");
-    initCombobox(workSupervisorPath, "workSupervisor");
-    initCombobox(localTestPath, "localTest");
+    loadSetting();
+
+//    initCombobox(nameExcutorPath, "nameExcutor");
+//    initCombobox(idExcutorPath, "IDExcutor");
+//    initCombobox(workExcutorPath, "workExcutor");
+//    initCombobox(nameSupervisorPath, "nameSupervisor");
+//    initCombobox(idSupervisorPath, "IDSupervisor");
+//    initCombobox(workSupervisorPath, "workSupervisor");
+//    initCombobox(localTestPath, "localTest");
 
 //    mTestElectricCable = new TestElectricCable();
 //    mTestModule = new testModule();
@@ -73,9 +75,38 @@ void MainWindow::setUi(Ui::MainWindow *ui)
    mUi = ui;
 }
 
+void MainWindow::saveSetting()
+{
+    QSettings settings ("Ars-Testing", "Ars-Testing");
+    settings.beginGroup("SaveState");
+    settings.setValue("contentNameExecutor", mUi->cbNameExcutor->currentText());
+    settings.setValue("contentIDExecutor", mUi->cbIDExcutor->currentText());
+    settings.setValue("contentWorkExecutor", mUi->cbWorkExcutor->currentText());
+    settings.setValue("contentNameSupervisor", mUi->cbNameSupervisor->currentText());
+    settings.setValue("contentIDSupervisor", mUi->cbIDSupervisor->currentText());
+    settings.setValue("contentWorkSupervisor", mUi->cbWorkSupervisor->currentText());
+    settings.setValue("contentLocalTest", mUi->cbLocalTest->currentText());
+    settings.endGroup();
+}
+
+void MainWindow::loadSetting()
+{
+    QSettings settings ("Ars-Testing", "Ars-Testing");
+    settings.beginGroup("SaveState");
+    mUi->cbNameExcutor->addItem(settings.value("contentNameExecutor").toString());
+    mUi->cbIDExcutor->addItem(settings.value("contentIDExecutor").toString());
+    mUi->cbWorkExcutor->addItem(settings.value("contentWorkExecutor").toString());
+    mUi->cbNameSupervisor->addItem(settings.value("contentNameSupervisor").toString());
+    mUi->cbIDSupervisor->addItem(settings.value("contentIDSupervisor").toString());
+    mUi->cbWorkSupervisor->addItem(settings.value("contentWorkSupervisor").toString());
+    mUi->cbLocalTest->addItem(settings.value("contentLocalTest").toString());
+    settings.endGroup();
+}
+
 void MainWindow::on_btnMainExit_clicked()
 {
     if (QMessageBox::Yes == QMessageBox::question(this, "Close confirm", "Thoát khỏi phần mềm kiểm tra các thành phần của ĐTD?", QMessageBox::Yes | QMessageBox::No)) {
+        saveSetting();
         this->close();
     }
 }
