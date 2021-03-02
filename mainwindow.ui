@@ -171,8 +171,7 @@ background-color: none;</string>
                </sizepolicy>
               </property>
               <property name="styleSheet">
-               <string notr="true">border:none;
-background-color: rgb(234,234,234);</string>
+               <string notr="true">background-color: rgb(224,220,230);</string>
               </property>
              </widget>
             </item>
@@ -311,7 +310,7 @@ background-color: none;</string>
                </sizepolicy>
               </property>
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(234,234,234);</string>
+               <string notr="true">background-color: rgb(224,220,230);</string>
               </property>
              </widget>
             </item>
@@ -450,7 +449,7 @@ background-color: none;</string>
                </sizepolicy>
               </property>
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(234,234,234);</string>
+               <string notr="true">background-color: rgb(224,220,230);</string>
               </property>
              </widget>
             </item>
@@ -573,7 +572,7 @@ QToolButton::hover
                </sizepolicy>
               </property>
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(234,234,234);</string>
+               <string notr="true">background-color: rgb(224,220,230);</string>
               </property>
              </widget>
             </item>
@@ -728,7 +727,7 @@ background-color: none;</string>
                </sizepolicy>
               </property>
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(234,234,234);</string>
+               <string notr="true">background-color: rgb(224,220,230);</string>
               </property>
              </widget>
             </item>
@@ -851,7 +850,7 @@ QToolButton::hover
                </sizepolicy>
               </property>
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(234,234,234);</string>
+               <string notr="true">background-color: rgb(224,220,230);</string>
               </property>
              </widget>
             </item>
@@ -1006,7 +1005,7 @@ background-color: none;</string>
                </sizepolicy>
               </property>
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(234,234,234);</string>
+               <string notr="true">background-color: rgb(224,220,230);</string>
               </property>
              </widget>
             </item>

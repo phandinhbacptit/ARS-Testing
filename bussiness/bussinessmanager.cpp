@@ -73,13 +73,13 @@ void bussinessManager::setup(Ui::MainWindow *ui)
 
         this->mUi = ui;
     }
-//    connect(mUi->mLeNameExecutor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
-//    connect(mUi->mLeIDExecutor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
-//    connect(mUi->mLeWorkExecutor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
-//    connect(mUi->mLeNameSupervisor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
-//    connect(mUi->mLeIDSupervisor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
-//    connect(mUi->mLeWorkSupervisor, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
-//    connect(mUi->mLeLocalTest, SIGNAL(textChanged(QString)), this, SLOT(slt_enableTestProcess()));
+    connect(mUi->cbNameExcutor, SIGNAL(editTextChanged(QString)), this, SLOT(slt_enableTestProcess()));
+    connect(mUi->cbIDExcutor, SIGNAL(editTextChanged(QString)), this, SLOT(slt_enableTestProcess()));
+    connect(mUi->cbWorkExcutor, SIGNAL(editTextChanged(QString)), this, SLOT(slt_enableTestProcess()));
+    connect(mUi->cbNameSupervisor, SIGNAL(editTextChanged(QString)), this, SLOT(slt_enableTestProcess()));
+    connect(mUi->cbIDSupervisor, SIGNAL(editTextChanged(QString)), this, SLOT(slt_enableTestProcess()));
+    connect(mUi->cbWorkSupervisor, SIGNAL(editTextChanged(QString)), this, SLOT(slt_enableTestProcess()));
+    connect(mUi->cbLocalTest, SIGNAL(editTextChanged(QString)), this, SLOT(slt_enableTestProcess()));
 
     connect(mUi->mBtCableTest, SIGNAL(clicked()), this, SLOT(slt_showCteInterface()));
     connect(mUi->mBtModuleTest, SIGNAL(clicked()), this, SLOT(slt_showMteInterface()));
@@ -682,13 +682,13 @@ void bussinessManager::slt_enableTestProcess()
 {
     bool state(true);
 
-//    state &= !mUi->mLeNameExecutor->text().isEmpty();
-//    state &= !mUi->mLeIDExecutor->text().isEmpty();
-//    state &= !mUi->mLeWorkExecutor->text().isEmpty();
-//    state &= !mUi->mLeNameSupervisor->text().isEmpty();
-//    state &= !mUi->mLeIDSupervisor->text().isEmpty();
-//    state &= !mUi->mLeWorkSupervisor->text().isEmpty();
-//    state &= !mUi->mLeLocalTest->text().isEmpty();
+    state &= !mUi->cbNameExcutor->currentText().isEmpty();
+    state &= !mUi->cbIDExcutor->currentText().isEmpty();
+    state &= !mUi->cbWorkExcutor->currentText().isEmpty();
+    state &= !mUi->cbNameSupervisor->currentText().isEmpty();
+    state &= !mUi->cbIDSupervisor->currentText().isEmpty();
+    state &= !mUi->cbWorkSupervisor->currentText().isEmpty();
+    state &= !mUi->cbLocalTest->currentText().isEmpty();
 
     if (state == OK) {
         mUi->mBtCableTest->setEnabled(1);

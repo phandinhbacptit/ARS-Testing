@@ -185,8 +185,7 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(cbNameExcutor->sizePolicy().hasHeightForWidth());
         cbNameExcutor->setSizePolicy(sizePolicy);
-        cbNameExcutor->setStyleSheet(QString::fromUtf8("border:none;\n"
-"background-color: rgb(234,234,234);"));
+        cbNameExcutor->setStyleSheet(QString::fromUtf8("background-color: rgb(224,220,230);"));
 
         gridLayout_14->addWidget(cbNameExcutor, 0, 0, 2, 1);
 
@@ -276,7 +275,7 @@ public:
         cbWorkSupervisor->setObjectName(QString::fromUtf8("cbWorkSupervisor"));
         sizePolicy.setHeightForWidth(cbWorkSupervisor->sizePolicy().hasHeightForWidth());
         cbWorkSupervisor->setSizePolicy(sizePolicy);
-        cbWorkSupervisor->setStyleSheet(QString::fromUtf8("background-color: rgb(234,234,234);"));
+        cbWorkSupervisor->setStyleSheet(QString::fromUtf8("background-color: rgb(224,220,230);"));
 
         gridLayout_19->addWidget(cbWorkSupervisor, 0, 0, 2, 1);
 
@@ -357,7 +356,7 @@ public:
         cbIDSupervisor->setObjectName(QString::fromUtf8("cbIDSupervisor"));
         sizePolicy.setHeightForWidth(cbIDSupervisor->sizePolicy().hasHeightForWidth());
         cbIDSupervisor->setSizePolicy(sizePolicy);
-        cbIDSupervisor->setStyleSheet(QString::fromUtf8("background-color: rgb(234,234,234);"));
+        cbIDSupervisor->setStyleSheet(QString::fromUtf8("background-color: rgb(224,220,230);"));
 
         gridLayout_20->addWidget(cbIDSupervisor, 0, 0, 2, 1);
 
@@ -428,7 +427,7 @@ public:
         cbNameSupervisor->setObjectName(QString::fromUtf8("cbNameSupervisor"));
         sizePolicy.setHeightForWidth(cbNameSupervisor->sizePolicy().hasHeightForWidth());
         cbNameSupervisor->setSizePolicy(sizePolicy);
-        cbNameSupervisor->setStyleSheet(QString::fromUtf8("background-color: rgb(234,234,234);"));
+        cbNameSupervisor->setStyleSheet(QString::fromUtf8("background-color: rgb(224,220,230);"));
 
         gridLayout_15->addWidget(cbNameSupervisor, 0, 0, 2, 1);
 
@@ -519,7 +518,7 @@ public:
         cbLocalTest->setObjectName(QString::fromUtf8("cbLocalTest"));
         sizePolicy.setHeightForWidth(cbLocalTest->sizePolicy().hasHeightForWidth());
         cbLocalTest->setSizePolicy(sizePolicy);
-        cbLocalTest->setStyleSheet(QString::fromUtf8("background-color: rgb(234,234,234);"));
+        cbLocalTest->setStyleSheet(QString::fromUtf8("background-color: rgb(224,220,230);"));
 
         gridLayout_16->addWidget(cbLocalTest, 0, 0, 2, 1);
 
@@ -590,7 +589,7 @@ public:
         cbWorkExcutor->setObjectName(QString::fromUtf8("cbWorkExcutor"));
         sizePolicy.setHeightForWidth(cbWorkExcutor->sizePolicy().hasHeightForWidth());
         cbWorkExcutor->setSizePolicy(sizePolicy);
-        cbWorkExcutor->setStyleSheet(QString::fromUtf8("background-color: rgb(234,234,234);"));
+        cbWorkExcutor->setStyleSheet(QString::fromUtf8("background-color: rgb(224,220,230);"));
 
         gridLayout_18->addWidget(cbWorkExcutor, 0, 0, 2, 1);
 
@@ -681,7 +680,7 @@ public:
         cbIDExcutor->setObjectName(QString::fromUtf8("cbIDExcutor"));
         sizePolicy.setHeightForWidth(cbIDExcutor->sizePolicy().hasHeightForWidth());
         cbIDExcutor->setSizePolicy(sizePolicy);
-        cbIDExcutor->setStyleSheet(QString::fromUtf8("background-color: rgb(234,234,234);"));
+        cbIDExcutor->setStyleSheet(QString::fromUtf8("background-color: rgb(224,220,230);"));
 
         gridLayout_12->addWidget(cbIDExcutor, 0, 0, 2, 1);
 

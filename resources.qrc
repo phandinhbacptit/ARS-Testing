@@ -92,6 +92,5 @@
         <file>images/sign/signature1.png</file>
         <file>images/sign/signature3.png</file>
         <file>images/sign/signature2.png</file>
-        <file>inform/saveInform.csv</file>
     </qresource>
 </RCC>

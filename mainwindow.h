@@ -31,6 +31,20 @@ private slots:
 
     void on_toolButton_2_clicked();
 
+    void on_addNameExcutor_clicked();
+
+    void on_addNameSupervisor_clicked();
+
+    void on_addLocalTest_clicked();
+
+    void on_addIDExcutor_clicked();
+
+    void on_addIDSupervisor_clicked();
+
+    void on_addWorkExcutor_clicked();
+
+    void on_addWorkSupervisor_clicked();
+
 private:
     Ui::MainWindow *mUi;
     QCloseEvent *event;
