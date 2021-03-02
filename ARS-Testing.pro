@@ -58,6 +58,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
+    instrumentehernet.cpp \
+    instrumentusart.cpp \
         main.cpp\
         mainwindow.cpp \
     noteandsign.cpp \
@@ -70,6 +72,8 @@ SOURCES += \
     utils/logutils.cpp \
     utils/srcReport.cpp
 HEADERS += \
+    instrumentehernet.h \
+    instrumentusart.h \
         mainwindow.h \
     noteandsign.h \
     testelectriccable.h \
@@ -83,6 +87,8 @@ HEADERS += \
     utils/logutils.h \
     utils/srcReport.h
 FORMS += \
+    instrumentehernet.ui \
+    instrumentusart.ui \
         mainwindow.ui \
     noteandsign.ui \
     testelectriccable.ui \

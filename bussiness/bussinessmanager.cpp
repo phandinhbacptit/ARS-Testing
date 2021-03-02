@@ -5,6 +5,8 @@
 #include "ui_testrfcable.h"
 #include "ui_testmechanical.h"
 #include "ui_noteandsign.h"
+#include "ui_instrumentehernet.h"
+#include "ui_instrumentusart.h"
 #include "utils/logutils.h"
 
 bussinessManager::bussinessManager(QObject *parent) : QObject(parent)
@@ -39,6 +41,15 @@ bussinessManager::~bussinessManager()
         delete mNoteAndSign;
         mNoteAndSign = NULL;
     }
+
+    if (mInstrumentEthernet != NULL) {
+        delete mInstrumentEthernet;
+        mInstrumentEthernet = NULL;
+    }
+    if (mInstrumentUsart != NULL) {
+        delete mInstrumentUsart;
+        mInstrumentUsart = NULL;
+    }
 }
 
 Ui::MainWindow *bussinessManager::ui() const
@@ -59,6 +70,15 @@ Ui::testModule *bussinessManager::getGuiMte() const
 Ui::noteAndSign *bussinessManager::getGuiNS() const
 {
     return mNS;
+}
+Ui::instrumentEhernet *bussinessManager::getGuiIE() const
+{
+    return mIE;
+}
+
+Ui::instrumentUsart *bussinessManager::getGuiIU() const
+{
+    return mIU;
 }
 
 //Ui::TestRfCable *bussinessManager::getGui() const
@@ -116,6 +136,16 @@ void bussinessManager::setupModule(Ui::testModule *ui)
     connect(mMTE->btnExportMte, SIGNAL(clicked()), this, SLOT(slt_exportMteReport()));
     connect(mMTE->btnNoteSign, SIGNAL(clicked()), this, SLOT(slt_noteAndSign()));
 
+    connect(mMTE->tbOscilloscope, SIGNAL(clicked()), this, SLOT(slt_confOsciloscope()));
+    connect(mMTE->tbNoiseSrc, SIGNAL(clicked()), this, SLOT(slt_confNoiseSource()));
+    connect(mMTE->tbSpectumAnalyzer, SIGNAL(clicked()), this, SLOT(slt_confSpectumAnalyzer()));
+    connect(mMTE->tbNetworkAnalyzer, SIGNAL(clicked()), this, SLOT(slt_confNetworkAnalyzer()));
+    connect(mMTE->tbWaveGeneration, SIGNAL(clicked()), this, SLOT(slt_confWaveGeneration()));
+    connect(mMTE->tbSignalGeneration, SIGNAL(clicked()), this, SLOT(slt_confSignGeneration()));
+
+    connect(mMTE->tbDcLoad, SIGNAL(clicked()), this, SLOT(slt_confDcLoad()));
+    connect(mMTE->tbDcPower, SIGNAL(clicked()), this, SLOT(slt_confDcPower()));
+
     connect(mMTE->btnDcPwr, SIGNAL(clicked()), this, SLOT(slt_connDcPower()));
     connect(mMTE->btnDcLoad, SIGNAL(clicked()), this, SLOT(slt_connDcLoad()));
     connect(mMTE->btnOscil, SIGNAL(clicked()), this, SLOT(slt_connOsiloscope()));
@@ -151,6 +181,20 @@ void bussinessManager::setupNS(Ui::noteAndSign *ui)
     connect(mNS->btnAddNote, SIGNAL(clicked()), this, SLOT(slt_addNote()));
     qDebug() << "[Business] Setup Gui Note and sign";
 }
+
+void bussinessManager::setupIE(Ui::instrumentEhernet *ui)
+{
+    if (ui != NULL) {
+        this->mIE = ui;
+    }
+}
+void bussinessManager::setupIU(Ui::instrumentUsart *ui)
+{
+    if (ui != NULL) {
+        this->mIU = ui;
+    }
+}
+
 void bussinessManager::createTable(KDReports::Report *report, QString Title, QString pathCsv)
 {
     const QColor titleElementColor( 204, 204, 255 );
@@ -1090,6 +1134,174 @@ void bussinessManager::slt_enableOrDisableSign()
         enableSignaSupervisor = true;
         qDebug() << "[Bussiness] Enable Supervisor sign";
     }
+}
+/*__________Window config instrument using ethernet protocol________*/
+
+
+void bussinessManager::slt_instrumentUsart()
+{
+    mInstrumentUsart = new instrumentUsart();
+
+    qDebug("Jump to window instrument Ethernet config");
+    QRect tScreenGeometry = QApplication::desktop()->screenGeometry();
+    int x = (tScreenGeometry.width() - mInstrumentUsart->width()) / 2;
+    int y = (tScreenGeometry.height() - mInstrumentUsart->height()) / 2;
+
+    mInstrumentUsart->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
+    mInstrumentUsart->move(x, y);
+    mInstrumentUsart->show();
+
+    setupIU(mInstrumentUsart->getUi());
+}
+
+void bussinessManager::getInformInstrtUsart(QString nameIntr)
+{
+    QString filePath = QDir::currentPath() + insUsartPath;
+    QList<QStringList> getData = QtCSV::Reader::readToList(filePath);
+
+    if (nameIntr == "dcLoad") {
+       mIU->leNameIntrUsart->setText(getData.at(0).at(0));
+       mIU->leSerialIntrUart->setText(getData.at(0).at(1));
+       mIU->cbModelInstrUart->addItem(getData.at(0).at(2));
+       mIU->cbModelInstrUart->addItem(getData.at(0).at(3));
+       mIU->leDtimeInstrUsart->setText(getData.at(0).at(4));
+       mIU->leErrInstrUart->setText(getData.at(0).at(5));
+       mIU->cbComport->addItem(getData.at(0).at(6));
+       mIU->leBaudrate->setText(getData.at(0).at(7));
+    }
+    if (nameIntr == "dcPower") {
+        mIU->leNameIntrUsart->setText(getData.at(1).at(0));
+        mIU->leSerialIntrUart->setText(getData.at(1).at(1));
+        mIU->cbModelInstrUart->addItem(getData.at(1).at(2));
+        mIU->cbModelInstrUart->addItem(getData.at(1).at(3));
+        mIU->leDtimeInstrUsart->setText(getData.at(1).at(4));
+        mIU->leErrInstrUart->setText(getData.at(1).at(5));
+        mIU->cbComport->addItem(getData.at(1).at(6));
+        mIU->leBaudrate->setText(getData.at(1).at(7));
+    }
+}
+
+void bussinessManager::slt_confDcLoad()
+{
+    slt_instrumentUsart();
+    getInformInstrtUsart("dcLoad");
+}
+void bussinessManager::slt_confDcPower()
+{
+    slt_instrumentUsart();
+    getInformInstrtUsart("dcPower");
+}
+void bussinessManager::slt_instrumentEthernet()
+{
+    mInstrumentEthernet = new instrumentEhernet();
+
+    qDebug("Jump to window instrument Ethernet config");
+    QRect tScreenGeometry = QApplication::desktop()->screenGeometry();
+    int x = (tScreenGeometry.width() - mInstrumentEthernet->width()) / 2;
+    int y = (tScreenGeometry.height() - mInstrumentEthernet->height()) / 2;
+
+    mInstrumentEthernet->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
+    mInstrumentEthernet->move(x, y);
+    mInstrumentEthernet->show();
+
+    setupIE(mInstrumentEthernet->getUi());
+}
+
+void bussinessManager::getInformInstrtEthernet(QString nameIntr)
+{
+    QString filePath = QDir::currentPath() + insEthernetPath;
+    QList<QStringList> getData = QtCSV::Reader::readToList(filePath);
+
+    if (nameIntr == "osciloscope") {
+       mIE->leNameInstrument->setText(getData.at(0).at(0));
+       mIE->leSerial->setText(getData.at(0).at(1));
+       mIE->cbTypeInstr->addItem(getData.at(0).at(2));
+       mIE->cbTypeInstr->addItem(getData.at(0).at(3));
+       mIE->leRegisDeadline->setText(getData.at(0).at(4));
+       mIE->leErrorInstrument->setText(getData.at(0).at(5));
+       mIE->leIp->setText(getData.at(0).at(6));
+       mIE->lePort->setText(getData.at(0).at(7));
+    }
+    if (nameIntr == "noiseSource") {
+       mIE->leNameInstrument->setText(getData.at(1).at(0));
+       mIE->leSerial->setText(getData.at(1).at(1));
+       mIE->cbTypeInstr->addItem(getData.at(1).at(2));
+       mIE->cbTypeInstr->addItem(getData.at(1).at(3));
+       mIE->leRegisDeadline->setText(getData.at(1).at(4));
+       mIE->leErrorInstrument->setText(getData.at(1).at(5));
+       mIE->leIp->setText(getData.at(1).at(6));
+       mIE->lePort->setText(getData.at(1).at(7));
+    }
+    if (nameIntr == "spectumAnalyzer") {
+       mIE->leNameInstrument->setText(getData.at(2).at(0));
+       mIE->leSerial->setText(getData.at(2).at(1));
+       mIE->cbTypeInstr->addItem(getData.at(2).at(2));
+       mIE->cbTypeInstr->addItem(getData.at(2).at(3));
+       mIE->leRegisDeadline->setText(getData.at(2).at(4));
+       mIE->leErrorInstrument->setText(getData.at(2).at(5));
+       mIE->leIp->setText(getData.at(2).at(6));
+       mIE->lePort->setText(getData.at(2).at(7));
+    }
+    if (nameIntr == "networkAnalyzer") {
+       mIE->leNameInstrument->setText(getData.at(3).at(0));
+       mIE->leSerial->setText(getData.at(3).at(1));
+       mIE->cbTypeInstr->addItem(getData.at(3).at(2));
+       mIE->cbTypeInstr->addItem(getData.at(3).at(3));
+       mIE->leRegisDeadline->setText(getData.at(3).at(4));
+       mIE->leErrorInstrument->setText(getData.at(3).at(5));
+       mIE->leIp->setText(getData.at(3).at(6));
+       mIE->lePort->setText(getData.at(3).at(7));
+    }
+    if (nameIntr == "waveGeneration") {
+       mIE->leNameInstrument->setText(getData.at(4).at(0));
+       mIE->leSerial->setText(getData.at(4).at(1));
+       mIE->cbTypeInstr->addItem(getData.at(4).at(2));
+       mIE->cbTypeInstr->addItem(getData.at(4).at(3));
+       mIE->leRegisDeadline->setText(getData.at(4).at(4));
+       mIE->leErrorInstrument->setText(getData.at(4).at(5));
+       mIE->leIp->setText(getData.at(4).at(6));
+       mIE->lePort->setText(getData.at(4).at(7));
+    }
+    if (nameIntr == "signalGeneration") {
+       mIE->leNameInstrument->setText(getData.at(5).at(0));
+       mIE->leSerial->setText(getData.at(5).at(1));
+       mIE->cbTypeInstr->addItem(getData.at(5).at(2));
+       mIE->cbTypeInstr->addItem(getData.at(5).at(3));
+       mIE->leRegisDeadline->setText(getData.at(5).at(4));
+       mIE->leErrorInstrument->setText(getData.at(5).at(5));
+       mIE->leIp->setText(getData.at(5).at(6));
+       mIE->lePort->setText(getData.at(5).at(7));
+    }
+}
+void bussinessManager::slt_confOsciloscope()
+{
+    slt_instrumentEthernet();
+    getInformInstrtEthernet("osciloscope");
+}
+void bussinessManager::slt_confNoiseSource()
+{
+    slt_instrumentEthernet();
+    getInformInstrtEthernet("noiseSource");
+}
+void bussinessManager::slt_confSpectumAnalyzer()
+{
+    slt_instrumentEthernet();
+    getInformInstrtEthernet("spectumAnalyzer");
+}
+void bussinessManager::slt_confNetworkAnalyzer()
+{
+    slt_instrumentEthernet();
+    getInformInstrtEthernet("networkAnalyzer");
+}
+void bussinessManager::slt_confWaveGeneration()
+{
+    slt_instrumentEthernet();
+    getInformInstrtEthernet("waveGeneration");
+}
+void bussinessManager::slt_confSignGeneration()
+{
+    slt_instrumentEthernet();
+    getInformInstrtEthernet("signalGeneration");
 }
 /*_____________Connect Equipment_________________________________________________________*/
 void bussinessManager::slt_connDcPower()

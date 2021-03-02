@@ -9,7 +9,9 @@
 
 #define OK      1
 #define FAIL    0
+
 /* Define path contain update information of combobox*/
+
 #define nameExcutorPath "/inform/nameExecutor.csv"
 #define idExcutorPath "/inform/idExecutor.csv"
 #define workExcutorPath "/inform/workExecutor.csv"
@@ -17,6 +19,10 @@
 #define idSupervisorPath "/inform/idSupervisor.csv"
 #define workSupervisorPath "/inform/workSupervisor.csv"
 #define localTestPath "/inform/localTest.csv"
+
+/* Define path contain information of instrument*/
+#define insEthernetPath "/instrument/instrumentEthernet.csv"
+#define insUsartPath "/instrument/instrumentUsart.csv"
 
 /* Electrical cable design document path*/
 

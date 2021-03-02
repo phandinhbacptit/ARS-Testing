@@ -26,6 +26,8 @@
 #include "userconfig.h"
 #include "testrfcable.h"
 #include "noteandsign.h"
+#include "instrumentehernet.h"
+#include "instrumentusart.h"
 
 #include "qtCsv/include/qtcsv_global.h"
 #include "qtCsv/include/stringdata.h"
@@ -52,6 +54,9 @@ public:
     void setupModule(Ui::testModule *ui);
     void setupRf(Ui::TestRfCable *ui);
     void setupNS(Ui::noteAndSign *ui);
+    void setupIE(Ui::instrumentEhernet *ui);
+    void setupIU(Ui::instrumentUsart *ui);
+
     void resetNote();
     void recoverStateSign();
 
@@ -63,6 +68,8 @@ public:
     Ui::TestElectricCable *getGui() const;
     Ui::testModule *getGuiMte() const;
     Ui::noteAndSign *getGuiNS() const;
+    Ui::instrumentEhernet *getGuiIE() const;
+    Ui::instrumentUsart *getGuiIU() const;
 //    Ui::TestRfCable *getGui() const;
 
     /*_______Add more___________*/
@@ -102,6 +109,19 @@ public slots:
     void slt_noteAndSign();
     void slt_enableOrDisableSign();
 
+    /*____Window config instrument ethernet__*/
+    void slt_instrumentEthernet();
+    void slt_confOsciloscope();
+    void slt_confNoiseSource();
+    void slt_confSpectumAnalyzer();
+    void slt_confNetworkAnalyzer();
+    void slt_confWaveGeneration();
+    void slt_confSignGeneration();
+
+    void slt_instrumentUsart();
+    void slt_confDcLoad();
+    void slt_confDcPower();
+
     /*___Connect Equipment____*/
     void slt_connDcPower();
     void slt_connDcLoad();
@@ -127,16 +147,23 @@ private:
     Ui::TestRfCable *mRFTE;
     Ui::MainWindow *mUi;
     Ui::noteAndSign *mNS;
+    Ui::instrumentEhernet *mIE;
+    Ui::instrumentUsart *mIU;
+
 
     TestElectricCable *mTestElectricalCable;
     testModule *mTestModule;
     TestRfCable *mTestRfCable;
     noteAndSign *mNoteAndSign;
+    instrumentEhernet *mInstrumentEthernet;
+    instrumentUsart *mInstrumentUsart;
 
     KDReports::Report *reportCTE;
 
     void createCableReport(KDReports::Report *report, QString nameCable);
 
+    void getInformInstrtEthernet(QString nameIntr);
+    void getInformInstrtUsart(QString nameIntr);
     bool enableSignExcutor = false;
     bool enableSignaSupervisor = false;
     int cntRunCte = 0;
